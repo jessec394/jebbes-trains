@@ -1,0 +1,46 @@
+<div id="SplashScreen">
+    <div id="SplashContent">
+        <div id="SplashTitle">jebbe's trains</div>
+        <div id="SplashSubtitle">An optimistic future for North American rail transit</div>
+        <button id="SplashButton" onclick="CloseSplash()">View Map</button>
+    </div>
+</div>
+<div id="MapBlur"></div>
+<div id="HeaderInfo"></div>
+<div id="InfoPopupBackdrop" onclick="CloseInfoPopup()"></div>
+<div id="InfoPopupOverlay">
+    <div class="InfoPopupHeader">
+        <button class="InfoPopupClose" onclick="CloseInfoPopup()">×</button>
+        <div class="InfoPopupTitle" id="InfoPopupTitle"></div>
+        <div class="InfoPopupSource" id="InfoPopupSource"></div>
+    </div>
+    <div class="InfoPopupContent" id="InfoPopupContent"></div>
+</div>
+<div id="BasemapSwitcher">
+    <div id="LightButton" class="BasemapButton active" onclick="SwitchBasemap('Light')" title="Light Map"></div>
+    <div id="DarkButton" class="BasemapButton" onclick="SwitchBasemap('Dark')" title="Dark Map"></div>
+    <div id="SatelliteButton" class="BasemapButton" onclick="SwitchBasemap('Satellite')" title="Satellite"></div>
+</div>
+<div id="StationPopupOverlay">
+    <div class="PopupHeader">
+        <button class="PopupClose" onclick="CloseStationPopup()">×</button>
+        <div class="PopupStationName" id="PopupStationName"></div>
+        <div class="PopupStationType" id="PopupStationType"></div>
+    </div>
+    <div class="PopupContent" id="PopupContent"></div>
+</div>
+<div id="Sidebar">
+    <div id="Handle" onclick="ToggleSidebar()">◀</div>
+    <div style="padding: 40px 30px 10px 30px;">
+        <div style="font-size: 10px; font-weight: 900; color: #475569; letter-spacing: 4px; margin-bottom: 4px;">NIMBY Rails</div>
+        <div style="font-size: 28px; font-weight: 900; color: #0f172a; letter-spacing: -0.8px;">Passenger Rail Map</div>
+    </div>
+    <div id="LinesView" style="display: flex; flex-direction: column; flex-grow: 1; overflow: hidden;">
+        <div style="padding: 20px 25px; display: flex; gap: 10px; align-items: center;">
+            <input type="text" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()" style="flex: 1; border:none; padding:15px 20px; background:rgba(0,0,0,0.05); border-radius:18px; font-size:14px; outline:none; font-weight:500;">
+            <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All" style="width: 48px; height: 48px; border: none; background: rgba(0,0,0,0.05); border-radius: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; transition: all 0.2s; flex-shrink: 0;">⊟</button>
+        </div>
+        <div style="padding: 0 18px 20px 18px; overflow-y: auto; flex-grow: 1;" id="ListContainer"></div>
+    </div>
+</div>
+<button id="ToggleButton" onclick="ToggleDataView()">View Detailed Map</button>
