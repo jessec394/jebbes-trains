@@ -75,11 +75,13 @@ Nodes = {
 	"Denver Tejon Bend": {'Location': (39.75974, -105.01115)},
 	"Denver Union Junction": {'Location': (39.75794, -104.99482)},
 	"Denver Union Junction North": {'Location': (39.76209, -104.99538)},
+	"Detroit Carbon Junction": {'Location': (42.29342, -83.12865)},
 	"Detroit Dearborn Junction": {'Location': (42.31768, -83.16028)},
 	"Detroit I-94 Bend 1": {'Location': (42.27429, -83.20519)},
 	"Detroit I-94 Bend 2": {'Location': (42.26627, -83.22752)},
 	"Detroit I-94 Bend 3": {'Location': (42.26472, -83.27443)},
 	"Detroit I-94 Bend 4": {'Location': (42.26076, -83.29086)},
+	"Detroit New Center Junction": {'Location': (42.37859, -83.05749)},
 	"Detroit North Bend": {'Location': (42.33365, -83.10120)},
 	"Detroit Plymouth Junction": {'Location': (42.38325, -83.46781)},
 	"Detroit Schaefer Junction": {'Location': (42.31651, -83.16856)},
@@ -89,6 +91,7 @@ Nodes = {
 	"Eloy Junction": {'Location': (32.72408, -111.51072)},
 	"Emeryville Bend N": {'Location': (37.82266, -122.29179)},
 	"Emeryville Bend S": {'Location': (37.80582, -122.31349)},
+	"Everett HSR Bend": {'Location': (47.99799, -122.17466)},
 	"Farmingdale Junction": {'Location': (40.73194, -73.46567)},
 	"Fort Worth East Junction": {'Location': (32.75744, -97.32264)},
 	"Fort Worth North Junction": {'Location': (32.78892, -97.33907)},
@@ -295,6 +298,8 @@ Nodes = {
 	"Portland East Bend N": {'Location': (45.52663, -122.66479)},
 	"Portland East Bend S": {'Location': (45.50975, -122.66473)},
 	"Portland Goose Hollow Bend": {'Location': (45.51799, -122.69276)},
+	"Portland I-5 Bend N": {'Location': (45.44136, -122.74351)},
+	"Portland I-5 Bend S": {'Location': (45.28040, -122.76794)},
 	"Portland MAX EW Loop NE": {'Location': (45.51774, -122.67359)},
 	"Portland MAX EW Loop NW": {'Location': (45.52191, -122.68917)},
 	"Portland MAX EW Loop SE": {'Location': (45.51709, -122.67395)},
@@ -316,6 +321,7 @@ Nodes = {
 	"Portland Tilikum Bridge Bend N": {'Location': (45.50645, -122.66469)},
 	"Portland Tilikum Bridge Bend S": {'Location': (45.50333, -122.66950)},
 	"Portland Tilikum Bridge Junction": {'Location': (45.50653, -122.65954)},
+	"Portland Vancouver HSR Bend": {'Location': (45.71880, -122.65421)},
 	"Portland Yard Bend N": {'Location': (45.50046, -122.64935)},
 	"Portland Yard Bend S": {'Location': (45.49379, -122.64431)},
 	"Québec Jacques-Cartier Bend": {'Location': (46.74884, -71.33942)},
@@ -336,6 +342,7 @@ Nodes = {
 	"STL I-70 Bend": {'Location': (38.67189, -90.19410)},
 	"STL Union Bend NW": {'Location': (38.62725, -90.21049)},
 	"STL Union Bend SW": {'Location': (38.62456, -90.21324)},
+	"Salem HSR Bend": {'Location': (44.99514, -123.00068)},
 	"San Francisco Dubcoe Junction": {'Location': (37.76950, -122.42906)},
 	"San Francisco Ferry Bend": {'Location': (37.79522, -122.39385)},
 	"San Francisco Port View Bend": {'Location': (37.81052, -122.33209)},
@@ -350,6 +357,8 @@ Nodes = {
 	"San Jose San Carlos Bend": {'Location': (37.32439, -121.90273)},
 	"San Jose Tasman Junction": {'Location': (37.40922, -121.94488)},
 	"Sandusky East Bend": {'Location': (41.37079, -82.49328)},
+	"Seattle Lynnwood Bend": {'Location': (47.78926, -122.32926)},
+	"Seattle Sumner Bend": {'Location': (47.20506, -122.24768)},
 	"South Buffalo Bend": {'Location': (42.76595, -78.83909)},
 	"Spofford Junction": {'Location': (29.16688, -100.39987)},
 	"Spokane Viaduct": {'Location': (47.57205, -122.33175)},
@@ -378,11 +387,13 @@ Nodes = {
 	"Toronto West Junction": {'Location': (43.64051, -79.40042)},
 	"Trois-Rivières East Bend": {'Location': (46.63854, -72.06089)},
 	"Trois-Rivières West Bend": {'Location': (46.22418, -73.06875)},
+	"Vancouver Abbotsford Bend": {'Location': (49.03342, -122.27147)},
 	"Vancouver Glen Valley Bend": {'Location': (49.17626, -122.42605)},
 	"Vancouver Pacific Central Junction": {'Location': (49.27149, -123.08034)},
 	"Vancouver UBC Bend 1": {'Location': (49.26709, -123.24070)},
 	"Vancouver UBC Bend 2": {'Location': (49.26358, -123.23118)},
-	"Vancouver Waterfront Bend": {'Location': (49.28779, -123.11930)},
+	"Vancouver Waterfront Bend (Mainline)": {'Location': (49.28264, -123.08255)},
+	"Vancouver Waterfront Bend (SkyTrain)": {'Location': (49.28779, -123.11930)},
 	"Veracruz Bend": {'Location': (18.60018, -95.79129)},
 	"Washington Anacostia Bend E": {'Location': (38.89550, -76.95102)},
 	"Washington Anacostia Bend W": {'Location': (38.89747, -76.96662)},
@@ -393,12 +404,15 @@ Nodes = {
 	"Washington Potomac Junction N": {'Location': (38.87875, -77.03541)},
 	"Washington Potomac Junction S": {'Location': (38.87114, -77.04156)},
 	"Washington South Bend": {'Location': (38.88157, -77.00678)},
+	"Vancouver TCH Bend E": {'Location': (49.22797, -122.82361)},
+	"Vancouver TCH Bend W": {'Location': (49.23886, -122.95806)},
 	"Washington West Falls Junction": {'Location': (38.90037, -77.18496)},
 	"Watsonville Junction": {'Location': (36.89545, -121.74773)},
 	"West St. Paul Bend": {'Location': (44.91762, -93.11580)},
 	"Whitehall Junction": {'Location': (43.54575, -73.40464)},
 	"Windsor North Junction": {'Location': (42.32329, -82.99218)},
 	"Windsor South Junction": {'Location': (42.29083, -83.01509)},
+	"Windsor Tunnel Bend": {'Location': (42.31818, -83.05019)},
 }
 
 Stations = {
@@ -1949,7 +1963,7 @@ Stations = {
     "Des Sources": { 'Location': (45.47733, -73.79078) },
     "Detroit Airport": { 'Location': (42.22598, -83.34718), 'Type': 'Airport' },
     "Detroit Lakes": { 'Location': (46.81979, -95.84598) },
-    "Detroit New Center": { 'Location': (42.36800, -83.07231), 'Label': 'Detroit New Center' },
+    "Detroit New Center": { 'Location': (42.36800, -83.07231) },
     "Deux-Montagnes": { 'Location': (45.54586, -73.91310) },
     "Devils Lake": { 'Location': (48.11039, -98.86151) },
     "Devon": { 'Location': (38.96834, -84.61270) },
@@ -2252,16 +2266,16 @@ Stations = {
     "Etobicoke North": { 'Location': (43.70642, -79.56335) },
     "Euclid Av (Pitkin)": { 'Location': (40.67542, -73.87191), 'Label': 'Euclid Av' },
     "Eudora": { 'Location': (38.94838, -95.10046) },
-    "Eugene (OR)": { 'Location': (44.05518, -123.09232), 'Label': 'Eugene' },
+    "Eugene": { 'Location': (44.05518, -123.09232) },
     "Evans Ave (CA)": { 'Location': (37.74234, -122.38813), 'Label': 'Evans' },
     "Evans Ave (CO)": { 'Location': (39.67770, -104.99284), 'Label': 'Evans' },
     "Evans Terminal": { 'Location': (42.22598, -83.34718) },
-    "Evanston (WY)": { 'Location': (41.26889, -110.96435), 'Label': 'Evanston' },
-    "Everett (WA)": { 'Location': (47.97548, -122.19767), 'Label': 'Everett' },
+    "Evanston": { 'Location': (41.26889, -110.96435) },
+    "Everett": { 'Location': (47.97548, -122.19767) },
     "Everett/Revs": { 'Location': (42.39849, -71.06783) },
     "Excalibur": { 'Location': (36.09824, -115.17426) },
     "Excalibur North": { 'Location': (36.10012, -115.17348) },
-    "Excelsior Springs (MO)": { 'Location': (39.34048, -94.24206), 'Label': 'Excelsior Springs' },
+    "Excelsior Springs": { 'Location': (39.34048, -94.24206) },
     "Exchange Place (LRT)": { 'Location': (40.71588, -74.03414), 'Label': 'Exchange Place' },
     "Exchange Place (PATH)": { 'Location': (40.71676, -74.03238), 'Label': 'Exchange Place' },
     "Exeter (NH)": { 'Location': (42.98102, -70.95869), 'Label': 'Exeter' },
@@ -2371,6 +2385,7 @@ Stations = {
     "Foothill/Allen": { 'Location': (34.15243, -118.11394), 'Label': 'Allen' },
     "Foothill/Lake": { 'Location': (34.15182, -118.13160), 'Label': 'Lake' },
     "Ford Medical Center": { 'Location': (42.38577, -83.50847) },
+    "Ford Rd": { 'Location': (42.33412, -83.17568) },
     "Fordham": { 'Location': (40.86148, -73.89054) },
     "Fordham Rd (Grand Concourse)": { 'Location': (40.86136, -73.89771), 'Label': 'Fordham Rd' },
     "Fordham Rd (Jerome)": { 'Location': (40.86274, -73.90106), 'Label': 'Fordham Rd' },
@@ -4174,8 +4189,8 @@ Stations = {
     "Olentangy": { 'Location': (40.06279, -83.04626) },
     "Olmsted Falls": { 'Location': (41.37500, -81.90596) },
     "Olney": { 'Location': (40.03345, -75.12258) },
-    "Olympia": { 'Location': (46.99135, -122.79393) },
     "Olympia Fields": { 'Location': (41.52113, -87.69031) },
+    "Olympia-Lacey": { 'Location': (46.99135, -122.79393) },
     "Olympic Village": { 'Location': (49.26654, -123.11562) },
     "Omaha": { 'Location': (41.24977, -95.92717), 'Major': True },
     "Onawa": { 'Location': (42.03170, -96.09504) },
@@ -4871,12 +4886,11 @@ Stations = {
     "Scarborough Centre": { 'Location': (43.77438, -79.25795) },
     "Scarborough-Kemeys Cove": { 'Location': (41.13851, -73.86660) },
     "Scarsdale": { 'Location': (40.98960, -73.80862) },
-    "Schaefer Rd (N)": { 'Location': (42.33412, -83.17568), 'Label': 'Schaefer Rd' },
-    "Schaefer Rd (S)": { 'Location': (42.31537, -83.17667), 'Label': 'Schaefer Rd' },
+    "Schaefer Rd": { 'Location': (42.31537, -83.17667) },
     "Schaumburg": { 'Location': (41.98914, -88.11797) },
-    "Schenectady (NY)": { 'Location': (42.81456, -73.94273), 'Label': 'Schenectady' },
+    "Schenectady": { 'Location': (42.81456, -73.94273) },
     "Schiller Park": { 'Location': (41.96228, -87.87044) },
-    "Schriever (LA)": { 'Location': (29.74667, -90.81524), 'Label': 'Schriever' },
+    "Schriever": { 'Location': (29.74667, -90.81524) },
     "Science Museum": { 'Location': (44.94244, -93.09656) },
     "Scott Road": { 'Location': (49.20441, -122.87429) },
     "Scottsburg": { 'Location': (38.68713, -85.77139) },
@@ -5258,8 +5272,8 @@ Stations = {
     "Tejon/56th": { 'Location': (39.79836, -105.01112), 'Label': '56th' },
     "Telkwa": { 'Location': (54.69140, -127.05053) },
     "Temecula": { 'Location': (33.51571, -117.15752) },
-    "Tempe (AZ)": { 'Location': (33.42781, -111.94369), 'Label': 'Tempe' },
-    "Temple (TX)": { 'Location': (31.09572, -97.34529), 'Label': 'Temple' },
+    "Tempe": { 'Location': (33.42781, -111.94369) },
+    "Temple": { 'Location': (31.09572, -97.34529) },
     "Temple University": { 'Location': (39.98178, -75.14957) },
     "Templeton": { 'Location': (49.19668, -123.14632) },
     "Tenabo": { 'Location': (20.04663, -90.22457) },
@@ -6010,12 +6024,21 @@ Segments = {
         "F": ['-Intercity LS (Philadelphia - Trenton)'],
         "Keep": ['Philadelphia 30th Street Station', 'Trenton Transit Center'],
     },
+    "-Intercity HS (Portland - Eugene)": {
+        "F": ['Portland Approach (Union - East)', '[X] Portland I-5 Bend N', '[X] Portland I-5 Bend S', '[X] Salem HSR Bend', 'Eugene'],
+    },
     "-Intercity HS (Providence - New Haven)": {
         "F": ['Providence', '[X] TF Green Airport', '[X] Wickford Junction', '[X] Kingston (CT)', '[X] New Haven-State St', 'New Haven Union Station'],
     },
     "-Intercity HS (San Francisco - Gilroy)": {
         "F": ['San Francisco Caltrain (Salesforce TC - Gilroy)'],
         "Keep": ['San Francisco Salesforce TC', 'Millbrae', 'San Jose Diridon Station', 'Gilroy'],
+    },
+    "-Intercity HS (Seattle - Portland)": {
+        "F": ['Seattle King Street Station', '[X] Spokane Viaduct', '[X] Tukwila', '[X] Seattle Sumner Bend', '[X] Lakewood', '[X] Olympia-Lacey', '[X] Centralia (WA)', '[X] Portland Vancouver HSR Bend', 'Portland NW Bend 1', 'Portland Union Station'],
+    },
+     "-Intercity HS (Seattle - Vancouver)": {
+        "F": ['Seattle King Street Station', '[X] Seattle Lynnwood Bend', '[X] Lynnwood City Center', '[X] Everett HSR Bend', '[X] Mt. Vernon (WA)', '[X] Vancouver Abbotsford Bend', '[X] Vancouver TCH Bend E', '[X] Vancouver TCH Bend W', 'Vancouver Waterfront Station'],
     },
     "-Intercity HS (St. Louis - Kansas City)": {
         "F": ['St. Louis Approach (Gateway - Bridge West)', '[X] STL I-70 Bend', '[X] STL 270 Bend', 'Columbia (MO)', '[X] KC I-70 Bend', '[R] Kansas City Approach (Union - I-70)'],
@@ -6032,6 +6055,9 @@ Segments = {
     },
     "-Intercity HS (Toronto - Québec)": {
         "F": ['-Intercity HS (Toronto - Montréal)', '-Intercity HS (Montréal - Québec)'],
+    },
+    "-Intercity HS (Vancouver - Eugene)": {
+        "F": ['[R] -Intercity HS (Seattle - Vancouver)', '-Intercity HS (Seattle - Portland)', '-Intercity HS (Portland - Eugene)'],
     },
     "-Intercity HS (Washington - Alexandria)": {
         "F": ['-Intercity LS (Washington - Alexandria)'],
@@ -6128,13 +6154,13 @@ Segments = {
         "F": ['-Intercity LS (Boston - Portland)', '[X] Portland ME Junction', 'Freeport (ME)', 'Brunswick (ME)', 'Rockland (ME)'],
     },
     "-Intercity LS (Boston - Schenectady)": {
-        "F": ['-Intercity LS (Boston - Worcester)', 'Palmer (MA)', 'Springfield (MA)', 'Pittsfield', 'Albany-Rensselaer', 'Schenectady (NY)'],
+        "F": ['-Intercity LS (Boston - Worcester)', 'Palmer (MA)', 'Springfield (MA)', 'Pittsfield', 'Albany-Rensselaer', 'Schenectady'],
     },
     "-Intercity LS (Boston - Worcester)": {
         "F": ['Boston South Station', '[X] Boston South Junction', '[X] Boston Back Bay', '[X] Lansdowne-Fenway Park', '[X] Boston Landing', '[X] Newtonville', '[X] West Newton', '[X] Auburndale', '[X] Wellesley Farms', '[X] Wellesley Hills', '[X] Wellesley Square', '[X] Natick Center', '[X] West Natick', 'Framingham (MA)', '[X] Ashland-High St', '[X] Southborough', '[X] Westborough', '[X] Grafton', 'Worcester'],
     },
     "-Intercity LS (Buffalo - Schenectady)": {
-        "F": ['Buffalo Exchange Street Station', 'Depew-Buffalo', 'Rochester (NY)', 'New York State Fairgrounds', 'Syracuse', 'Utica (NY)', 'Schenectady (NY)'],
+        "F": ['Buffalo Exchange Street Station', 'Depew-Buffalo', 'Rochester (NY)', 'New York State Fairgrounds', 'Syracuse', 'Utica (NY)', 'Schenectady'],
     },
     "-Intercity LS (Calgary - Edmonton)": {
         "F": ['Calgary', 'YYC Airport Hub', 'Airdrie', 'Olds', 'Red Deer', 'Wetaskiwin (AB)', 'Leduc', 'Edmonton Airport', 'North Edmonton'],
@@ -6320,7 +6346,7 @@ Segments = {
         "F": ['-Intercity LS (Chicago - Chesterton Junction)', 'South Bend', 'Elkhart', 'Kendallville (IN)', 'Bryan (OH)', '[X] Delta Bend', '[R] Toledo Approach (Toledo - West)'],
     },
     "-Intercity LS (Chicago - Toronto)": {
-        "F": ['-Intercity LS (Chicago - Detroit)', '[R] -Intercity LS (Toronto - Windsor)'],
+        "F": ['-Intercity LS (Chicago - Detroit)', 'Detroit Regional Rail (International Shuttle)', '[R] -Intercity LS (Toronto - Windsor)'],
     },
     "-Intercity LS (Chicago - University Park)": {
         "F": ['-Intercity LS (Chicago - Mark Twain)', 'Chicago Metra (Mark Twain - Kensington)', '[X] Chicago Kensington Junction', '[X] Riverdale (Chicago)', '[X] Ivanhoe', '[X] 147th St (Sibley Blvd)', '[X] Harvey (IL)', '[X] Hazel Crest', '[X] Calumet', 'Homewood', '[X] Flossmoor', '[X] Olympia Fields', '[X] 211th St (Lincoln Hwy)', '[X] Matteson (ME)', '[X] Richton Park', '[X] University Park'],
@@ -6546,7 +6572,7 @@ Segments = {
         "F": ['Fort Worth Central Station', '[X] Fort Worth North Junction', '[X] Fort Worth Saginaw Junction', 'Gainesville (TX)', 'Ardmore (OK)', 'Pauls Valley', 'Purcell', 'Norman', 'Oklahoma City'],
     },
     "-Intercity LS (Fort Worth - San Antonio)": {
-        "F": ['Fort Worth Central Station', '[X] Fort Worth South Junction', 'Cleburne', 'McGregor (TX)', 'Temple (TX)', 'Taylor (TX)', 'Austin', 'Buda (TX)', 'San Marcos', 'New Braunfels', 'San Antonio (TX)'],
+        "F": ['Fort Worth Central Station', '[X] Fort Worth South Junction', 'Cleburne', 'McGregor (TX)', 'Temple', 'Taylor (TX)', 'Austin', 'Buda (TX)', 'San Marcos', 'New Braunfels', 'San Antonio (TX)'],
     },
     "-Intercity LS (Guadalajara - Nogales)": {
         "F": ['Guadalajara', 'Tepic', 'Mazatlán', 'Culiacán', 'San Blas', 'Ciudad Obregón', 'Hermosillo', 'Nogales (SO)'],
@@ -6566,7 +6592,7 @@ Segments = {
         "F": ['-Intercity LS (Houston - Richmond)', 'Victoria (TX)', 'Robstown', 'Kingsville', 'Raymondville', 'Harlingen', 'Matamoros'],
     },
     "-Intercity LS (Houston - New Orleans)": {
-        "F": ['-Intercity LS (Houston - Crosby)', 'Beaumont (TX)', 'Lake Charles', 'Lafayette (LA)', 'New Iberia', 'Schriever (LA)', 'New Orleans Union Terminal'],
+        "F": ['-Intercity LS (Houston - Crosby)', 'Beaumont (TX)', 'Lake Charles', 'Lafayette (LA)', 'New Iberia', 'Schriever', 'New Orleans Union Terminal'],
     },
     "-Intercity LS (Houston - Richmond)": {
         "F": ['Houston Regional Rail (Main - Richmond)'],
@@ -6604,7 +6630,7 @@ Segments = {
     },
     "-Intercity LS (Kansas City - Excelsior Springs)": {
         "F": ['Kansas City Regional Rail (Union - Excelsior Springs)'],
-        "Keep": ['Kansas City Union Station', 'Excelsior Springs (MO)'],
+        "Keep": ['Kansas City Union Station', 'Excelsior Springs'],
     },
     "-Intercity LS (Kansas City - Fort Worth)": {
         "F": ['-Intercity LS (Kansas City - Oklahoma City via Wichita)', '[R] -Intercity LS (Fort Worth - Oklahoma City)'],
@@ -6915,7 +6941,7 @@ Segments = {
         "F": ['-Intercity LS (New York - Washington)', '-Intercity LS (Washington - Savannah)'],
     },
     "-Intercity LS (New York - Schenectady)": {
-        "F": ['-Intercity LS (New York - Albany)', 'Schenectady (NY)'],
+        "F": ['-Intercity LS (New York - Albany)', 'Schenectady'],
     },
     "-Intercity LS (New York - Scranton East)": {
         "F": ['-Intercity LS (New York - Dover East)', 'Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono (PA)', 'Scranton'],
@@ -7030,7 +7056,7 @@ Segments = {
         "F": ['-Intercity LS (Phoenix - Tucson)', 'Green Valley', 'Nogales (AZ)', 'Nogales (SO)'],
     },
     "-Intercity LS (Phoenix - Tucson)": {
-        "F": ['Phoenix', '[X] Phoenix East Bend', 'Tempe (AZ)', 'Gilbert', 'San Tan Valley', 'Eloy', '[X] Eloy Junction', 'Tucson'],
+        "F": ['Phoenix', '[X] Phoenix East Bend', 'Tempe', 'Gilbert', 'San Tan Valley', 'Eloy', '[X] Eloy Junction', 'Tucson'],
     },
     "-Intercity LS (Pittsburgh - Greensburg)": {
         "F": ['Pittsburgh Regional Rail (Union - Greensburg)'],
@@ -7047,10 +7073,13 @@ Segments = {
         "Keep": ['Pittsburgh Union Station'],
     },
     "-Intercity LS (Portland - Eugene)": {
-        "F": ['Portland Approach (Union - East)', 'Oregon City', 'Salem (OR)', 'Albany', 'Eugene (OR)'],
+        "F": ['-Intercity LS (Portland - Milwaukie)', 'Oregon City', 'Salem (OR)', 'Albany', 'Eugene'],
     },
     "-Intercity LS (Portland - Kennewick)": {
         "F": ['-Intercity LS (Portland - Vancouver)', 'Bingen-White Salmon', 'Wishram', 'Kennewick'],
+    },
+    "-Intercity LS (Portland - Milwaukie)": {
+        "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', '[X] Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', '[X] SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', '[X] Milwaukie/Main St'],
     },
     "-Intercity LS (Portland - Salt Lake City)": {
         "F": ['-Intercity LS (Portland - Kennewick)', 'La Grande', 'Baker City', 'Ontario (OR)', 'Boise', 'Potacello', 'Tremonton', '[R] -Intercity LS (Salt Lake City - Ogden)'],
@@ -7086,10 +7115,10 @@ Segments = {
         "F": ['Quéretaro', 'Irapuato', 'León'],
     },
     "-Intercity LS (Sacramento - Eugene)": {
-        "F": ['Sacramento Valley', 'Marysville (CA)', 'Chico', 'Redding (CA)', 'Dunsmuir (CA)', 'Klamath Falls', 'Chemult', 'Eugene (OR)'],
+        "F": ['Sacramento Valley', 'Marysville (CA)', 'Chico', 'Redding (CA)', 'Dunsmuir (CA)', 'Klamath Falls', 'Chemult', 'Eugene'],
     },
     "-Intercity LS (Salt Lake City - Cheyenne)": {
-        "F": ['-Intercity LS (Salt Lake City - Ogden)', 'Evanston (WY)', 'Rock Springs (WY)', 'Rawlins', 'Laramie (WY)', 'Cheyenne (WY)'],
+        "F": ['-Intercity LS (Salt Lake City - Ogden)', 'Evanston', 'Rock Springs (WY)', 'Rawlins', 'Laramie (WY)', 'Cheyenne (WY)'],
     },
     "-Intercity LS (Salt Lake City - Ogden)": {
         "F": ['Salt Lake City FrontRunner (Rio Grande - Ogden)'],
@@ -7147,20 +7176,20 @@ Segments = {
     },
     "-Intercity LS (Seattle - Everett)": {
         "F": ['Seattle Sounder (King Street - Everett)'],
-        "Keep": ['Seattle King Street Station', 'Everett (WA)'],
+        "Keep": ['Seattle King Street Station', 'Everett'],
     },
     "-Intercity LS (Seattle - Lakewood)": {
         "F": ['Seattle Sounder (King Street - Lakewood)'],
         "Keep": ['Seattle King Street Station', 'Tukwila (WA)', 'Tacoma Dome (Amtrak)'],
     },
     "-Intercity LS (Seattle - Portland)": {
-        "F": ['-Intercity LS (Seattle - Lakewood)', 'Olympia', 'Centralia (WA)', 'Kelso (WA)', '[R] -Intercity LS (Portland - Vancouver)'],
+        "F": ['-Intercity LS (Seattle - Lakewood)', 'Olympia-Lacey', 'Centralia (WA)', 'Kelso (WA)', '[R] -Intercity LS (Portland - Vancouver)'],
     },
     "-Intercity LS (Seattle - Spokane)": {
         "F": ['-Intercity LS (Seattle - Everett)', 'Leavenworth', 'Wenatchee', 'Ephrata', 'Spokane (WA)'],
     },
     "-Intercity LS (Seattle - Vancouver)": {
-        "F": ['-Intercity LS (Seattle - Everett)', 'Stanwood', 'Mt. Vernon (WA)', 'Fairhaven (WA)', '[R] Vancouver Approach (Pacific Central - West)'],
+        "F": ['-Intercity LS (Seattle - Everett)', 'Stanwood', 'Mt. Vernon (WA)', 'Fairhaven (WA)', '[R] -Intercity LS (Vancouver - Braid)'],
     },
     "-Intercity LS (St. Louis - Indianapolis)": {
         "F": ['St. Louis Approach (Gateway - Bridge East)', 'Effingham', 'Terre Haute', '[X] Indianapolis North Airport Bend', '[X] Indianapolis Approach (Union - West)'],
@@ -7237,6 +7266,9 @@ Segments = {
     },
     "-Intercity LS (Toronto - Winnipeg)": {
         "F": ['-Intercity LS (Toronto - Bloomington)', 'Beaverton', 'Washago', 'Parry Sound (ON)', 'Sudbury Junction', 'Capreol', 'Laforest', "McKee's Camp", 'Felix', 'Ruel', 'Westree (ON)', 'Gogama', 'Foleyet', 'Elsas', 'Oba (ON)', 'Hornepayne', 'Hillsport', 'Caramat', 'Longlac', 'Nakina', 'Auden', 'Ferland', 'Mud River (ON)', 'Armstrong', 'Collins', 'Allanwater Bridge', 'Flindt Landing', 'Savant Lake (ON)', 'Sioux Lookout', 'Winnipeg Union Station'],
+    },
+     "-Intercity LS (Vancouver - Braid)": {
+        "F": ['Vancouver Approach (Waterfront - East)', '[X] Vancouver Pacific Central Junction', '[X] Commercial-Broadway', '[X] Renfrew', '[X] Rupert', '[X] Sperling-Burnaby Lake', '[X] Braid'],
     },
     "-Intercity LS (Vancouver - Calgary)": {
         "F": ['-Intercity LS (Vancouver - Kamloops)', 'Kamloops (BC)', 'Revelstoke', 'Banff', 'Canmore', 'Cochrane (AB)', 'Bowness', 'Calgary'],
@@ -7767,15 +7799,15 @@ Segments = {
         "F": ['Cincinnati Union Terminal (Main)', '[X] Cincinnati South Junction'],
     },
     "Cincinnati Commuter (Union - Dayton)": {
-        "F": ['Cincinnati Commuter (Union - WInton Junction)', '[X] Cincinnati Ivorydale Bend', 'Carthage East', 'Reading (OH)', 'Sharonville', 'Wetherington', 'Middletown-University', 'Miamisburg', 'Moraine', 'Dayton Union Station (Main)'],
+        "F": ['Cincinnati Commuter (Union - Winton Junction)', '[X] Cincinnati Ivorydale Bend', 'Carthage East', 'Reading (OH)', 'Sharonville', 'Wetherington', 'Middletown-University', 'Miamisburg', 'Moraine', 'Dayton Union Station (Main)'],
     },
     "Cincinnati Commuter (Union - Hamilton)": {
-        "F": ['Cincinnati Commuter (Union - WInton Junction)', 'Carthage West', 'Woodlawn-Lincoln Heights', 'Kemper Rd', 'Fairfield (OH)', 'Lindenwald', 'Hamilton (OH)'],
+        "F": ['Cincinnati Commuter (Union - Winton Junction)', 'Carthage West', 'Woodlawn-Lincoln Heights', 'Kemper Rd', 'Fairfield (OH)', 'Lindenwald', 'Hamilton (OH)'],
     },
     "Cincinnati Commuter (Union - Loveland)": {
-        "F": ['Cincinnati Commuter (Union - WInton Junction)', '[X] Cincinnati Ivorydale Bend', 'Vine St', 'Norwood-Montgomery', 'Oakley', 'Madisonville', 'Madeira', 'Remington', 'Symmes', 'Loveland (OH)'],
+        "F": ['Cincinnati Commuter (Union - Winton Junction)', '[X] Cincinnati Ivorydale Bend', 'Vine St', 'Norwood-Montgomery', 'Oakley', 'Madisonville', 'Madeira', 'Remington', 'Symmes', 'Loveland (OH)'],
     },
-    "Cincinnati Commuter (Union - WInton Junction)": {
+    "Cincinnati Commuter (Union - Winton Junction)": {
         "F": ['Cincinnati Union Terminal (Main)', '[X] Cincinnati North Bend', '[X] Cincinnati Northside Bend', 'Winton Junction'],
     },
     "Cincinnati Subway (Downtown - Airport)": {
@@ -8078,10 +8110,13 @@ Segments = {
         "F": ['Detroit Regional Rail (Central - Wayne)', 'Haggerty Rd', 'Denton Rd', 'Ypsilanti', 'Eastern Michigan University', 'University of Michigan Medical Center', 'Ann Arbor', 'Dexter'],
     },
     "Detroit Regional Rail (Central - Belleville)": {
-        "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit West Junction 2', 'Springwells', 'Allen Park', 'Taylor (MI)', 'DTW Airport Transfer', 'Romulus', 'Belleville Lake'],
+        "F": ['Detroit Regional Rail (Central - Carbon Junction)', 'Allen Park', 'Taylor (MI)', 'DTW Airport Transfer', 'Romulus', 'Belleville Lake'],
+    },
+    "Detroit Regional Rail (Central - Carbon Junction)": {
+        "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit West Junction 2', 'Springwells', '[X] Detroit Carbon Junction'],
     },
     "Detroit Regional Rail (Central - Highland North)": {
-        "F": ['Detroit Regional Rail (Central - Schaefer Junction)', 'Schaefer Rd (N)', 'Franklin Park (Detroit)', 'Livonia', 'Plymouth-Old Village', '[X] Detroit Plymouth Junction', 'Northville', 'Novi', 'Wixom', 'Kensington Milford', 'Highland Rd'],
+        "F": ['Detroit Regional Rail (Central - Schaefer Junction)', 'Ford Rd', 'Franklin Park (Detroit)', 'Livonia', 'Plymouth-Old Village', '[X] Detroit Plymouth Junction', 'Northville', 'Novi', 'Wixom', 'Kensington Milford', 'Highland Rd'],
     },
     "Detroit Regional Rail (Central - Highland South)": {
         "F": ['Detroit Regional Rail (Central - Wayne)', 'Westland', 'Plymouth (MI)', '[X] Detroit Plymouth Junction', 'Northville', 'Novi', 'Wixom', 'Kensington Milford', 'Highland Rd'],
@@ -8090,7 +8125,7 @@ Segments = {
         "F": ['Detroit Regional Rail (Central - Wayne)', 'Westland', 'Plymouth (MI)', 'Ford Medical Center', 'South Lyon', 'Brighton', 'Howell (MI)'],
     },
     "Detroit Regional Rail (Central - New Center)": {
-        "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit North Bend', 'Detroit New Center'],
+        "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit North Bend', 'Detroit New Center', '[X] Detroit New Center Junction'],
     },
     "Detroit Regional Rail (Central - New Haven)": {
         "F": ['Detroit Regional Rail (Central - New Center)', 'Hamtramck', 'Groesbeck/8 Mile', 'Groesbeck/12 Mile', 'Fraser', 'Mt. Clemens (MI)', 'Chesterfield', 'New Haven'],
@@ -8102,16 +8137,16 @@ Segments = {
         "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit West Junction 2', '[X] Detroit Dearborn Junction', '[X] Detroit Schaefer Junction'],
     },
     "Detroit Regional Rail (Central - Toledo)": {
-        "F": ['Michigan Central Station', '[X] Detroit West Junction 1', '[X] Detroit West Junction 2', 'Springwells', 'River Rouge', 'Wyandotte', 'Riverview', 'Trenton (MI)', 'Rockwood', 'Newport-Swan Creek', 'East Monroe', 'Luna Pier', '[X] Toledo North Junction', 'West Toledo', '[R] Toledo Approach (Toledo - West)'],
+        "F": ['Detroit Regional Rail (Central - Carbon Junction)', 'River Rouge', 'Wyandotte', 'Riverview', 'Trenton (MI)', 'Rockwood', 'Newport-Swan Creek', 'East Monroe', 'Luna Pier', '[X] Toledo North Junction', 'West Toledo', '[R] Toledo Approach (Toledo - West)'],
     },
     "Detroit Regional Rail (Central - Utica)": {
         "F": ['Detroit Regional Rail (Central - New Center)', 'Hamtramck', '8 Mile/Sherwood', '12 Mile/Warren', 'Sterling Heights', 'Utica (MI)'],
     },
     "Detroit Regional Rail (Central - Wayne)": {
-        "F": ['Detroit Regional Rail (Central - Schaefer Junction)', 'Schaefer Rd (S)', 'Dearborn (MI)', 'Inkster', 'Wayne (MI)'],
+        "F": ['Detroit Regional Rail (Central - Schaefer Junction)', 'Schaefer Rd', 'Dearborn (MI)', 'Inkster', 'Wayne (MI)'],
     },
     "Detroit Regional Rail (International Shuttle)": {
-        "F": ['Michigan Central Station', 'Windsor (ON)'],
+        "F": ['Michigan Central Station', '[X] Windsor Tunnel Bend', 'Windsor (ON)'],
     },
     "Houston Approach (Main - East)": {
         "F": ['Houston (TX)', '[X] Houston East Bend N', '[X] Houston East Junction', '[X] Houston Tower 26 Junction'],
@@ -8253,7 +8288,7 @@ Segments = {
         "F": ['[R] Kansas City Regional Rail (Union - Pleasant Hill)', 'Kansas City Regional Rail (Union - Topeka)'],
     },
     "Kansas City Regional Rail (Union - Excelsior Springs)": {
-        "F": ['Kansas City Approach (Union - East)', 'Birmingham (MO)', 'Glenaire', 'Liberty', 'Stockdale', 'Excelsior Springs (MO)'],
+        "F": ['Kansas City Approach (Union - East)', 'Birmingham (MO)', 'Glenaire', 'Liberty', 'Stockdale', 'Excelsior Springs'],
     },
     "Kansas City Regional Rail (Union - Gardner)": {
         "F": ['Kansas City Approach (Union - West)', '[X] KC Southwest Bend', 'Shawnee Heights', '55th St', 'Lake Quivira', '[X] KC Mill Creek Junction', 'Shawnee Mission', 'Prairie Star', 'Olathe', 'Cedar Lake', 'Gardner'],
@@ -9287,7 +9322,7 @@ Segments = {
         "F": ['[R] Pittsburgh Regional Rail (Union - West Maysfield)', 'Pittsburgh Regional Rail (Union - Greensburg)'],
     },
     "Portland Approach (Union - East)": {
-        "F": ['Portland Union Station', '[X] Portland MAX NS Loop NE', '[X] Portland SE Bend', '[X] Portland Steel Bridge W', '[X] Portland Steel Bridge E', '[X] Portland East Bend N', '[X] Portland East Bend S', '[X] Portland Tilikum Bridge Junction', '[X] Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', '[X] SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', '[X] Milwaukie/Main St'],
+        "F": ['Portland Union Station', '[X] Portland MAX NS Loop NE', '[X] Portland SE Bend', '[X] Portland Steel Bridge W', '[X] Portland Steel Bridge E', '[X] Portland East Bend N', '[X] Portland East Bend S'],
     },
     "Portland Approach (Union - West)": {
         "F": ['Portland Union Station', '[X] Portland NW Bend 1', '[X] Portland NW Bend 2', '[X] Portland NW Bend 3', '[X] Portland NW Bend 4'],
@@ -9508,7 +9543,7 @@ Segments = {
         "F": ['[R] Seattle LINK (Chinatown - Lynnwood)', 'Seattle LINK (Chinatown - Redmond)'],
     },
     "Seattle Sounder (King Street - Everett)": {
-        "F": ['Seattle King Street Station', 'SVF', 'Smith Cove', 'Interbay', 'Edmonds (WA)', 'Mukilteo', 'Everett (WA)'],
+        "F": ['Seattle King Street Station', 'SVF', 'Smith Cove', 'Interbay', 'Edmonds (WA)', 'Mukilteo', 'Everett'],
     },
     "Seattle Sounder (King Street - Lakewood)": {
         "F": ['Seattle King Street Station', 'Spokane Viaduct', 'Tukwila (WA)', 'Kent', 'Auburn', 'Sumner', 'Puyallup', 'Tacoma Dome (Amtrak)', 'South Tacoma', 'Lakewood'],
@@ -9624,11 +9659,11 @@ Segments = {
     "Camden Light Rail (Camden - Trenton)": {
         "F": ['Waterfront Entertainment Center', 'Camden Aquarium', 'Cooper St/Rutgers', 'Walter Rand TC', '36th St', 'Pennsauken Transit Center', 'Route 73/Pennsauken', 'Palmyra', 'Riverton', 'Cinnaminson', 'Riverside (NJ)', 'Delanco', 'Beverly-Edgewater Park', 'Burlington South', 'Burlington Towne Centre', 'Florence (NJ)', 'Roebling', 'Bordentown', 'Cass St', 'Hamilton Ave (NJ)', 'Trenton Transit Center'],
     },
-    "Vancouver Approach (Pacific Central - West)": {
-        "F": ['Vancouver Pacific Central Station', '[X] Vancouver Pacific Central Junction', '[X] Commercial-Broadway', '[X] Renfrew', '[X] Rupert', '[X] Sperling-Burnaby Lake', '[X] Braid'],
+    "Vancouver Approach (Waterfront - East)": {
+        "F": ['Vancouver Waterfront Station', '[X] Vancouver Waterfront Bend (Mainline)'],
     },
     "Vancouver Commuter Rail (Waterfront - Mission Harbour)": {
-        "F": ['Vancouver Waterfront Station', 'Moody Centre', '[X] Inlet Centre', 'Coquitlam Central', 'Port Coquitlam', 'Pitt Meadows', 'Maple Meadows', 'Port Haney', '[X] Vancouver Glen Valley Bend', 'Mission Harbour (BC)'],
+        "F": ['Vancouver Approach (Waterfront - East)', 'Moody Centre', '[X] Inlet Centre', 'Coquitlam Central', 'Port Coquitlam', 'Pitt Meadows', 'Maple Meadows', 'Port Haney', '[X] Vancouver Glen Valley Bend', 'Mission Harbour (BC)'],
     },
     "Vancouver SkyTrain (UBC - Coquitlam)": {
         "F": ['UBC Exchange', '[X] Vancouver UBC Bend 1', '[X] Vancouver UBC Bend 2', 'Sasamat', 'Alma', 'Macdonald', 'Arbutus', 'South Granville', 'Oak-VGH', 'Broadway-City Hall', 'Mount Pleasant (BC)', 'Great Northern Way-Emily Carr', 'VCC-Clark', 'Commercial-Broadway', 'Renfrew', 'Rupert', 'Gilmore', 'Brentwood Town Centre', 'Holdom', 'Sperling-Burnaby Lake', 'Lake City Way', 'Production Way-University', 'Lougheed Town Centre', 'Burquitlam', 'Moody Centre', 'Inlet Centre', 'Coquitlam Central', 'Lincoln (BC)', 'Lafarge Lake-Douglas'],
@@ -9640,7 +9675,7 @@ Segments = {
         "F": ['Vancouver Waterfront Station', 'Vancouver City Centre', 'Yaletown-Roundhouse', 'Olympic Village', 'Broadway-City Hall', 'King Edward', 'Oakridge-41st Ave', 'Langara-49th Ave', 'Marine Drive', 'Bridgeport (BC)'],
     },
     "Vancouver SkyTrain (Waterfront - Broadway)": {
-        "F": ['Vancouver Waterfront Station', '[X] Vancouver Waterfront Bend', 'Burrard', 'Granville', 'Stadium-Chinatown', 'Main St-Science World', '[X] VCC-Clark', 'Commercial-Broadway'],
+        "F": ['Vancouver Waterfront Station', '[X] Vancouver Waterfront Bend (SkyTrain)', 'Burrard', 'Granville', 'Stadium-Chinatown', 'Main St-Science World', '[X] VCC-Clark', 'Commercial-Broadway'],
     },
     "Vancouver SkyTrain (Waterfront - Columbia)": {
         "F": ['Vancouver SkyTrain (Waterfront - Broadway)', 'Nanaimo', '29th Ave', 'Joyce-Collingwood', 'Patterson (BC)', 'Royal Oak (BC)', 'Edmonds (BC)', '22nd St (BC)', 'New Westminster', 'Columbia (BC)'],
@@ -9836,7 +9871,7 @@ Lines = {
             "New York - Charlotte": {'Mode': 2, 'Stations': '-Intercity LS (New York - Charlotte)'},
         },
         "Cascades": {
-            "Vancouver - Seattle - Portland - Eugene": {'Mode': 2, 'Stations': '-Intercity LS (Vancouver - Eugene)'},
+            "Vancouver - Eugene": {'Mode': 2, 'Stations': '-Intercity LS (Vancouver - Eugene)'},
         },
         "Centennial": {
             "Denver - Salt Lake City": {'Mode': 2, 'Stations': '-Intercity LS (Denver - Salt Lake City)'},
@@ -9848,10 +9883,10 @@ Lines = {
             "Los Angeles - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - Seattle)'},
         },
         "Columbine": {
-            "Pueblo - Denver - Fort Collins": {'Mode': 2, 'Stations': '-Intercity LS (Pueblo - Fort Collins)'},
+            "Pueblo - Fort Collins": {'Mode': 2, 'Stations': '-Intercity LS (Pueblo - Fort Collins)'},
         },
         "Cornhusker": {
-            "Chicago Union - Omaha": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Omaha via Des Moines)'},
+            "Chicago - Omaha": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Omaha via Des Moines)'},
         },
         "Crescent": {
             "New York - Dallas": {'Mode': 2, 'Stations': '-Intercity LS (New York - Dallas)'},
@@ -9873,8 +9908,8 @@ Lines = {
             "Boston - Rockland": {'Mode': 2, 'Stations': '-Intercity LS (Boston - Rockland)'},
         },
         "Empire Builder": {
-            "Chicago Union - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland North)'},
-            "Chicago Union - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle North)'},
+            "Chicago - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland North)'},
+            "Chicago - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle North)'},
         },
         "Empire Service": {
             "New York - Niagara Falls": {'Mode': 2, 'Stations': '-Intercity LS (New York - Niagara)'},
@@ -9892,7 +9927,7 @@ Lines = {
             "Chicago - Kansas City": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Kansas City)'},
         },
         "Gateway": {
-            "Chicago Union - St. Louis": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - St. Louis)'},
+            "Chicago - St. Louis": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - St. Louis)'},
         },
         "Gemini": {
             "Chicago - St. Paul": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - St. Paul)'},
@@ -9956,7 +9991,7 @@ Lines = {
             "Boston - Lincoln": {'Mode': 2, 'Stations': '-Intercity LS (Boston - Lincoln)'},
         },
         "Lincoln Service": {
-            "Chicago Union - St. Louis": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - St. Louis)'},
+            "Chicago - St. Louis": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - St. Louis)'},
         },
         "Little Crow Line": {
             "Minneapolis - Sioux Falls": {'Mode': 2, 'Stations': '-Intercity LS (Minneapolis - Sioux Falls)'},
@@ -9992,8 +10027,8 @@ Lines = {
             "Pittsburgh - State College": {'Mode': 2, 'Stations': '-Intercity LS (Pittsburgh - Lemont)'},
         },
         "North Coast Hiawatha": {
-            "Chicago Union - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland South)'},
-            "Chicago Union - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle South)'},
+            "Chicago - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland South)'},
+            "Chicago - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle South)'},
         },
         "Northeast Regional": {
             "New York - Bristol": {'Mode': 2, 'Stations': '-Intercity LS (New York - Bristol)'},
@@ -10011,6 +10046,9 @@ Lines = {
         },
         "Pacific Surfliner": {
             "San Diego - LA - Santa Barbara": {'Mode': 2, 'Stations': '-Intercity LS (San Diego - Santa Barbara)'},
+        },
+        "Pacifica": {
+            "Vancouver - Eugene": {'Mode': 1, 'Stations': '-Intercity HS (Vancouver - Eugene)'},
         },
         "Palmetto": {
             "New York - Savannah": {'Mode': 2, 'Stations': '-Intercity LS (New York - Savannah)'},
@@ -10072,7 +10110,7 @@ Lines = {
             "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa)'},
         },
         "Southwest Chief": {
-            "Chicago Union - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)'},
+            "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)'},
         },
         "Sun City": {
             "Denver - El Paso": {'Mode': 2, 'Stations': '-Intercity LS (Denver - El Paso)'},
@@ -10087,7 +10125,7 @@ Lines = {
             "San Jose - Santa Cruz": {'Mode': 2, 'Stations': '-Intercity LS (San Jose - Santa Cruz)'},
         },
         "Texas Eagle": {
-            "Chicago Union - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW)'},
+            "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW)'},
         },
         "Thrasher": {
             "Atlanta - Savannah": {'Mode': 2, 'Stations': '-Intercity LS (Atlanta - Savannah)'},
@@ -11213,10 +11251,10 @@ Lines = {
     },
     "South Shore Line": {
         "Lakeshore Corridor": {
-            "Chicago Union - South Bend": {'Mode': 3, 'Stations': 'Chicago SSL (Millennium - South Bend)'},
+            "Chicago - South Bend": {'Mode': 3, 'Stations': 'Chicago SSL (Millennium - South Bend)'},
         },
         "Monon Corridor": {
-            "Chicago Union - South Bend": {'Mode': 3, 'Stations': 'Chicago SSL (Millennium - Dyer)'},
+            "Chicago - Dyer": {'Mode': 3, 'Stations': 'Chicago SSL (Millennium - Dyer)'},
         },
     },
     "TDOT": {

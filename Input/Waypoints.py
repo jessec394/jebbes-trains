@@ -124,7 +124,7 @@ Projects = {
         "Description": "Expanded rail transit in the South requires establishing Atlanta as a proper intercity hub. A new multimodal station in the heart of downtown would anchor both regional and intercity rail while providing direct access to Mercedes-Benz Stadium and State Farm Arena."
     },
     "Atlanta Regional Rail Network": {
-        "Source": "ATL Trains",
+        "Source": "Proposal",
         "Location": (33.67337, -84.08028),
         "Radius": Radius2,
         "Image": 'ATL Trains.png',
@@ -140,7 +140,7 @@ Projects = {
         "Description": "This 5.5-mile extension of the existing Red Line will include four stops south of its current 95th/Dan Ryan terminus."
     },
     "Chicago Union Station Overhaul": {
-        "Source": 'High-Speed Rail Alliance',
+        "Source": 'Proposal',
         "Location": (41.87896, -87.64183),
         "Radius": Radius1,
         "Image": 'Chicago Union Station.jpg',
@@ -156,7 +156,7 @@ Projects = {
         "Description": "Columbus currently has no rail transportation of any kind; but proposals to restore service to Ohio's capital aim to transform its downtown convention center into a multimodal transit hub."
     },
     "Denver's Southwest Heavy Rail Upgrade": {
-        "Source": 'Greater Denver Transit',
+        "Source": 'Proposal',
         "Location": (39.76004, -105.00384),
         "Radius": Radius1,
         "Image": 'Denver Heavy Rail Upgrade.jpg',
@@ -195,6 +195,14 @@ Projects = {
         "Link": 'http://classiclasvegas.squarespace.com/classic-las-vegas-blog/2010/7/11/the-union-plaza-a-look-back-to-the-beginning.html;jsessionid=A78FDA2D2B70E0F00CF777D659767AAC.v5-web012',
         "Description": "Union Plaza once served downtown Las Vegas as the city's intercity rail hub. Proposals to revive routes to Los Angeles and Salt Lake City would ideally restore this historic station."
     },
+    "North-South Rail Link": {
+        "Source": "Proposal",
+        "Location": (42.36495, -71.05462),
+        "Radius": Radius1,
+        "Image": 'Boston NSRL.png',
+        "Link": 'https://www.northsouthraillink.org/',
+        "Description": "Originally in the scope of the Big Dig project, Boston's North-South Rail Link would transform the city's two major rail terminals into through-running stations. This would massively increase capacity and passenger throughput, as Philadelphia demonstrated with a similar project."
+    },
     "Penn Station Reconstruction": {
         "Source": "MTA/Amtrak",
         "Location": (40.75470, -73.99616),
@@ -212,7 +220,7 @@ Projects = {
         "Description": "Denver's shortest commuter train will become its longest after being extended beyond its current Westminster terminus to Boulder and Longmont, sharing the northwest corridor with Front Range Passenger Rail"
     },
     "RTD G Line Extension": {
-        "Source": 'Greater Denver Transit',
+        "Source": 'Proposal',
         "Location": (39.77305, -105.21986),
         "Radius": Radius1,
         "Image": 'RTD G Line Extension.png',
@@ -235,21 +243,21 @@ Projects = {
         "Link": 'https://www.rtd-denver.com/about-rtd/projects/fastracks/n-line',
         "Description": "Phase II of Fastracks plans to extend the N Line north of E-470."
     },
-    "Roosevelt Blvd Subway": {
-        "Source": "Roosevelt Blvd Subway",
-        "Location": (40.0923, -75.03517),
-        "Radius": Radius2,
-        "Image": 'Roosevelt Blvd Subway.jpg',
-        "Link": 'https://blvdsubway.com/',
-        "Description": "A cut-and-cover subway under Roosevelt Blvd would extend SEPTA to a heavily underserved part of Philadelphia/"
-    },
-    "Salt Lake City Rio Grande Depot": {
-        "Source": "Rio Grande Plan",
+    "Rio Grande Depot": {
+        "Source": "Proposal",
         "Location": (40.75699, -111.91351),
         "Radius": Radius1,
         "Image": 'SLC Rio Grande Depot.png',
         "Link": 'https://riograndeplansaltlakecity.org',
         "Description": "The Rio Grande Plan would reactivate Salt Lake City's historic train depot and reroute regional/intercity service through the core of downtown."
+    },
+    "Roosevelt Blvd Subway": {
+        "Source": "Proposal",
+        "Location": (40.0923, -75.03517),
+        "Radius": Radius2,
+        "Image": 'Roosevelt Blvd Subway.jpg',
+        "Link": 'https://blvdsubway.com/',
+        "Description": "A cut-and-cover subway under Roosevelt Blvd would extend SEPTA to a heavily underserved part of Philadelphia/"
     },
     "San Francisco Salesforce TC": {
         "Source": "Transbay Joint Powers Authority",
