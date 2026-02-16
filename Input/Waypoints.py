@@ -213,16 +213,16 @@ Projects = {
     },
     "RTD B Line Extension": {
         "Source": 'RTD',
-        "Location": (39.89241, -105.05843),
-        "Radius": Radius1,
+        "Location": (39.89636, -105.04641),
+        "Radius": Radius2,
         "Image": 'RTD B Line Extension.png',
         "Link": 'https://www.rtd-denver.com/about-rtd/projects/fastracks/b-line',
         "Description": "Denver's shortest commuter train will become its longest after being extended beyond its current Westminster terminus to Boulder and Longmont, sharing the northwest corridor with Front Range Passenger Rail"
     },
     "RTD G Line Extension": {
         "Source": 'Proposal',
-        "Location": (39.77305, -105.21986),
-        "Radius": Radius1,
+        "Location": (39.78518, -105.21934),
+        "Radius": Radius2,
         "Image": 'RTD G Line Extension.png',
         "Link": 'https://www.greaterdenvertransit.com/rtd-gline-extension',
         "Description": "Despite not being included in the Fastracks plan, downtown Golden is the logical endpoint of an eventual G Line extension along RTD-owned right-of-way."
@@ -237,8 +237,8 @@ Projects = {
     },
     "RTD N Line Extension": {
         "Source": 'RTD',
-        "Location": (39.98847, -104.96166),
-        "Radius": Radius1,
+        "Location": (39.98610, -104.97436),
+        "Radius": Radius2,
         "Image": 'RTD N Line Extension.jpg',
         "Link": 'https://www.rtd-denver.com/about-rtd/projects/fastracks/n-line',
         "Description": "Phase II of Fastracks plans to extend the N Line north of E-470."

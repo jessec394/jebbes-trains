@@ -78,7 +78,10 @@ class MapBuilder:
         SatelliteLayer.add_to(self.Map)
 
     def _ProcessDataNew(self):
-        ModeZOrder = {Mode: Idx for Idx, Mode in enumerate(reversed(list(self.Modes.keys())))}
+        ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
+
+        # Collect all layer data first
+        LayersToAdd = []
 
         for Operator, OperatorLines in self.LinesNew.items():
             for LineName, ServicePatterns in OperatorLines.items():
@@ -107,11 +110,32 @@ class MapBuilder:
                     PatternsPayload.append({"Name": PatternName, "Stations": FullPatternStations, "Diagram": Diagram})
 
                 if CombinedFeatures:
-                    self._AddLineLayerNew(Operator, LineName, ModeId, ModeSettings,
-                                         ModeZOrder, CombinedFeatures, PatternsPayload, AllLineStations)
+                    LayersToAdd.append({
+                        'Operator': Operator,
+                        'LineName': LineName,
+                        'ModeId': ModeId,
+                        'ModeSettings': ModeSettings,
+                        'CombinedFeatures': CombinedFeatures,
+                        'PatternsPayload': PatternsPayload,
+                        'AllLineStations': AllLineStations,
+                        'ZOrder': ModeZOrder.get(ModeId, 0)
+                    })
+
+        # Sort by ZOrder and add to map
+        LayersToAdd.sort(key=lambda x: x['ZOrder'])
+
+        for LayerData in LayersToAdd:
+            self._AddLineLayerNew(
+                LayerData['Operator'], LayerData['LineName'], LayerData['ModeId'],
+                LayerData['ModeSettings'], ModeZOrder, LayerData['CombinedFeatures'],
+                LayerData['PatternsPayload'], LayerData['AllLineStations']
+            )
 
     def _ProcessDataOld(self):
-        ModeZOrder = {Mode: Idx for Idx, Mode in enumerate(reversed(list(self.Modes.keys())))}
+        ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
+
+        # Collect all layer data first
+        LayersToAdd = []
 
         for Operator, OperatorLines in self.LinesOld.items():
             for LineName, ServicePatterns in OperatorLines.items():
@@ -137,8 +161,26 @@ class MapBuilder:
                         MultiPatternCoordinates.append([[Lat, Lon] for Lat, Lon in PatternCoords])
 
                 if MultiPatternCoordinates:
-                    self._AddLineLayerOld(Operator, LineName, ModeId, ModeSettings,
-                                         ModeZOrder, MultiPatternCoordinates, PatternsPayload, AllLineStations)
+                    LayersToAdd.append({
+                        'Operator': Operator,
+                        'LineName': LineName,
+                        'ModeId': ModeId,
+                        'ModeSettings': ModeSettings,
+                        'MultiPatternCoordinates': MultiPatternCoordinates,
+                        'PatternsPayload': PatternsPayload,
+                        'AllLineStations': AllLineStations,
+                        'ZOrder': ModeZOrder.get(ModeId, 0)
+                    })
+
+        # Sort by ZOrder and add to map
+        LayersToAdd.sort(key=lambda x: x['ZOrder'])
+
+        for LayerData in LayersToAdd:
+            self._AddLineLayerOld(
+                LayerData['Operator'], LayerData['LineName'], LayerData['ModeId'],
+                LayerData['ModeSettings'], ModeZOrder, LayerData['MultiPatternCoordinates'],
+                LayerData['PatternsPayload'], LayerData['AllLineStations']
+            )
 
     def _AddLineLayerNew(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, CombinedFeatures, PatternsPayload, AllLineStations):
         LineId = f"LineNew_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
@@ -162,7 +204,7 @@ class MapBuilder:
         ).add_to(self.Map)
 
         LayerName = GeoJsonLayer.get_name()
-        self.LineMappingJsNew += f"window['{LineId}']={LayerName};{LayerName}.setZIndex({ZIndex});{LayerName}.bringToFront();{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
+        self.LineMappingJsNew += f"window['{LineId}']={LayerName};{LayerName}.setZIndex({ZIndex});{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
 
     def _AddLineLayerOld(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, MultiPatternCoordinates, PatternsPayload, AllLineStations):
         LineId = f"LineOld_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
