@@ -6082,7 +6082,7 @@ Segments = {
         "Keep": ['San Francisco Salesforce TC', 'Millbrae', 'San Jose Diridon Station', 'Gilroy'],
     },
     "-Intercity HS (Seattle - Portland)": {
-        "F": ['Seattle King Street Station', '[X] Spokane Viaduct', '[X] Tukwila', '[X] Seattle Sumner Bend', '[X] Lakewood', '[X] Olympia-Lacey', '[X] Centralia (WA)', '[X] Portland Vancouver HSR Bend', 'Portland NW Bend 1', 'Portland Union Station'],
+        "F": ['Seattle King Street Station', '[X] Spokane Viaduct', '[X] Tukwila', '[X] Seattle Sumner Bend', '[X] Lakewood', '[X] Olympia-Lacey', '[X] Centralia (WA)', '[X] Portland Vancouver HSR Bend', '[X] Portland NW Bend 1', 'Portland Union Station'],
     },
     "-Intercity HS (Seattle - Vancouver)": {
         "F": ['Seattle King Street Station', '[X] Seattle Lynnwood Bend', '[X] Lynnwood City Center', '[X] Everett HSR Bend', '[X] Mt. Vernon (WA)', '[X] Vancouver Abbotsford Bend', '[X] Vancouver TCH Bend E', '[X] Vancouver TCH Bend W', 'Vancouver Waterfront Station'],
