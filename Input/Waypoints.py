@@ -147,6 +147,14 @@ Projects = {
         "Link": 'https://www.hsrail.org/blog/its-time-to-fix-union-station',
         "Description": "A proposed overhaul of Chicago's central hub would modernize the concourse, open up the platforms, and allow through-running."
     },
+    "Clifton Corridor": {
+        "Source": "MARTA",
+        "Location": (33.81322, -84.34195),
+        "Radius": Radius1,
+        "Image": 'MARTA Clifton BRT.png',
+        "Link": 'https://roughdraftatlanta.com/2022/11/21/marta-presents-one-light-rail-two-bus-options-for-clifton-corridor',
+        "Description": "MARTA's Clifton Corridor will be constructed as bus rapid transit to serve the CDC and Emory University in between two existing heavy rail stations. The corridor would ideally be upgraded to light rail in the future, and it would run alongside mainline regional and intercity trains."
+    },
     "Columbus Convention Center": {
         "Source": "Proposal",
         "Location": (39.97465, -83.00003),
@@ -162,6 +170,14 @@ Projects = {
         "Image": 'Denver Heavy Rail Upgrade.jpg',
         "Link": 'https://www.greaterdenvertransit.com/frontrangepassengerrail/rtdheavyrailupgrade',
         "Description": "The southwest heavy rail upgrade, proposed by Greater Denver Transit, aims to enable through-running at Union Station by activating the unused tail tracks of the light rail stub platforms and connecting them to the northbound mainline. This would allow both Amtrak and RTD commuter trains to pass through Union Station without reversing, which would massively improve the capacity of each line and the daily throughput of trains."
+    },
+    "Five Points Transformation": {
+        "Source": "MARTA",
+        "Location": (33.74930, -84.39035),
+        "Radius": Radius1,
+        "Image": 'MARTA Five Points.png',
+        "Link": 'http://fivepointstransformation.com/home',
+        "Description": "The massive overhaul of MARTA's central transit hub will include overhauled facilities, new amenities, public spaces, and retail opportunities."
     },
     "LA Metro Sepulveda Subway": {
         "Source": "LA Metro",
