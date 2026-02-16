@@ -8,7 +8,7 @@ import Input.Data1 as D1
 import Input.Data2 as D2
 import Input.Properties as Props
 
-from Input.Waypoints import Projects
+from Input.Waypoints import Waypoints
 
 class MapBuilder:
     def __init__(self, LinesPath):
@@ -27,7 +27,7 @@ class MapBuilder:
         self.LineMappingJsNew = ""
         self.LineMappingJsOld = ""
         self.BasemapLayerNames = {}
-        self.InfoPoints = Projects
+        self.InfoPoints = Waypoints
 
     def BuildMap(self):
         self.Map = folium.Map(location=[40, -100], zoom_start=5, tiles=None, zoom_control=False, prefer_canvas=True)

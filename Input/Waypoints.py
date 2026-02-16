@@ -2,111 +2,6 @@ Radius1 = 0.2
 Radius2 = 1.0
 
 Waypoints = {
-    "Airports": {
-        "(ATL) Hartsfield-Jackson Atlanta International Airport": {"Location": (33.63241, -84.43331), "Radius": 2.0},
-        "(BOS) Boston Logan International Airport": {"Location": (42.36560, -71.00961), "Radius": 1.5},
-        "(BUR) Hollywood-Burbank International Airport": {"Location": (34.19831, -118.35740), "Radius": 2.0},
-        "(BWI) Baltimore/Washington International Airport": {"Location": (39.17741, -76.66839), "Radius": 1.5},
-        "(CLE) Cleveland Hopkins International Airport": {"Location": (41.40579, -81.85386), "Radius": 2.0},
-        "(CMH) John Glenn Columbus International Airport": {"Location": (39.99993, -82.88717), "Radius": 1.5},
-        "(DCA) Ronald Reagan Washington National Airport": {"Location": (38.85010, -77.03917), "Radius": 1.0},
-        "(DEN) Denver International Airport": {"Location": (39.85634, -104.67639), "Radius": 3.0},
-        "(DFW) Dallas Fort Worth International Airport": {"Location": (32.89809, -97.03370), "Radius": 3.5},
-        "(DTW) Detroit Metropolitan Wayne County Airport": {"Location": (42.21322, -83.35248), "Radius": 2.5},
-        "(IAD) Washington Dulles International Airport": {"Location": (38.95224, -77.45788), "Radius": 2.5},
-        "(IAH) Houston George Bush Interncontinental Airport": {"Location": (29.99310, -95.34162), "Radius": 2.5},
-        "(ISP) Long Island MacArthur Airport": {"Location": (40.79563, -73.09875), "Radius": 1.0},
-        "(EWR) Newark Liberty International Airport": {"Location": (40.68848, -74.17686), "Radius": 2.0},
-        "(FLL) Fort Lauderdale-Hollywood International Airport": {"Location": (26.07317, -80.15123), "Radius": 2.0},
-        "(GYY) Gary/Chicago Airport": {"Location": (41.61773, -87.40842), "Radius": 1.0},
-        "(JFK) John F. Kennedy International Airport": {"Location": (40.64461, -73.77972), "Radius": 2.5},
-        "(LAS) Las Vegas Harry Reid International Airport": {"Location": (36.08309, -115.14822), "Radius": 2.0},
-        "(LAX) Los Angeles International Airport": {"Location": (33.94215, -118.40360), "Radius": 3.0},
-        "(LGA) LaGuardia Airport": {"Location": (40.77664, -73.87424), "Radius": 1.0},
-        "(MDW) Chicago Midway International Airport": {"Location": (41.78677, -87.75218), "Radius": 1.0},
-        "(MIA) Miami International Airport": {"Location": (25.79234, -80.28230), "Radius": 2.0},
-        "(MKE) Milwaukee Mitchell International Airport": {"Location": (42.94388, -87.90076), "Radius": 2.0},
-        "(MSP) Minneapolis-St. Paul International Airport": {"Location": (44.88505, -93.21443), "Radius": 2.0},
-        "(OAK) Oakland International Airport": {"Location": (37.71903, -122.21958), "Radius": 1.5},
-        "(ONT) Ontario International Airport": {"Location": (34.05599, -117.59809), "Radius": 1.5},
-        "(ORD) Chicago O'Hare International Airport": {"Location": (41.98025, -87.90898), "Radius": 3.0},
-        "(PDX) Portland International Airport": {"Location": (45.58526, -122.59171), "Radius": 2.0},
-        "(PHL) Philadelphia International Airport": {"Location": (39.87297, -75.24369), "Radius": 2.0},
-        "(SEA) Seattle-Tacoma International Airport": {"Location": (47.44836, -122.30859), "Radius": 2.0},
-        "(SFO) San Francisco International Airport": {"Location": (37.61911, -122.38162), "Radius": 2.0},
-        "(SNS) Southern Nevada Supplemental Airport": {"Location": (35.68893, -115.36151), "Radius": 1.0},
-        "(STL) St. Louis Lambert International Airport": {"Location": (38.74994, -90.37481), "Radius": 2.5},
-        "(YUL) Aéroport International Montréal-Trudeau": {"Location": (45.46828, -73.74146), "Radius": 2.0},
-        "(YYZ) Toronto Pearson International Airport": {"Location": (43.67983, -79.62838), "Radius": 3.0},
-    },
-    "Campuses": {
-        "Colorado Mesa University": {"Location": (39.08049, -108.55340), "Radius": 0.4},
-        "Colorado School of Mines": {"Location": (39.75104, -105.22257), "Radius": 0.3},
-        "Colorado State University": {"Location": (40.57294, -105.08483), "Radius": 0.8},
-        "Metropolitan State University of Denver": {"Location": (39.74391, -105.00468), "Radius": 0.4},
-        "The Ohio State University": {"Location": (39.99938, -83.02271), "Radius": 1.0},
-        "University of Colorado - Boulder": {"Location": (40.00734, -105.26598), "Radius": 0.7},
-        "University of Denver": {"Location": (39.67661, -104.96189), "Radius": 0.3},
-        "University of Minnesota - Twin Cities": {"Location": (44.97535, -93.23307), "Radius": 0.5},
-        "US Air Force Academy": {"Location": (38.99283, -104.85829), "Radius": 1.5},
-    },
-    "Venues": {
-        "Allegiant Stadium": {"Location": (36.09086, -115.18332), "Radius": 0.15},
-        "Allianz Field": {"Location": (44.95316, -93.16471), "Radius": 0.10},
-        "Ball Arena": {"Location": (39.74865, -105.00759), "Radius": 0.10},
-        "Barclays Center": {"Location": (40.68264, -73.97541), "Radius": 0.10},
-        "Chase Center": {"Location": (37.76801, -122.38787), "Radius": 0.10},
-        "Citi Field": {"Location": (40.75700, -73.84590), "Radius": 0.15},
-        "Coors Field": {"Location": (39.75610, -104.99416), "Radius": 0.15},
-        "Day Air Ballpark": {"Location": (39.76428, -84.18512), "Radius": 0.10},
-        "Empower Field": {"Location": (39.74390, -105.02014), "Radius": 0.20},
-        "Ethiad Park": {"Location": (40.75829, -73.84339), "Radius": 0.10},
-        "Fenway Park": {"Location": (42.34667, -71.09721), "Radius": 0.10},
-        "Future Broncos Stadium": {"Location": (39.73235, -105.00699), "Radius": 0.15},
-        "Future Browns Stadium": {"Location": (41.41058, -81.82417), "Radius": 0.20},
-        "Future Fire Stadium": {"Location": (41.86472, -87.63222), "Radius": 0.10},
-        "Future Revolution Stadium": {"Location": (42.39426, -71.06578), "Radius": 0.10},
-        "Future Summit Stadium": {"Location": (39.70287, -104.99327), "Radius": 0.10},
-        "Future Timberwolves Arena": {"Location": (44.98267, -93.28415), "Radius": 0.05},
-        "Grand Casino Arena": {"Location": (44.94481, -93.10111), "Radius": 0.10},
-        "Great American Ball Park": {"Location": (39.09738, -84.50706), "Radius": 0.15},
-        "Huntington Bank Field": {"Location": (41.50605, -81.69954), "Radius": 0.20},
-        "Huntington Bank Stadium": {"Location": (44.97652, -93.22454), "Radius": 0.15},
-        "Huntington Park": {"Location": (39.96866, -83.01113), "Radius": 0.10},
-        "Levi's Stadium": {"Location": (37.40331, -121.96937), "Radius": 0.15},
-        "Lower.com Field": {"Location": (39.96840, -83.01693), "Radius": 0.10},
-        "Madison Square Garden": {"Location": (40.75498, -74.00439), "Radius": 0.10},
-        "MetLife Stadium": {"Location": (40.81350, -74.07445), "Radius": 0.15},
-        "Nationwide Arena": {"Location": (39.96920, -83.00604), "Radius": 0.10},
-        "Oakland Arena": {"Location": (37.75033, -122.20304), "Radius": 0.10},
-        "Oakland Coliseum": {"Location": (37.75141, -122.20091), "Radius": 0.15},
-        "Oracle Park": {"Location": (37.77836, -122.38991), "Radius": 0.15},
-        "Paycor Stadium": {"Location": (39.09545, -84.51605), "Radius": 0.15},
-        "PayPal Park": {"Location": (37.35113, -121.92465), "Radius": 0.10},
-        "Progressive Field": {"Location": (41.49589, -81.68529), "Radius": 0.15},
-        "Prudential Center": {"Location": (40.73353, -74.17106), "Radius": 0.10},
-        "Rate Field": {"Location": (41.82988, -87.63366), "Radius": 0.10},
-        "Rocket Arena": {"Location": (41.49654, -81.68805), "Radius": 0.10},
-        "SAP Center": {"Location": (37.33276, -121.90111), "Radius": 0.10},
-        "Soldier Field": {"Location": (41.86231, -87.61668), "Radius": 0.15},
-        "Sports Illustrated Stadium": {"Location": (40.73684, -74.15023), "Radius": 0.15},
-        "T-Mobile Arena": {"Location": (36.10281, -115.17819), "Radius": 0.10},
-        "Target Center": {"Location": (44.97946, -93.27609), "Radius": 0.05},
-        "Target Field": {"Location": (44.98174, -93.27762), "Radius": 0.10},
-        "TD Garden": {"Location": (42.36619, -71.06214), "Radius": 0.10},
-        "TQL Stadium": {"Location": (39.11092, -84.52231), "Radius": 0.10},
-        "UBS Arena": {"Location": (40.71179, -73.72603), "Radius": 0.10},
-        "United Center": {"Location": (41.88069, -87.67417), "Radius": 0.10},
-        "US Bank Stadium": {"Location": (44.97364, -93.25749), "Radius": 0.15},
-        "Williams Arena": {"Location": (44.97705, -93.22829), "Radius": 0.05},
-        "Wolstein Center": {"Location": (41.49938, -81.67686), "Radius": 0.10},
-        "Wrigley Field": {"Location": (41.94843, -87.65533), "Radius": 0.10},
-        "Yankee Stadium": {"Location": (40.82964, -73.92617), "Radius": 0.15},
-        "3M Arena at Mariucci": {"Location": (44.97801, -93.22806), "Radius": 0.05},
-    }
-}
-
-Projects = {
     # "": {
     #     "Source": "",
     #     "Location": (),
@@ -163,14 +58,6 @@ Projects = {
         "Link": 'https://columbusunderground.com/study-amtrak-station-new-plaza-could-be-added-to-convention-center-bw1',
         "Description": "Columbus currently has no rail transportation of any kind; but proposals to restore service to Ohio's capital aim to transform its downtown convention center into a multimodal transit hub."
     },
-    "Denver's Southwest Heavy Rail Upgrade": {
-        "Source": 'Proposal',
-        "Location": (39.76004, -105.00384),
-        "Radius": Radius1,
-        "Image": 'Denver Heavy Rail Upgrade.jpg',
-        "Link": 'https://www.greaterdenvertransit.com/frontrangepassengerrail/rtdheavyrailupgrade',
-        "Description": "The southwest heavy rail upgrade, proposed by Greater Denver Transit, aims to enable through-running at Union Station by activating the unused tail tracks of the light rail stub platforms and connecting them to the northbound mainline. This would allow both Amtrak and RTD commuter trains to pass through Union Station without reversing, which would massively improve the capacity of each line and the daily throughput of trains."
-    },
     "Five Points Transformation": {
         "Source": "MARTA",
         "Location": (33.74930, -84.39035),
@@ -178,6 +65,14 @@ Projects = {
         "Image": 'MARTA Five Points.png',
         "Link": 'http://fivepointstransformation.com/home',
         "Description": "The massive overhaul of MARTA's central transit hub will include overhauled facilities, new amenities, public spaces, and retail opportunities."
+    },
+    "Interborough Express": {
+        "Source": "MTA",
+        "Location": (40.63175, -73.92414),
+        "Radius": Radius1,
+        "Image": 'Interborough Express.png',
+        "Link": 'https://www.mta.info/project/interborough-express',
+        "Description": "Originally scoped as a light rail corridor, the IBX has since been upgraded to a fully grade-separated light metro connecting Brooklyn and Queens."
     },
     "LA Metro Sepulveda Subway": {
         "Source": "LA Metro",
@@ -194,6 +89,22 @@ Projects = {
         "Image": 'LA Union Station.jpg',
         "Link": 'https://la.urbanize.city/post/california-high-speed-rail-la-union-station',
         "Description": "Link US will provide access to Union Station from the south, allowing Metrolink regional trains as well as California High-Speed Rail to run through the station."
+    },
+    "LaGuardia AirTrain": {
+        "Source": "Proposal",
+        "Location": (40.76293, -73.8544),
+        "Radius": Radius1,
+        "Image": 'LaGuardia AirTrain.png',
+        "Link": 'https://www.abetterwaytolga.com',
+        "Description": "An automated peoplemover would connect LaGuardia to the 7 Train and Long Island Rail Road at Mets-Willets Point."
+    },
+    "LaGuardia Subway Extension": {
+        "Source": "Proposal",
+        "Location": (40.77659, -73.87869),
+        "Radius": Radius1,
+        "Image": 'LaGuardia Subway.jpg',
+        "Link": 'https://www.vanshnookenraggen.com/_index/2018/06/the-r-train-laguardia-airport-and-the-ripple-effect-in-transit',
+        "Description": "LaGuardia Airport is currently not served by any form of rail transit. The N and W trains could be extended beyond Astoria-Ditmars Blvd to directly serve the terminals and even connect to a future automated peoplemover."
     },
     "Las Vegas Brightline Station": {
         "Source": "Brightline West",
@@ -218,6 +129,22 @@ Projects = {
         "Image": 'Boston NSRL.png',
         "Link": 'https://www.northsouthraillink.org/',
         "Description": "Originally in the scope of the Big Dig project, Boston's North-South Rail Link would transform the city's two major rail terminals into through-running stations. This would massively increase capacity and passenger throughput, as Philadelphia demonstrated with a similar project."
+    },
+    "Queenslink": {
+        "Source": "Proposal",
+        "Location": (40.71559, -73.86458),
+        "Radius": Radius1,
+        "Image": 'Queenslink.png',
+        "Link": 'https://thequeenslink.org',
+        "Description": "Extending the subway along a disused rail viaduct would bridge a crucial gap and allow much easier crosstown travel in Queens."
+    },
+    "Newark Airport PATH Extension": {
+        "Source": "Proposal",
+        "Location": (40.71273, -74.17738),
+        "Radius": Radius1,
+        "Image": 'PATH Newark Airport.jpg',
+        "Link": 'https://stewartmader.com/pathnewarkairport/',
+        "Description": "Extending PATH beyond Newark Penn Station would allow one-seat rides between Newark Airport and Lower Manhattan."
     },
     "Penn Station Reconstruction": {
         "Source": "MTA/Amtrak",
@@ -282,5 +209,13 @@ Projects = {
         "Image": 'Salesforce TC.jpg',
         "Link": 'https://www.sfcta.org/projects/salesforce-transit-center',
         "Description": "San Francisco's new multimodal hub will bring regional and high-speed rail from the peninsula into the heart of the city. Future construction will allow trains to continue east across the San Francisco Bay toward Oakland and beyond."
+    },
+    "Southwest Heavy Rail Upgrade": {
+        "Source": 'Proposal',
+        "Location": (39.76004, -105.00384),
+        "Radius": Radius1,
+        "Image": 'Denver Heavy Rail Upgrade.jpg',
+        "Link": 'https://www.greaterdenvertransit.com/frontrangepassengerrail/rtdheavyrailupgrade',
+        "Description": "The southwest heavy rail upgrade, proposed by Greater Denver Transit, aims to enable through-running at Union Station by activating the unused tail tracks of the light rail stub platforms and connecting them to the northbound mainline. This would allow both Amtrak and RTD commuter trains to pass through Union Station without reversing, which would massively improve the capacity of each line and the daily throughput of trains."
     },
 }
