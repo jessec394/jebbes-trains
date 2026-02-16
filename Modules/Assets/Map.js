@@ -52,9 +52,10 @@ function MarkDataLoaded() {
     MapLoadingState.dataLoaded = true;
     UpdateLoadingProgress();
 
-    // Display statistics
-    var totalRoutes = Registry.length;
-    var totalStations = Object.keys(Stations).length;
+    // Display statistics - only count from current view (RegistryOld/AllNodes which is Data1.py)
+    // Don't count RegistryNew/StationsNew which is Data2.py
+    var totalRoutes = RegistryOld.length;
+    var totalStations = Object.keys(AllNodes).length;
 
     var statsElement = document.getElementById('MapStats');
     if (statsElement) {
@@ -831,14 +832,38 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
     eval(lineMappingJsNew);
     eval(lineMappingJsOld);
 
-    var newCount = 0;
+    // Immediately set line opacities after eval
     RegistryNew.forEach(L => {
         var Ly = window[L.Id];
         if (Ly) {
             Ly.setStyle({opacity: 0});
-            newCount++;
         }
     });
+
+    RegistryOld.forEach(L => {
+        var Ly = window[L.Id];
+        if (Ly) {
+            Ly.setStyle({color: L.Color, weight: L.Weight, opacity: 1.0});
+            if (Ly.setZIndex) Ly.setZIndex(L.ZIndex);
+        }
+    });
+
+    // Also set after a short delay to catch any delayed line rendering
+    setTimeout(function() {
+        RegistryOld.forEach(L => {
+            var Ly = window[L.Id];
+            if (Ly) {
+                Ly.setStyle({color: L.Color, weight: L.Weight, opacity: 1.0});
+                if (Ly.setZIndex) Ly.setZIndex(L.ZIndex);
+            }
+        });
+        RegistryNew.forEach(L => {
+            var Ly = window[L.Id];
+            if (Ly) {
+                Ly.setStyle({opacity: 0});
+            }
+        });
+    }, 100);
 
     BasemapLayers['Light'] = basemapLayerNames.Light;
     BasemapLayers['Dark'] = basemapLayerNames.Dark;
@@ -862,6 +887,16 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
             }
         }
     });
+
+    // Collapse sidebar on mobile by default
+    if (window.innerWidth <= 768) {
+        var sidebar = document.getElementById('Sidebar');
+        var handle = document.getElementById('Handle');
+        if (sidebar && !sidebar.classList.contains('collapsed')) {
+            sidebar.classList.add('collapsed');
+            if (handle) handle.innerHTML = '▶';
+        }
+    }
 
     // Mark data as loaded (lines, stations, etc.)
     MarkDataLoaded();
