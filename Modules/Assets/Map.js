@@ -19,11 +19,85 @@ const TRANSFER_DISTANCE_KM = 1.0;
 const NEARBY_STATION_KM = 0.5;
 const STATION_POPUP_RADIUS_KM = 0.4;
 
+var MapLoadingState = {
+    initialized: false,
+    dataLoaded: false,
+    tilesLoaded: false
+};
+
+function UpdateLoadingProgress() {
+    var loadingText = document.getElementById('LoadingText');
+    var splashButton = document.getElementById('SplashButton');
+    var loadingIndicator = document.getElementById('LoadingIndicator');
+
+    if (!MapLoadingState.initialized) {
+        loadingText.innerText = 'Initializing map...';
+    } else if (!MapLoadingState.dataLoaded) {
+        loadingText.innerText = 'Loading transit data...';
+    } else if (!MapLoadingState.tilesLoaded) {
+        loadingText.innerText = 'Loading map tiles...';
+    } else {
+        loadingText.style.display = 'none';
+        loadingIndicator.classList.add('hidden');
+        splashButton.classList.add('ready');
+    }
+}
+
+function MarkMapInitialized() {
+    MapLoadingState.initialized = true;
+    UpdateLoadingProgress();
+}
+
+function MarkDataLoaded() {
+    MapLoadingState.dataLoaded = true;
+    UpdateLoadingProgress();
+
+    // Display statistics
+    var totalRoutes = Registry.length;
+    var totalStations = Object.keys(Stations).length;
+
+    var statsElement = document.getElementById('MapStats');
+    if (statsElement) {
+        statsElement.innerHTML = `<span class="stat-item">${totalRoutes} Routes</span><span class="stat-divider">•</span><span class="stat-item">${totalStations} Stations</span>`;
+        setTimeout(() => {
+            statsElement.classList.add('visible');
+        }, 100);
+    }
+
+    // Start fading in the map behind the skeleton
+    var mapElement = document.getElementById('map');
+    if (mapElement) {
+        setTimeout(() => {
+            mapElement.classList.add('loaded');
+        }, 100);
+    }
+}
+
+function MarkTilesLoaded() {
+    MapLoadingState.tilesLoaded = true;
+    UpdateLoadingProgress();
+
+    // Hide the skeleton after a brief delay
+    setTimeout(() => {
+        var skeleton = document.getElementById('MapSkeleton');
+        var background = document.getElementById('LoadingBackground');
+        if (skeleton) skeleton.classList.add('hidden');
+        if (background) background.classList.add('hidden');
+    }, 500);
+}
+
 function CloseSplash() {
     var splash = document.getElementById('SplashScreen');
     var mapBlur = document.getElementById('MapBlur');
+    var skeleton = document.getElementById('MapSkeleton');
+    var background = document.getElementById('LoadingBackground');
+
     splash.classList.add('hidden');
     mapBlur.classList.add('hidden');
+
+    // Ensure skeleton and background are also hidden
+    if (skeleton) skeleton.classList.add('hidden');
+    if (background) background.classList.add('hidden');
 }
 
 function CalculateDistance(lat1, lon1, lat2, lon2) {
@@ -751,6 +825,9 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
     ModesOrder = Modes;
     InfoPoints = infoPoints || {};
 
+    // Mark map as initialized
+    MarkMapInitialized();
+
     eval(lineMappingJsNew);
     eval(lineMappingJsOld);
 
@@ -784,6 +861,42 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
                 CloseInfoPopup();
             }
         }
+    });
+
+    // Mark data as loaded (lines, stations, etc.)
+    MarkDataLoaded();
+
+    // Listen for tile loading completion
+    var tileLoadCheck = setInterval(function() {
+        var tiles = document.querySelectorAll('.leaflet-tile');
+        var allLoaded = true;
+
+        tiles.forEach(function(tile) {
+            if (!tile.complete) {
+                allLoaded = false;
+            }
+        });
+
+        if (allLoaded && tiles.length > 0) {
+            clearInterval(tileLoadCheck);
+            MarkTilesLoaded();
+        }
+    }, 100);
+
+    // Fallback: mark tiles as loaded after 3 seconds regardless
+    setTimeout(function() {
+        if (!MapLoadingState.tilesLoaded) {
+            MarkTilesLoaded();
+        }
+    }, 3000);
+
+    // Also listen to Leaflet's load event
+    window[MAP_NAME].on('load', function() {
+        setTimeout(function() {
+            if (!MapLoadingState.tilesLoaded) {
+                MarkTilesLoaded();
+            }
+        }, 500);
     });
 }
 

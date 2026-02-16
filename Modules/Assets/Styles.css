@@ -6,6 +6,81 @@
     --shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
+/* Map Loading States */
+#map {
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+#map.loaded {
+    opacity: 1;
+}
+
+/* Loading Screen Background */
+#LoadingBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 9997;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#LoadingBackground.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Animated Map Skeleton */
+#MapSkeleton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: #f1f5f9;
+    overflow: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#MapSkeleton.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.skeleton-line {
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(90deg, #cbd5e1 0%, #94a3b8 50%, #cbd5e1 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s ease-in-out infinite;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.skeleton-node {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #94a3b8;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.2); }
+}
+
 #MapBlur {
     position: fixed;
     top: 0;
@@ -15,7 +90,7 @@
     z-index: 9998;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    transition: opacity 0.4s ease, visibility 0.4s ease;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
 #MapBlur.hidden {
@@ -34,7 +109,7 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
 #SplashScreen.hidden {
@@ -46,9 +121,22 @@
 #SplashContent {
     text-align: center;
     padding: 50px 60px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #SplashTitle {
@@ -63,8 +151,74 @@
     font-size: 18px;
     font-weight: 500;
     color: #475569;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     line-height: 1.5;
+}
+
+#MapStats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#MapStats.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-item {
+    letter-spacing: 0.3px;
+}
+
+.stat-divider {
+    color: #cbd5e1;
+    font-weight: 400;
+}
+
+#LoadingIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    height: 40px;
+}
+
+#LoadingIndicator.hidden {
+    display: none;
+}
+
+.loading-dot {
+    width: 10px;
+    height: 10px;
+    background: #0f172a;
+    border-radius: 50%;
+    animation: bounce 1.4s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(1) { animation-delay: 0s; }
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-15px); }
+}
+
+#LoadingText {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 25px;
+    min-height: 20px;
 }
 
 #SplashButton {
@@ -74,14 +228,22 @@
     padding: 16px 40px;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#SplashButton.ready {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #SplashButton:hover {
     background: #1e293b;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.3);
 }
 
 #SplashButton:active {
@@ -408,208 +570,37 @@
     r: 8;
 }
 
-details[open] > summary > .Indicator {
-    transform: rotate(90deg);
-}
-
-details[open] > summary > .PopupModeIndicator {
-    transform: rotate(90deg);
-}
-
-details[open] > summary > .PopupOperatorIndicator {
-    transform: rotate(90deg);
-}
-
-.StationTooltip {
-    background: var(--glass) !important;
-    backdrop-filter: var(--blur) !important;
-    border: none !important;
-    border-radius: 18px !important;
-    box-shadow: var(--shadow) !important;
-    padding: 15px !important;
-    pointer-events: none;
-    min-width: 240px;
-}
-
-.StationPopup b {
-    font-size: 15px;
-    font-weight: 900;
-    color: #0f172a;
-    border-bottom: 2px solid rgba(0,0,0,0.08);
-    display: block;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.ModeHeader {
-    font-size: 9px;
-    font-weight: 800;
-    color: #64748b;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    margin: 12px 0 6px 0;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    padding-top: 6px;
-}
-
-.HubLineContent {
-    display: flex;
-    align-items: center;
-    font-size: 11px;
-    font-weight: 600;
-    color: #1e293b;
-    margin-bottom: 4px;
-    line-height: 1.2;
-}
-
-.HubDot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 8px;
-    flex-shrink: 0;
-}
-
-.Separator {
-    margin: 0 5px;
-    color: #cbd5e1;
-    font-weight: 400;
-}
-
-.OpTag {
-    font-weight: 800;
-    color: #64748b;
-    font-size: 10px;
-}
-
-.PlaneIcon {
-    display: inline-block;
-    transform: rotate(-45deg);
-    margin-left: 6px;
-}
-
-.StationItem {
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background 0.2s;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.StationItem:hover {
-    background: rgba(0,0,0,0.03);
-}
-
-.StationDot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-.AutocompleteWrapper {
-    position: relative;
-}
-
-.AutocompleteMenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    max-height: 300px;
-    overflow-y: auto;
-    z-index: 1000;
-    display: none;
-    margin-top: 5px;
-}
-
-.AutocompleteMenu.show {
-    display: block;
-}
-
-.AutocompleteItem {
-    padding: 12px 15px;
-    cursor: pointer;
-    transition: background 0.2s;
-    border-bottom: 1px solid rgba(0,0,0,0.03);
-}
-
-.AutocompleteItem:hover {
-    background: #f8fafc;
-}
-
-.AutocompleteItem:last-child {
-    border-bottom: none;
-}
-
-.AutocompleteStationName {
-    font-size: 13px;
-    font-weight: 700;
-    color: #1e293b;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.AutocompleteLines {
-    font-size: 10px;
-    color: #64748b;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.AutocompleteLineBadge {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 2px 8px;
-    background: rgba(0,0,0,0.04);
-    border-radius: 6px;
-}
-
-.AutocompleteLineDot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-}
-
 #StationPopupOverlay {
     position: fixed;
-    top: 20px;
     right: 20px;
-    width: 360px;
-    max-height: calc(100vh - 40px);
+    top: 20px;
+    bottom: 20px;
+    width: 400px;
     background: var(--glass);
     backdrop-filter: var(--blur);
-    border-radius: 24px;
+    border-radius: 30px;
     box-shadow: var(--shadow);
     border: 1px solid rgba(255,255,255,0.5);
-    z-index: 9500;
+    z-index: 10000;
     display: none;
     flex-direction: column;
     overflow: hidden;
-    animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes slideIn {
+@keyframes slideInRight {
     from {
-        transform: translateX(100px);
         opacity: 0;
+        transform: translateX(20px);
     }
     to {
-        transform: translateX(0);
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
 .PopupHeader {
-    padding: 25px 30px 20px;
+    padding: 30px 30px 20px;
     border-bottom: 1px solid rgba(0,0,0,0.06);
     position: relative;
     flex-shrink: 0;
@@ -617,8 +608,8 @@ details[open] > summary > .PopupOperatorIndicator {
 
 .PopupClose {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     width: 32px;
     height: 32px;
     border-radius: 50%;

@@ -935,7 +935,8 @@ Stations = {
     "Auden": { 'Location': (50.22916, -87.88987) },
     "Auraria": { 'Location': (39.74164, -105.01091) },
     "Auraria West": { 'Location': (39.74057, -105.00852) },
-    "Aurora": { 'Location': (41.76135, -88.30837) },
+    "Aurora (IL)": { 'Location': (41.76135, -88.30837), 'Label': 'Aurora' },
+    "Aurora (OR)": { 'Location': (45.23248, -122.75622), 'Label': 'Aurora' },
     "Aurora Metro Center": { 'Location': (39.70855, -104.81899) },
     "Aurora-Wellington St": { 'Location': (44.00075, -79.45974) },
     "Austell": { 'Location': (33.81439, -84.62747) },
@@ -1437,6 +1438,7 @@ Stations = {
     "Canal St (Varick)": { 'Location': (40.72258, -74.00609), 'Label': 'Canal St' },
     "Canal Winchester": { 'Location': (39.84546, -82.80474) },
     "Canarsie-Rockaway Pkwy": { 'Location': (40.64560, -73.90252) },
+    "Canby": { 'Location': (45.26300, -122.69179) },
     "Cancún": { 'Location': (21.02853, -86.87126) },
     "Candelaria": { 'Location': (18.18428, -91.04459) },
     "Candiac": { 'Location': (45.36082, -73.51458) },
@@ -1654,6 +1656,7 @@ Stations = {
     "Civic Center/Grand Park": { 'Location': (34.05422, -118.24706) },
     "Civic Center/UN Plaza": { 'Location': (37.77957, -122.41371) },
     "Civic Drive": { 'Location': (45.50819, -122.44158) },
+    "Clackamas": { 'Location': (45.40844, -122.56556) },
     "Clackamas Town Center": { 'Location': (45.43584, -122.56780) },
     "Clairmont Campus": { 'Location': (33.79498, -84.31053) },
     "Claremont": { 'Location': (34.09409, -117.71672) },
@@ -2837,6 +2840,7 @@ Stations = {
     "Healy": { 'Location': (41.92474, -87.72796) },
     "Hebron": { 'Location': (33.01014, -96.95842) },
     "Hecelchakán": { 'Location': (20.18190, -90.13545) },
+    "Hector Campbell": { 'Location': (45.44056, -122.61898) },
     "Hegewisch": { 'Location': (41.64556, -87.54248) },
     "Helena (MT)": { 'Location': (46.60198, -112.02705), 'Label': 'Helena' },
     "Helmet": { 'Location': (33.74800, -116.97204) },
@@ -2927,6 +2931,7 @@ Stations = {
     "Howell (MI)": { 'Location': (42.61046, -83.93024), 'Label': 'Howell' },
     "Hoyt St": { 'Location': (40.69053, -73.98502) },
     "Hoyt-Schermerhorn Sts": { 'Location': (40.68858, -73.98477) },
+    "Hubbard": { 'Location': (45.18216, -122.80725) },
     "Hubbard Woods": { 'Location': (42.11816, -87.74378) },
     "Hudson (NY)": { 'Location': (42.25408, -73.79771), 'Label': 'Hudson' },
     "Hudson (OH)": { 'Location': (41.23922, -81.44266), 'Label': 'Hudson' },
@@ -5958,6 +5963,7 @@ Stations = {
     "Woodbridge (NJ)": { 'Location': (40.55594, -74.27802), 'Label': 'Woodbridge' },
     "Woodbridge (VA)": { 'Location': (38.65896, -77.24793), 'Label': 'Woodbridge' },
     "Woodbridge-Flowery Branch": { 'Location': (34.16828, -83.95184) },
+    "Woodburn": { 'Location': (45.14319, -122.85548) },
     "Woodbury": { 'Location': (39.83633, -75.14983) },
     "Woodbury Heights": { 'Location': (39.81733, -75.15201) },
     "Woodcrest": { 'Location': (39.87008, -75.01151) },
@@ -7053,6 +7059,9 @@ Segments = {
     "-Intercity LS (New York - Miami)": {
         "F": ['-Intercity LS (New York - Savannah)', '-Intercity LS (Savannah - Miami)'],
     },
+    "-Intercity LS (New York - Miami via Columbia)": {
+        "F": ['-Intercity LS (New York - Raleigh)', '[R] -Intercity LS (Savannah - Raleigh)', '-Intercity LS (Savannah - Miami)'],
+    },
     "-Intercity LS (New York - Montréal)": {
         "F": ['-Intercity LS (New York - Whitehall Juncion)', 'Whitehall', 'Ticonderoga', 'Port Henry', 'Westport (NY)', 'Port Kent', 'Plattsburgh', 'Rouses Point', '[R] -Intercity LS (Montréal - Saint-Jean-sur-Le-Richelieu)'],
     },
@@ -7123,6 +7132,9 @@ Segments = {
     },
     "-Intercity LS (New York - Tampa)": {
         "F": ['-Intercity LS (New York - Savannah)', '-Intercity LS (Savannah - Tampa)'],
+    },
+    "-Intercity LS (New York - Tampa via Columbia)": {
+        "F": ['-Intercity LS (New York - Raleigh)', '[R] -Intercity LS (Savannah - Raleigh)', '-Intercity LS (Savannah - Tampa)'],
     },
     "-Intercity LS (New York - Toronto)": {
         "F": ['-Intercity LS (New York - Niagara)', 'Niagara Falls (ON)', 'St. Catherines', 'Grimsby', '[X] West Harbour', '[R] -Intercity LS (Toronto - Aldershot)'],
@@ -7242,13 +7254,10 @@ Segments = {
         "Keep": ['Pittsburgh Union Station'],
     },
     "-Intercity LS (Portland - Eugene)": {
-        "F": ['-Intercity LS (Portland - Milwaukie)', 'Oregon City', 'Salem (OR)', 'Albany', 'Eugene'],
+        "F": ['-Intercity LS (Portland - Woodburn)', 'Salem (OR)', 'Albany', 'Eugene'],
     },
     "-Intercity LS (Portland - Kennewick)": {
         "F": ['-Intercity LS (Portland - Vancouver)', 'Bingen-White Salmon', 'Wishram', 'Kennewick'],
-    },
-    "-Intercity LS (Portland - Milwaukie)": {
-        "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', '[X] Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', '[X] SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', '[X] Milwaukie/Main St'],
     },
     "-Intercity LS (Portland - Salt Lake City)": {
         "F": ['-Intercity LS (Portland - Kennewick)', 'La Grande', 'Baker City', 'Ontario (OR)', 'Boise', 'Potacello', 'Tremonton', '[R] -Intercity LS (Salt Lake City - Ogden)'],
@@ -7258,6 +7267,10 @@ Segments = {
     },
     "-Intercity LS (Portland - Vancouver)": {
         "F": ['Portland Approach (Union - West)', 'Vancouver (WA)'],
+    },
+    "-Intercity LS (Portland - Woodburn)": {
+        "F": ['Portland Regional Rail (Union - Woodburn)'],
+        "Keep": ['Portland Union Station', 'Oregon City', 'Woodburn'],
     },
     "-Intercity LS (Poza Rica - Puerto Vallarta)": {
         "F": ['Poza Rica', 'Tulancingo', 'Pachuca', 'San Juan del Río', '[X] Quéretaro Junction', '-Intercity LS (Quéretaro - León)', 'Guadalajara', 'Puerto Vallarta'],
@@ -7998,7 +8011,7 @@ Segments = {
         "F": ['Chicago Approach (Union - North)', 'Western Ave', 'Grand/Cicero', 'Hanson Park', 'Galewood', 'Mars', 'Mont Clare', 'Elmwood Park', 'River Grove', '[X] Chicago Franklin Park Junction', 'Franklin Park North', 'Schiller Park', "Rosemont/O'Hare", "O'Hare Transfer", 'Prospect Heights', 'Wheeling', 'Buffalo Grove', 'Prairie View', 'Vernon Hills', 'Vernon Junction', 'Mundelein', 'Prairie Crossing South', 'Washington St (Grayslake)', 'Round Lake Beach', 'Lake Villa', 'Antioch (IL)'],
     },
     "Chicago Metra (Union - Aurora)": {
-        "F": ['Chicago Approach (Union - South 1)', 'Halsted/16th', 'Western/18th', 'Cicero/Rte 66', 'LaVergne', 'Berwyn', 'Harlem/Windsor', 'Riverside (IL)', 'Hollywood (Zoo Stop)', 'Brookfield', 'Congress Park', 'LaGrange Rd', 'Stone Ave', 'Highlands', 'Hinsdale', 'West Hinsdale', 'Clarendon Hills', 'Westmont', 'Fairview/Burlington', 'Downers Grove', 'Belmont/Warren', 'Lisle', 'Naperville', 'Route 59', 'Eola', 'Aurora'],
+        "F": ['Chicago Approach (Union - South 1)', 'Halsted/16th', 'Western/18th', 'Cicero/Rte 66', 'LaVergne', 'Berwyn', 'Harlem/Windsor', 'Riverside (IL)', 'Hollywood (Zoo Stop)', 'Brookfield', 'Congress Park', 'LaGrange Rd', 'Stone Ave', 'Highlands', 'Hinsdale', 'West Hinsdale', 'Clarendon Hills', 'Westmont', 'Fairview/Burlington', 'Downers Grove', 'Belmont/Warren', 'Lisle', 'Naperville', 'Route 59', 'Eola', 'Aurora (IL)'],
     },
     "Chicago Metra (Union - Elgin)": {
         "F": ['Chicago Approach (Union - North)', 'Western Ave', 'Grand/Cicero', 'Hanson Park', 'Galewood', 'Mars', 'Mont Clare', 'Elmwood Park', 'River Grove', '[X] Chicago Franklin Park Junction', 'Franklin Park South', 'Mannheim', 'Bensenville', 'Wood Dale', 'Itasca', 'Medinah', 'Roselle', 'Schaumburg', 'Bartlett', 'Bartlett Junction', 'National St', 'Elgin', 'Big Timber Rd'],
@@ -9650,6 +9663,9 @@ Segments = {
     "Portland Regional Rail (Beaverton - Wilsonville)": {
         "F": ['Beaverton TC (WES)', 'Hall/Nimbus', 'Tigard TC', 'Tualatin', 'Wilsonville'],
     },
+    "Portland Regional Rail (Union - Woodburn)": {
+        "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', 'SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', 'Hector Campbell', 'Clackamas', 'Oregon City', 'Canby', 'Aurora (OR)', 'Hubbard', 'Woodburn'],
+    },
     "Princeton Dinky (Princeton Junction - Princeton University)": {
         "F": ['Princeton Junction', 'Princeton University'],
     },
@@ -10364,8 +10380,8 @@ Lines = {
             "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa)'},
         },
         "Silver Star": {
-            "New York - Miami": {'Mode': 2, 'Stations': '-Intercity LS (New York - Miami)'},
-            "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa)'},
+            "New York - Miami": {'Mode': 2, 'Stations': '-Intercity LS (New York - Miami via Columbia)'},
+            "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa via Columbia)'},
         },
         "Southwest Chief": {
             "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)'},
@@ -11599,6 +11615,9 @@ Lines = {
         },
         "WES": {
             "Beaverton - Wilsonville": {'Mode': 3, 'Stations': 'Portland Regional Rail (Beaverton - Wilsonville)'},
+        },
+        "Woodburn Line": {
+            "Portland - Woodburn": {'Mode': 3, 'Stations': 'Portland Regional Rail (Union - Woodburn)'},
         },
     },
     "Trinity Metro": {
