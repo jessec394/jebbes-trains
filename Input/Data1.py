@@ -1189,7 +1189,8 @@ Stations = {
     "Bois-Franc": { 'Location': (45.52217, -73.71211) },
     "Bois-de-Boulogne": { 'Location': (45.54019, -73.67702) },
     "Boise": { 'Location': (43.60196, -116.21485) },
-    "Bolton": { 'Location': (33.81542, -84.46723) },
+    "Bolton (GA)": { 'Location': (33.81542, -84.46723), 'Label': 'Bolton' },
+    "Bolton (ON)": { 'Location': (43.86664, -79.71903), 'Label': 'Bolton' },
     "Bonaventura": { 'Location': (37.38853, -121.92958) },
     "Bonaventure": { 'Location': (45.49813, -73.56709) },
     "Bonifay": { 'Location': (30.79024, -85.67889) },
@@ -2145,12 +2146,9 @@ Stations = {
     "E 79th St (South)": { 'Location': (41.48064, -81.63310), 'Label': 'E 79th St' },
     "E 79th St (Subway)": { 'Location': (41.50383, -81.63353), 'Label': 'E 79th St' },
     "E 9th St": { 'Location': (41.50025, -81.68674) },
-    "EWR Building 4": { 'Location': (40.68721, -74.18191), 'Label': 'Building 4' },
-    "EWR P3": { 'Location': (40.68960, -74.18733), 'Label': 'P3' },
-    "EWR P4": { 'Location': (40.69671, -74.18217), 'Label': 'P4' },
-    "EWR Terminal A": { 'Location': (40.68737, -74.19079), 'Label': 'Terminal 4' },
-    "EWR Terminal B": { 'Location': (40.69076, -74.17673), 'Label': 'Terminal B' },
-    "EWR Terminal C": { 'Location': (40.69601, -74.17748), 'Label': 'Terminal C' },
+    "EWR Station 1": { 'Location': (40.68737, -74.19079), 'Label': 'Station 1' },
+    "EWR Station 2": { 'Location': (40.68960, -74.18733), 'Label': 'Station 2' },
+    "EWR Station 3": { 'Location': (40.69671, -74.18217), 'Label': 'Station 3' },
     "Eagan": { 'Location': (44.81711, -93.22635) },
     "Eagle Pass": { 'Location': (28.70950, -100.49845) },
     "Eagles Landing Pkwy": { 'Location': (33.51578, -84.20529) },
@@ -2193,7 +2191,6 @@ Stations = {
     "East Williston": { 'Location': (40.75736, -73.63943) },
     "East Worthsville": { 'Location': (39.58597, -86.09145) },
     "East/West Blvd": { 'Location': (35.21211, -80.85913) },
-    "Eastchester Rd - Morris Park": { 'Location': (40.85151, -73.84202) },
     "Eastchester-Dyre Av": { 'Location': (40.88783, -73.83120) },
     "Eastern Market": { 'Location': (38.88427, -76.99584) },
     "Eastern Michigan University": { 'Location': (42.25481, -83.62319) },
@@ -2289,8 +2286,9 @@ Stations = {
     "Emerson - Fremont": { 'Location': (45.00026, -93.29488) },
     "Emerson Ave": { 'Location': (39.81099, -86.08463) },
     "Emerson Park": { 'Location': (38.62889, -90.13699) },
-    "Emery": { 'Location': (43.75221, -79.54157) },
     "Emeryville (CA)": { 'Location': (37.84044, -122.29179), 'Label': 'Emeryville' },
+    "Emery (GO)": { 'Location': (43.75192, -79.53920), 'Label': 'Emery' },
+    "Emery (LRT)": { 'Location': (43.75221, -79.54157), 'Label': 'Emery' },
     "Emeryville (ON)": { 'Location': (42.29922, -82.75899), 'Label': 'Emeryville' },
     "Emory Decatur": { 'Location': (33.79232, -84.28222) },
     "Emory University": { 'Location': (33.79530, -84.32299) },
@@ -2955,8 +2953,8 @@ Stations = {
     "Huntington (WMATA)": { 'Location': (38.79385, -77.07528), 'Label': 'Huntington' },
     "Huntington (WV)": { 'Location': (38.41594, -82.43970), 'Label': 'Huntington' },
     "Huntley": { 'Location': (42.16962, -88.42912) },
-    "Hunts Point Av": { 'Location': (40.82080, -73.89088) },
     "Hunts Point Av (Mainline)": { 'Location': (40.82021, -73.88967), 'Label': 'Hunts Point' },
+    "Hunts Point Av (Subway)": { 'Location': (40.82080, -73.89088) },
     "Hurdman": { 'Location': (45.41243, -75.66418) },
     "Hutchinson (KS)": { 'Location': (38.05564, -97.93095), 'Label': 'Hutchinson' },
     "Hutton (BC)": { 'Location': (53.98868, -121.62163), 'Label': 'Hutton' },
@@ -3195,6 +3193,7 @@ Stations = {
     "Kittson Pkwy": { 'Location': (49.11955, -122.92383) },
     "Kitwanga": { 'Location': (55.09937, -128.05149) },
     "Klamath Falls": { 'Location': (42.22551, -121.77184) },
+    "Kleinburg": { 'Location': (43.84275, -79.65791) },
     "Knickerbocker Av": { 'Location': (40.69873, -73.91971) },
     "Knoll Trail": { 'Location': (32.96268, -96.81803) },
     "Knox": { 'Location': (39.73569, -105.03285) },
@@ -3894,9 +3893,10 @@ Stations = {
     "Morgan Blvd": { 'Location': (38.89369, -76.86848) },
     "Morgan Hill": { 'Location': (37.12971, -121.65055) },
     "Morrell": { 'Location': (32.73987, -96.80255) },
-    "Morris (IL)": { 'Location': (41.36416, -88.42300), 'Label': 'Morris' },
+    "Morris": { 'Location': (41.36416, -88.42300) },
     "Morris Heights": { 'Location': (40.85408, -73.91985) },
-    "Morris Park": { 'Location': (40.85453, -73.86029) },
+    "Morris Park (Mainline)": { 'Location': (40.85151, -73.84202), 'Label': 'Morris Park' },
+    "Morris Park (Subway)": { 'Location': (40.85453, -73.86029), 'Label': 'Morris Park' },
     "Morris Plains": { 'Location': (40.82857, -74.47835) },
     "Morrison Av (Westchester)": { 'Location': (40.82860, -73.87919), 'Label': 'Morrison Av-Soundview' },
     "Morrison/SW 3rd Ave": { 'Location': (45.51816, -122.67540) },
@@ -4365,8 +4365,8 @@ Stations = {
     "Park Pl": { 'Location': (40.67473, -73.95785) },
     "Park Place": { 'Location': (40.71324, -74.00925) },
     "Park Ridge": { 'Location': (42.01019, -87.83156) },
-    "Parkchester": { 'Location': (40.84164, -73.86261) },
     "Parkchester (Westchester)": { 'Location': (40.83321, -73.86100), 'Label': 'Parkchester' },
+    "Parkchester/Van Nest": { 'Location': (40.84164, -73.86261) },
     "Parker Road": { 'Location': (33.03398, -96.70071) },
     "Parkesburg (PA)": { 'Location': (39.95911, -75.92232), 'Label': 'Parkesburg' },
     "Parkrose/Sumner TC": { 'Location': (45.55913, -122.56550) },
@@ -5593,6 +5593,7 @@ Stations = {
     "Vanderhoof": { 'Location': (54.01459, -124.01201) },
     "Vasco Rd": { 'Location': (37.69705, -121.71765) },
     "Vaudreuil": { 'Location': (45.39939, -74.05152) },
+    "Vaughan": { 'Location': (43.80813, -79.63376) },
     "Vaughan Metropolitan Centre": { 'Location': (43.79424, -79.52748) },
     "Vendôme": { 'Location': (45.47360, -73.60360) },
     "Ventura": { 'Location': (34.27694, -119.29988) },
@@ -5961,6 +5962,7 @@ Stations = {
     "Woodbine": { 'Location': (43.68640, -79.31263) },
     "Woodbourne": { 'Location': (40.19089, -74.89097) },
     "Woodbridge (NJ)": { 'Location': (40.55594, -74.27802), 'Label': 'Woodbridge' },
+    "Woodbridge (ON)": { 'Location': (43.78062, -79.59380), 'Label': 'Woodbridge' },
     "Woodbridge (VA)": { 'Location': (38.65896, -77.24793), 'Label': 'Woodbridge' },
     "Woodbridge-Flowery Branch": { 'Location': (34.16828, -83.95184) },
     "Woodburn": { 'Location': (45.14319, -122.85548) },
@@ -6468,7 +6470,7 @@ Segments = {
         "F": ['-Intercity LS (Chicago - Aurora)', 'Mendota (IL)', 'Princeton (IL)', 'Kewanee', 'Galesburg', 'Burlington (IA)', 'Mt. Pleasant (IA)', 'Ottumwa', 'Osceola', 'Creston', 'Omaha'],
     },
     "-Intercity LS (Chicago - Peoria)": {
-        "F": ['-Intercity LS (Chicago - Joliet)', 'Morris (IL)', 'Ottawa (IL)', 'LaSalle-Peru', 'Peoria (IL)'],
+        "F": ['-Intercity LS (Chicago - Joliet)', 'Morris', 'Ottawa (IL)', 'LaSalle-Peru', 'Peoria (IL)'],
     },
     "-Intercity LS (Chicago - Pittsburgh)": {
         "F": ['-Intercity LS (Chicago - Columbus)', '-Intercity LS (Columbus - Pittsburgh)'],
@@ -7594,7 +7596,7 @@ Segments = {
         "F": ['Five Points', 'SEC District', 'Vine City', 'Ashby (GA)'],
     },
     "Atlanta MARTA (Five Points - Cumberland)": {
-        "F": ['Atlanta MARTA (Five Points - Ashby)', 'Joseph E. Boone', 'Bankhead', 'Howell (GA)', 'West Highlands', 'Bolton', 'Atlanta Road', 'Vinings Heights', 'Paces Ferry', 'Cumberland (MARTA)', 'Truist Park'],
+        "F": ['Atlanta MARTA (Five Points - Ashby)', 'Joseph E. Boone', 'Bankhead', 'Howell (GA)', 'West Highlands', 'Bolton (GA)', 'Atlanta Road', 'Vinings Heights', 'Paces Ferry', 'Cumberland (MARTA)', 'Truist Park'],
     },
     "Atlanta MARTA (Five Points - Doraville)": {
         "F": ['Atlanta MARTA (Five Points - Lindbergh)', 'Lenox', 'Brookhaven/Oglethorpe', 'Chamblee', 'Doraville (Mainline)'],
@@ -9144,7 +9146,7 @@ Segments = {
         "F": ['New York Regional Rail (Penn Station - Newark Broad)', 'New York Regional Rail (Newark Broad - Denville West)', 'Dover (NJ)', 'Mount Arlington'],
     },
     "New York Regional Rail (Penn Station - New Haven)": {
-        "F": ['New York Penn Station', '[X] 33 St (6th)', '[X] 33 St (Park)', '[X] Long Island City', '[X] Hunterspoint Avenue', '[X] NY Sunnyside Junction (W)', '[X] NY Sunnyside Junction (E)', '[X] Northern Blvd', '[X] Astoria-Ditmars Blvd', "[X] Randall's Island", 'Hunts Point Av (Mainline)', '[X] Whitlock Av (Mainline)', 'Parkchester', 'Eastchester Rd - Morris Park', 'Co-Op City', 'New Rochelle', '[X] Larchmont', '[X] Mamaroneck', '[X] Harrison', '[X] Rye', '[X] Port Chester', '[X] Greenwich', '[X] Cos Cob', '[X] Riverside Ave', '[X] Old Greenwich', '[R] Connecticut Regional Rail (New Haven - Stamford)'],
+        "F": ['New York Penn Station', '[X] 33 St (6th)', '[X] 33 St (Park)', '[X] Long Island City', '[X] Hunterspoint Avenue', '[X] NY Sunnyside Junction (W)', '[X] NY Sunnyside Junction (E)', '[X] Northern Blvd', '[X] Astoria-Ditmars Blvd', "[X] Randall's Island", 'Hunts Point Av (Mainline)', '[X] Whitlock Av (Mainline)', 'Parkchester/Van Nest', 'Morris Park (Mainline)', 'Co-Op City', 'New Rochelle', '[X] Larchmont', '[X] Mamaroneck', '[X] Harrison', '[X] Rye', '[X] Port Chester', '[X] Greenwich', '[X] Cos Cob', '[X] Riverside Ave', '[X] Old Greenwich', '[R] Connecticut Regional Rail (New Haven - Stamford)'],
     },
     "New York Regional Rail (Penn Station - Newark Broad)": {
         "F": ['New York Regional Rail (Penn Station - Secaucus Junction)', '[X] Newark Harrison Junction', 'Newark-Broad St'],
@@ -9282,7 +9284,7 @@ Segments = {
         "F": ['Brooklyn Bridge-City Hall', 'Canal St (Lafayette)', 'Spring St (Lafayette)', 'Bleecker St', 'Astor Pl', '14 St-Union Sq (456)', '23 St (Park)', '28 St (Park)', '33 St (Park)', '[X] NY Grand Central Bend S (456)', '42 St (Park)', '[X] NY Grand Central Bend N (456)', '51 St (Lexington)', '59 St (Lexington)', '68 St (Lexington)', '77 St (Lexington)', '86 St (Lexington)', '96 St (Lexington)', '103 St (Lexington)', '110 St (Lexington)', '116 St (Lexington)', '125 St (Lexington)', '[X] NY I-87 Junction (456)'],
     },
     "New York Subway (City Hall - Dyre Av)": {
-        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av (Westchester)', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park', 'Pelham Pkwy', 'Gun Hill Rd (Sexton)', 'Baychester Av', 'Eastchester-Dyre Av'],
+        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av (Westchester)', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park (Subway)', 'Pelham Pkwy', 'Gun Hill Rd (Sexton)', 'Baychester Av', 'Eastchester-Dyre Av'],
     },
     "New York Subway (City Hall - Flatbush Av)": {
         "F": ['New York Subway (City Hall - Franklin Av)', '[X] Nostrand Av (Eastern)', 'President St-Medgar Evers College', 'Sterling St', 'Winthrop St', 'Church Av (Nostrand)', 'Beverly Rd (Nostrand)', 'Newkirk Av-Little Haiti', 'Flatbush Av-Brooklyn College'],
@@ -9294,10 +9296,10 @@ Segments = {
         "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av (Westchester)', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Bronx Park East', 'Pelham Pkwy (White Plains)', 'Allerton Av', 'Burke Av', 'Gun Hill Rd (White Plains)', '219 St (White Plains)', '225 St (White Plains)', '233 St (White Plains)', 'Nereid Av'],
     },
     "New York Subway (City Hall - Pelham Park Express)": {
-        "F": ['New York Subway (City Hall - 138 St Express)', '3 Av-138 St', '[X] Brook Av', '[X] Cypress Av', '[X] E 143 St', '[X] E 149 St', '[X] Longwood Av', 'Hunts Point Av', '[X] Whitlock Av (Subway)', '[X] Elder Av', '[X] Morrison Av (Westchester)', '[X] St. Lawrence Av (Westchester)', 'Parkchester (Westchester)', '[X] Castle Hill Av', '[X] Zerega Av', '[X] Westchester Sq-E Tremont Av', '[X] Middletown Rd', '[X] Buhre Av', 'Pelham Bay Park'],
+        "F": ['New York Subway (City Hall - 138 St Express)', '3 Av-138 St', '[X] Brook Av', '[X] Cypress Av', '[X] E 143 St', '[X] E 149 St', '[X] Longwood Av', 'Hunts Point Av (Subway)', '[X] Whitlock Av (Subway)', '[X] Elder Av', '[X] Morrison Av (Westchester)', '[X] St. Lawrence Av (Westchester)', 'Parkchester (Westchester)', '[X] Castle Hill Av', '[X] Zerega Av', '[X] Westchester Sq-E Tremont Av', '[X] Middletown Rd', '[X] Buhre Av', 'Pelham Bay Park'],
     },
     "New York Subway (City Hall - Pelham Park Local)": {
-        "F": ['New York Subway (City Hall - 138 St Local)', '3 Av-138 St', 'Brook Av', 'Cypress Av', 'E 143 St', 'E 149 St', 'Longwood Av', 'Hunts Point Av', 'Whitlock Av (Subway)', 'Elder Av', 'Morrison Av (Westchester)', 'St. Lawrence Av (Westchester)', 'Parkchester (Westchester)', 'Castle Hill Av', 'Zerega Av', 'Westchester Sq-E Tremont Av', 'Middletown Rd', 'Buhre Av', 'Pelham Bay Park'],
+        "F": ['New York Subway (City Hall - 138 St Local)', '3 Av-138 St', 'Brook Av', 'Cypress Av', 'E 143 St', 'E 149 St', 'Longwood Av', 'Hunts Point Av (Subway)', 'Whitlock Av (Subway)', 'Elder Av', 'Morrison Av (Westchester)', 'St. Lawrence Av (Westchester)', 'Parkchester (Westchester)', 'Castle Hill Av', 'Zerega Av', 'Westchester Sq-E Tremont Av', 'Middletown Rd', 'Buhre Av', 'Pelham Bay Park'],
     },
     "New York Subway (City Hall - Utica Av)": {
         "F": ['New York Subway (City Hall - Franklin Av)', 'Nostrand Av (Eastern)', '[X] Kingston Av (Eastern)', 'Crown Hts-Utica Av'],
@@ -9402,7 +9404,7 @@ Segments = {
         "F": ['World Trade Center (Church)', '[X] Chambers St (Church)', '[X] NY Church-Franklin Bend (ACE)', 'Canal St (6th)', 'Spring St (6th)', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St (6th)', '14 St (8th)', '23 St (8th)', '34 St (8th)', '42 St (8th)', '50 St (8th)', '[X] NY 8th Av-53rd St Junction (ACEBD)', '7 Av (53rd)', '5 Av-53 St', '53 St (Lexington)', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St (Northern)', '[X] Northern Blvd', '[X] 65 St (Broadway)', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av (Broadway)', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd (Queens)', '[X] 63 Dr-Rego Park', '[X] 67 Av (Queens)', 'Forest Hills-71 Av', '75 Av (Queens)', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Jamaica-Van Wyck', '[X] Jamaica West Junction', 'Sutphin Blvd-Archer Av-JFK Airport', 'Jamaica Center-Parsons/Archer'],
     },
     "Newark Peoplemover (EWR Airport)": {
-        "F": ['Newark Liberty International Airport', 'EWR P4', 'EWR Terminal C', 'EWR Terminal B', 'EWR Building 4', 'EWR P3', 'EWR Terminal A'],
+        "F": ['Newark Liberty International Airport', 'EWR Station 3', 'EWR Station 2', 'EWR Station 1'],
     },
     "Oakland Monorail (OAK Airport)": {
         "F": ['Oakland Coliseum (APM)', 'Oakland International Airport'],
@@ -9879,8 +9881,11 @@ Segments = {
     "Toronto GO (Union - Bloomington)": {
         "F": ['Toronto Union Station', '[X] Toronto East Junction', '[X] Toronto Danforth Junction', 'Oriole', 'Old Cummer', 'Langstaff', 'Richmond Hill', 'Gormley', 'Bloomington Rd'],
     },
+    "Toronto GO (Union - Bolton)": {
+        "F": ['Toronto GO (Union - Weston)', 'Emery (GO)', 'Woodbridge (ON)', 'Vaughan', 'Kleinburg', 'Bolton (ON)'],
+    },
     "Toronto GO (Union - Kitchener)": {
-        "F": ['Toronto Union Station', '[X] Toronto West Junction', '[X] Toronto Parkdale Junction', 'Bloor', '[X] Toronto Pelham Junction', 'Mount Dennis', 'Weston', 'Etobicoke North', 'Toronto Pearson Junction', 'Malton', 'Bramalea', 'Brampton Innovation District', 'Mount Pleasant (ON)', 'Georgetown', 'Acton', 'Guelph', 'Kitchener'],
+        "F": ['Toronto GO (Union - Weston)', 'Etobicoke North', 'Toronto Pearson Junction', 'Malton', 'Bramalea', 'Brampton Innovation District', 'Mount Pleasant (ON)', 'Georgetown', 'Acton', 'Guelph', 'Kitchener'],
     },
     "Toronto GO (Union - Markham Rd)": {
         "F": ['Toronto Union Station', '[X] Toronto East Junction', '[X] Toronto Danforth Junction', 'Eglinton (GO Peterborough)', 'Agincourt South', 'Markham Rd'],
@@ -9897,8 +9902,11 @@ Segments = {
     "Toronto GO (Union - Stouffville)": {
         "F": ['Toronto Union Station', '[X] Toronto East Junction', 'Danforth (Toronto)', '[X] Toronto East Bend', 'Scarborough', 'Kennedy', '[X] Agincourt South', 'Agincourt', 'Milliken', 'Unionville', 'Centennial', 'Markham', 'Mount Joy', 'Old Elm'],
     },
+    "Toronto GO (Union - Weston)": {
+        "F": ['Toronto Union Station', '[X] Toronto West Junction', '[X] Toronto Parkdale Junction', 'Bloor', '[X] Toronto Pelham Junction', 'Mount Dennis', 'Weston'],
+    },
     "Toronto Light Rail (Finch West - Humber College)": {
-        "F": ['Finch West-Keele', 'Sentinel', 'Tobermory', 'Driftwood', 'Jane-Finch', 'Norfinch-Oakdale', 'Signet-Arrow', 'Emery', 'Milvan-Rumike', 'Duncanwoods', 'Pearldale', 'Rowntree Mills', 'Mt. Olive', 'Stevenson-Finch', 'Albion-Finch', 'Martin Grove-Finch', 'Westmore-Finch', 'Humber College'],
+        "F": ['Finch West-Keele', 'Sentinel', 'Tobermory', 'Driftwood', 'Jane-Finch', 'Norfinch-Oakdale', 'Signet-Arrow', 'Emery (LRT)', 'Milvan-Rumike', 'Duncanwoods', 'Pearldale', 'Rowntree Mills', 'Mt. Olive', 'Stevenson-Finch', 'Albion-Finch', 'Martin Grove-Finch', 'Westmore-Finch', 'Humber College'],
     },
     "Toronto Light Rail (Kennedy - Pearson)": {
         "F": ['YYZ Terminal 1', 'Eglinton-Renforth', 'Eglinton-Martin Grove', 'Eglinton-Kipling', 'Eglinton-Islington', 'Eglinton-Royal York', 'Eglinton-Scarlett', 'Eglinton-Jane', 'Mount Dennis', 'Keelesdale', 'Eglinton-Caledonia', 'Fairbank', 'Oakwood Ave', 'Cedarvale (Toronto Line 5)', 'Forest Hill (ON)', 'Chaplin', 'Avenue', 'Eglinton-Yonge', 'Mt. Pleasant', 'Leaside', 'Laird', 'Sunnybrook Park', 'Don Valley', 'Aga Khan Park', 'Wynford', 'Sloane', "O'Connor", 'Pharmacy', 'Hakimi Lebovic', 'Golden Mile', 'Birchmount', 'Ionview', 'Kennedy'],
@@ -11228,6 +11236,9 @@ Lines = {
     "Metrolinx": {
         "GO Barrie Line": {
             "Union Station - Barrie": {'Mode': 3, 'Stations': 'Toronto GO (Union - Barrie)'},
+        },
+        "GO Bolton Line": {
+            "Union Station - Bolton": {'Mode': 3, 'Stations': 'Toronto GO (Union - Bolton)'},
         },
         "GO Kitchener Line": {
             "Kitchener - Bloomington": {'Mode': 3, 'Stations': 'Toronto GO (Kitchener - Bloomington)'},
