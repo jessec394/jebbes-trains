@@ -691,20 +691,47 @@ function HighlightStationMarker(SN, A) {
 }
 
 function BuildStationTooltip(SN, SL) {
-    var LH = Registry.filter(L => L.AllLineStations.includes(SN));
+    var S = Stations[SN];
+
+    // Collect nearby stations using the same radius as the click popup
+    var NearbyStations = [SN];
+    if (S && S.Location) {
+        Object.keys(Stations).forEach(StationKey => {
+            if (StationKey !== SN) {
+                var OtherStation = Stations[StationKey];
+                if (OtherStation && OtherStation.Location) {
+                    var Distance = CalculateDistance(
+                        S.Location[0], S.Location[1],
+                        OtherStation.Location[0], OtherStation.Location[1]
+                    );
+                    if (Distance <= STATION_POPUP_RADIUS_KM) {
+                        NearbyStations.push(StationKey);
+                    }
+                }
+            }
+        });
+    }
+
+    // Filter lines serving any nearby station
+    var LH = Registry.filter(L =>
+        L.AllLineStations.some(StationKey => NearbyStations.includes(StationKey))
+    );
+
+    // Group by mode, preserving Modes order
     var MM = {};
     LH.forEach(L => {
-        if (!MM[L.ModeName]) MM[L.ModeName] = [];
-        MM[L.ModeName].push(L);
+        if (!MM[L.ModeId]) MM[L.ModeId] = [];
+        MM[L.ModeId].push(L);
     });
 
-    var S = Stations[SN];
     var PM = S && S.Type === "Airport" ? ` <span class="PlaneIcon">✈</span>` : '';
     var H = `<div class='StationPopup'><b>${SL || SN}${PM}</b>`;
 
-    Object.keys(MM).sort().forEach(MN => {
-        H += `<div class='ModeHeader'>${MN}</div>`;
-        MM[MN].forEach(L => H += `<div class='HubLineContent'><span class='HubDot' style='background:${L.Color}'></span><span><span class='OpTag'>${L.Operator}</span><span class='Separator'>•</span>${L.Name}</span></div>`);
+    Object.keys(Modes).forEach(ModeId => {
+        if (!MM[ModeId]) return;
+        var ModeData = Modes[ModeId];
+        H += `<div class='ModeHeader'>${ModeData.Name}</div>`;
+        MM[ModeId].forEach(L => H += `<div class='HubLineContent'><span class='HubDot' style='background:${L.Color}'></span><span><span class='OpTag'>${L.Operator}</span><span class='Separator'>•</span>${L.Name}</span></div>`);
     });
 
     return H + `</div>`;

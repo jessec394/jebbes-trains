@@ -220,7 +220,7 @@ Waypoints = {
     },
     "Penn Station Reconstruction": {
         "Source": "MTA/Amtrak",
-        "Location": (40.75470, -73.99616),
+        "Location": (40.75044, -74.00152),
         "Radius": RadiusS,
         "Image": 'New York Penn Station.png',
         "Link": 'https://www.railwayage.com/passenger/ny-penn-station-reconstruction-design-kicks-off-with-notice-to-proceed/',
@@ -284,7 +284,7 @@ Waypoints = {
     },
     "Second Avenue Subway": {
         "Source": "MTA",
-        "Location": (40.73906, -73.97465),
+        "Location": (40.77456, -73.94925),
         "Radius": RadiusS,
         "Image": 'Second Avenue Subway.jpg',
         "Link": 'https://www.mta.info/project/second-avenue-subway-phase-2',
