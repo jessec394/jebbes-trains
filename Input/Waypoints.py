@@ -282,6 +282,14 @@ Waypoints = {
         "Link": 'https://www.sfcta.org/projects/salesforce-transit-center',
         "Description": "San Francisco's new multimodal hub will bring regional and high-speed rail from the peninsula into the heart of the city. Future construction will allow trains to continue east across the San Francisco Bay toward Oakland and beyond."
     },
+    "Second Avenue Subway": {
+        "Source": "MTA",
+        "Location": (40.73906, -73.97465),
+        "Radius": RadiusS,
+        "Image": 'Second Avenue Subway.jpg',
+        "Link": 'https://www.mta.info/project/second-avenue-subway-phase-2',
+        "Description": "The current phase of this project is extending the Q Train farther north toward Harlem; an eventual T Train will run under 2nd Av all the way to Lower Manhattan"
+    },
     "Southwest Heavy Rail Upgrade": {
         "Source": 'Proposal',
         "Location": (39.76004, -105.00384),
