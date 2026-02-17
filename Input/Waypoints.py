@@ -5,7 +5,7 @@ Waypoints = {
     # "": {
     #     "Source": "",
     #     "Location": (),
-    #     "Radius": Radius1,
+    #     "Radius": RadiusS,
     #     "Image": '',
     #     "Link": '',
     #     "Description": ""
@@ -48,7 +48,7 @@ Waypoints = {
         "Radius": RadiusS,
         "Image": 'MARTA Clifton BRT.png',
         "Link": 'https://roughdraftatlanta.com/2022/11/21/marta-presents-one-light-rail-two-bus-options-for-clifton-corridor',
-        "Description": "MARTA's Clifton Corridor will be constructed as bus rapid transit to serve the CDC and Emory University in between two existing heavy rail stations. The corridor would ideally be upgraded to light rail in the future, and it would run alongside mainline regional and intercity trains."
+        "Description": "MARTA's Clifton Corridor will be constructed as bus rapid transit to serve the CDC and Emory University in between two existing heavy rail stations. The route would ideally be upgraded to light rail in the future, and it would run alongside mainline regional and intercity trains."
     },
     "Columbus Convention Center": {
         "Source": "Proposal",
@@ -73,6 +73,30 @@ Waypoints = {
         "Image": 'Grand Central Madison.png',
         "Link": 'https://www.mta.info/project/east-side-access',
         "Description": "The MTA's East Side Access Project allowed commuter trains from Long Island to terminate at Grand Central (where previously, they could only reach Penn Station from the east)."
+    },
+    "HBLR Newark Extension": {
+        "Source": "Proposal",
+        "Location": (40.71992, -74.13146),
+        "Radius": RadiusS,
+        "Image": 'Kearny Point.jpg',
+        "Link": 'https://jerseydigs.com/extend-hudson-bergen-light-rail-kearny-point-ironbound',
+        "Description": "This proposed extension would bring Hudson-Bergen light rail service to the redeveloping waterfront, Kearny Point, and possibly Newark Penn Station."
+    },
+    "HBLR Northern Branch": {
+        "Source": "NJ Transit",
+        "Location": (40.84081, -73.99722),
+        "Radius": RadiusS,
+        "Image": 'HBLR Northern Branch.png',
+        "Link": 'https://www.njtransit.com/northern-branch-corridor-project',
+        "Description": "This corridor will extend the Hudson-Bergen light rail east to Englewood."
+    },
+   "HBLR Passaic-Bergen-Hudson Project": {
+        "Source": "NJ Transit",
+        "Location": (40.90623, -74.07893),
+        "Radius": RadiusS,
+        "Image": 'HBLR Passaic.png',
+        "Link": 'https://www.njtransit.com/passaic-bergen-hudson-transit-project',
+        "Description": "An extension of the Hudson-Bergen light rail would serve several unconnected communities in northern New Jersey and create transfer points with three commuter rail lines."
     },
     "I-25 & Broadway": {
         "Source": "Denver Summit FC",
