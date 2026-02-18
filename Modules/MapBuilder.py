@@ -5,21 +5,17 @@ from JavascriptGenerator import JavascriptGenerator
 from RouteAnalyzer import AnalyzeRouteStructure, GenerateRouteDiagram
 
 import Input.Data1 as D1
-import Input.Data2 as D2
 import Input.Properties as Props
 
 from Input.Waypoints import Waypoints
 
 class MapBuilder:
     def __init__(self, LinesPath):
-        self.LinesNew = D2.Lines
-        self.StationsNew = D2.Stations
+        self.Lines = D1.Lines
+        self.Stations = D1.Stations
+        self.Nodes = D1.Nodes
+        self.Segments = D1.Segments
         self.Modes = Props.Modes
-        self.SegmentsNew = D2.Segments
-        self.LinesOld = D1.Lines
-        self.NodesOld = D1.Nodes
-        self.StationsOld = D1.Stations
-        self.SegmentsOld = D1.Segments
         self.LinesPath = LinesPath
         self.Map = None
         self.RegistryNew = []
@@ -78,12 +74,14 @@ class MapBuilder:
         SatelliteLayer.add_to(self.Map)
 
     def _ProcessDataNew(self):
+        # "Current Progress" map: only lines/patterns from D1 that have a "File" key.
+        # Geometry comes from the GeoJSON file(s); station list comes from the Stations segment.
         ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
+        AllStations = {**self.Stations, **self.Nodes}
 
-        # Collect all layer data first
         LayersToAdd = []
 
-        for Operator, OperatorLines in self.LinesNew.items():
+        for Operator, OperatorLines in self.Lines.items():
             for LineName, ServicePatterns in OperatorLines.items():
                 FirstPattern = list(ServicePatterns.values())[0]
                 ModeId = FirstPattern["Mode"]
@@ -91,19 +89,25 @@ class MapBuilder:
                 CombinedFeatures, PatternsPayload, AllLineStations = [], [], []
 
                 for PatternName, PatternData in ServicePatterns.items():
-                    FullPatternStations = BuildStationSequence(PatternData, self.SegmentsNew)
+                    # Skip patterns that have no File — they don't exist yet
+                    if 'File' not in PatternData:
+                        continue
+
+                    # Station sequence from Data1 segments (no coordinate drawing between them)
+                    FullPatternStations = BuildStationSequence(PatternData, self.Segments, FilterNonStops=True)
                     for S in FullPatternStations:
                         if S not in AllLineStations:
                             AllLineStations.append(S)
 
                     Structure = AnalyzeRouteStructure(FullPatternStations)
-                    Diagram = GenerateRouteDiagram(Structure, ModeSettings['Color'], FullPatternStations, self.StationsNew)
+                    Diagram = GenerateRouteDiagram(Structure, ModeSettings['Color'], FullPatternStations, AllStations)
 
+                    # Load GeoJSON geometry from file(s)
                     PatternFiles = PatternData['File'] if isinstance(PatternData['File'], list) else [PatternData['File']]
                     for FileName in PatternFiles:
-                        Path = os.path.join(self.LinesPath, f"{FileName}.geojson")
-                        if os.path.exists(Path):
-                            with open(Path, 'r') as F:
+                        FilePath = os.path.join(self.LinesPath, f"{FileName}.geojson")
+                        if os.path.exists(FilePath):
+                            with open(FilePath, 'r') as F:
                                 GeoData = json.load(F)
                                 CombinedFeatures.extend(GeoData["features"] if "features" in GeoData else [GeoData])
 
@@ -121,7 +125,6 @@ class MapBuilder:
                         'ZOrder': ModeZOrder.get(ModeId, 0)
                     })
 
-        # Sort by ZOrder and add to map
         LayersToAdd.sort(key=lambda x: x['ZOrder'])
 
         for LayerData in LayersToAdd:
@@ -132,12 +135,13 @@ class MapBuilder:
             )
 
     def _ProcessDataOld(self):
+        # "Full Plan" map: all lines from D1, geometry drawn by connecting station coordinates.
+        # File keys are intentionally ignored here.
         ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
 
-        # Collect all layer data first
         LayersToAdd = []
 
-        for Operator, OperatorLines in self.LinesOld.items():
+        for Operator, OperatorLines in self.Lines.items():
             for LineName, ServicePatterns in OperatorLines.items():
                 FirstPattern = list(ServicePatterns.values())[0]
                 ModeId = FirstPattern["Mode"]
@@ -146,17 +150,17 @@ class MapBuilder:
                 MultiPatternCoordinates = []
 
                 for PatternName, PatternData in ServicePatterns.items():
-                    FullPatternStations = BuildStationSequence(PatternData, self.SegmentsOld, FilterNonStops=True)
+                    FullPatternStations = BuildStationSequence(PatternData, self.Segments, FilterNonStops=True)
                     for S in FullPatternStations:
                         if S not in AllLineStations:
                             AllLineStations.append(S)
 
                     Structure = AnalyzeRouteStructure(FullPatternStations)
-                    AllStations = {**self.StationsOld, **self.NodesOld}
+                    AllStations = {**self.Stations, **self.Nodes}
                     Diagram = GenerateRouteDiagram(Structure, ModeSettings['Color'], FullPatternStations, AllStations)
                     PatternsPayload.append({"Name": PatternName, "Stations": FullPatternStations, "Diagram": Diagram})
 
-                    PatternCoords = BuildCoordinateSequence(PatternData, self.SegmentsOld, self.NodesOld, self.StationsOld)
+                    PatternCoords = BuildCoordinateSequence(PatternData, self.Segments, self.Nodes, self.Stations)
                     if len(PatternCoords) >= 2:
                         MultiPatternCoordinates.append([[Lat, Lon] for Lat, Lon in PatternCoords])
 
@@ -172,7 +176,6 @@ class MapBuilder:
                         'ZOrder': ModeZOrder.get(ModeId, 0)
                     })
 
-        # Sort by ZOrder and add to map
         LayersToAdd.sort(key=lambda x: x['ZOrder'])
 
         for LayerData in LayersToAdd:
@@ -229,11 +232,11 @@ class MapBuilder:
         self.LineMappingJsOld += f"window['{LineId}']={LayerName};if({LayerName}.setZIndex){{{LayerName}.setZIndex({ZIndex});}}else{{{LayerName}.options.pane='overlayPane';}}{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
 
     def _AddUIElements(self):
-        AllNodesForOld = {**self.StationsOld, **self.NodesOld}
+        AllNodes = {**self.Stations, **self.Nodes}
 
         JsGen = JavascriptGenerator(
             self.RegistryNew, self.RegistryOld,
-            self.StationsNew, AllNodesForOld,
+            self.Stations, AllNodes,
             self.Modes,
             self.Map.get_name(),
             self.LineMappingJsNew, self.LineMappingJsOld,

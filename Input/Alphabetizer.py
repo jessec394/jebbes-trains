@@ -2,7 +2,7 @@ from Data1 import Nodes, Stations, Segments, Lines
 import pyperclip
 
 def FormatCoordinates(Tuple):
-    return f"({Tuple[0]:.5f}, {Tuple[1]:.5f})"
+    return f"({Tuple[0]:.6f}, {Tuple[1]:.6f})"
 
 Output = "Nodes = {\n"
 for Key in sorted(Nodes.keys()):

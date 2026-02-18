@@ -164,7 +164,7 @@ Waypoints = {
     },
     "Lincoln Park Stadium": {
         "Source": "Denver Broncos",
-        "Location": (39.729, -105.00774),
+        "Location": (39.72880, -105.01160),
         "Radius": RadiusS,
         "Image": 'New Broncos Stadium.png',
         "Link": 'https://www.enr.com/articles/62529-4b-denver-broncos-stadium-plan-advances-at-burnham-yard-with-2031-target',
@@ -268,11 +268,11 @@ Waypoints = {
     },
     "Roosevelt Blvd Subway": {
         "Source": "Proposal",
-        "Location": (40.0923, -75.03517),
-        "Radius": RadiusL,
+        "Location": (40.09192, -75.02774),
+        "Radius": RadiusS,
         "Image": 'Roosevelt Blvd Subway.jpg',
         "Link": 'https://blvdsubway.com/',
-        "Description": "A cut-and-cover subway under Roosevelt Blvd would extend SEPTA to a heavily underserved part of Philadelphia/"
+        "Description": "A cut-and-cover subway under Roosevelt Blvd would extend SEPTA to a historically underserved region of Philadelphia."
     },
     "San Francisco Salesforce TC": {
         "Source": "Transbay Joint Powers Authority",
