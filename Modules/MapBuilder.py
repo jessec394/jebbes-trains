@@ -1,4 +1,4 @@
-import folium, json, os
+import folium, json, os, math
 from StationResolver import BuildStationSequence, BuildCoordinateSequence
 from HtmlTemplates import SIDEBAR_HTML
 from JavascriptGenerator import JavascriptGenerator
@@ -8,6 +8,86 @@ import Input.Data1 as D1
 import Input.Properties as Props
 
 from Input.Waypoints import Waypoints
+
+def _PointToSegmentDistanceM(Lat, Lon, ALat, ALon, BLat, BLon):
+    """Minimum distance in metres from point P to segment AB, using equirectangular approximation."""
+    # Convert to flat metres (good enough for 50m threshold over short distances)
+    CosLat = math.cos(math.radians((ALat + BLat) / 2))
+    M_PER_DEG_LAT = 111320.0
+    M_PER_DEG_LON = 111320.0 * CosLat
+
+    Px = (Lon - ALon) * M_PER_DEG_LON
+    Py = (Lat - ALat) * M_PER_DEG_LAT
+    Dx = (BLon - ALon) * M_PER_DEG_LON
+    Dy = (BLat - ALat) * M_PER_DEG_LAT
+
+    LenSq = Dx * Dx + Dy * Dy
+    if LenSq == 0:
+        return math.sqrt(Px * Px + Py * Py)
+
+    T = max(0.0, min(1.0, (Px * Dx + Py * Dy) / LenSq))
+    Rx = Px - T * Dx
+    Ry = Py - T * Dy
+    return math.sqrt(Rx * Rx + Ry * Ry)
+
+
+def _MinDistanceToGeoJsonM(Lat, Lon, Features):
+    """Return the minimum distance in metres from (Lat, Lon) to any line in Features."""
+    MinDist = float('inf')
+    # ~0.001 degrees ≈ 111 m — skip any segment whose bbox is further than current best
+    EarlyExitM = 50.0  # once we're within the threshold we can stop entirely
+
+    for Feature in Features:
+        Geom = Feature.get('geometry', {})
+        GType = Geom.get('type', '')
+
+        if GType == 'LineString':
+            Lines = [Geom['coordinates']]
+        elif GType == 'MultiLineString':
+            Lines = Geom['coordinates']
+        else:
+            continue
+
+        for Line in Lines:
+            for I in range(len(Line) - 1):
+                ALon, ALat = Line[I][0], Line[I][1]
+                BLon, BLat = Line[I + 1][0], Line[I + 1][1]
+
+                # Fast bbox reject: if the segment's bounding box is further than
+                # current MinDist in degrees, skip the precise calculation.
+                MinSegLat = min(ALat, BLat)
+                MaxSegLat = max(ALat, BLat)
+                MinSegLon = min(ALon, BLon)
+                MaxSegLon = max(ALon, BLon)
+                BboxMarginDeg = MinDist / 111320.0
+                if (Lat < MinSegLat - BboxMarginDeg or Lat > MaxSegLat + BboxMarginDeg or
+                        Lon < MinSegLon - BboxMarginDeg or Lon > MaxSegLon + BboxMarginDeg):
+                    continue
+
+                D = _PointToSegmentDistanceM(Lat, Lon, ALat, ALon, BLat, BLon)
+                if D < MinDist:
+                    MinDist = D
+                    if MinDist <= EarlyExitM:
+                        return MinDist  # Can't get better than "within threshold"
+
+    return MinDist
+
+
+def _FilterStationsByProximity(StationKeys, AllStations, Features, MaxDistanceM=50):
+    """Return only those station keys whose coordinates are within MaxDistanceM of the GeoJSON."""
+    Filtered = []
+    for Key in StationKeys:
+        StationData = AllStations.get(Key)
+        if not StationData or 'Location' not in StationData:
+            # No coordinate data — keep it to avoid silently dropping stations
+            Filtered.append(Key)
+            continue
+        Lat, Lon = StationData['Location'][0], StationData['Location'][1]
+        Dist = _MinDistanceToGeoJsonM(Lat, Lon, Features)
+        if Dist <= MaxDistanceM:
+            Filtered.append(Key)
+    return Filtered
+
 
 class MapBuilder:
     def __init__(self, LinesPath):
@@ -95,6 +175,22 @@ class MapBuilder:
 
                     # Station sequence from Data1 segments (no coordinate drawing between them)
                     FullPatternStations = BuildStationSequence(PatternData, self.Segments, FilterNonStops=True)
+
+                    # Load GeoJSON geometry from file(s)
+                    PatternFiles = PatternData['File'] if isinstance(PatternData['File'], list) else [PatternData['File']]
+                    PatternFeatures = []
+                    for FileName in PatternFiles:
+                        FilePath = os.path.join(self.LinesPath, f"{FileName}.geojson")
+                        if os.path.exists(FilePath):
+                            with open(FilePath, 'r') as F:
+                                GeoData = json.load(F)
+                                PatternFeatures.extend(GeoData["features"] if "features" in GeoData else [GeoData])
+
+                    # Drop stations that are more than 50 m from the actual track geometry
+                    FullPatternStations = _FilterStationsByProximity(
+                        FullPatternStations, AllStations, PatternFeatures, MaxDistanceM=50
+                    )
+
                     for S in FullPatternStations:
                         if S not in AllLineStations:
                             AllLineStations.append(S)
@@ -102,14 +198,7 @@ class MapBuilder:
                     Structure = AnalyzeRouteStructure(FullPatternStations)
                     Diagram = GenerateRouteDiagram(Structure, ModeSettings['Color'], FullPatternStations, AllStations)
 
-                    # Load GeoJSON geometry from file(s)
-                    PatternFiles = PatternData['File'] if isinstance(PatternData['File'], list) else [PatternData['File']]
-                    for FileName in PatternFiles:
-                        FilePath = os.path.join(self.LinesPath, f"{FileName}.geojson")
-                        if os.path.exists(FilePath):
-                            with open(FilePath, 'r') as F:
-                                GeoData = json.load(F)
-                                CombinedFeatures.extend(GeoData["features"] if "features" in GeoData else [GeoData])
+                    CombinedFeatures.extend(PatternFeatures)
 
                     PatternsPayload.append({"Name": PatternName, "Stations": FullPatternStations, "Diagram": Diagram})
 

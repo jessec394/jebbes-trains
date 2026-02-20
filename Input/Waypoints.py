@@ -28,8 +28,8 @@ Waypoints = {
     },
     "CTA Red Line Extension": {
         "Source": "CTA",
-        "Location": (41.66177, -87.60210),
-        "Radius": RadiusS,
+        "Location": (41.67946, -87.58329),
+        "Radius": RadiusL,
         "Image": 'CTA Red Line Extension.jpg',
         "Link": 'https://www.transitchicago.com/rle',
         "Description": "This 5.5-mile extension of the existing Red Line will include four stops south of its current 95th/Dan Ryan terminus."

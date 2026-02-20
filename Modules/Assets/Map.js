@@ -119,13 +119,11 @@ function ToggleDataView() {
         Stations = AllNodes;
         RegistryNew.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) Ly.setStyle({opacity: 0});
+            if (Ly) HideLayer(Ly);
         });
         RegistryOld.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) {
-                Ly.setStyle({opacity: 1.0, color: L.Color, weight: L.Weight});
-            }
+            if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
         document.getElementById('ToggleButton').innerText = 'View Detailed Map';
     } else {
@@ -134,11 +132,11 @@ function ToggleDataView() {
         Stations = StationsNew;
         RegistryOld.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) Ly.setStyle({opacity: 0});
+            if (Ly) HideLayer(Ly);
         });
         RegistryNew.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) Ly.setStyle({opacity: 1.0, color: L.Color, weight: L.Weight});
+            if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
         document.getElementById('ToggleButton').innerText = 'View Full Plan';
     }
@@ -417,7 +415,7 @@ function ShowStationPopup(SN, FromMarker = false) {
     });
     HiddenRegistry.forEach(L => {
         var Ly = window[L.Id];
-        if (Ly) Ly.setStyle({opacity: 0});
+        if (Ly) HideLayer(Ly);
     });
 }
 
@@ -589,7 +587,7 @@ function Visuals(I) {
     });
     HiddenRegistry.forEach(L => {
         var Ly = window[L.Id];
-        if (Ly) Ly.setStyle({opacity: 0});
+        if (Ly) HideLayer(Ly);
     });
 }
 
@@ -634,6 +632,31 @@ function RenderDetails(I) {
             });
             El.addEventListener('click', () => ShowStationPopup(StationKey));
         }
+    });
+}
+
+function HideLayer(Ly) {
+    Ly.setStyle({opacity: 0});
+    var El = Ly.getElement ? Ly.getElement() : null;
+    if (!El && Ly._path) El = Ly._path;
+    if (!El && Ly._container) El = Ly._container;
+    if (El) El.style.pointerEvents = 'none';
+    // GeoJSON layers: iterate each feature layer
+    if (Ly.eachLayer) Ly.eachLayer(function(FL) {
+        var FEl = FL._path || (FL.getElement && FL.getElement()) || null;
+        if (FEl) FEl.style.pointerEvents = 'none';
+    });
+}
+
+function ShowLayer(Ly, Color, Weight) {
+    Ly.setStyle({color: Color, weight: Weight, opacity: 1.0});
+    var El = Ly.getElement ? Ly.getElement() : null;
+    if (!El && Ly._path) El = Ly._path;
+    if (!El && Ly._container) El = Ly._container;
+    if (El) El.style.pointerEvents = '';
+    if (Ly.eachLayer) Ly.eachLayer(function(FL) {
+        var FEl = FL._path || (FL.getElement && FL.getElement()) || null;
+        if (FEl) FEl.style.pointerEvents = '';
     });
 }
 
@@ -817,7 +840,7 @@ function Reset() {
 
     var HiddenRegistry = CurrentView === 'New' ? RegistryOld : RegistryNew;
     HiddenRegistry.forEach(L => {
-        if (window[L.Id]) window[L.Id].setStyle({opacity: 0});
+        if (window[L.Id]) HideLayer(window[L.Id]);
     });
 }
 
@@ -862,33 +885,23 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
     // Immediately set line opacities after eval
     RegistryNew.forEach(L => {
         var Ly = window[L.Id];
-        if (Ly) {
-            Ly.setStyle({opacity: 0});
-        }
+        if (Ly) HideLayer(Ly);
     });
 
     RegistryOld.forEach(L => {
         var Ly = window[L.Id];
-        if (Ly) {
-            Ly.setStyle({color: L.Color, weight: L.Weight, opacity: 1.0});
-            if (Ly.setZIndex) Ly.setZIndex(L.ZIndex);
-        }
+        if (Ly) ShowLayer(Ly, L.Color, L.Weight);
     });
 
     // Also set after a short delay to catch any delayed line rendering
     setTimeout(function() {
         RegistryOld.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) {
-                Ly.setStyle({color: L.Color, weight: L.Weight, opacity: 1.0});
-                if (Ly.setZIndex) Ly.setZIndex(L.ZIndex);
-            }
+            if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
         RegistryNew.forEach(L => {
             var Ly = window[L.Id];
-            if (Ly) {
-                Ly.setStyle({opacity: 0});
-            }
+            if (Ly) HideLayer(Ly);
         });
     }, 100);
 
