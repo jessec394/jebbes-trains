@@ -36,7 +36,7 @@ Waypoints = {
     },
     "Chicago Union Station Overhaul": {
         "Source": 'Proposal',
-        "Location": (41.87896, -87.64183),
+        "Location": (41.87980, -87.64354),
         "Radius": RadiusS,
         "Image": 'Chicago Union Station.jpg',
         "Link": 'https://www.hsrail.org/blog/its-time-to-fix-union-station',
