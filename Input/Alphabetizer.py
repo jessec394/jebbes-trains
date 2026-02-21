@@ -1,5 +1,9 @@
 from MapData import Nodes, Stations, Segments, Lines
+import os
 import pyperclip
+
+Directory = os.path.abspath(os.path.dirname(__file__))
+FilePath = os.path.join(Directory, 'MapData.py')
 
 def FormatCoordinates(Tuple):
     return f"({Tuple[0]:.6f}, {Tuple[1]:.6f})"
@@ -53,4 +57,5 @@ for Key in sorted(Lines.keys()):
     Output += "    },\n"
 Output += "}"
 
-pyperclip.copy(Output)
+with open(FilePath, 'w', encoding='utf-8') as f:
+    f.write(Output)
