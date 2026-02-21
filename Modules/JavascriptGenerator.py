@@ -1,15 +1,15 @@
 import json
 
 class JavascriptGenerator:
-    def __init__(self, RegistryNew, RegistryOld, StationsNew, AllNodes, Modes, MapName, LineMappingJsNew, LineMappingJsOld, BasemapLayerNames, InfoPoints):
-        self.RegistryNew = RegistryNew
-        self.RegistryOld = RegistryOld
-        self.StationsNew = StationsNew
+    def __init__(self, RegistryDetailed, RegistryFull, StationsDetailed, AllNodes, Modes, MapName, LineMappingJsDetailed, LineMappingJsFull, BasemapLayerNames, InfoPoints):
+        self.RegistryDetailed = RegistryDetailed
+        self.RegistryFull = RegistryFull
+        self.StationsDetailed = StationsDetailed
         self.AllNodes = AllNodes
         self.Modes = Modes
         self.MapName = MapName
-        self.LineMappingJsNew = LineMappingJsNew
-        self.LineMappingJsOld = LineMappingJsOld
+        self.LineMappingJsDetailed = LineMappingJsDetailed
+        self.LineMappingJsFull = LineMappingJsFull
         self.BasemapLayerNames = BasemapLayerNames
         self.InfoPoints = InfoPoints
 
@@ -18,9 +18,9 @@ class JavascriptGenerator:
 window.addEventListener('load', function() {{
     initializeMap(
         {json.dumps(self.MapName)},
-        {json.dumps(self.RegistryNew)},
-        {json.dumps(self.RegistryOld)},
-        {json.dumps(self.StationsNew)},
+        {json.dumps(self.RegistryDetailed)},
+        {json.dumps(self.RegistryFull)},
+        {json.dumps(self.StationsDetailed)},
         {json.dumps(self.AllNodes)},
         {json.dumps(self.Modes)},
         {{
@@ -28,8 +28,8 @@ window.addEventListener('load', function() {{
             Dark: {self.BasemapLayerNames.get('Dark', 'null')},
             Satellite: {self.BasemapLayerNames.get('Satellite', 'null')}
         }},
-        `{self.LineMappingJsNew}`,
-        `{self.LineMappingJsOld}`,
+        `{self.LineMappingJsDetailed}`,
+        `{self.LineMappingJsFull}`,
         {json.dumps(self.InfoPoints)}
     );
 }});

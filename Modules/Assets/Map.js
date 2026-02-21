@@ -1,7 +1,7 @@
-var RegistryNew, RegistryOld, Registry;
-var StationsNew, AllNodes, Stations;
+var RegistryDetailed, RegistryFull, Registry;
+var StationsDetailed, AllNodes, Stations;
 var Modes, ModesOrder;
-var CurrentView = 'Old';
+var CurrentView = 'Full';
 var SelectedId = null;
 var StationMarkers = {};
 var CurrentBaseSize = 5;
@@ -52,20 +52,17 @@ function MarkDataLoaded() {
     MapLoadingState.dataLoaded = true;
     UpdateLoadingProgress();
 
-    // Display statistics - only count from current view (RegistryOld/AllNodes which is Data1.py)
-    // Don't count RegistryNew/StationsNew which is Data2.py
-    var totalRoutes = RegistryOld.length;
+    var totalRoutes = RegistryFull.length;
     var totalStations = Object.keys(AllNodes).length;
 
     var statsElement = document.getElementById('MapStats');
     if (statsElement) {
-        statsElement.innerHTML = `<span class="stat-item">${totalRoutes} Routes</span><span class="stat-divider">•</span><span class="stat-item">${totalStations} Stations</span>`;
+        statsElement.innerHTML = `<span class="stat-item">${totalRoutes} Routes</span><span class="stat-divider">•</span><span class="stat-item">${totalStations} Stations</span><div class="stat-counting">...and counting!</div>`;
         setTimeout(() => {
             statsElement.classList.add('visible');
         }, 100);
     }
 
-    // Start fading in the map behind the skeleton
     var mapElement = document.getElementById('map');
     if (mapElement) {
         setTimeout(() => {
@@ -78,7 +75,6 @@ function MarkTilesLoaded() {
     MapLoadingState.tilesLoaded = true;
     UpdateLoadingProgress();
 
-    // Hide the skeleton after a brief delay
     setTimeout(() => {
         var skeleton = document.getElementById('MapSkeleton');
         var background = document.getElementById('LoadingBackground');
@@ -96,7 +92,6 @@ function CloseSplash() {
     splash.classList.add('hidden');
     mapBlur.classList.add('hidden');
 
-    // Ensure skeleton and background are also hidden
     if (skeleton) skeleton.classList.add('hidden');
     if (background) background.classList.add('hidden');
 }
@@ -113,28 +108,28 @@ function CalculateDistance(lat1, lon1, lat2, lon2) {
 }
 
 function ToggleDataView() {
-    if (CurrentView === 'New') {
-        CurrentView = 'Old';
-        Registry = RegistryOld;
+    if (CurrentView === 'Detailed') {
+        CurrentView = 'Full';
+        Registry = RegistryFull;
         Stations = AllNodes;
-        RegistryNew.forEach(L => {
+        RegistryDetailed.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) HideLayer(Ly);
         });
-        RegistryOld.forEach(L => {
+        RegistryFull.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
         document.getElementById('ToggleButton').innerText = 'View Detailed Map';
     } else {
-        CurrentView = 'New';
-        Registry = RegistryNew;
-        Stations = StationsNew;
-        RegistryOld.forEach(L => {
+        CurrentView = 'Detailed';
+        Registry = RegistryDetailed;
+        Stations = StationsDetailed;
+        RegistryFull.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) HideLayer(Ly);
         });
-        RegistryNew.forEach(L => {
+        RegistryDetailed.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
@@ -399,7 +394,7 @@ function ShowStationPopup(SN, FromMarker = false) {
     Overlay.style.display = 'flex';
     CurrentStationPopup = SN;
 
-    var HiddenRegistry = CurrentView === 'New' ? RegistryOld : RegistryNew;
+    var HiddenRegistry = CurrentView === 'Detailed' ? RegistryFull : RegistryDetailed;
     var ConnectedLineIds = ConnectedLines.map(L => L.Id);
     Registry.forEach(L => {
         var Ly = window[L.Id];
@@ -572,7 +567,7 @@ function BuildByMode() {
 }
 
 function Visuals(I) {
-    var HiddenRegistry = CurrentView === 'New' ? RegistryOld : RegistryNew;
+    var HiddenRegistry = CurrentView === 'Detailed' ? RegistryFull : RegistryDetailed;
     Registry.forEach(L => {
         var Ly = window[L.Id];
         if (Ly) {
@@ -641,7 +636,6 @@ function HideLayer(Ly) {
     if (!El && Ly._path) El = Ly._path;
     if (!El && Ly._container) El = Ly._container;
     if (El) El.style.pointerEvents = 'none';
-    // GeoJSON layers: iterate each feature layer
     if (Ly.eachLayer) Ly.eachLayer(function(FL) {
         var FEl = FL._path || (FL.getElement && FL.getElement()) || null;
         if (FEl) FEl.style.pointerEvents = 'none';
@@ -662,7 +656,7 @@ function ShowLayer(Ly, Color, Weight) {
 
 function HoverLine(I) {
     if (SelectedId || CurrentStationPopup) return;
-    var HiddenRegistry = CurrentView === 'New' ? RegistryOld : RegistryNew;
+    var HiddenRegistry = CurrentView === 'Detailed' ? RegistryFull : RegistryDetailed;
     var IsHidden = HiddenRegistry.find(X => X.Id === I);
     if (IsHidden) return;
     if (Registry.find(X => X.Id === I)) {
@@ -716,7 +710,6 @@ function HighlightStationMarker(SN, A) {
 function BuildStationTooltip(SN, SL) {
     var S = Stations[SN];
 
-    // Collect nearby stations using the same radius as the click popup
     var NearbyStations = [SN];
     if (S && S.Location) {
         Object.keys(Stations).forEach(StationKey => {
@@ -735,12 +728,10 @@ function BuildStationTooltip(SN, SL) {
         });
     }
 
-    // Filter lines serving any nearby station
     var LH = Registry.filter(L =>
         L.AllLineStations.some(StationKey => NearbyStations.includes(StationKey))
     );
 
-    // Group by mode, preserving Modes order
     var MM = {};
     LH.forEach(L => {
         if (!MM[L.ModeId]) MM[L.ModeId] = [];
@@ -838,7 +829,7 @@ function Reset() {
         }
     });
 
-    var HiddenRegistry = CurrentView === 'New' ? RegistryOld : RegistryNew;
+    var HiddenRegistry = CurrentView === 'Detailed' ? RegistryFull : RegistryDetailed;
     HiddenRegistry.forEach(L => {
         if (window[L.Id]) HideLayer(window[L.Id]);
     });
@@ -864,42 +855,39 @@ function SwitchBasemap(Name) {
     }
 }
 
-function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes, modes, basemapLayerNames, lineMappingJsNew, lineMappingJsOld, infoPoints) {
+function initializeMap(mapName, registryDetailed, registryFull, stationsDetailed, allNodes, modes, basemapLayerNames, lineMappingJsDetailed, lineMappingJsFull, infoPoints) {
     MAP_NAME = mapName;
-    RegistryNew = registryNew;
-    RegistryOld = registryOld;
-    Registry = RegistryOld;
-    StationsNew = stationsNew;
+    RegistryDetailed = registryDetailed;
+    RegistryFull = registryFull;
+    Registry = RegistryFull;
+    StationsDetailed = stationsDetailed;
     AllNodes = allNodes;
     Stations = AllNodes;
     Modes = modes;
     ModesOrder = Modes;
     InfoPoints = infoPoints || {};
 
-    // Mark map as initialized
     MarkMapInitialized();
 
-    eval(lineMappingJsNew);
-    eval(lineMappingJsOld);
+    eval(lineMappingJsDetailed);
+    eval(lineMappingJsFull);
 
-    // Immediately set line opacities after eval
-    RegistryNew.forEach(L => {
+    RegistryDetailed.forEach(L => {
         var Ly = window[L.Id];
         if (Ly) HideLayer(Ly);
     });
 
-    RegistryOld.forEach(L => {
+    RegistryFull.forEach(L => {
         var Ly = window[L.Id];
         if (Ly) ShowLayer(Ly, L.Color, L.Weight);
     });
 
-    // Also set after a short delay to catch any delayed line rendering
     setTimeout(function() {
-        RegistryOld.forEach(L => {
+        RegistryFull.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) ShowLayer(Ly, L.Color, L.Weight);
         });
-        RegistryNew.forEach(L => {
+        RegistryDetailed.forEach(L => {
             var Ly = window[L.Id];
             if (Ly) HideLayer(Ly);
         });
@@ -928,7 +916,6 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
         }
     });
 
-    // Collapse sidebar on mobile by default
     if (window.innerWidth <= 768) {
         var sidebar = document.getElementById('Sidebar');
         var handle = document.getElementById('Handle');
@@ -938,10 +925,8 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
         }
     }
 
-    // Mark data as loaded (lines, stations, etc.)
     MarkDataLoaded();
 
-    // Listen for tile loading completion
     var tileLoadCheck = setInterval(function() {
         var tiles = document.querySelectorAll('.leaflet-tile');
         var allLoaded = true;
@@ -958,14 +943,12 @@ function initializeMap(mapName, registryNew, registryOld, stationsNew, allNodes,
         }
     }, 100);
 
-    // Fallback: mark tiles as loaded after 3 seconds regardless
     setTimeout(function() {
         if (!MapLoadingState.tilesLoaded) {
             MarkTilesLoaded();
         }
     }, 3000);
 
-    // Also listen to Leaflet's load event
     window[MAP_NAME].on('load', function() {
         setTimeout(function() {
             if (!MapLoadingState.tilesLoaded) {
@@ -1051,7 +1034,6 @@ function RenderInfoMarkers() {
         var Info = InfoPoints[Key];
         var RadiusMeters = (Info.Radius || 0.2) * 1000;
 
-        // Create outer glow circle
         var OuterCircle = L.circle(Info.Location, {
             radius: RadiusMeters * 1.3,
             fillColor: '#3b82f6',
@@ -1063,7 +1045,6 @@ function RenderInfoMarkers() {
             interactive: false
         }).addTo(window[MAP_NAME]);
 
-        // Create main circle
         var Circle = L.circle(Info.Location, {
             radius: RadiusMeters,
             fillColor: '#3b82f6',
@@ -1074,7 +1055,6 @@ function RenderInfoMarkers() {
             className: 'InfoMarkerCircle'
         }).addTo(window[MAP_NAME]);
 
-        // Create inner bright center
         var InnerCircle = L.circle(Info.Location, {
             radius: RadiusMeters * 0.4,
             fillColor: '#60a5fa',

@@ -175,6 +175,7 @@
 
 #MapStats {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 12px;
@@ -199,6 +200,16 @@
 .stat-divider {
     color: #cbd5e1;
     font-weight: 400;
+}
+
+.stat-counting {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+    margin-top: -4px;
 }
 
 #LoadingIndicator {

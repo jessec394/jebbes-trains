@@ -98,18 +98,18 @@ class MapBuilder:
         self.Modes = Props.Modes
         self.LinesPath = LinesPath
         self.Map = None
-        self.RegistryNew = []
-        self.RegistryOld = []
-        self.LineMappingJsNew = ""
-        self.LineMappingJsOld = ""
+        self.RegistryDetailed = []
+        self.RegistryFull = []
+        self.LineMappingJsDetailed = ""
+        self.LineMappingJsFull = ""
         self.BasemapLayerNames = {}
         self.InfoPoints = Waypoints
 
     def BuildMap(self):
         self.Map = folium.Map(location=[40, -100], zoom_start=5, tiles=None, zoom_control=False, prefer_canvas=True)
         self._AddTileLayers()
-        self._ProcessDataNew()
-        self._ProcessDataOld()
+        self._ProcessDetailedData()
+        self._ProcessFullData()
         self._AddUIElements()
 
     def _AddTileLayers(self):
@@ -153,7 +153,7 @@ class MapBuilder:
         DarkLayer.add_to(self.Map)
         SatelliteLayer.add_to(self.Map)
 
-    def _ProcessDataNew(self):
+    def _ProcessDetailedData(self):
         # "Current Progress" map: only lines/patterns from D1 that have a "File" key.
         # Geometry comes from the GeoJSON file(s); station list comes from the Stations segment.
         ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
@@ -217,13 +217,13 @@ class MapBuilder:
         LayersToAdd.sort(key=lambda x: x['ZOrder'])
 
         for LayerData in LayersToAdd:
-            self._AddLineLayerNew(
+            self._AddDetailedLineLayer(
                 LayerData['Operator'], LayerData['LineName'], LayerData['ModeId'],
                 LayerData['ModeSettings'], ModeZOrder, LayerData['CombinedFeatures'],
                 LayerData['PatternsPayload'], LayerData['AllLineStations']
             )
 
-    def _ProcessDataOld(self):
+    def _ProcessFullData(self):
         # "Full Plan" map: all lines from D1, geometry drawn by connecting station coordinates.
         # File keys are intentionally ignored here.
         ModeZOrder = {Mode: self.Modes[Mode].get('zOrder', 0) for Mode in self.Modes.keys()}
@@ -268,17 +268,17 @@ class MapBuilder:
         LayersToAdd.sort(key=lambda x: x['ZOrder'])
 
         for LayerData in LayersToAdd:
-            self._AddLineLayerOld(
+            self._AddFullLineLayer(
                 LayerData['Operator'], LayerData['LineName'], LayerData['ModeId'],
                 LayerData['ModeSettings'], ModeZOrder, LayerData['MultiPatternCoordinates'],
                 LayerData['PatternsPayload'], LayerData['AllLineStations']
             )
 
-    def _AddLineLayerNew(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, CombinedFeatures, PatternsPayload, AllLineStations):
-        LineId = f"LineNew_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
+    def _AddDetailedLineLayer(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, CombinedFeatures, PatternsPayload, AllLineStations):
+        LineId = f"LineDetailed_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
         ZIndex = ModeZOrder.get(ModeId, 0) * 100
 
-        self.RegistryNew.append({
+        self.RegistryDetailed.append({
             'Id': LineId, 'Color': ModeSettings['Color'], 'Weight': ModeSettings['Weight'],
             'Name': LineName, 'Operator': Operator,
             'ModeId': ModeId, 'ModeName': ModeSettings['Name'], 'ZIndex': ZIndex,
@@ -296,13 +296,13 @@ class MapBuilder:
         ).add_to(self.Map)
 
         LayerName = GeoJsonLayer.get_name()
-        self.LineMappingJsNew += f"window['{LineId}']={LayerName};{LayerName}.setZIndex({ZIndex});{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
+        self.LineMappingJsDetailed += f"window['{LineId}']={LayerName};{LayerName}.setZIndex({ZIndex});{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
 
-    def _AddLineLayerOld(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, MultiPatternCoordinates, PatternsPayload, AllLineStations):
-        LineId = f"LineOld_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
+    def _AddFullLineLayer(self, Operator, LineName, ModeId, ModeSettings, ModeZOrder, MultiPatternCoordinates, PatternsPayload, AllLineStations):
+        LineId = f"LineFull_{Operator}_{LineName}".replace(" ", "_").replace("'", "")
         ZIndex = ModeZOrder.get(ModeId, 0) * 100
 
-        self.RegistryOld.append({
+        self.RegistryFull.append({
             'Id': LineId, 'Color': ModeSettings['Color'], 'Weight': ModeSettings['Weight'],
             'Name': LineName, 'Operator': Operator,
             'ModeId': ModeId, 'ModeName': ModeSettings['Name'], 'ZIndex': ZIndex,
@@ -318,17 +318,17 @@ class MapBuilder:
         ).add_to(self.Map)
 
         LayerName = PolylineLayer.get_name()
-        self.LineMappingJsOld += f"window['{LineId}']={LayerName};if({LayerName}.setZIndex){{{LayerName}.setZIndex({ZIndex});}}else{{{LayerName}.options.pane='overlayPane';}}{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='New'?RegistryOld:RegistryNew;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
+        self.LineMappingJsFull += f"window['{LineId}']={LayerName};if({LayerName}.setZIndex){{{LayerName}.setZIndex({ZIndex});}}else{{{LayerName}.options.pane='overlayPane';}}{LayerName}.on('mouseover',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;HoverLine('{LineId}');}}).on('mouseout',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;UnhoverLine();}}).on('click',e=>{{var HR=CurrentView==='Detailed'?RegistryFull:RegistryDetailed;if(HR.find(X=>X.Id==='{LineId}'))return;SelectLineFromMap('{LineId}');L.DomEvent.stopPropagation(e);}});"
 
     def _AddUIElements(self):
         AllNodes = {**self.Stations, **self.Nodes}
 
         JsGen = JavascriptGenerator(
-            self.RegistryNew, self.RegistryOld,
+            self.RegistryDetailed, self.RegistryFull,
             self.Stations, AllNodes,
             self.Modes,
             self.Map.get_name(),
-            self.LineMappingJsNew, self.LineMappingJsOld,
+            self.LineMappingJsDetailed, self.LineMappingJsFull,
             self.BasemapLayerNames,
             self.InfoPoints
         )
