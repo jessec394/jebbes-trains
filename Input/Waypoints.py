@@ -1,3 +1,4 @@
+RadiusX = 5.0
 RadiusL = 1.0
 RadiusS = 0.2
 
@@ -10,6 +11,14 @@ Waypoints = {
     #     "Link": '',
     #     "Description": ""
     # },
+    "3C+D Corridor": {
+        "Source": "Proposal",
+        "Location": (40.86522, -82.37645),
+        "Radius": RadiusX,
+        "Image": '3C+D.png',
+        "Link": 'https://www.allaboardohio.org/amtrak-rail-routes/3c%2Bd---cleveland-columbus-dayton-cincinnati',
+        "Description": "The 3C+D aims to be Ohio's first state-supported passenger route connecting Cleveland, Columbus, and Cincinnati."
+    },
     "Atlanta Central Station": {
         "Source": "Proposal",
         "Location": (33.76132, -84.40162),

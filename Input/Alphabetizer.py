@@ -23,7 +23,7 @@ for Key in sorted(Stations.keys()):
         for k, v in Content.items():
             if k != 'Location':
                 inner_parts.append(f"{repr(k)}: {repr(v)}")
-        station_content = "{ " + ", ".join(inner_parts) + " }"
+        station_content = "{" + ", ".join(inner_parts) + "}"
         Output += f'    "{Key}": {station_content},\n'
     else:
         Output += f'    "{Key}": {repr(Content)},\n'
