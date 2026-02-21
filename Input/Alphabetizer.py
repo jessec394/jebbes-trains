@@ -1,4 +1,4 @@
-from Data1 import Nodes, Stations, Segments, Lines
+from MapData import Nodes, Stations, Segments, Lines
 import pyperclip
 
 def FormatCoordinates(Tuple):

@@ -4,7 +4,7 @@ from HtmlTemplates import SIDEBAR_HTML
 from JavascriptGenerator import JavascriptGenerator
 from RouteAnalyzer import AnalyzeRouteStructure, GenerateRouteDiagram
 
-import Input.Data1 as D1
+import Input.MapData as D1
 import Input.Properties as Props
 
 from Input.Waypoints import Waypoints
