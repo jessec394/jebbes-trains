@@ -1,5 +1,6 @@
-RadiusX = 5.0
-RadiusL = 1.0
+RadiusX = 10.0
+RadiusL = 5.0
+RadiusM = 1.0
 RadiusS = 0.2
 
 Waypoints = {
@@ -13,24 +14,32 @@ Waypoints = {
     # },
     "3C+D Corridor": {
         "Source": "Proposal",
-        "Location": (40.86522, -82.37645),
+        "Location": (40.80192, -82.29924),
         "Radius": RadiusX,
         "Image": '3C+D.png',
         "Link": 'https://www.allaboardohio.org/amtrak-rail-routes/3c%2Bd---cleveland-columbus-dayton-cincinnati',
         "Description": "The 3C+D aims to be Ohio's first state-supported passenger route connecting Cleveland, Columbus, and Cincinnati."
+    },
+    "Alto High-Speed Rail": {
+        "Source": "Alto",
+        "Location": (44.90552, -77.27046),
+        "Radius": RadiusX,
+        "Image": 'Alto.png',
+        "Link": 'https://www.altotrain.ca/en',
+        "Description": "Alto is planning Canada's first high-speed rail corridor between Toronto, Montréal, and Québec City."
     },
     "Atlanta Central Station": {
         "Source": "Proposal",
         "Location": (33.76132, -84.40162),
         "Radius": RadiusS,
         "Image": 'Atlanta Central Station.png',
-        "Link": 'https://roughdraftatlanta.com/2025/08/28/atlanta-amtrak-station-relocation/',
+        "Link": 'https://roughdraftatlanta.com/2025/08/28/atlanta-amtrak-station-relocation',
         "Description": "Expanded rail transit in the South requires establishing Atlanta as a proper intercity hub. A new multimodal station in the heart of downtown would anchor both regional and intercity rail while providing direct access to Mercedes-Benz Stadium and State Farm Arena."
     },
     "Atlanta Regional Rail Network": {
         "Source": "Proposal",
         "Location": (33.67337, -84.08028),
-        "Radius": RadiusL,
+        "Radius": RadiusM,
         "Image": 'ATL Trains.png',
         "Link": 'https://www.atltrains.com',
         "Description": "An unofficial proposal by ATL Trains outlines a comprehensive regional rail network for the greater Atlanta Region. The corridors in this map were drawn with heavy inspiration from that website."
@@ -38,7 +47,7 @@ Waypoints = {
     "CTA Red Line Extension": {
         "Source": "CTA",
         "Location": (41.67946, -87.58329),
-        "Radius": RadiusL,
+        "Radius": RadiusM,
         "Image": 'CTA Red Line Extension.jpg',
         "Link": 'https://www.transitchicago.com/rle',
         "Description": "This 5.5-mile extension of the existing Red Line will include four stops south of its current 95th/Dan Ryan terminus."
@@ -73,7 +82,7 @@ Waypoints = {
         "Radius": RadiusS,
         "Image": 'MARTA Five Points.png',
         "Link": 'http://fivepointstransformation.com/home',
-        "Description": "The massive overhaul of MARTA's central transit hub will include overhauled facilities, new amenities, public spaces, and retail opportunities."
+        "Description": "The massive overhaul of MARTA's central transit hub will include renovated facilities, new amenities, public spaces, and retail opportunities."
     },
     "Grand Central Madison": {
         "Source": "MTA",
@@ -81,7 +90,7 @@ Waypoints = {
         "Radius": RadiusS,
         "Image": 'Grand Central Madison.png',
         "Link": 'https://www.mta.info/project/east-side-access',
-        "Description": "The MTA's East Side Access Project allowed commuter trains from Long Island to terminate at Grand Central (where previously, they could only reach Penn Station from the east)."
+        "Description": "The MTA's East Side Access Project allowed commuter trains from Long Island to terminate at Grand Central (where previously, they could only reach Penn Station)."
     },
     "HBLR Newark Extension": {
         "Source": "Proposal",
@@ -238,7 +247,7 @@ Waypoints = {
     "RTD B Line Extension": {
         "Source": 'RTD',
         "Location": (39.89636, -105.04641),
-        "Radius": RadiusL,
+        "Radius": RadiusM,
         "Image": 'RTD B Line Extension.png',
         "Link": 'https://www.rtd-denver.com/about-rtd/projects/fastracks/b-line',
         "Description": "Denver's shortest commuter train will become its longest after being extended beyond its current Westminster terminus to Boulder and Longmont, sharing the northwest corridor with Front Range Passenger Rail"
@@ -246,7 +255,7 @@ Waypoints = {
     "RTD G Line Extension": {
         "Source": 'Proposal',
         "Location": (39.78518, -105.21934),
-        "Radius": RadiusL,
+        "Radius": RadiusM,
         "Image": 'RTD G Line Extension.png',
         "Link": 'https://www.greaterdenvertransit.com/rtd-gline-extension',
         "Description": "Despite not being included in the Fastracks plan, downtown Golden is the logical endpoint of an eventual G Line extension along RTD-owned right-of-way."
@@ -262,7 +271,7 @@ Waypoints = {
     "RTD N Line Extension": {
         "Source": 'RTD',
         "Location": (39.98610, -104.97436),
-        "Radius": RadiusL,
+        "Radius": RadiusM,
         "Image": 'RTD N Line Extension.jpg',
         "Link": 'https://www.rtd-denver.com/about-rtd/projects/fastracks/n-line',
         "Description": "Phase II of Fastracks plans to extend the N Line north of E-470."
