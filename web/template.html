@@ -1,0 +1,130 @@
+<div id="LoadingBackground"></div>
+<div id="MapSkeleton">
+    <div class="skeleton-line sl-1"></div>
+    <div class="skeleton-line sl-2"></div>
+    <div class="skeleton-line sl-3"></div>
+    <div class="skeleton-line sl-4"></div>
+    <div class="skeleton-line sl-5"></div>
+    <div class="skeleton-line sl-6"></div>
+    <div class="skeleton-line sl-7"></div>
+    <div class="skeleton-line sl-8"></div>
+
+    <div class="skeleton-node sn-1"></div>
+    <div class="skeleton-node sn-2"></div>
+    <div class="skeleton-node sn-3"></div>
+    <div class="skeleton-node sn-4"></div>
+    <div class="skeleton-node sn-5"></div>
+    <div class="skeleton-node sn-6"></div>
+    <div class="skeleton-node sn-7"></div>
+    <div class="skeleton-node sn-8"></div>
+    <div class="skeleton-node sn-9"></div>
+    <div class="skeleton-node sn-10"></div>
+</div>
+<div id="SplashScreen">
+    <div id="SplashContent">
+        <div id="SplashTitle">jebbe's trains</div>
+        <div id="SplashSubtitle">An optimistic future for North American rail transit</div>
+        <div id="MapStats"></div>
+
+        <div id="ViewSelector">
+            <div id="ViewOptions">
+
+                <div class="ViewOption selected" data-view="fantasy-full" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Future — Full Plan</div>
+                        <div class="ViewOptionDesc">The entire fantasy map, simplified</div>
+                    </div>
+                </div>
+
+                <div class="ViewOption" data-view="fantasy-detailed" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Future — Detailed</div>
+                        <div class="ViewOptionDesc">WIP fantasy map made in NIMBY Rails</div>
+                    </div>
+                </div>
+
+                <div class="ViewOptionDivider">
+                    <span>or</span>
+                </div>
+
+                <div class="ViewOption" data-view="present" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Present Day</div>
+                        <div class="ViewOptionDesc">Existing network courtesy of BRouter</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="LoadingIndicator">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+        <div id="LoadingText">Loading map data...</div>
+        <button id="SplashButton" onclick="CloseSplash()">View Map</button>
+    </div>
+</div>
+<div id="MapBlur"></div>
+<div id="HeaderInfo"></div>
+<div id="InfoPopupBackdrop" onclick="CloseInfoPopup()"></div>
+<div id="InfoPopupOverlay">
+    <div class="InfoPopupHeader">
+        <button class="InfoPopupClose" onclick="CloseInfoPopup()">×</button>
+        <div class="InfoPopupTitle" id="InfoPopupTitle"></div>
+        <div class="InfoPopupSource" id="InfoPopupSource"></div>
+    </div>
+    <div class="InfoPopupContent" id="InfoPopupContent"></div>
+</div>
+<div id="BasemapSwitcher">
+    <div id="LightButton" class="BasemapButton active" onclick="SwitchBasemap('Light')" title="Light Map"></div>
+    <div id="DarkButton" class="BasemapButton" onclick="SwitchBasemap('Dark')" title="Dark Map"></div>
+    <div id="SatelliteButton" class="BasemapButton" onclick="SwitchBasemap('Satellite')" title="Satellite"></div>
+</div>
+<div id="StationPopupOverlay">
+    <div class="PopupHeader">
+        <button class="PopupClose" onclick="CloseStationPopup()">×</button>
+        <div class="PopupStationName" id="PopupStationName"></div>
+        <div class="PopupStationType" id="PopupStationType"></div>
+    </div>
+    <div class="PopupContent" id="PopupContent"></div>
+</div>
+<div id="Sidebar" class="splash-hidden">
+    <div id="Handle" onclick="ToggleSidebar()">◀</div>
+    <div id="SidebarHeader">
+        <div id="SidebarBrand">NIMBY Rails</div>
+        <div id="SidebarTitle">Passenger Rail Map</div>
+    </div>
+    <div id="LinesView">
+        <div id="SearchRow">
+            <input type="text" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+            <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">⊟</button>
+        </div>
+        <div id="ListContainer"></div>
+    </div>
+</div>
+<div id="ModeFilterRow"></div>
+<div id="MapViewControl">
+    <div id="MapViewInner">
+        <div id="MapViewFutureCol" class="MapViewCol active-col" onclick="SwitchMapMode('Fantasy')" title="Future vision for North American rail">
+            <div class="MapViewColContent">
+                <div class="MapViewColLabel">Future Vision</div>
+                <div id="FantasySubToggle">
+                    <button id="BtnFullPlan" class="SubToggleBtn active" onclick="event.stopPropagation(); SetFantasyView('Full')">Full Plan</button>
+                    <button id="BtnDetailed" class="SubToggleBtn" onclick="event.stopPropagation(); SetFantasyView('Detailed')">Detailed</button>
+                </div>
+            </div>
+        </div>
+        <div id="MapViewDivider"></div>
+        <div id="MapViewPresentCol" class="MapViewCol" onclick="SwitchMapMode('Present')" title="Existing routes operating today">
+            <div class="MapViewColContent">
+                <div class="MapViewColLabel">Present Day</div>
+                <div class="MapViewColSub">Existing routes</div>
+            </div>
+        </div>
+    </div>
+</div>
