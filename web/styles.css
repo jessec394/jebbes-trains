@@ -1,0 +1,1805 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --glass: rgba(255, 255, 255, 0.9);
+    --blur: blur(20px);
+    --shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Map Loading States */
+#map {
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+#map.loaded {
+    opacity: 1;
+}
+
+/* Loading Screen Background */
+#LoadingBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 9997;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#LoadingBackground.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Animated Map Skeleton */
+#MapSkeleton {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background: #f1f5f9;
+    overflow: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#MapSkeleton.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.skeleton-line {
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(90deg, #cbd5e1 0%, #94a3b8 50%, #cbd5e1 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s ease-in-out infinite;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.skeleton-node {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #94a3b8;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+/* Skeleton line positions */
+.sl-1 { top: 20%; left: 10%; width: 300px; transform: rotate(-15deg); }
+.sl-2 { top: 30%; left: 25%; width: 400px; transform: rotate(5deg); }
+.sl-3 { top: 45%; left: 15%; width: 350px; transform: rotate(-8deg); }
+.sl-4 { top: 55%; left: 40%; width: 450px; transform: rotate(12deg); }
+.sl-5 { top: 65%; left: 20%; width: 280px; transform: rotate(-20deg); }
+.sl-6 { top: 75%; left: 50%; width: 320px; transform: rotate(8deg); }
+.sl-7 { top: 35%; left: 60%; width: 380px; transform: rotate(-12deg); }
+.sl-8 { top: 48%; left: 70%; width: 250px; transform: rotate(18deg); }
+
+/* Skeleton node positions */
+.sn-1  { top: 20%; left: 15%; animation-delay: 0s; }
+.sn-2  { top: 25%; left: 35%; animation-delay: 0.3s; }
+.sn-3  { top: 40%; left: 22%; animation-delay: 0.6s; }
+.sn-4  { top: 52%; left: 48%; animation-delay: 0.9s; }
+.sn-5  { top: 68%; left: 28%; animation-delay: 1.2s; }
+.sn-6  { top: 78%; left: 55%; animation-delay: 1.5s; }
+.sn-7  { top: 32%; left: 68%; animation-delay: 0.4s; }
+.sn-8  { top: 50%; left: 75%; animation-delay: 0.8s; }
+.sn-9  { top: 45%; left: 62%; animation-delay: 1.1s; }
+.sn-10 { top: 60%; left: 80%; animation-delay: 1.4s; }
+
+#MapBlur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#MapBlur.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#SplashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#SplashScreen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#SplashContent {
+    text-align: center;
+    padding: 52px 56px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 32px;
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    animation: slideUp 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    width: 440px;
+    max-width: calc(100vw - 40px);
+}
+
+#SplashContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 100%);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#SplashTitle {
+    font-size: 56px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#SplashSubtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+#MapStats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#MapStats.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-item {
+    letter-spacing: 0.3px;
+}
+
+.stat-divider {
+    color: #cbd5e1;
+    font-weight: 400;
+}
+
+.stat-counting {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+    margin-top: -4px;
+}
+
+/* View Selector in Splash */
+#ViewSelector {
+    margin-bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.35s ease, margin-bottom 0.4s ease;
+    pointer-events: none;
+}
+
+#ViewSelector.ready {
+    max-height: 400px;
+    margin-bottom: 28px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#ViewOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.ViewOption {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1.5px solid rgba(0,0,0,0.07);
+    background: rgba(248, 250, 252, 0.6);
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ViewOption:hover {
+    background: #fff;
+    border-color: rgba(0,0,0,0.14);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.ViewOption.selected {
+    background: #fff;
+    border-color: #0f172a;
+    box-shadow: 0 0 0 3px rgba(15,23,42,0.06);
+}
+
+.ViewOptionCheck {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.15);
+    flex-shrink: 0;
+    position: relative;
+    transition: border-color 0.15s ease, background 0.15s ease;
+    background: transparent;
+}
+
+.ViewOption.selected .ViewOptionCheck {
+    border-color: #0f172a;
+    background: #0f172a;
+}
+
+.ViewOption.selected .ViewOptionCheck::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -58%) rotate(45deg);
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.ViewOptionText {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.ViewOptionName {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: -0.1px;
+    line-height: 1.2;
+}
+
+.ViewOption.selected .ViewOptionName {
+    color: #0f172a;
+}
+
+.ViewOptionDesc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #64748b;
+    line-height: 1.4;
+    font-family: 'Inter', sans-serif;
+}
+
+.ViewOptionDivider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 2px;
+    color: #cbd5e1;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+.ViewOptionDivider::before,
+.ViewOptionDivider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+/* Sidebar hidden during splash */
+#Sidebar.splash-hidden {
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#Sidebar.splash-visible {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;
+}
+
+#LoadingIndicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    height: 40px;
+}
+
+#LoadingIndicator.hidden {
+    display: none;
+}
+
+.loading-dot {
+    width: 10px;
+    height: 10px;
+    background: #0f172a;
+    border-radius: 50%;
+    animation: bounce 1.4s ease-in-out infinite;
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.15);
+}
+
+.loading-dot:nth-child(1) { animation-delay: 0s; }
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-15px); }
+}
+
+#LoadingText {
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 25px;
+    min-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+#SplashButton {
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 18px 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(10px);
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    letter-spacing: 0.3px;
+}
+
+#SplashButton.ready {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#SplashButton:hover {
+    background: #1e293b;
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 28px rgba(15, 23, 42, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+}
+
+#SplashButton:active {
+    transform: translateY(-1px);
+    box-shadow:
+        0 6px 16px rgba(15, 23, 42, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+}
+
+#Sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 360px;
+    background: var(--glass);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    z-index: 9999;
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+#Sidebar.collapsed {
+    transform: translateX(-380px);
+}
+
+#SidebarHeader {
+    padding: 40px 30px 10px 30px;
+}
+
+#SidebarBrand {
+    font-size: 10px;
+    font-weight: 900;
+    color: #475569;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+}
+
+#SidebarTitle {
+    font-size: 28px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.8px;
+}
+
+#LinesView {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#SearchRow {
+    padding: 20px 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#SearchInput {
+    flex: 1;
+    border: none;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    font-size: 14px;
+    outline: none;
+    font-weight: 500;
+}
+
+/* ─── Mode Visibility Filter Row (floating above MapViewControl) ──────── */
+
+#ModeFilterRow {
+    display: none; /* shown by JS when >1 mode exists */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9499;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 5px;
+    max-width: 360px;
+    /* Offset upward by MapViewControl height (~56px) + gap */
+    transform: translateY(calc(-100% - 10px));
+}
+
+#ModeFilterRow .ModeToggleBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px 5px 8px;
+    border: 1.5px solid rgba(255,255,255,0.18);
+    border-radius: 99px;
+    background: rgba(15, 15, 20, 0.82);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.78);
+    transition: all 0.18s ease;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+#ModeFilterRow .ModeToggleBtn:hover {
+    background: rgba(30, 30, 40, 0.95);
+    border-color: rgba(255,255,255,0.35);
+    color: #fff;
+}
+
+#ModeFilterRow .ModeToggleBtn.mode-off {
+    background: rgba(15, 15, 20, 0.5);
+    border-color: rgba(255,255,255,0.07);
+    color: rgba(255,255,255,0.22);
+    box-shadow: none;
+}
+
+#ModeFilterRow .ModeToggleBtn.mode-off .ModeToggleDot {
+    opacity: 0.2;
+    filter: grayscale(1);
+}
+
+#ModeFilterRow .ModeToggleDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: opacity 0.18s ease, filter 0.18s ease;
+}
+
+/* Disabled mode group in the route list — visually muted */
+.GroupBox.mode-group-off {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+/* ─── Station Search Row ─────────────────────────────────────────────── */
+
+#StationSearchRow {
+    padding: 0 25px 16px 25px;
+    position: relative;
+}
+
+#StationSearchInput {
+    width: 100%;
+    border: none;
+    padding: 13px 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    font-size: 14px;
+    outline: none;
+    font-weight: 500;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    transition: background 0.15s ease;
+    box-sizing: border-box;
+}
+
+#StationSearchInput:focus {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+#StationSearchDropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% - 6px);
+    left: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.98);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.05);
+    z-index: 10001;
+    overflow: hidden;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+#StationSearchDropdown.show {
+    display: block;
+}
+
+.StationSearchItem {
+    padding: 10px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: background 0.12s ease;
+}
+
+.StationSearchItem:last-child {
+    border-bottom: none;
+}
+
+.StationSearchItem:hover,
+.StationSearchItem.active {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.StationSearchName {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.StationSearchLines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.StationSearchPill {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 99px;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+}
+
+/* ─── Selected Station Marker Ring ───────────────────────────────────── */
+/* Adds a subtle animated outer ring to the selected station's SVG path  */
+
+.station-marker-selected {
+    filter: drop-shadow(0 0 5px currentColor);
+}
+
+#CollapseAllButton {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+#ListContainer {
+    padding: 0 18px 20px 18px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#Handle {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 100px;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0 12px 12px 0;
+    font-size: 12px;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+#Handle:hover {
+    background: #333;
+    width: 30px;
+    right: -30px;
+}
+
+.Tabs {
+    display: flex;
+    padding: 20px 25px 0 25px;
+    gap: 10px;
+}
+
+.Tab {
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgba(0,0,0,0.05);
+    color: #64748b;
+    transition: 0.2s;
+}
+
+.Tab.active {
+    background: #111;
+    color: #fff;
+}
+
+.PlannerInput {
+    width: 100%;
+    border: none;
+    padding: 12px 15px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 12px;
+    font-size: 13px;
+    outline: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.TripResult {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.TripResult:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: rgba(0,0,0,0.1);
+}
+
+.TripResult.selected {
+    border: 2px solid #1e293b;
+    box-shadow: 0 8px 20px rgba(30,41,59,0.2);
+}
+
+.ItineraryHeader {
+    font-size: 11px;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.Step {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.Step::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--step-color, #cbd5e1);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--step-color, #cbd5e1);
+}
+
+.StepLine {
+    font-weight: 800;
+    color: var(--step-color);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.StepAction {
+    font-weight: 600;
+    color: #1e293b;
+    display: block;
+}
+
+.TransferBadge {
+    display: inline-block;
+    background: rgba(30,41,59,0.1);
+    color: #1e293b;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.Item {
+    margin-bottom: 8px;
+    padding: 12px 20px;
+    background: #f8fafc;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.Item::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    bottom: 12px;
+    width: 5px;
+    border-radius: 10px;
+    background: var(--line-color, #cbd5e1);
+}
+
+.Item:hover {
+    background: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.03);
+}
+
+.ItemName {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.2;
+}
+
+#HeaderInfo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75px;
+    background: var(--glass);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    z-index: 9000;
+    border-radius: 40px;
+    display: none;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.GroupBox {
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.02);
+    padding: 4px;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.GroupTitle {
+    padding: 12px 15px;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.OpGroupBox {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-left: 2px solid rgba(0,0,0,0.05);
+    margin-left: 10px;
+}
+
+.OpGroupTitle {
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.Indicator {
+    margin-right: 10px;
+    font-size: 10px;
+    transition: transform 0.3s;
+    opacity: 0.5;
+}
+
+.ModeDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.PatternBox {
+    margin-top: 8px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.02);
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.PatternTitle {
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.PatternContent {
+    padding: 10px 5px;
+}
+
+.station-label {
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.station-label:hover {
+    font-size: 14px !important;
+    fill: #0f172a !important;
+}
+
+.station-dot {
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.station-dot:hover {
+    r: 8;
+}
+
+.station-label.diagram-hover {
+    font-size: 14px !important;
+    fill: #0f172a !important;
+}
+
+.station-dot.diagram-hover {
+    r: 8;
+}
+
+#StationPopupOverlay {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 400px;
+    background: var(--glass);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.5);
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.PopupHeader {
+    padding: 30px 30px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.PopupClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PopupClose:hover {
+    background: rgba(0,0,0,0.1);
+    color: #1e293b;
+    transform: rotate(90deg);
+}
+
+.PopupStationName {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.PopupStationType {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.PopupContent {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.PopupModeGroup {
+    margin-bottom: 15px;
+}
+
+.PopupModeHeader {
+    padding: 10px 12px;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #1e293b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.02);
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+.PopupModeHeader:hover {
+    background: rgba(0,0,0,0.04);
+}
+
+.PopupModeIndicator {
+    margin-right: 8px;
+    font-size: 8px;
+    transition: transform 0.3s;
+    opacity: 0.5;
+}
+
+.PopupModeContent {
+    padding: 8px 4px;
+}
+
+.PopupOperatorGroup {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.PopupOperatorHeader {
+    padding: 6px 10px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #64748b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.PopupOperatorHeader:hover {
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+.PopupOperatorIndicator {
+    margin-right: 6px;
+    font-size: 8px;
+    transition: transform 0.3s;
+    opacity: 0.5;
+}
+
+.PopupOperatorContent {
+    padding: 4px 0 4px 4px;
+}
+
+.PopupLineItem {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.PopupLineItem:hover {
+    background: #fff;
+    transform: translateX(2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    border-color: rgba(0,0,0,0.05);
+}
+
+.PopupLineDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.PopupLineText {
+    flex: 1;
+    min-width: 0;
+}
+
+.PopupLineName {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#MapViewControl {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(15, 15, 20, 0.92);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+    z-index: 9500;
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+
+#MapViewInner {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.MapViewCol {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    position: relative;
+}
+
+.MapViewCol:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.MapViewCol.active-col {
+    background: rgba(255,255,255,0.08);
+}
+
+.MapViewCol.active-col::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    border-radius: 2px 2px 0 0;
+    background: rgba(255,255,255,0.5);
+}
+
+.MapViewColContent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.MapViewColLabel {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.MapViewCol.active-col .MapViewColLabel {
+    color: rgba(255,255,255,0.9);
+}
+
+.MapViewColSub {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.2px;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.MapViewCol.active-col .MapViewColSub {
+    color: rgba(255,255,255,0.55);
+}
+
+#MapViewDivider {
+    width: 1px;
+    background: rgba(255,255,255,0.08);
+    flex-shrink: 0;
+    align-self: stretch;
+    margin: 10px 0;
+}
+
+#FantasySubToggle {
+    display: flex;
+    background: rgba(255,255,255,0.07);
+    border-radius: 7px;
+    padding: 3px;
+    gap: 2px;
+}
+
+.SubToggleBtn {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.4);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+}
+
+.SubToggleBtn:hover {
+    color: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.08);
+}
+
+.SubToggleBtn.active {
+    background: rgba(167, 139, 250, 0.25);
+    color: #c4b5fd;
+}
+
+/* When present-mode is active, dim the future column but keep interactive */
+#MapViewControl.present-mode #MapViewFutureCol {
+    opacity: 0.5;
+}
+
+#MapViewControl.present-mode #MapViewFutureCol:hover {
+    opacity: 0.8;
+}
+
+#BasemapSwitcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--glass);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.5);
+    z-index: 9000;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+}
+
+.BasemapButton {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    border: 2px solid rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.BasemapButton:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border-color: rgba(0,0,0,0.15);
+}
+
+.BasemapButton.active {
+    border-color: #1e293b;
+    border-width: 3px;
+    box-shadow: 0 4px 16px rgba(30,41,59,0.3), 0 0 0 3px rgba(30,41,59,0.1);
+}
+
+.BasemapButton.active::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background: #1e293b;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#LightButton {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjZjhmYWZjIi8+PHBhdGggZD0iTTggOGgyOHYyOEg4eiIgZmlsbD0iI2UyZThmMCIvPjxwYXRoIGQ9Ik0xMiAxMmgyMHYyMEgxMnoiIGZpbGw9IiNmOGZhZmMiLz48L3N2Zz4=');
+}
+
+#DarkButton {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjMWUyOTNiIi8+PHBhdGggZD0iTTggOGgyOHYyOEg4eiIgZmlsbD0iIzJkM2E0ZiIvPjxwYXRoIGQ9Ik0xMiAxMmgyMHYyMEgxMnoiIGZpbGw9IiMzNzQ0NWUiLz48L3N2Zz4=');
+}
+
+#SatelliteButton {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQ0IiBoZWlnaHQ9IjQ0IiBmaWxsPSIjMzQ2MjNhIi8+PHBhdGggZD0iTTggOGgyOHYyOEg4eiIgZmlsbD0iIzRhN2M1OSIvPjxwYXRoIGQ9Ik0xMiAxMmgyMHYyMEgxMnoiIGZpbGw9IiM1ZDhkNmEiLz48cGF0aCBkPSJNMTggMThoOHY4aC04eiIgZmlsbD0iIzg4YWE5NiIvPjwvc3ZnPg==');
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+#CollapseAllButton:hover {
+    background: rgba(0,0,0,0.1);
+    transform: scale(1.05);
+}
+
+#CollapseAllButton:active {
+    transform: scale(0.95);
+}
+
+.InfoMarkerCircle {
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.InfoMarkerGlow {
+    pointer-events: none;
+    animation: infoPulse 2s ease-in-out infinite;
+}
+
+.InfoMarkerInner {
+    pointer-events: none;
+}
+
+@keyframes infoPulse {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #Sidebar {
+        width: 90vw;
+        max-width: 360px;
+        left: 10px;
+        top: 10px;
+        bottom: 10px;
+        border-radius: 24px;
+    }
+
+    #Sidebar.collapsed {
+        transform: translateX(calc(-100% - 20px));
+    }
+
+    #Handle {
+        right: -22px;
+        width: 22px;
+        height: 80px;
+        border-radius: 0 10px 10px 0;
+        font-size: 10px;
+    }
+
+    #Handle:hover {
+        width: 26px;
+        right: -26px;
+    }
+
+    #BasemapSwitcher {
+        top: 10px;
+        right: 10px;
+        padding: 8px;
+        gap: 6px;
+        border-radius: 14px;
+    }
+
+    .BasemapButton {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+    }
+
+    #MapViewControl {
+        bottom: 16px;
+        right: 16px;
+        border-radius: 14px;
+    }
+
+    #ModeFilterRow {
+        bottom: 16px;
+        right: 16px;
+        max-width: calc(100vw - 32px);
+    }
+
+    .MapViewCol {
+        padding: 11px 14px;
+        gap: 9px;
+    }
+
+    .MapViewColIcon {
+        font-size: 15px;
+    }
+
+    .MapViewColLabel {
+        font-size: 9px;
+    }
+
+    .SubToggleBtn {
+        font-size: 9px;
+        padding: 3px 8px;
+    }
+
+    .ViewOption {
+        padding: 12px 14px;
+    }
+
+    .ViewOptionDesc {
+        display: none;
+    }
+
+    #StationPopupOverlay {
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+        width: 90vw;
+        max-width: 360px;
+        border-radius: 24px;
+    }
+
+    #SplashContent {
+        padding: 40px 30px;
+        border-radius: 24px;
+        margin: 20px;
+        max-width: calc(100vw - 40px);
+    }
+
+    #SplashTitle {
+        font-size: 42px;
+        letter-spacing: -1.2px;
+    }
+
+    #SplashSubtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    #MapStats {
+        font-size: 14px;
+        gap: 10px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+
+    #SplashButton {
+        padding: 16px 40px;
+        font-size: 15px;
+    }
+
+    #InfoPopupOverlay {
+        width: calc(100vw - 40px);
+        max-width: 400px;
+    }
+
+    #HeaderInfo {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #SplashTitle {
+        font-size: 36px;
+    }
+
+    #SplashSubtitle {
+        font-size: 14px;
+    }
+
+    #MapStats {
+        font-size: 13px;
+    }
+
+    #SplashButton {
+        padding: 14px 36px;
+        font-size: 14px;
+    }
+}
+
+#InfoPopupOverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+    background: var(--glass);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.5);
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: popIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes popIn {
+    from {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.InfoPopupHeader {
+    padding: 25px 30px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.InfoPopupClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.05);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoPopupClose:hover {
+    background: rgba(0,0,0,0.1);
+    color: #1e293b;
+    transform: rotate(90deg);
+}
+
+.InfoPopupTitle {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.InfoPopupSource {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.InfoPopupContent {
+    padding: 20px 30px 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.InfoPopupImage {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.InfoPopupImage:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.InfoPopupDescription {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #334155;
+    font-weight: 500;
+}
+
+#InfoPopupBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* ─── Station Hover Tooltip ─────────────────────────────────────────── */
+
+.leaflet-tooltip.StationTooltip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.leaflet-tooltip.StationTooltip::before {
+    display: none;
+}
+
+.StationPopup {
+    background: rgba(255, 255, 255, 0.97);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 14px 16px;
+    min-width: 180px;
+    max-width: 260px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.14),
+        0 2px 8px rgba(0, 0, 0, 0.08),
+        0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    animation: tooltipFadeIn 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes tooltipFadeIn {
+    from { opacity: 0; transform: translateY(4px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)   scale(1);    }
+}
+
+.StationPopup b {
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.PlaneIcon {
+    font-size: 13px;
+    margin-left: 4px;
+    opacity: 0.7;
+}
+
+.ModeHeader {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #94a3b8;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.HubLineContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.HubDot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.OpTag {
+    font-size: 10px;
+    font-weight: 700;
+    color: #64748b;
+    background: rgba(100, 116, 139, 0.1);
+    padding: 1px 6px;
+    border-radius: 5px;
+}
+
+.Separator {
+    color: #cbd5e1;
+    font-weight: 400;
+    margin: 0 1px;
+}
