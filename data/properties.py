@@ -7,6 +7,6 @@ Modes = {
     "Light Metro":               {"Name": "Light Metro",                    "Weight": 6.0, "Size": 10, "Color": "#D87B16", "zOrder": 6},
     "Light Rail":                {"Name": "Light Rail",                     "Weight": 3.0, "Size": 10, "Color": "#43A047", "zOrder": 4},
     "Streetcar":                 {"Name": "Streetcar",                      "Weight": 3.0, "Size": 10, "Color": "#EBCC1C", "zOrder": 5},
-    "Monorail":                  {"Name": "Monorail",                       "Weight": 3.0, "Size": 10, "Color": "#616161", "zOrder": 8},
+    "Monorail":                  {"Name": "Monorail",                       "Weight": 3.0, "Size": 10, "Color": "#808080", "zOrder": 8},
     "Peoplemover":               {"Name": "Peoplemover",                    "Weight": 2.0, "Size": 10, "Color": "#2D2D2D", "zOrder": 8},
 }

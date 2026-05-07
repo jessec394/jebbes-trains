@@ -2766,12 +2766,11 @@ Stations = {
     "Dubuque": {'Location': (42.500870, -90.660980)},
     "Dufferin": {'Location': (43.660150, -79.435670)},
     "Duffields": {'Location': (39.361980, -77.828180)},
-    "Dulles Airport": {'Location': (38.955800, -77.448180), 'Label': 'Washington Dulles International Airport', 'Type': 'Airport'},
     "Duluth (GA)": {'Location': (34.002110, -84.144180), 'Label': 'Duluth'},
     "Duluth (MN)": {'Location': (46.781550, -92.103980), 'Label': 'Duluth Union Depot'},
     "Dumas Ave": {'Location': (35.435200, -97.578130)},
-    "Duncan": {'Location': (49.280220, -122.961780)},
     "Duncan (BC)": {'Location': (48.778180, -123.706930), 'Label': 'Duncan'},
+    "Duncan (Vancouver)": {'Location': (49.280220, -122.961780), 'Label': 'Duncan'},
     "Duncanwoods": {'Location': (43.748940, -79.556980)},
     "Dundarave": {'Location': (49.333540, -123.181070)},
     "Dundas": {'Location': (43.579910, -79.615970)},
@@ -5156,7 +5155,6 @@ Stations = {
     "Nassau Av": {'Location': (40.723790, -73.950800)},
     "Nassau Boulevard": {'Location': (40.723050, -73.661340)},
     "Natick Center": {'Location': (42.285670, -71.347070)},
-    "National Airport": {'Location': (38.853380, -77.043980), 'Label': 'Ronald Reagan Washington National Airport', 'Type': 'Airport'},
     "National St": {'Location': (42.026400, -88.278780)},
     "Naugatuck": {'Location': (41.492060, -73.052260)},
     "Navy Yard-Ballpark": {'Location': (38.876710, -77.004490)},
@@ -7300,10 +7298,12 @@ Stations = {
     "Washington (PA)": {'Location': (40.167640, -80.239510), 'Label': 'Washington'},
     "Washington Ave/Memorial Park": {'Location': (29.770960, -95.392040)},
     "Washington Court House": {'Location': (39.534480, -83.435320)},
+    "Washington Dulles Airport": {'Location': (38.955800, -77.448180), 'Label': 'Washington Dulles International Airport', 'Type': 'Airport'},
     "Washington Grove": {'Location': (39.136450, -77.177780)},
     "Washington Junction": {'Location': (40.353560, -80.028000)},
     "Washington Lane": {'Location': (40.051060, -75.171640)},
     "Washington Metro Center": {'Location': (38.898520, -77.027900), 'Label': 'Metro Center', 'Major': True},
+    "Washington National Airport": {'Location': (38.853380, -77.043980), 'Label': 'Ronald Reagan Washington National Airport', 'Type': 'Airport'},
     "Washington Park": {'Location': (38.613710, -90.095130)},
     "Washington Park (Cincinnati)": {'Location': (39.108543, -84.516493), 'Label': 'Washington Park'},
     "Washington Park/Oregon Zoo": {'Location': (45.510650, -122.716790), 'Label': 'Washington Park'},
@@ -12860,7 +12860,7 @@ Segments = {
         "F": ['Vancouver Approach (Waterfront - East)', '[X] Vancouver Pacific Central Junction', 'Commercial-Broadway', '[X] Renfrew', '[X] Rupert', '[X] Vancouver Willingdon Junction'],
     },
     "Vancouver Light Rail (Airport - Lochdale)": {
-        "F": ['YVR-Airport', 'Sea Island Centre', 'Templeton South', '[X] Vancouver Airport Bend', '[X] Vancouver Marine Bend E', 'Montcalm', '[X] Vancouver Marine Bend W', '70th Ave', '57th Ave', '49th Ave', '41st Ave', '33rd Ave', 'Shaughnessy', '16th Ave', 'South Granville', '[X] Vancouver Granville Bend', 'Granville Island', 'Pacific (Vancouver)', 'Nelson', 'Vancouver City Centre', 'Granville/Waterfront', 'Hamilton (Vancouver)', 'Carrall', 'Main St (Vancouver)', 'Jackson', 'Campbell', 'Clark', 'Victoria', 'Nanaimo (LRT)', 'Renfrew (LRT)', 'Cassiar', 'Boundary', 'Gilmore (LRT)', 'Willingdon', 'Gamma', 'Springer', 'Holdom (Vancouver)', 'Kensington (Vancouver)', 'Duncan', 'Duthie'],
+        "F": ['YVR-Airport', 'Sea Island Centre', 'Templeton South', '[X] Vancouver Airport Bend', '[X] Vancouver Marine Bend E', 'Montcalm', '[X] Vancouver Marine Bend W', '70th Ave', '57th Ave', '49th Ave', '41st Ave', '33rd Ave', 'Shaughnessy', '16th Ave', 'South Granville', '[X] Vancouver Granville Bend', 'Granville Island', 'Pacific (Vancouver)', 'Nelson', 'Vancouver City Centre', 'Granville/Waterfront', 'Hamilton (Vancouver)', 'Carrall', 'Main St (Vancouver)', 'Jackson', 'Campbell', 'Clark', 'Victoria', 'Nanaimo (LRT)', 'Renfrew (LRT)', 'Cassiar', 'Boundary', 'Gilmore (LRT)', 'Willingdon', 'Gamma', 'Springer', 'Holdom (Vancouver)', 'Kensington (Vancouver)', 'Duncan (Vancouver)', 'Duthie'],
     },
     "Vancouver SkyTrain (UBC - Coquitlam)": {
         "F": ['UBC Exchange', '[X] Vancouver UBC Bend 1', '[X] Vancouver UBC Bend 2', 'Sasamat', 'Alma', 'Macdonald', 'Arbutus', 'South Granville', 'Oak-VGH', 'Broadway-City Hall', 'Mount Pleasant (BC)', 'Great Northern Way-Emily Carr', 'Vancouver SkyTrain (VCC - Coquitlam)'],
@@ -12917,7 +12917,7 @@ Segments = {
         "F": ['Washington Metro Center', 'Federal Triangle', 'Smithsonian', "L'Enfant (Metro)", 'Federal Center SW', 'Capitol South', 'Eastern Market', 'Potomac Ave', 'Stadium-Armory', '[X] Washington Anacostia Bend W', '[X] Washington Anacostia Bend E'],
     },
     "Washington Metro (Metro Center - Ashburn)": {
-        "F": ['Washington Metro (Metro Center - West Falls)', 'McLean', 'Tysons', 'Greensboro (VA)', 'Spring Hill', 'Wiehle-Reston East', 'Reston Town Center', 'Herndon', 'Innovation Center', 'Dulles Airport', 'Loudoun Gateway', 'Ashburn'],
+        "F": ['Washington Metro (Metro Center - West Falls)', 'McLean', 'Tysons', 'Greensboro (VA)', 'Spring Hill', 'Wiehle-Reston East', 'Reston Town Center', 'Herndon', 'Innovation Center', 'Washington Dulles Airport', 'Loudoun Gateway', 'Ashburn'],
     },
     "Washington Metro (Metro Center - Glenmont)": {
         "F": ['Washington Metro Center', 'Gallery Pl-Chinatown', 'Judiciary Square', 'Washington Union Station (WMATA)', 'NoMa-Gallaudet U', 'Rhode Island Ave-Brentwood', 'Brookland-CUA', 'Fort Totten', 'Takoma', 'Silver Spring', '[X] Woodside/16th St', 'Wheaton (MD)', 'Glenmont'],
@@ -12947,7 +12947,7 @@ Segments = {
         "F": ['Washington Metro (Metro Center - Rosslyn)', 'Arlington Court House', 'Clarendon', 'Virginia Sq-GMU', 'Ballston-MU', 'East Falls Church', '[X] Washington West Falls Junction'],
     },
     "Washington Metro (Pentagon - Alexandria)": {
-        "F": ['Pentagon', 'Pentagon City', 'Crystal City (Metro)', 'National Airport', 'Potomac Yard', 'Braddock Road', 'Alexandria (VA)'],
+        "F": ['Pentagon', 'Pentagon City', 'Crystal City (Metro)', 'Washington National Airport', 'Potomac Yard', 'Braddock Road', 'Alexandria (VA)'],
     },
     "Washington Metro (Shady Grove - Glenmont)": {
         "F": ['[R] Washington Metro (Metro Center - Shady Grove)', 'Washington Metro (Metro Center - Glenmont)'],
@@ -13440,6 +13440,9 @@ Lines = {
         "Maple Leaf": {
             "Fantasy": {
                 "New York - Toronto": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Toronto)'},
+            },
+            "Present": {
+                "New York - Toronto": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Toronto)', 'File': '[Amtrak] Maple Leaf', 'Link': 'https://brouter.damsy.net/latest/#map=12/40.8319/-73.9328/standard&lonlats=-73.992941,40.749909;-73.990345,40.769943;-73.905509,40.923136;-73.983749,41.50029;-73.984782,41.507159;-73.938101,41.707751;-73.741243,42.654318;-74.183797,42.92999;-75.983763,43.076317;-76.17074,43.076149;-76.23183,43.07234;-77.609932,43.163111;-77.663882,43.149495;-78.679361,42.912954;-78.727223,42.907272;-78.782771,42.900903;-78.874369,42.878504;-79.067938,43.109059;-79.558657,43.196182;-79.853429,43.313887;-79.681258,43.455988;-79.415778,43.636828;-79.377632,43.644954;-79.421019,43.635527;-79.683865,43.453592;-79.856095,43.312325;-79.557911,43.195939;-79.061973,43.108813;-78.872041,42.877999;-78.723832,42.907618;-78.69141,42.911315;-78.677269,42.912929;-77.66363,43.149454;-77.607642,43.164212;-76.228686,43.071477;-76.168578,43.078633;-75.982263,43.076398;-74.1837,42.929798;-73.740309,42.653648;-73.93797,41.706015;-73.984664,41.505797;-73.983937,41.500358;-73.902572,40.935689;-73.907178,40.921109;-73.992971,40.749868&profile=rail'},
             },
         },
         "Mardi Gras Service": {
@@ -14098,7 +14101,7 @@ Lines = {
                 "Downtown Circulator": {'Mode': 'Streetcar', 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
             },
             "Present": {
-                "Downtown Circulator": {'Mode': 'Streetcar', 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
+                "Downtown Circulator": {'Mode': 'Streetcar', 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector', 'Link': 'https://brouter.damsy.net/latest/#map=15/39.1056/-84.5094/standard&lonlats=-84.509979,39.098237;-84.511085,39.108019;-84.517651,39.107769;-84.520655,39.116877;-84.517908,39.114479;-84.515269,39.106802;-84.509959,39.098149&profile=rail'},
             },
         },
     },
