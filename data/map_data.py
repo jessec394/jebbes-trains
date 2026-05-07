@@ -217,6 +217,8 @@ Nodes = {
 	"Miami Upper East Junction": {'Location': (25.841880, -80.188450)},
 	"Milwaukee Jackson Bend N": {'Location': (43.048120, -87.904740)},
 	"Milwaukee Jackson Bend S": {'Location': (43.042610, -87.904430)},
+	"Milwaukee Jefferson Bend N": {'Location': (43.037550, -87.906330)},
+	"Milwaukee Jefferson Bend S": {'Location': (43.036340, -87.906220)},
 	"Milwaukee Kilbourn Bend E": {'Location': (43.042490, -87.906970)},
 	"Milwaukee Kilbourn Bend W": {'Location': (43.042430, -87.908220)},
 	"Milwaukee South Junction": {'Location': (43.027580, -87.910370)},
@@ -2270,6 +2272,7 @@ Stations = {
     "Club Triton": {'Location': (47.613460, -72.244170)},
     "Club Vermillon": {'Location': (47.661950, -72.983140)},
     "Clybourn": {'Location': (41.917160, -87.667980)},
+    "Clybourn at Jefferson": {'Location': (43.036430, -87.904530)},
     "Co-Op City": {'Location': (40.860230, -73.823290)},
     "Coachella": {'Location': (33.681060, -116.174480)},
     "Coast Highway": {'Location': (33.181810, -117.368890)},
@@ -4862,6 +4865,7 @@ Stations = {
     "Michigan Central Station (Subway)": {'Location': (42.331360, -83.076480), 'Label': 'Michigan Central Station', 'Major': True},
     "Michigan City (Amtrak)": {'Location': (41.721140, -86.905460), 'Label': 'Michigan City'},
     "Michigan City-11th St": {'Location': (41.711870, -86.897700)},
+    "Michigan at Jackson": {'Location': (43.037610, -87.904200)},
     "Mid America Airport": {'Location': (38.548810, -89.812870), 'Type': 'Airport'},
     "Middle Village-Metropolitan Av": {'Location': (40.712150, -73.889240)},
     "Middleborough": {'Location': (41.887000, -70.923210)},
@@ -6874,6 +6878,7 @@ Stations = {
     "Texarkana": {'Location': (33.419900, -94.042950)},
     "Teyahualco": {'Location': (19.655340, -99.135850)},
     "The Banks": {'Location': (39.098229, -84.509856)},
+    "The Couture": {'Location': (43.037180, -87.899980)},
     "The Glen": {'Location': (42.096861, -87.815457)},
     "The Pas": {'Location': (53.823410, -101.248480)},
     "Theater District EB": {'Location': (29.760750, -95.367690), 'Label': 'Theater District'},
@@ -11111,8 +11116,11 @@ Segments = {
     "Milwaukee Commuter Rail (Milwaukee - Kenosha)": {
         "F": ['Milwaukee Intermodal Station', '[X] Milwaukee South Junction', 'South Side Milwaukee', 'Cudahy/St. Francis', 'South Milwaukee', 'Oak Creek (WI)', 'Caledonia', 'Racine', 'Somers', 'Kenosha'],
     },
-    "Milwaukee Streetcar": {
-        "F": ['Milwaukee Intermodal Station (Streetcar)', 'St. Paul at Plankinton', '[X] Historic Third Ward (W)', '[X] Milwaukee St. Paul Bend W', 'Historic Third Ward (E)', '[X] Milwaukee St. Paul Bend E', 'Wisconsin Ave (E)', 'Milwaukee City Hall (E)', '[X] Milwaukee Kilbourn Bend E', 'Cathedral Square', '[X] Milwaukee Jackson Bend S', '[X] Jackson at Juneau (W)', 'Jackson at Juneau (E)', '[X] Ogden/Jackson (W)', '[X] Milwaukee Jackson Bend N', 'Ogden/Jackson (E)', 'Ogden at Astor', 'Burns Commons'],
+    "Milwaukee Streetcar (L-Line)": {
+        "L": ['Historic Third Ward (E)', '[X] Milwaukee St. Paul Bend E', '[X] Milwaukee Jefferson Junction S', '[X] Milwaukee Jefferson Junction N', 'Michigan at Jackson', 'The Couture', 'Clybourn at Jefferson', '[X] Milwaukee Jefferson Junction S', '[X] Milwaukee Jefferson Junction N', 'Wisconsin Ave (E)', 'Milwaukee City Hall (E)', '[X] Milwaukee Kilbourn Bend E', '[X] Milwaukee Kilbourn Bend W', 'Milwaukee City Hall (W)', 'Wisconsin Ave (W)', '[X] Milwaukee St. Paul Bend W'],
+    },
+    "Milwaukee Streetcar (M-Line)": {
+        "F": ['Milwaukee Intermodal Station (Streetcar)', 'St. Paul at Plankinton', '[X] Historic Third Ward (W)', '[X] Milwaukee St. Paul Bend W', 'Historic Third Ward (E)', '[X] Milwaukee St. Paul Bend E', '[X] Milwaukee Jefferson Junction S', '[X] Milwaukee Jefferson Junction N', 'Wisconsin Ave (E)', 'Milwaukee City Hall (E)', '[X] Milwaukee Kilbourn Bend E', 'Cathedral Square', '[X] Milwaukee Jackson Bend S', '[X] Jackson at Juneau (W)', 'Jackson at Juneau (E)', '[X] Ogden/Jackson (W)', '[X] Milwaukee Jackson Bend N', 'Ogden/Jackson (E)', 'Ogden at Astor', 'Burns Commons'],
         "R": ['Burns Commons', 'Ogden at Astor', '[X] Ogden/Jackson (E)', '[X] Milwaukee Jackson Bend N', 'Ogden/Jackson (W)', '[X] Jackson at Juneau (E)', 'Jackson at Juneau (W)', '[X] Milwaukee Jackson Bend S', 'Cathedral Square', '[X] Milwaukee Kilbourn Bend W', 'Milwaukee City Hall (W)', 'Wisconsin Ave (W)', '[X] Milwaukee St. Paul Bend W', 'Historic Third Ward (W)', 'St. Paul at Plankinton', 'Milwaukee Intermodal Station (Streetcar)'],
     },
     "Minneapolis Approach (Target Field - North)": {
@@ -12952,3838 +12960,3863 @@ Lines = {
     "ARIA": {
         "Aria Express": {
             "Fantasy": {
-                "Park MGM - Bellagio/Vdara": {'Mode': 9, 'Stations': 'Las Vegas Peoplemover (Aria)', 'File': '[ARIA] Aria Express'},
+                "Park MGM - Bellagio/Vdara": {'Mode': 'Peoplemover', 'Stations': 'Las Vegas Peoplemover (Aria)', 'File': '[ARIA] Aria Express'},
             },
             "Present": {
-                "Park MGM - Bellagio/Vdara": {'Mode': 9, 'Stations': 'Las Vegas Peoplemover (Aria)', 'File': '[ARIA] Aria Express', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.10863/-115.17537/standard&lonlats=-115.176158,36.105808;-115.177338,36.1103'},
+                "Park MGM - Bellagio/Vdara": {'Mode': 'Peoplemover', 'Stations': 'Las Vegas Peoplemover (Aria)', 'File': '[ARIA] Aria Express', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.10863/-115.17537/standard&lonlats=-115.176158,36.105808;-115.177338,36.1103'},
             },
         },
     },
     "ATL Airport": {
         "SkyTrain": {
             "Fantasy": {
-                "ATL Airport": {'Mode': 9, 'Stations': 'Atlanta Peoplemover (ATL Airport)'},
+                "ATL Airport": {'Mode': 'Peoplemover', 'Stations': 'Atlanta Peoplemover (ATL Airport)'},
             },
         },
     },
     "Alto": {
         "Alto High-Speed Rail": {
             "Fantasy": {
-                "Toronto - Québec": {'Mode': 1, 'Stations': '-Intercity HS (Toronto - Québec)'},
+                "Toronto - Québec": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Toronto - Québec)'},
             },
         },
     },
     "Amtrak": {
         "Acela": {
             "Fantasy": {
-                "Washington - Boston": {'Mode': 1, 'Stations': '-Intercity HS (Washington - Boston)'},
+                "Washington - Boston": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Washington - Boston)'},
             },
         },
         "Adirondack": {
             "Fantasy": {
-                "New York - Montréal": {'Mode': 3, 'Stations': '-Intercity LS (New York - Montréal)'},
+                "New York - Montréal": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Montréal)'},
             },
         },
         "Alexandrian": {
             "Fantasy": {
-                "Minneapolis - Fargo": {'Mode': 3, 'Stations': '-Intercity LS (Minneapolis - Fargo)'},
+                "Minneapolis - Fargo": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Minneapolis - Fargo)'},
             },
         },
         "Azalea": {
             "Fantasy": {
-                "Atlanta - Jacksonville": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Jacksonville)'},
+                "Atlanta - Jacksonville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Jacksonville)'},
             },
         },
         "Berkshire Flyer": {
             "Fantasy": {
-                "New York - Pittsfield": {'Mode': 3, 'Stations': '-Intercity LS (New York - Pittsfield)'},
+                "New York - Pittsfield": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Pittsfield)'},
             },
         },
         "Black Hawk": {
             "Fantasy": {
-                "Chicago - Sioux City": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Sioux City)'},
+                "Chicago - Sioux City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Sioux City)'},
             },
         },
         "Black Hills": {
             "Fantasy": {
-                "Denver - Minneapolis": {'Mode': 2, 'Stations': '-Intercity LS (Denver Main - Minneapolis)'},
+                "Denver - Minneapolis": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Denver Main - Minneapolis)'},
             },
         },
         "Blue Water": {
             "Fantasy": {
-                "Chicago - Port Huron": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Port Huron)'},
+                "Chicago - Port Huron": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Port Huron)'},
             },
             "Present": {
-                "Chicago - Port Huron": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Port Huron)', 'File': '[Amtrak] Blue Water', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.87830/-87.63879/standard&lonlats=-87.638544,41.87834;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.252621,41.836868;-85.585942,42.295532;-85.572939,42.295814;-85.167518,42.312485;-84.548263,42.719197;-83.737546,42.980084;-82.443359,42.960553;-83.653228,43.015096;-83.736913,42.980311;-84.550459,42.719296;-85.580159,42.29577;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.63856,41.878341&profile=rail'},
+                "Chicago - Port Huron": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Port Huron)', 'File': '[Amtrak] Blue Water', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.87830/-87.63879/standard&lonlats=-87.638544,41.87834;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.252621,41.836868;-85.585942,42.295532;-85.572939,42.295814;-85.167518,42.312485;-84.548263,42.719197;-83.737546,42.980084;-82.443359,42.960553;-83.653228,43.015096;-83.736913,42.980311;-84.550459,42.719296;-85.580159,42.29577;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.63856,41.878341&profile=rail'},
             },
         },
         "Bluebird": {
             "Fantasy": {
-                "St. Louis - Kansas City": {'Mode': 1, 'Stations': '-Intercity HS (St. Louis - Kansas City)'},
+                "St. Louis - Kansas City": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (St. Louis - Kansas City)'},
             },
         },
         "Bluebonnet": {
             "Fantasy": {
-                "Dallas - San Antonio": {'Mode': 3, 'Stations': '-Intercity LS (Dallas - Laredo)'},
+                "Dallas - San Antonio": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Dallas - Laredo)'},
             },
         },
         "Bobcat": {
             "Fantasy": {
-                "Washington - Columbus": {'Mode': 2, 'Stations': '-Intercity LS (Washington - Columbus)'},
+                "Washington - Columbus": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Washington - Columbus)'},
             },
         },
         "Borealis": {
             "Fantasy": {
-                "Chicago - Minneapolis": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Minneapolis)', 'File': '[Amtrak] Borealis'},
-                "Chicago - Minneapolis (via Madison)": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Minneapolis via Madison)'},
+                "Chicago - Minneapolis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Minneapolis)', 'File': '[Amtrak] Borealis'},
+                "Chicago - Minneapolis (via Madison)": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Minneapolis via Madison)'},
             },
             "Present": {
-                "Chicago - St. Paul": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - St. Paul) [Old]', 'File': '[Amtrak] Borealis', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.9010/-87.6794/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.035864,44.936723;-91.638975,44.043489;-91.245843,43.834364;-89.466863,43.547142;-88.109064,43.060729;-87.91675,43.033952;-87.925059,42.938999;-87.805213,42.073642;-87.723888,41.916876;-87.688698,41.889063;-87.684533,41.88838;-87.6389,41.879017&profile=rail'},
+                "Chicago - St. Paul": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - St. Paul) [Old]', 'File': '[Amtrak] Borealis', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.9010/-87.6794/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.035864,44.936723;-91.638975,44.043489;-91.245843,43.834364;-89.466863,43.547142;-88.109064,43.060729;-87.91675,43.033952;-87.925059,42.938999;-87.805213,42.073642;-87.723888,41.916876;-87.688698,41.889063;-87.684533,41.88838;-87.6389,41.879017&profile=rail'},
             },
         },
         "Bourbon City": {
             "Fantasy": {
-                "Detroit - Louisville": {'Mode': 3, 'Stations': '-Intercity LS (Detroit - Louisville)'},
+                "Detroit - Louisville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Detroit - Louisville)'},
             },
         },
         "Buckeye": {
             "Fantasy": {
-                "Chicago - Pittsburgh": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Pittsburgh)'},
+                "Chicago - Pittsburgh": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Pittsburgh)'},
             },
         },
         "California Zephyr": {
             "Fantasy": {
-                "Chicago - Oakland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Oakland)'},
+                "Chicago - Oakland": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Oakland)'},
             },
             "Present": {
-                "Chicago - Emeryville": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Emeryville)', 'File': '[Amtrak] California Zephyr', 'Link': 'https://brouter.damsy.net/latest/#map=18/41.87787/-87.63894/standard&lonlats=-87.639207,41.87836;-87.684355,41.857951;-87.72554,41.848567;-88.146985,41.779781;-88.311501,41.757091;-93.765467,41.037134;-95.889273,41.115411;-95.928905,41.250435;-104.968582,39.784937;-104.992899,39.762598;-105.001359,39.753131;-104.997808,39.78614;-105.817727,39.947759;-108.570816,39.064627;-110.812118,39.597823;-111.664548,40.225771;-111.90897,40.761654;-112.134619,40.769949;-115.750966,40.835933;-117.732786,40.968092;-119.812254,39.528788;-121.500914,38.586275;-121.518901,38.58791;-122.118037,38.034817;-122.247094,38.054618;-122.292042,37.839816;-122.24689,38.05474;-122.118047,38.035099;-121.498039,38.58635;-119.811377,39.528887;-117.731799,40.969521;-115.749872,40.837061;-112.133857,40.769572;-111.908774,40.759161;-111.663542,40.22581;-110.811458,39.597516;-108.569845,39.063669;-105.817858,39.948096;-105.027264,39.8039;-105.023385,39.803677;-104.997942,39.797541;-104.997873,39.785933;-105.001352,39.753113;-104.992921,39.762433;-104.968341,39.785133;-95.926904,41.249893;-95.88938,41.114668;-93.764201,41.037728;-90.363353,40.944566;-88.31112,41.757295;-88.144678,41.779769;-87.725004,41.848661;-87.639207,41.878392&profile=rail'},
+                "Chicago - Emeryville": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Emeryville)', 'File': '[Amtrak] California Zephyr', 'Link': 'https://brouter.damsy.net/latest/#map=18/41.87787/-87.63894/standard&lonlats=-87.639207,41.87836;-87.684355,41.857951;-87.72554,41.848567;-88.146985,41.779781;-88.311501,41.757091;-93.765467,41.037134;-95.889273,41.115411;-95.928905,41.250435;-104.968582,39.784937;-104.992899,39.762598;-105.001359,39.753131;-104.997808,39.78614;-105.817727,39.947759;-108.570816,39.064627;-110.812118,39.597823;-111.664548,40.225771;-111.90897,40.761654;-112.134619,40.769949;-115.750966,40.835933;-117.732786,40.968092;-119.812254,39.528788;-121.500914,38.586275;-121.518901,38.58791;-122.118037,38.034817;-122.247094,38.054618;-122.292042,37.839816;-122.24689,38.05474;-122.118047,38.035099;-121.498039,38.58635;-119.811377,39.528887;-117.731799,40.969521;-115.749872,40.837061;-112.133857,40.769572;-111.908774,40.759161;-111.663542,40.22581;-110.811458,39.597516;-108.569845,39.063669;-105.817858,39.948096;-105.027264,39.8039;-105.023385,39.803677;-104.997942,39.797541;-104.997873,39.785933;-105.001352,39.753113;-104.992921,39.762433;-104.968341,39.785133;-95.926904,41.249893;-95.88938,41.114668;-93.764201,41.037728;-90.363353,40.944566;-88.31112,41.757295;-88.144678,41.779769;-87.725004,41.848661;-87.639207,41.878392&profile=rail'},
             },
         },
         "Camellia": {
             "Fantasy": {
-                "Dallas - Atlanta": {'Mode': 3, 'Stations': '-Intercity LS (Dallas - Atlanta)'},
+                "Dallas - Atlanta": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Dallas - Atlanta)'},
             },
         },
         "Cape Codder": {
             "Fantasy": {
-                "New York - Hyannis": {'Mode': 3, 'Stations': '-Intercity LS (New York - Cape Cod)'},
+                "New York - Hyannis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Cape Cod)'},
             },
         },
         "Capitol Corridor": {
             "Fantasy": {
-                "San Jose - Auburn": {'Mode': 3, 'Stations': '-Intercity LS (San Jose - Auburn)'},
+                "San Jose - Auburn": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (San Jose - Auburn)'},
             },
             "Present": {
-                "San Jose - Auburn": {'Mode': 3, 'Stations': '-Intercity LS (San Jose - Auburn)', 'File': '[Amtrak] Capitol Corridor', 'Link': 'https://brouter.damsy.net/latest/#map=14/38.0482/-122.1254/standard&lonlats=-121.902907,37.328728;-121.909468,37.340014;-121.936269,37.353554;-122.007079,37.559054;-122.110344,37.675537;-122.198498,37.75267;-122.225862,37.773946;-122.264265,37.791388;-122.291533,37.837598;-122.216978,38.057017;-122.117736,38.031758;-121.736079,38.543907;-121.49784,38.586401;-121.478587,38.58609;-121.344155,38.694964;-121.329371,38.709048;-121.30846,38.733181;-121.29771,38.740779;-121.28358,38.75118;-121.083562,38.904027;-121.299384,38.741608;-121.329778,38.708739;-121.347996,38.691606;-121.43873,38.607842;-121.500667,38.586145;-121.52897,38.588455;-121.73859,38.542534;-122.11867,38.035654;-122.21605,38.05689;-122.291538,37.837263;-122.270467,37.792863;-122.261932,37.790913;-122.225389,37.773487;-122.197586,37.751931;-122.190038,37.745127;-122.007465,37.558803;-121.934756,37.352624;-121.909248,37.339733;-121.90291,37.32873&profile=rail'},
+                "San Jose - Auburn": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (San Jose - Auburn)', 'File': '[Amtrak] Capitol Corridor', 'Link': 'https://brouter.damsy.net/latest/#map=14/38.0482/-122.1254/standard&lonlats=-121.902907,37.328728;-121.909468,37.340014;-121.936269,37.353554;-122.007079,37.559054;-122.110344,37.675537;-122.198498,37.75267;-122.225862,37.773946;-122.264265,37.791388;-122.291533,37.837598;-122.216978,38.057017;-122.117736,38.031758;-121.736079,38.543907;-121.49784,38.586401;-121.478587,38.58609;-121.344155,38.694964;-121.329371,38.709048;-121.30846,38.733181;-121.29771,38.740779;-121.28358,38.75118;-121.083562,38.904027;-121.299384,38.741608;-121.329778,38.708739;-121.347996,38.691606;-121.43873,38.607842;-121.500667,38.586145;-121.52897,38.588455;-121.73859,38.542534;-122.11867,38.035654;-122.21605,38.05689;-122.291538,37.837263;-122.270467,37.792863;-122.261932,37.790913;-122.225389,37.773487;-122.197586,37.751931;-122.190038,37.745127;-122.007465,37.558803;-121.934756,37.352624;-121.909248,37.339733;-121.90291,37.32873&profile=rail'},
             },
         },
         "Capitol Limited": {
             "Fantasy": {
-                "Chicago - Washington": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Washington)'},
+                "Chicago - Washington": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Washington)'},
             },
         },
         "Caprock Chief": {
             "Fantasy": {
-                "Denver - Fort Worth": {'Mode': 2, 'Stations': '-Intercity LS (Denver Main - Fort Worth)'},
+                "Denver - Fort Worth": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Denver Main - Fort Worth)'},
             },
         },
         "Cardinal": {
             "Fantasy": {
-                "Chicago - New York": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - New York via CIN)'},
+                "Chicago - New York": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - New York via CIN)'},
             },
         },
         "Carl Sandburg": {
             "Fantasy": {
-                "Chicago - Hannibal": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Hannibal)'},
+                "Chicago - Hannibal": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Hannibal)'},
             },
             "Present": {
-                "Chicago - Hannibal": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Quincy)', 'File': '[Amtrak] Carl Sandburg', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87734/-87.63928/standard&lonlats=-87.639059,41.878324;-87.646496,41.86036;-87.745944,41.844126;-87.801817,41.831452;-87.952638,41.797464;-88.002537,41.795536;-88.147452,41.779775;-88.317193,41.75375;-89.467678,41.385354;-90.364121,40.944011;-90.390369,40.894968;-91.368611,39.956678;-90.389693,40.895454;-90.362691,40.945217;-89.466144,41.38539;-89.117575,41.550435;-88.316726,41.753797;-88.144327,41.779773;-88.002854,41.795536;-87.952769,41.797452;-87.901477,41.809024;-87.80205,41.831386;-87.746086,41.844114;-87.64847,41.860237;-87.639023,41.878327&profile=rail'},
+                "Chicago - Hannibal": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Quincy)', 'File': '[Amtrak] Carl Sandburg', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87734/-87.63928/standard&lonlats=-87.639059,41.878324;-87.646496,41.86036;-87.745944,41.844126;-87.801817,41.831452;-87.952638,41.797464;-88.002537,41.795536;-88.147452,41.779775;-88.317193,41.75375;-89.467678,41.385354;-90.364121,40.944011;-90.390369,40.894968;-91.368611,39.956678;-90.389693,40.895454;-90.362691,40.945217;-89.466144,41.38539;-89.117575,41.550435;-88.316726,41.753797;-88.144327,41.779773;-88.002854,41.795536;-87.952769,41.797452;-87.901477,41.809024;-87.80205,41.831386;-87.746086,41.844114;-87.64847,41.860237;-87.639023,41.878327&profile=rail'},
             },
         },
         "Carnation": {
             "Fantasy": {
-                "Cleveland - Cincinnati": {'Mode': 3, 'Stations': '-Intercity LS (Cleveland - Cincinnati)', 'File': '[Amtrak] Carnation'},
+                "Cleveland - Cincinnati": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cleveland - Cincinnati)', 'File': '[Amtrak] Carnation'},
             },
         },
         "Carolinian": {
             "Fantasy": {
-                "New York - Charlotte": {'Mode': 3, 'Stations': '-Intercity LS (New York - Charlotte)'},
+                "New York - Charlotte": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Charlotte)'},
             },
         },
         "Cascades": {
             "Fantasy": {
-                "Vancouver - Eugene": {'Mode': 3, 'Stations': '-Intercity LS (Vancouver - Eugene)'},
+                "Vancouver - Eugene": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Vancouver - Eugene)'},
             },
             "Present": {
-                "Vancouver - Eugene": {'Mode': 3, 'Stations': '-Intercity LS (Vancouver - Eugene) [Old]', 'File': '[Amtrak] Cascades'},
+                "Vancouver - Eugene": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Vancouver - Eugene) [Old]', 'File': '[Amtrak] Cascades'},
             },
         },
         "Centennial": {
             "Fantasy": {
-                "Denver - Salt Lake City": {'Mode': 3, 'Stations': '-Intercity LS (Denver Main - Salt Lake City)'},
+                "Denver - Salt Lake City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Denver Main - Salt Lake City)'},
             },
         },
         "Cherry": {
             "Fantasy": {
-                "Detroit - Petoskey": {'Mode': 3, 'Stations': '-Intercity LS (Detroit - Petoskey)'},
-                "Detroit - Traverse City": {'Mode': 3, 'Stations': '-Intercity LS (Detroit - Traverse City)'},
+                "Detroit - Petoskey": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Detroit - Petoskey)'},
+                "Detroit - Traverse City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Detroit - Traverse City)'},
             },
         },
         "City of New Orleans": {
             "Fantasy": {
-                "Chicago - New Orleans": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - New Orleans)'},
+                "Chicago - New Orleans": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - New Orleans)'},
             },
             "Present": {
-                "Chicago - New Orleans": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - New Orleans)', 'File': '[Amtrak] City of New Orleans', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7435/-89.2352/standard&lonlats=-87.638964,41.878337;-87.635289,41.860684;-87.593439,41.766867;-87.667642,41.563373;-87.725272,41.455592;-89.218426,37.759451;-90.059741,35.131237;-90.078782,29.946433;-90.059711,35.131588;-89.219971,37.770748;-87.724897,41.455914;-87.667449,41.563553;-87.647756,41.600582;-87.639246,41.616598;-87.63037,41.633142;-87.593364,41.766918;-87.586758,41.795776;-87.616079,41.851782;-87.618971,41.858242;-87.634753,41.861035;-87.638965,41.878371&profile=rail'},
+                "Chicago - New Orleans": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - New Orleans)', 'File': '[Amtrak] City of New Orleans', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7435/-89.2352/standard&lonlats=-87.638964,41.878337;-87.635289,41.860684;-87.593439,41.766867;-87.667642,41.563373;-87.725272,41.455592;-89.218426,37.759451;-90.059741,35.131237;-90.078782,29.946433;-90.059711,35.131588;-89.219971,37.770748;-87.724897,41.455914;-87.667449,41.563553;-87.647756,41.600582;-87.639246,41.616598;-87.63037,41.633142;-87.593364,41.766918;-87.586758,41.795776;-87.616079,41.851782;-87.618971,41.858242;-87.634753,41.861035;-87.638965,41.878371&profile=rail'},
             },
         },
         "Coast Starlight": {
             "Fantasy": {
-                "Los Angeles - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - Seattle)'},
+                "Los Angeles - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Los Angeles - Seattle)'},
             },
             "Present": {
-                "Los Angeles - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - Seattle)', 'File': '[Amtrak] Coast Starlight', 'Link': 'https://brouter.damsy.net/latest/#map=15/38.0666/-122.1281/standard&lonlats=-118.234889,34.054454;-118.230078,34.061984;-118.22767,34.062437;-118.22621,34.065014;-118.225518,34.072298;-118.333864,34.189024;-121.885082,37.313281;-121.903042,37.329705;-121.908025,37.338223;-121.935915,37.353354;-122.057312,37.559692;-122.229617,37.77663;-122.264255,37.791447;-122.271888,37.793474;-122.286206,37.798785;-122.296683,37.801188;-122.291012,37.828387;-122.291018,37.834412;-122.242202,38.057426;-122.176638,38.040377;-122.154863,38.023313;-122.119228,38.026826;-122.101074,38.103377;-122.085099,38.160594;-121.732292,38.544885;-121.500544,38.586049;-121.48433,38.587585;-123.093524,44.055507;-122.710032,45.549892;-122.736095,45.557194;-122.747068,45.57602;-122.686413,45.629863;-122.244358,47.200326;-122.260323,47.484979;-122.310297,47.544775;-122.331739,47.572809;-122.329663,47.59797;-122.331763,47.568468;-122.302473,47.538177;-122.260276,47.484954;-122.232666,47.34578;-122.247448,47.199727;-122.411368,47.24121;-122.428175,47.239461;-122.746489,45.577864;-122.736463,45.557258;-122.709402,45.54951;-122.672251,45.527094;-122.664971,45.521298;-123.099854,44.056208;-121.484574,38.587749;-121.500866,38.586095;-121.514733,38.587717;-121.586498,38.578038;-121.630036,38.568275;-121.732477,38.544893;-121.737273,38.543435;-121.813825,38.458206;-122.086129,38.15964;-122.126126,38.044966;-122.130311,38.0226;-122.155805,38.023714;-122.243983,38.056691;-122.328837,38.002257;-122.335993,37.92327;-122.290953,37.832051;-122.291989,37.824009;-122.294918,37.800725;-122.273165,37.793922;-122.26234,37.790853;-122.241665,37.784651;-122.197877,37.751965;-121.932825,37.351601;-121.908701,37.339199;-121.903085,37.328983;-121.884819,37.312807;-121.798698,37.252988;-121.566285,37.004442;-118.334141,34.189035;-118.225508,34.071439;-118.227428,34.062716;-118.232766,34.060508;-118.234904,34.054458&profile=rail'},
+                "Los Angeles - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Los Angeles - Seattle)', 'File': '[Amtrak] Coast Starlight', 'Link': 'https://brouter.damsy.net/latest/#map=15/38.0666/-122.1281/standard&lonlats=-118.234889,34.054454;-118.230078,34.061984;-118.22767,34.062437;-118.22621,34.065014;-118.225518,34.072298;-118.333864,34.189024;-121.885082,37.313281;-121.903042,37.329705;-121.908025,37.338223;-121.935915,37.353354;-122.057312,37.559692;-122.229617,37.77663;-122.264255,37.791447;-122.271888,37.793474;-122.286206,37.798785;-122.296683,37.801188;-122.291012,37.828387;-122.291018,37.834412;-122.242202,38.057426;-122.176638,38.040377;-122.154863,38.023313;-122.119228,38.026826;-122.101074,38.103377;-122.085099,38.160594;-121.732292,38.544885;-121.500544,38.586049;-121.48433,38.587585;-123.093524,44.055507;-122.710032,45.549892;-122.736095,45.557194;-122.747068,45.57602;-122.686413,45.629863;-122.244358,47.200326;-122.260323,47.484979;-122.310297,47.544775;-122.331739,47.572809;-122.329663,47.59797;-122.331763,47.568468;-122.302473,47.538177;-122.260276,47.484954;-122.232666,47.34578;-122.247448,47.199727;-122.411368,47.24121;-122.428175,47.239461;-122.746489,45.577864;-122.736463,45.557258;-122.709402,45.54951;-122.672251,45.527094;-122.664971,45.521298;-123.099854,44.056208;-121.484574,38.587749;-121.500866,38.586095;-121.514733,38.587717;-121.586498,38.578038;-121.630036,38.568275;-121.732477,38.544893;-121.737273,38.543435;-121.813825,38.458206;-122.086129,38.15964;-122.126126,38.044966;-122.130311,38.0226;-122.155805,38.023714;-122.243983,38.056691;-122.328837,38.002257;-122.335993,37.92327;-122.290953,37.832051;-122.291989,37.824009;-122.294918,37.800725;-122.273165,37.793922;-122.26234,37.790853;-122.241665,37.784651;-122.197877,37.751965;-121.932825,37.351601;-121.908701,37.339199;-121.903085,37.328983;-121.884819,37.312807;-121.798698,37.252988;-121.566285,37.004442;-118.334141,34.189035;-118.225508,34.071439;-118.227428,34.062716;-118.232766,34.060508;-118.234904,34.054458&profile=rail'},
             },
         },
         "Columbine": {
             "Fantasy": {
-                "Pueblo - Fort Collins": {'Mode': 3, 'Stations': '-Intercity LS (Pueblo - Fort Collins)', 'File': '[Amtrak] Columbine'},
+                "Pueblo - Fort Collins": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Pueblo - Fort Collins)', 'File': '[Amtrak] Columbine'},
             },
         },
         "Cornhusker": {
             "Fantasy": {
-                "Chicago - Omaha": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Omaha via Des Moines)'},
+                "Chicago - Omaha": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Omaha via Des Moines)'},
             },
         },
         "Crescent": {
             "Fantasy": {
-                "New York - Dallas": {'Mode': 2, 'Stations': '-Intercity LS (New York - Dallas)'},
-                "New York - New Orleans": {'Mode': 2, 'Stations': '-Intercity LS (New York - New Orleans)'},
+                "New York - Dallas": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Dallas)'},
+                "New York - New Orleans": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - New Orleans)'},
             },
         },
         "Cuyahoga": {
             "Fantasy": {
-                "Chicago - Cleveland": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - Cleveland)'},
+                "Chicago - Cleveland": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Cleveland)'},
             },
         },
         "Cyclone": {
             "Fantasy": {
-                "Minneapolis - Kansas City": {'Mode': 2, 'Stations': '-Intercity LS (Minneapolis - Kansas City)'},
+                "Minneapolis - Kansas City": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Minneapolis - Kansas City)'},
             },
         },
         "Dakota Flyer": {
             "Fantasy": {
-                "Kansas City - Sioux Falls": {'Mode': 3, 'Stations': '-Intercity LS (Kansas City - Sioux Falls)'},
+                "Kansas City - Sioux Falls": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Kansas City - Sioux Falls)'},
             },
         },
         "Desert Wind": {
             "Fantasy": {
-                "Denver - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - Denver)'},
+                "Denver - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Los Angeles - Denver)'},
             },
         },
         "Downeaster": {
             "Fantasy": {
-                "Boston - Rockland": {'Mode': 3, 'Stations': '-Intercity LS (Boston - Rockland)'},
+                "Boston - Rockland": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Rockland)'},
             },
         },
         "Emerald Coast": {
             "Fantasy": {
-                "Atlanta - Panama City": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Panama City)'},
+                "Atlanta - Panama City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Panama City)'},
             },
         },
         "Empire Builder": {
             "Fantasy": {
-                "Chicago - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland North)'},
-                "Chicago - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle North)'},
+                "Chicago - Portland": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Portland North)'},
+                "Chicago - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Seattle North)'},
             },
             "Present": {
-                "Chicago - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland North) [Old]', 'File': '[Amtrak] Empire Builder (Portland)', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.9049/-87.6909/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.183986,44.962141;-93.187076,44.971804;-93.223146,44.980669;-93.270804,45.07926;-93.292969,45.150267;-93.42325,45.220062;-93.630466,45.320364;-94.145697,45.563744;-94.149388,45.569028;-96.572995,46.873708;-97.118325,47.918669;-101.2999,48.2358;-109.680344,48.554984;-114.337378,48.41385;-117.417026,47.655885;-122.713337,45.605334;-122.747798,45.577268;-122.744713,45.563012;-122.731195,45.556526;-122.721384,45.554073;-122.700666,45.544199;-122.674989,45.528122;-122.721684,45.55423;-122.731394,45.556593;-122.74724,45.575959;-122.71574,45.601427;-122.700849,45.615089;-117.412621,47.656723;-114.332206,48.413664;-109.677318,48.554643;-101.307507,48.23104;-101.296939,48.236872;-97.116458,47.918455;-96.571369,46.873187;-94.148519,45.567496;-94.144635,45.561938;-93.834411,45.365158;-93.634543,45.320651;-93.290802,45.145508;-93.271034,45.078327;-93.222224,44.98029;-93.185971,44.971151;-93.184066,44.961586;-93.081139,44.948345;-93.036813,44.937106;-92.844247,44.738698;-92.536576,44.566798;-91.636995,44.042939;-91.245822,43.834371;-89.465961,43.547102;-88.107047,43.05998;-87.916846,43.033952;-87.911557,43.028791;-87.925204,42.939387;-87.805288,42.073781;-87.723867,41.916721;-87.688403,41.888972;-87.684511,41.888381;-87.638889,41.878977&profile=rail'},
-                "Chicago - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle North) [Old]', 'File': '[Amtrak] Empire Builder (Seattle)', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.9004/-87.6632/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.183986,44.962141;-93.187076,44.971804;-93.223146,44.980669;-93.270804,45.07926;-93.292969,45.150267;-93.42325,45.220062;-93.630466,45.320364;-94.145697,45.563744;-94.149388,45.569028;-96.572995,46.873708;-97.118325,47.918669;-101.2999,48.2358;-109.680344,48.554984;-114.337378,48.41385;-117.417026,47.655885;-119.127685,47.421961;-120.305636,47.420777;-122.197446,47.976022;-122.393652,47.661643;-122.36472,47.62261;-122.32944,47.596536;-122.36732,47.624734;-122.394224,47.661955;-122.196862,47.974381;-120.306038,47.421024;-119.125764,47.421134;-117.412621,47.656723;-114.332206,48.413664;-109.677318,48.554643;-101.307507,48.23104;-101.296939,48.236872;-97.116458,47.918455;-96.571369,46.873187;-94.148519,45.567496;-94.144635,45.561938;-93.834411,45.365158;-93.634543,45.320651;-93.290802,45.145508;-93.271034,45.078327;-93.222224,44.98029;-93.185971,44.971151;-93.184066,44.961586;-93.081139,44.948345;-93.036813,44.937106;-92.844247,44.738698;-92.536576,44.566798;-91.636995,44.042939;-91.245822,43.834371;-89.465961,43.547102;-88.107047,43.05998;-87.916846,43.033952;-87.911557,43.028791;-87.925204,42.939387;-87.805288,42.073781;-87.723867,41.916721;-87.688403,41.888972;-87.684511,41.888381;-87.638889,41.878977&profile=rail'},
+                "Chicago - Portland": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Portland North) [Old]', 'File': '[Amtrak] Empire Builder (Portland)', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.9049/-87.6909/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.183986,44.962141;-93.187076,44.971804;-93.223146,44.980669;-93.270804,45.07926;-93.292969,45.150267;-93.42325,45.220062;-93.630466,45.320364;-94.145697,45.563744;-94.149388,45.569028;-96.572995,46.873708;-97.118325,47.918669;-101.2999,48.2358;-109.680344,48.554984;-114.337378,48.41385;-117.417026,47.655885;-122.713337,45.605334;-122.747798,45.577268;-122.744713,45.563012;-122.731195,45.556526;-122.721384,45.554073;-122.700666,45.544199;-122.674989,45.528122;-122.721684,45.55423;-122.731394,45.556593;-122.74724,45.575959;-122.71574,45.601427;-122.700849,45.615089;-117.412621,47.656723;-114.332206,48.413664;-109.677318,48.554643;-101.307507,48.23104;-101.296939,48.236872;-97.116458,47.918455;-96.571369,46.873187;-94.148519,45.567496;-94.144635,45.561938;-93.834411,45.365158;-93.634543,45.320651;-93.290802,45.145508;-93.271034,45.078327;-93.222224,44.98029;-93.185971,44.971151;-93.184066,44.961586;-93.081139,44.948345;-93.036813,44.937106;-92.844247,44.738698;-92.536576,44.566798;-91.636995,44.042939;-91.245822,43.834371;-89.465961,43.547102;-88.107047,43.05998;-87.916846,43.033952;-87.911557,43.028791;-87.925204,42.939387;-87.805288,42.073781;-87.723867,41.916721;-87.688403,41.888972;-87.684511,41.888381;-87.638889,41.878977&profile=rail'},
+                "Chicago - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Seattle North) [Old]', 'File': '[Amtrak] Empire Builder (Seattle)', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.9004/-87.6632/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.722746,41.914984;-87.724687,41.918713;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-88.099794,43.066256;-89.467329,43.547168;-91.250446,43.831786;-91.637322,44.043099;-93.037065,44.937274;-93.085078,44.946565;-93.183986,44.962141;-93.187076,44.971804;-93.223146,44.980669;-93.270804,45.07926;-93.292969,45.150267;-93.42325,45.220062;-93.630466,45.320364;-94.145697,45.563744;-94.149388,45.569028;-96.572995,46.873708;-97.118325,47.918669;-101.2999,48.2358;-109.680344,48.554984;-114.337378,48.41385;-117.417026,47.655885;-119.127685,47.421961;-120.305636,47.420777;-122.197446,47.976022;-122.393652,47.661643;-122.36472,47.62261;-122.32944,47.596536;-122.36732,47.624734;-122.394224,47.661955;-122.196862,47.974381;-120.306038,47.421024;-119.125764,47.421134;-117.412621,47.656723;-114.332206,48.413664;-109.677318,48.554643;-101.307507,48.23104;-101.296939,48.236872;-97.116458,47.918455;-96.571369,46.873187;-94.148519,45.567496;-94.144635,45.561938;-93.834411,45.365158;-93.634543,45.320651;-93.290802,45.145508;-93.271034,45.078327;-93.222224,44.98029;-93.185971,44.971151;-93.184066,44.961586;-93.081139,44.948345;-93.036813,44.937106;-92.844247,44.738698;-92.536576,44.566798;-91.636995,44.042939;-91.245822,43.834371;-89.465961,43.547102;-88.107047,43.05998;-87.916846,43.033952;-87.911557,43.028791;-87.925204,42.939387;-87.805288,42.073781;-87.723867,41.916721;-87.688403,41.888972;-87.684511,41.888381;-87.638889,41.878977&profile=rail'},
             },
         },
         "Empire Service": {
             "Fantasy": {
-                "New York - Niagara Falls": {'Mode': 3, 'Stations': '-Intercity LS (New York - Niagara)'},
+                "New York - Niagara Falls": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Niagara)'},
             },
         },
         "Ethan Allen Express": {
             "Fantasy": {
-                "New York - Burlington": {'Mode': 3, 'Stations': '-Intercity LS (New York - Burlington)'},
+                "New York - Burlington": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Burlington)'},
             },
         },
         "Flint River": {
             "Fantasy": {
-                "Atlanta - Tallahassee": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Tallahassee)'},
+                "Atlanta - Tallahassee": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Tallahassee)'},
             },
         },
         "Flycatcher": {
             "Fantasy": {
-                "Kansas City - Oklahoma City": {'Mode': 3, 'Stations': '-Intercity LS (Kansas City - Oklahoma City via Tulsa)'},
+                "Kansas City - Oklahoma City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Kansas City - Oklahoma City via Tulsa)'},
             },
         },
         "Forest City": {
             "Fantasy": {
-                "Chicago - Cleveland": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Cleveland)'},
+                "Chicago - Cleveland": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Cleveland)'},
             },
         },
         "Fountain City": {
             "Fantasy": {
-                "Chicago - Kansas City": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Kansas City)'},
+                "Chicago - Kansas City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Kansas City)'},
             },
         },
         "Garden City": {
             "Fantasy": {
-                "Atlanta - Savannah": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Savannah via Augusta)'},
+                "Atlanta - Savannah": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Savannah via Augusta)'},
             },
         },
         "Gateway": {
             "Fantasy": {
-                "Chicago - St. Louis": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - St. Louis)'},
+                "Chicago - St. Louis": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - St. Louis)'},
             },
         },
         "Gemini": {
             "Fantasy": {
-                "Chicago - St. Paul": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - St. Paul)'},
+                "Chicago - St. Paul": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - St. Paul)'},
             },
         },
         "Georgian": {
             "Fantasy": {
-                "Chicago - Atlanta": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Atlanta)'},
+                "Chicago - Atlanta": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Atlanta)'},
             },
         },
         "Gold Runner": {
             "Fantasy": {
-                "Los Angeles - Oakland": {'Mode': 3, 'Stations': '-Intercity LS (Los Angeles - Oakland)'},
-                "Los Angeles - Sacramento": {'Mode': 3, 'Stations': '-Intercity LS (Los Angeles - Sacramento)'},
+                "Los Angeles - Oakland": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Los Angeles - Oakland)'},
+                "Los Angeles - Sacramento": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Los Angeles - Sacramento)'},
             },
             "Present": {
-                "Bakersfield - Oakland": {'Mode': 3, 'Stations': '-Intercity LS (Bakersfield - Oakland)', 'File': '[Amtrak] Gold Runner (Oakland)', 'Link': 'https://brouter.damsy.net/latest/#map=8/37.198/-121.036/standard&lonlats=-119.00727,35.371951;-119.795769,36.734301;-121.279085,37.958233;-121.413002,38.540379;-121.501188,38.586141;-121.41349,38.5399;-121.278559,37.956079;-119.794943,36.733407;-119.007275,35.371966&profile=rail'},
-                "Bakersfield - Sacramento": {'Mode': 3, 'Stations': '-Intercity LS (Bakersfield - Sacramento)', 'File': '[Amtrak] Gold Runner (Sacramento)', 'Link': 'https://brouter.damsy.net/latest/#map=8/37.198/-121.036/standard&lonlats=-119.00727,35.371951;-119.795769,36.734301;-121.279085,37.958233;-121.413002,38.540379;-121.501188,38.586141;-121.41349,38.5399;-121.278559,37.956079;-119.794943,36.733407;-119.007275,35.371966&profile=rail'},
+                "Bakersfield - Oakland": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Bakersfield - Oakland)', 'File': '[Amtrak] Gold Runner (Oakland)', 'Link': 'https://brouter.damsy.net/latest/#map=8/37.198/-121.036/standard&lonlats=-119.00727,35.371951;-119.795769,36.734301;-121.279085,37.958233;-121.413002,38.540379;-121.501188,38.586141;-121.41349,38.5399;-121.278559,37.956079;-119.794943,36.733407;-119.007275,35.371966&profile=rail'},
+                "Bakersfield - Sacramento": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Bakersfield - Sacramento)', 'File': '[Amtrak] Gold Runner (Sacramento)', 'Link': 'https://brouter.damsy.net/latest/#map=8/37.198/-121.036/standard&lonlats=-119.00727,35.371951;-119.795769,36.734301;-121.279085,37.958233;-121.413002,38.540379;-121.501188,38.586141;-121.41349,38.5399;-121.278559,37.956079;-119.794943,36.733407;-119.007275,35.371966&profile=rail'},
             },
         },
         "Golden Eagle": {
             "Fantasy": {
-                "Dallas - Mexico City (via Monclova)": {'Mode': 2, 'Stations': '-Intercity LS (Dallas - Mexico City via Monclova)'},
-                "Dallas - Mexico City (via Monterrey)": {'Mode': 2, 'Stations': '-Intercity LS (Dallas - Mexico City)'},
+                "Dallas - Mexico City (via Monclova)": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Dallas - Mexico City via Monclova)'},
+                "Dallas - Mexico City (via Monterrey)": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Dallas - Mexico City)'},
             },
         },
         "Goldfinch": {
             "Fantasy": {
-                "St. Paul - Sioux City": {'Mode': 3, 'Stations': '-Intercity LS (St. Paul - Sioux City)'},
+                "St. Paul - Sioux City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (St. Paul - Sioux City)'},
             },
         },
         "Gulf Coast Limited": {
             "Fantasy": {
-                "Orlando - New Orleans": {'Mode': 3, 'Stations': '-Intercity LS (Orlando - New Orleans)'},
+                "Orlando - New Orleans": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Orlando - New Orleans)'},
             },
         },
         "Hartford Line": {
             "Fantasy": {
-                "New Haven - Springfield": {'Mode': 3, 'Stations': '-Intercity LS (New Haven - Springfield)'},
+                "New Haven - Springfield": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New Haven - Springfield)'},
             },
         },
         "Heartland Flyer": {
             "Fantasy": {
-                "Kansas City - Fort Worth": {'Mode': 3, 'Stations': '-Intercity LS (Kansas City - Fort Worth)'},
+                "Kansas City - Fort Worth": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Kansas City - Fort Worth)'},
             },
             "Present": {
-                "Fort Worth - Oklahoma City": {'Mode': 3, 'Stations': '-Intercity LS (Fort Worth - Oklahoma City)', 'File': '[Amtrak] Heartland Flyer', 'Link': 'https://brouter.damsy.net/latest/#map=10/33.1692/-97.2015/standard&lonlats=-97.32367,32.749479;-97.33744,32.785604;-97.509702,35.437282;-97.512484,35.467536;-97.507449,35.432682;-97.357356,32.830037;-97.342705,32.793033;-97.323683,32.749473&profile=rail'},
+                "Fort Worth - Oklahoma City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Fort Worth - Oklahoma City)', 'File': '[Amtrak] Heartland Flyer', 'Link': 'https://brouter.damsy.net/latest/#map=10/33.1692/-97.2015/standard&lonlats=-97.32367,32.749479;-97.33744,32.785604;-97.509702,35.437282;-97.512484,35.467536;-97.507449,35.432682;-97.357356,32.830037;-97.342705,32.793033;-97.323683,32.749473&profile=rail'},
             },
         },
         "Hiawatha": {
             "Fantasy": {
-                "Chicago - Green Bay": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Green Bay)', 'File': '[Amtrak] Hiawatha'},
+                "Chicago - Green Bay": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Green Bay)', 'File': '[Amtrak] Hiawatha'},
             },
             "Present": {
-                "Chicago - Milwaukee": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Milwaukee)', 'File': '[Amtrak] Hiawatha', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.9366/-87.7063/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-87.920298,43.034039;-87.911522,43.029035;-87.925091,42.939058;-87.805229,42.073662;-87.688429,41.88902;-87.684567,41.888379;-87.638892,41.879015&profile=rail'},
+                "Chicago - Milwaukee": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Milwaukee)', 'File': '[Amtrak] Hiawatha', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.9366/-87.7063/standard&lonlats=-87.638889,41.879024;-87.684918,41.888405;-87.689196,41.889375;-87.806028,42.075385;-87.925134,42.941443;-87.911452,43.029184;-87.917986,43.034035;-87.920298,43.034039;-87.911522,43.029035;-87.925091,42.939058;-87.805229,42.073662;-87.688429,41.88902;-87.684567,41.888379;-87.638892,41.879015&profile=rail'},
             },
         },
         "Holly": {
             "Fantasy": {
-                "Philadelphia - Salisbury": {'Mode': 3, 'Stations': '-Intercity LS (Philadelphia - Salisbury)'},
+                "Philadelphia - Salisbury": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Philadelphia - Salisbury)'},
             },
         },
         "Hoosier State": {
             "Fantasy": {
-                "Chicago - Cincinnati": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Cincinnati)'},
+                "Chicago - Cincinnati": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Cincinnati)'},
             },
         },
         "Huron": {
             "Fantasy": {
-                "Detroit - Port Huron": {'Mode': 3, 'Stations': '-Intercity LS (Detroit - Port Huron)'},
+                "Detroit - Port Huron": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Detroit - Port Huron)'},
             },
         },
         "Illini-Saluki": {
             "Fantasy": {
-                "Chicago - Carbondale": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Carbondale)'},
+                "Chicago - Carbondale": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Carbondale)'},
             },
             "Present": {
-                "Chicago - Carbondale": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Carbondale)', 'File': '[Amtrak] Illini-Saluki', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.87836/-87.63938/standard&lonlats=-87.638964,41.878337;-87.635289,41.860684;-87.593439,41.766867;-87.667642,41.563373;-87.725272,41.455592;-89.215564,37.721998;-87.724897,41.455914;-87.667449,41.563553;-87.647756,41.600582;-87.639246,41.616598;-87.63037,41.633142;-87.593364,41.766918;-87.586758,41.795776;-87.616079,41.851782;-87.618971,41.858242;-87.634753,41.861035;-87.638965,41.878371&profile=rail'},
+                "Chicago - Carbondale": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Carbondale)', 'File': '[Amtrak] Illini-Saluki', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.87836/-87.63938/standard&lonlats=-87.638964,41.878337;-87.635289,41.860684;-87.593439,41.766867;-87.667642,41.563373;-87.725272,41.455592;-89.215564,37.721998;-87.724897,41.455914;-87.667449,41.563553;-87.647756,41.600582;-87.639246,41.616598;-87.63037,41.633142;-87.593364,41.766918;-87.586758,41.795776;-87.616079,41.851782;-87.618971,41.858242;-87.634753,41.861035;-87.638965,41.878371&profile=rail'},
             },
         },
         "Iris": {
             "Fantasy": {
-                "Atlanta - Memphis": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Memphis)'},
+                "Atlanta - Memphis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Memphis)'},
             },
         },
         "Kentucky Cardinal": {
             "Fantasy": {
-                "Chicago - Louisville": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Louisville)'},
+                "Chicago - Louisville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Louisville)'},
             },
         },
         "Keystone Service": {
             "Fantasy": {
-                "New York - Harrisburg": {'Mode': 3, 'Stations': '-Intercity LS (New York - Harrisburg)'},
+                "New York - Harrisburg": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Harrisburg)'},
             },
         },
         "Lackawanna Service": {
             "Fantasy": {
-                "New York - Montclair - Scranton": {'Mode': 3, 'Stations': '-Intercity LS (New York - Scranton East)'},
-                "New York - Morristown - Scranton": {'Mode': 3, 'Stations': '-Intercity LS (New York - Scranton West)'},
+                "New York - Montclair - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Scranton East)'},
+                "New York - Morristown - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Scranton West)'},
             },
         },
         "Lake Shore Limited": {
             "Fantasy": {
-                "Chicago - Boston": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Boston)'},
-                "Chicago - New York": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - New York via CLE)'},
+                "Chicago - Boston": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Boston)'},
+                "Chicago - New York": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - New York via CLE)'},
             },
             "Present": {
-                "Chicago - Boston": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Boston) [Old]', 'File': '[Amtrak] Lake Shore Limited (Boston)', 'Link': 'https://brouter.damsy.net/latest/#map=11/42.3279/-71.4757/standard&lonlats=-71.055512,42.351278;-71.070136,42.347743;-71.1233,42.354993;-71.164053,42.357303;-71.429994,42.274884;-71.469938,42.260533;-71.540346,42.265829;-71.565998,42.268878;-71.636884,42.271879;-71.7943,42.261123;-71.818812,42.246636;-72.559676,42.129357;-72.593198,42.106358;-72.59889,42.101376;-72.606212,42.097629;-72.701147,42.107468;-73.741474,42.654288;-73.746645,42.660718;-74.185535,42.93109;-74.831057,43.035364;-75.223378,43.105009;-75.254872,43.111244;-75.391941,43.191933;-75.54608,43.169031;-76.085526,43.067134;-76.170691,43.076227;-77.609817,43.163141;-77.801643,43.108146;-77.825024,43.107473;-78.727655,42.907207;-78.762915,42.903168;-78.782136,42.900975;-78.855089,42.865954;-78.834457,42.811286;-78.95344,42.70055;-79.360932,42.470348;-79.592648,42.32306;-79.84543,42.20708;-80.058805,42.128669;-80.083637,42.120075;-80.130152,42.098334;-80.910852,41.822897;-81.163747,41.752193;-81.284358,41.710152;-81.380539,41.654485;-81.531703,41.583627;-81.565016,41.566222;-81.697694,41.504633;-81.823621,41.41963;-81.859882,41.378475;-81.926921,41.375291;-82.024763,41.375609;-82.697546,41.43864;-82.776425,41.450869;-82.913604,41.508236;-83.195096,41.529945;-83.4306,41.567205;-83.513142,41.623495;-83.543247,41.638058;-83.555325,41.638108;-83.891655,41.588438;-84.14823,41.546705;-84.75545,41.446587;-84.901174,41.42721;-85.026216,41.431617;-85.267811,41.445331;-85.974605,41.679158;-86.238736,41.663158;-86.289867,41.678794;-86.726144,41.611801;-87.072718,41.613377;-87.160426,41.620106;-87.222063,41.610541;-87.42266,41.637021;-87.425431,41.638914;-87.508383,41.691906;-87.522755,41.703057;-87.542866,41.719453;-87.635955,41.819427;-87.636209,41.828552;-87.638476,41.878333;-87.637041,41.858469;-87.637065,41.855626;-87.636279,41.82817;-87.636038,41.818496;-87.635971,41.815267;-87.625658,41.778417;-87.545671,41.721426;-87.522143,41.702681;-87.490386,41.682239;-87.483836,41.678638;-87.448425,41.657234;-87.441532,41.652469;-87.421756,41.636292;-87.353271,41.610244;-87.306311,41.605215;-87.262328,41.604573;-87.168204,41.619822;-87.129854,41.6209;-87.076092,41.613645;-87.021241,41.607878;-86.729277,41.610096;-86.286683,41.677628;-86.238628,41.663064;-85.974203,41.679258;-85.921315,41.637827;-85.753961,41.550022;-85.584633,41.46691;-84.904001,41.427058;-84.752982,41.446864;-84.545291,41.481303;-84.319848,41.518527;-83.891237,41.58841;-83.673243,41.623375;-83.553692,41.637971;-83.539481,41.637862;-83.433958,41.569429;-82.779622,41.452441;-82.739412,41.442446;-82.696656,41.438295;-82.546613,41.387684;-82.121183,41.371157;-82.102158,41.369001;-81.928718,41.375186;-81.712993,41.498301;-81.694213,41.506191;-81.565579,41.56613;-81.527959,41.585786;-81.457116,41.621963;-81.37297,41.658975;-80.733536,41.896344;-80.257578,42.042807;-80.081239,42.120704;-79.362871,42.468557;-79.16667,42.549666;-78.953075,42.700549;-78.854241,42.865491;-78.723838,42.907614;-78.162693,42.98738;-77.607513,43.164269;-76.460123,43.078089;-76.264901,43.0804;-76.168594,43.078668;-76.085558,43.067114;-76.025562,43.071192;-75.64923,43.108988;-75.543371,43.170154;-75.220224,43.103955;-75.1805,43.093634;-75.025667,43.02018;-74.691732,42.996753;-74.403641,42.943976;-74.185009,42.930591;-74.091491,42.902439;-73.841493,42.708387;-73.81584,42.691111;-73.740937,42.653909;-73.741726,42.640971;-72.699843,42.107313;-72.632101,42.101108;-72.606293,42.097647;-72.603211,42.098851;-71.821784,42.245079;-71.794544,42.26097;-71.730992,42.234789;-71.429195,42.274888;-71.425681,42.275027;-71.264765,42.336853;-71.071334,42.347682;-71.063331,42.346651;-71.055475,42.35127&profile=rail'},
-                "Chicago - New York": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - New York via CLE) [Old]', 'File': '[Amtrak] Lake Shore Limited (New York)', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7541/-73.9911/standard&lonlats=-73.992468,40.749845;-73.940051,40.856249;-73.901006,40.937758;-73.8859,40.98313;-73.865885,41.071927;-73.882003,41.188436;-73.971167,41.331842;-73.984468,41.503493;-73.938506,41.693496;-73.947462,41.928108;-73.932377,41.991989;-73.902476,42.128179;-73.802762,42.250992;-73.785317,42.378574;-73.741318,42.643114;-73.741474,42.654288;-73.746645,42.660718;-74.185535,42.93109;-74.831057,43.035364;-75.223378,43.105009;-75.254872,43.111244;-75.391941,43.191933;-75.54608,43.169031;-76.085526,43.067134;-76.170691,43.076227;-77.609817,43.163141;-77.801643,43.108146;-77.825024,43.107473;-78.727655,42.907207;-78.762915,42.903168;-78.782136,42.900975;-78.855089,42.865954;-78.834457,42.811286;-78.95344,42.70055;-79.360932,42.470348;-79.592648,42.32306;-79.84543,42.20708;-80.058805,42.128669;-80.083637,42.120075;-80.130152,42.098334;-80.910852,41.822897;-81.163747,41.752193;-81.284358,41.710152;-81.380539,41.654485;-81.531703,41.583627;-81.565016,41.566222;-81.697694,41.504633;-81.823621,41.41963;-81.859882,41.378475;-81.926921,41.375291;-82.024763,41.375609;-82.697546,41.43864;-82.776425,41.450869;-82.913604,41.508236;-83.195096,41.529945;-83.4306,41.567205;-83.513142,41.623495;-83.543247,41.638058;-83.555325,41.638108;-83.891655,41.588438;-84.14823,41.546705;-84.75545,41.446587;-84.901174,41.42721;-85.026216,41.431617;-85.267811,41.445331;-85.974605,41.679158;-86.238736,41.663158;-86.289867,41.678794;-86.726144,41.611801;-87.072718,41.613377;-87.160426,41.620106;-87.222063,41.610541;-87.42266,41.637021;-87.425431,41.638914;-87.508383,41.691906;-87.522755,41.703057;-87.542866,41.719453;-87.635955,41.819427;-87.636209,41.828552;-87.638476,41.878333;-87.637041,41.858469;-87.637065,41.855626;-87.636279,41.82817;-87.636038,41.818496;-87.635971,41.815267;-87.625658,41.778417;-87.545671,41.721426;-87.522143,41.702681;-87.490386,41.682239;-87.483836,41.678638;-87.448425,41.657234;-87.441532,41.652469;-87.421756,41.636292;-87.353271,41.610244;-87.306311,41.605215;-87.262328,41.604573;-87.168204,41.619822;-87.129854,41.6209;-87.076092,41.613645;-87.021241,41.607878;-86.729277,41.610096;-86.286683,41.677628;-86.238628,41.663064;-85.974203,41.679258;-85.921315,41.637827;-85.753961,41.550022;-85.584633,41.46691;-84.904001,41.427058;-84.752982,41.446864;-84.545291,41.481303;-84.319848,41.518527;-83.891237,41.58841;-83.673243,41.623375;-83.553692,41.637971;-83.539481,41.637862;-83.433958,41.569429;-82.779622,41.452441;-82.739412,41.442446;-82.696656,41.438295;-82.546613,41.387684;-82.121183,41.371157;-82.102158,41.369001;-81.928718,41.375186;-81.712993,41.498301;-81.694213,41.506191;-81.565579,41.56613;-81.527959,41.585786;-81.457116,41.621963;-81.37297,41.658975;-80.733536,41.896344;-80.257578,42.042807;-80.081239,42.120704;-79.362871,42.468557;-79.16667,42.549666;-78.953075,42.700549;-78.854241,42.865491;-78.723838,42.907614;-78.162693,42.98738;-77.607513,43.164269;-76.460123,43.078089;-76.264901,43.0804;-76.168594,43.078668;-76.085558,43.067114;-76.025562,43.071192;-75.64923,43.108988;-75.543371,43.170154;-75.220224,43.103955;-75.1805,43.093634;-75.025667,43.02018;-74.691732,42.996753;-74.403641,42.943976;-74.185009,42.930591;-74.091491,42.902439;-73.841493,42.708387;-73.81584,42.691111;-73.740937,42.653909;-73.741983,42.64077;-73.744507,42.629893;-73.804446,42.250504;-73.903967,42.126659;-73.938525,41.693709;-73.975067,41.543277;-73.984458,41.50374;-73.963512,41.422251;-73.971862,41.331385;-73.930135,41.286715;-73.882939,41.190497;-73.879001,41.182719;-73.868052,41.142152;-73.865333,41.074369;-73.885996,40.983035;-73.902562,40.935716;-73.940279,40.856173;-73.992485,40.749818&profile=rail'},
+                "Chicago - Boston": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Boston) [Old]', 'File': '[Amtrak] Lake Shore Limited (Boston)', 'Link': 'https://brouter.damsy.net/latest/#map=11/42.3279/-71.4757/standard&lonlats=-71.055512,42.351278;-71.070136,42.347743;-71.1233,42.354993;-71.164053,42.357303;-71.429994,42.274884;-71.469938,42.260533;-71.540346,42.265829;-71.565998,42.268878;-71.636884,42.271879;-71.7943,42.261123;-71.818812,42.246636;-72.559676,42.129357;-72.593198,42.106358;-72.59889,42.101376;-72.606212,42.097629;-72.701147,42.107468;-73.741474,42.654288;-73.746645,42.660718;-74.185535,42.93109;-74.831057,43.035364;-75.223378,43.105009;-75.254872,43.111244;-75.391941,43.191933;-75.54608,43.169031;-76.085526,43.067134;-76.170691,43.076227;-77.609817,43.163141;-77.801643,43.108146;-77.825024,43.107473;-78.727655,42.907207;-78.762915,42.903168;-78.782136,42.900975;-78.855089,42.865954;-78.834457,42.811286;-78.95344,42.70055;-79.360932,42.470348;-79.592648,42.32306;-79.84543,42.20708;-80.058805,42.128669;-80.083637,42.120075;-80.130152,42.098334;-80.910852,41.822897;-81.163747,41.752193;-81.284358,41.710152;-81.380539,41.654485;-81.531703,41.583627;-81.565016,41.566222;-81.697694,41.504633;-81.823621,41.41963;-81.859882,41.378475;-81.926921,41.375291;-82.024763,41.375609;-82.697546,41.43864;-82.776425,41.450869;-82.913604,41.508236;-83.195096,41.529945;-83.4306,41.567205;-83.513142,41.623495;-83.543247,41.638058;-83.555325,41.638108;-83.891655,41.588438;-84.14823,41.546705;-84.75545,41.446587;-84.901174,41.42721;-85.026216,41.431617;-85.267811,41.445331;-85.974605,41.679158;-86.238736,41.663158;-86.289867,41.678794;-86.726144,41.611801;-87.072718,41.613377;-87.160426,41.620106;-87.222063,41.610541;-87.42266,41.637021;-87.425431,41.638914;-87.508383,41.691906;-87.522755,41.703057;-87.542866,41.719453;-87.635955,41.819427;-87.636209,41.828552;-87.638476,41.878333;-87.637041,41.858469;-87.637065,41.855626;-87.636279,41.82817;-87.636038,41.818496;-87.635971,41.815267;-87.625658,41.778417;-87.545671,41.721426;-87.522143,41.702681;-87.490386,41.682239;-87.483836,41.678638;-87.448425,41.657234;-87.441532,41.652469;-87.421756,41.636292;-87.353271,41.610244;-87.306311,41.605215;-87.262328,41.604573;-87.168204,41.619822;-87.129854,41.6209;-87.076092,41.613645;-87.021241,41.607878;-86.729277,41.610096;-86.286683,41.677628;-86.238628,41.663064;-85.974203,41.679258;-85.921315,41.637827;-85.753961,41.550022;-85.584633,41.46691;-84.904001,41.427058;-84.752982,41.446864;-84.545291,41.481303;-84.319848,41.518527;-83.891237,41.58841;-83.673243,41.623375;-83.553692,41.637971;-83.539481,41.637862;-83.433958,41.569429;-82.779622,41.452441;-82.739412,41.442446;-82.696656,41.438295;-82.546613,41.387684;-82.121183,41.371157;-82.102158,41.369001;-81.928718,41.375186;-81.712993,41.498301;-81.694213,41.506191;-81.565579,41.56613;-81.527959,41.585786;-81.457116,41.621963;-81.37297,41.658975;-80.733536,41.896344;-80.257578,42.042807;-80.081239,42.120704;-79.362871,42.468557;-79.16667,42.549666;-78.953075,42.700549;-78.854241,42.865491;-78.723838,42.907614;-78.162693,42.98738;-77.607513,43.164269;-76.460123,43.078089;-76.264901,43.0804;-76.168594,43.078668;-76.085558,43.067114;-76.025562,43.071192;-75.64923,43.108988;-75.543371,43.170154;-75.220224,43.103955;-75.1805,43.093634;-75.025667,43.02018;-74.691732,42.996753;-74.403641,42.943976;-74.185009,42.930591;-74.091491,42.902439;-73.841493,42.708387;-73.81584,42.691111;-73.740937,42.653909;-73.741726,42.640971;-72.699843,42.107313;-72.632101,42.101108;-72.606293,42.097647;-72.603211,42.098851;-71.821784,42.245079;-71.794544,42.26097;-71.730992,42.234789;-71.429195,42.274888;-71.425681,42.275027;-71.264765,42.336853;-71.071334,42.347682;-71.063331,42.346651;-71.055475,42.35127&profile=rail'},
+                "Chicago - New York": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - New York via CLE) [Old]', 'File': '[Amtrak] Lake Shore Limited (New York)', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7541/-73.9911/standard&lonlats=-73.992468,40.749845;-73.940051,40.856249;-73.901006,40.937758;-73.8859,40.98313;-73.865885,41.071927;-73.882003,41.188436;-73.971167,41.331842;-73.984468,41.503493;-73.938506,41.693496;-73.947462,41.928108;-73.932377,41.991989;-73.902476,42.128179;-73.802762,42.250992;-73.785317,42.378574;-73.741318,42.643114;-73.741474,42.654288;-73.746645,42.660718;-74.185535,42.93109;-74.831057,43.035364;-75.223378,43.105009;-75.254872,43.111244;-75.391941,43.191933;-75.54608,43.169031;-76.085526,43.067134;-76.170691,43.076227;-77.609817,43.163141;-77.801643,43.108146;-77.825024,43.107473;-78.727655,42.907207;-78.762915,42.903168;-78.782136,42.900975;-78.855089,42.865954;-78.834457,42.811286;-78.95344,42.70055;-79.360932,42.470348;-79.592648,42.32306;-79.84543,42.20708;-80.058805,42.128669;-80.083637,42.120075;-80.130152,42.098334;-80.910852,41.822897;-81.163747,41.752193;-81.284358,41.710152;-81.380539,41.654485;-81.531703,41.583627;-81.565016,41.566222;-81.697694,41.504633;-81.823621,41.41963;-81.859882,41.378475;-81.926921,41.375291;-82.024763,41.375609;-82.697546,41.43864;-82.776425,41.450869;-82.913604,41.508236;-83.195096,41.529945;-83.4306,41.567205;-83.513142,41.623495;-83.543247,41.638058;-83.555325,41.638108;-83.891655,41.588438;-84.14823,41.546705;-84.75545,41.446587;-84.901174,41.42721;-85.026216,41.431617;-85.267811,41.445331;-85.974605,41.679158;-86.238736,41.663158;-86.289867,41.678794;-86.726144,41.611801;-87.072718,41.613377;-87.160426,41.620106;-87.222063,41.610541;-87.42266,41.637021;-87.425431,41.638914;-87.508383,41.691906;-87.522755,41.703057;-87.542866,41.719453;-87.635955,41.819427;-87.636209,41.828552;-87.638476,41.878333;-87.637041,41.858469;-87.637065,41.855626;-87.636279,41.82817;-87.636038,41.818496;-87.635971,41.815267;-87.625658,41.778417;-87.545671,41.721426;-87.522143,41.702681;-87.490386,41.682239;-87.483836,41.678638;-87.448425,41.657234;-87.441532,41.652469;-87.421756,41.636292;-87.353271,41.610244;-87.306311,41.605215;-87.262328,41.604573;-87.168204,41.619822;-87.129854,41.6209;-87.076092,41.613645;-87.021241,41.607878;-86.729277,41.610096;-86.286683,41.677628;-86.238628,41.663064;-85.974203,41.679258;-85.921315,41.637827;-85.753961,41.550022;-85.584633,41.46691;-84.904001,41.427058;-84.752982,41.446864;-84.545291,41.481303;-84.319848,41.518527;-83.891237,41.58841;-83.673243,41.623375;-83.553692,41.637971;-83.539481,41.637862;-83.433958,41.569429;-82.779622,41.452441;-82.739412,41.442446;-82.696656,41.438295;-82.546613,41.387684;-82.121183,41.371157;-82.102158,41.369001;-81.928718,41.375186;-81.712993,41.498301;-81.694213,41.506191;-81.565579,41.56613;-81.527959,41.585786;-81.457116,41.621963;-81.37297,41.658975;-80.733536,41.896344;-80.257578,42.042807;-80.081239,42.120704;-79.362871,42.468557;-79.16667,42.549666;-78.953075,42.700549;-78.854241,42.865491;-78.723838,42.907614;-78.162693,42.98738;-77.607513,43.164269;-76.460123,43.078089;-76.264901,43.0804;-76.168594,43.078668;-76.085558,43.067114;-76.025562,43.071192;-75.64923,43.108988;-75.543371,43.170154;-75.220224,43.103955;-75.1805,43.093634;-75.025667,43.02018;-74.691732,42.996753;-74.403641,42.943976;-74.185009,42.930591;-74.091491,42.902439;-73.841493,42.708387;-73.81584,42.691111;-73.740937,42.653909;-73.741983,42.64077;-73.744507,42.629893;-73.804446,42.250504;-73.903967,42.126659;-73.938525,41.693709;-73.975067,41.543277;-73.984458,41.50374;-73.963512,41.422251;-73.971862,41.331385;-73.930135,41.286715;-73.882939,41.190497;-73.879001,41.182719;-73.868052,41.142152;-73.865333,41.074369;-73.885996,40.983035;-73.902562,40.935716;-73.940279,40.856173;-73.992485,40.749818&profile=rail'},
             },
         },
         "Lehigh Valley": {
             "Fantasy": {
-                "New York - Allentown": {'Mode': 3, 'Stations': '-Intercity LS (New York - Allentown)'},
+                "New York - Allentown": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Allentown)'},
             },
         },
         "Lilac": {
             "Fantasy": {
-                "Boston - Lincoln": {'Mode': 3, 'Stations': '-Intercity LS (Boston - Lincoln)'},
+                "Boston - Lincoln": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Lincoln)'},
             },
         },
         "Lincoln Service": {
             "Fantasy": {
-                "Chicago - St. Louis": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - St. Louis)'},
+                "Chicago - St. Louis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - St. Louis)'},
             },
             "Present": {
-                "Chicago - St. Louis": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - St. Louis)', 'File': '[Amtrak] Lincoln Service', 'Link': 'https://brouter.damsy.net/latest/#map=19/41.87785/-87.63878/standard&lonlats=-87.638959,41.878343;-87.637044,41.858543;-87.707226,41.826307;-87.73333,41.819711;-87.815384,41.790947;-88.029209,41.665626;-88.076824,41.545885;-88.212308,41.263973;-90.089736,38.817943;-90.162456,38.69735;-90.206621,38.623981;-90.163572,38.696078;-90.088749,38.821637;-88.985095,40.508048;-88.212324,41.263787;-88.07897,41.525455;-88.048875,41.640559;-87.851282,41.751775;-87.815083,41.791091;-87.732729,41.819815;-87.70412,41.826239;-87.639977,41.850596;-87.636968,41.85638;-87.636947,41.859949;-87.637038,41.865446;-87.63788,41.871259;-87.638948,41.878369&profile=rail'},
+                "Chicago - St. Louis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - St. Louis)', 'File': '[Amtrak] Lincoln Service', 'Link': 'https://brouter.damsy.net/latest/#map=19/41.87785/-87.63878/standard&lonlats=-87.638959,41.878343;-87.637044,41.858543;-87.707226,41.826307;-87.73333,41.819711;-87.815384,41.790947;-88.029209,41.665626;-88.076824,41.545885;-88.212308,41.263973;-90.089736,38.817943;-90.162456,38.69735;-90.206621,38.623981;-90.163572,38.696078;-90.088749,38.821637;-88.985095,40.508048;-88.212324,41.263787;-88.07897,41.525455;-88.048875,41.640559;-87.851282,41.751775;-87.815083,41.791091;-87.732729,41.819815;-87.70412,41.826239;-87.639977,41.850596;-87.636968,41.85638;-87.636947,41.859949;-87.637038,41.865446;-87.63788,41.871259;-87.638948,41.878369&profile=rail'},
             },
         },
         "Little Crow Line": {
             "Fantasy": {
-                "Minneapolis - Sioux Falls": {'Mode': 3, 'Stations': '-Intercity LS (Minneapolis - Sioux Falls)'},
+                "Minneapolis - Sioux Falls": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Minneapolis - Sioux Falls)'},
             },
         },
         "Longleaf": {
             "Fantasy": {
-                "Huntsville - Mobile": {'Mode': 3, 'Stations': '-Intercity LS (Huntsville - Mobile)'},
+                "Huntsville - Mobile": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Huntsville - Mobile)'},
             },
         },
         "Maple Leaf": {
             "Fantasy": {
-                "New York - Toronto": {'Mode': 3, 'Stations': '-Intercity LS (New York - Toronto)'},
+                "New York - Toronto": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Toronto)'},
             },
         },
         "Mardi Gras Service": {
             "Fantasy": {
-                "New Orleans - Mobile": {'Mode': 3, 'Stations': '-Intercity LS (New Orleans - Mobile)'},
+                "New Orleans - Mobile": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New Orleans - Mobile)'},
             },
             "Present": {
-                "New Orleans - Mobile": {'Mode': 3, 'Stations': '-Intercity LS (New Orleans - Mobile)', 'File': '[Amtrak] Mardi Gras Service', 'Link': 'https://brouter.damsy.net/latest/#map=9/30.4760/-89.2255/standard&lonlats=-90.078715,29.946596;-89.983113,30.013861;-88.551838,30.366715;-88.03835,30.690571;-88.561129,30.368191;-90.046241,29.994619;-90.057625,29.985787;-90.078774,29.94647&profile=rail'},
+                "New Orleans - Mobile": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New Orleans - Mobile)', 'File': '[Amtrak] Mardi Gras Service', 'Link': 'https://brouter.damsy.net/latest/#map=9/30.4760/-89.2255/standard&lonlats=-90.078715,29.946596;-89.983113,30.013861;-88.551838,30.366715;-88.03835,30.690571;-88.561129,30.368191;-90.046241,29.994619;-90.057625,29.985787;-90.078774,29.94647&profile=rail'},
             },
         },
         "Mastodon": {
             "Fantasy": {
-                "Fort Worth - Cleveland": {'Mode': 2, 'Stations': '-Intercity LS (Fort Worth - Cleveland)'},
+                "Fort Worth - Cleveland": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Fort Worth - Cleveland)'},
             },
         },
         "Mayflower": {
             "Fantasy": {
-                "Boston - Schenectady": {'Mode': 3, 'Stations': '-Intercity LS (Boston - Schenectady)'},
+                "Boston - Schenectady": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Schenectady)'},
             },
         },
         "Meadowlark": {
             "Fantasy": {
-                "Denver - Calgary": {'Mode': 2, 'Stations': '-Intercity LS (Denver Main - Calgary)'},
+                "Denver - Calgary": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Denver Main - Calgary)'},
             },
         },
         "Missouri River Runner": {
             "Fantasy": {
-                "St. Louis - Kansas City": {'Mode': 3, 'Stations': '-Intercity LS (St. Louis - Kansas City)'},
+                "St. Louis - Kansas City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (St. Louis - Kansas City)'},
             },
             "Present": {
-                "St. Louis - Kansas City": {'Mode': 3, 'Stations': '-Intercity LS (St. Louis - Kansas City)', 'File': '[Amtrak] Missouri River Runner', 'Link': 'https://brouter.damsy.net/latest/#map=9/38.9884/-92.3978/standard&lonlats=-90.203657,38.623152;-90.269133,38.622898;-90.323426,38.597453;-92.170733,38.579473;-94.429979,39.08692;-94.587532,39.085835;-94.429207,39.086578;-92.169762,38.578848;-90.499964,38.539469;-90.267738,38.622754;-90.203647,38.623178&profile=rail'},
+                "St. Louis - Kansas City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (St. Louis - Kansas City)', 'File': '[Amtrak] Missouri River Runner', 'Link': 'https://brouter.damsy.net/latest/#map=9/38.9884/-92.3978/standard&lonlats=-90.203657,38.623152;-90.269133,38.622898;-90.323426,38.597453;-92.170733,38.579473;-94.429979,39.08692;-94.587532,39.085835;-94.429207,39.086578;-92.169762,38.578848;-90.499964,38.539469;-90.267738,38.622754;-90.203647,38.623178&profile=rail'},
             },
         },
         "Mockingbird": {
             "Fantasy": {
-                "Dallas - Houston": {'Mode': 3, 'Stations': '-Intercity LS (Dallas - Houston)'},
+                "Dallas - Houston": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Dallas - Houston)'},
             },
         },
         "Motor City": {
             "Fantasy": {
-                "Cleveland - Detroit": {'Mode': 3, 'Stations': '-Intercity LS (Cleveland - Detroit)'},
+                "Cleveland - Detroit": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cleveland - Detroit)'},
             },
         },
         "Mountain Laurel": {
             "Fantasy": {
-                "Philadelphia - Pittsburgh": {'Mode': 1, 'Stations': '-Intercity HS (New York - Cleveland)'},
+                "Philadelphia - Pittsburgh": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (New York - Cleveland)'},
             },
         },
         "Mountaineer": {
             "Fantasy": {
-                "Cincinnati - Pittsburgh": {'Mode': 3, 'Stations': '-Intercity LS (Cincinnati - Pittsburgh)'},
+                "Cincinnati - Pittsburgh": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cincinnati - Pittsburgh)'},
             },
         },
         "Music City": {
             "Fantasy": {
-                "Atlanta - Nashville": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Nashville)'},
+                "Atlanta - Nashville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Nashville)'},
             },
         },
         "Nittany": {
             "Fantasy": {
-                "Pittsburgh - State College": {'Mode': 3, 'Stations': '-Intercity LS (Pittsburgh - Lemont)'},
+                "Pittsburgh - State College": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Pittsburgh - Lemont)'},
             },
         },
         "North Coast Hiawatha": {
             "Fantasy": {
-                "Chicago - Portland": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Portland South)'},
-                "Chicago - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Seattle South)'},
+                "Chicago - Portland": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Portland South)'},
+                "Chicago - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Seattle South)'},
             },
         },
         "Northeast Regional": {
             "Fantasy": {
-                "New York - Bristol": {'Mode': 3, 'Stations': '-Intercity LS (New York - Bristol)'},
-                "New York - Newport News": {'Mode': 3, 'Stations': '-Intercity LS (New York - Newport News)'},
-                "New York - Norfolk": {'Mode': 3, 'Stations': '-Intercity LS (New York - Norfolk)'},
-                "Washington - Boston": {'Mode': 3, 'Stations': '-Intercity LS (Washington - Boston)'},
-                "Washington - Ronkonkoma": {'Mode': 3, 'Stations': '-Intercity LS (Washington - Ronkonkoma)'},
-                "Washington - Springfield": {'Mode': 3, 'Stations': '-Intercity LS (Washington - Springfield)'},
+                "New York - Bristol": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Bristol)'},
+                "New York - Newport News": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Newport News)'},
+                "New York - Norfolk": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Norfolk)'},
+                "Washington - Boston": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Washington - Boston)'},
+                "Washington - Ronkonkoma": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Washington - Ronkonkoma)'},
+                "Washington - Springfield": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Washington - Springfield)'},
             },
         },
         "Northern Lights Express": {
             "Fantasy": {
-                "Minneapolis - Duluth": {'Mode': 3, 'Stations': '-Intercity LS (Minneapolis - Duluth)'},
+                "Minneapolis - Duluth": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Minneapolis - Duluth)'},
             },
         },
         "Osprey": {
             "Fantasy": {
-                "Boston - Halifax": {'Mode': 2, 'Stations': '-Intercity LS (Boston - Halifax)'},
+                "Boston - Halifax": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Boston - Halifax)'},
             },
         },
         "Pacific Surfliner": {
             "Fantasy": {
-                "Tijuana - Santa Barbara": {'Mode': 3, 'Stations': '-Intercity LS (Tijuana - Santa Barbara)'},
+                "Tijuana - Santa Barbara": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Tijuana - Santa Barbara)'},
             },
             "Present": {
-                "San Diego - Santa Barbara": {'Mode': 3, 'Stations': '-Intercity LS (San Diego - Santa Barbara)', 'File': '[Amtrak] Pacific Surfliner', 'Link': 'https://brouter.damsy.net/latest/#map=13/32.7554/-117.2147/standard&lonlats=-117.17012,32.716377;-117.271966,32.994654;-117.674646,33.599519;-117.883188,33.804002;-117.902859,33.826514;-117.923684,33.868572;-117.988819,33.87605;-118.060335,33.916846;-118.107947,33.977326;-118.139951,33.98959;-118.228128,34.03664;-118.235011,34.054437;-118.224982,34.070009;-118.238994,34.09952;-118.319246,34.184613;-118.328075,34.187879;-118.346819,34.191588;-118.879189,34.284914;-119.173433,34.197858;-119.695093,34.412787;-119.173111,34.197698;-118.876373,34.284941;-118.672042,34.264327;-118.585482,34.238503;-118.39983,34.201962;-118.349941,34.192071;-118.323306,34.186844;-118.312143,34.178328;-118.265719,34.134168;-118.237948,34.098021;-118.226455,34.07669;-118.235013,34.054428;-118.228152,34.036433;-118.138588,33.989078;-118.107576,33.977055;-118.059664,33.915697;-117.987075,33.875725;-117.921361,33.868607;-117.90934,33.845763;-117.902827,33.825983;-117.878462,33.802584;-117.856017,33.750231;-117.81146,33.711711;-117.674679,33.59781;-117.377168,33.189086;-117.318546,33.10731;-117.271494,32.992327;-117.206349,32.789506;-117.170472,32.723939;-117.170135,32.716378&profile=rail'},
+                "San Diego - Santa Barbara": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (San Diego - Santa Barbara)', 'File': '[Amtrak] Pacific Surfliner', 'Link': 'https://brouter.damsy.net/latest/#map=13/32.7554/-117.2147/standard&lonlats=-117.17012,32.716377;-117.271966,32.994654;-117.674646,33.599519;-117.883188,33.804002;-117.902859,33.826514;-117.923684,33.868572;-117.988819,33.87605;-118.060335,33.916846;-118.107947,33.977326;-118.139951,33.98959;-118.228128,34.03664;-118.235011,34.054437;-118.224982,34.070009;-118.238994,34.09952;-118.319246,34.184613;-118.328075,34.187879;-118.346819,34.191588;-118.879189,34.284914;-119.173433,34.197858;-119.695093,34.412787;-119.173111,34.197698;-118.876373,34.284941;-118.672042,34.264327;-118.585482,34.238503;-118.39983,34.201962;-118.349941,34.192071;-118.323306,34.186844;-118.312143,34.178328;-118.265719,34.134168;-118.237948,34.098021;-118.226455,34.07669;-118.235013,34.054428;-118.228152,34.036433;-118.138588,33.989078;-118.107576,33.977055;-118.059664,33.915697;-117.987075,33.875725;-117.921361,33.868607;-117.90934,33.845763;-117.902827,33.825983;-117.878462,33.802584;-117.856017,33.750231;-117.81146,33.711711;-117.674679,33.59781;-117.377168,33.189086;-117.318546,33.10731;-117.271494,32.992327;-117.206349,32.789506;-117.170472,32.723939;-117.170135,32.716378&profile=rail'},
             },
         },
         "Pacifica": {
             "Fantasy": {
-                "Vancouver - Eugene": {'Mode': 1, 'Stations': '-Intercity HS (Vancouver - Eugene)'},
+                "Vancouver - Eugene": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Vancouver - Eugene)'},
             },
         },
         "Palmetto": {
             "Fantasy": {
-                "New York - Savannah": {'Mode': 2, 'Stations': '-Intercity LS (New York - Savannah)'},
+                "New York - Savannah": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Savannah)'},
             },
         },
         "Palo Verde": {
             "Fantasy": {
-                "Phoenix - Flagstaff": {'Mode': 3, 'Stations': '-Intercity LS (Phoenix - Flagstaff)'},
+                "Phoenix - Flagstaff": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Phoenix - Flagstaff)'},
             },
         },
         "Pelican": {
             "Fantasy": {
-                "Dallas - New Orleans": {'Mode': 3, 'Stations': '-Intercity LS (Dallas - New Orleans)'},
+                "Dallas - New Orleans": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Dallas - New Orleans)'},
             },
         },
         "Pennsylvanian": {
             "Fantasy": {
-                "New York - Pittsburgh": {'Mode': 3, 'Stations': '-Intercity LS (New York - Pittsburgh)'},
+                "New York - Pittsburgh": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Pittsburgh)'},
             },
         },
         "Peony": {
             "Fantasy": {
-                "Chicago - Indianapolis": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - Indianapolis)'},
+                "Chicago - Indianapolis": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Indianapolis)'},
             },
         },
         "Pere Marquette": {
             "Fantasy": {
-                "Chicago - Detroit": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Detroit via Grand Rapids)'},
+                "Chicago - Detroit": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Detroit via Grand Rapids)'},
             },
             "Present": {
-                "Chicago - Grand Rapids": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Grand Rapids)', 'File': '[Amtrak] Pere Marquette', 'Link': 'https://brouter.damsy.net/latest/#map=8/42.858/-86.138/standard&lonlats=-87.638707,41.878349;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.450472,42.122033;-85.696514,42.944714;-85.672288,42.95563;-85.706438,42.939774;-85.728545,42.930281;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.638739,41.878373&profile=rail'},
+                "Chicago - Grand Rapids": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Grand Rapids)', 'File': '[Amtrak] Pere Marquette', 'Link': 'https://brouter.damsy.net/latest/#map=8/42.858/-86.138/standard&lonlats=-87.638707,41.878349;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.450472,42.122033;-85.696514,42.944714;-85.672288,42.95563;-85.706438,42.939774;-85.728545,42.930281;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.638739,41.878373&profile=rail'},
             },
         },
         "Piedmont": {
             "Fantasy": {
-                "Charlotte - Raleigh": {'Mode': 3, 'Stations': '-Intercity LS (Charlotte - Raleigh)'},
+                "Charlotte - Raleigh": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Charlotte - Raleigh)'},
             },
             "Present": {
-                "Charlotte - Raleigh": {'Mode': 3, 'Stations': '-Intercity LS (Charlotte - Raleigh) [Old]', 'File': '[Amtrak] Piedmont', 'Link': 'https://brouter.damsy.net/latest/#map=9/35.7856/-79.3378/standard&lonlats=-80.824489,35.239789;-80.753245,35.264635;-80.632079,35.329259;-80.620782,35.335766;-80.606786,35.433488;-80.376937,35.720171;-80.288392,35.796096;-80.154238,35.859518;-80.051287,35.9066;-79.986643,35.96486;-79.836997,36.060596;-78.906555,35.997043;-78.715614,35.789921;-78.645764,35.775362;-78.848265,35.864379;-79.787377,36.068661;-79.87648,36.045335;-80.050678,35.907818;-80.348017,35.727462;-80.376583,35.720346;-80.455094,35.6742;-80.541254,35.603745;-80.614285,35.528843;-80.813026,35.246662;-80.824514,35.239818&profile=rail'},
+                "Charlotte - Raleigh": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Charlotte - Raleigh) [Old]', 'File': '[Amtrak] Piedmont', 'Link': 'https://brouter.damsy.net/latest/#map=9/35.7856/-79.3378/standard&lonlats=-80.824489,35.239789;-80.753245,35.264635;-80.632079,35.329259;-80.620782,35.335766;-80.606786,35.433488;-80.376937,35.720171;-80.288392,35.796096;-80.154238,35.859518;-80.051287,35.9066;-79.986643,35.96486;-79.836997,36.060596;-78.906555,35.997043;-78.715614,35.789921;-78.645764,35.775362;-78.848265,35.864379;-79.787377,36.068661;-79.87648,36.045335;-80.050678,35.907818;-80.348017,35.727462;-80.376583,35.720346;-80.455094,35.6742;-80.541254,35.603745;-80.614285,35.528843;-80.813026,35.246662;-80.824514,35.239818&profile=rail'},
             },
         },
         "Pioneer": {
             "Fantasy": {
-                "Salt Lake City - Seattle": {'Mode': 2, 'Stations': '-Intercity LS (Salt Lake City - Seattle)'},
+                "Salt Lake City - Seattle": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Salt Lake City - Seattle)'},
             },
         },
         "Poplar": {
             "Fantasy": {
-                "New York - Memphis": {'Mode': 3, 'Stations': '-Intercity LS (New York - Memphis)'},
+                "New York - Memphis": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Memphis)'},
             },
         },
         "Port City": {
             "Fantasy": {
-                "Atlanta - Brunswick": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Brunswick)'},
+                "Atlanta - Brunswick": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Brunswick)'},
             },
         },
         "Prairie Marksman": {
             "Fantasy": {
-                "Chicago - Peoria": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Peoria)'},
+                "Chicago - Peoria": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Peoria)'},
             },
         },
         "Purple Finch": {
             "Fantasy": {
-                "Boston - Montréal": {'Mode': 3, 'Stations': '-Intercity LS (Boston - Montréal)'},
+                "Boston - Montréal": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Montréal)'},
             },
         },
         "River City": {
             "Fantasy": {
-                "Atlanta - Columbia": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Columbia)'},
+                "Atlanta - Columbia": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Columbia)'},
             },
         },
         "Riviera": {
             "Fantasy": {
-                "Houston - Matamoros": {'Mode': 3, 'Stations': '-Intercity LS (Houston - Matamoros)'},
+                "Houston - Matamoros": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Houston - Matamoros)'},
             },
         },
         "Saginaw": {
             "Fantasy": {
-                "Detroit - Bay City": {'Mode': 3, 'Stations': '-Intercity LS (Detroit - Bay City)'},
+                "Detroit - Bay City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Detroit - Bay City)'},
             },
         },
         "Saguaro": {
             "Fantasy": {
-                "Phoenix - Nogales": {'Mode': 3, 'Stations': '-Intercity LS (Phoenix - Nogales)'},
+                "Phoenix - Nogales": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Phoenix - Nogales)'},
             },
         },
         "Schuylkill Service": {
             "Fantasy": {
-                "Philadelphia - Reading": {'Mode': 3, 'Stations': '-Intercity LS (Philadelphia - Reading)'},
+                "Philadelphia - Reading": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Philadelphia - Reading)'},
             },
         },
         "Silver Meteor": {
             "Fantasy": {
-                "New York - Miami": {'Mode': 2, 'Stations': '-Intercity LS (New York - Miami)'},
-                "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa)'},
+                "New York - Miami": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Miami)'},
+                "New York - Tampa": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Tampa)'},
             },
         },
         "Silver Star": {
             "Fantasy": {
-                "New York - Miami": {'Mode': 2, 'Stations': '-Intercity LS (New York - Miami via Columbia)'},
-                "New York - Tampa": {'Mode': 2, 'Stations': '-Intercity LS (New York - Tampa via Columbia)'},
+                "New York - Miami": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Miami via Columbia)'},
+                "New York - Tampa": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (New York - Tampa via Columbia)'},
             },
         },
         "Smoky Mountains": {
             "Fantasy": {
-                "Memphis - Knoxville": {'Mode': 3, 'Stations': '-Intercity LS (Memphis - Knoxville)'},
+                "Memphis - Knoxville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Memphis - Knoxville)'},
             },
         },
         "Snowy Owl": {
             "Fantasy": {
-                "New York - Montréal": {'Mode': 1, 'Stations': '-Intercity HS (New York - Montréal)'},
+                "New York - Montréal": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (New York - Montréal)'},
             },
         },
         "Southwest Chief": {
             "Fantasy": {
-                "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)'},
+                "Chicago - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)'},
             },
             "Present": {
-                "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)', 'File': '[Amtrak] Southwest Chief', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05525/-118.23418/standard&lonlats=-87.639128,41.878345;-87.647842,41.860316;-87.684948,41.857765;-87.775859,41.837431;-87.901354,41.80906;-88.073015,41.797748;-88.316715,41.75393;-91.314395,40.629307;-94.411679,39.150707;-94.52391,39.099568;-94.587189,39.085912;-94.677086,39.040461;-94.748808,38.953076;-94.75156,38.93766;-102.620373,38.08998;-106.647871,35.080567;-111.650341,35.197509;-116.021799,34.685099;-116.151656,34.723193;-116.275671,34.727148;-116.546552,34.814243;-116.876421,34.86154;-116.979107,34.883546;-117.014796,34.903166;-117.025659,34.904543;-117.134538,34.867194;-117.31118,34.104462;-117.363634,33.984288;-117.370838,33.974124;-117.373633,33.969937;-117.471153,33.899729;-117.743214,33.881648;-117.832741,33.868077;-117.987601,33.875845;-118.059865,33.916111;-118.121776,33.983403;-118.143365,33.990715;-118.191047,34.006757;-118.209361,34.013005;-118.22885,34.040054;-118.234869,34.054322;-118.228962,34.039916;-118.224982,34.02243;-118.212027,34.013845;-118.184583,34.004511;-118.176193,34.001776;-118.142842,33.990515;-118.083691,33.965177;-118.059742,33.915862;-117.92219,33.868616;-117.865164,33.868634;-117.834206,33.86801;-117.661809,33.879279;-117.629639,33.883345;-117.562466,33.881808;-117.469221,33.900322;-117.376342,33.965224;-117.368719,33.976922;-117.350475,33.995488;-117.333051,34.02869;-117.309351,34.104378;-117.135689,34.866448;-117.09619,34.883088;-117.023336,34.904516;-116.988446,34.885887;-116.959832,34.880149;-116.88443,34.862702;-116.275434,34.727055;-116.225374,34.719674;-116.162031,34.719851;-116.024053,34.685734;-116.004274,34.635254;-115.484566,34.517974;-113.023165,35.400681;-111.648374,35.196828;-106.647061,35.083811;-104.507763,37.172763;-102.628602,38.089361;-102.616414,38.089866;-94.745064,38.958332;-94.583225,39.086799;-94.522923,39.099701;-94.411418,39.150679;-91.311514,40.629734;-90.350393,40.957089;-88.316227,41.754053;-88.071875,41.797922;-87.898838,41.809606;-87.775859,41.837419;-87.683953,41.858027;-87.647386,41.860264;-87.63916,41.878331&profile=rail'},
+                "Chicago - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)', 'File': '[Amtrak] Southwest Chief', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05525/-118.23418/standard&lonlats=-87.639128,41.878345;-87.647842,41.860316;-87.684948,41.857765;-87.775859,41.837431;-87.901354,41.80906;-88.073015,41.797748;-88.316715,41.75393;-91.314395,40.629307;-94.411679,39.150707;-94.52391,39.099568;-94.587189,39.085912;-94.677086,39.040461;-94.748808,38.953076;-94.75156,38.93766;-102.620373,38.08998;-106.647871,35.080567;-111.650341,35.197509;-116.021799,34.685099;-116.151656,34.723193;-116.275671,34.727148;-116.546552,34.814243;-116.876421,34.86154;-116.979107,34.883546;-117.014796,34.903166;-117.025659,34.904543;-117.134538,34.867194;-117.31118,34.104462;-117.363634,33.984288;-117.370838,33.974124;-117.373633,33.969937;-117.471153,33.899729;-117.743214,33.881648;-117.832741,33.868077;-117.987601,33.875845;-118.059865,33.916111;-118.121776,33.983403;-118.143365,33.990715;-118.191047,34.006757;-118.209361,34.013005;-118.22885,34.040054;-118.234869,34.054322;-118.228962,34.039916;-118.224982,34.02243;-118.212027,34.013845;-118.184583,34.004511;-118.176193,34.001776;-118.142842,33.990515;-118.083691,33.965177;-118.059742,33.915862;-117.92219,33.868616;-117.865164,33.868634;-117.834206,33.86801;-117.661809,33.879279;-117.629639,33.883345;-117.562466,33.881808;-117.469221,33.900322;-117.376342,33.965224;-117.368719,33.976922;-117.350475,33.995488;-117.333051,34.02869;-117.309351,34.104378;-117.135689,34.866448;-117.09619,34.883088;-117.023336,34.904516;-116.988446,34.885887;-116.959832,34.880149;-116.88443,34.862702;-116.275434,34.727055;-116.225374,34.719674;-116.162031,34.719851;-116.024053,34.685734;-116.004274,34.635254;-115.484566,34.517974;-113.023165,35.400681;-111.648374,35.196828;-106.647061,35.083811;-104.507763,37.172763;-102.628602,38.089361;-102.616414,38.089866;-94.745064,38.958332;-94.583225,39.086799;-94.522923,39.099701;-94.411418,39.150679;-91.311514,40.629734;-90.350393,40.957089;-88.316227,41.754053;-88.071875,41.797922;-87.898838,41.809606;-87.775859,41.837419;-87.683953,41.858027;-87.647386,41.860264;-87.63916,41.878331&profile=rail'},
             },
         },
         "Sun City": {
             "Fantasy": {
-                "Denver - El Paso": {'Mode': 2, 'Stations': '-Intercity LS (Denver Main - El Paso)'},
+                "Denver - El Paso": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Denver Main - El Paso)'},
             },
         },
         "Sunflower": {
             "Fantasy": {
-                "Denver - Kansas City": {'Mode': 3, 'Stations': '-Intercity LS (Denver Main - Kansas City)'},
+                "Denver - Kansas City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Denver Main - Kansas City)'},
             },
         },
         "Sunset Limited": {
             "Fantasy": {
-                "Los Angeles - Orlando": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - Orlando)'},
+                "Los Angeles - Orlando": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Los Angeles - Orlando)'},
             },
             "Present": {
-                "Los Angeles - New Orleans": {'Mode': 2, 'Stations': '-Intercity LS (Los Angeles - New Orleans) [Old]', 'File': '[Amtrak] Sunset Limited', 'Link': 'https://brouter.damsy.net/latest/#map=13/34.0933/-118.1638/standard&lonlats=-118.234673,34.054357;-118.181906,34.062516;-118.153362,34.078905;-117.979882,34.038647;-117.749743,34.058948;-117.675059,34.060797;-117.648658,34.061459;-117.203844,34.027437;-114.61527,32.721849;-106.497077,31.757975;-106.478387,31.767316;-98.557813,29.376921;-98.527794,29.410145;-98.477862,29.421264;-98.414503,29.453051;-95.636147,29.620023;-95.372669,29.768796;-95.365496,29.767074;-94.126699,30.07635;-94.122636,30.076378;-94.105904,30.07603;-93.2168,30.23827;-90.078865,29.946326;-90.211205,29.919107;-93.217846,30.238316;-94.128612,30.07615;-95.368093,29.767776;-95.440979,29.780061;-95.636936,29.619873;-98.415018,29.452812;-98.477942,29.419838;-98.528502,29.409993;-98.55835,29.376373;-106.479862,31.766504;-106.498016,31.75798;-110.968067,32.22485;-114.615292,32.724711;-117.204165,34.027886;-117.650485,34.061476;-117.675542,34.060841;-117.752127,34.058941;-117.980102,34.039013;-118.153667,34.078944;-118.234676,34.05433&profile=rail'},
+                "Los Angeles - New Orleans": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Los Angeles - New Orleans) [Old]', 'File': '[Amtrak] Sunset Limited', 'Link': 'https://brouter.damsy.net/latest/#map=13/34.0933/-118.1638/standard&lonlats=-118.234673,34.054357;-118.181906,34.062516;-118.153362,34.078905;-117.979882,34.038647;-117.749743,34.058948;-117.675059,34.060797;-117.648658,34.061459;-117.203844,34.027437;-114.61527,32.721849;-106.497077,31.757975;-106.478387,31.767316;-98.557813,29.376921;-98.527794,29.410145;-98.477862,29.421264;-98.414503,29.453051;-95.636147,29.620023;-95.372669,29.768796;-95.365496,29.767074;-94.126699,30.07635;-94.122636,30.076378;-94.105904,30.07603;-93.2168,30.23827;-90.078865,29.946326;-90.211205,29.919107;-93.217846,30.238316;-94.128612,30.07615;-95.368093,29.767776;-95.440979,29.780061;-95.636936,29.619873;-98.415018,29.452812;-98.477942,29.419838;-98.528502,29.409993;-98.55835,29.376373;-106.479862,31.766504;-106.498016,31.75798;-110.968067,32.22485;-114.615292,32.724711;-117.204165,34.027886;-117.650485,34.061476;-117.675542,34.060841;-117.752127,34.058941;-117.980102,34.039013;-118.153667,34.078944;-118.234676,34.05433&profile=rail'},
             },
         },
         "Surf City": {
             "Fantasy": {
-                "San Jose - Santa Cruz": {'Mode': 3, 'Stations': '-Intercity LS (San Jose - Santa Cruz)'},
+                "San Jose - Santa Cruz": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (San Jose - Santa Cruz)'},
             },
         },
         "Texas Eagle": {
             "Fantasy": {
-                "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW)'},
+                "Chicago - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW)'},
             },
             "Present": {
-                "Chicago - Los Angeles": {'Mode': 2, 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW) [Old]', 'File': '[Amtrak] Texas Eagle', 'Link': 'https://brouter.damsy.net/latest/#map=13/38.5980/-90.2563/standard&lonlats=-87.638959,41.878343;-87.637044,41.858543;-87.707226,41.826307;-87.73333,41.819711;-87.815384,41.790947;-88.029209,41.665626;-88.076824,41.545885;-88.212308,41.263973;-90.089736,38.817943;-90.162456,38.69735;-90.205656,38.623753;-90.269337,38.615535;-90.394628,36.75303;-91.578662,35.301975;-91.929345,35.040454;-92.196289,34.796251;-92.208842,34.783496;-92.225289,34.771273;-92.267899,34.763906;-92.28845,34.750384;-92.346354,34.690234;-92.460916,34.617908;-94.043047,33.41978;-94.367511,32.552533;-94.381201,32.551168;-94.469225,32.514421;-94.681313,32.502016;-94.727334,32.494393;-94.798225,32.503302;-94.817489,32.503288;-96.800875,32.769531;-96.808224,32.775245;-96.81007,32.781132;-96.840641,32.809171;-96.900476,32.813914;-96.939465,32.814618;-97.03515,32.816597;-97.049682,32.816782;-97.324619,32.75085;-98.477873,29.421374;-98.501058,29.404759;-98.52406,29.410517;-106.478087,31.76749;-106.497833,31.757975;-110.972573,32.227523;-111.013391,32.276271;-111.109473,32.380669;-111.231036,32.473882;-111.322875,32.574638;-111.428844,32.673014;-111.485739,32.708359;-111.510801,32.724025;-111.530918,32.736643;-112.040226,33.051678;-112.246295,33.061532;-114.301372,32.68347;-114.615327,32.724429;-114.618763,32.732339;-116.307503,33.761292;-116.509865,33.87735;-116.53253,33.890189;-116.773038,33.917856;-116.8692,33.923598;-117.178953,34.011821;-117.182826,34.016003;-117.287121,34.059646;-117.354981,34.067636;-117.397848,34.067587;-117.537543,34.064303;-117.589738,34.063068;-117.749657,34.058944;-118.17961,34.065085;-118.22215,34.062743;-118.234772,34.054353;-118.220513,34.062819;-118.177148,34.06761;-117.586927,34.06313;-117.538186,34.064268;-117.470874,34.065863;-117.438467,34.066645;-117.39759,34.067534;-117.395031,34.067605;-117.354594,34.067476;-117.314517,34.063601;-117.286359,34.059442;-117.182064,34.01481;-117.060657,33.954288;-116.974504,33.925521;-116.873835,33.92342;-116.655836,33.91051;-116.409523,33.817823;-116.167696,33.673255;-114.748785,32.748951;-114.615292,32.722396;-114.598845,32.688261;-114.3023,32.683854;-112.034476,33.04781;-111.931511,32.984413;-111.777273,32.889202;-111.734256,32.862597;-111.647787,32.809037;-111.485342,32.707949;-111.425561,32.670738;-111.319817,32.570804;-111.107816,32.378103;-111.009164,32.271091;-110.973887,32.227758;-106.498235,31.758048;-106.478913,31.767378;-98.526077,29.410779;-98.500671,29.405367;-98.477862,29.421374;-97.323917,32.749601;-97.049854,32.817079;-97.005737,32.816142;-96.895359,32.814005;-96.821582,32.804081;-96.808675,32.777172;-96.800972,32.769743;-96.765518,32.743825;-96.702272,32.776856;-94.378089,32.550774;-94.367784,32.552105;-92.444388,34.630154;-92.34718,34.688398;-92.265657,34.763822;-92.208155,34.784033;-90.393217,36.753864;-90.263157,38.617472;-90.22036,38.624559;-90.20447,38.623363;-90.163572,38.696078;-90.088749,38.821637;-88.985095,40.508048;-88.212324,41.263787;-88.07897,41.525455;-88.048875,41.640559;-87.851282,41.751775;-87.815083,41.791091;-87.732729,41.819815;-87.70412,41.826239;-87.639977,41.850596;-87.636968,41.85638;-87.636947,41.859949;-87.637038,41.865446;-87.63788,41.871259;-87.638948,41.878369&profile=rail'},
+                "Chicago - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Los Angeles via DFW) [Old]', 'File': '[Amtrak] Texas Eagle', 'Link': 'https://brouter.damsy.net/latest/#map=13/38.5980/-90.2563/standard&lonlats=-87.638959,41.878343;-87.637044,41.858543;-87.707226,41.826307;-87.73333,41.819711;-87.815384,41.790947;-88.029209,41.665626;-88.076824,41.545885;-88.212308,41.263973;-90.089736,38.817943;-90.162456,38.69735;-90.205656,38.623753;-90.269337,38.615535;-90.394628,36.75303;-91.578662,35.301975;-91.929345,35.040454;-92.196289,34.796251;-92.208842,34.783496;-92.225289,34.771273;-92.267899,34.763906;-92.28845,34.750384;-92.346354,34.690234;-92.460916,34.617908;-94.043047,33.41978;-94.367511,32.552533;-94.381201,32.551168;-94.469225,32.514421;-94.681313,32.502016;-94.727334,32.494393;-94.798225,32.503302;-94.817489,32.503288;-96.800875,32.769531;-96.808224,32.775245;-96.81007,32.781132;-96.840641,32.809171;-96.900476,32.813914;-96.939465,32.814618;-97.03515,32.816597;-97.049682,32.816782;-97.324619,32.75085;-98.477873,29.421374;-98.501058,29.404759;-98.52406,29.410517;-106.478087,31.76749;-106.497833,31.757975;-110.972573,32.227523;-111.013391,32.276271;-111.109473,32.380669;-111.231036,32.473882;-111.322875,32.574638;-111.428844,32.673014;-111.485739,32.708359;-111.510801,32.724025;-111.530918,32.736643;-112.040226,33.051678;-112.246295,33.061532;-114.301372,32.68347;-114.615327,32.724429;-114.618763,32.732339;-116.307503,33.761292;-116.509865,33.87735;-116.53253,33.890189;-116.773038,33.917856;-116.8692,33.923598;-117.178953,34.011821;-117.182826,34.016003;-117.287121,34.059646;-117.354981,34.067636;-117.397848,34.067587;-117.537543,34.064303;-117.589738,34.063068;-117.749657,34.058944;-118.17961,34.065085;-118.22215,34.062743;-118.234772,34.054353;-118.220513,34.062819;-118.177148,34.06761;-117.586927,34.06313;-117.538186,34.064268;-117.470874,34.065863;-117.438467,34.066645;-117.39759,34.067534;-117.395031,34.067605;-117.354594,34.067476;-117.314517,34.063601;-117.286359,34.059442;-117.182064,34.01481;-117.060657,33.954288;-116.974504,33.925521;-116.873835,33.92342;-116.655836,33.91051;-116.409523,33.817823;-116.167696,33.673255;-114.748785,32.748951;-114.615292,32.722396;-114.598845,32.688261;-114.3023,32.683854;-112.034476,33.04781;-111.931511,32.984413;-111.777273,32.889202;-111.734256,32.862597;-111.647787,32.809037;-111.485342,32.707949;-111.425561,32.670738;-111.319817,32.570804;-111.107816,32.378103;-111.009164,32.271091;-110.973887,32.227758;-106.498235,31.758048;-106.478913,31.767378;-98.526077,29.410779;-98.500671,29.405367;-98.477862,29.421374;-97.323917,32.749601;-97.049854,32.817079;-97.005737,32.816142;-96.895359,32.814005;-96.821582,32.804081;-96.808675,32.777172;-96.800972,32.769743;-96.765518,32.743825;-96.702272,32.776856;-94.378089,32.550774;-94.367784,32.552105;-92.444388,34.630154;-92.34718,34.688398;-92.265657,34.763822;-92.208155,34.784033;-90.393217,36.753864;-90.263157,38.617472;-90.22036,38.624559;-90.20447,38.623363;-90.163572,38.696078;-90.088749,38.821637;-88.985095,40.508048;-88.212324,41.263787;-88.07897,41.525455;-88.048875,41.640559;-87.851282,41.751775;-87.815083,41.791091;-87.732729,41.819815;-87.70412,41.826239;-87.639977,41.850596;-87.636968,41.85638;-87.636947,41.859949;-87.637038,41.865446;-87.63788,41.871259;-87.638948,41.878369&profile=rail'},
             },
         },
         "Thrasher": {
             "Fantasy": {
-                "Atlanta - Savannah": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Savannah via Macon)'},
+                "Atlanta - Savannah": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Savannah via Macon)'},
             },
         },
         "Tiger": {
             "Fantasy": {
-                "Chicago - Detroit": {'Mode': 1, 'Stations': '-Intercity HS (Chicago - Detroit)'},
+                "Chicago - Detroit": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Detroit)'},
             },
         },
         "Valley Flyer": {
             "Fantasy": {
-                "New Haven - Greenfield": {'Mode': 3, 'Stations': '-Intercity LS (New Haven - Greenfield)'},
+                "New Haven - Greenfield": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New Haven - Greenfield)'},
             },
         },
         "Vermonter": {
             "Fantasy": {
-                "Washington - St. Albans": {'Mode': 3, 'Stations': '-Intercity LS (Washington - St. Albans)'},
+                "Washington - St. Albans": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Washington - St. Albans)'},
             },
         },
         "Walleye": {
             "Fantasy": {
-                "Columbus - Cincinnati": {'Mode': 3, 'Stations': '-Intercity LS (Columbus - Cincinnati)'},
+                "Columbus - Cincinnati": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Columbus - Cincinnati)'},
             },
         },
         "Winnipegger": {
             "Fantasy": {
-                "Minneapolis - Winnipeg": {'Mode': 3, 'Stations': '-Intercity LS (Minneapolis - Winnipeg)'},
+                "Minneapolis - Winnipeg": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Minneapolis - Winnipeg)'},
             },
         },
         "Winter Park Express": {
             "Fantasy": {
-                "Denver - Craig": {'Mode': 3, 'Stations': '-Intercity LS (Denver Main - Craig)', 'File': '[Amtrak] Winter Park Express'},
+                "Denver - Craig": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Denver Main - Craig)', 'File': '[Amtrak] Winter Park Express'},
             },
             "Present": {
-                "Denver - Winter Park": {'Mode': 3, 'Stations': '-Intercity LS (Denver Main - Winter Park)', 'File': '[Amtrak] Winter Park Express', 'Link': 'https://brouter.damsy.net/latest/#map=12/39.8139/-105.0001/standard&lonlats=-105.001445,39.75315;-104.997821,39.789839;-105.030574,39.804143;-105.818548,39.950118;-105.029393,39.804011;-105.021358,39.80355;-104.997939,39.79737;-104.997867,39.789781;-105.001409,39.753156&profile=rail'},
+                "Denver - Winter Park": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Denver Main - Winter Park)', 'File': '[Amtrak] Winter Park Express', 'Link': 'https://brouter.damsy.net/latest/#map=12/39.8139/-105.0001/standard&lonlats=-105.001445,39.75315;-104.997821,39.789839;-105.030574,39.804143;-105.818548,39.950118;-105.029393,39.804011;-105.021358,39.80355;-104.997939,39.79737;-104.997867,39.789781;-105.001409,39.753156&profile=rail'},
             },
         },
         "Wolverine": {
             "Fantasy": {
-                "Chicago - Toronto": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Toronto)'},
+                "Chicago - Toronto": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Toronto)'},
             },
             "Present": {
-                "Chicago - Pontiac": {'Mode': 3, 'Stations': '-Intercity LS (Chicago - Pontiac)', 'File': '[Amtrak] Wolverine', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87751/-87.63742/standard&lonlats=-87.638634,41.878334;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.2533,41.836672;-85.585942,42.295532;-85.572939,42.295814;-85.166901,42.311819;-83.115016,42.324179;-83.085694,42.356229;-83.072106,42.367894;-83.057885,42.378;-83.058588,42.379993;-83.293201,42.633653;-83.057633,42.378456;-83.0729,42.367597;-83.085603,42.356145;-83.153828,42.31861;-83.287783,42.294926;-83.410923,42.273907;-85.580159,42.29577;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.638633,41.878353&profile=rail'},
+                "Chicago - Pontiac": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chicago - Pontiac)', 'File': '[Amtrak] Wolverine', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87751/-87.63742/standard&lonlats=-87.638634,41.878334;-87.636099,41.820743;-87.635976,41.815109;-87.625049,41.778093;-87.545087,41.721005;-87.507201,41.691221;-87.289767,41.604727;-86.2533,41.836672;-85.585942,42.295532;-85.572939,42.295814;-85.166901,42.311819;-83.115016,42.324179;-83.085694,42.356229;-83.072106,42.367894;-83.057885,42.378;-83.058588,42.379993;-83.293201,42.633653;-83.057633,42.378456;-83.0729,42.367597;-83.085603,42.356145;-83.153828,42.31861;-83.287783,42.294926;-83.410923,42.273907;-85.580159,42.29577;-87.289853,41.60511;-87.50745,41.691333;-87.591768,41.754602;-87.635981,41.819495;-87.636427,41.837435;-87.638633,41.878353&profile=rail'},
             },
         },
         "Wren": {
             "Fantasy": {
-                "Los Angeles - Phoenix": {'Mode': 3, 'Stations': '-Intercity LS (Los Angeles - Phoenix)'},
+                "Los Angeles - Phoenix": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Los Angeles - Phoenix)'},
             },
         },
         "Yellowhammer": {
             "Fantasy": {
-                "Atlanta - Mobile": {'Mode': 3, 'Stations': '-Intercity LS (Atlanta - Mobile)'},
+                "Atlanta - Mobile": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Atlanta - Mobile)'},
             },
         },
     },
     "BART": {
         "Blue Line": {
             "Fantasy": {
-                "Daly City - Dublin": {'Mode': 5, 'Stations': 'San Francisco BART (Daly City - Dublin)'},
+                "Daly City - Dublin": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Daly City - Dublin)'},
             },
             "Present": {
-                "Daly City - Dublin": {'Mode': 5, 'Stations': 'San Francisco BART (Daly City - Dublin)', 'File': '[BART] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.7444/-122.2648/standard&lonlats=-122.469513,37.705418;-122.467357,37.707981;-122.419775,37.767365;-122.20331,37.759091;-122.171359,37.732355;-122.11352,37.688664;-122.071849,37.690604;-121.925046,37.700333;-121.898037,37.701579;-121.935732,37.698413;-122.071248,37.690952;-122.114764,37.689135;-122.127146,37.697463;-122.154756,37.716341;-122.17174,37.732783;-122.189528,37.747656;-122.203873,37.759629;-122.219167,37.772309;-122.229735,37.777948;-122.259373,37.79338;-122.39659,37.793203;-122.42,37.767102;-122.418761,37.754307;-122.463441,37.710281;-122.469425,37.705379&profile=rail'},
+                "Daly City - Dublin": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Daly City - Dublin)', 'File': '[BART] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.7444/-122.2648/standard&lonlats=-122.469513,37.705418;-122.467357,37.707981;-122.419775,37.767365;-122.20331,37.759091;-122.171359,37.732355;-122.11352,37.688664;-122.071849,37.690604;-121.925046,37.700333;-121.898037,37.701579;-121.935732,37.698413;-122.071248,37.690952;-122.114764,37.689135;-122.127146,37.697463;-122.154756,37.716341;-122.17174,37.732783;-122.189528,37.747656;-122.203873,37.759629;-122.219167,37.772309;-122.229735,37.777948;-122.259373,37.79338;-122.39659,37.793203;-122.42,37.767102;-122.418761,37.754307;-122.463441,37.710281;-122.469425,37.705379&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Daly City - Santa Clara": {'Mode': 5, 'Stations': 'San Francisco BART (Daly City - Santa Clara)'},
+                "Daly City - Santa Clara": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Daly City - Santa Clara)'},
             },
             "Present": {
-                "Daly City - Berryessa": {'Mode': 5, 'Stations': 'San Francisco BART (Daly City - Berryessa)', 'File': '[BART] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.37013/-121.87678/standard&lonlats=-122.469513,37.705418;-122.467357,37.707981;-122.419775,37.767365;-122.20331,37.759091;-122.154461,37.71598;-122.113541,37.68781;-122.084343,37.667835;-122.037002,37.609944;-122.016488,37.590031;-121.978176,37.558459;-121.955398,37.543101;-121.943028,37.50867;-121.93717,37.497835;-121.920117,37.464222;-121.906925,37.438687;-121.875452,37.370353;-121.874484,37.367544;-121.890253,37.408857;-121.917971,37.460271;-121.978063,37.558565;-122.033628,37.606599;-122.035736,37.60875;-122.085308,37.668616;-122.203873,37.759629;-122.219167,37.772309;-122.229735,37.777948;-122.259373,37.79338;-122.39659,37.793203;-122.42,37.767102;-122.418761,37.754307;-122.463441,37.710281;-122.469425,37.705379&profile=rail'},
+                "Daly City - Berryessa": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Daly City - Berryessa)', 'File': '[BART] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.37013/-121.87678/standard&lonlats=-122.469513,37.705418;-122.467357,37.707981;-122.419775,37.767365;-122.20331,37.759091;-122.154461,37.71598;-122.113541,37.68781;-122.084343,37.667835;-122.037002,37.609944;-122.016488,37.590031;-121.978176,37.558459;-121.955398,37.543101;-121.943028,37.50867;-121.93717,37.497835;-121.920117,37.464222;-121.906925,37.438687;-121.875452,37.370353;-121.874484,37.367544;-121.890253,37.408857;-121.917971,37.460271;-121.978063,37.558565;-122.033628,37.606599;-122.035736,37.60875;-122.085308,37.668616;-122.203873,37.759629;-122.219167,37.772309;-122.229735,37.777948;-122.259373,37.79338;-122.39659,37.793203;-122.42,37.767102;-122.418761,37.754307;-122.463441,37.710281;-122.469425,37.705379&profile=rail'},
             },
         },
         "OAK Airport Monorail": {
             "Fantasy": {
-                "OAK Airport": {'Mode': 9, 'Stations': 'Oakland Monorail (OAK Airport)'},
+                "OAK Airport": {'Mode': 'Peoplemover', 'Stations': 'Oakland Monorail (OAK Airport)'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Richmond - Santa Clara": {'Mode': 5, 'Stations': 'San Francisco BART (Richmond - Santa Clara)'},
+                "Richmond - Santa Clara": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Richmond - Santa Clara)'},
             },
             "Present": {
-                "Richmond - Berryessa": {'Mode': 5, 'Stations': 'San Francisco BART (Richmond - Berryessa)', 'File': '[BART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.93524/-122.35165/standard&lonlats=-122.353851,37.937483;-122.309632,37.915785;-122.260221,37.793809;-122.214746,37.769002;-122.160265,37.720996;-122.086156,37.669092;-122.056646,37.633589;-122.043847,37.615991;-121.978272,37.558501;-121.954921,37.541251;-121.948478,37.519215;-121.939176,37.501547;-121.922761,37.469289;-121.919644,37.463239;-121.892806,37.413293;-121.874489,37.367544;-121.884009,37.39667;-121.892576,37.413085;-121.91789,37.460075;-121.923265,37.470686;-121.939702,37.503096;-121.949004,37.520512;-121.95498,37.542055;-121.978154,37.558655;-122.017996,37.591349;-122.043976,37.616181;-122.057725,37.635097;-122.085212,37.668548;-122.087814,37.670314;-122.127242,37.697515;-122.161236,37.722567;-122.215186,37.769612;-122.260752,37.794364;-122.269893,37.841589;-122.28907,37.879507;-122.309842,37.916229;-122.353904,37.937451&profile=rail'},
+                "Richmond - Berryessa": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Richmond - Berryessa)', 'File': '[BART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.93524/-122.35165/standard&lonlats=-122.353851,37.937483;-122.309632,37.915785;-122.260221,37.793809;-122.214746,37.769002;-122.160265,37.720996;-122.086156,37.669092;-122.056646,37.633589;-122.043847,37.615991;-121.978272,37.558501;-121.954921,37.541251;-121.948478,37.519215;-121.939176,37.501547;-121.922761,37.469289;-121.919644,37.463239;-121.892806,37.413293;-121.874489,37.367544;-121.884009,37.39667;-121.892576,37.413085;-121.91789,37.460075;-121.923265,37.470686;-121.939702,37.503096;-121.949004,37.520512;-121.95498,37.542055;-121.978154,37.558655;-122.017996,37.591349;-122.043976,37.616181;-122.057725,37.635097;-122.085212,37.668548;-122.087814,37.670314;-122.127242,37.697515;-122.161236,37.722567;-122.215186,37.769612;-122.260752,37.794364;-122.269893,37.841589;-122.28907,37.879507;-122.309842,37.916229;-122.353904,37.937451&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Millbrae - Richmond": {'Mode': 5, 'Stations': 'San Francisco BART (Millbrae - Richmond)'},
+                "Millbrae - Richmond": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Millbrae - Richmond)'},
             },
             "Present": {
-                "Millbrae - Richmond": {'Mode': 5, 'Stations': 'San Francisco BART (Millbrae - Richmond)', 'File': '[BART] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.7753/-122.4776/standard&lonlats=-122.386022,37.599478;-122.390748,37.616394;-122.42302,37.647679;-122.467325,37.708002;-122.451352,37.713473;-122.419775,37.767339;-122.27626,37.798412;-122.266577,37.829767;-122.324411,37.931124;-122.353706,37.937564;-122.317743,37.926153;-122.315603,37.923444;-122.280203,37.872711;-122.26794,37.835987;-122.277526,37.798649;-122.306392,37.807919;-122.420504,37.76929;-122.452216,37.712908;-122.467571,37.708057;-122.471273,37.699128;-122.422913,37.647338;-122.40057,37.615726;-122.390713,37.616405;-122.400007,37.614112;-122.397003,37.610135;-122.385969,37.599516&profile=rail'},
+                "Millbrae - Richmond": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Millbrae - Richmond)', 'File': '[BART] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.7753/-122.4776/standard&lonlats=-122.386022,37.599478;-122.390748,37.616394;-122.42302,37.647679;-122.467325,37.708002;-122.451352,37.713473;-122.419775,37.767339;-122.27626,37.798412;-122.266577,37.829767;-122.324411,37.931124;-122.353706,37.937564;-122.317743,37.926153;-122.315603,37.923444;-122.280203,37.872711;-122.26794,37.835987;-122.277526,37.798649;-122.306392,37.807919;-122.420504,37.76929;-122.452216,37.712908;-122.467571,37.708057;-122.471273,37.699128;-122.422913,37.647338;-122.40057,37.615726;-122.390713,37.616405;-122.400007,37.614112;-122.397003,37.610135;-122.385969,37.599516&profile=rail'},
             },
         },
         "Yellow Line": {
             "Fantasy": {
-                "Millbrae - Antioch": {'Mode': 5, 'Stations': 'San Francisco BART (Millbrae - Antioch)'},
+                "Millbrae - Antioch": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Millbrae - Antioch)'},
             },
             "Present": {
-                "Millbrae - Pittsburg": {'Mode': 5, 'Stations': 'San Francisco BART (Millbrae - Pittsburg)', 'File': '[BART] Yellow Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/37.6125/-122.3930/standard&lonlats=-122.386022,37.599478;-122.390748,37.616394;-122.405489,37.620869;-122.42302,37.647679;-122.467341,37.70799;-122.444459,37.72717;-122.419823,37.767352;-122.270451,37.813331;-122.26905,37.821281;-122.266706,37.828667;-122.206743,37.865656;-122.069081,37.902694;-122.040918,37.936853;-122.033386,37.987749;-122.012969,38.011067;-121.98236,38.020796;-121.942921,38.018613;-121.931387,38.019004;-121.946182,38.019046;-122.013168,38.011217;-122.033536,37.987123;-122.041395,37.936941;-122.069542,37.902379;-122.21112,37.864087;-122.267361,37.828744;-122.268927,37.822544;-122.269946,37.812415;-122.277982,37.798759;-122.393328,37.795208;-122.420027,37.767246;-122.444955,37.726936;-122.467491,37.708168;-122.47108,37.697582;-122.442707,37.663329;-122.422693,37.647092;-122.390699,37.616405;-122.400033,37.614377;-122.397035,37.610182;-122.389927,37.603147;-122.385985,37.599501&profile=rail'},
+                "Millbrae - Pittsburg": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Millbrae - Pittsburg)', 'File': '[BART] Yellow Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/37.6125/-122.3930/standard&lonlats=-122.386022,37.599478;-122.390748,37.616394;-122.405489,37.620869;-122.42302,37.647679;-122.467341,37.70799;-122.444459,37.72717;-122.419823,37.767352;-122.270451,37.813331;-122.26905,37.821281;-122.266706,37.828667;-122.206743,37.865656;-122.069081,37.902694;-122.040918,37.936853;-122.033386,37.987749;-122.012969,38.011067;-121.98236,38.020796;-121.942921,38.018613;-121.931387,38.019004;-121.946182,38.019046;-122.013168,38.011217;-122.033536,37.987123;-122.041395,37.936941;-122.069542,37.902379;-122.21112,37.864087;-122.267361,37.828744;-122.268927,37.822544;-122.269946,37.812415;-122.277982,37.798759;-122.393328,37.795208;-122.420027,37.767246;-122.444955,37.726936;-122.467491,37.708168;-122.47108,37.697582;-122.442707,37.663329;-122.422693,37.647092;-122.390699,37.616405;-122.400033,37.614377;-122.397035,37.610182;-122.389927,37.603147;-122.385985,37.599501&profile=rail'},
             },
         },
         "Yellow Line DMU": {
             "Present": {
-                "Pittsburg - Antioch": {'Mode': 5, 'Stations': 'San Francisco BART (Pittsburg - Antioch)', 'File': '[BART] Yellow Line (DMU)'},
+                "Pittsburg - Antioch": {'Mode': 'Heavy Metro', 'Stations': 'San Francisco BART (Pittsburg - Antioch)', 'File': '[BART] Yellow Line (DMU)'},
             },
         },
     },
     "BCRTC": {
         "Fraser Line": {
             "Fantasy": {
-                "Vancouver - White Rock": {'Mode': 4, 'Stations': 'Vancouver Commuter Rail (Waterfront - White Rock)'},
+                "Vancouver - White Rock": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - White Rock)'},
             },
         },
         "Horseshoe Line": {
             "Fantasy": {
-                "Vancouver - Horseshoe Bay": {'Mode': 4, 'Stations': 'Vancouver Commuter Rail (Waterfront - Horseshoe Bay)'},
+                "Vancouver - Horseshoe Bay": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Horseshoe Bay)'},
             },
         },
         "West Coast Express": {
             "Fantasy": {
-                "Vancouver - Huntingdon": {'Mode': 4, 'Stations': 'Vancouver Commuter Rail (Waterfront - Huntingdon)'},
-                "Vancouver - Mission Harbour": {'Mode': 4, 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [New]'},
+                "Vancouver - Huntingdon": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Huntingdon)'},
+                "Vancouver - Mission Harbour": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [New]'},
             },
             "Present": {
-                "Vancouver - Mission Harbour": {'Mode': 4, 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [Old]', 'File': '[BCRTC] West Coast Express'},
+                "Vancouver - Mission Harbour": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [Old]', 'File': '[BCRTC] West Coast Express'},
             },
         },
     },
     "Brightline": {
         "Brightline": {
             "Fantasy": {
-                "Miami - Tampa": {'Mode': 3, 'Stations': '-Intercity LS (Miami Central - Tampa)'},
+                "Miami - Tampa": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Miami Central - Tampa)'},
             },
             "Present": {
-                "Miami - Orlando": {'Mode': 3, 'Stations': '-Intercity LS (Miami Central - Orlando Airport) [Old]', 'File': '[Brightline] Brightline', 'Link': 'https://brouter.damsy.net/latest/#map=8/27.103/-81.271/standard&lonlats=-80.195961,25.777445;-80.193994,25.797602;-80.145575,26.124762;-80.122894,26.241673;-80.095222,26.32715;-80.088615,26.345574;-80.075709,26.427198;-80.056939,26.544793;-80.058457,26.652896;-80.055324,26.711843;-80.208516,27.153527;-80.229185,27.173845;-80.226658,27.241825;-80.262487,27.310149;-80.316858,27.424826;-80.423468,27.720902;-80.501536,27.849341;-80.533031,27.941317;-80.562041,27.995008;-80.65527,28.178919;-80.669509,28.212;-80.689189,28.263696;-80.72277,28.330371;-81.302135,28.451213;-81.306542,28.436313;-81.308447,28.41082;-80.563876,27.998584;-80.405669,27.663095;-80.317486,27.426531;-80.263174,27.311341;-80.229745,27.174331;-80.208639,27.153406;-80.12199,26.245194;-80.145677,26.121062;-80.139915,26.082663;-80.155665,25.922014;-80.189815,25.816147;-80.194268,25.797098;-80.196002,25.777452&profile=rail'},
+                "Miami - Orlando": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Miami Central - Orlando Airport) [Old]', 'File': '[Brightline] Brightline', 'Link': 'https://brouter.damsy.net/latest/#map=18/25.77869/-80.19602/standard&lonlats=-80.195697,25.777455;-80.193994,25.797602;-80.145575,26.124762;-80.122894,26.241673;-80.095222,26.32715;-80.088615,26.345574;-80.075709,26.427198;-80.056939,26.544793;-80.058457,26.652896;-80.055324,26.711843;-80.208516,27.153527;-80.229185,27.173845;-80.226658,27.241825;-80.262487,27.310149;-80.316858,27.424826;-80.423468,27.720902;-80.501536,27.849341;-80.533031,27.941317;-80.562041,27.995008;-80.65527,28.178919;-80.669509,28.212;-80.689189,28.263696;-80.72277,28.330371;-81.302135,28.451213;-81.306542,28.436313;-81.308447,28.41082;-80.563876,27.998584;-80.405669,27.663095;-80.317486,27.426531;-80.263174,27.311341;-80.229745,27.174331;-80.208639,27.153406;-80.12199,26.245194;-80.145677,26.121062;-80.139915,26.082663;-80.155665,25.922014;-80.189815,25.816147;-80.194268,25.797098;-80.195748,25.77746&profile=rail'},
             },
         },
     },
     "Brightline West": {
         "Brightline West": {
             "Fantasy": {
-                "Las Vegas - Los Angeles": {'Mode': 1, 'Stations': '-Intercity HS (Las Vegas - Los Angeles via PAL)'},
-                "Las Vegas - Los Angeles (via Ontario)": {'Mode': 1, 'Stations': '-Intercity HS (Las Vegas - Los Angeles via ONT)'},
+                "Las Vegas - Los Angeles": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Las Vegas - Los Angeles via PAL)'},
+                "Las Vegas - Los Angeles (via Ontario)": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Las Vegas - Los Angeles via ONT)'},
             },
         },
     },
     "CATS": {
         "Blue Line": {
             "Fantasy": {
-                "UNC - South Blvd": {'Mode': 7, 'Stations': 'Charlotte LRT (UNC - South Blvd)'},
+                "UNC - South Blvd": {'Mode': 'Light Rail', 'Stations': 'Charlotte LRT (UNC - South Blvd)'},
             },
         },
         "Gold Line": {
             "Fantasy": {
-                "Sunnyside Ave - French St": {'Mode': 8, 'Stations': 'Charlotte Streetcar (Sunnyside Ave - French St)'},
+                "Sunnyside Ave - French St": {'Mode': 'Streetcar', 'Stations': 'Charlotte Streetcar (Sunnyside Ave - French St)'},
             },
         },
         "Rock Hill Line": {
             "Fantasy": {
-                "Mt. Mourne - Rock Hill": {'Mode': 4, 'Stations': 'Charlotte Commuter (Mt. Mourne - Rock Hill)'},
+                "Mt. Mourne - Rock Hill": {'Mode': 'Heavy Rail', 'Stations': 'Charlotte Commuter (Mt. Mourne - Rock Hill)'},
             },
         },
         "Salisbury Line": {
             "Fantasy": {
-                "Salisbury - Kings Mountain": {'Mode': 4, 'Stations': 'Charlotte Commuter (Salisbury - Kings Mountain)'},
+                "Salisbury - Kings Mountain": {'Mode': 'Heavy Rail', 'Stations': 'Charlotte Commuter (Salisbury - Kings Mountain)'},
             },
         },
     },
     "CCRTA": {
         "CapeFLYER": {
             "Fantasy": {
-                "Boston - Cape Cod": {'Mode': 3, 'Stations': '-Intercity LS (Boston - Cape Cod)'},
+                "Boston - Cape Cod": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Cape Cod)'},
             },
         },
     },
     "CHSRA": {
         "California High-Speed Rail": {
             "Fantasy": {
-                "Anaheim - Sacramento": {'Mode': 1, 'Stations': '-Intercity HS (Anaheim - Sacramento)'},
-                "Anaheim - San Francisco": {'Mode': 1, 'Stations': '-Intercity HS (Anaheim - San Francisco)'},
-                "Los Angeles - San Diego": {'Mode': 1, 'Stations': '-Intercity HS (Los Angeles - San Diego)'},
+                "Anaheim - Sacramento": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Anaheim - Sacramento)'},
+                "Anaheim - San Francisco": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Anaheim - San Francisco)'},
+                "Los Angeles - San Diego": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Los Angeles - San Diego)'},
             },
         },
     },
     "CMTA": {
         "Dayton Line": {
             "Fantasy": {
-                "Cincinnati - Dayton": {'Mode': 4, 'Stations': 'Cincinnati Commuter (Union - Dayton)'},
+                "Cincinnati - Dayton": {'Mode': 'Heavy Rail', 'Stations': 'Cincinnati Commuter (Union - Dayton)'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "St. Bernard - Airport": {'Mode': 5, 'Stations': 'Cincinnati Subway (St. Bernard - Airport)'},
+                "St. Bernard - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Cincinnati Subway (St. Bernard - Airport)'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Union Terminal - Airport": {'Mode': 5, 'Stations': 'Cincinnati Subway (Union - Airport)'},
+                "Union Terminal - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Cincinnati Subway (Union - Airport)'},
             },
         },
         "Loveland Line": {
             "Fantasy": {
-                "Cincinnati - Loveland": {'Mode': 4, 'Stations': 'Cincinnati Commuter (Union - Loveland)'},
+                "Cincinnati - Loveland": {'Mode': 'Heavy Rail', 'Stations': 'Cincinnati Commuter (Union - Loveland)'},
             },
         },
         "Middletown Line": {
             "Fantasy": {
-                "Cincinnati - Middletown": {'Mode': 4, 'Stations': 'Cincinnati Commuter (Union - Middletown)'},
+                "Cincinnati - Middletown": {'Mode': 'Heavy Rail', 'Stations': 'Cincinnati Commuter (Union - Middletown)'},
             },
         },
     },
     "COTA": {
         "Amlin Line": {
             "Fantasy": {
-                "Columbus - Pataskala": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Amlin)'},
+                "Columbus - Pataskala": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Amlin)'},
             },
         },
         "Delaware Line": {
             "Fantasy": {
-                "Columbus - Delaware": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Delaware)'},
+                "Columbus - Delaware": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Delaware)'},
             },
         },
         "Hilliard Line": {
             "Fantasy": {
-                "Columbus - Hilliard": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Hilliard)'},
+                "Columbus - Hilliard": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Hilliard)'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "High Street Subway": {'Mode': 5, 'Stations': 'Columbus Subway (High Street)'},
+                "High Street Subway": {'Mode': 'Heavy Metro', 'Stations': 'Columbus Subway (High Street)'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Broad Street Subway": {'Mode': 5, 'Stations': 'Columbus Subway (Broad Street)'},
+                "Broad Street Subway": {'Mode': 'Heavy Metro', 'Stations': 'Columbus Subway (Broad Street)'},
             },
         },
         "Pataskala Line": {
             "Fantasy": {
-                "Columbus - Pataskala": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Pataskala)'},
+                "Columbus - Pataskala": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Pataskala)'},
             },
         },
         "Pickerington Line": {
             "Fantasy": {
-                "Columbus - Pickerington": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Pickerington)'},
+                "Columbus - Pickerington": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Pickerington)'},
             },
         },
         "Timberlake Line": {
             "Fantasy": {
-                "Columbus - Timberlake": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Timberlake)'},
+                "Columbus - Timberlake": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Timberlake)'},
             },
         },
         "West Delaware Line": {
             "Fantasy": {
-                "Columbus - West Delaware": {'Mode': 4, 'Stations': 'Columbus Regional (Central - West Delaware)'},
+                "Columbus - West Delaware": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - West Delaware)'},
             },
         },
         "West Jefferson Line": {
             "Fantasy": {
-                "Columbus - West Jefferson": {'Mode': 4, 'Stations': 'Columbus Regional (Central - West Jefferson)'},
+                "Columbus - West Jefferson": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - West Jefferson)'},
             },
         },
         "Westerville Line": {
             "Fantasy": {
-                "Columbus - Westerville": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Westerville)'},
+                "Columbus - Westerville": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Westerville)'},
             },
         },
         "Winchester Line": {
             "Fantasy": {
-                "Columbus - Winchester": {'Mode': 4, 'Stations': 'Columbus Regional (Central - Winchester)'},
+                "Columbus - Winchester": {'Mode': 'Heavy Rail', 'Stations': 'Columbus Regional (Central - Winchester)'},
             },
         },
     },
     "CT Rail": {
         "Hartford Line": {
             "Fantasy": {
-                "New Haven - Springfield": {'Mode': 4, 'Stations': 'Connecticut Regional Rail (New Haven - Springfield)'},
+                "New Haven - Springfield": {'Mode': 'Heavy Rail', 'Stations': 'Connecticut Regional Rail (New Haven - Springfield)'},
             },
         },
         "Shore Line East": {
             "Fantasy": {
-                "Stamford - New Haven - New London": {'Mode': 4, 'Stations': 'Connecticut Regional Rail (Stamford - New London)'},
+                "Stamford - New Haven - New London": {'Mode': 'Heavy Rail', 'Stations': 'Connecticut Regional Rail (Stamford - New London)'},
             },
         },
     },
     "CTA": {
         "Blue Line": {
             "Fantasy": {
-                "Forest Park - O'Hare": {'Mode': 5, 'Stations': "Chicago L (O'Hare - Forest Park)"},
+                "Forest Park - O'Hare": {'Mode': 'Heavy Metro', 'Stations': "Chicago L (O'Hare - Forest Park)"},
             },
             "Present": {
-                "Forest Park - O'Hare": {'Mode': 5, 'Stations': "Chicago L (O'Hare - Forest Park)", 'File': '[CTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.9443/-87.7440/standard&lonlats=-87.8175,41.87443;-87.803507,41.873148;-87.750152,41.87143;-87.705038,41.874498;-87.685259,41.875485;-87.648604,41.875385;-87.629346,41.884643;-87.664289,41.902848;-87.67622,41.909056;-87.697259,41.922273;-87.720788,41.948411;-87.759084,41.969789;-87.769062,41.974073;-87.788406,41.982519;-87.85529,41.983719;-87.866415,41.98405;-87.88665,41.977833;-87.899927,41.980772;-87.903156,41.977893;-87.901107,41.979674;-87.899702,41.980708;-87.886548,41.977729;-87.855295,41.983635;-87.835095,41.984387;-87.805433,41.982319;-87.788417,41.982431;-87.768102,41.973378;-87.759084,41.969669;-87.740829,41.959414;-87.720863,41.948331;-87.69815,41.922672;-87.676386,41.90898;-87.641791,41.887126;-87.629507,41.877276;-87.649999,41.875598;-87.685334,41.875613;-87.705327,41.874617;-87.750324,41.871701;-87.803593,41.873296;-87.814507,41.873915;-87.817505,41.874384&profile=rail'},
+                "Forest Park - O'Hare": {'Mode': 'Heavy Metro', 'Stations': "Chicago L (O'Hare - Forest Park)", 'File': '[CTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.9443/-87.7440/standard&lonlats=-87.8175,41.87443;-87.803507,41.873148;-87.750152,41.87143;-87.705038,41.874498;-87.685259,41.875485;-87.648604,41.875385;-87.629346,41.884643;-87.664289,41.902848;-87.67622,41.909056;-87.697259,41.922273;-87.720788,41.948411;-87.759084,41.969789;-87.769062,41.974073;-87.788406,41.982519;-87.85529,41.983719;-87.866415,41.98405;-87.88665,41.977833;-87.899927,41.980772;-87.903156,41.977893;-87.901107,41.979674;-87.899702,41.980708;-87.886548,41.977729;-87.855295,41.983635;-87.835095,41.984387;-87.805433,41.982319;-87.788417,41.982431;-87.768102,41.973378;-87.759084,41.969669;-87.740829,41.959414;-87.720863,41.948331;-87.69815,41.922672;-87.676386,41.90898;-87.641791,41.887126;-87.629507,41.877276;-87.649999,41.875598;-87.685334,41.875613;-87.705327,41.874617;-87.750324,41.871701;-87.803593,41.873296;-87.814507,41.873915;-87.817505,41.874384&profile=rail'},
             },
         },
         "Brown Line": {
             "Fantasy": {
-                "Kimball - Loop": {'Mode': 5, 'Stations': 'Chicago L (Kimball - Loop)'},
+                "Kimball - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Kimball - Loop)'},
             },
             "Present": {
-                "Kimball - Loop": {'Mode': 5, 'Stations': 'Chicago L (Kimball - Loop)', 'File': '[CTA] Brown Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.9238/-87.6316/standard&lonlats=-87.713052,41.968194;-87.713159,41.966369;-87.70492,41.966072;-87.661283,41.943813;-87.65808,41.943875;-87.653553,41.940086;-87.645804,41.910246;-87.634077,41.886125;-87.633959,41.877236;-87.625982,41.877414;-87.626138,41.885346;-87.633095,41.885763;-87.633862,41.887151;-87.640986,41.910501;-87.652874,41.927621;-87.653131,41.93937;-87.658088,41.943943;-87.661334,41.943897;-87.683596,41.966375;-87.707629,41.966171;-87.712529,41.966096;-87.713087,41.968208&profile=rail'},
+                "Kimball - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Kimball - Loop)', 'File': '[CTA] Brown Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.9238/-87.6316/standard&lonlats=-87.713052,41.968194;-87.713159,41.966369;-87.70492,41.966072;-87.661283,41.943813;-87.65808,41.943875;-87.653553,41.940086;-87.645804,41.910246;-87.634077,41.886125;-87.633959,41.877236;-87.625982,41.877414;-87.626138,41.885346;-87.633095,41.885763;-87.633862,41.887151;-87.640986,41.910501;-87.652874,41.927621;-87.653131,41.93937;-87.658088,41.943943;-87.661334,41.943897;-87.683596,41.966375;-87.707629,41.966171;-87.712529,41.966096;-87.713087,41.968208&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Harlem/Lake - Ashland/63rd": {'Mode': 5, 'Stations': 'Chicago L (Harlem-Lake - Ashland/63rd)'},
-                "Harlem/Lake - Cottage Grove": {'Mode': 5, 'Stations': 'Chicago L (Harlem-Lake - Cottage Grove)'},
+                "Harlem/Lake - Ashland/63rd": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Harlem-Lake - Ashland/63rd)'},
+                "Harlem/Lake - Cottage Grove": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Harlem-Lake - Cottage Grove)'},
             },
             "Present": {
-                "Harlem/Lake - Ashland/63rd": {'Mode': 5, 'Stations': 'Chicago L (Harlem-Lake - Ashland/63rd)', 'File': '[CTA] Green Line (W)', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.8441/-87.6088/standard&lonlats=-87.805095,41.886886;-87.801087,41.8868;-87.772651,41.887271;-87.752325,41.886967;-87.723159,41.885194;-87.64339,41.885375;-87.626363,41.878924;-87.626798,41.867368;-87.626655,41.865772;-87.626073,41.82757;-87.619486,41.814826;-87.618713,41.802815;-87.618338,41.792641;-87.618756,41.788265;-87.643631,41.779101;-87.662176,41.779043;-87.664998,41.778997;-87.642022,41.779001;-87.619143,41.786885;-87.618086,41.790504;-87.618048,41.80259;-87.625237,41.82369;-87.625408,41.845364;-87.626545,41.867523;-87.626073,41.88477;-87.643819,41.88588;-87.725358,41.88584;-87.752239,41.887083;-87.772691,41.887361;-87.801954,41.886941;-87.805096,41.886873&profile=rail'},
-                "Harlem/Lake - Cottage Grove": {'Mode': 5, 'Stations': 'Chicago L (Harlem-Lake - Cottage Grove)', 'File': '[CTA] Green Line (E)', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.8436/-87.6572/standard&lonlats=-87.805095,41.886886;-87.801087,41.8868;-87.772651,41.887271;-87.752325,41.886967;-87.723159,41.885194;-87.64339,41.885375;-87.626363,41.878924;-87.626798,41.867368;-87.626655,41.865772;-87.626073,41.82757;-87.619486,41.814826;-87.618713,41.802815;-87.618338,41.792641;-87.618756,41.788265;-87.607593,41.780269;-87.605147,41.780264;-87.617877,41.784273;-87.618048,41.80259;-87.625237,41.82369;-87.625408,41.845364;-87.626545,41.867523;-87.626073,41.88477;-87.643819,41.88588;-87.725358,41.88584;-87.752239,41.887083;-87.772691,41.887361;-87.801954,41.886941;-87.805096,41.886873&profile=rail'},
+                "Harlem/Lake - Ashland/63rd": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Harlem-Lake - Ashland/63rd)', 'File': '[CTA] Green Line (W)', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.8441/-87.6088/standard&lonlats=-87.805095,41.886886;-87.801087,41.8868;-87.772651,41.887271;-87.752325,41.886967;-87.723159,41.885194;-87.64339,41.885375;-87.626363,41.878924;-87.626798,41.867368;-87.626655,41.865772;-87.626073,41.82757;-87.619486,41.814826;-87.618713,41.802815;-87.618338,41.792641;-87.618756,41.788265;-87.643631,41.779101;-87.662176,41.779043;-87.664998,41.778997;-87.642022,41.779001;-87.619143,41.786885;-87.618086,41.790504;-87.618048,41.80259;-87.625237,41.82369;-87.625408,41.845364;-87.626545,41.867523;-87.626073,41.88477;-87.643819,41.88588;-87.725358,41.88584;-87.752239,41.887083;-87.772691,41.887361;-87.801954,41.886941;-87.805096,41.886873&profile=rail'},
+                "Harlem/Lake - Cottage Grove": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Harlem-Lake - Cottage Grove)', 'File': '[CTA] Green Line (E)', 'Link': 'https://brouter.damsy.net/latest/#map=12/41.8436/-87.6572/standard&lonlats=-87.805095,41.886886;-87.801087,41.8868;-87.772651,41.887271;-87.752325,41.886967;-87.723159,41.885194;-87.64339,41.885375;-87.626363,41.878924;-87.626798,41.867368;-87.626655,41.865772;-87.626073,41.82757;-87.619486,41.814826;-87.618713,41.802815;-87.618338,41.792641;-87.618756,41.788265;-87.607593,41.780269;-87.605147,41.780264;-87.617877,41.784273;-87.618048,41.80259;-87.625237,41.82369;-87.625408,41.845364;-87.626545,41.867523;-87.626073,41.88477;-87.643819,41.88588;-87.725358,41.88584;-87.752239,41.887083;-87.772691,41.887361;-87.801954,41.886941;-87.805096,41.886873&profile=rail'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Midway - Loop": {'Mode': 5, 'Stations': 'Chicago L (Midway - Loop)'},
+                "Midway - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Midway - Loop)'},
             },
             "Present": {
-                "Midway - Loop": {'Mode': 5, 'Stations': 'Chicago L (Midway - Loop)', 'File': '[CTA] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8368/-87.6671/standard&lonlats=-87.738105,41.786152;-87.738013,41.793021;-87.721796,41.800959;-87.702479,41.804326;-87.687448,41.804602;-87.681267,41.817984;-87.663404,41.840177;-87.629134,41.85763;-87.626438,41.860069;-87.625945,41.876375;-87.633541,41.877693;-87.633841,41.885003;-87.626535,41.884403;-87.626342,41.877812;-87.627103,41.873266;-87.642719,41.848901;-87.663614,41.840249;-87.681085,41.829289;-87.681305,41.817948;-87.6888,41.80471;-87.702516,41.804458;-87.722037,41.801007;-87.738211,41.792976;-87.738153,41.786151&profile=rail'},
+                "Midway - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Midway - Loop)', 'File': '[CTA] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8368/-87.6671/standard&lonlats=-87.738105,41.786152;-87.738013,41.793021;-87.721796,41.800959;-87.702479,41.804326;-87.687448,41.804602;-87.681267,41.817984;-87.663404,41.840177;-87.629134,41.85763;-87.626438,41.860069;-87.625945,41.876375;-87.633541,41.877693;-87.633841,41.885003;-87.626535,41.884403;-87.626342,41.877812;-87.627103,41.873266;-87.642719,41.848901;-87.663614,41.840249;-87.681085,41.829289;-87.681305,41.817948;-87.6888,41.80471;-87.702516,41.804458;-87.722037,41.801007;-87.738211,41.792976;-87.738153,41.786151&profile=rail'},
             },
         },
         "Pink Line": {
             "Fantasy": {
-                "54th/Cermak - Loop": {'Mode': 5, 'Stations': 'Chicago L (54th/Cermak - Loop)'},
+                "54th/Cermak - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (54th/Cermak - Loop)'},
             },
             "Present": {
-                "54th/Cermak - Loop": {'Mode': 5, 'Stations': 'Chicago L (54th/Cermak - Loop) [Old]', 'File': '[CTA] Pink Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8792/-87.6834/standard&lonlats=-87.758679,41.851801;-87.756568,41.85181;-87.74997,41.851766;-87.719918,41.853852;-87.702345,41.854127;-87.669225,41.854779;-87.669429,41.869793;-87.642725,41.885426;-87.626438,41.884323;-87.633026,41.877035;-87.633691,41.884593;-87.643872,41.885841;-87.66912,41.885284;-87.670426,41.882366;-87.669708,41.870327;-87.6696,41.854842;-87.703031,41.854227;-87.720852,41.854043;-87.74997,41.851982;-87.758678,41.851757&profile=rail'},
+                "54th/Cermak - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (54th/Cermak - Loop) [Old]', 'File': '[CTA] Pink Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8792/-87.6834/standard&lonlats=-87.758679,41.851801;-87.756568,41.85181;-87.74997,41.851766;-87.719918,41.853852;-87.702345,41.854127;-87.669225,41.854779;-87.669429,41.869793;-87.642725,41.885426;-87.626438,41.884323;-87.633026,41.877035;-87.633691,41.884593;-87.643872,41.885841;-87.66912,41.885284;-87.670426,41.882366;-87.669708,41.870327;-87.6696,41.854842;-87.703031,41.854227;-87.720852,41.854043;-87.74997,41.851982;-87.758678,41.851757&profile=rail'},
             },
         },
         "Purple Line": {
             "Fantasy": {
-                "Linden - Loop": {'Mode': 5, 'Stations': 'Chicago L (Linden - Loop)'},
+                "Linden - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Linden - Loop)'},
             },
             "Present": {
-                "Linden - Loop": {'Mode': 5, 'Stations': 'Chicago L (Linden - Loop)', 'File': '[CTA] Purple Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.8854/-87.6291/standard&lonlats=-87.690822,42.073414;-87.68977,42.071278;-87.684959,42.062608;-87.683703,42.048894;-87.679648,42.032986;-87.67777,42.024192;-87.6717,42.017885;-87.659193,41.989094;-87.657085,41.961136;-87.653738,41.949006;-87.653518,41.940483;-87.647166,41.910374;-87.634238,41.888196;-87.633862,41.885797;-87.626599,41.881081;-87.632146,41.876974;-87.63368,41.883716;-87.63721,41.909647;-87.652574,41.920381;-87.653142,41.93917;-87.653469,41.947182;-87.658888,41.988444;-87.669788,42.016526;-87.673441,42.019629;-87.679659,42.033432;-87.683601,42.049524;-87.684143,42.061333;-87.689953,42.071759;-87.690771,42.073452&profile=rail'},
+                "Linden - Loop": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Linden - Loop)', 'File': '[CTA] Purple Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.8854/-87.6291/standard&lonlats=-87.690822,42.073414;-87.68977,42.071278;-87.684959,42.062608;-87.683703,42.048894;-87.679648,42.032986;-87.67777,42.024192;-87.6717,42.017885;-87.659193,41.989094;-87.657085,41.961136;-87.653738,41.949006;-87.653518,41.940483;-87.647166,41.910374;-87.634238,41.888196;-87.633862,41.885797;-87.626599,41.881081;-87.632146,41.876974;-87.63368,41.883716;-87.63721,41.909647;-87.652574,41.920381;-87.653142,41.93917;-87.653469,41.947182;-87.658888,41.988444;-87.669788,42.016526;-87.673441,42.019629;-87.679659,42.033432;-87.683601,42.049524;-87.684143,42.061333;-87.689953,42.071759;-87.690771,42.073452&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Howard - 130th St": {'Mode': 5, 'Stations': 'Chicago L (Howard - 130th St)'},
+                "Howard - 130th St": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Howard - 130th St)'},
             },
             "Present": {
-                "Howard - 130th St": {'Mode': 5, 'Stations': 'Chicago L (Howard - 95th/Dan Ryan)', 'File': '[CTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.9021/-87.6496/standard&lonlats=-87.673672,42.019659;-87.659199,41.993161;-87.65723,41.962458;-87.65701,41.961138;-87.653317,41.937477;-87.653338,41.937231;-87.652954,41.927021;-87.652842,41.924632;-87.65282,41.922762;-87.64708,41.908952;-87.63014,41.861619;-87.631373,41.844941;-87.630397,41.811819;-87.624555,41.724905;-87.624464,41.721889;-87.624432,41.72615;-87.625655,41.768767;-87.630504,41.810987;-87.63117,41.845843;-87.63066,41.850839;-87.627361,41.874082;-87.628002,41.890959;-87.630612,41.904001;-87.652692,41.920182;-87.653284,41.937251;-87.653405,41.941445;-87.653628,41.949341;-87.655301,41.953907;-87.65697,41.961136;-87.657163,41.962452;-87.658598,41.976158;-87.658668,41.979572;-87.659145,41.99411;-87.665711,42.005699;-87.669868,42.01652;-87.670885,42.017375;-87.673632,42.019679&profile=rail'},
+                "Howard - 130th St": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Howard - 95th/Dan Ryan)', 'File': '[CTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.9021/-87.6496/standard&lonlats=-87.673672,42.019659;-87.659199,41.993161;-87.65723,41.962458;-87.65701,41.961138;-87.653317,41.937477;-87.653338,41.937231;-87.652954,41.927021;-87.652842,41.924632;-87.65282,41.922762;-87.64708,41.908952;-87.63014,41.861619;-87.631373,41.844941;-87.630397,41.811819;-87.624555,41.724905;-87.624464,41.721889;-87.624432,41.72615;-87.625655,41.768767;-87.630504,41.810987;-87.63117,41.845843;-87.63066,41.850839;-87.627361,41.874082;-87.628002,41.890959;-87.630612,41.904001;-87.652692,41.920182;-87.653284,41.937251;-87.653405,41.941445;-87.653628,41.949341;-87.655301,41.953907;-87.65697,41.961136;-87.657163,41.962452;-87.658598,41.976158;-87.658668,41.979572;-87.659145,41.99411;-87.665711,42.005699;-87.669868,42.01652;-87.670885,42.017375;-87.673632,42.019679&profile=rail'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Midway - O'Hare": {'Mode': 5, 'Stations': "Chicago L (Midway - O'Hare)"},
+                "Midway - O'Hare": {'Mode': 'Heavy Metro', 'Stations': "Chicago L (Midway - O'Hare)"},
             },
         },
         "Yellow Line": {
             "Fantasy": {
-                "Howard - Dempster-Skokie": {'Mode': 5, 'Stations': 'Chicago L (Howard - Dempster-Skokie)'},
+                "Howard - Dempster-Skokie": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Howard - Dempster-Skokie)'},
             },
             "Present": {
-                "Howard - Dempster-Skokie": {'Mode': 5, 'Stations': 'Chicago L (Howard - Dempster-Skokie)', 'File': '[CTA] Yellow Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/42.0270/-87.7020/standard&lonlats=-87.672336,42.018688;-87.681563,42.021916;-87.752073,42.039241;-87.752663,42.040708;-87.750909,42.036097;-87.672341,42.018683&profile=rail'},
+                "Howard - Dempster-Skokie": {'Mode': 'Heavy Metro', 'Stations': 'Chicago L (Howard - Dempster-Skokie)', 'File': '[CTA] Yellow Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/42.0270/-87.7020/standard&lonlats=-87.672336,42.018688;-87.681563,42.021916;-87.752073,42.039241;-87.752663,42.040708;-87.750909,42.036097;-87.672341,42.018683&profile=rail'},
             },
         },
     },
     "Calgary Transit": {
         "Blue Line": {
             "Fantasy": {
-                "69th St - Stonegate": {'Mode': 7, 'Stations': 'Calgary Light Rail (69th St - Stonegate)'},
+                "69th St - Stonegate": {'Mode': 'Light Rail', 'Stations': 'Calgary Light Rail (69th St - Stonegate)'},
             },
             "Present": {
-                "69th St - Saddletowne": {'Mode': 7, 'Stations': 'Calgary Light Rail (69th St - Saddletowne)', 'File': '[Calgary Transit] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/51.03782/-114.18146/standard&lonlats=-114.188359,51.037584;-114.12794,51.041603;-114.097905,51.044709;-114.084102,51.04705;-113.990348,51.049461;-113.981556,51.058714;-113.981599,51.072691;-113.981652,51.083021;-113.981148,51.102774;-113.97992,51.105206;-113.976706,51.108217;-113.95148,51.123277;-113.947814,51.126123;-113.952561,51.12295;-113.980692,51.10401;-113.981824,51.08355;-113.982114,51.062402;-113.987457,51.051005;-113.990498,51.049535;-114.042099,51.049326;-114.097926,51.044797;-114.128047,51.04169;-114.188359,51.037705&profile=rail'},
+                "69th St - Saddletowne": {'Mode': 'Light Rail', 'Stations': 'Calgary Light Rail (69th St - Saddletowne)', 'File': '[Calgary Transit] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/51.03782/-114.18146/standard&lonlats=-114.188359,51.037584;-114.12794,51.041603;-114.097905,51.044709;-114.084102,51.04705;-113.990348,51.049461;-113.981556,51.058714;-113.981599,51.072691;-113.981652,51.083021;-113.981148,51.102774;-113.97992,51.105206;-113.976706,51.108217;-113.95148,51.123277;-113.947814,51.126123;-113.952561,51.12295;-113.980692,51.10401;-113.981824,51.08355;-113.982114,51.062402;-113.987457,51.051005;-113.990498,51.049535;-114.042099,51.049326;-114.097926,51.044797;-114.128047,51.04169;-114.188359,51.037705&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Tuscany - Somerset": {'Mode': 7, 'Stations': 'Calgary Light Rail (Tuscany - Somerset)'},
+                "Tuscany - Somerset": {'Mode': 'Light Rail', 'Stations': 'Calgary Light Rail (Tuscany - Somerset)'},
             },
             "Present": {
-                "Tuscany - Somerset": {'Mode': 7, 'Stations': 'Calgary Light Rail (Tuscany - Somerset)', 'File': '[Calgary Transit] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/50.90025/-114.06950/standard&lonlats=-114.2361,51.134615;-114.204469,51.121499;-114.114465,51.069468;-114.099562,51.06453;-114.060091,51.046382;-114.058304,51.039728;-114.058841,51.034873;-114.066297,50.994186;-114.075036,50.95622;-114.073555,50.924165;-114.069865,50.900756;-114.068851,50.898623;-114.070171,50.901913;-114.066088,50.994726;-114.059978,51.019961;-114.058862,51.031554;-114.058154,51.039734;-114.055097,51.046041;-114.060079,51.046442;-114.095963,51.064267;-114.121867,51.078751;-114.129335,51.085693;-114.156811,51.1021;-114.204351,51.12163;-114.231613,51.132905;-114.236116,51.134596&profile=rail'},
+                "Tuscany - Somerset": {'Mode': 'Light Rail', 'Stations': 'Calgary Light Rail (Tuscany - Somerset)', 'File': '[Calgary Transit] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/50.90025/-114.06950/standard&lonlats=-114.2361,51.134615;-114.204469,51.121499;-114.114465,51.069468;-114.099562,51.06453;-114.060091,51.046382;-114.058304,51.039728;-114.058841,51.034873;-114.066297,50.994186;-114.075036,50.95622;-114.073555,50.924165;-114.069865,50.900756;-114.068851,50.898623;-114.070171,50.901913;-114.066088,50.994726;-114.059978,51.019961;-114.058862,51.031554;-114.058154,51.039734;-114.055097,51.046041;-114.060079,51.046442;-114.095963,51.064267;-114.121867,51.078751;-114.129335,51.085693;-114.156811,51.1021;-114.204351,51.12163;-114.231613,51.132905;-114.236116,51.134596&profile=rail'},
             },
         },
     },
     "Caltrain": {
         "C1": {
             "Fantasy": {
-                "San Francisco - Gilroy": {'Mode': 4, 'Stations': 'San Francisco Caltrain (Salesforce TC - Gilroy)'},
+                "San Francisco - Gilroy": {'Mode': 'Heavy Rail', 'Stations': 'San Francisco Caltrain (Salesforce TC - Gilroy)'},
             },
             "Present": {
-                "San Francisco - Gilroy": {'Mode': 4, 'Stations': 'San Francisco Caltrain (4th & King - Gilroy)', 'File': '[Caltrain] C1'},
+                "San Francisco - Gilroy": {'Mode': 'Heavy Rail', 'Stations': 'San Francisco Caltrain (4th & King - Gilroy)', 'File': '[Caltrain] C1'},
             },
         },
     },
     "CapMetro": {
         "Red Line": {
             "Fantasy": {
-                "Austin - Leander": {'Mode': 4, 'Stations': 'Austin CapMetro (Austin - Leander)'},
+                "Austin - Leander": {'Mode': 'Heavy Rail', 'Stations': 'Austin CapMetro (Austin - Leander)'},
             },
             "Present": {
-                "Austin - Leander": {'Mode': 4, 'Stations': 'Austin CapMetro (Austin - Leander)', 'File': '[CapMetro] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/30.26372/-97.73440/standard&lonlats=-97.738976,30.264954;-97.732835,30.263223;-97.7176,30.259123;-97.708991,30.279911;-97.715793,30.39513;-97.701711,30.440146;-97.708803,30.443605;-97.855825,30.586567;-97.786512,30.48097;-97.708433,30.443388;-97.701668,30.439905;-97.716141,30.394093;-97.709243,30.279707;-97.717941,30.259146;-97.733141,30.263427;-97.739007,30.264964&profile=rail'},
+                "Austin - Leander": {'Mode': 'Heavy Rail', 'Stations': 'Austin CapMetro (Austin - Leander)', 'File': '[CapMetro] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/30.26372/-97.73440/standard&lonlats=-97.738976,30.264954;-97.732835,30.263223;-97.7176,30.259123;-97.708991,30.279911;-97.715793,30.39513;-97.701711,30.440146;-97.708803,30.443605;-97.855825,30.586567;-97.786512,30.48097;-97.708433,30.443388;-97.701668,30.439905;-97.716141,30.394093;-97.709243,30.279707;-97.717941,30.259146;-97.733141,30.263427;-97.739007,30.264964&profile=rail'},
             },
         },
     },
     "Cincinnati Streetcar": {
         "Connector": {
             "Fantasy": {
-                "Downtown Circulator": {'Mode': 8, 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
+                "Downtown Circulator": {'Mode': 'Streetcar', 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
             },
             "Present": {
-                "Downtown Circulator": {'Mode': 8, 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
+                "Downtown Circulator": {'Mode': 'Streetcar', 'Stations': 'Cincinnati Streetcar', 'File': '[Cincinnati Streetcar] Connector'},
             },
         },
     },
     "Cleveland RTA": {
         "Amherst Line": {
             "Fantasy": {
-                "Cleveland - Amherst": {'Mode': 4, 'Stations': 'Cleveland Regional (Riverfront - Amherst)'},
+                "Cleveland - Amherst": {'Mode': 'Heavy Rail', 'Stations': 'Cleveland Regional (Riverfront - Amherst)'},
             },
         },
         "Blue Line": {
             "Fantasy": {
-                "South Harbor - Van Aken/Warrensville": {'Mode': 7, 'Stations': 'Cleveland Light Rail (South Harbor - Van Aken & Warrensville)'},
+                "South Harbor - Van Aken/Warrensville": {'Mode': 'Light Rail', 'Stations': 'Cleveland Light Rail (South Harbor - Van Aken & Warrensville)'},
             },
             "Present": {
-                "South Harbor - Van Aken/Warrensville": {'Mode': 7, 'Stations': 'Cleveland Light Rail (South Harbor - Van Aken & Warrensville)', 'File': '[Cleveland RTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.48268/-81.58762/standard&lonlats=-81.687868,41.509495;-81.699582,41.504014;-81.658684,41.481114;-81.637527,41.481544;-81.621991,41.482738;-81.610608,41.48373;-81.595008,41.483859;-81.586157,41.480133;-81.566454,41.46654;-81.53744,41.465706;-81.566443,41.466632;-81.58672,41.480841;-81.594054,41.484067;-81.624507,41.482657;-81.652628,41.480358;-81.655519,41.48033;-81.666484,41.486881;-81.683264,41.492386;-81.700537,41.496669;-81.698837,41.504267;-81.687905,41.509536&profile=rail'},
+                "South Harbor - Van Aken/Warrensville": {'Mode': 'Light Rail', 'Stations': 'Cleveland Light Rail (South Harbor - Van Aken & Warrensville)', 'File': '[Cleveland RTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.48268/-81.58762/standard&lonlats=-81.687868,41.509495;-81.699582,41.504014;-81.658684,41.481114;-81.637527,41.481544;-81.621991,41.482738;-81.610608,41.48373;-81.595008,41.483859;-81.586157,41.480133;-81.566454,41.46654;-81.53744,41.465706;-81.566443,41.466632;-81.58672,41.480841;-81.594054,41.484067;-81.624507,41.482657;-81.652628,41.480358;-81.655519,41.48033;-81.666484,41.486881;-81.683264,41.492386;-81.700537,41.496669;-81.698837,41.504267;-81.687905,41.509536&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "South Harbor - Green Rd": {'Mode': 7, 'Stations': 'Cleveland Light Rail (South Harbor - Green Rd)'},
+                "South Harbor - Green Rd": {'Mode': 'Light Rail', 'Stations': 'Cleveland Light Rail (South Harbor - Green Rd)'},
             },
             "Present": {
-                "South Harbor - Green Rd": {'Mode': 7, 'Stations': 'Cleveland Light Rail (South Harbor - Green Rd)', 'File': '[Cleveland RTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.4945/-81.6567/standard&lonlats=-81.687868,41.509495;-81.699582,41.504014;-81.658684,41.481114;-81.637527,41.481544;-81.621991,41.482738;-81.610608,41.48373;-81.595008,41.483859;-81.586989,41.483553;-81.552887,41.478425;-81.521328,41.478502;-81.517417,41.478538;-81.522095,41.478617;-81.555312,41.478561;-81.586806,41.48365;-81.594054,41.484067;-81.624507,41.482657;-81.652628,41.480358;-81.655519,41.48033;-81.666484,41.486881;-81.683264,41.492386;-81.700537,41.496669;-81.698837,41.504267;-81.687905,41.509536&profile=rail'},
+                "South Harbor - Green Rd": {'Mode': 'Light Rail', 'Stations': 'Cleveland Light Rail (South Harbor - Green Rd)', 'File': '[Cleveland RTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.4945/-81.6567/standard&lonlats=-81.687868,41.509495;-81.699582,41.504014;-81.658684,41.481114;-81.637527,41.481544;-81.621991,41.482738;-81.610608,41.48373;-81.595008,41.483859;-81.586989,41.483553;-81.552887,41.478425;-81.521328,41.478502;-81.517417,41.478538;-81.522095,41.478617;-81.555312,41.478561;-81.586806,41.48365;-81.594054,41.484067;-81.624507,41.482657;-81.652628,41.480358;-81.655519,41.48033;-81.666484,41.486881;-81.683264,41.492386;-81.700537,41.496669;-81.698837,41.504267;-81.687905,41.509536&profile=rail'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "Wright Ave - Little Italy": {'Mode': 5, 'Stations': 'Cleveland Subway (Wright Ave - Little Italy)'},
+                "Wright Ave - Little Italy": {'Mode': 'Heavy Metro', 'Stations': 'Cleveland Subway (Wright Ave - Little Italy)'},
             },
         },
         "Painesville Line": {
             "Fantasy": {
-                "Cleveland - Painesville": {'Mode': 4, 'Stations': 'Cleveland Regional (Riverfront - Painesville)'},
+                "Cleveland - Painesville": {'Mode': 'Heavy Rail', 'Stations': 'Cleveland Regional (Riverfront - Painesville)'},
             },
         },
         "Ravenna Line": {
             "Fantasy": {
-                "Cleveland - Ravenna": {'Mode': 4, 'Stations': 'Cleveland Regional (Riverfront - Ravenna)'},
+                "Cleveland - Ravenna": {'Mode': 'Heavy Rail', 'Stations': 'Cleveland Regional (Riverfront - Ravenna)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Cleveland Airport - Stokes-Windermere": {'Mode': 7, 'Stations': 'Cleveland Light Rail (Airport - Stokes-Windmere)'},
+                "Cleveland Airport - Stokes-Windermere": {'Mode': 'Light Rail', 'Stations': 'Cleveland Light Rail (Airport - Stokes-Windmere)'},
             },
             "Present": {
-                "Cleveland Airport - Stokes-Windermere": {'Mode': 5, 'Stations': 'Cleveland Light Rail (Airport - Stokes-Windmere) [Old]', 'File': '[Cleveland RTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.4849/-81.6581/standard&lonlats=-81.584939,41.530511;-81.592616,41.522644;-81.604278,41.501587;-81.63434,41.485867;-81.652257,41.480455;-81.659054,41.48154;-81.672133,41.488356;-81.699293,41.495783;-81.70132,41.484036;-81.736173,41.478371;-81.758537,41.48049;-81.778552,41.47179;-81.8059,41.441154;-81.820523,41.423606;-81.823972,41.419463;-81.838145,41.411416;-81.823061,41.42038;-81.818442,41.425935;-81.805261,41.441693;-81.778069,41.47195;-81.755528,41.480982;-81.7362,41.478309;-81.701165,41.484835;-81.699228,41.495741;-81.67198,41.488267;-81.658974,41.481342;-81.650525,41.480655;-81.633739,41.48582;-81.604117,41.501459;-81.591752,41.523435;-81.584854,41.530535&profile=rail'},
+                "Cleveland Airport - Stokes-Windermere": {'Mode': 'Heavy Metro', 'Stations': 'Cleveland Light Rail (Airport - Stokes-Windmere) [Old]', 'File': '[Cleveland RTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.4849/-81.6581/standard&lonlats=-81.584939,41.530511;-81.592616,41.522644;-81.604278,41.501587;-81.63434,41.485867;-81.652257,41.480455;-81.659054,41.48154;-81.672133,41.488356;-81.699293,41.495783;-81.70132,41.484036;-81.736173,41.478371;-81.758537,41.48049;-81.778552,41.47179;-81.8059,41.441154;-81.820523,41.423606;-81.823972,41.419463;-81.838145,41.411416;-81.823061,41.42038;-81.818442,41.425935;-81.805261,41.441693;-81.778069,41.47195;-81.755528,41.480982;-81.7362,41.478309;-81.701165,41.484835;-81.699228,41.495741;-81.67198,41.488267;-81.658974,41.481342;-81.650525,41.480655;-81.633739,41.48582;-81.604117,41.501459;-81.591752,41.523435;-81.584854,41.530535&profile=rail'},
             },
         },
     },
     "DART": {
         "Blue Line": {
             "Fantasy": {
-                "UNT - Rowlett": {'Mode': 7, 'Stations': 'Dallas Light Rail (UNT - Rowlett)'},
+                "UNT - Rowlett": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (UNT - Rowlett)'},
             },
             "Present": {
-                "UNT - Rowlett": {'Mode': 7, 'Stations': 'Dallas Light Rail (UNT - Rowlett)', 'File': '[DART] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=10/32.9724/-96.6426/standard&lonlats=-96.801543,32.653786;-96.797705,32.655645;-96.788942,32.676967;-96.797372,32.701692;-96.800612,32.746979;-96.788011,32.759327;-96.785549,32.763077;-96.787367,32.765291;-96.792753,32.788186;-96.793123,32.79159;-96.765749,32.840492;-96.654555,32.913153;-96.567367,32.903657;-96.562834,32.904182;-96.569006,32.903513;-96.605605,32.905258;-96.687879,32.905614;-96.71387,32.897493;-96.7339,32.867764;-96.733332,32.857636;-96.768195,32.840312;-96.774965,32.837914;-96.793327,32.792409;-96.806229,32.780767;-96.805821,32.772914;-96.787727,32.760247;-96.795328,32.749884;-96.801116,32.746948;-96.802726,32.744542;-96.805392,32.723031;-96.797892,32.70203;-96.791798,32.690649;-96.789103,32.676948;-96.791659,32.658932;-96.796374,32.656507;-96.801515,32.653744&profile=rail'},
+                "UNT - Rowlett": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (UNT - Rowlett)', 'File': '[DART] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=10/32.9724/-96.6426/standard&lonlats=-96.801543,32.653786;-96.797705,32.655645;-96.788942,32.676967;-96.797372,32.701692;-96.800612,32.746979;-96.788011,32.759327;-96.785549,32.763077;-96.787367,32.765291;-96.792753,32.788186;-96.793123,32.79159;-96.765749,32.840492;-96.654555,32.913153;-96.567367,32.903657;-96.562834,32.904182;-96.569006,32.903513;-96.605605,32.905258;-96.687879,32.905614;-96.71387,32.897493;-96.7339,32.867764;-96.733332,32.857636;-96.768195,32.840312;-96.774965,32.837914;-96.793327,32.792409;-96.806229,32.780767;-96.805821,32.772914;-96.787727,32.760247;-96.795328,32.749884;-96.801116,32.746948;-96.802726,32.744542;-96.805392,32.723031;-96.797892,32.70203;-96.791798,32.690649;-96.789103,32.676948;-96.791659,32.658932;-96.796374,32.656507;-96.801515,32.653744&profile=rail'},
             },
         },
         "Dallas Streetcar": {
             "Fantasy": {
-                "Union Station - Bishop Arts": {'Mode': 8, 'Stations': 'Dallas Streetcar'},
+                "Union Station - Bishop Arts": {'Mode': 'Streetcar', 'Stations': 'Dallas Streetcar'},
             },
             "Present": {
-                "Union Station - Bishop Arts": {'Mode': 8, 'Stations': 'Dallas Streetcar', 'File': '[DART] Dallas Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=15/32.7641/-96.8150/standard&lonlats=-96.806958,32.775494;-96.818583,32.760207;-96.824264,32.749754;-96.824474,32.748985;-96.823958,32.750085;-96.818358,32.759945;-96.806776,32.775549&profile=rail'},
+                "Union Station - Bishop Arts": {'Mode': 'Streetcar', 'Stations': 'Dallas Streetcar', 'File': '[DART] Dallas Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=15/32.7641/-96.8150/standard&lonlats=-96.806958,32.775494;-96.818583,32.760207;-96.824264,32.749754;-96.824474,32.748985;-96.823958,32.750085;-96.818358,32.759945;-96.806776,32.775549&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Carrollton - Buckner": {'Mode': 7, 'Stations': 'Dallas Light Rail (Carrollton - Buckner)'},
+                "Carrollton - Buckner": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Carrollton - Buckner)'},
             },
             "Present": {
-                "Carrollton - Buckner": {'Mode': 7, 'Stations': 'Dallas Light Rail (Carrollton - Buckner)', 'File': '[DART] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.9168/-96.7573/standard&lonlats=-96.684574,32.718291;-96.689955,32.72166;-96.706381,32.74288;-96.734936,32.766247;-96.747065,32.767571;-96.765926,32.7841;-96.785431,32.787059;-96.812451,32.790016;-96.832638,32.823624;-96.835304,32.824874;-96.880011,32.86961;-96.896238,32.923726;-96.935855,32.990708;-96.937373,32.992224;-96.933644,32.988255;-96.927164,32.981537;-96.921435,32.975669;-96.911036,32.958274;-96.900836,32.936945;-96.881156,32.872989;-96.880282,32.870144;-96.878892,32.8646;-96.839923,32.828349;-96.833292,32.82179;-96.812226,32.788699;-96.809506,32.780481;-96.800194,32.781754;-96.79359,32.787085;-96.788467,32.785361;-96.767567,32.784153;-96.766098,32.774762;-96.747204,32.766283;-96.734115,32.76613;-96.711906,32.762881;-96.710404,32.739547;-96.70681,32.730161;-96.690792,32.721686;-96.684534,32.718331&profile=rail'},
+                "Carrollton - Buckner": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Carrollton - Buckner)', 'File': '[DART] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.9168/-96.7573/standard&lonlats=-96.684574,32.718291;-96.689955,32.72166;-96.706381,32.74288;-96.734936,32.766247;-96.747065,32.767571;-96.765926,32.7841;-96.785431,32.787059;-96.812451,32.790016;-96.832638,32.823624;-96.835304,32.824874;-96.880011,32.86961;-96.896238,32.923726;-96.935855,32.990708;-96.937373,32.992224;-96.933644,32.988255;-96.927164,32.981537;-96.921435,32.975669;-96.911036,32.958274;-96.900836,32.936945;-96.881156,32.872989;-96.880282,32.870144;-96.878892,32.8646;-96.839923,32.828349;-96.833292,32.82179;-96.812226,32.788699;-96.809506,32.780481;-96.800194,32.781754;-96.79359,32.787085;-96.788467,32.785361;-96.767567,32.784153;-96.766098,32.774762;-96.747204,32.766283;-96.734115,32.76613;-96.711906,32.762881;-96.710404,32.739547;-96.70681,32.730161;-96.690792,32.721686;-96.684534,32.718331&profile=rail'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Plano - DFW Airport": {'Mode': 7, 'Stations': 'Dallas Light Rail (Plano - DFW)'},
+                "Plano - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - DFW)'},
             },
             "Present": {
-                "Plano - DFW Airport": {'Mode': 7, 'Stations': 'Dallas Light Rail (Plano - DFW)', 'File': '[DART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.7916/-96.7593/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.810161,32.782751;-96.815686,32.798288;-96.915143,32.849209;-96.937418,32.876382;-96.95308,32.882245;-96.9854,32.887149;-97.039651,32.912243;-97.039543,32.906456;-97.03523,32.924221;-97.00211,32.900236;-96.985489,32.88709;-96.969194,32.874963;-96.953155,32.882028;-96.937526,32.876323;-96.936139,32.873397;-96.915389,32.849;-96.894672,32.847405;-96.852491,32.838599;-96.80949,32.780513;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
+                "Plano - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - DFW)', 'File': '[DART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.7916/-96.7593/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.810161,32.782751;-96.815686,32.798288;-96.915143,32.849209;-96.937418,32.876382;-96.95308,32.882245;-96.9854,32.887149;-97.039651,32.912243;-97.039543,32.906456;-97.03523,32.924221;-97.00211,32.900236;-96.985489,32.88709;-96.969194,32.874963;-96.953155,32.882028;-96.937526,32.876323;-96.936139,32.873397;-96.915389,32.849;-96.894672,32.847405;-96.852491,32.838599;-96.80949,32.780513;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Plano - Westmoreland": {'Mode': 7, 'Stations': 'Dallas Light Rail (Plano - Westmoreland)'},
+                "Plano - Westmoreland": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - Westmoreland)'},
             },
             "Present": {
-                "Plano - Westmoreland": {'Mode': 7, 'Stations': 'Dallas Light Rail (Plano - Westmoreland)', 'File': '[DART] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/32.7568/-96.8081/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.795081,32.786214;-96.808321,32.776454;-96.805843,32.772919;-96.800725,32.747151;-96.805081,32.745093;-96.874073,32.719241;-96.800596,32.74702;-96.786882,32.761015;-96.785554,32.763392;-96.803885,32.772445;-96.805775,32.773004;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
+                "Plano - Westmoreland": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - Westmoreland)', 'File': '[DART] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/32.7568/-96.8081/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.795081,32.786214;-96.808321,32.776454;-96.805843,32.772919;-96.800725,32.747151;-96.805081,32.745093;-96.874073,32.719241;-96.800596,32.74702;-96.786882,32.761015;-96.785554,32.763392;-96.803885,32.772445;-96.805775,32.773004;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Plano - DFW Airport": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Plano - DFW)'},
+                "Plano - DFW Airport": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Plano - DFW)'},
             },
             "Present": {
-                "Plano - DFW Airport": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Plano - DFW)', 'File': '[DART] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.9963/-96.9324/standard&lonlats=-97.041201,32.905731;-97.041464,32.916584;-97.046093,32.939476;-96.982981,32.950351;-96.895943,32.961146;-96.828346,32.958642;-96.665311,33.012494;-96.679816,33.015024;-96.703302,33.002599;-96.751662,32.996251;-96.830149,32.958435;-96.893851,32.962677;-96.908104,32.955749;-96.984998,32.949559;-97.046345,32.939769;-97.047654,32.926114;-97.041979,32.914368;-97.040986,32.905481&profile=rail'},
+                "Plano - DFW Airport": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Plano - DFW)', 'File': '[DART] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.9963/-96.9324/standard&lonlats=-97.041201,32.905731;-97.041464,32.916584;-97.046093,32.939476;-96.982981,32.950351;-96.895943,32.961146;-96.828346,32.958642;-96.665311,33.012494;-96.679816,33.015024;-96.703302,33.002599;-96.751662,32.996251;-96.830149,32.958435;-96.893851,32.962677;-96.908104,32.955749;-96.984998,32.949559;-97.046345,32.939769;-97.047654,32.926114;-97.041979,32.914368;-97.040986,32.905481&profile=rail'},
             },
         },
     },
     "DCATA": {
         "A-Train": {
             "Fantasy": {
-                "Carrollton - Denton": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Carrollton - Denton)'},
+                "Carrollton - Denton": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Carrollton - Denton)'},
             },
             "Present": {
-                "Trinity Mills - Denton": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Trinity Mills - Denton)', 'File': '[DCATA] A-Train', 'Link': 'https://brouter.damsy.net/latest/#map=14/32.9952/-96.9518/standard&lonlats=-96.926166,32.980388;-97.087351,33.180556;-97.126029,33.214168;-97.08689,33.178984;-97.078178,33.167058;-97.026036,33.082867;-96.971887,33.025611;-96.926187,32.980373&profile=rail'},
+                "Trinity Mills - Denton": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Trinity Mills - Denton)', 'File': '[DCATA] A-Train', 'Link': 'https://brouter.damsy.net/latest/#map=14/32.9952/-96.9518/standard&lonlats=-96.926166,32.980388;-97.087351,33.180556;-97.126029,33.214168;-97.08689,33.178984;-97.078178,33.167058;-97.026036,33.082867;-96.971887,33.025611;-96.926187,32.980373&profile=rail'},
             },
         },
     },
     "DTW Airport": {
         "DTW Connector": {
             "Fantasy": {
-                "DTW Airport": {'Mode': 9, 'Stations': 'Detroit Peoplemover (DTW Airport)'},
+                "DTW Airport": {'Mode': 'Peoplemover', 'Stations': 'Detroit Peoplemover (DTW Airport)'},
             },
         },
     },
     "Dayton RTA": {
         "Dayton Light Rail": {
             "Fantasy": {
-                "Shiloh - Kettering": {'Mode': 7, 'Stations': 'Dayton Light Rail'},
+                "Shiloh - Kettering": {'Mode': 'Light Rail', 'Stations': 'Dayton Light Rail'},
             },
         },
     },
     "EMBARK": {
         "Central Line": {
             "Fantasy": {
-                "Remington Park - Airport": {'Mode': 7, 'Stations': 'Oklahoma City Light Rail'},
+                "Remington Park - Airport": {'Mode': 'Light Rail', 'Stations': 'Oklahoma City Light Rail'},
             },
         },
         "Regional": {
             "Fantasy": {
-                "Edmond - Noble": {'Mode': 4, 'Stations': 'Oklahoma City Regional Rail (Edmond - Noble)'},
+                "Edmond - Noble": {'Mode': 'Heavy Rail', 'Stations': 'Oklahoma City Regional Rail (Edmond - Noble)'},
             },
         },
     },
     "ETS": {
         "Blue Line": {
             "Fantasy": {
-                "Century Park - Clareview": {'Mode': 7, 'Stations': 'Edmonton Light Rail (Century Park - Clareview)'},
+                "Century Park - Clareview": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (Century Park - Clareview)'},
             },
             "Present": {
-                "Century Park - Clareview": {'Mode': 7, 'Stations': 'Edmonton Light Rail (Century Park - Clareview)', 'File': '[ETS] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/53.5196/-113.5241/standard&lonlats=-113.51627,53.456894;-113.516289,53.461437;-113.516353,53.473846;-113.516611,53.486143;-113.528337,53.503325;-113.525805,53.51858;-113.478663,53.552802;-113.410728,53.602122;-113.418946,53.597174;-113.445092,53.580904;-113.459185,53.570132;-113.479945,53.55197;-113.489542,53.541384;-113.50997,53.53972;-113.525269,53.523841;-113.526331,53.515715;-113.528713,53.50227;-113.528713,53.500983;-113.51689,53.493382;-113.51704,53.485267;-113.516632,53.460938;-113.516187,53.456897&profile=rail'},
+                "Century Park - Clareview": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (Century Park - Clareview)', 'File': '[ETS] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/53.5196/-113.5241/standard&lonlats=-113.51627,53.456894;-113.516289,53.461437;-113.516353,53.473846;-113.516611,53.486143;-113.528337,53.503325;-113.525805,53.51858;-113.478663,53.552802;-113.410728,53.602122;-113.418946,53.597174;-113.445092,53.580904;-113.459185,53.570132;-113.479945,53.55197;-113.489542,53.541384;-113.50997,53.53972;-113.525269,53.523841;-113.526331,53.515715;-113.528713,53.50227;-113.528713,53.500983;-113.51689,53.493382;-113.51704,53.485267;-113.516632,53.460938;-113.516187,53.456897&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "102 St - Mill Woods": {'Mode': 7, 'Stations': 'Edmonton Light Rail (102 St - Mill Woods)'},
+                "102 St - Mill Woods": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (102 St - Mill Woods)'},
             },
             "Present": {
-                "102 St - Mill Woods": {'Mode': 7, 'Stations': 'Edmonton Light Rail (102 St - Mill Woods)', 'File': '[ETS] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/53.54387/-113.49273/standard&lonlats=-113.495416,53.543129;-113.459469,53.53168;-113.432502,53.458165;-113.42945,53.458476;-113.43335,53.458351;-113.43873,53.473565;-113.442121,53.484951;-113.454512,53.505406;-113.455102,53.522577;-113.462763,53.531834;-113.47892,53.53659;-113.487879,53.543789;-113.495419,53.543108&profile=rail'},
+                "102 St - Mill Woods": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (102 St - Mill Woods)', 'File': '[ETS] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/53.54387/-113.49273/standard&lonlats=-113.495416,53.543129;-113.459469,53.53168;-113.432502,53.458165;-113.42945,53.458476;-113.43335,53.458351;-113.43873,53.473565;-113.442121,53.484951;-113.454512,53.505406;-113.455102,53.522577;-113.462763,53.531834;-113.47892,53.53659;-113.487879,53.543789;-113.495419,53.543108&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Jubilee - NAIT": {'Mode': 7, 'Stations': 'Edmonton Light Rail (Jubilee - NAIT)'},
+                "Jubilee - NAIT": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (Jubilee - NAIT)'},
             },
             "Present": {
-                "Jubilee - NAIT": {'Mode': 7, 'Stations': 'Edmonton Light Rail (Jubilee - NAIT)', 'File': '[ETS] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/53.52099/-113.52291/standard&lonlats=-113.525805,53.519518;-113.489102,53.544891;-113.499155,53.555179;-113.509693,53.567348;-113.499348,53.55597;-113.499359,53.554707;-113.489102,53.543978;-113.522887,53.524805;-113.525982,53.519518&profile=rail'},
+                "Jubilee - NAIT": {'Mode': 'Light Rail', 'Stations': 'Edmonton Light Rail (Jubilee - NAIT)', 'File': '[ETS] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/53.52099/-113.52291/standard&lonlats=-113.525805,53.519518;-113.489102,53.544891;-113.499155,53.555179;-113.509693,53.567348;-113.499348,53.55597;-113.499359,53.554707;-113.489102,53.543978;-113.522887,53.524805;-113.525982,53.519518&profile=rail'},
             },
         },
     },
     "Exo": {
         "11 - Ligne Vaudreuil-Hudson": {
             "Fantasy": {
-                "Montréal - Hudson": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Hudson)"},
+                "Montréal - Hudson": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Hudson)"},
             },
             "Present": {
-                "Montréal - Hudson": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Hudson)", 'File': '[Exo] Ligne Vaudreuil-Hudson'},
+                "Montréal - Hudson": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Hudson)", 'File': '[Exo] Ligne Vaudreuil-Hudson'},
             },
         },
         "12 - Ligne Saint-Jérôme": {
             "Fantasy": {
-                "Montréal - Saint-Jérôme": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jérôme)"},
+                "Montréal - Saint-Jérôme": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jérôme)"},
             },
             "Present": {
-                "Montréal - Saint-Jérôme": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jérôme)", 'File': '[Exo] Ligne Saint-Jérôme'},
+                "Montréal - Saint-Jérôme": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jérôme)", 'File': '[Exo] Ligne Saint-Jérôme'},
             },
         },
         "13 - Ligne Mont-Saint-Hilaire": {
             "Fantasy": {
-                "Montréal - Saint-Hyacinthe": {'Mode': 4, 'Stations': 'Montréal EXO (Gare Centrale - Saint-Hyacinthe)'},
+                "Montréal - Saint-Hyacinthe": {'Mode': 'Heavy Rail', 'Stations': 'Montréal EXO (Gare Centrale - Saint-Hyacinthe)'},
             },
             "Present": {
-                "Montréal - Mont-Saint-Hilaire": {'Mode': 4, 'Stations': 'Montréal EXO (Gare Centrale - Mont-Saint-Hilaire)', 'File': '[Exo] Ligne Mont-Saint-Hilaire'},
+                "Montréal - Mont-Saint-Hilaire": {'Mode': 'Heavy Rail', 'Stations': 'Montréal EXO (Gare Centrale - Mont-Saint-Hilaire)', 'File': '[Exo] Ligne Mont-Saint-Hilaire'},
             },
         },
         "14 - Ligne Candiac": {
             "Fantasy": {
-                "Montréal - Saint-Jean-sur-Richelieu": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jean-sur-Richelieu)"},
+                "Montréal - Saint-Jean-sur-Richelieu": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jean-sur-Richelieu)"},
             },
             "Present": {
-                "Montréal - Saint-Jean-sur-Richelieu": {'Mode': 4, 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jean-sur-Richelieu)", 'File': '[Exo] Ligne Candiac'},
+                "Montréal - Saint-Jean-sur-Richelieu": {'Mode': 'Heavy Rail', 'Stations': "Montréal EXO (Gare Lucien-L'Allier - Saint-Jean-sur-Richelieu)", 'File': '[Exo] Ligne Candiac'},
             },
         },
         "15 - Ligne Mascouche": {
             "Fantasy": {
-                "Montréal - Mascouche": {'Mode': 4, 'Stations': 'Montréal EXO (Gare Centrale - Mascouche)'},
+                "Montréal - Mascouche": {'Mode': 'Heavy Rail', 'Stations': 'Montréal EXO (Gare Centrale - Mascouche)'},
             },
             "Present": {
-                "Montréal - Mascouche": {'Mode': 4, 'Stations': 'Montréal EXO (Côte-de-Liesse - Mascouche)', 'File': '[Exo] Ligne Mascouche'},
+                "Montréal - Mascouche": {'Mode': 'Heavy Rail', 'Stations': 'Montréal EXO (Côte-de-Liesse - Mascouche)', 'File': '[Exo] Ligne Mascouche'},
             },
         },
     },
     "FDOT": {
         "SunRail": {
             "Fantasy": {
-                "DeLand - Orlando - Poinciana": {'Mode': 4, 'Stations': 'Orlando SunRail (Poinciana - DeLand)'},
+                "DeLand - Orlando - Poinciana": {'Mode': 'Heavy Rail', 'Stations': 'Orlando SunRail (Poinciana - DeLand)'},
             },
         },
     },
     "Ferrocarril Suburbano": {
         "El Insurgente": {
             "Fantasy": {
-                "México - Toluca": {'Mode': 4, 'Stations': 'México El Insurgente'},
+                "México - Toluca": {'Mode': 'Heavy Rail', 'Stations': 'México El Insurgente'},
             },
             "Present": {
-                "México - Toluca": {'Mode': 4, 'Stations': 'México El Insurgente', 'File': '[Ferrocarril Suburbano] El Insurgente', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.28014/-99.68973/standard&lonlats=-99.200087,19.39868;-99.208013,19.396188;-99.451091,19.285894;-99.52064,19.279236;-99.572198,19.277712;-99.638051,19.271103;-99.692221,19.279403;-99.695601,19.28055;-99.691374,19.278977;-99.516875,19.278365;-99.452308,19.28554;-99.207696,19.396045;-99.204102,19.397476;-99.200012,19.398675&profile=rail'},
+                "México - Toluca": {'Mode': 'Heavy Rail', 'Stations': 'México El Insurgente', 'File': '[Ferrocarril Suburbano] El Insurgente', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.28014/-99.68973/standard&lonlats=-99.200087,19.39868;-99.208013,19.396188;-99.451091,19.285894;-99.52064,19.279236;-99.572198,19.277712;-99.638051,19.271103;-99.692221,19.279403;-99.695601,19.28055;-99.691374,19.278977;-99.516875,19.278365;-99.452308,19.28554;-99.207696,19.396045;-99.204102,19.397476;-99.200012,19.398675&profile=rail'},
             },
         },
         "Tren Suburbano": {
             "Fantasy": {
-                "México - AIFA": {'Mode': 4, 'Stations': 'México Tren Suburbano (Buenavista - AIFA)'},
-                "México - Cuautitlán": {'Mode': 4, 'Stations': 'México Tren Suburbano (Buenavista - Cuautitlán)'},
+                "México - AIFA": {'Mode': 'Heavy Rail', 'Stations': 'México Tren Suburbano (Buenavista - AIFA)'},
+                "México - Cuautitlán": {'Mode': 'Heavy Rail', 'Stations': 'México Tren Suburbano (Buenavista - Cuautitlán)'},
             },
             "Present": {
-                "México - AIFA": {'Mode': 4, 'Stations': 'México Tren Suburbano (Buenavista - AIFA)', 'File': '[Ferrocarril Suburbano] Tren Suburbano (NLU)', 'Link': 'https://brouter.damsy.net/latest/#map=11/19.6036/-99.1798/standard&lonlats=-99.152089,19.448128;-99.112033,19.676;-99.024775,19.735744;-99.193121,19.583193;-99.152188,19.448141&profile=rail'},
-                "México - Cuautitlán": {'Mode': 4, 'Stations': 'México Tren Suburbano (Buenavista - Cuautitlán)', 'File': '[Ferrocarril Suburbano] Tren Suburbano (Cuautitlán)', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.66482/-99.17490/standard&lonlats=-99.151794,19.44813;-99.151568,19.453734;-99.165988,19.478725;-99.169196,19.486913;-99.172259,19.494984;-99.18545,19.54279;-99.183776,19.61925;-99.176797,19.661787;-99.176245,19.667417;-99.176964,19.661202;-99.188111,19.552971;-99.165586,19.477618;-99.151863,19.453972;-99.151928,19.448166&profile=rail'},
+                "México - AIFA": {'Mode': 'Heavy Rail', 'Stations': 'México Tren Suburbano (Buenavista - AIFA)', 'File': '[Ferrocarril Suburbano] Tren Suburbano (NLU)', 'Link': 'https://brouter.damsy.net/latest/#map=11/19.6036/-99.1798/standard&lonlats=-99.152089,19.448128;-99.112033,19.676;-99.024775,19.735744;-99.193121,19.583193;-99.152188,19.448141&profile=rail'},
+                "México - Cuautitlán": {'Mode': 'Heavy Rail', 'Stations': 'México Tren Suburbano (Buenavista - Cuautitlán)', 'File': '[Ferrocarril Suburbano] Tren Suburbano (Cuautitlán)', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.66482/-99.17490/standard&lonlats=-99.151794,19.44813;-99.151568,19.453734;-99.165988,19.478725;-99.169196,19.486913;-99.172259,19.494984;-99.18545,19.54279;-99.183776,19.61925;-99.176797,19.661787;-99.176245,19.667417;-99.176964,19.661202;-99.188111,19.552971;-99.165586,19.477618;-99.151863,19.453972;-99.151928,19.448166&profile=rail'},
             },
         },
     },
     "Ferrocarril de Panamá": {
         "Ferrocarril de Panamá": {
             "Fantasy": {
-                "Corozal - Colón": {'Mode': 3, 'Stations': '-Intercity LS (Corozal - Colón)'},
+                "Corozal - Colón": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Corozal - Colón)'},
             },
             "Present": {
-                "Corozal - Colón": {'Mode': 3, 'Stations': '-Intercity LS (Corozal - Colón)', 'File': 'Ferrocarril de Panamá', 'Link': 'https://brouter.damsy.net/latest/#map=11/9.1750/-79.6653/standard&lonlats=-79.567258,8.975829;-79.900528,9.35092;-79.567038,8.975786&profile=rail'},
+                "Corozal - Colón": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Corozal - Colón)', 'File': 'Ferrocarril de Panamá', 'Link': 'https://brouter.damsy.net/latest/#map=11/9.1750/-79.6653/standard&lonlats=-79.567258,8.975829;-79.900528,9.35092;-79.567038,8.975786&profile=rail'},
             },
         },
     },
     "Ferrocarrill Méxicano": {
         "El Chepe": {
             "Fantasy": {
-                "Chihuahua - San Blas": {'Mode': 3, 'Stations': '-Intercity LS (Chihuahua - San Blas)'},
+                "Chihuahua - San Blas": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Chihuahua - San Blas)'},
             },
         },
         "Tren Maya": {
             "Fantasy": {
-                "Cancún - Tenosique via Campeche": {'Mode': 3, 'Stations': '-Intercity LS (Cancún - Tenosique N)'},
-                "Cancún - Tenosique via Chetumal": {'Mode': 3, 'Stations': '-Intercity LS (Cancún - Tenosique S)'},
+                "Cancún - Tenosique via Campeche": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cancún - Tenosique N)'},
+                "Cancún - Tenosique via Chetumal": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cancún - Tenosique S)'},
             },
         },
         "Tren Occidental": {
             "Fantasy": {
-                "Ciudad México - Durango": {'Mode': 2, 'Stations': '-Intercity LS (México - Durango)'},
-                "Ciudad México - Juárez": {'Mode': 2, 'Stations': '-Intercity LS (México - Juárez)'},
+                "Ciudad México - Durango": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (México - Durango)'},
+                "Ciudad México - Juárez": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (México - Juárez)'},
             },
         },
         "Tren Oriental": {
             "Fantasy": {
-                "Ciudad México - Nuevo Laredo": {'Mode': 2, 'Stations': '-Intercity LS (México - Nuevo Laredo)'},
-                "Ciudad México - Piedras Negras": {'Mode': 2, 'Stations': '-Intercity LS (México - Piedras Negras)'},
+                "Ciudad México - Nuevo Laredo": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (México - Nuevo Laredo)'},
+                "Ciudad México - Piedras Negras": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (México - Piedras Negras)'},
             },
         },
         "Tren Transversal": {
             "Fantasy": {
-                "Mazatlán - Matamoros": {'Mode': 3, 'Stations': '-Intercity LS (Mazatlán - Matamoros)'},
+                "Mazatlán - Matamoros": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Mazatlán - Matamoros)'},
             },
         },
         "Tren del Bajío": {
             "Fantasy": {
-                "Poza Rica - Puerto Vallarta": {'Mode': 3, 'Stations': '-Intercity LS (Poza Rica - Puerto Vallarta)'},
+                "Poza Rica - Puerto Vallarta": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Poza Rica - Puerto Vallarta)'},
             },
         },
         "Tren del Golfo": {
             "Fantasy": {
-                "Matamoros - Tenosique": {'Mode': 2, 'Stations': '-Intercity LS (Matamoros - Tenosique)'},
+                "Matamoros - Tenosique": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Matamoros - Tenosique)'},
             },
         },
         "Tren del Pacífico": {
             "Fantasy": {
-                "Guadalajara - Nogales": {'Mode': 2, 'Stations': '-Intercity LS (Guadalajara - Nogales)'},
+                "Guadalajara - Nogales": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Guadalajara - Nogales)'},
             },
         },
     },
     "GRT": {
         "ION": {
             "Fantasy": {
-                "Waterloo - Kitchener": {'Mode': 7, 'Stations': 'Kitchener ION'},
+                "Waterloo - Kitchener": {'Mode': 'Light Rail', 'Stations': 'Kitchener ION'},
             },
             "Present": {
-                "Waterloo - Kitchener": {'Mode': 7, 'Stations': 'Kitchener ION', 'File': '[GRT] ION', 'Link': 'https://brouter.damsy.net/latest/#map=16/43.4225/-80.4548/standard&lonlats=-80.529345,43.497744;-80.530579,43.49957;-80.540994,43.472947;-80.442766,43.422113;-80.44117,43.422216;-80.448718,43.421203;-80.472729,43.439581;-80.491934,43.452668;-80.520773,43.463568;-80.530831,43.499277;-80.529394,43.497682&profile=rail'},
+                "Waterloo - Kitchener": {'Mode': 'Light Rail', 'Stations': 'Kitchener ION', 'File': '[GRT] ION', 'Link': 'https://brouter.damsy.net/latest/#map=16/43.4225/-80.4548/standard&lonlats=-80.529345,43.497744;-80.530579,43.49957;-80.540994,43.472947;-80.442766,43.422113;-80.44117,43.422216;-80.448718,43.421203;-80.472729,43.439581;-80.491934,43.452668;-80.520773,43.463568;-80.530831,43.499277;-80.529394,43.497682&profile=rail'},
             },
         },
     },
     "GoRaleigh": {
         "Research Line": {
             "Fantasy": {
-                "Clayton - Hillsborough": {'Mode': 4, 'Stations': 'Raleigh Regional Rail (Clayton - Hillsborough)'},
+                "Clayton - Hillsborough": {'Mode': 'Heavy Rail', 'Stations': 'Raleigh Regional Rail (Clayton - Hillsborough)'},
             },
         },
     },
     "Grand Canyon Railway": {
         "Grand Canyon Railway": {
             "Fantasy": {
-                "Williams - Grand Canyon Village": {'Mode': 3, 'Stations': '-Intercity LS (Williams - Grand Canyon)'},
+                "Williams - Grand Canyon Village": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Williams - Grand Canyon)'},
             },
         },
     },
     "Hampton Roads Transit": {
         "Norfolk Light Rail": {
             "Fantasy": {
-                "EVMC/Fort Norfolk - Newtown Road": {'Mode': 7, 'Stations': 'Norfolk Light Rail'},
+                "EVMC/Fort Norfolk - Newtown Road": {'Mode': 'Light Rail', 'Stations': 'Norfolk Light Rail'},
             },
             "Present": {
-                "EVMC/Fort Norfolk - Newtown Road": {'Mode': 7, 'Stations': 'Norfolk Light Rail', 'File': '[Hampton Roads Transit] Norfolk Light Rail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.8444/-76.2529/standard&lonlats=-76.303624,36.85874;-76.301014,36.855759;-76.294368,36.853501;-76.192203,36.840923;-76.19007,36.841032;-76.195132,36.841223;-76.265062,36.846036;-76.279342,36.843851;-76.30143,36.856538;-76.303562,36.8588&profile=rail'},
+                "EVMC/Fort Norfolk - Newtown Road": {'Mode': 'Light Rail', 'Stations': 'Norfolk Light Rail', 'File': '[Hampton Roads Transit] Norfolk Light Rail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.8444/-76.2529/standard&lonlats=-76.303624,36.85874;-76.301014,36.855759;-76.294368,36.853501;-76.192203,36.840923;-76.19007,36.841032;-76.195132,36.841223;-76.265062,36.846036;-76.279342,36.843851;-76.30143,36.856538;-76.303562,36.8588&profile=rail'},
             },
         },
     },
     "IAH Airport": {
         "IAH Subway": {
             "Fantasy": {
-                "IAH Airport": {'Mode': 9, 'Stations': 'Houston Peoplemover (IAH Airport)'},
+                "IAH Airport": {'Mode': 'Peoplemover', 'Stations': 'Houston Peoplemover (IAH Airport)'},
             },
         },
     },
     "IndyGo": {
         "Franklin Line": {
             "Fantasy": {
-                "Indianapolis - Muncie": {'Mode': 4, 'Stations': 'Indianapolis Regional Rail (Union - Franklin)'},
+                "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Franklin)'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "38th St - Southport": {'Mode': 5, 'Stations': 'Indianapolis Subway (North - South)'},
+                "38th St - Southport": {'Mode': 'Heavy Metro', 'Stations': 'Indianapolis Subway (North - South)'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Airport - East Gate": {'Mode': 5, 'Stations': 'Indianapolis Subway (West - East)'},
+                "Airport - East Gate": {'Mode': 'Heavy Metro', 'Stations': 'Indianapolis Subway (West - East)'},
             },
         },
         "Lizton Line": {
             "Fantasy": {
-                "Indianapolis - Lizton": {'Mode': 4, 'Stations': 'Indianapolis Regional Rail (Union - Lizton)'},
+                "Indianapolis - Lizton": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton)'},
             },
         },
         "Muncie Line": {
             "Fantasy": {
-                "Indianapolis - Muncie": {'Mode': 4, 'Stations': 'Indianapolis Regional Rail (Union - Muncie)'},
+                "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Muncie)'},
             },
         },
     },
     "LA Metro": {
         "A Line": {
             "Fantasy": {
-                "Pasadena - Long Beach": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Pasadena - Long Beach)'},
+                "Pasadena - Long Beach": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Pasadena - Long Beach)'},
             },
             "Present": {
-                "Pomona - Long Beach": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Pomona - Long Beach)', 'File': '[LA Metro] A Line'},
+                "Pomona - Long Beach": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Pomona - Long Beach)', 'File': '[LA Metro] A Line'},
             },
         },
         "B Line": {
             "Fantasy": {
-                "Lankershim - Pacific Coast Hwy": {'Mode': 5, 'Stations': 'Los Angeles Subway (Lankershim - PCH)'},
+                "Lankershim - Pacific Coast Hwy": {'Mode': 'Heavy Metro', 'Stations': 'Los Angeles Subway (Lankershim - PCH)'},
             },
             "Present": {
-                "Union Station - North Hollywood": {'Mode': 5, 'Stations': 'Los Angeles Subway (Union - North Hollywood)', 'File': '[LA Metro] B Line'},
+                "Union Station - North Hollywood": {'Mode': 'Heavy Metro', 'Stations': 'Los Angeles Subway (Union - North Hollywood)', 'File': '[LA Metro] B Line'},
             },
         },
         "C Line": {
             "Fantasy": {
-                "LAX/MTC - Santa Fe Springs": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (LAX - Santa Fe Springs)'},
+                "LAX/MTC - Santa Fe Springs": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (LAX - Santa Fe Springs)'},
             },
             "Present": {
-                "LAX/MTC - Norwalk": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (LAX - Norwalk)', 'File': '[LA Metro] C Line'},
+                "LAX/MTC - Norwalk": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (LAX - Norwalk)', 'File': '[LA Metro] C Line'},
             },
         },
         "D Line": {
             "Fantasy": {
-                "Arts District - Santa Monica": {'Mode': 5, 'Stations': 'Los Angeles Subway (Arts District - Santa Monica)'},
+                "Arts District - Santa Monica": {'Mode': 'Heavy Metro', 'Stations': 'Los Angeles Subway (Arts District - Santa Monica)'},
             },
             "Present": {
-                "Union Station - Wilshire/Western": {'Mode': 5, 'Stations': 'Los Angeles Subway (Union - Western)', 'File': '[LA Metro] D Line'},
+                "Union Station - Wilshire/Western": {'Mode': 'Heavy Metro', 'Stations': 'Los Angeles Subway (Union - Western)', 'File': '[LA Metro] D Line'},
             },
         },
         "E Line": {
             "Fantasy": {
-                "Whittier - Santa Monica": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Whittier - Santa Monica)'},
+                "Whittier - Santa Monica": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Whittier - Santa Monica)'},
             },
             "Present": {
-                "Atlantic - Santa Monica": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Atlantic - Santa Monica)', 'File': '[LA Metro] E Line'},
+                "Atlantic - Santa Monica": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Atlantic - Santa Monica)', 'File': '[LA Metro] E Line'},
             },
         },
         "G Line": {
             "Fantasy": {
-                "North Hollywood - Chatsworth": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (North Hollywood - Chatsworth)'},
+                "North Hollywood - Chatsworth": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (North Hollywood - Chatsworth)'},
             },
         },
         "K Line": {
             "Fantasy": {
-                "Hollywood Bowl - Torrance": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Hollywood Bowl - Torrance)'},
+                "Hollywood Bowl - Torrance": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Hollywood Bowl - Torrance)'},
             },
             "Present": {
-                "Expo/Crenshaw - Redondo Beach": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Expo - Redondo Beach)', 'File': '[LA Metro] K Line'},
+                "Expo/Crenshaw - Redondo Beach": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Expo - Redondo Beach)', 'File': '[LA Metro] K Line'},
             },
         },
         "L Line": {
             "Fantasy": {
-                "Union Station - Ontario Airport": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Union - ONT)'},
+                "Union Station - Ontario Airport": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Union - ONT)'},
             },
         },
         "Q Line": {
             "Fantasy": {
-                "G Line - San Fernando": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (G Line - San Fernando)'},
+                "G Line - San Fernando": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (G Line - San Fernando)'},
             },
         },
         "R Line": {
             "Fantasy": {
-                "Union Station - Pioneer": {'Mode': 7, 'Stations': 'Los Angeles Light Rail (Union - Pioneer)'},
+                "Union Station - Pioneer": {'Mode': 'Light Rail', 'Stations': 'Los Angeles Light Rail (Union - Pioneer)'},
             },
         },
         "S Line": {
             "Fantasy": {
-                "Van Nuys - LAX/MTC": {'Mode': 5, 'Stations': 'Los Angeles Subway (Van Nuys - LAX)'},
+                "Van Nuys - LAX/MTC": {'Mode': 'Heavy Metro', 'Stations': 'Los Angeles Subway (Van Nuys - LAX)'},
             },
         },
     },
     "LAS Airport": {
         "Airport Trams": {
             "Fantasy": {
-                "Terminal 1 - C Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T1 - C Gates)', 'File': '[LAS Airport] T1 - C Gates'},
-                "Terminal 1 - D Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T1 - D Gates)', 'File': '[LAS Airport] T1 - D Gates'},
-                "Terminal 3 - C Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T3 - D Gates)', 'File': '[LAS Airport] T3 - D Gates'},
+                "Terminal 1 - C Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T1 - C Gates)', 'File': '[LAS Airport] T1 - C Gates'},
+                "Terminal 1 - D Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T1 - D Gates)', 'File': '[LAS Airport] T1 - D Gates'},
+                "Terminal 3 - C Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T3 - D Gates)', 'File': '[LAS Airport] T3 - D Gates'},
             },
             "Present": {
-                "Terminal 1 - C Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T1 - C Gates)', 'File': '[LAS Airport] T1 - C Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08257/-115.14931/standard&lonlats=-115.14903,36.084899;-115.146658,36.080954'},
-                "Terminal 1 - D Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T1 - D Gates)', 'File': '[LAS Airport] T1 - D Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08234/-115.14335/standard&lonlats=-115.148864,36.084925;-115.137856,36.081829'},
-                "Terminal 3 - C Gates": {'Mode': 9, 'Stations': 'LAS Airport Tram (T3 - D Gates)', 'File': '[LAS Airport] T3 - D Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08340/-115.13945/standard&lonlats=-115.137058,36.086182;-115.137746,36.081708'},
+                "Terminal 1 - C Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T1 - C Gates)', 'File': '[LAS Airport] T1 - C Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08257/-115.14931/standard&lonlats=-115.14903,36.084899;-115.146658,36.080954'},
+                "Terminal 1 - D Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T1 - D Gates)', 'File': '[LAS Airport] T1 - D Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08234/-115.14335/standard&lonlats=-115.148864,36.084925;-115.137856,36.081829'},
+                "Terminal 3 - C Gates": {'Mode': 'Peoplemover', 'Stations': 'LAS Airport Tram (T3 - D Gates)', 'File': '[LAS Airport] T3 - D Gates', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.08340/-115.13945/standard&lonlats=-115.137058,36.086182;-115.137746,36.081708'},
             },
         },
     },
     "LAX Airport": {
         "LAX SkyLink": {
             "Fantasy": {
-                "LAX Airport": {'Mode': 9, 'Stations': 'Los Angeles Peoplemover (LAX Airport)'},
+                "LAX Airport": {'Mode': 'Peoplemover', 'Stations': 'Los Angeles Peoplemover (LAX Airport)'},
             },
         },
     },
     "LVCVA": {
         "Las Vegas Monorail": {
             "Present": {
-                "MGM Grand - Sahara": {'Mode': "Monorail", 'Stations': 'Las Vegas Monorail', 'File': '[LVCVA] Las Vegas Monorail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.1222/-115.1687/standard&lonlats=-115.167693,36.102114;-115.154882,36.125623;-115.154553,36.142603;-115.167929,36.10211'},
+                "MGM Grand - Sahara": {'Mode': 'Monorail', 'Stations': 'Las Vegas Monorail', 'File': '[LVCVA] Las Vegas Monorail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.1222/-115.1687/standard&lonlats=-115.167693,36.102114;-115.154882,36.125623;-115.154553,36.142603;-115.167929,36.10211'},
             },
         },
     },
     "MARC": {
         "Brunswick Line": {
             "Fantasy": {
-                "Alexandria - Frederick": {'Mode': 4, 'Stations': 'Washington Regional Rail (Alexandria - Frederick)'},
-                "Alexandria - Martinsburg": {'Mode': 4, 'Stations': 'Washington Regional Rail (Alexandria - Martinsburg)'},
+                "Alexandria - Frederick": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Alexandria - Frederick)'},
+                "Alexandria - Martinsburg": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Alexandria - Martinsburg)'},
             },
         },
         "Camden Line": {
             "Fantasy": {
-                "Alexandria - Camden": {'Mode': 4, 'Stations': 'Washington Regional Rail (Alexandria - Camden)'},
+                "Alexandria - Camden": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Alexandria - Camden)'},
             },
         },
         "Penn Line": {
             "Fantasy": {
-                "Alexandria - Newark": {'Mode': 4, 'Stations': 'Washington Regional Rail (Alexandria - Newark)'},
+                "Alexandria - Newark": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Alexandria - Newark)'},
             },
         },
     },
     "MARTA": {
         "Athens Line": {
             "Fantasy": {
-                "Athens - Griffin": {'Mode': 4, 'Stations': 'Atlanta Regional (Athens - Griffin)'},
+                "Athens - Griffin": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Athens - Griffin)'},
             },
         },
         "Blue Line": {
             "Fantasy": {
-                "Indian Creek E - Six Flags": {'Mode': 5, 'Stations': 'Atlanta MARTA (Indian Creek E - Six Flags)'},
+                "Indian Creek E - Six Flags": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek E - Six Flags)'},
             },
         },
         "Canton Line": {
             "Fantasy": {
-                "Canton - Griffin": {'Mode': 4, 'Stations': 'Atlanta Regional (Canton - Griffin)'},
+                "Canton - Griffin": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Canton - Griffin)'},
             },
         },
         "Cartersville Line": {
             "Fantasy": {
-                "Cartersville - Locust Grove": {'Mode': 4, 'Stations': 'Atlanta Regional (Cartersville - Locust Grove)'},
+                "Cartersville - Locust Grove": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Cartersville - Locust Grove)'},
             },
         },
         "Clifton Line": {
             "Fantasy": {
-                "Lindbergh Center - Avondale": {'Mode': 7, 'Stations': 'Atlanta LRT (Lindbergh - Avondale)'},
+                "Lindbergh Center - Avondale": {'Mode': 'Light Rail', 'Stations': 'Atlanta LRT (Lindbergh - Avondale)'},
             },
         },
         "Covington Line": {
             "Fantasy": {
-                "Conyers - Newnan": {'Mode': 4, 'Stations': 'Atlanta Regional (Covington - Newnan)'},
+                "Conyers - Newnan": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Covington - Newnan)'},
             },
         },
         "Dallas Line": {
             "Fantasy": {
-                "Atlanta - Dallas": {'Mode': 4, 'Stations': 'Atlanta Regional (Central - Dallas)'},
+                "Atlanta - Dallas": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Central - Dallas)'},
             },
         },
         "Gold Line": {
             "Fantasy": {
-                "Airport - Doraville": {'Mode': 5, 'Stations': 'Atlanta MARTA (Airport - Doraville)'},
+                "Airport - Doraville": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Airport - Doraville)'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Indian Creek - Cumberland": {'Mode': 5, 'Stations': 'Atlanta MARTA (Indian Creek E - Cumberland)'},
+                "Indian Creek - Cumberland": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek E - Cumberland)'},
             },
         },
         "Newnan Line": {
             "Fantasy": {
-                "Newnan - Gainesville": {'Mode': 4, 'Stations': 'Atlanta Regional (Gainesville - Newnan)'},
+                "Newnan - Gainesville": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Gainesville - Newnan)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Airport - Dunwoody": {'Mode': 5, 'Stations': 'Atlanta MARTA (Airport - Dunwoody)'},
+                "Airport - Dunwoody": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Airport - Dunwoody)'},
             },
         },
         "Senoia Line": {
             "Fantasy": {
-                "Senoia - Gainesville": {'Mode': 4, 'Stations': 'Atlanta Regional (Gainesville - Senoia)'},
+                "Senoia - Gainesville": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Gainesville - Senoia)'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Beltway Loop": {'Mode': 5, 'Stations': 'Atlanta MARTA (Beltway Loop)'},
+                "Beltway Loop": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Beltway Loop)'},
             },
         },
         "Villa Rica Line": {
             "Fantasy": {
-                "Atlanta - Villa Rica": {'Mode': 4, 'Stations': 'Atlanta Regional (Central - Villa Rica)'},
+                "Atlanta - Villa Rica": {'Mode': 'Heavy Rail', 'Stations': 'Atlanta Regional (Central - Villa Rica)'},
             },
         },
     },
     "MATA": {
         "Arlington Line": {
             "Fantasy": {
-                "Memphis - Arlington": {'Mode': 4, 'Stations': 'Memphis Regional Rail (Central - Arlington)'},
+                "Memphis - Arlington": {'Mode': 'Heavy Rail', 'Stations': 'Memphis Regional Rail (Central - Arlington)'},
             },
         },
         "Collierville Line": {
             "Fantasy": {
-                "Memphis - Collierville": {'Mode': 4, 'Stations': 'Memphis Regional Rail (Central - Collierville)'},
+                "Memphis - Collierville": {'Mode': 'Heavy Rail', 'Stations': 'Memphis Regional Rail (Central - Collierville)'},
             },
         },
     },
     "MBTA": {
         "Blue Line": {
             "Fantasy": {
-                "Charles/MGH - Wonderland": {'Mode': 5, 'Stations': 'Boston T Subway (Charles/MGH - Wonderland)'},
+                "Charles/MGH - Wonderland": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Charles/MGH - Wonderland)'},
             },
         },
         "Fairmount Line": {
             "Fantasy": {
-                "Boston - Readville": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Readville)'},
+                "Boston - Readville": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Readville)'},
             },
         },
         "Fitchburg Line": {
             "Fantasy": {
-                "Boston - Fitchburg": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Fitchburg)'},
+                "Boston - Fitchburg": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Fitchburg)'},
             },
         },
         "Framingham-Worcester Line": {
             "Fantasy": {
-                "Boston - Worcester": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Worcester)'},
+                "Boston - Worcester": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Worcester)'},
             },
         },
         "Franklin Line": {
             "Fantasy": {
-                "Boston - Franklin": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Franklin)'},
+                "Boston - Franklin": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Franklin)'},
             },
         },
         "Greenbush Line": {
             "Fantasy": {
-                "Boston - Greenbush": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Greenbush)'},
+                "Boston - Greenbush": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Greenbush)'},
             },
         },
         "Haverhill Line": {
             "Fantasy": {
-                "Boston - Haverhill": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Haverhill)'},
+                "Boston - Haverhill": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Haverhill)'},
             },
         },
         "Kingston Line": {
             "Fantasy": {
-                "Boston - Kingston": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Kingston)'},
-                "Boston - Plymouth": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Plymouth)'},
+                "Boston - Kingston": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Kingston)'},
+                "Boston - Plymouth": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Plymouth)'},
             },
         },
         "Lowell Line": {
             "Fantasy": {
-                "Boston - Lowell": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Lowell)'},
+                "Boston - Lowell": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Lowell)'},
             },
         },
         "Mattapan Line": {
             "Fantasy": {
-                "Ashmont - Mattapan": {'Mode': 7, 'Stations': 'Boston T Light Rail (Ashmont - Mattapan)'},
+                "Ashmont - Mattapan": {'Mode': 'Light Rail', 'Stations': 'Boston T Light Rail (Ashmont - Mattapan)'},
             },
         },
         "Nashua Line": {
             "Fantasy": {
-                "Boston - Nashua": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Nashua)'},
+                "Boston - Nashua": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Nashua)'},
             },
         },
         "Needham Line": {
             "Fantasy": {
-                "Boston - Needham": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Needham)'},
+                "Boston - Needham": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Needham)'},
             },
         },
         "Newburyport-Rockport Line": {
             "Fantasy": {
-                "Boston - Newburyport": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Newburyport)'},
-                "Boston - Rockport": {'Mode': 4, 'Stations': 'Boston T Commuter (South - Rockport)'},
+                "Boston - Newburyport": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Newburyport)'},
+                "Boston - Rockport": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (South - Rockport)'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Forest Hills - Oak Grove": {'Mode': 5, 'Stations': 'Boston T Subway (Forest Hills - Oak Grove)'},
+                "Forest Hills - Oak Grove": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Forest Hills - Oak Grove)'},
             },
         },
         "Providence-Stoughton Line": {
             "Fantasy": {
-                "Boston - Wickford Junction": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Wickford Junction)'},
+                "Boston - Wickford Junction": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Wickford Junction)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Alewife - Ashmont": {'Mode': 5, 'Stations': 'Boston T Subway (Alewife - Ashmont)'},
-                "Alewife - Quincy Adams": {'Mode': 5, 'Stations': 'Boston T Subway (Alewife - Quincy Adams)'},
+                "Alewife - Ashmont": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Alewife - Ashmont)'},
+                "Alewife - Quincy Adams": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Alewife - Quincy Adams)'},
             },
         },
         "South Coast Line": {
             "Fantasy": {
-                "Boston - Fall River": {'Mode': 4, 'Stations': 'Boston T Commuter (North - Fall River)'},
-                "Boston - New Bedford": {'Mode': 4, 'Stations': 'Boston T Commuter (North - New Bedford)'},
+                "Boston - Fall River": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - Fall River)'},
+                "Boston - New Bedford": {'Mode': 'Heavy Rail', 'Stations': 'Boston T Commuter (North - New Bedford)'},
             },
         },
     },
     "MCTS": {
         "Commuter": {
             "Fantasy": {
-                "Milwaukee - Kenosha": {'Mode': 4, 'Stations': 'Milwaukee Commuter Rail (Milwaukee - Kenosha)'},
+                "Milwaukee - Kenosha": {'Mode': 'Heavy Rail', 'Stations': 'Milwaukee Commuter Rail (Milwaukee - Kenosha)'},
             },
         },
     },
     "MDT": {
         "Metrorail Green Line": {
             "Fantasy": {
-                "Dadeland - Palmetto": {'Mode': 5, 'Stations': 'Miami Metrorail (Dadeland - Palmetto)'},
+                "Dadeland - Palmetto": {'Mode': 'Heavy Metro', 'Stations': 'Miami Metrorail (Dadeland - Palmetto)'},
+            },
+            "Present": {
+                "Dadeland - Palmetto": {'Mode': 'Heavy Metro', 'Stations': 'Miami Metrorail (Dadeland - Palmetto)', 'File': '[MDT] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/25.81309/-80.23202/standard&lonlats=-80.314412,25.684548;-80.306625,25.690187;-80.200903,25.756295;-80.22927,25.812593;-80.241029,25.829851;-80.247322,25.845933;-80.308444,25.839961;-80.324478,25.843341;-80.305188,25.839594;-80.299813,25.839749;-80.247322,25.845808;-80.241158,25.829856;-80.306872,25.690714;-80.314456,25.684594&profile=rail'},
             },
         },
         "Metrorail Orange Line": {
             "Fantasy": {
-                "Dadeland - Airport": {'Mode': 5, 'Stations': 'Miami Metrorail (Dadeland - Airport)'},
+                "Dadeland - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Miami Metrorail (Dadeland - Airport)'},
+            },
+            "Present": {
+                "Dadeland - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Miami Metrorail (Dadeland - Airport)', 'File': '[MDT] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/25.8023/-80.2524/standard&lonlats=-80.314412,25.684548;-80.306625,25.690187;-80.200903,25.756295;-80.258667,25.803866;-80.258595,25.797331;-80.258627,25.80346;-80.306872,25.690714;-80.314456,25.684594&profile=rail'},
             },
         },
     },
     "MIA Airport": {
         "MIA Mover": {
             "Fantasy": {
-                "MIA Airport": {'Mode': 9, 'Stations': 'Miami Peoplemover (MIA Airport)'},
+                "MIA Airport": {'Mode': 'Peoplemover', 'Stations': 'Miami Peoplemover (MIA Airport)'},
+            },
+            "Present": {
+                "MIA Airport": {'Mode': 'Peoplemover', 'Stations': 'Miami Peoplemover (MIA Airport)', 'File': '[MIA Airport] MIA Mover', 'Link': 'https://brouter.damsy.net/latest/#map=17/25.79640/-80.26857/standard&lonlats=-80.259617,25.797182;-80.275667,25.795308;-80.277518,25.795255;-80.273634,25.795153;-80.259064,25.795399;-80.259252,25.797191'},
             },
         },
     },
     "MTA": {
         "1 Train": {
             "Fantasy": {
-                "South Ferry - Van Cortlandt": {'Mode': 5, 'Stations': 'New York Subway (South Ferry - Van Cortlandt)'},
+                "South Ferry - Van Cortlandt": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - Van Cortlandt)'},
             },
         },
         "2 Train": {
             "Fantasy": {
-                "Flatbush Av - 241 St": {'Mode': 5, 'Stations': 'New York Subway (Flatbush - 241 St)'},
+                "Flatbush Av - 241 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush - 241 St)'},
             },
         },
         "3 Train": {
             "Fantasy": {
-                "New Lots Av - Lenox Terminal": {'Mode': 5, 'Stations': 'New York Subway (New Lots Av - Lenox Terminal)'},
+                "New Lots Av - Lenox Terminal": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (New Lots Av - Lenox Terminal)'},
             },
         },
         "4 Train": {
             "Fantasy": {
-                "Utica Av - Woodlawn": {'Mode': 5, 'Stations': 'New York Subway (Utica Av - Woodlawn)'},
+                "Utica Av - Woodlawn": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Utica Av - Woodlawn)'},
             },
         },
         "5 Train": {
             "Fantasy": {
-                "Flatbush Av - Dyre Av": {'Mode': 5, 'Stations': 'New York Subway (Flatbush Av - Dyre Av)'},
-                "Flatbush Av - Nereid Av": {'Mode': 5, 'Stations': 'New York Subway (Flatbush Av - Nereid Av)'},
+                "Flatbush Av - Dyre Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush Av - Dyre Av)'},
+                "Flatbush Av - Nereid Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush Av - Nereid Av)'},
             },
         },
         "6 Train": {
             "Fantasy": {
-                "City Hall - Pelham Park (Express)": {'Mode': 5, 'Stations': 'New York Subway (City Hall - Pelham Park Express)'},
-                "City Hall - Pelham Park (Local)": {'Mode': 5, 'Stations': 'New York Subway (City Hall - Pelham Park Local)'},
+                "City Hall - Pelham Park (Express)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (City Hall - Pelham Park Express)'},
+                "City Hall - Pelham Park (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (City Hall - Pelham Park Local)'},
             },
         },
         "7 Train": {
             "Fantasy": {
-                "Hudson Yards - Flushing (Express)": {'Mode': 5, 'Stations': 'New York Subway (Hudson Yards - Flushing Express)'},
-                "NY Hudson Yards - Flushing (Local)": {'Mode': 5, 'Stations': 'New York Subway (Hudson Yards - Flushing Local)'},
+                "Hudson Yards - Flushing (Express)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hudson Yards - Flushing Express)'},
+                "NY Hudson Yards - Flushing (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hudson Yards - Flushing Local)'},
             },
         },
         "A Train": {
             "Fantasy": {
-                "Far Rockaway - 207 St": {'Mode': 5, 'Stations': 'New York Subway (Far Rockaway - 207 St)'},
-                "Ozone Park - 207 St": {'Mode': 5, 'Stations': 'New York Subway (Ozone Park - 207 St)'},
-                "Rockaway Park - 207 St": {'Mode': 5, 'Stations': 'New York Subway (Rockaway Park - 207 St)'},
+                "Far Rockaway - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Far Rockaway - 207 St)'},
+                "Ozone Park - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Ozone Park - 207 St)'},
+                "Rockaway Park - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Rockaway Park - 207 St)'},
             },
         },
         "B Train": {
             "Fantasy": {
-                "Brighton Beach - Bedford Park": {'Mode': 5, 'Stations': 'New York Subway (Brighton Beach - Bedford Park)'},
+                "Brighton Beach - Bedford Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Brighton Beach - Bedford Park)'},
             },
         },
         "C Train": {
             "Fantasy": {
-                "Euclid Av - 168 St": {'Mode': 5, 'Stations': 'New York Subway (Euclid Av - 168 St)'},
+                "Euclid Av - 168 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Euclid Av - 168 St)'},
             },
         },
         "D Train": {
             "Fantasy": {
-                "Coney Island - Norwood": {'Mode': 5, 'Stations': 'New York Subway (Coney Island - Norwood)'},
+                "Coney Island - Norwood": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Norwood)'},
             },
         },
         "E Train": {
             "Fantasy": {
-                "World Trade Center - Jamaica": {'Mode': 5, 'Stations': 'New York Subway (WTC - Jamaica)'},
+                "World Trade Center - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (WTC - Jamaica)'},
             },
         },
         "F Train": {
             "Fantasy": {
-                "Coney Island - Jamaica": {'Mode': 5, 'Stations': 'New York Subway (Coney Island - Jamaica)'},
+                "Coney Island - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Jamaica)'},
             },
         },
         "G Train": {
             "Fantasy": {
-                "Court Sq - Church Av": {'Mode': 5, 'Stations': 'New York Subway (Court Sq - Church Av)'},
+                "Court Sq - Church Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Court Sq - Church Av)'},
             },
         },
         "J Train": {
             "Fantasy": {
-                "Broad St - Jamaica": {'Mode': 5, 'Stations': 'New York Subway (Broad St - Jamaica)'},
+                "Broad St - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad St - Jamaica)'},
             },
         },
         "L Train": {
             "Fantasy": {
-                "8 Av - Rockaway Pkwy": {'Mode': 5, 'Stations': 'New York Subway (8 Av - Rockaway Pkwy)'},
+                "8 Av - Rockaway Pkwy": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (8 Av - Rockaway Pkwy)'},
             },
         },
         "LIRR Babylon Branch": {
             "Fantasy": {
-                "Penn Station - Babylon": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Babylon)'},
+                "Penn Station - Babylon": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Babylon)'},
             },
         },
         "LIRR Far Rockaway Branch": {
             "Fantasy": {
-                "Atlantic Terminal - Far Rockaway": {'Mode': 4, 'Stations': 'New York Regional Rail (Atlantic Terminal - Far Rockaway)'},
-                "Grand Central - Far Rockaway": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Far Rockaway)'},
-                "Penn Station - Far Rockaway": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Far Rockaway)'},
+                "Atlantic Terminal - Far Rockaway": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Atlantic Terminal - Far Rockaway)'},
+                "Grand Central - Far Rockaway": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Far Rockaway)'},
+                "Penn Station - Far Rockaway": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Far Rockaway)'},
             },
         },
         "LIRR Hempstead Branch": {
             "Fantasy": {
-                "Grand Central - Hempstead": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Hempstead)'},
-                "Penn Station - Hempstead": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Hempstead)'},
+                "Grand Central - Hempstead": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Hempstead)'},
+                "Penn Station - Hempstead": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Hempstead)'},
             },
         },
         "LIRR Long Beach Branch": {
             "Fantasy": {
-                "Penn Station - Long Beach": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Long Beach)'},
+                "Penn Station - Long Beach": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Long Beach)'},
             },
         },
         "LIRR Montauk Branch": {
             "Fantasy": {
-                "Grand Central - Montauk": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Montauk)'},
-                "Penn Station - Montauk": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Montauk)'},
+                "Grand Central - Montauk": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Montauk)'},
+                "Penn Station - Montauk": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Montauk)'},
             },
         },
         "LIRR Oyster Bay Branch": {
             "Fantasy": {
-                "Atlantic Terminal - Oyster Bay": {'Mode': 4, 'Stations': 'New York Regional Rail (Atlantic Terminal - Oyster Bay)'},
+                "Atlantic Terminal - Oyster Bay": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Atlantic Terminal - Oyster Bay)'},
             },
         },
         "LIRR Port Jefferson Branch": {
             "Fantasy": {
-                "Grand Central - Port Jefferson": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Port Jefferson)'},
-                "Penn Station - Port Jefferson": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Port Jefferson)'},
+                "Grand Central - Port Jefferson": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Port Jefferson)'},
+                "Penn Station - Port Jefferson": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Port Jefferson)'},
             },
         },
         "LIRR Port Washington Branch": {
             "Fantasy": {
-                "Grand Central - Port Washington": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Port Washington)'},
-                "Penn Station - Port Washington": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Port Washington)'},
+                "Grand Central - Port Washington": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Port Washington)'},
+                "Penn Station - Port Washington": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Port Washington)'},
             },
         },
         "LIRR Ronkonkoma Branch": {
             "Fantasy": {
-                "Grand Central - Greenport": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Greenport)'},
-                "Penn Station - Greenport": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Greenport)'},
+                "Grand Central - Greenport": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Greenport)'},
+                "Penn Station - Greenport": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Greenport)'},
             },
         },
         "LIRR West Hempstead Branch": {
             "Fantasy": {
-                "Atlantic Terminal - West Hempstead": {'Mode': 4, 'Stations': 'New York Regional Rail (Atlantic Terminal - West Hempstead)'},
-                "Grand Central - West Hempstead": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - West Hempstead)'},
-                "Penn Station - West Hempstead": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - West Hempstead)'},
+                "Atlantic Terminal - West Hempstead": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Atlantic Terminal - West Hempstead)'},
+                "Grand Central - West Hempstead": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - West Hempstead)'},
+                "Penn Station - West Hempstead": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - West Hempstead)'},
             },
         },
         "M Train": {
             "Fantasy": {
-                "Middle Village - Forest Hills": {'Mode': 5, 'Stations': 'New York Subway (Middle Village - Forest Hills)'},
-                "Middle Village - Rockaway Park": {'Mode': 5, 'Stations': 'New York Subway (Middle Village - Rockaway Park)'},
+                "Middle Village - Forest Hills": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Middle Village - Forest Hills)'},
+                "Middle Village - Rockaway Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Middle Village - Rockaway Park)'},
             },
         },
         "Metro-North Danbury Line": {
             "Fantasy": {
-                "Grand Central - Danbury": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Danbury)'},
+                "Grand Central - Danbury": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Danbury)'},
             },
         },
         "Metro-North Harlem Line": {
             "Fantasy": {
-                "Grand Central - Wassaic": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Wassaic)'},
+                "Grand Central - Wassaic": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Wassaic)'},
             },
         },
         "Metro-North Hudson Line": {
             "Fantasy": {
-                "Grand Central - Poughkeepsie": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Poughkeepsie)'},
-                "Penn Station - Poughkeepsie": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Poughkeepsie)'},
+                "Grand Central - Poughkeepsie": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Poughkeepsie)'},
+                "Penn Station - Poughkeepsie": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Poughkeepsie)'},
             },
         },
         "Metro-North New Canaan Line": {
             "Fantasy": {
-                "Stamford - New Canaan": {'Mode': 4, 'Stations': 'New York Regional Rail (Stamford - New Canaan)'},
+                "Stamford - New Canaan": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Stamford - New Canaan)'},
             },
         },
         "Metro-North New Haven Line": {
             "Fantasy": {
-                "Grand Central - New Haven": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - New Haven)'},
-                "Penn Station - New Haven": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - New Haven)'},
+                "Grand Central - New Haven": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - New Haven)'},
+                "Penn Station - New Haven": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - New Haven)'},
             },
         },
         "Metro-North Port Jervis Line": {
             "Fantasy": {
-                "Suffern - Port Jervis": {'Mode': 4, 'Stations': 'New York Regional Rail (Suffern - Port Jervis)'},
+                "Suffern - Port Jervis": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Suffern - Port Jervis)'},
             },
         },
         "Metro-North Waterbury Line": {
             "Fantasy": {
-                "Grand Central - Waterbury": {'Mode': 4, 'Stations': 'New York Regional Rail (Grand Central - Waterbury)'},
+                "Grand Central - Waterbury": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Grand Central - Waterbury)'},
             },
         },
         "N Train": {
             "Fantasy": {
-                "Coney Island - LaGuardia": {'Mode': 5, 'Stations': 'New York Subway (Coney Island - LaGuardia)'},
+                "Coney Island - LaGuardia": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - LaGuardia)'},
             },
         },
         "Q Train": {
             "Fantasy": {
-                "Coney Island - 125 St": {'Mode': 5, 'Stations': 'New York Subway (Coney Island - 125 St)'},
+                "Coney Island - 125 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - 125 St)'},
             },
         },
         "R Train": {
             "Fantasy": {
-                "Bay Ridge - Forest Hills": {'Mode': 5, 'Stations': 'New York Subway (Bay Ridge - Forest Hills)'},
+                "Bay Ridge - Forest Hills": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Bay Ridge - Forest Hills)'},
             },
         },
         "S Train": {
             "Fantasy": {
-                "42 St Shuttle": {'Mode': 5, 'Stations': 'New York Subway (42 St - Times Sq)'},
-                "Prospect Park Shuttle": {'Mode': 5, 'Stations': 'New York Subway (Prospect Park - Franklin Av)'},
-                "Rockaway Shuttle": {'Mode': 5, 'Stations': 'New York Subway (Broad Channel - Rockaway Park)'},
+                "42 St Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (42 St - Times Sq)'},
+                "Prospect Park Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Prospect Park - Franklin Av)'},
+                "Rockaway Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad Channel - Rockaway Park)'},
             },
         },
         "Staten Island Railway": {
             "Fantasy": {
-                "St. George - Tottenville": {'Mode': 4, 'Stations': 'New York Staten Island Railway'},
+                "St. George - Tottenville": {'Mode': 'Heavy Rail', 'Stations': 'New York Staten Island Railway'},
             },
         },
         "T Train": {
             "Fantasy": {
-                "Hanover Sq - 125 St": {'Mode': 5, 'Stations': 'New York Subway (Hanover Square - 125 St)'},
+                "Hanover Sq - 125 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hanover Square - 125 St)'},
             },
         },
         "W Train": {
             "Fantasy": {
-                "South Ferry - LaGuardia": {'Mode': 5, 'Stations': 'New York Subway (South Ferry - LaGuardia)'},
+                "South Ferry - LaGuardia": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - LaGuardia)'},
             },
         },
         "X Train": {
             "Fantasy": {
-                "Brooklyn Army Terminal - Roosevelt Av": {'Mode': 6, 'Stations': 'New York IBX (Queens - Brooklyn)'},
+                "Brooklyn Army Terminal - Roosevelt Av": {'Mode': 'Light Metro', 'Stations': 'New York IBX (Queens - Brooklyn)'},
             },
         },
         "Z Train": {
             "Fantasy": {
-                "Broad St - Jamaica": {'Mode': 5, 'Stations': 'New York Subway (Broad St - Jamaica)'},
+                "Broad St - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad St - Jamaica)'},
             },
         },
     },
     "MTA Maryland": {
         "Baltimore Light Rail Link": {
             "Fantasy": {
-                "Hunt Valley - BWI": {'Mode': 7, 'Stations': 'Baltimore Light Rail (Hunt Valley - BWI)'},
-                "Hunt Valley - Glen Burnie": {'Mode': 7, 'Stations': 'Baltimore Light Rail (Hunt Valley - Glen Burnie)'},
-                "Penn Station - Camden": {'Mode': 7, 'Stations': 'Baltimore Light Rail (Penn - Camden)'},
+                "Hunt Valley - BWI": {'Mode': 'Light Rail', 'Stations': 'Baltimore Light Rail (Hunt Valley - BWI)'},
+                "Hunt Valley - Glen Burnie": {'Mode': 'Light Rail', 'Stations': 'Baltimore Light Rail (Hunt Valley - Glen Burnie)'},
+                "Penn Station - Camden": {'Mode': 'Light Rail', 'Stations': 'Baltimore Light Rail (Penn - Camden)'},
             },
         },
         "Baltimore Subway Link": {
             "Fantasy": {
-                "Johns Hopkins - Owings Mills": {'Mode': 5, 'Stations': 'Baltimore Subway (Johns Hopkins - Owings Mills)'},
+                "Johns Hopkins - Owings Mills": {'Mode': 'Heavy Metro', 'Stations': 'Baltimore Subway (Johns Hopkins - Owings Mills)'},
             },
         },
         "Purple Line": {
             "Fantasy": {
-                "Bethesda - New Carrollton": {'Mode': 7, 'Stations': 'Washington Light Rail (Bethesda - New Carrollton)'},
+                "Bethesda - New Carrollton": {'Mode': 'Light Rail', 'Stations': 'Washington Light Rail (Bethesda - New Carrollton)'},
             },
         },
     },
     "MTAH": {
         "Blue Line": {
             "Fantasy": {
-                "Stadium Park - Houston West Station": {'Mode': 5, 'Stations': 'Houston Metro'},
+                "Stadium Park - Houston West Station": {'Mode': 'Heavy Metro', 'Stations': 'Houston Metro'},
             },
         },
         "Cleveland Line": {
             "Fantasy": {
-                "Richmond - Cleveland (East)": {'Mode': 4, 'Stations': 'Houston Regional Rail (Richmond - Cleveland East)'},
-                "Richmond - Cleveland (West)": {'Mode': 4, 'Stations': 'Houston Regional Rail (Richmond - Cleveland West)'},
+                "Richmond - Cleveland (East)": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Richmond - Cleveland East)'},
+                "Richmond - Cleveland (West)": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Richmond - Cleveland West)'},
             },
         },
         "Conroe Line": {
             "Fantasy": {
-                "Conroe - Alvin": {'Mode': 4, 'Stations': 'Houston Regional Rail (Conroe - Alvin)'},
+                "Conroe - Alvin": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Conroe - Alvin)'},
             },
         },
         "Crosby Line": {
             "Fantasy": {
-                "Houston - Crosby": {'Mode': 4, 'Stations': 'Houston Regional Rail (Main - Crosby)'},
+                "Houston - Crosby": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Main - Crosby)'},
             },
         },
         "Fresno Line": {
             "Fantasy": {
-                "Decker - Arcola": {'Mode': 4, 'Stations': 'Houston Regional Rail (Decker - Arcola)'},
+                "Decker - Arcola": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Decker - Arcola)'},
             },
         },
         "Galveston Line": {
             "Fantasy": {
-                "Cypress - Galveston": {'Mode': 4, 'Stations': 'Houston Regional Rail (Cypress - Galveston)'},
+                "Cypress - Galveston": {'Mode': 'Heavy Rail', 'Stations': 'Houston Regional Rail (Cypress - Galveston)'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Downtown - Magnolia Park": {'Mode': 7, 'Stations': 'Houston Light Rail (Downtown - Magnolia Park)'},
+                "Downtown - Magnolia Park": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Downtown - Magnolia Park)'},
             },
             "Present": {
-                "Downtown - Magnolia Park": {'Mode': 7, 'Stations': 'Houston Light Rail (Downtown - Magnolia Park)', 'File': '[MTAH] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/29.76154/-95.36730/standard&lonlats=-95.370804,29.763996;-95.361757,29.756032;-95.353504,29.754393;-95.342692,29.749028;-95.323766,29.742283;-95.317217,29.740197;-95.302566,29.735704;-95.359612,29.757814;-95.370737,29.764023&profile=rail'},
+                "Downtown - Magnolia Park": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Downtown - Magnolia Park)', 'File': '[MTAH] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/29.76154/-95.36730/standard&lonlats=-95.370804,29.763996;-95.361757,29.756032;-95.353504,29.754393;-95.342692,29.749028;-95.323766,29.742283;-95.317217,29.740197;-95.302566,29.735704;-95.359612,29.757814;-95.370737,29.764023&profile=rail'},
             },
         },
         "Purple Line": {
             "Fantasy": {
-                "Downtown - Hobby Airport": {'Mode': 7, 'Stations': 'Houston Light Rail (Downtown - Hobby Airport)'},
+                "Downtown - Hobby Airport": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Downtown - Hobby Airport)'},
             },
             "Present": {
-                "Downtown - Palm Center": {'Mode': 7, 'Stations': 'Houston Light Rail (Downtown - Palm Center)', 'File': '[MTAH] Purple Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/29.7606/-95.3684/standard&lonlats=-95.37107,29.763809;-95.366349,29.759143;-95.338014,29.711743;-95.335638,29.697457;-95.331985,29.696305;-95.336212,29.69899;-95.341609,29.716421;-95.351345,29.721722;-95.364418,29.760096;-95.37137,29.763846&profile=rail'},
+                "Downtown - Palm Center": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Downtown - Palm Center)', 'File': '[MTAH] Purple Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/29.7606/-95.3684/standard&lonlats=-95.37107,29.763809;-95.366349,29.759143;-95.338014,29.711743;-95.335638,29.697457;-95.331985,29.696305;-95.336212,29.69899;-95.341609,29.716421;-95.351345,29.721722;-95.364418,29.760096;-95.37137,29.763846&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Fannin - Northline": {'Mode': 7, 'Stations': 'Houston Light Rail (Northline - Fannin)'},
+                "Fannin - Northline": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Northline - Fannin)'},
             },
             "Present": {
-                "Fannin - Northline": {'Mode': 7, 'Stations': 'Houston Light Rail (Northline - Fannin)', 'File': '[MTAH] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/29.7639/-95.3802/standard&lonlats=-95.376063,29.832786;-95.36051,29.789206;-95.362353,29.777438;-95.359097,29.765001;-95.371478,29.748897;-95.378366,29.740234;-95.383279,29.733408;-95.394765,29.718349;-95.40361,29.675329;-95.402749,29.67327;-95.392216,29.721462;-95.383156,29.733424;-95.377582,29.740597;-95.360786,29.762026;-95.358914,29.764932;-95.359129,29.771856;-95.36261,29.778286;-95.363967,29.781187;-95.360325,29.78926;-95.366424,29.795955;-95.376037,29.827566;-95.376107,29.832787&profile=rail'},
+                "Fannin - Northline": {'Mode': 'Light Rail', 'Stations': 'Houston Light Rail (Northline - Fannin)', 'File': '[MTAH] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=12/29.7639/-95.3802/standard&lonlats=-95.376063,29.832786;-95.36051,29.789206;-95.362353,29.777438;-95.359097,29.765001;-95.371478,29.748897;-95.378366,29.740234;-95.383279,29.733408;-95.394765,29.718349;-95.40361,29.675329;-95.402749,29.67327;-95.392216,29.721462;-95.383156,29.733424;-95.377582,29.740597;-95.360786,29.762026;-95.358914,29.764932;-95.359129,29.771856;-95.36261,29.778286;-95.363967,29.781187;-95.360325,29.78926;-95.366424,29.795955;-95.376037,29.827566;-95.376107,29.832787&profile=rail'},
             },
         },
     },
     "MTS": {
         "Blue Line": {
             "Fantasy": {
-                "UCSD - San Ysidro": {'Mode': 7, 'Stations': 'San Diego Trolley (UCSD - San Ysidro)'},
+                "UCSD - San Ysidro": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (UCSD - San Ysidro)'},
             },
             "Present": {
-                "UCSD - San Ysidro": {'Mode': 7, 'Stations': 'San Diego Trolley (UCSD - San Ysidro)', 'File': '[MTS] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.54499/-117.02949/standard&lonlats=-117.213994,32.868748;-117.214015,32.870703;-117.221256,32.881245;-117.22815,32.881603;-117.230089,32.86959;-117.199144,32.753778;-117.169981,32.720444;-117.168583,32.716519;-117.161937,32.716632;-117.153965,32.713815;-117.153826,32.707239;-117.113839,32.676544;-117.110197,32.667143;-117.097274,32.634225;-117.090241,32.616293;-117.030471,32.545434;-117.029291,32.543991;-117.030782,32.546008;-117.096577,32.632878;-117.113137,32.675158;-117.148585,32.69947;-117.153751,32.71234;-117.161883,32.716916;-117.166132,32.716749;-117.169906,32.720387;-117.186522,32.742788;-117.199053,32.753864;-117.200856,32.758695;-117.204112,32.767253;-117.207175,32.793822;-117.229869,32.869959;-117.228069,32.881461;-117.220275,32.881051;-117.214202,32.871226;-117.213938,32.868748&profile=rail'},
+                "UCSD - San Ysidro": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (UCSD - San Ysidro)', 'File': '[MTS] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.54499/-117.02949/standard&lonlats=-117.213994,32.868748;-117.214015,32.870703;-117.221256,32.881245;-117.22815,32.881603;-117.230089,32.86959;-117.199144,32.753778;-117.169981,32.720444;-117.168583,32.716519;-117.161937,32.716632;-117.153965,32.713815;-117.153826,32.707239;-117.113839,32.676544;-117.110197,32.667143;-117.097274,32.634225;-117.090241,32.616293;-117.030471,32.545434;-117.029291,32.543991;-117.030782,32.546008;-117.096577,32.632878;-117.113137,32.675158;-117.148585,32.69947;-117.153751,32.71234;-117.161883,32.716916;-117.166132,32.716749;-117.169906,32.720387;-117.186522,32.742788;-117.199053,32.753864;-117.200856,32.758695;-117.204112,32.767253;-117.207175,32.793822;-117.229869,32.869959;-117.228069,32.881461;-117.220275,32.881051;-117.214202,32.871226;-117.213938,32.868748&profile=rail'},
             },
         },
         "Copper Line": {
             "Fantasy": {
-                "El Cajon - Santee": {'Mode': 7, 'Stations': 'San Diego Trolley (El Cajon - Santee)'},
+                "El Cajon - Santee": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (El Cajon - Santee)'},
             },
             "Present": {
-                "El Cajon - Santee": {'Mode': 7, 'Stations': 'San Diego Trolley (El Cajon - Santee)', 'File': '[MTS] Copper Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.79287/-116.97570/standard&lonlats=-116.976215,32.791496;-116.977572,32.82523;-116.980721,32.842052;-116.982143,32.826437;-116.97585,32.806843;-116.976006,32.803509;-116.976247,32.791493&profile=rail'},
+                "El Cajon - Santee": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (El Cajon - Santee)', 'File': '[MTS] Copper Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.79287/-116.97570/standard&lonlats=-116.976215,32.791496;-116.977572,32.82523;-116.980721,32.842052;-116.982143,32.826437;-116.97585,32.806843;-116.976006,32.803509;-116.976247,32.791493&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Santa Fe Depot - El Cajon": {'Mode': 7, 'Stations': 'San Diego Trolley (Imperial - El Cajon)'},
+                "Santa Fe Depot - El Cajon": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (Imperial - El Cajon)'},
             },
             "Present": {
-                "Santa Fe Depot - El Cajon": {'Mode': 7, 'Stations': 'San Diego Trolley (Imperial - El Cajon)', 'File': '[MTS] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/32.79138/-116.97660/standard&lonlats=-117.153609,32.705246;-117.169777,32.716763;-117.169887,32.720405;-117.19629,32.763415;-117.121983,32.78064;-117.095611,32.779734;-117.049976,32.775672;-116.97607,32.790228;-116.976127,32.792413;-116.976398,32.788306;-117.049944,32.775774;-117.12216,32.780852;-117.16463,32.766893;-117.197412,32.763568;-117.18782,32.743393;-117.169983,32.720444;-117.169959,32.716054;-117.168299,32.711586;-117.163305,32.708788;-117.156014,32.705201;-117.153611,32.70528&profile=rail'},
+                "Santa Fe Depot - El Cajon": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (Imperial - El Cajon)', 'File': '[MTS] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/32.79138/-116.97660/standard&lonlats=-117.153609,32.705246;-117.169777,32.716763;-117.169887,32.720405;-117.19629,32.763415;-117.121983,32.78064;-117.095611,32.779734;-117.049976,32.775672;-116.97607,32.790228;-116.976127,32.792413;-116.976398,32.788306;-117.049944,32.775774;-117.12216,32.780852;-117.16463,32.766893;-117.197412,32.763568;-117.18782,32.743393;-117.169983,32.720444;-117.169959,32.716054;-117.168299,32.711586;-117.163305,32.708788;-117.156014,32.705201;-117.153611,32.70528&profile=rail'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Courthouse - El Cajon": {'Mode': 7, 'Stations': 'San Diego Trolley (Courthouse - El Cajon)'},
+                "Courthouse - El Cajon": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (Courthouse - El Cajon)'},
             },
             "Present": {
-                "Courthouse - El Cajon": {'Mode': 7, 'Stations': 'San Diego Trolley (Courthouse - El Cajon)', 'File': '[MTS] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.79193/-116.97582/standard&lonlats=-117.166412,32.716702;-117.153879,32.713739;-117.15382,32.707461;-117.148059,32.705073;-117.059364,32.710458;-117.023599,32.747895;-116.976044,32.790436;-116.976151,32.792413;-117.02273,32.774141;-117.023932,32.770461;-117.028111,32.746722;-117.042906,32.719765;-117.087216,32.709618;-117.105476,32.709356;-117.153665,32.708196;-117.153732,32.714493;-117.157082,32.716795;-117.166415,32.716622&profile=rail'},
+                "Courthouse - El Cajon": {'Mode': 'Light Rail', 'Stations': 'San Diego Trolley (Courthouse - El Cajon)', 'File': '[MTS] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/32.79193/-116.97582/standard&lonlats=-117.166412,32.716702;-117.153879,32.713739;-117.15382,32.707461;-117.148059,32.705073;-117.059364,32.710458;-117.023599,32.747895;-116.976044,32.790436;-116.976151,32.792413;-117.02273,32.774141;-117.023932,32.770461;-117.028111,32.746722;-117.042906,32.719765;-117.087216,32.709618;-117.105476,32.709356;-117.153665,32.708196;-117.153732,32.714493;-117.157082,32.716795;-117.166415,32.716622&profile=rail'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Downtown Loop": {'Mode': 8, 'Stations': 'San Diego Trolley (Downtown Loop)'},
+                "Downtown Loop": {'Mode': 'Streetcar', 'Stations': 'San Diego Trolley (Downtown Loop)'},
             },
             "Present": {
-                "Downtown Loop": {'Mode': 8, 'Stations': 'San Diego Trolley (Downtown Loop)', 'File': '[MTS] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/32.71388/-117.16482/standard&lonlats=-117.168707,32.716298;-117.154169,32.713662;-117.153831,32.707411;-117.157881,32.706095;-117.168815,32.716339&profile=rail'},
+                "Downtown Loop": {'Mode': 'Streetcar', 'Stations': 'San Diego Trolley (Downtown Loop)', 'File': '[MTS] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/32.71388/-117.16482/standard&lonlats=-117.168707,32.716298;-117.154169,32.713662;-117.153831,32.707411;-117.157881,32.706095;-117.168815,32.716339&profile=rail'},
             },
         },
     },
     "Mandalay Bay": {
         "Mandalay Bay Tram": {
             "Fantasy": {
-                "Mandalay Bay - Excalibur": {'Mode': 9, 'Stations': 'Las Vegas Peoplemover (Mandalay Bay)', 'File': '[Mandalay Bay] Tram'},
+                "Mandalay Bay - Excalibur": {'Mode': 'Peoplemover', 'Stations': 'Las Vegas Peoplemover (Mandalay Bay)', 'File': '[Mandalay Bay] Tram'},
             },
             "Present": {
-                "Mandalay Bay - Excalibur": {'Mode': 9, 'Stations': 'Las Vegas Peoplemover (Mandalay Bay)', 'File': '[Mandalay Bay] Tram', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.09637/-115.17447/standard&lonlats=-115.174662,36.092823;-115.173267,36.100114'},
+                "Mandalay Bay - Excalibur": {'Mode': 'Peoplemover', 'Stations': 'Las Vegas Peoplemover (Mandalay Bay)', 'File': '[Mandalay Bay] Tram', 'Link': 'https://brouter.damsy.net/latest/#map=17/36.09637/-115.17447/standard&lonlats=-115.174662,36.092823;-115.173267,36.100114'},
             },
         },
     },
     "Massport": {
         "BOS Peoplemover": {
             "Fantasy": {
-                "BOS Airport": {'Mode': 9, 'Stations': 'Boston Peoplemover (BOS Airport)'},
+                "BOS Airport": {'Mode': 'Peoplemover', 'Stations': 'Boston Peoplemover (BOS Airport)'},
             },
         },
     },
     "Metra": {
         "BNSF": {
             "Fantasy": {
-                "Union Station - Aurora": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Aurora)'},
+                "Union Station - Aurora": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Aurora)'},
             },
             "Present": {
-                "Union Station - Aurora": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Aurora) [Old]', 'File': '[Metra] BNSF', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.8233/-88.0994/standard&lonlats=-87.639286,41.878335;-87.638385,41.860524;-87.685404,41.857803;-87.746311,41.84413;-88.038409,41.795512;-88.093464,41.794332;-88.231255,41.776785;-88.294338,41.767553;-88.309275,41.75956;-88.293801,41.767561;-88.20844,41.778008;-88.15993,41.77934;-88.092703,41.7943;-88.039978,41.795418;-88.009366,41.795472;-87.851111,41.820283;-87.843279,41.822022;-87.793132,41.833298;-87.746496,41.844015;-87.685028,41.857743;-87.648379,41.860362;-87.6381,41.860552;-87.637306,41.866689;-87.639332,41.87836&profile=rail'},
+                "Union Station - Aurora": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Aurora) [Old]', 'File': '[Metra] BNSF', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.8233/-88.0994/standard&lonlats=-87.639286,41.878335;-87.638385,41.860524;-87.685404,41.857803;-87.746311,41.84413;-88.038409,41.795512;-88.093464,41.794332;-88.231255,41.776785;-88.294338,41.767553;-88.309275,41.75956;-88.293801,41.767561;-88.20844,41.778008;-88.15993,41.77934;-88.092703,41.7943;-88.039978,41.795418;-88.009366,41.795472;-87.851111,41.820283;-87.843279,41.822022;-87.793132,41.833298;-87.746496,41.844015;-87.685028,41.857743;-87.648379,41.860362;-87.6381,41.860552;-87.637306,41.866689;-87.639332,41.87836&profile=rail'},
             },
         },
         "Electric District": {
             "Fantasy": {
-                "Millennium Station - Blue Island": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - Blue Island)'},
-                "Millennium Station - South Chicago": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - South Chicago)'},
-                "Millennium Station - University Park": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - University Park)'},
+                "Millennium Station - Blue Island": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - Blue Island)'},
+                "Millennium Station - South Chicago": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - South Chicago)'},
+                "Millennium Station - University Park": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - University Park)'},
             },
             "Present": {
-                "Millennium Station - Blue Island": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - Blue Island)', 'File': '[Metra] ME (Blue Island)', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87938/-87.62263/standard&lonlats=-87.623445,41.886574;-87.62304,41.877148;-87.591355,41.777136;-87.612555,41.684246;-87.676351,41.655689;-87.642269,41.674066;-87.611842,41.687039;-87.595266,41.759287;-87.590604,41.780092;-87.622981,41.876857;-87.623429,41.886648&profile=rail'},
-                "Millennium Station - South Chicago": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - South Chicago)', 'File': '[Metra] ME (South Chicago)', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.8780/-87.6099/standard&lonlats=-87.623211,41.886586;-87.623042,41.876695;-87.577472,41.766086;-87.547694,41.726582;-87.547807,41.731315;-87.578158,41.76623;-87.59062,41.780062;-87.62301,41.877781;-87.623048,41.886649&profile=rail'},
-                "Millennium Station - University Park": {'Mode': 4, 'Stations': 'Chicago Metra (Millennium - University Park)', 'File': '[Metra] ME (University Park)', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.88674/-87.62339/standard&lonlats=-87.62335,41.886579;-87.591387,41.777169;-87.610549,41.692827;-87.703884,41.495934;-87.723501,41.458954;-87.702447,41.498425;-87.678505,41.543184;-87.630303,41.633459;-87.61171,41.687582;-87.610393,41.6931;-87.59526,41.759317;-87.590615,41.780146;-87.588903,41.787562;-87.617093,41.852933;-87.623,41.878013;-87.623313,41.886568&profile=rail'},
+                "Millennium Station - Blue Island": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - Blue Island)', 'File': '[Metra] ME (Blue Island)', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.87938/-87.62263/standard&lonlats=-87.623445,41.886574;-87.62304,41.877148;-87.591355,41.777136;-87.612555,41.684246;-87.676351,41.655689;-87.642269,41.674066;-87.611842,41.687039;-87.595266,41.759287;-87.590604,41.780092;-87.622981,41.876857;-87.623429,41.886648&profile=rail'},
+                "Millennium Station - South Chicago": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - South Chicago)', 'File': '[Metra] ME (South Chicago)', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.8780/-87.6099/standard&lonlats=-87.623211,41.886586;-87.623042,41.876695;-87.577472,41.766086;-87.547694,41.726582;-87.547807,41.731315;-87.578158,41.76623;-87.59062,41.780062;-87.62301,41.877781;-87.623048,41.886649&profile=rail'},
+                "Millennium Station - University Park": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Millennium - University Park)', 'File': '[Metra] ME (University Park)', 'Link': 'https://brouter.damsy.net/latest/#map=20/41.88674/-87.62339/standard&lonlats=-87.62335,41.886579;-87.591387,41.777169;-87.610549,41.692827;-87.703884,41.495934;-87.723501,41.458954;-87.702447,41.498425;-87.678505,41.543184;-87.630303,41.633459;-87.61171,41.687582;-87.610393,41.6931;-87.59526,41.759317;-87.590615,41.780146;-87.588903,41.787562;-87.617093,41.852933;-87.623,41.878013;-87.623313,41.886568&profile=rail'},
             },
         },
         "HC": {
             "Fantasy": {
-                "Union Station - Joliet": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Joliet)'},
+                "Union Station - Joliet": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Joliet)'},
             },
             "Present": {
-                "Union Station - Joliet": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Joliet)', 'File': '[Metra] HC', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7872/-87.5789/standard&lonlats=-87.639374,41.878289;-87.637725,41.869868;-87.636931,41.86223;-87.66783,41.838111;-87.68571,41.826831;-87.709565,41.826132;-87.818184,41.788088;-88.077081,41.54489;-88.079184,41.524573;-88.076588,41.546031;-88.055356,41.595434;-87.816392,41.789756;-87.717156,41.824816;-87.71184,41.826144;-87.665751,41.839274;-87.660902,41.841528;-87.640394,41.850203;-87.637199,41.854203;-87.636968,41.85967;-87.637274,41.867424;-87.639388,41.878289&profile=rail'},
+                "Union Station - Joliet": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Joliet)', 'File': '[Metra] HC', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7872/-87.5789/standard&lonlats=-87.639374,41.878289;-87.637725,41.869868;-87.636931,41.86223;-87.66783,41.838111;-87.68571,41.826831;-87.709565,41.826132;-87.818184,41.788088;-88.077081,41.54489;-88.079184,41.524573;-88.076588,41.546031;-88.055356,41.595434;-87.816392,41.789756;-87.717156,41.824816;-87.71184,41.826144;-87.665751,41.839274;-87.660902,41.841528;-87.640394,41.850203;-87.637199,41.854203;-87.636968,41.85967;-87.637274,41.867424;-87.639388,41.878289&profile=rail'},
             },
         },
         "MD-N": {
             "Fantasy": {
-                "Union Station - Fox Lake": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Fox Lake)'},
+                "Union Station - Fox Lake": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Fox Lake)'},
             },
             "Present": {
-                "Union Station - Fox Lake": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Fox Lake)', 'File': '[Metra] MD-N', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.0794/-88.1296/standard&lonlats=-87.639396,41.879018;-87.680222,41.888445;-87.692962,41.890985;-87.728193,41.925428;-87.805948,42.075303;-87.895646,42.275679;-88.182715,42.399275;-88.042304,42.333082;-87.895609,42.27532;-87.805309,42.073833;-87.727874,41.924718;-87.692528,41.890749;-87.688462,41.889122;-87.684605,41.888377;-87.641796,41.887961;-87.639409,41.878989&profile=rail'},
+                "Union Station - Fox Lake": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Fox Lake)', 'File': '[Metra] MD-N', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.0794/-88.1296/standard&lonlats=-87.639396,41.879018;-87.680222,41.888445;-87.692962,41.890985;-87.728193,41.925428;-87.805948,42.075303;-87.895646,42.275679;-88.182715,42.399275;-88.042304,42.333082;-87.895609,42.27532;-87.805309,42.073833;-87.727874,41.924718;-87.692528,41.890749;-87.688462,41.889122;-87.684605,41.888377;-87.641796,41.887961;-87.639409,41.878989&profile=rail'},
             },
         },
         "MD-W": {
             "Fantasy": {
-                "Union Station - Elgin": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Elgin)'},
+                "Union Station - Elgin": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Elgin)'},
             },
             "Present": {
-                "Union Station - Elgin": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Elgin)', 'File': '[Metra] MD-W', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.9751/-88.0808/standard&lonlats=-87.639608,41.879097;-87.650229,41.888457;-87.683014,41.888443;-87.703004,41.895086;-87.72325,41.913615;-87.74636,41.914529;-87.781572,41.916521;-87.78559,41.916481;-87.860423,41.934801;-87.866265,41.936461;-87.873121,41.938524;-87.88334,41.941533;-88.321436,42.058131;-88.33005,42.058889;-88.28602,42.035723;-87.961779,41.96;-87.883227,41.941461;-87.866174,41.936337;-87.85942,41.93435;-87.801291,41.92165;-87.785885,41.916393;-87.766573,41.916629;-87.745711,41.914333;-87.725927,41.913547;-87.723121,41.913431;-87.703257,41.894942;-87.689411,41.889387;-87.68366,41.888349;-87.641888,41.887894;-87.639645,41.879051&profile=rail'},
+                "Union Station - Elgin": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Elgin)', 'File': '[Metra] MD-W', 'Link': 'https://brouter.damsy.net/latest/#map=11/41.9751/-88.0808/standard&lonlats=-87.639608,41.879097;-87.650229,41.888457;-87.683014,41.888443;-87.703004,41.895086;-87.72325,41.913615;-87.74636,41.914529;-87.781572,41.916521;-87.78559,41.916481;-87.860423,41.934801;-87.866265,41.936461;-87.873121,41.938524;-87.88334,41.941533;-88.321436,42.058131;-88.33005,42.058889;-88.28602,42.035723;-87.961779,41.96;-87.883227,41.941461;-87.866174,41.936337;-87.85942,41.93435;-87.801291,41.92165;-87.785885,41.916393;-87.766573,41.916629;-87.745711,41.914333;-87.725927,41.913547;-87.723121,41.913431;-87.703257,41.894942;-87.689411,41.889387;-87.68366,41.888349;-87.641888,41.887894;-87.639645,41.879051&profile=rail'},
             },
         },
         "NCS": {
             "Fantasy": {
-                "Union Station - Antioch": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Antioch)', 'File': '[Metra] NCS'},
+                "Union Station - Antioch": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Antioch)', 'File': '[Metra] NCS'},
             },
             "Present": {
-                "Union Station - Antioch": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Antioch)', 'File': '[Metra] NCS', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.1894/-87.7231/standard&lonlats=-87.639506,41.879109;-87.645981,41.888018;-87.652434,41.888525;-87.679626,41.888481;-87.683435,41.888445;-87.688161,41.889072;-87.698981,41.893361;-87.745464,41.91443;-87.837367,41.931465;-87.870326,41.963312;-87.876066,41.982555;-87.927945,42.138475;-87.938991,42.163574;-87.957509,42.201671;-87.987356,42.252858;-88.082773,42.42586;-88.09253,42.482443;-88.090718,42.463446;-87.997731,42.26647;-87.990017,42.256292;-87.981144,42.244523;-87.958378,42.203034;-87.94067,42.166878;-87.929056,42.140555;-87.875412,41.980374;-87.870401,41.962051;-87.861185,41.94038;-87.836616,41.930949;-87.814032,41.924687;-87.689749,41.889571;-87.645906,41.887914;-87.639509,41.879091&profile=rail'},
+                "Union Station - Antioch": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Antioch)', 'File': '[Metra] NCS', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.1894/-87.7231/standard&lonlats=-87.639506,41.879109;-87.645981,41.888018;-87.652434,41.888525;-87.679626,41.888481;-87.683435,41.888445;-87.688161,41.889072;-87.698981,41.893361;-87.745464,41.91443;-87.837367,41.931465;-87.870326,41.963312;-87.876066,41.982555;-87.927945,42.138475;-87.938991,42.163574;-87.957509,42.201671;-87.987356,42.252858;-88.082773,42.42586;-88.09253,42.482443;-88.090718,42.463446;-87.997731,42.26647;-87.990017,42.256292;-87.981144,42.244523;-87.958378,42.203034;-87.94067,42.166878;-87.929056,42.140555;-87.875412,41.980374;-87.870401,41.962051;-87.861185,41.94038;-87.836616,41.930949;-87.814032,41.924687;-87.689749,41.889571;-87.645906,41.887914;-87.639509,41.879091&profile=rail'},
             },
         },
         "OCS": {
             "Fantasy": {
-                "Waukegan - Dyer": {'Mode': 4, 'Stations': 'Chicago Metra (Waukegan - Dyer)'},
+                "Waukegan - Dyer": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Waukegan - Dyer)'},
             },
         },
         "Rock Island": {
             "Fantasy": {
-                "LaSalle St - Joliet": {'Mode': 4, 'Stations': 'Chicago Metra (LaSalle - Joliet)'},
-                "LaSalle St - Joliet (via Beverly Hills)": {'Mode': 4, 'Stations': 'Chicago Metra (LaSalle - Joliet West)'},
+                "LaSalle St - Joliet": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (LaSalle - Joliet)'},
+                "LaSalle St - Joliet (via Beverly Hills)": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (LaSalle - Joliet West)'},
             },
             "Present": {
-                "LaSalle St - Joliet": {'Mode': 4, 'Stations': 'Chicago Metra (LaSalle - Joliet)', 'File': '[Metra] RI', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7431/-87.7025/standard&lonlats=-87.632151,41.875211;-87.63088,41.860009;-87.629292,41.824349;-87.62912,41.818599;-87.628788,41.778993;-87.641512,41.745428;-87.670512,41.666809;-87.68409,41.649347;-87.767512,41.582772;-87.996014,41.521238;-88.078439,41.524327;-87.992291,41.520443;-87.89291,41.528274;-87.766884,41.582696;-87.679353,41.653074;-87.649065,41.724396;-87.628455,41.778976;-87.629024,41.824428;-87.630783,41.860068;-87.632162,41.875204&profile=rail'},
-                "LaSalle St - Joliet (via Beverly Hills)": {'Mode': 4, 'Stations': 'Chicago Metra (LaSalle - Joliet West)', 'File': '[Metra] RI (West)', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7519/-87.7409/standard&lonlats=-87.632151,41.875211;-87.63088,41.860009;-87.629292,41.824349;-87.62912,41.818599;-87.628788,41.778993;-87.641512,41.745428;-87.674525,41.666989;-87.68409,41.649347;-87.767512,41.582772;-87.996014,41.521238;-88.078439,41.524327;-87.992291,41.520443;-87.89291,41.528274;-87.766884,41.582696;-87.694373,41.640857;-87.677733,41.654942;-87.667079,41.72535;-87.628455,41.778976;-87.629024,41.824428;-87.630783,41.860068;-87.632162,41.875204&profile=rail'},
+                "LaSalle St - Joliet": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (LaSalle - Joliet)', 'File': '[Metra] RI', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7431/-87.7025/standard&lonlats=-87.632151,41.875211;-87.63088,41.860009;-87.629292,41.824349;-87.62912,41.818599;-87.628788,41.778993;-87.641512,41.745428;-87.670512,41.666809;-87.68409,41.649347;-87.767512,41.582772;-87.996014,41.521238;-88.078439,41.524327;-87.992291,41.520443;-87.89291,41.528274;-87.766884,41.582696;-87.679353,41.653074;-87.649065,41.724396;-87.628455,41.778976;-87.629024,41.824428;-87.630783,41.860068;-87.632162,41.875204&profile=rail'},
+                "LaSalle St - Joliet (via Beverly Hills)": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (LaSalle - Joliet West)', 'File': '[Metra] RI (West)', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.7519/-87.7409/standard&lonlats=-87.632151,41.875211;-87.63088,41.860009;-87.629292,41.824349;-87.62912,41.818599;-87.628788,41.778993;-87.641512,41.745428;-87.674525,41.666989;-87.68409,41.649347;-87.767512,41.582772;-87.996014,41.521238;-88.078439,41.524327;-87.992291,41.520443;-87.89291,41.528274;-87.766884,41.582696;-87.694373,41.640857;-87.677733,41.654942;-87.667079,41.72535;-87.628455,41.778976;-87.629024,41.824428;-87.630783,41.860068;-87.632162,41.875204&profile=rail'},
             },
         },
         "Rockford Line": {
             "Fantasy": {
-                "Union Station - Rockford": {'Mode': 4, 'Stations': '-Intercity LS (Chicago - Rockford)'},
+                "Union Station - Rockford": {'Mode': 'Heavy Rail', 'Stations': '-Intercity LS (Chicago - Rockford)'},
             },
         },
         "SouthWest Service": {
             "Fantasy": {
-                "Union Station - Manhattan": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Manhattan)'},
+                "Union Station - Manhattan": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Manhattan)'},
             },
             "Present": {
-                "Union Station - Manhattan": {'Mode': 4, 'Stations': 'Chicago Metra (Union - Manhattan)', 'File': '[Metra] SWS', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.80318/-87.64151/standard&lonlats=-87.639492,41.878047;-87.637033,41.858451;-87.637076,41.856508;-87.639656,41.767663;-87.683864,41.757455;-87.695618,41.753354;-87.71435,41.740521;-87.809102,41.680208;-87.989298,41.417621;-87.80915,41.679975;-87.639297,41.767903;-87.640311,41.802271;-87.636808,41.85112;-87.636971,41.859545;-87.63802,41.872305;-87.639495,41.878037&profile=rail'},
+                "Union Station - Manhattan": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Union - Manhattan)', 'File': '[Metra] SWS', 'Link': 'https://brouter.damsy.net/latest/#map=17/41.80318/-87.64151/standard&lonlats=-87.639492,41.878047;-87.637033,41.858451;-87.637076,41.856508;-87.639656,41.767663;-87.683864,41.757455;-87.695618,41.753354;-87.71435,41.740521;-87.809102,41.680208;-87.989298,41.417621;-87.80915,41.679975;-87.639297,41.767903;-87.640311,41.802271;-87.636808,41.85112;-87.636971,41.859545;-87.63802,41.872305;-87.639495,41.878037&profile=rail'},
             },
         },
         "UP-N": {
             "Fantasy": {
-                "Ogilvie - Milwaukee": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Milwaukee)'},
+                "Ogilvie - Milwaukee": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Milwaukee)'},
             },
             "Present": {
-                "Ogilvie - Kenosha": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Kenosha)', 'File': '[Metra] UP-N', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.8887/-87.6417/standard&lonlats=-87.640815,41.882858;-87.645079,41.890829;-87.825974,42.586056;-87.839647,42.251809;-87.684288,42.047085;-87.668055,41.916996;-87.664252,41.910837;-87.648481,41.894127;-87.643926,41.890241;-87.640815,41.882825&profile=rail'},
+                "Ogilvie - Kenosha": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Kenosha)', 'File': '[Metra] UP-N', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.8887/-87.6417/standard&lonlats=-87.640815,41.882858;-87.645079,41.890829;-87.825974,42.586056;-87.839647,42.251809;-87.684288,42.047085;-87.668055,41.916996;-87.664252,41.910837;-87.648481,41.894127;-87.643926,41.890241;-87.640815,41.882825&profile=rail'},
             },
         },
         "UP-NW": {
             "Fantasy": {
-                "Ogilvie - Harvard": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Harvard)'},
-                "Ogilvie - McHenry": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - McHenry)'},
+                "Ogilvie - Harvard": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Harvard)'},
+                "Ogilvie - McHenry": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - McHenry)'},
             },
             "Present": {
-                "Ogilvie - Harvard": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Harvard)', 'File': '[Metra] UP-NW (Harvard)', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.2179/-88.0815/standard&lonlats=-87.64096,41.88283;-87.645155,41.890827;-87.664563,41.911411;-87.668619,41.917375;-87.751976,41.965091;-87.912608,42.052487;-88.178485,42.176798;-88.307789,42.239337;-88.617734,42.419894;-88.619424,42.421104;-88.609993,42.416367;-88.316957,42.244071;-88.306963,42.238756;-88.24222,42.209488;-88.178501,42.176663;-88.014833,42.097944;-87.747797,41.962594;-87.668133,41.916581;-87.64759,41.893093;-87.645088,41.890741;-87.640879,41.887413;-87.640949,41.882761&profile=rail'},
-                "Ogilvie - McHenry": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - McHenry)', 'File': '[Metra] UP-NW (McHenry)', 'Link': 'https://brouter.damsy.net/latest/#map=15/41.8901/-87.6479/standard&lonlats=-87.640914,41.88283;-87.645155,41.890827;-87.664563,41.911411;-87.668619,41.917375;-87.751976,41.965091;-87.912608,42.052487;-88.178485,42.176798;-88.304114,42.237359;-88.27619,42.343641;-88.24222,42.209488;-88.178501,42.176663;-88.014833,42.097944;-87.747797,41.962594;-87.668133,41.916581;-87.64759,41.893093;-87.645088,41.890741;-87.640879,41.887413;-87.640903,41.882768&profile=rail'},
+                "Ogilvie - Harvard": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Harvard)', 'File': '[Metra] UP-NW (Harvard)', 'Link': 'https://brouter.damsy.net/latest/#map=10/42.2179/-88.0815/standard&lonlats=-87.64096,41.88283;-87.645155,41.890827;-87.664563,41.911411;-87.668619,41.917375;-87.751976,41.965091;-87.912608,42.052487;-88.178485,42.176798;-88.307789,42.239337;-88.617734,42.419894;-88.619424,42.421104;-88.609993,42.416367;-88.316957,42.244071;-88.306963,42.238756;-88.24222,42.209488;-88.178501,42.176663;-88.014833,42.097944;-87.747797,41.962594;-87.668133,41.916581;-87.64759,41.893093;-87.645088,41.890741;-87.640879,41.887413;-87.640949,41.882761&profile=rail'},
+                "Ogilvie - McHenry": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - McHenry)', 'File': '[Metra] UP-NW (McHenry)', 'Link': 'https://brouter.damsy.net/latest/#map=15/41.8901/-87.6479/standard&lonlats=-87.640914,41.88283;-87.645155,41.890827;-87.664563,41.911411;-87.668619,41.917375;-87.751976,41.965091;-87.912608,42.052487;-88.178485,42.176798;-88.304114,42.237359;-88.27619,42.343641;-88.24222,42.209488;-88.178501,42.176663;-88.014833,42.097944;-87.747797,41.962594;-87.668133,41.916581;-87.64759,41.893093;-87.645088,41.890741;-87.640879,41.887413;-87.640903,41.882768&profile=rail'},
             },
         },
         "UP-W": {
             "Fantasy": {
-                "Ogilvie - Elburn": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Elburn)'},
+                "Ogilvie - Elburn": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Elburn)'},
             },
             "Present": {
-                "Ogilvie - Elburn": {'Mode': 4, 'Stations': 'Chicago Metra (Ogilvie - Elburn)', 'File': '[Metra] UP-W', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8981/-87.6942/standard&lonlats=-87.641137,41.882782;-87.685189,41.888513;-87.707087,41.888271;-87.824289,41.886895;-87.838512,41.888379;-87.860445,41.890753;-87.874961,41.89152;-87.881334,41.891448;-87.931915,41.89874;-88.194358,41.879571;-88.465876,41.890807;-88.362125,41.88279;-88.245975,41.882814;-88.193479,41.879159;-88.099869,41.865861;-88.009254,41.889227;-87.928256,41.89818;-87.88039,41.891289;-87.859613,41.89051;-87.838295,41.888245;-87.706738,41.888189;-87.641091,41.882846&profile=rail'},
+                "Ogilvie - Elburn": {'Mode': 'Heavy Rail', 'Stations': 'Chicago Metra (Ogilvie - Elburn)', 'File': '[Metra] UP-W', 'Link': 'https://brouter.damsy.net/latest/#map=13/41.8981/-87.6942/standard&lonlats=-87.641137,41.882782;-87.685189,41.888513;-87.707087,41.888271;-87.824289,41.886895;-87.838512,41.888379;-87.860445,41.890753;-87.874961,41.89152;-87.881334,41.891448;-87.931915,41.89874;-88.194358,41.879571;-88.465876,41.890807;-88.362125,41.88279;-88.245975,41.882814;-88.193479,41.879159;-88.099869,41.865861;-88.009254,41.889227;-87.928256,41.89818;-87.88039,41.891289;-87.859613,41.89051;-87.838295,41.888245;-87.706738,41.888189;-87.641091,41.882846&profile=rail'},
             },
         },
     },
     "Metro Transit": {
         "Blue Line": {
             "Fantasy": {
-                "Brooklyn Park - Apple Valley": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Brooklyn Park - Apple Valley)', 'File': '[Metro Transit] Blue Line'},
+                "Brooklyn Park - Apple Valley": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Brooklyn Park - Apple Valley)', 'File': '[Metro Transit] Blue Line'},
             },
             "Present": {
-                "Target Field - Mall of America": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Target Field - Mall of America) [Old]', 'File': '[Metro Transit] Blue Line'},
+                "Target Field - Mall of America": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Target Field - Mall of America) [Old]', 'File': '[Metro Transit] Blue Line'},
             },
         },
         "Bronze Line": {
             "Fantasy": {
-                "Union Depot - Mall of America": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Union Depot - Mall of America)'},
+                "Union Depot - Mall of America": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Union Depot - Mall of America)'},
             },
         },
         "Dan Patch Line": {
             "Fantasy": {
-                "Northfield - St. Paul": {'Mode': 4, 'Stations': 'Minneapolis Regional Rail (Union Depot - Northfield via Minneapolis)'},
+                "Northfield - St. Paul": {'Mode': 'Heavy Rail', 'Stations': 'Minneapolis Regional Rail (Union Depot - Northfield via Minneapolis)'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Eden Prairie - Union Depot": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Eden Prairie - Union Depot)', 'File': '[Metro Transit] Green Line'},
+                "Eden Prairie - Union Depot": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Eden Prairie - Union Depot)', 'File': '[Metro Transit] Green Line'},
             },
             "Present": {
-                "Target Field - Union Depot": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Target Field - Union Depot) [Old]', 'File': '[Metro Transit] Green Line'},
+                "Target Field - Union Depot": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Target Field - Union Depot) [Old]', 'File': '[Metro Transit] Green Line'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "Bloomington - Northfield": {'Mode': 5, 'Stations': 'Minneapolis Metro (Bloomington - Northfield)'},
+                "Bloomington - Northfield": {'Mode': 'Heavy Metro', 'Stations': 'Minneapolis Metro (Bloomington - Northfield)'},
             },
         },
         "Northstar Line": {
             "Fantasy": {
-                "Minneapolis - St. Cloud": {'Mode': 4, 'Stations': 'Minneapolis Regional Rail (Target Field - St. Cloud)', 'File': '[Metro Transit] Northstar'},
+                "Minneapolis - St. Cloud": {'Mode': 'Heavy Rail', 'Stations': 'Minneapolis Regional Rail (Target Field - St. Cloud)', 'File': '[Metro Transit] Northstar'},
             },
         },
         "Red Rock Line": {
             "Fantasy": {
-                "Minneapolis - Red Wing": {'Mode': 4, 'Stations': 'Minneapolis Regional Rail (Target Field - Red Wing)'},
+                "Minneapolis - Red Wing": {'Mode': 'Heavy Rail', 'Stations': 'Minneapolis Regional Rail (Target Field - Red Wing)'},
             },
         },
         "Valley Line": {
             "Fantasy": {
-                "Hudson - Belle Plaine": {'Mode': 4, 'Stations': 'Minneapolis Regional Rail (Hudson - Belle Plaine)'},
+                "Hudson - Belle Plaine": {'Mode': 'Heavy Rail', 'Stations': 'Minneapolis Regional Rail (Hudson - Belle Plaine)'},
             },
         },
         "Yellow Line": {
             "Fantasy": {
-                "West Lake St - East Lake St": {'Mode': 7, 'Stations': 'Minneapolis Light Rail (Midtown Greenway)'},
+                "West Lake St - East Lake St": {'Mode': 'Light Rail', 'Stations': 'Minneapolis Light Rail (Midtown Greenway)'},
             },
         },
     },
     "Metro de Panamá": {
         "Line 1": {
             "Fantasy": {
-                "Villa Zaita - Albrook": {'Mode': 5, 'Stations': 'Panamá Metro (Villa Zaita - Albrook)'},
+                "Villa Zaita - Albrook": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (Villa Zaita - Albrook)'},
             },
             "Present": {
-                "Villa Zaita - Albrook": {'Mode': 5, 'Stations': 'Panamá Metro (Villa Zaita - Albrook)', 'File': '[Metro de Panamá] Line 1', 'Link': 'https://brouter.damsy.net/latest/#map=16/8.9693/-79.5404/standard&lonlats=-79.527508,9.080029;-79.526344,9.077847;-79.54947,8.973702;-79.549888,8.972626;-79.550108,8.970789;-79.514446,9.065181;-79.526204,9.078079;-79.527409,9.080077&profile=rail'},
+                "Villa Zaita - Albrook": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (Villa Zaita - Albrook)', 'File': '[Metro de Panamá] Line 1', 'Link': 'https://brouter.damsy.net/latest/#map=16/8.9693/-79.5404/standard&lonlats=-79.527508,9.080029;-79.526344,9.077847;-79.54947,8.973702;-79.549888,8.972626;-79.550108,8.970789;-79.514446,9.065181;-79.526204,9.078079;-79.527409,9.080077&profile=rail'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "San Miguelito - Aeropuerto": {'Mode': 5, 'Stations': 'Panamá Metro (San Miguelito - Aeropuerto)'},
-                "San Miguelito - Nuevo Tocumen": {'Mode': 5, 'Stations': 'Panamá Metro (San Miguelito - Nuevo Tocumen)'},
+                "San Miguelito - Aeropuerto": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (San Miguelito - Aeropuerto)'},
+                "San Miguelito - Nuevo Tocumen": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (San Miguelito - Nuevo Tocumen)'},
             },
             "Present": {
-                "San Miguelito - Aeropuerto": {'Mode': 5, 'Stations': 'Panamá Metro (San Miguelito - Aeropuerto)', 'File': '[Metro de Panamá] Line 2 (Aeropuerto)', 'Link': 'https://brouter.damsy.net/latest/#map=18/9.03132/-79.50415/standard&lonlats=-79.505731,9.030434;-79.501989,9.030423;-79.389203,9.065345;-79.413933,9.066584;-79.502167,9.030639;-79.50573,9.030391&profile=rail'},
-                "San Miguelito - Nuevo Tocumen": {'Mode': 5, 'Stations': 'Panamá Metro (San Miguelito - Nuevo Tocumen)', 'File': '[Metro de Panamá] Line 2 (Nuevo Tocumen)', 'Link': 'https://brouter.damsy.net/latest/#map=18/9.03113/-79.50455/standard&lonlats=-79.353044,9.101975;-79.358926,9.102621;-79.430332,9.05947;-79.503339,9.030577;-79.505728,9.030624;-79.501855,9.030473;-79.353054,9.101853&profile=rail'},
+                "San Miguelito - Aeropuerto": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (San Miguelito - Aeropuerto)', 'File': '[Metro de Panamá] Line 2 (Aeropuerto)', 'Link': 'https://brouter.damsy.net/latest/#map=18/9.03132/-79.50415/standard&lonlats=-79.505731,9.030434;-79.501989,9.030423;-79.389203,9.065345;-79.413933,9.066584;-79.502167,9.030639;-79.50573,9.030391&profile=rail'},
+                "San Miguelito - Nuevo Tocumen": {'Mode': 'Heavy Metro', 'Stations': 'Panamá Metro (San Miguelito - Nuevo Tocumen)', 'File': '[Metro de Panamá] Line 2 (Nuevo Tocumen)', 'Link': 'https://brouter.damsy.net/latest/#map=18/9.03113/-79.50455/standard&lonlats=-79.353044,9.101975;-79.358926,9.102621;-79.430332,9.05947;-79.503339,9.030577;-79.505728,9.030624;-79.501855,9.030473;-79.353054,9.101853&profile=rail'},
             },
         },
     },
     "Metrolink": {
         "91-Perris Valley Line": {
             "Fantasy": {
-                "Los Angeles - San Jacinto": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - San Jacinto)'},
+                "Los Angeles - San Jacinto": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - San Jacinto)'},
             },
             "Present": {
-                "Los Angeles - South Perris": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Perris)', 'File': '[Metrolink] 91-Perris Valley Line', 'Link': 'https://brouter.damsy.net/latest/#map=20/34.05446/-118.23439/standard&lonlats=-118.234207,34.054314;-118.22716,34.032092;-118.2234,34.01674;-118.212464,34.014007;-118.150856,33.993144;-118.14299,33.990404;-118.130456,33.986301;-118.124388,33.984208;-118.061383,33.935193;-118.059849,33.915742;-117.987167,33.87568;-117.885865,33.867053;-117.864611,33.868612;-117.826974,33.867382;-117.56268,33.88186;-117.382607,33.95315;-117.287132,33.91222;-117.203034,33.762427;-117.518477,33.883189;-117.750971,33.877132;-117.886927,33.867172;-117.918395,33.86871;-117.94917,33.868848;-118.006012,33.8846;-118.061185,33.923852;-118.087208,33.966333;-118.116149,33.98157;-118.144773,33.991131;-118.177185,34.002154;-118.184253,34.004531;-118.209152,34.012942;-118.227071,34.032207;-118.22709,34.05878;-118.234203,34.054289&profile=rail'},
+                "Los Angeles - South Perris": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Perris)', 'File': '[Metrolink] 91-Perris Valley Line', 'Link': 'https://brouter.damsy.net/latest/#map=20/34.05446/-118.23439/standard&lonlats=-118.234207,34.054314;-118.22716,34.032092;-118.2234,34.01674;-118.212464,34.014007;-118.150856,33.993144;-118.14299,33.990404;-118.130456,33.986301;-118.124388,33.984208;-118.061383,33.935193;-118.059849,33.915742;-117.987167,33.87568;-117.885865,33.867053;-117.864611,33.868612;-117.826974,33.867382;-117.56268,33.88186;-117.382607,33.95315;-117.287132,33.91222;-117.203034,33.762427;-117.518477,33.883189;-117.750971,33.877132;-117.886927,33.867172;-117.918395,33.86871;-117.94917,33.868848;-118.006012,33.8846;-118.061185,33.923852;-118.087208,33.966333;-118.116149,33.98157;-118.144773,33.991131;-118.177185,34.002154;-118.184253,34.004531;-118.209152,34.012942;-118.227071,34.032207;-118.22709,34.05878;-118.234203,34.054289&profile=rail'},
             },
         },
         "Airport Line": {
             "Fantasy": {
-                "Los Angeles - LAX/MTC": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - LAX)'},
+                "Los Angeles - LAX/MTC": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - LAX)'},
             },
         },
         "Antelope Valley Line": {
             "Fantasy": {
-                "Los Angeles - Lancaster": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Lancaster)'},
+                "Los Angeles - Lancaster": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Lancaster)'},
             },
             "Present": {
-                "Los Angeles - Lancaster": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Lancaster)', 'File': '[Metrolink] Antelope Valley Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/34.0988/-118.2232/standard&lonlats=-118.234563,34.054339;-118.23893,34.099506;-118.299837,34.171255;-118.136292,34.697449;-118.302047,34.172152;-118.265237,34.133268;-118.238077,34.098115;-118.227144,34.080215;-118.234578,34.054325&profile=rail'},
+                "Los Angeles - Lancaster": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Lancaster)', 'File': '[Metrolink] Antelope Valley Line', 'Link': 'https://brouter.damsy.net/latest/#map=13/34.0988/-118.2232/standard&lonlats=-118.234563,34.054339;-118.23893,34.099506;-118.299837,34.171255;-118.136292,34.697449;-118.302047,34.172152;-118.265237,34.133268;-118.238077,34.098115;-118.227144,34.080215;-118.234578,34.054325&profile=rail'},
             },
         },
         "Arrow": {
             "Fantasy": {
-                "San Bernardino - Redlands": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (San Bernardino - Redlands)'},
+                "San Bernardino - Redlands": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (San Bernardino - Redlands)'},
             },
             "Present": {
-                "San Bernardino - Redlands": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (San Bernardino - Redlands)', 'File': '[Metrolink] Arrow', 'Link': 'https://brouter.damsy.net/latest/#map=19/34.05870/-117.16639/standard&lonlats=-117.297009,34.099772;-117.230338,34.065721;-117.16515,34.05879;-117.231862,34.065809;-117.297011,34.099712&profile=rail'},
+                "San Bernardino - Redlands": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (San Bernardino - Redlands)', 'File': '[Metrolink] Arrow', 'Link': 'https://brouter.damsy.net/latest/#map=19/34.05870/-117.16639/standard&lonlats=-117.297009,34.099772;-117.230338,34.065721;-117.16515,34.05879;-117.231862,34.065809;-117.297011,34.099712&profile=rail'},
             },
         },
         "Coachella Line": {
             "Fantasy": {
-                "Riverside - Coachella": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Riverside - Coachella)'},
+                "Riverside - Coachella": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Riverside - Coachella)'},
             },
         },
         "Inland Empire-Orange County Line": {
             "Fantasy": {
-                "San Bernardino - Oceanside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (San Bernardino - Oceanside)'},
+                "San Bernardino - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (San Bernardino - Oceanside)'},
             },
             "Present": {
-                "San Bernardino - Oceanside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (San Bernardino - Oceanside)', 'File': '[Metrolink] Inland Empire-Orange County Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/34.1029/-117.3035/standard&lonlats=-117.294779,34.099816;-117.303729,34.101442;-117.316217,34.102823;-117.370849,33.974061;-117.373676,33.969969;-117.517694,33.88351;-117.751679,33.876999;-117.857455,33.800859;-117.857573,33.788336;-117.856178,33.756596;-117.812877,33.712667;-117.738998,33.661237;-117.713109,33.643188;-117.673686,33.573393;-117.675773,33.536824;-117.378851,33.191122;-117.390482,33.212713;-117.67382,33.570179;-117.709504,33.640973;-117.818863,33.8663;-117.654224,33.879435;-117.420727,33.921239;-117.372689,33.970956;-117.368714,33.976926;-117.329682,34.051291;-117.316003,34.102868;-117.301041,34.099545;-117.294779,34.099872&profile=rail'},
+                "San Bernardino - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (San Bernardino - Oceanside)', 'File': '[Metrolink] Inland Empire-Orange County Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/34.1029/-117.3035/standard&lonlats=-117.294779,34.099816;-117.303729,34.101442;-117.316217,34.102823;-117.370849,33.974061;-117.373676,33.969969;-117.517694,33.88351;-117.751679,33.876999;-117.857455,33.800859;-117.857573,33.788336;-117.856178,33.756596;-117.812877,33.712667;-117.738998,33.661237;-117.713109,33.643188;-117.673686,33.573393;-117.675773,33.536824;-117.378851,33.191122;-117.390482,33.212713;-117.67382,33.570179;-117.709504,33.640973;-117.818863,33.8663;-117.654224,33.879435;-117.420727,33.921239;-117.372689,33.970956;-117.368714,33.976926;-117.329682,34.051291;-117.316003,34.102868;-117.301041,34.099545;-117.294779,34.099872&profile=rail'},
             },
         },
         "Orange County Line": {
             "Fantasy": {
-                "Los Angeles - Oceanside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Oceanside)'},
+                "Los Angeles - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Oceanside)'},
             },
             "Present": {
-                "Los Angeles - Oceanside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Oceanside)', 'File': '[Metrolink] Orange County Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05528/-118.23411/standard&lonlats=-118.234152,34.054335;-118.226554,34.029461;-118.224896,34.018758;-118.212005,34.013841;-118.194362,34.007855;-118.155899,33.994865;-118.142965,33.990384;-118.130756,33.986383;-118.05986,33.915782;-117.987097,33.875687;-117.921479,33.868541;-117.908782,33.843937;-117.887646,33.805201;-117.857627,33.791507;-117.857552,33.788292;-117.805377,33.707544;-117.378855,33.191126;-117.806633,33.708542;-117.857436,33.789753;-117.857434,33.792933;-117.923834,33.86862;-117.988982,33.876139;-118.060235,33.916814;-118.082154,33.964781;-118.115752,33.981481;-118.144848,33.991155;-118.17866,34.002643;-118.195387,34.008305;-118.22466,34.018945;-118.227096,34.05886;-118.234136,34.054302&profile=rail'},
+                "Los Angeles - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Oceanside)', 'File': '[Metrolink] Orange County Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05528/-118.23411/standard&lonlats=-118.234152,34.054335;-118.226554,34.029461;-118.224896,34.018758;-118.212005,34.013841;-118.194362,34.007855;-118.155899,33.994865;-118.142965,33.990384;-118.130756,33.986383;-118.05986,33.915782;-117.987097,33.875687;-117.921479,33.868541;-117.908782,33.843937;-117.887646,33.805201;-117.857627,33.791507;-117.857552,33.788292;-117.805377,33.707544;-117.378855,33.191126;-117.806633,33.708542;-117.857436,33.789753;-117.857434,33.792933;-117.923834,33.86862;-117.988982,33.876139;-118.060235,33.916814;-118.082154,33.964781;-118.115752,33.981481;-118.144848,33.991155;-118.17866,34.002643;-118.195387,34.008305;-118.22466,34.018945;-118.227096,34.05886;-118.234136,34.054302&profile=rail'},
             },
         },
         "Riverside Line": {
             "Fantasy": {
-                "Los Angeles - Riverside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Riverside) [New]'},
+                "Los Angeles - Riverside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Riverside) [New]'},
             },
             "Present": {
-                "Los Angeles - Riverside": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Riverside) [Old]', 'File': '[Metrolink] Riverside Line', 'Link': 'https://brouter.damsy.net/latest/#map=19/34.05478/-118.23368/standard&lonlats=-118.234299,34.054298;-118.228002,34.040592;-118.224526,34.02497;-118.134093,34.007795;-118.124842,34.006951;-117.948092,34.009163;-117.831577,34.020609;-117.584074,34.041228;-117.405814,33.957163;-117.36917,33.976595;-117.476597,33.979012;-117.509133,34.009572;-117.585737,34.041907;-117.596776,34.045628;-117.830204,34.022352;-117.948284,34.009271;-118.059468,34.008772;-118.134769,34.007904;-118.227962,34.040798;-118.228882,34.050215;-118.234319,34.054293&profile=rail'},
+                "Los Angeles - Riverside": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Riverside) [Old]', 'File': '[Metrolink] Riverside Line', 'Link': 'https://brouter.damsy.net/latest/#map=19/34.05478/-118.23368/standard&lonlats=-118.234299,34.054298;-118.228002,34.040592;-118.224526,34.02497;-118.134093,34.007795;-118.124842,34.006951;-117.948092,34.009163;-117.831577,34.020609;-117.584074,34.041228;-117.405814,33.957163;-117.36917,33.976595;-117.476597,33.979012;-117.509133,34.009572;-117.585737,34.041907;-117.596776,34.045628;-117.830204,34.022352;-117.948284,34.009271;-118.059468,34.008772;-118.134769,34.007904;-118.227962,34.040798;-118.228882,34.050215;-118.234319,34.054293&profile=rail'},
             },
         },
         "San Bernardino Line": {
             "Fantasy": {
-                "Los Angeles - San Bernardino": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - San Bernardino)'},
+                "Los Angeles - San Bernardino": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - San Bernardino)'},
             },
             "Present": {
-                "Los Angeles - San Bernardino": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - San Bernardino)', 'File': '[Metrolink] San Bernardino Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05500/-118.23331/standard&lonlats=-118.23439,34.054325;-118.223351,34.056219;-118.005728,34.056775;-117.694967,34.093886;-117.502143,34.093362;-117.382843,34.096476;-117.294784,34.09965;-117.492213,34.093726;-117.49629,34.093606;-117.696796,34.093961;-117.75449,34.093663;-118.005931,34.056419;-118.035092,34.076554;-118.234401,34.054304&profile=rail'},
+                "Los Angeles - San Bernardino": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - San Bernardino)', 'File': '[Metrolink] San Bernardino Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05500/-118.23331/standard&lonlats=-118.23439,34.054325;-118.223351,34.056219;-118.005728,34.056775;-117.694967,34.093886;-117.502143,34.093362;-117.382843,34.096476;-117.294784,34.09965;-117.492213,34.093726;-117.49629,34.093606;-117.696796,34.093961;-117.75449,34.093663;-118.005931,34.056419;-118.035092,34.076554;-118.234401,34.054304&profile=rail'},
             },
         },
         "Temecula Line": {
             "Fantasy": {
-                "Riverside - Temecula": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Riverside - Temecula)'},
+                "Riverside - Temecula": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Riverside - Temecula)'},
             },
         },
         "Ventura County Line": {
             "Fantasy": {
-                "Los Angeles - Fillmore": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Fillmore)'},
-                "Los Angeles - Santa Barbara": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - Santa Barbara)'},
+                "Los Angeles - Fillmore": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Fillmore)'},
+                "Los Angeles - Santa Barbara": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - Santa Barbara)'},
             },
             "Present": {
-                "Los Angeles - East Ventura": {'Mode': 4, 'Stations': 'Los Angeles Metrolink (Union - East Ventura)', 'File': '[Metrolink] Ventura County Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/34.2464/-119.1912/standard&lonlats=-118.234499,34.054322;-118.225095,34.070218;-118.239123,34.099697;-118.264459,34.131927;-118.299767,34.171153;-118.319197,34.184551;-118.330232,34.1883;-118.431351,34.208298;-118.878754,34.284941;-119.176335,34.200126;-119.20394,34.250552;-119.176705,34.200747;-119.03399,34.215697;-118.878765,34.284741;-118.428862,34.207725;-118.3514,34.192401;-118.301055,34.171716;-118.265478,34.13372;-118.237755,34.097817;-118.226151,34.07537;-118.225197,34.070009;-118.234527,34.054303&profile=rail'},
+                "Los Angeles - East Ventura": {'Mode': 'Heavy Rail', 'Stations': 'Los Angeles Metrolink (Union - East Ventura)', 'File': '[Metrolink] Ventura County Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/34.2464/-119.1912/standard&lonlats=-118.234499,34.054322;-118.225095,34.070218;-118.239123,34.099697;-118.264459,34.131927;-118.299767,34.171153;-118.319197,34.184551;-118.330232,34.1883;-118.431351,34.208298;-118.878754,34.284941;-119.176335,34.200126;-119.20394,34.250552;-119.176705,34.200747;-119.03399,34.215697;-118.878765,34.284741;-118.428862,34.207725;-118.3514,34.192401;-118.301055,34.171716;-118.265478,34.13372;-118.237755,34.097817;-118.226151,34.07537;-118.225197,34.070009;-118.234527,34.054303&profile=rail'},
             },
         },
     },
     "Metrolink St. Louis": {
         "Blue Line": {
             "Fantasy": {
-                "Fairview - Shrewsbury": {'Mode': 7, 'Stations': 'St. Louis Metrolink (Fairview - Shrewsbury)'},
+                "Fairview - Shrewsbury": {'Mode': 'Light Rail', 'Stations': 'St. Louis Metrolink (Fairview - Shrewsbury)'},
             },
             "Present": {
-                "Fairview - Shrewsbury": {'Mode': 7, 'Stations': 'St. Louis Metrolink (Fairview - Shrewsbury)', 'File': '[STL Metrolink] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/38.59382/-90.04787/standard&lonlats=-90.319545,38.592768;-90.319489,38.595684;-90.335657,38.621213;-90.282844,38.647566;-90.160793,38.624134;-90.135709,38.627688;-90.047633,38.593231;-90.049245,38.596211;-90.160144,38.624641;-90.199894,38.622772;-90.218369,38.624867;-90.258189,38.635143;-90.346268,38.642706;-90.336279,38.62203;-90.319848,38.595503;-90.319628,38.592647&profile=rail'},
+                "Fairview - Shrewsbury": {'Mode': 'Light Rail', 'Stations': 'St. Louis Metrolink (Fairview - Shrewsbury)', 'File': '[STL Metrolink] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/38.59382/-90.04787/standard&lonlats=-90.319545,38.592768;-90.319489,38.595684;-90.335657,38.621213;-90.282844,38.647566;-90.160793,38.624134;-90.135709,38.627688;-90.047633,38.593231;-90.049245,38.596211;-90.160144,38.624641;-90.199894,38.622772;-90.218369,38.624867;-90.258189,38.635143;-90.346268,38.642706;-90.336279,38.62203;-90.319848,38.595503;-90.319628,38.592647&profile=rail'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Fairview - Mid America Airport": {'Mode': 7, 'Stations': 'St. Louis Metrolink (Airport - Mid America)'},
+                "Fairview - Mid America Airport": {'Mode': 'Light Rail', 'Stations': 'St. Louis Metrolink (Airport - Mid America)'},
             },
             "Present": {
-                "Fairview - Shiloh-Scott": {'Mode': 7, 'Stations': 'St. Louis Metrolink (Fairview - Shiloh)', 'File': '[STL Metrolink] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/38.53653/-89.88015/standard&lonlats=-90.36456,38.741352;-90.356326,38.735841;-90.30494,38.703928;-90.298197,38.667359;-90.282673,38.647268;-90.160863,38.624104;-90.135376,38.627348;-90.046885,38.592019;-90.008647,38.55393;-89.972888,38.520806;-89.919512,38.514771;-89.87808,38.537244;-89.879065,38.539021;-89.87775,38.535523;-90.046617,38.592061;-90.118253,38.621028;-90.16001,38.62475;-90.199964,38.622784;-90.217699,38.624695;-90.258216,38.635168;-90.318754,38.720487;-90.356991,38.736812;-90.364373,38.741373&profile=rail'},
+                "Fairview - Shiloh-Scott": {'Mode': 'Light Rail', 'Stations': 'St. Louis Metrolink (Fairview - Shiloh)', 'File': '[STL Metrolink] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/38.53653/-89.88015/standard&lonlats=-90.36456,38.741352;-90.356326,38.735841;-90.30494,38.703928;-90.298197,38.667359;-90.282673,38.647268;-90.160863,38.624104;-90.135376,38.627348;-90.046885,38.592019;-90.008647,38.55393;-89.972888,38.520806;-89.919512,38.514771;-89.87808,38.537244;-89.879065,38.539021;-89.87775,38.535523;-90.046617,38.592061;-90.118253,38.621028;-90.16001,38.62475;-90.199964,38.622784;-90.217699,38.624695;-90.258216,38.635168;-90.318754,38.720487;-90.356991,38.736812;-90.364373,38.741373&profile=rail'},
             },
         },
     },
     "Metrolinx": {
         "GO Barrie Line": {
             "Fantasy": {
-                "Union Station - Barrie": {'Mode': 4, 'Stations': 'Toronto GO (Union - Barrie)'},
+                "Union Station - Barrie": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Barrie)'},
             },
             "Present": {
-                "Union Station - Barrie": {'Mode': 4, 'Stations': 'Toronto GO (Union - Barrie) [Old]', 'File': '[Metrolinx] GO Barrie Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/43.64379/-79.38464/standard&lonlats=-79.378549,43.645309;-79.689192,44.373685;-79.378574,43.645371&profile=rail'},
+                "Union Station - Barrie": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Barrie) [Old]', 'File': '[Metrolinx] GO Barrie Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/43.64379/-79.38464/standard&lonlats=-79.378549,43.645309;-79.689192,44.373685;-79.378574,43.645371&profile=rail'},
             },
         },
         "GO Bolton Line": {
             "Fantasy": {
-                "Union Station - Bolton": {'Mode': 4, 'Stations': 'Toronto GO (Union - Bolton)'},
+                "Union Station - Bolton": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Bolton)'},
             },
         },
         "GO Kitchener Line": {
             "Fantasy": {
-                "Union Station - Kitchener": {'Mode': 4, 'Stations': 'Toronto GO (Union - Kitchener)'},
+                "Union Station - Kitchener": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Kitchener)'},
             },
             "Present": {
-                "Union Station - Kitchener": {'Mode': 4, 'Stations': 'Toronto GO (Union - Kitchener)', 'File': '[Metrolinx] GO Kitchener Line', 'Link': 'https://brouter.damsy.net/latest/#map=20/43.64511/-79.37892/standard&lonlats=-79.378543,43.645285;-79.513695,43.700586;-79.765736,43.686603;-80.458186,43.467423;-80.493956,43.455473;-80.479692,43.460169;-79.762448,43.687223;-79.509897,43.698568;-79.450341,43.657277;-79.37853,43.645255&profile=rail'},
+                "Union Station - Kitchener": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Kitchener)', 'File': '[Metrolinx] GO Kitchener Line', 'Link': 'https://brouter.damsy.net/latest/#map=20/43.64511/-79.37892/standard&lonlats=-79.378543,43.645285;-79.513695,43.700586;-79.765736,43.686603;-80.458186,43.467423;-80.493956,43.455473;-80.479692,43.460169;-79.762448,43.687223;-79.509897,43.698568;-79.450341,43.657277;-79.37853,43.645255&profile=rail'},
             },
         },
         "GO Lakeshore East Line": {
             "Fantasy": {
-                "Union Station - Oshawa": {'Mode': 4, 'Stations': 'Toronto GO (Union - Oshawa)'},
+                "Union Station - Oshawa": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Oshawa)'},
             },
             "Present": {
-                "Union Station - Oshawa": {'Mode': 4, 'Stations': 'Toronto GO (Union - Oshawa)', 'File': '[Metrolinx] GO Lakeshore East Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/43.6455/-79.3787/standard&lonlats=-79.382779,43.644216;-79.330661,43.674464;-79.274833,43.692631;-79.105189,43.821717;-79.102802,43.822905;-79.035097,43.84967;-78.936853,43.864547;-78.885063,43.870747;-78.905107,43.863994;-78.940276,43.865262;-79.031729,43.850522;-79.044335,43.847727;-79.086789,43.830655;-79.089085,43.829624;-79.099921,43.824458;-79.105865,43.821604;-79.199935,43.754697;-79.233506,43.738658;-79.256101,43.715425;-79.275944,43.692336;-79.301398,43.686068;-79.331288,43.674332;-79.34971,43.653532;-79.382771,43.644197&profile=rail'},
+                "Union Station - Oshawa": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Oshawa)', 'File': '[Metrolinx] GO Lakeshore East Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/43.6455/-79.3787/standard&lonlats=-79.382779,43.644216;-79.330661,43.674464;-79.274833,43.692631;-79.105189,43.821717;-79.102802,43.822905;-79.035097,43.84967;-78.936853,43.864547;-78.885063,43.870747;-78.905107,43.863994;-78.940276,43.865262;-79.031729,43.850522;-79.044335,43.847727;-79.086789,43.830655;-79.089085,43.829624;-79.099921,43.824458;-79.105865,43.821604;-79.199935,43.754697;-79.233506,43.738658;-79.256101,43.715425;-79.275944,43.692336;-79.301398,43.686068;-79.331288,43.674332;-79.34971,43.653532;-79.382771,43.644197&profile=rail'},
             },
         },
         "GO Lakeshore West Line": {
             "Fantasy": {
-                "Union Station - Hamilton Centre": {'Mode': 4, 'Stations': 'Toronto GO (Union - Hamilton)'},
-                "Union Station - Niagara Falls": {'Mode': 4, 'Stations': 'Toronto GO (Union - Niagara)'},
+                "Union Station - Hamilton Centre": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Hamilton)'},
+                "Union Station - Niagara Falls": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Niagara)'},
             },
             "Present": {
-                "Union Station - Hamilton Centre": {'Mode': 4, 'Stations': 'Toronto GO (Union - Hamilton) [Old]', 'File': '[Metrolinx] GO Lakeshore West Line (Hamilton)', 'Link': 'https://brouter.damsy.net/latest/#map=15/43.2602/-79.8743/standard&lonlats=-79.378211,43.645194;-79.385726,43.643537;-79.405752,43.639674;-79.41161,43.638059;-79.419125,43.63611;-79.437107,43.634483;-79.5466,43.591469;-79.723653,43.415601;-79.827792,43.329763;-79.85602,43.31239;-79.888796,43.288964;-79.890813,43.279951;-79.867009,43.252634;-79.888582,43.289151;-79.853273,43.313871;-79.807997,43.341726;-79.760098,43.380314;-79.722027,43.41687;-79.543848,43.592701;-79.415617,43.636821;-79.411175,43.638005;-79.405092,43.639686;-79.378199,43.645167&profile=rail'},
-                "Union Station - Niagara Falls": {'Mode': 4, 'Stations': 'Toronto GO (Union - Niagara) [Old]', 'File': '[Metrolinx] GO Lakeshore West Line (Niagara)', 'Link': 'https://brouter.damsy.net/latest/#map=17/43.64462/-79.38251/standard&lonlats=-79.378211,43.645194;-79.385726,43.643537;-79.405752,43.639674;-79.41161,43.638059;-79.419125,43.63611;-79.437107,43.634483;-79.5466,43.591469;-79.723653,43.415601;-79.827792,43.329763;-79.85602,43.31239;-79.888796,43.288964;-79.871437,43.268031;-79.854721,43.264108;-79.062515,43.108941;-79.794007,43.249856;-79.87214,43.268253;-79.888582,43.289151;-79.853273,43.313871;-79.807997,43.341726;-79.760098,43.380314;-79.722027,43.41687;-79.543848,43.592701;-79.415617,43.636821;-79.411175,43.638005;-79.405092,43.639686;-79.378199,43.645167&profile=rail'},
+                "Union Station - Hamilton Centre": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Hamilton) [Old]', 'File': '[Metrolinx] GO Lakeshore West Line (Hamilton)', 'Link': 'https://brouter.damsy.net/latest/#map=15/43.2602/-79.8743/standard&lonlats=-79.378211,43.645194;-79.385726,43.643537;-79.405752,43.639674;-79.41161,43.638059;-79.419125,43.63611;-79.437107,43.634483;-79.5466,43.591469;-79.723653,43.415601;-79.827792,43.329763;-79.85602,43.31239;-79.888796,43.288964;-79.890813,43.279951;-79.867009,43.252634;-79.888582,43.289151;-79.853273,43.313871;-79.807997,43.341726;-79.760098,43.380314;-79.722027,43.41687;-79.543848,43.592701;-79.415617,43.636821;-79.411175,43.638005;-79.405092,43.639686;-79.378199,43.645167&profile=rail'},
+                "Union Station - Niagara Falls": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Niagara) [Old]', 'File': '[Metrolinx] GO Lakeshore West Line (Niagara)', 'Link': 'https://brouter.damsy.net/latest/#map=17/43.64462/-79.38251/standard&lonlats=-79.378211,43.645194;-79.385726,43.643537;-79.405752,43.639674;-79.41161,43.638059;-79.419125,43.63611;-79.437107,43.634483;-79.5466,43.591469;-79.723653,43.415601;-79.827792,43.329763;-79.85602,43.31239;-79.888796,43.288964;-79.871437,43.268031;-79.854721,43.264108;-79.062515,43.108941;-79.794007,43.249856;-79.87214,43.268253;-79.888582,43.289151;-79.853273,43.313871;-79.807997,43.341726;-79.760098,43.380314;-79.722027,43.41687;-79.543848,43.592701;-79.415617,43.636821;-79.411175,43.638005;-79.405092,43.639686;-79.378199,43.645167&profile=rail'},
             },
         },
         "GO Milton Line": {
             "Fantasy": {
-                "Milton - Stouffville": {'Mode': 4, 'Stations': 'Toronto GO (Union - Milton)'},
+                "Milton - Stouffville": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Milton)'},
             },
             "Present": {
-                "Milton - Stouffville": {'Mode': 4, 'Stations': 'Toronto GO (Union - Milton)', 'File': '[Metrolinx] GO Milton Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/43.6469/-79.3877/standard&lonlats=-79.37824,43.64527;-79.395967,43.641347;-79.499795,43.665819;-79.5123,43.66259;-79.755351,43.598194;-79.868218,43.522959;-79.85146,43.5334;-79.710735,43.57694;-79.670582,43.567356;-79.538012,43.635104;-79.511683,43.662993;-79.393961,43.641766;-79.37823,43.645242&profile=rail'},
+                "Milton - Stouffville": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Milton)', 'File': '[Metrolinx] GO Milton Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/43.6469/-79.3877/standard&lonlats=-79.37824,43.64527;-79.395967,43.641347;-79.499795,43.665819;-79.5123,43.66259;-79.755351,43.598194;-79.868218,43.522959;-79.85146,43.5334;-79.710735,43.57694;-79.670582,43.567356;-79.538012,43.635104;-79.511683,43.662993;-79.393961,43.641766;-79.37823,43.645242&profile=rail'},
             },
         },
         "GO Peterborough Line": {
             "Fantasy": {
-                "Union Station - Peterborough": {'Mode': 4, 'Stations': 'Toronto GO (Union - Peterborough)'},
+                "Union Station - Peterborough": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Peterborough)'},
             },
         },
         "GO Richmond Hill Line": {
             "Fantasy": {
-                "Union Station - Bloomington Rd": {'Mode': 4, 'Stations': 'Toronto GO (Union - Bloomington)'},
+                "Union Station - Bloomington Rd": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Bloomington)'},
             },
             "Present": {
-                "Union Station - Richmond Hill": {'Mode': 4, 'Stations': 'Toronto GO (Union - Richmond Hill)', 'File': '[Metrolinx] GO Richmond Hill Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/43.64498/-79.38105/standard&lonlats=-79.382755,43.644158;-79.426819,43.875774;-79.421571,43.836441;-79.357553,43.756658;-79.360181,43.648812;-79.382747,43.644138&profile=rail'},
+                "Union Station - Richmond Hill": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Richmond Hill)', 'File': '[Metrolinx] GO Richmond Hill Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/43.64498/-79.38105/standard&lonlats=-79.382755,43.644158;-79.426819,43.875774;-79.421571,43.836441;-79.357553,43.756658;-79.360181,43.648812;-79.382747,43.644138&profile=rail'},
             },
         },
         "GO Stouffville Line": {
             "Fantasy": {
-                "Union Station - Stouffville": {'Mode': 4, 'Stations': 'Toronto GO (Union - Stouffville)'},
+                "Union Station - Stouffville": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Stouffville)'},
             },
             "Present": {
-                "Union Station - Stouffville": {'Mode': 4, 'Stations': 'Toronto GO (Union - Stouffville)', 'File': '[Metrolinx] GO Stouffville Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/43.64425/-79.38100/standard&lonlats=-79.382725,43.644078;-79.367257,43.647108;-79.341685,43.668295;-79.236649,43.991641;-79.342157,43.667972;-79.37467,43.645671;-79.382718,43.644061&profile=rail'},
+                "Union Station - Stouffville": {'Mode': 'Heavy Rail', 'Stations': 'Toronto GO (Union - Stouffville)', 'File': '[Metrolinx] GO Stouffville Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/43.64425/-79.38100/standard&lonlats=-79.382725,43.644078;-79.367257,43.647108;-79.341685,43.668295;-79.236649,43.991641;-79.342157,43.667972;-79.37467,43.645671;-79.382718,43.644061&profile=rail'},
             },
         },
         "Hazel McCallion Line": {
             "Fantasy": {
-                "Port Credit - Brampton": {'Mode': 7, 'Stations': 'Toronto Light Rail (Port Credit - Brampton)'},
+                "Port Credit - Brampton": {'Mode': 'Light Rail', 'Stations': 'Toronto Light Rail (Port Credit - Brampton)'},
             },
         },
         "U-P Express": {
             "Fantasy": {
-                "Union Station - Pearson Airport": {'Mode': 4, 'Stations': 'Toronto UP (Union - Pearson)'},
+                "Union Station - Pearson Airport": {'Mode': 'Heavy Rail', 'Stations': 'Toronto UP (Union - Pearson)'},
             },
             "Present": {
-                "Union Station - Pearson Airport": {'Mode': 4, 'Stations': 'Toronto UP (Union - Pearson)', 'File': '[Metrolinx] U-P Express', 'Link': 'https://brouter.damsy.net/latest/#map=13/43.6796/-79.5113/standard&lonlats=-79.382842,43.644391;-79.488954,43.688232;-79.513429,43.700353;-79.615404,43.6862;-79.613285,43.682809;-79.614755,43.686708;-79.560987,43.706298;-79.51005,43.698614;-79.495815,43.691487;-79.485338,43.686401;-79.450459,43.657257;-79.416175,43.640396;-79.382858,43.644422&profile=rail'},
+                "Union Station - Pearson Airport": {'Mode': 'Heavy Rail', 'Stations': 'Toronto UP (Union - Pearson)', 'File': '[Metrolinx] U-P Express', 'Link': 'https://brouter.damsy.net/latest/#map=13/43.6796/-79.5113/standard&lonlats=-79.382842,43.644391;-79.488954,43.688232;-79.513429,43.700353;-79.615404,43.6862;-79.613285,43.682809;-79.614755,43.686708;-79.560987,43.706298;-79.51005,43.698614;-79.495815,43.691487;-79.485338,43.686401;-79.450459,43.657257;-79.416175,43.640396;-79.382858,43.644422&profile=rail'},
             },
         },
     },
     "Milwaukee Hop": {
-        "M-Line": {
+        "L-Line": {
             "Fantasy": {
-                "Intermodal Station - Burns Commons": {'Mode': 8, 'Stations': 'Milwaukee Streetcar'},
+                "Downtown Loop": {'Mode': 'Streetcar', 'Stations': 'Milwaukee Streetcar (L-Line)'},
             },
             "Present": {
-                "Intermodal Station - Burns Commons": {'Mode': 8, 'Stations': 'Milwaukee Streetcar', 'File': '[Milwaukee Hop] M-Line'},
+                "Downtown Loop": {'Mode': 'Streetcar', 'Stations': 'Milwaukee Streetcar (L-Line)', 'File': '[Milwaukee Hop] L-Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/43.0381/-87.9037/standard&lonlats=-87.906858,43.035113;-87.905184,43.037733;-87.899777,43.036988;-87.904969,43.036241;-87.906461,43.039873;-87.908478,43.041323;-87.907652,43.035457;-87.90685,43.035035&profile=rail'},
+            },
+        },
+        "M-Line": {
+            "Fantasy": {
+                "Intermodal Station - Burns Commons": {'Mode': 'Streetcar', 'Stations': 'Milwaukee Streetcar (M-Line)'},
+            },
+            "Present": {
+                "Intermodal Station - Burns Commons": {'Mode': 'Streetcar', 'Stations': 'Milwaukee Streetcar (M-Line)', 'File': '[Milwaukee Hop] M-Line', 'Link': 'https://brouter.damsy.net/latest/#map=19/43.03507/-87.91502/standard&lonlats=-87.916178,43.035208;-87.914784,43.034619;-87.907727,43.034885;-87.906557,43.039763;-87.898929,43.048036;-87.896174,43.047776;-87.90189,43.048255;-87.908247,43.039685;-87.908596,43.035081;-87.916137,43.035208&profile=rail'},
             },
         },
     },
     "Muni": {
         "J": {
             "Fantasy": {
-                "Embarcadero - Holly Park": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)'},
+                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)'},
             },
             "Present": {
-                "Embarcadero - Holly Park": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)', 'File': '[Muni] J', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.76813/-122.42835/standard&lonlats=-122.396065,37.793589;-122.429141,37.769088;-122.429039,37.767149;-122.447093,37.722827;-122.447114,37.721115;-122.446672,37.720971;-122.444864,37.722781;-122.441747,37.726196;-122.395955,37.79351&profile=rail'},
+                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)', 'File': '[Muni] J', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.76813/-122.42835/standard&lonlats=-122.396065,37.793589;-122.429141,37.769088;-122.429039,37.767149;-122.447093,37.722827;-122.447114,37.721115;-122.446672,37.720971;-122.444864,37.722781;-122.441747,37.726196;-122.395955,37.79351&profile=rail'},
             },
         },
         "K": {
             "Fantasy": {
-                "Embarcadero - Balboa Park": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)'},
+                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)'},
             },
             "Present": {
-                "Embarcadero - Balboa Park": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)', 'File': '[Muni] K', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.72341/-122.44783/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470849,37.736466;-122.471761,37.732953;-122.446334,37.721183;-122.445001,37.722861;-122.447847,37.723067;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)', 'File': '[Muni] K', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.72341/-122.44783/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470849,37.736466;-122.471761,37.732953;-122.446334,37.721183;-122.445001,37.722861;-122.447847,37.723067;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
             },
         },
         "L": {
             "Fantasy": {
-                "Embarcadero - San Francisco Zoo": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)'},
+                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)'},
             },
             "Present": {
-                "Embarcadero - San Francisco Zoo": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)', 'File': '[Muni] L', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7678/-122.4264/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.478949,37.742943;-122.505691,37.736224;-122.504103,37.737547;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)', 'File': '[Muni] L', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7678/-122.4264/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.478949,37.742943;-122.505691,37.736224;-122.504103,37.737547;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
             },
         },
         "M": {
             "Fantasy": {
-                "Embarcadero - Oceanview": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)'},
+                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)'},
             },
             "Present": {
-                "Embarcadero - Oceanview": {'Mode': 7, 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)', 'File': '[Muni] M', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7588/-122.4208/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470887,37.736338;-122.475178,37.723309;-122.475801,37.72117;-122.446642,37.72065;-122.448571,37.718501;-122.474384,37.719404;-122.471203,37.735452;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)', 'File': '[Muni] M', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7588/-122.4208/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470887,37.736338;-122.475178,37.723309;-122.475801,37.72117;-122.446642,37.72065;-122.448571,37.718501;-122.474384,37.719404;-122.471203,37.735452;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
             },
         },
         "N": {
             "Fantasy": {
-                "Oracle Park - Ocean Beach": {'Mode': 7, 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)'},
+                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)'},
             },
             "Present": {
-                "Oracle Park - Ocean Beach": {'Mode': 7, 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)', 'File': '[Muni] N', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7771/-122.4575/standard&lonlats=-122.395165,37.775513;-122.393022,37.777054;-122.429892,37.769506;-122.47932,37.761708;-122.508658,37.76038;-122.509283,37.760039;-122.505586,37.760361;-122.427966,37.769438;-122.393524,37.776823;-122.395177,37.775521&profile=rail'},
+                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)', 'File': '[Muni] N', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7771/-122.4575/standard&lonlats=-122.395165,37.775513;-122.393022,37.777054;-122.429892,37.769506;-122.47932,37.761708;-122.508658,37.76038;-122.509283,37.760039;-122.505586,37.760361;-122.427966,37.769438;-122.393524,37.776823;-122.395177,37.775521&profile=rail'},
             },
         },
         "T": {
             "Fantasy": {
-                "Chinatown - Sunnydale": {'Mode': 7, 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)'},
+                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)'},
             },
             "Present": {
-                "Chinatown - Sunnydale": {'Mode': 7, 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)', 'File': '[Muni] T', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79310/-122.40856/standard&lonlats=-122.408387,37.795707;-122.407994,37.793219;-122.391563,37.774404;-122.393419,37.727501;-122.405041,37.709181;-122.400312,37.71323;-122.392523,37.729329;-122.388285,37.759055;-122.389696,37.773802;-122.393156,37.775755;-122.408446,37.7957&profile=rail'},
+                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)', 'File': '[Muni] T', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79310/-122.40856/standard&lonlats=-122.408387,37.795707;-122.407994,37.793219;-122.391563,37.774404;-122.393419,37.727501;-122.405041,37.709181;-122.400312,37.71323;-122.392523,37.729329;-122.388285,37.759055;-122.389696,37.773802;-122.393156,37.775755;-122.408446,37.7957&profile=rail'},
             },
         },
     },
     "NCTD": {
         "Coaster": {
             "Fantasy": {
-                "San Diego - Oceanside": {'Mode': 4, 'Stations': 'San Diego Coaster (Santa Fe - Oceanside)'},
+                "San Diego - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'San Diego Coaster (Santa Fe - Oceanside)'},
             },
             "Present": {
-                "San Diego - Oceanside": {'Mode': 4, 'Stations': 'San Diego Coaster (Santa Fe - Oceanside)', 'File': '[NCTD] Coaster', 'Link': 'https://brouter.damsy.net/latest/#map=16/32.7203/-117.1706/standard&lonlats=-117.170053,32.716382;-117.221729,32.857041;-117.271001,32.990942;-117.324487,33.119752;-117.330959,33.13262;-117.37845,33.190831;-117.370173,33.180681;-117.324522,33.119388;-117.22293,32.900291;-117.207577,32.782431;-117.171319,32.726064;-117.170075,32.716381&profile=rail'},
+                "San Diego - Oceanside": {'Mode': 'Heavy Rail', 'Stations': 'San Diego Coaster (Santa Fe - Oceanside)', 'File': '[NCTD] Coaster', 'Link': 'https://brouter.damsy.net/latest/#map=16/32.7203/-117.1706/standard&lonlats=-117.170053,32.716382;-117.221729,32.857041;-117.271001,32.990942;-117.324487,33.119752;-117.330959,33.13262;-117.37845,33.190831;-117.370173,33.180681;-117.324522,33.119388;-117.22293,32.900291;-117.207577,32.782431;-117.171319,32.726064;-117.170075,32.716381&profile=rail'},
             },
         },
         "Sprinter": {
             "Fantasy": {
-                "Oceansdide - Escondido": {'Mode': 7, 'Stations': 'San Diego Sprinter (Oceanside - Escondido)'},
+                "Oceansdide - Escondido": {'Mode': 'Light Rail', 'Stations': 'San Diego Sprinter (Oceanside - Escondido)'},
             },
             "Present": {
-                "Oceansdide - Escondido": {'Mode': 7, 'Stations': 'San Diego Sprinter (Oceanside - Escondido)', 'File': '[NCTD] Sprinter', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.19086/-117.37745/standard&lonlats=-117.378931,33.191554;-117.288526,33.204335;-117.245343,33.203388;-117.153187,33.134847;-117.091711,33.118175;-117.154158,33.13473;-117.378969,33.191531&profile=rail'},
+                "Oceansdide - Escondido": {'Mode': 'Light Rail', 'Stations': 'San Diego Sprinter (Oceanside - Escondido)', 'File': '[NCTD] Sprinter', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.19086/-117.37745/standard&lonlats=-117.378931,33.191554;-117.288526,33.204335;-117.245343,33.203388;-117.153187,33.134847;-117.091711,33.118175;-117.154158,33.13473;-117.378969,33.191531&profile=rail'},
             },
         },
     },
     "NFTA": {
         "Dunkirk Line": {
             "Fantasy": {
-                "Buffalo - Dunkirk": {'Mode': 4, 'Stations': 'Buffalo Regional Rail (Exchange - Dunkirk)'},
+                "Buffalo - Dunkirk": {'Mode': 'Heavy Rail', 'Stations': 'Buffalo Regional Rail (Exchange - Dunkirk)'},
             },
         },
         "Metro Rail": {
             "Fantasy": {
-                "Highmark Stadium - University": {'Mode': 7, 'Stations': 'Buffalo Metro Rail (Highmark Stadium - North Campus)'},
+                "Highmark Stadium - University": {'Mode': 'Light Rail', 'Stations': 'Buffalo Metro Rail (Highmark Stadium - North Campus)'},
             },
             "Present": {
-                "DL&W - University": {'Mode': 7, 'Stations': 'Buffalo Metro Rail (DL&W - South Campus)', 'File': '[NFTA] Metro Rail', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.87609/-78.87491/standard&lonlats=-78.819984,42.954915;-78.876823,42.878466;-78.877705,42.874372;-78.875425,42.873149;-78.87664,42.878415;-78.819668,42.954605&profile=rail'},
+                "DL&W - University": {'Mode': 'Light Rail', 'Stations': 'Buffalo Metro Rail (DL&W - South Campus)', 'File': '[NFTA] Metro Rail', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.87609/-78.87491/standard&lonlats=-78.819984,42.954915;-78.876823,42.878466;-78.877705,42.874372;-78.875425,42.873149;-78.87664,42.878415;-78.819668,42.954605&profile=rail'},
             },
         },
         "Niagara Line": {
             "Fantasy": {
-                "Buffalo - Niagara": {'Mode': 4, 'Stations': 'Buffalo Regional Rail (Exchange - Niagara)'},
+                "Buffalo - Niagara": {'Mode': 'Heavy Rail', 'Stations': 'Buffalo Regional Rail (Exchange - Niagara)'},
             },
         },
     },
     "NICTD": {
         "South Shore Line": {
             "Fantasy": {
-                "Lakeshore Corridor": {'Mode': 4, 'Stations': 'Chicago SSL (Millennium - South Bend)'},
-                "Monon Corridor": {'Mode': 4, 'Stations': 'Chicago SSL (Millennium - Dyer)'},
+                "Lakeshore Corridor": {'Mode': 'Heavy Rail', 'Stations': 'Chicago SSL (Millennium - South Bend)'},
+                "Monon Corridor": {'Mode': 'Heavy Rail', 'Stations': 'Chicago SSL (Millennium - Dyer)'},
             },
             "Present": {
-                "Lakeshore Corridor": {'Mode': 4, 'Stations': 'Chicago SSL (Millennium - South Bend)', 'File': '[NICTD] South Shore Line', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.8619/-87.0776/standard&lonlats=-87.622935,41.884312;-87.622855,41.876607;-87.617726,41.857588;-87.61204,41.686218;-87.611976,41.682424;-87.519504,41.631194;-87.437149,41.610204;-87.281946,41.595603;-87.267623,41.597536;-86.311587,41.700874;-87.200643,41.615322;-87.270214,41.597709;-87.441355,41.61046;-87.521564,41.631586;-87.611375,41.688841;-87.592599,41.770619;-87.591156,41.777188;-87.622855,41.877773;-87.622946,41.88432&profile=rail'},
+                "Lakeshore Corridor": {'Mode': 'Heavy Rail', 'Stations': 'Chicago SSL (Millennium - South Bend)', 'File': '[NICTD] South Shore Line (SBD)', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.8619/-87.0776/standard&lonlats=-87.622935,41.884312;-87.622855,41.876607;-87.617726,41.857588;-87.61204,41.686218;-87.611976,41.682424;-87.519504,41.631194;-87.437149,41.610204;-87.281946,41.595603;-87.267623,41.597536;-86.311587,41.700874;-87.200643,41.615322;-87.270214,41.597709;-87.441355,41.61046;-87.521564,41.631586;-87.611375,41.688841;-87.592599,41.770619;-87.591156,41.777188;-87.622855,41.877773;-87.622946,41.88432&profile=rail'},
+                "Monon Corridor": {'Mode': 'Heavy Rail', 'Stations': 'Chicago SSL (Millennium - Dyer)', 'File': '[NICTD] South Shore Line (Dyer)', 'Link': 'https://brouter.damsy.net/latest/#map=14/41.5433/-87.5159/standard&lonlats=-87.622935,41.884312;-87.622855,41.876607;-87.617726,41.857588;-87.61204,41.686218;-87.611976,41.682424;-87.598361,41.66458;-87.517921,41.522901;-87.535737,41.640792;-87.611375,41.688841;-87.592599,41.770619;-87.591156,41.777188;-87.622855,41.877773;-87.622946,41.88432&profile=rail'},
             },
         },
     },
     "NJ Transit": {
         "Atlantic City Line": {
             "Fantasy": {
-                "Philadelphia - Atlantic City": {'Mode': 3, 'Stations': '-Intercity LS (Philadelphia - Atlantic City)'},
+                "Philadelphia - Atlantic City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Philadelphia - Atlantic City)'},
             },
         },
         "Bergen Line": {
             "Fantasy": {
-                "Hoboken - Bergen": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Suffern via Bergen)'},
+                "Hoboken - Bergen": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Suffern via Bergen)'},
             },
         },
         "Gladstone Branch": {
             "Fantasy": {
-                "Hoboken - Gladstone": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Gladstone)'},
+                "Hoboken - Gladstone": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Gladstone)'},
             },
         },
         "Glassboro Camden Line": {
             "Fantasy": {
-                "Camden - Glassboro": {'Mode': 7, 'Stations': 'Camden Light Rail (Camden - Glassboro)'},
+                "Camden - Glassboro": {'Mode': 'Light Rail', 'Stations': 'Camden Light Rail (Camden - Glassboro)'},
             },
         },
         "Hudson-Bergen Light Rail": {
             "Fantasy": {
-                "Hoboken Terminal - 8th Street": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - 8th St)'},
-                "Hoboken Terminal - Englewood": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Englewood)'},
-                "Hoboken Terminal - Hawthorne": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Hawthorne)'},
-                "Newark - Englewood": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Newark - Englewood)'},
+                "Hoboken Terminal - 8th Street": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - 8th St)'},
+                "Hoboken Terminal - Englewood": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Englewood)'},
+                "Hoboken Terminal - Hawthorne": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Hawthorne)'},
+                "Newark - Englewood": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Newark - Englewood)'},
             },
             "Present": {
-                "Hoboken Terminal - 8th Street": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - 8th St)', 'File': '[NJ Transit] HBLR Hoboken - 8th', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.65467/-74.12765/standard&lonlats=-74.02921,40.734084;-74.031388,40.733739;-74.036973,40.732832;-74.044912,40.714692;-74.060801,40.707661;-74.071417,40.703135;-74.090257,40.690126;-74.130587,40.654328;-74.116318,40.661409;-74.090177,40.6901;-74.059551,40.70819;-74.034778,40.720746;-74.036753,40.73286;-74.031968,40.733462;-74.029149,40.734062&profile=rail'},
-                "Hoboken Terminal - Tonnelle Ave": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Tonnelle Ave)', 'File': '[NJ Transit] HBLR Hoboken - Tonnelle', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78626/-74.02839/standard&lonlats=-74.029275,40.734052;-74.031377,40.733722;-74.036758,40.73384;-74.037428,40.750663;-74.013433,40.774188;-74.028883,40.785716;-74.031522,40.78772;-74.027574,40.784895;-74.037675,40.750679;-74.043029,40.741197;-74.04224,40.735612;-74.031997,40.73347;-74.029143,40.73408&profile=rail'},
-                "West Side Ave - Tonnelle Ave": {'Mode': 7, 'Stations': 'Hudson-Bergen Light Rail (West Side Ave - Tonnelle Ave)', 'File': '[NJ Transit] HBLR West Side - Tonnelle', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78596/-74.02720/standard&lonlats=-74.087575,40.714728;-74.044113,40.714505;-74.036704,40.733263;-74.038721,40.734454;-74.037412,40.750646;-74.013455,40.774196;-74.028695,40.785615;-74.031512,40.787717;-74.026941,40.784562;-74.03767,40.750598;-74.043233,40.740608;-74.042262,40.73556;-74.035578,40.720807;-74.044837,40.714716;-74.063891,40.708873;-74.082554,40.713475;-74.087763,40.714818&profile=rail'},
+                "Hoboken Terminal - 8th Street": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - 8th St)', 'File': '[NJ Transit] HBLR Hoboken - 8th', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.65467/-74.12765/standard&lonlats=-74.02921,40.734084;-74.031388,40.733739;-74.036973,40.732832;-74.044912,40.714692;-74.060801,40.707661;-74.071417,40.703135;-74.090257,40.690126;-74.130587,40.654328;-74.116318,40.661409;-74.090177,40.6901;-74.059551,40.70819;-74.034778,40.720746;-74.036753,40.73286;-74.031968,40.733462;-74.029149,40.734062&profile=rail'},
+                "Hoboken Terminal - Tonnelle Ave": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (Hoboken Terminal - Tonnelle Ave)', 'File': '[NJ Transit] HBLR Hoboken - Tonnelle', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78626/-74.02839/standard&lonlats=-74.029275,40.734052;-74.031377,40.733722;-74.036758,40.73384;-74.037428,40.750663;-74.013433,40.774188;-74.028883,40.785716;-74.031522,40.78772;-74.027574,40.784895;-74.037675,40.750679;-74.043029,40.741197;-74.04224,40.735612;-74.031997,40.73347;-74.029143,40.73408&profile=rail'},
+                "West Side Ave - Tonnelle Ave": {'Mode': 'Light Rail', 'Stations': 'Hudson-Bergen Light Rail (West Side Ave - Tonnelle Ave)', 'File': '[NJ Transit] HBLR West Side - Tonnelle', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78596/-74.02720/standard&lonlats=-74.087575,40.714728;-74.044113,40.714505;-74.036704,40.733263;-74.038721,40.734454;-74.037412,40.750646;-74.013455,40.774196;-74.028695,40.785615;-74.031512,40.787717;-74.026941,40.784562;-74.03767,40.750598;-74.043233,40.740608;-74.042262,40.73556;-74.035578,40.720807;-74.044837,40.714716;-74.063891,40.708873;-74.082554,40.713475;-74.087763,40.714818&profile=rail'},
             },
         },
         "Main Line": {
             "Fantasy": {
-                "Hoboken - Suffern": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Suffern via Clifton)'},
+                "Hoboken - Suffern": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Suffern via Clifton)'},
             },
         },
         "Meadowlands Line": {
             "Fantasy": {
-                "Hoboken - Meadowlands": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Meadowlands)'},
+                "Hoboken - Meadowlands": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Meadowlands)'},
             },
         },
         "Montclair-Boonton Line": {
             "Fantasy": {
-                "Hoboken - Hackettstown": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Hackettstown East)'},
+                "Hoboken - Hackettstown": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Hackettstown East)'},
             },
         },
         "Morris and Essex Line": {
             "Fantasy": {
-                "Hoboken - Hackettstown": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Hackettstown West)'},
-                "New York - Hackettstown": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Hackettstown West)'},
+                "Hoboken - Hackettstown": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Hackettstown West)'},
+                "New York - Hackettstown": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Hackettstown West)'},
             },
         },
         "Newark City Subway": {
             "Fantasy": {
-                "Penn Station - Broad St Station": {'Mode': 7, 'Stations': 'Newark Light Rail (Penn Station - Broad St)'},
+                "Penn Station - Broad St Station": {'Mode': 'Light Rail', 'Stations': 'Newark Light Rail (Penn Station - Broad St)'},
             },
         },
         "Newark Light Rail": {
             "Fantasy": {
-                "Penn Station - Grove Street": {'Mode': 7, 'Stations': 'Newark Light Rail (Penn Station - Grove Street)'},
+                "Penn Station - Grove Street": {'Mode': 'Light Rail', 'Stations': 'Newark Light Rail (Penn Station - Grove Street)'},
             },
         },
         "North Jersey Coast Line": {
             "Fantasy": {
-                "New York - Bay Head": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Bay Head)'},
+                "New York - Bay Head": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Bay Head)'},
             },
         },
         "Northeast Corridor Line": {
             "Fantasy": {
-                "New York - Trenton": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - Trenton)'},
+                "New York - Trenton": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - Trenton)'},
             },
         },
         "Pascack Valley Line": {
             "Fantasy": {
-                "Hoboken - Spring Valley": {'Mode': 4, 'Stations': 'New York Regional Rail (Hoboken - Spring Valley)'},
+                "Hoboken - Spring Valley": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Hoboken - Spring Valley)'},
             },
         },
         "Princeton Dinky": {
             "Fantasy": {
-                "New York - Trenton": {'Mode': 4, 'Stations': 'Princeton Dinky (Princeton Junction - Princeton University)'},
+                "New York - Trenton": {'Mode': 'Heavy Rail', 'Stations': 'Princeton Dinky (Princeton Junction - Princeton University)'},
             },
         },
         "Raritan Valley Line": {
             "Fantasy": {
-                "New York - High Bridge": {'Mode': 4, 'Stations': 'New York Regional Rail (Penn Station - High Bridge)'},
+                "New York - High Bridge": {'Mode': 'Heavy Rail', 'Stations': 'New York Regional Rail (Penn Station - High Bridge)'},
             },
         },
         "River Line": {
             "Fantasy": {
-                "Camden - Trenton": {'Mode': 7, 'Stations': 'Camden Light Rail (Camden - Trenton)'},
+                "Camden - Trenton": {'Mode': 'Light Rail', 'Stations': 'Camden Light Rail (Camden - Trenton)'},
+            },
+            "Present": {
+                "Camden - Trenton": {'Mode': 'Light Rail', 'Stations': 'Camden Light Rail (Camden - Trenton)', 'File': '[NJ Transit] River Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/40.0605/-74.9529/standard&lonlats=-74.754827,40.218567;-74.756714,40.215335;-74.754769,40.206885;-74.805458,40.099847;-74.870013,40.074443;-74.94983,40.048848;-74.991651,40.02165;-75.129334,39.94176;-75.128308,39.940562;-75.12927,39.94212;-75.120977,39.943613;-75.053755,39.983852;-74.741208,40.124847;-74.75666,40.215753;-74.755009,40.218549&profile=rail'},
             },
         },
     },
     "OC Transpo": {
         "O-Train Line 1": {
             "Fantasy": {
-                "Trim - Algonquin": {'Mode': 6, 'Stations': 'Ottawa O-Train (Trim - Algonquin)'},
+                "Trim - Algonquin": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Trim - Algonquin)'},
             },
             "Present": {
-                "Blair - Tunney's Pasture": {'Mode': 6, 'Stations': 'Ottawa O-Train (Blair - Tunney)', 'File': '[OC Transpo] O-Train Line 1', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.4135/-75.6718/standard&lonlats=-75.608066,45.431369;-75.643315,45.419344;-75.684417,45.421665;-75.701796,45.420157;-75.73421,45.40422;-75.735723,45.403546;-75.732788,45.40468;-75.70172,45.420116;-75.684493,45.421614;-75.658212,45.415341;-75.610941,45.42946;-75.608114,45.431402&profile=rail'},
+                "Blair - Tunney's Pasture": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Blair - Tunney)', 'File': '[OC Transpo] O-Train Line 1', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.4135/-75.6718/standard&lonlats=-75.608066,45.431369;-75.643315,45.419344;-75.684417,45.421665;-75.701796,45.420157;-75.73421,45.40422;-75.735723,45.403546;-75.732788,45.40468;-75.70172,45.420116;-75.684493,45.421614;-75.658212,45.415341;-75.610941,45.42946;-75.608114,45.431402&profile=rail'},
             },
         },
         "O-Train Line 2": {
             "Fantasy": {
-                "Bayview - Limebank": {'Mode': 6, 'Stations': 'Ottawa O-Train (Bayview - Limebank)'},
+                "Bayview - Limebank": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Bayview - Limebank)'},
             },
             "Present": {
-                "Bayview - Limebank": {'Mode': 6, 'Stations': 'Ottawa O-Train (Bayview - Limebank)', 'File': '[OC Transpo] O-Train Line 2', 'Link': 'https://brouter.damsy.net/latest/#map=17/45.40801/-75.71921/standard&lonlats=-75.722373,45.409531;-75.721115,45.408597;-75.655375,45.353465;-75.66547,45.278012;-75.667219,45.277332;-75.661007,45.27964;-75.655568,45.35399;-75.719748,45.407955;-75.72251,45.409527&profile=rail'},
+                "Bayview - Limebank": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Bayview - Limebank)', 'File': '[OC Transpo] O-Train Line 2', 'Link': 'https://brouter.damsy.net/latest/#map=17/45.40801/-75.71921/standard&lonlats=-75.722373,45.409531;-75.721115,45.408597;-75.655375,45.353465;-75.66547,45.278012;-75.667219,45.277332;-75.661007,45.27964;-75.655568,45.35399;-75.719748,45.407955;-75.72251,45.409527&profile=rail'},
             },
         },
         "O-Train Line 3": {
             "Fantasy": {
-                "Trim - Moodie": {'Mode': 6, 'Stations': 'Ottawa O-Train (Trim - Moodie)'},
+                "Trim - Moodie": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Trim - Moodie)'},
             },
         },
         "O-Train Line 4": {
             "Fantasy": {
-                "Bayview - Airport": {'Mode': 6, 'Stations': 'Ottawa O-Train (Bayview - Airport)'},
+                "Bayview - Airport": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (Bayview - Airport)'},
             },
             "Present": {
-                "South Keys - Airport": {'Mode': 6, 'Stations': 'Ottawa O-Train (South Keys - Airport)', 'File': '[OC Transpo] O-Train Line 4', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.3520/-75.6644/standard&lonlats=-75.655739,45.353661;-75.669086,45.323291;-75.65578,45.353649&profile=rail'},
+                "South Keys - Airport": {'Mode': 'Light Metro', 'Stations': 'Ottawa O-Train (South Keys - Airport)', 'File': '[OC Transpo] O-Train Line 4', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.3520/-75.6644/standard&lonlats=-75.655739,45.353661;-75.669086,45.323291;-75.65578,45.353649&profile=rail'},
             },
         },
     },
     "ORD Airport": {
         "O'Hare ATS": {
             "Fantasy": {
-                "ORD Airport": {'Mode': 9, 'Stations': 'Chicago Peoplemover (ORD Airport)'},
+                "ORD Airport": {'Mode': 'Peoplemover', 'Stations': 'Chicago Peoplemover (ORD Airport)'},
             },
         },
     },
     "PATCO": {
         "Speedline": {
             "Fantasy": {
-                "Locust St - Ashland": {'Mode': 5, 'Stations': 'Philadelphia PATCO (Locust St - Ashland)'},
+                "Locust St - Ashland": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia PATCO (Locust St - Ashland)'},
             },
         },
     },
     "PATH": {
         "Blue Line": {
             "Fantasy": {
-                "33 St - Hoboken Terminal": {'Mode': 5, 'Stations': 'New York PATH (33 St - Hoboken)'},
+                "33 St - Hoboken Terminal": {'Mode': 'Heavy Metro', 'Stations': 'New York PATH (33 St - Hoboken)'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "World Trade Center - Hoboken Terminal": {'Mode': 5, 'Stations': 'New York PATH (WTC - Hoboken)'},
+                "World Trade Center - Hoboken Terminal": {'Mode': 'Heavy Metro', 'Stations': 'New York PATH (WTC - Hoboken)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "World Trade Center - Newark Airport": {'Mode': 5, 'Stations': 'New York PATH (WTC - Newark)'},
+                "World Trade Center - Newark Airport": {'Mode': 'Heavy Metro', 'Stations': 'New York PATH (WTC - Newark)'},
             },
         },
         "Yellow Line": {
             "Fantasy": {
-                "33 St - Journal Square": {'Mode': 5, 'Stations': 'New York PATH (33 St - Journal Square)'},
+                "33 St - Journal Square": {'Mode': 'Heavy Metro', 'Stations': 'New York PATH (33 St - Journal Square)'},
             },
         },
     },
     "PHX Airport": {
         "PHX Sky Train": {
             "Fantasy": {
-                "PHX Airport": {'Mode': 9, 'Stations': 'Phoenix Peoplemover (PHX Airport)'},
+                "PHX Airport": {'Mode': 'Peoplemover', 'Stations': 'Phoenix Peoplemover (PHX Airport)'},
             },
             "Present": {
-                "PHX Airport": {'Mode': 9, 'Stations': 'Phoenix Peoplemover (PHX Airport)', 'File': '[PHX] Sky Train'},
+                "PHX Airport": {'Mode': 'Peoplemover', 'Stations': 'Phoenix Peoplemover (PHX Airport)', 'File': '[PHX] Sky Train'},
             },
         },
     },
     "PRT": {
         "Airport Line": {
             "Fantasy": {
-                "Union Station - PGH Airport": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Airport)'},
+                "Union Station - PGH Airport": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Airport)'},
             },
         },
         "Arden Line": {
             "Fantasy": {
-                "Union Station - Arden": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Arden)'},
+                "Union Station - Arden": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Arden)'},
             },
         },
         "Blue Line": {
             "Fantasy": {
-                "Allegheny - South Hills Village": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - East)'},
+                "Allegheny - South Hills Village": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - East)'},
             },
             "Present": {
-                "Allegheny - South Hills Village": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - East)', 'File': '[PRT] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.34091/-80.04909/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.010746,40.417192;-80.016727,40.366476;-80.020487,40.36561;-80.029591,40.358939;-80.028679,40.354672;-80.029736,40.351004;-80.05343,40.339258;-80.047556,40.341719;-80.028421,40.351985;-80.027826,40.353102;-80.028888,40.356016;-80.016217,40.366599;-79.99904,40.381752;-80.010477,40.416915;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
+                "Allegheny - South Hills Village": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - East)', 'File': '[PRT] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.34091/-80.04909/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.010746,40.417192;-80.016727,40.366476;-80.020487,40.36561;-80.029591,40.358939;-80.028679,40.354672;-80.029736,40.351004;-80.05343,40.339258;-80.047556,40.341719;-80.028421,40.351985;-80.027826,40.353102;-80.028888,40.356016;-80.016217,40.366599;-79.99904,40.381752;-80.010477,40.416915;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
             },
         },
         "Cecil Line": {
             "Fantasy": {
-                "Union Station - Cecil": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Cecil)'},
+                "Union Station - Cecil": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Cecil)'},
             },
         },
         "Greensburg Line": {
             "Fantasy": {
-                "Union Station - Greensburg": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Greensburg)'},
+                "Union Station - Greensburg": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Greensburg)'},
             },
         },
         "Maysfield Line": {
             "Fantasy": {
-                "Union Station - West Maysfield": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - West Maysfield)'},
+                "Union Station - West Maysfield": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - West Maysfield)'},
             },
         },
         "McKeesport Line": {
             "Fantasy": {
-                "Union Station - Blaine Hill": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Blaine Hill)'},
-                "Union Station - Versailles": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Versailles)'},
+                "Union Station - Blaine Hill": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Blaine Hill)'},
+                "Union Station - Versailles": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Versailles)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Allegheny - South Hills Village": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - West)'},
+                "Allegheny - South Hills Village": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - West)'},
             },
             "Present": {
-                "Allegheny - South Hills Village": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - West)', 'File': '[PRT] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.3403/-80.0465/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.012001,40.417069;-80.014865,40.411474;-80.031522,40.401336;-80.043683,40.381426;-80.029591,40.358939;-80.028679,40.354672;-80.029736,40.351004;-80.05343,40.339258;-80.047556,40.341719;-80.028421,40.351985;-80.027826,40.353102;-80.028888,40.356016;-80.013036,40.411515;-80.011845,40.416869;-80.008036,40.420362;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
+                "Allegheny - South Hills Village": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - South Hills Village - West)', 'File': '[PRT] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.3403/-80.0465/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.012001,40.417069;-80.014865,40.411474;-80.031522,40.401336;-80.043683,40.381426;-80.029591,40.358939;-80.028679,40.354672;-80.029736,40.351004;-80.05343,40.339258;-80.047556,40.341719;-80.028421,40.351985;-80.027826,40.353102;-80.028888,40.356016;-80.013036,40.411515;-80.011845,40.416869;-80.008036,40.420362;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Allegheny - Library": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - Library)'},
+                "Allegheny - Library": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - Library)'},
             },
             "Present": {
-                "Allegheny - Library": {'Mode': 7, 'Stations': 'Pittsburgh Light Rail (Allegheny - Library)', 'File': '[PRT] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.28714/-80.02288/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.010746,40.417192;-80.016727,40.366476;-80.020487,40.36561;-80.029591,40.358939;-80.028679,40.354672;-80.030701,40.328884;-80.031404,40.314119;-80.032477,40.304284;-80.021842,40.287248;-80.020333,40.286945;-80.021364,40.287207;-80.030626,40.314818;-80.027863,40.353106;-80.028888,40.356016;-80.016217,40.366599;-79.99904,40.381752;-80.010477,40.416915;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
+                "Allegheny - Library": {'Mode': 'Light Rail', 'Stations': 'Pittsburgh Light Rail (Allegheny - Library)', 'File': '[PRT] Silver Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.28714/-80.02288/standard&lonlats=-80.018382,40.447721;-80.016507,40.447976;-79.999303,40.442007;-79.996068,40.436402;-80.010746,40.417192;-80.016727,40.366476;-80.020487,40.36561;-80.029591,40.358939;-80.028679,40.354672;-80.030701,40.328884;-80.031404,40.314119;-80.032477,40.304284;-80.021842,40.287248;-80.020333,40.286945;-80.021364,40.287207;-80.030626,40.314818;-80.027863,40.353106;-80.028888,40.356016;-80.016217,40.366599;-79.99904,40.381752;-80.010477,40.416915;-80.00271,40.431306;-79.996642,40.435254;-79.994904,40.43907;-79.999043,40.441942;-80.012956,40.448176;-80.018366,40.447665&profile=rail'},
             },
         },
         "Tarentum Line": {
             "Fantasy": {
-                "Union Station - Tarentum": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Tarentum)'},
+                "Union Station - Tarentum": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Tarentum)'},
             },
         },
         "Washington Line": {
             "Fantasy": {
-                "Union Station - Washington": {'Mode': 4, 'Stations': 'Pittsburgh Regional Rail (Union - Washington)'},
+                "Union Station - Washington": {'Mode': 'Heavy Rail', 'Stations': 'Pittsburgh Regional Rail (Union - Washington)'},
             },
         },
     },
     "Port Authority of NY-NJ": {
         "AirTrain Newark": {
             "Fantasy": {
-                "EWR Airport": {'Mode': 9, 'Stations': 'Newark Peoplemover (EWR Airport)'},
+                "EWR Airport": {'Mode': 'Peoplemover', 'Stations': 'Newark Peoplemover (EWR Airport)'},
             },
         },
         "JFK AirTrain": {
             "Fantasy": {
-                "JFK - Howard Beach": {'Mode': 9, 'Stations': 'New York Peoplemover (JFK Airport 1)'},
-                "JFK - Jamaica": {'Mode': 9, 'Stations': 'New York Peoplemover (JFK Airport 2)'},
+                "JFK - Howard Beach": {'Mode': 'Peoplemover', 'Stations': 'New York Peoplemover (JFK Airport 1)'},
+                "JFK - Jamaica": {'Mode': 'Peoplemover', 'Stations': 'New York Peoplemover (JFK Airport 2)'},
             },
         },
         "LGA AirTrain": {
             "Fantasy": {
-                "LGA Airport": {'Mode': 9, 'Stations': 'New York Peoplemover (LGA Airport)'},
+                "LGA Airport": {'Mode': 'Peoplemover', 'Stations': 'New York Peoplemover (LGA Airport)'},
             },
         },
     },
     "REM": {
         "Ligne A": {
             "Fantasy": {
-                "Brossard - Deux-Montagnes": {'Mode': 6, 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)'},
+                "Brossard - Deux-Montagnes": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)'},
             },
             "Present": {
-                "Brossard - Deux-Montagnes": {'Mode': 6, 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)', 'File': '[REM] Ligne A'},
+                "Brossard - Deux-Montagnes": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)', 'File': '[REM] Ligne A'},
             },
         },
         "Ligne B": {
             "Fantasy": {
-                "Brossard - Sainte-Anne-De-Bellevue": {'Mode': 6, 'Stations': 'Montréal REM (Brossard - Sainte-Anne-De-Bellevue)'},
+                "Brossard - Sainte-Anne-De-Bellevue": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Sainte-Anne-De-Bellevue)'},
             },
         },
         "Ligne C": {
             "Fantasy": {
-                "Brossard - Aéroport": {'Mode': 6, 'Stations': 'Montréal REM (Brossard - Aéroport)'},
+                "Brossard - Aéroport": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Aéroport)'},
             },
         },
     },
     "RIPTA": {
         "Regional": {
             "Fantasy": {
-                "Attleboro - Providence - New London": {'Mode': 4, 'Stations': 'Providence Regional Rail (Attleboro - New London)'},
+                "Attleboro - Providence - New London": {'Mode': 'Heavy Rail', 'Stations': 'Providence Regional Rail (Attleboro - New London)'},
             },
         },
     },
     "RTASM": {
         "Ann Arbor Line": {
             "Fantasy": {
-                "Detroit - Ann Arbor": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Ann Arbor)', 'File': '[RTASM] Ann Arbor Line'},
+                "Detroit - Ann Arbor": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Ann Arbor)', 'File': '[RTASM] Ann Arbor Line'},
             },
         },
         "Belleville Line": {
             "Fantasy": {
-                "Detroit - Belleville": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Belleville)'},
+                "Detroit - Belleville": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Belleville)'},
             },
         },
         "Highland Line": {
             "Fantasy": {
-                "Detroit - Highland (North)": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Highland North)'},
-                "Detroit - Highland (South)": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Highland South)'},
+                "Detroit - Highland (North)": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Highland North)'},
+                "Detroit - Highland (South)": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Highland South)'},
             },
         },
         "Howell Line": {
             "Fantasy": {
-                "Detroit - Howell": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Howell)'},
+                "Detroit - Howell": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Howell)'},
             },
         },
         "International Shuttle": {
             "Fantasy": {
-                "Detroit - Windsor": {'Mode': 4, 'Stations': 'Detroit Regional Rail (International Shuttle)', 'File': '[RTASM] International Shuttle'},
+                "Detroit - Windsor": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (International Shuttle)', 'File': '[RTASM] International Shuttle'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "Detroit - Highland Park": {'Mode': 5, 'Stations': 'Detroit Subway (Woodward)'},
+                "Detroit - Highland Park": {'Mode': 'Heavy Metro', 'Stations': 'Detroit Subway (Woodward)'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Dearborn - Outer Drive": {'Mode': 5, 'Stations': 'Detroit Subway (Michigan-Gratiot)'},
+                "Dearborn - Outer Drive": {'Mode': 'Heavy Metro', 'Stations': 'Detroit Subway (Michigan-Gratiot)'},
             },
         },
         "Line 3": {
             "Fantasy": {
-                "Dearborn Hospital - Grosse Pointe Park": {'Mode': 5, 'Stations': 'Detroit Subway (Fort-Jefferson)'},
+                "Dearborn Hospital - Grosse Pointe Park": {'Mode': 'Heavy Metro', 'Stations': 'Detroit Subway (Fort-Jefferson)'},
             },
         },
         "New Haven Line": {
             "Fantasy": {
-                "Detroit - New Haven": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - New Haven)'},
+                "Detroit - New Haven": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - New Haven)'},
             },
         },
         "Pontiac Line": {
             "Fantasy": {
-                "Detroit - Pontiac": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Pontiac)'},
+                "Detroit - Pontiac": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Pontiac)'},
             },
         },
         "QLINE": {
             "Fantasy": {
-                "Congress Street - Grand Boulevard": {'Mode': 8, 'Stations': 'Detroit QLINE', 'File': '[RTASM] QLINE'},
+                "Congress Street - Grand Boulevard": {'Mode': 'Streetcar', 'Stations': 'Detroit QLINE', 'File': '[RTASM] QLINE'},
             },
             "Present": {
-                "Congress Street - Grand Boulevard": {'Mode': 8, 'Stations': 'Detroit QLINE', 'File': '[RTASM] QLINE', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.33177/-83.04711/standard&lonlats=-83.045463,42.329759;-83.04603,42.33173;-83.073552,42.37072;-83.073535,42.370508;-83.047301,42.331439;-83.045526,42.329733&profile=rail'},
+                "Congress Street - Grand Boulevard": {'Mode': 'Streetcar', 'Stations': 'Detroit QLINE', 'File': '[RTASM] QLINE', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.33177/-83.04711/standard&lonlats=-83.045463,42.329759;-83.04603,42.33173;-83.073552,42.37072;-83.073535,42.370508;-83.047301,42.331439;-83.045526,42.329733&profile=rail'},
             },
         },
         "Toledo Line": {
             "Fantasy": {
-                "Detroit - Toledo": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Toledo)'},
+                "Detroit - Toledo": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Toledo)'},
             },
         },
         "Utica Line": {
             "Fantasy": {
-                "Detroit - Utica": {'Mode': 4, 'Stations': 'Detroit Regional Rail (Central - Utica)'},
+                "Detroit - Utica": {'Mode': 'Heavy Rail', 'Stations': 'Detroit Regional Rail (Central - Utica)'},
             },
         },
     },
     "RTC": {
         "Blue Line": {
             "Fantasy": {
-                "Downtown - Airport": {'Mode': 5, 'Stations': 'Las Vegas Metro (Downtown - Airport)', 'File': '[RTC] Blue Line'},
+                "Downtown - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Las Vegas Metro (Downtown - Airport)', 'File': '[RTC] Blue Line'},
             },
         },
         "Centennial-Boulder Line": {
             "Fantasy": {
-                "Centennial Hills - Henderson": {'Mode': 6, 'Stations': 'Las Vegas Light Metro (Centennial/Boulder Line)', 'File': '[RTC] Centennial-Boulder Line'},
+                "Centennial Hills - Henderson": {'Mode': 'Light Metro', 'Stations': 'Las Vegas Light Metro (Centennial/Boulder Line)', 'File': '[RTC] Centennial-Boulder Line'},
             },
         },
         "Charleston Line": {
             "Fantasy": {
-                "Summerlin - Nellis Blvd": {'Mode': 7, 'Stations': 'Las Vegas Light Rail (Charleston Line)', 'File': '[RTC] Charleston Line'},
+                "Summerlin - Nellis Blvd": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Charleston Line)', 'File': '[RTC] Charleston Line'},
             },
         },
         "Flamingo Line": {
             "Fantasy": {
-                "Hualapai Wy - Boulder Hwy": {'Mode': 7, 'Stations': 'Las Vegas Light Rail (Flamingo Line)'},
+                "Hualapai Wy - Boulder Hwy": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Flamingo Line)'},
             },
         },
         "Maryland Line": {
             "Fantasy": {
-                "Brightline Station - North Las Vegas": {'Mode': 7, 'Stations': 'Las Vegas Light Rail (Maryland Line)', 'File': '[RTC] Maryland Line'},
+                "Brightline Station - North Las Vegas": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Maryland Line)', 'File': '[RTC] Maryland Line'},
             },
         },
         "Pink Line": {
             "Fantasy": {
-                "Downtown - Brightline Station": {'Mode': 5, 'Stations': 'Las Vegas Metro (Downtown - Brightline Station)', 'File': '[RTC] Pink Line'},
+                "Downtown - Brightline Station": {'Mode': 'Heavy Metro', 'Stations': 'Las Vegas Metro (Downtown - Brightline Station)', 'File': '[RTC] Pink Line'},
             },
         },
         "R1": {
             "Fantasy": {
-                "North Las Vegas - SNSA": {'Mode': 4, 'Stations': 'Las Vegas Regional Rail (North Las Vegas - Jean)'},
+                "North Las Vegas - SNSA": {'Mode': 'Heavy Rail', 'Stations': 'Las Vegas Regional Rail (North Las Vegas - Jean)'},
             },
         },
         "R2": {
             "Fantasy": {
-                "North Las Vegas - Boulder City": {'Mode': 4, 'Stations': 'Las Vegas Regional Rail (North Las Vegas - Boulder City)', 'File': '[RTC] R2'},
+                "North Las Vegas - Boulder City": {'Mode': 'Heavy Rail', 'Stations': 'Las Vegas Regional Rail (North Las Vegas - Boulder City)', 'File': '[RTC] R2'},
             },
         },
         "R3": {
             "Fantasy": {
-                "Brightline Station - Primm": {'Mode': 4, 'Stations': 'Las Vegas Regional Rail (Brightline Station - Jean)', 'File': '[RTC] R3'},
+                "Brightline Station - Primm": {'Mode': 'Heavy Rail', 'Stations': 'Las Vegas Regional Rail (Brightline Station - Jean)', 'File': '[RTC] R3'},
             },
         },
     },
     "RTD": {
         "1 Line": {
             "Fantasy": {
-                "Pecos Junction - Littleton": {'Mode': 5, 'Stations': 'Denver Subway (16th-Broadway)'},
+                "Pecos Junction - Littleton": {'Mode': 'Heavy Metro', 'Stations': 'Denver Subway (16th-Broadway)'},
             },
         },
         "2 Line": {
             "Fantasy": {
-                "Golden - Aurora": {'Mode': 5, 'Stations': 'Denver Subway (Colfax)'},
+                "Golden - Aurora": {'Mode': 'Heavy Metro', 'Stations': 'Denver Subway (Colfax)'},
             },
         },
         "A Line": {
             "Fantasy": {
-                "Union Station - Airport": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - Airport)', 'File': '[RTD] A Line'},
+                "Union Station - Airport": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - Airport)', 'File': '[RTD] A Line'},
             },
             "Present": {
-                "Union Station - Airport": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - Airport)', 'File': '[RTD] A Line'},
+                "Union Station - Airport": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - Airport)', 'File': '[RTD] A Line'},
             },
         },
         "B Line": {
             "Fantasy": {
-                "Westridge - Longmont": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Westridge - Longmont)', 'File': '[RTD] B Line'},
+                "Westridge - Longmont": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Westridge - Longmont)', 'File': '[RTD] B Line'},
             },
             "Present": {
-                "Union - Westminster": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - Westminster)', 'File': '[RTD] B Line'},
+                "Union - Westminster": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - Westminster)', 'File': '[RTD] B Line'},
             },
         },
         "Boulder Streetcar": {
             "Fantasy": {
-                "Boulder Streetcar": {'Mode': 8, 'Stations': 'Boulder Streetcar'},
+                "Boulder Streetcar": {'Mode': 'Streetcar', 'Stations': 'Boulder Streetcar'},
             },
         },
         "C Line": {
             "Fantasy": {
-                "Westridge - Golden": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Westridge - Golden)', 'File': '[RTD] C Line'},
+                "Westridge - Golden": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Westridge - Golden)', 'File': '[RTD] C Line'},
             },
         },
         "D Line": {
             "Present": {
-                "Littleton - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (Littleton - Loop)', 'File': '[RTD] D Line'},
+                "Littleton - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Littleton - Loop)', 'File': '[RTD] D Line'},
             },
         },
         "E Line": {
             "Present": {
-                "Union - RidgeGate": {'Mode': 7, 'Stations': 'Denver Light Rail (Union - RidgeGate)', 'File': '[RTD] E Line'},
+                "Union - RidgeGate": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Union - RidgeGate)', 'File': '[RTD] E Line'},
             },
         },
         "F Line": {
             "Fantasy": {
-                "RidgeGate - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (RidgeGate - Loop)', 'File': '[RTD] F Line'},
+                "RidgeGate - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (RidgeGate - Loop)', 'File': '[RTD] F Line'},
             },
         },
         "G Line": {
             "Present": {
-                "Union - Wheat Ridge & Ward": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - Wheat Ridge)', 'File': '[RTD] G Line'},
+                "Union - Wheat Ridge & Ward": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - Wheat Ridge)', 'File': '[RTD] G Line'},
             },
         },
         "H Line": {
             "Fantasy": {
-                "Florida - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (Florida - Loop)', 'File': '[RTD] H Line'},
+                "Florida - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Florida - Loop)', 'File': '[RTD] H Line'},
             },
             "Present": {
-                "Florida - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (Florida - Loop) [Old]', 'File': '[RTD] H Line'},
+                "Florida - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Florida - Loop) [Old]', 'File': '[RTD] H Line'},
             },
         },
         "L Line": {
             "Fantasy": {
-                "38th & Blake - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (38th & Blake - Loop)', 'File': '[RTD] L Line'},
+                "38th & Blake - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (38th & Blake - Loop)', 'File': '[RTD] L Line'},
             },
             "Present": {
-                "30th & Downing - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (30th & Downing - Loop)', 'File': '[RTD] L Line'},
+                "30th & Downing - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (30th & Downing - Loop)', 'File': '[RTD] L Line'},
             },
         },
         "N Line": {
             "Fantasy": {
-                "Union Station - North Thornton": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - North Thornton)', 'File': '[RTD] N Line'},
+                "Union Station - North Thornton": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - North Thornton)', 'File': '[RTD] N Line'},
             },
             "Present": {
-                "Union Station - Eastlake & 124th": {'Mode': 4, 'Stations': 'Denver Commuter Rail (Union Main - Eastlake)', 'File': '[RTD] N Line'},
+                "Union Station - Eastlake & 124th": {'Mode': 'Heavy Rail', 'Stations': 'Denver Commuter Rail (Union Main - Eastlake)', 'File': '[RTD] N Line'},
             },
         },
         "R Line": {
             "Fantasy": {
-                "Peoria - Ridgegate": {'Mode': 7, 'Stations': 'Denver Light Rail (Peoria - RidgeGate)', 'File': '[RTD] R Line'},
+                "Peoria - Ridgegate": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Peoria - RidgeGate)', 'File': '[RTD] R Line'},
             },
             "Present": {
-                "Peoria - Ridgegate": {'Mode': 7, 'Stations': 'Denver Light Rail (Peoria - RidgeGate)', 'File': '[RTD] R Line'},
+                "Peoria - Ridgegate": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Peoria - RidgeGate)', 'File': '[RTD] R Line'},
             },
         },
         "W Line": {
             "Fantasy": {
-                "Jefferson County - Loop": {'Mode': 7, 'Stations': 'Denver Light Rail (Jefferson County - Loop)', 'File': '[RTD] W Line'},
+                "Jefferson County - Loop": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Jefferson County - Loop)', 'File': '[RTD] W Line'},
             },
             "Present": {
-                "Union - Jefferson County": {'Mode': 7, 'Stations': 'Denver Light Rail (Union - Jefferson County)', 'File': '[RTD] W Line'},
+                "Union - Jefferson County": {'Mode': 'Light Rail', 'Stations': 'Denver Light Rail (Union - Jefferson County)', 'File': '[RTD] W Line'},
             },
         },
     },
     "RideKC": {
         "Excelsior Springs Line": {
             "Fantasy": {
-                "Kansas City - Excelsior Springs": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Excelsior Springs)'},
+                "Kansas City - Excelsior Springs": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Excelsior Springs)'},
             },
         },
         "Gardner Line": {
             "Fantasy": {
-                "Kansas City - Gardner": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Gardner)'},
+                "Kansas City - Gardner": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Gardner)'},
             },
         },
         "Grandview Line": {
             "Fantasy": {
-                "Kansas City - Grandview": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Grandview)'},
+                "Kansas City - Grandview": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Grandview)'},
             },
         },
         "Kansas City Streetcar": {
             "Fantasy": {
-                "UMKC - River Market": {'Mode': 8, 'Stations': 'Kansas City Streetcar (Full)'},
+                "UMKC - River Market": {'Mode': 'Streetcar', 'Stations': 'Kansas City Streetcar (Full)'},
             },
             "Present": {
-                "UMKC - River Market": {'Mode': 8, 'Stations': 'Kansas City Streetcar (Full)', 'File': '[RideKC] Kansas City Streetcar', 'Label': 'https://brouter.damsy.net/latest/#map=16/39.0908/-94.5820/standard&lonlats=-94.583941,39.035238;-94.583997,39.036011;-94.583552,39.107619;-94.580548,39.109916;-94.584689,39.109033;-94.583573,39.102838;-94.584378,39.036469;-94.583745,39.035233&profile=rail'},
+                "UMKC - River Market": {'Mode': 'Streetcar', 'Stations': 'Kansas City Streetcar (Full)', 'File': '[RideKC] Kansas City Streetcar', 'Label': 'https://brouter.damsy.net/latest/#map=16/39.0908/-94.5820/standard&lonlats=-94.583941,39.035238;-94.583997,39.036011;-94.583552,39.107619;-94.580548,39.109916;-94.584689,39.109033;-94.583573,39.102838;-94.584378,39.036469;-94.583745,39.035233&profile=rail'},
             },
         },
         "Line 1": {
             "Fantasy": {
-                "85th St - Airport": {'Mode': 5, 'Stations': 'Kansas City Subway (85th St - Airport)'},
+                "85th St - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Kansas City Subway (85th St - Airport)'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Speedway - East Kansas City": {'Mode': 5, 'Stations': 'Kansas City Subway (Speedway - East Kansas City)'},
+                "Speedway - East Kansas City": {'Mode': 'Heavy Metro', 'Stations': 'Kansas City Subway (Speedway - East Kansas City)'},
             },
         },
         "Oak Grove Line": {
             "Fantasy": {
-                "Kansas City - Oak Grove": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Oak Grove)'},
+                "Kansas City - Oak Grove": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Oak Grove)'},
             },
         },
         "Pleasant Hill Line": {
             "Fantasy": {
-                "Kansas City - Pleasant Hill": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Pleasant Hill)'},
+                "Kansas City - Pleasant Hill": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Pleasant Hill)'},
             },
         },
         "Topeka Line": {
             "Fantasy": {
-                "Kansas City - Topeka": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Topeka)'},
+                "Kansas City - Topeka": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Topeka)'},
             },
         },
         "Weaver Line": {
             "Fantasy": {
-                "Kansas City - Weaver": {'Mode': 4, 'Stations': 'Kansas City Regional Rail (Union - Weaver)'},
+                "Kansas City - Weaver": {'Mode': 'Heavy Rail', 'Stations': 'Kansas City Regional Rail (Union - Weaver)'},
             },
         },
     },
     "Rio Metro": {
         "Rail Runner Express": {
             "Fantasy": {
-                "Santa Fe - Belen": {'Mode': 4, 'Stations': 'Albuquerque Rail Runner (Santa Fe - Belen)'},
+                "Santa Fe - Belen": {'Mode': 'Heavy Rail', 'Stations': 'Albuquerque Rail Runner (Santa Fe - Belen)'},
             },
             "Present": {
-                "Santa Fe - Belen": {'Mode': 4, 'Stations': 'Albuquerque Rail Runner (Santa Fe - Belen)', 'File': '[Rio Metro] Rail Runner Express', 'Link': 'https://brouter.damsy.net/latest/#map=9/35.2423/-105.8752/standard&lonlats=-105.946336,35.685028;-106.638515,35.122155;-106.647468,35.082511;-106.648943,35.074138;-106.766548,34.662255;-106.647238,35.082959;-106.630393,35.14174;-105.946162,35.685099&profile=rail'},
+                "Santa Fe - Belen": {'Mode': 'Heavy Rail', 'Stations': 'Albuquerque Rail Runner (Santa Fe - Belen)', 'File': '[Rio Metro] Rail Runner Express', 'Link': 'https://brouter.damsy.net/latest/#map=9/35.2423/-105.8752/standard&lonlats=-105.946336,35.685028;-106.638515,35.122155;-106.647468,35.082511;-106.648943,35.074138;-106.766548,34.662255;-106.647238,35.082959;-106.630393,35.14174;-105.946162,35.685099&profile=rail'},
             },
         },
     },
     "SEPTA": {
         "Airport Line": {
             "Fantasy": {
-                "Center City - Airport": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Temple - Airport)'},
+                "Center City - Airport": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Temple - Airport)'},
             },
         },
         "B": {
             "Fantasy": {
-                "Fern Rock TC - Center City": {'Mode': 5, 'Stations': 'Philadelphia Subway (Broad Line Branch)'},
-                "Fern Rock TC - NRG (Express)": {'Mode': 5, 'Stations': 'Philadelphia Subway (Broad Line Express)'},
-                "Fern Rock TC - NRG (Local)": {'Mode': 5, 'Stations': 'Philadelphia Subway (Broad Line Local)'},
+                "Fern Rock TC - Center City": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia Subway (Broad Line Branch)'},
+                "Fern Rock TC - NRG (Express)": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia Subway (Broad Line Express)'},
+                "Fern Rock TC - NRG (Local)": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia Subway (Broad Line Local)'},
             },
         },
         "Chestnut Hill East Line": {
             "Fantasy": {
-                "Wayne Junction - Chestnut Hill": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Wayne Junction - Chestnut Hill East)'},
+                "Wayne Junction - Chestnut Hill": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Wayne Junction - Chestnut Hill East)'},
             },
         },
         "Chestnut Hill West Line": {
             "Fantasy": {
-                "Center City - Chestnut Hill": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Chestnut Hill West)'},
+                "Center City - Chestnut Hill": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Chestnut Hill West)'},
             },
         },
         "Cynwyd Line": {
             "Fantasy": {
-                "Center City - Cynwyd": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Jefferson - Cynwyd)'},
+                "Center City - Cynwyd": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Jefferson - Cynwyd)'},
             },
         },
         "Fox Chase Line": {
             "Fantasy": {
-                "Center City - Fox Chase": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Fox Chase)'},
+                "Center City - Fox Chase": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Fox Chase)'},
             },
         },
         "L": {
             "Fantasy": {
-                "Roosevelt - 69th St TC": {'Mode': 5, 'Stations': 'Philadelphia Subway (Market-Frankford Line)'},
+                "Roosevelt - 69th St TC": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia Subway (Market-Frankford Line)'},
             },
         },
         "Lansdale-Doylestown Line": {
             "Fantasy": {
-                "Center City - Doylestown": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Doylestown)'},
+                "Center City - Doylestown": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Doylestown)'},
             },
         },
         "M": {
             "Fantasy": {
-                "69th St TC - Norristown TC": {'Mode': 6, 'Stations': 'Philadelphia Norristown HSL'},
+                "69th St TC - Norristown TC": {'Mode': 'Light Metro', 'Stations': 'Philadelphia Norristown HSL'},
             },
         },
         "Manayunk-Norristown Line": {
             "Fantasy": {
-                "Center City - Norristown": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Norristown)'},
+                "Center City - Norristown": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Norristown)'},
             },
         },
         "Media-Wawa Line": {
             "Fantasy": {
-                "Center City - Wawa": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Wawa)'},
+                "Center City - Wawa": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Wawa)'},
             },
         },
         "Paoli-Thorndale Line": {
             "Fantasy": {
-                "Center City - Thorndale": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Temple - Thorndale)'},
+                "Center City - Thorndale": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Temple - Thorndale)'},
             },
         },
         "R": {
             "Fantasy": {
-                "Rockhill - Center City": {'Mode': 5, 'Stations': 'Philadelphia Subway (Roosevelt Line)'},
+                "Rockhill - Center City": {'Mode': 'Heavy Metro', 'Stations': 'Philadelphia Subway (Roosevelt Line)'},
             },
         },
         "Trenton Line": {
             "Fantasy": {
-                "Center City - Trenton": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Temple - Trenton)'},
+                "Center City - Trenton": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Temple - Trenton)'},
             },
         },
         "Warminster Line": {
             "Fantasy": {
-                "Center City - Warminster": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - Warminster)'},
+                "Center City - Warminster": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Warminster)'},
             },
         },
         "West Trenton Line": {
             "Fantasy": {
-                "Center City - West Trenton": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Suburban - West Trenton)'},
+                "Center City - West Trenton": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - West Trenton)'},
             },
         },
         "Wilmington-Newark Line": {
             "Fantasy": {
-                "Center City - Newark": {'Mode': 4, 'Stations': 'Philadelphia Regional Rail (Temple - Newark)'},
+                "Center City - Newark": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Temple - Newark)'},
             },
         },
     },
     "SFRTA": {
         "Tri-Rail": {
             "Fantasy": {
-                "Miami Airport - West Palm Beach": {'Mode': 4, 'Stations': 'Miami Tri-Rail (MIA Airport - West Palm Beach)'},
-                "Miami Central - West Palm Beach": {'Mode': 4, 'Stations': 'Miami Tri-Rail (MIA Central - West Palm Beach)'},
+                "Miami Airport - West Palm Beach": {'Mode': 'Heavy Rail', 'Stations': 'Miami Tri-Rail (MIA Airport - West Palm Beach)'},
+                "Miami Central - West Palm Beach": {'Mode': 'Heavy Rail', 'Stations': 'Miami Tri-Rail (MIA Central - West Palm Beach)'},
+            },
+            "Present": {
+                "Miami Airport - West Palm Beach": {'Mode': 'Heavy Rail', 'Stations': 'Miami Tri-Rail (MIA Airport - West Palm Beach)', 'File': '[SFRTA] Tri-Rail (Airport)', 'Link': 'https://brouter.damsy.net/latest/#map=15/25.8032/-80.2601/standard&lonlats=-80.258324,25.795969;-80.259569,25.84687;-80.252573,25.899949;-80.1592,26.171953;-80.140613,26.24536;-80.122111,26.317599;-80.105122,26.386873;-80.090595,26.413487;-80.09089,26.450821;-80.069169,26.612645;-80.070859,26.674133;-80.064218,26.732958;-80.077001,26.758685;-80.070897,26.67559;-80.069392,26.610776;-80.074266,26.529498;-80.091045,26.449087;-80.120748,26.349634;-80.142903,26.235332;-80.169709,26.113983;-80.167902,26.046827;-80.25362,25.899674;-80.259697,25.845981;-80.259724,25.843572;-80.258442,25.795945&profile=rail'},
+                "Miami Central - West Palm Beach": {'Mode': 'Heavy Rail', 'Stations': 'Miami Tri-Rail (MIA Central - West Palm Beach)', 'File': '[SFRTA] Tri-Rail (Central)', 'Link': 'https://brouter.damsy.net/latest/#map=17/25.78015/-80.19711/standard&lonlats=-80.195969,25.777458;-80.187863,25.831048;-80.259569,25.84687;-80.252573,25.899949;-80.1592,26.171953;-80.140613,26.24536;-80.122111,26.317599;-80.105122,26.386873;-80.090595,26.413487;-80.09089,26.450821;-80.069169,26.612645;-80.070859,26.674133;-80.064218,26.732958;-80.076932,26.758772;-80.070897,26.67559;-80.069392,26.610776;-80.074266,26.529498;-80.091045,26.449087;-80.120748,26.349634;-80.142903,26.235332;-80.169709,26.113983;-80.167902,26.046827;-80.25362,25.899674;-80.259697,25.845981;-80.251844,25.841931;-80.195952,25.7774&profile=rail'},
             },
         },
     },
     "SJRRC": {
         "Altamont Corridor Express": {
             "Fantasy": {
-                "San Jose - Stockton": {'Mode': 4, 'Stations': 'San Jose ACE (Diridon - Stockton)'},
+                "San Jose - Stockton": {'Mode': 'Heavy Rail', 'Stations': 'San Jose ACE (Diridon - Stockton)'},
             },
             "Present": {
-                "San Jose - Stockton": {'Mode': 4, 'Stations': 'San Jose ACE (Diridon - Stockton)', 'File': '[SJRRC] Altamont Corridor Express', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.5018/-121.9125/standard&lonlats=-121.902855,37.32873;-121.909801,37.340261;-121.936231,37.353529;-122.027496,37.533604;-121.767001,37.685254;-121.407458,37.697892;-121.279154,37.958398;-121.276633,37.949218;-121.407871,37.697675;-121.768334,37.68484;-121.88279,37.657822;-122.028011,37.533152;-122.02387,37.521019;-121.934751,37.352633;-121.909575,37.34001;-121.902827,37.32873&profile=rail'},
+                "San Jose - Stockton": {'Mode': 'Heavy Rail', 'Stations': 'San Jose ACE (Diridon - Stockton)', 'File': '[SJRRC] Altamont Corridor Express', 'Link': 'https://brouter.damsy.net/latest/#map=11/37.5018/-121.9125/standard&lonlats=-121.902855,37.32873;-121.909801,37.340261;-121.936231,37.353529;-122.027496,37.533604;-121.767001,37.685254;-121.407458,37.697892;-121.279154,37.958398;-121.276633,37.949218;-121.407871,37.697675;-121.768334,37.68484;-121.88279,37.657822;-122.028011,37.533152;-122.02387,37.521019;-121.934751,37.352633;-121.909575,37.34001;-121.902827,37.32873&profile=rail'},
             },
         },
     },
     "SMART": {
         "Sonoma-Marin Area Rail Transit": {
             "Fantasy": {
-                "Larkspur - Cloverdale": {'Mode': 4, 'Stations': 'San Francisco SMART (Larkspur - Cloverdale)'},
+                "Larkspur - Cloverdale": {'Mode': 'Heavy Rail', 'Stations': 'San Francisco SMART (Larkspur - Cloverdale)'},
             },
             "Present": {
-                "Larkspur - Windsor": {'Mode': 4, 'Stations': 'San Francisco SMART (Larkspur - Windsor)', 'File': '[SMART] Sonoma-Marin Area Rail Transit', 'Link': 'https://brouter.damsy.net/latest/#map=20/37.94755/-122.51289/standard&lonlats=-122.512729,37.947498;-122.818391,38.549107;-122.512765,37.947511&profile=rail'},
+                "Larkspur - Windsor": {'Mode': 'Heavy Rail', 'Stations': 'San Francisco SMART (Larkspur - Windsor)', 'File': '[SMART] Sonoma-Marin Area Rail Transit', 'Link': 'https://brouter.damsy.net/latest/#map=20/37.94755/-122.51289/standard&lonlats=-122.512729,37.947498;-122.818391,38.549107;-122.512765,37.947511&profile=rail'},
             },
         },
     },
     "STM": {
         "1 - Green": {
             "Fantasy": {
-                "Angrignon - Honoré-Beaugrand": {'Mode': 5, 'Stations': 'Montréal Metro (Angrignon - Honoré-Beaugrand)'},
+                "Angrignon - Honoré-Beaugrand": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Angrignon - Honoré-Beaugrand)'},
             },
             "Present": {
-                "Angrignon - Honoré-Beaugrand": {'Mode': 5, 'Stations': 'Montréal Metro (Angrignon - Honoré-Beaugrand)', 'File': '[STM] Line 1'},
+                "Angrignon - Honoré-Beaugrand": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Angrignon - Honoré-Beaugrand)', 'File': '[STM] Line 1'},
             },
         },
         "2 - Orange": {
             "Fantasy": {
-                "Le Carrefour - Saint-Martin": {'Mode': 5, 'Stations': 'Montréal Metro (Le Carrefour - Saint-Martin)'},
+                "Le Carrefour - Saint-Martin": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Le Carrefour - Saint-Martin)'},
             },
             "Present": {
-                "Côte-Vertu - Montmorency": {'Mode': 5, 'Stations': 'Montréal Metro (Côte-Vertu - Montmorency)', 'File': '[STM] Line 2'},
+                "Côte-Vertu - Montmorency": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Côte-Vertu - Montmorency)', 'File': '[STM] Line 2'},
             },
         },
         "4 - Yellow": {
             "Fantasy": {
-                "Berri-UQAM - Université-de-Sherbrooke": {'Mode': 5, 'Stations': 'Montréal Metro (Berri - Longueuil)'},
+                "Berri-UQAM - Université-de-Sherbrooke": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Berri - Longueuil)'},
             },
             "Present": {
-                "Berri-UQAM - Université-de-Sherbrooke": {'Mode': 5, 'Stations': 'Montréal Metro (Berri - Longueuil)', 'File': '[STM] Line 4'},
+                "Berri-UQAM - Université-de-Sherbrooke": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Berri - Longueuil)', 'File': '[STM] Line 4'},
             },
         },
         "5 - Blue": {
             "Fantasy": {
-                "Snowdon - Galeries d'Anjou": {'Mode': 5, 'Stations': "Montréal Metro (Snowdon - Galeries d'Anjou)"},
+                "Snowdon - Galeries d'Anjou": {'Mode': 'Heavy Metro', 'Stations': "Montréal Metro (Snowdon - Galeries d'Anjou)"},
             },
             "Present": {
-                "Snowdon - Galeries d'Anjou": {'Mode': 5, 'Stations': 'Montréal Metro (Snowdon - Saint-Michel)', 'File': '[STM] Line 5'},
+                "Snowdon - Galeries d'Anjou": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Snowdon - Saint-Michel)', 'File': '[STM] Line 5'},
             },
         },
     },
     "Sound Transit": {
         "LINK 1-Line": {
             "Fantasy": {
-                "Ballard - Tacoma": {'Mode': 6, 'Stations': 'Seattle LINK (Ballard - Tacoma)'},
+                "Ballard - Tacoma": {'Mode': 'Light Metro', 'Stations': 'Seattle LINK (Ballard - Tacoma)'},
             },
             "Present": {
-                "Lynnwood - Federal Way": {'Mode': 7, 'Stations': 'Seattle LINK (Lynnwood - Federal Way)', 'File': '[Sound Transit] 1-Line', 'Link': 'http://brouter.damsy.net/latest/#map=14/47.3287/-122.2820/standard&lonlats=-122.294369,47.815958;-122.323011,47.76443;-122.327152,47.738894;-122.323955,47.723072;-122.328687,47.700112;-122.303925,47.648867;-122.327448,47.587555;-122.296967,47.568824;-122.280149,47.519317;-122.276614,47.485878;-122.286801,47.463684;-122.296956,47.447743;-122.296634,47.443313;-122.297651,47.424797;-122.293475,47.3915;-122.304258,47.315442;-122.300121,47.317585;-122.296382,47.362119;-122.293636,47.391598;-122.297812,47.42475;-122.296913,47.443218;-122.297149,47.447721;-122.286935,47.463583;-122.276453,47.485936;-122.283068,47.541114;-122.296811,47.569584;-122.325763,47.577648;-122.303592,47.64894;-122.323773,47.723061;-122.327002,47.738937;-122.294234,47.815855&profile=rail'},
+                "Lynnwood - Federal Way": {'Mode': 'Light Rail', 'Stations': 'Seattle LINK (Lynnwood - Federal Way)', 'File': '[Sound Transit] 1-Line', 'Link': 'http://brouter.damsy.net/latest/#map=14/47.3287/-122.2820/standard&lonlats=-122.294369,47.815958;-122.323011,47.76443;-122.327152,47.738894;-122.323955,47.723072;-122.328687,47.700112;-122.303925,47.648867;-122.327448,47.587555;-122.296967,47.568824;-122.280149,47.519317;-122.276614,47.485878;-122.286801,47.463684;-122.296956,47.447743;-122.296634,47.443313;-122.297651,47.424797;-122.293475,47.3915;-122.304258,47.315442;-122.300121,47.317585;-122.296382,47.362119;-122.293636,47.391598;-122.297812,47.42475;-122.296913,47.443218;-122.297149,47.447721;-122.286935,47.463583;-122.276453,47.485936;-122.283068,47.541114;-122.296811,47.569584;-122.325763,47.577648;-122.303592,47.64894;-122.323773,47.723061;-122.327002,47.738937;-122.294234,47.815855&profile=rail'},
             },
         },
         "LINK 2-Line": {
             "Fantasy": {
-                "Mariner - Redmond": {'Mode': 6, 'Stations': 'Seattle LINK (Mariner - Redmond)'},
+                "Mariner - Redmond": {'Mode': 'Light Metro', 'Stations': 'Seattle LINK (Mariner - Redmond)'},
             },
             "Present": {
-                "Lynnwood - Redmond": {'Mode': 7, 'Stations': 'Seattle LINK (Lynnwood - Redmond)', 'File': '[Sound Transit] 2-Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/47.6570/-122.1342/standard&lonlats=-122.294369,47.815958;-122.323011,47.76443;-122.327152,47.738894;-122.323955,47.723072;-122.328687,47.700112;-122.303925,47.648867;-122.311435,47.591947;-122.255538,47.589465;-122.209763,47.57831;-122.188911,47.584628;-122.190891,47.603346;-122.18978,47.615186;-122.114925,47.670748;-122.119217,47.671872;-122.189797,47.615259;-122.191063,47.603353;-122.189153,47.584613;-122.255516,47.589595;-122.303592,47.64894;-122.323773,47.723061;-122.327002,47.738937;-122.294234,47.815855&profile=rail'},
+                "Lynnwood - Redmond": {'Mode': 'Light Rail', 'Stations': 'Seattle LINK (Lynnwood - Redmond)', 'File': '[Sound Transit] 2-Line', 'Link': 'https://brouter.damsy.net/latest/#map=14/47.6570/-122.1342/standard&lonlats=-122.294369,47.815958;-122.323011,47.76443;-122.327152,47.738894;-122.323955,47.723072;-122.328687,47.700112;-122.303925,47.648867;-122.311435,47.591947;-122.255538,47.589465;-122.209763,47.57831;-122.188911,47.584628;-122.190891,47.603346;-122.18978,47.615186;-122.114925,47.670748;-122.119217,47.671872;-122.189797,47.615259;-122.191063,47.603353;-122.189153,47.584613;-122.255516,47.589595;-122.303592,47.64894;-122.323773,47.723061;-122.327002,47.738937;-122.294234,47.815855&profile=rail'},
             },
         },
         "LINK 3-Line": {
             "Fantasy": {
-                "Everett - Alaska Junction": {'Mode': 6, 'Stations': 'Seattle LINK (Everett - Alaska Junction)'},
+                "Everett - Alaska Junction": {'Mode': 'Light Metro', 'Stations': 'Seattle LINK (Everett - Alaska Junction)'},
             },
         },
         "LINK 4-Line": {
             "Fantasy": {
-                "South Kirkland - Issaquah": {'Mode': 6, 'Stations': 'Seattle LINK (South Kirkland - Issaquah)'},
+                "South Kirkland - Issaquah": {'Mode': 'Light Metro', 'Stations': 'Seattle LINK (South Kirkland - Issaquah)'},
             },
         },
         "Sounder": {
             "Fantasy": {
-                "Tacoma - Everett": {'Mode': 4, 'Stations': 'Seattle Sounder (Tacoma - Everett)'},
+                "Tacoma - Everett": {'Mode': 'Heavy Rail', 'Stations': 'Seattle Sounder (Tacoma - Everett)'},
             },
             "Present": {
-                "Tacoma - Everett": {'Mode': 4, 'Stations': 'Seattle Sounder (Tacoma - Everett)', 'File': '[Sound Transit] Sounder'},
+                "Tacoma - Everett": {'Mode': 'Heavy Rail', 'Stations': 'Seattle Sounder (Tacoma - Everett)', 'File': '[Sound Transit] Sounder'},
             },
         },
     },
     "Sun Tran": {
         "Sun Link": {
             "Fantasy": {
-                "Congress St - Helen St": {'Mode': 8, 'Stations': 'Tucson Streetcar (Congress St - Helen St)'},
+                "Congress St - Helen St": {'Mode': 'Streetcar', 'Stations': 'Tucson Streetcar (Congress St - Helen St)'},
             },
             "Present": {
-                "Congress St - Helen St": {'Mode': 8, 'Stations': 'Tucson Streetcar (Congress St - Helen St)', 'File': '[Sun Tran] Sun Link'},
+                "Congress St - Helen St": {'Mode': 'Streetcar', 'Stations': 'Tucson Streetcar (Congress St - Helen St)', 'File': '[Sun Tran] Sun Link'},
             },
         },
     },
     "TI": {
         "Hard Rock-TI Tram": {
             "Fantasy": {
-                "Hard Rock - TI": {'Mode': 9, 'Stations': 'Las Vegas Peoplemover (Hard Rock)'},
+                "Hard Rock - TI": {'Mode': 'Peoplemover', 'Stations': 'Las Vegas Peoplemover (Hard Rock)'},
             },
         },
     },
     "TTC": {
         "Line 1": {
             "Fantasy": {
-                "Vaughan - North York": {'Mode': 5, 'Stations': 'Toronto Subway (Vaughan - Finch)'},
+                "Vaughan - North York": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Vaughan - Finch)'},
             },
             "Present": {
-                "Vaughan - Finch": {'Mode': 5, 'Stations': 'Toronto Subway (Vaughan - Finch)', 'File': '[TTC] Line 1'},
+                "Vaughan - Finch": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Vaughan - Finch)', 'File': '[TTC] Line 1'},
             },
         },
         "Line 2": {
             "Fantasy": {
-                "Kipling - Kennedy": {'Mode': 5, 'Stations': 'Toronto Subway (Kipling - Kennedy)'},
+                "Kipling - Kennedy": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Kipling - Kennedy)'},
             },
             "Present": {
-                "Kipling - Kennedy": {'Mode': 5, 'Stations': 'Toronto Subway (Kipling - Kennedy)', 'File': '[TTC] Line 2'},
+                "Kipling - Kennedy": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Kipling - Kennedy)', 'File': '[TTC] Line 2'},
             },
         },
         "Line 3": {
             "Fantasy": {
-                "Exhibition - Don Valley": {'Mode': 6, 'Stations': 'Toronto Subway (Exhibition - Don Valley)'},
+                "Exhibition - Don Valley": {'Mode': 'Light Metro', 'Stations': 'Toronto Subway (Exhibition - Don Valley)'},
             },
         },
         "Line 4": {
             "Fantasy": {
-                "Sheppard West - Scarborough Centre": {'Mode': 5, 'Stations': 'Toronto Subway (Sheppard West - Scarborough Centre)'},
+                "Sheppard West - Scarborough Centre": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Sheppard West - Scarborough Centre)'},
             },
             "Present": {
-                "Sheppard-Yonge - Don Mills": {'Mode': 5, 'Stations': 'Toronto Subway (Sheppard-Yonge - Don Mills)', 'File': '[TTC] Line 4'},
+                "Sheppard-Yonge - Don Mills": {'Mode': 'Heavy Metro', 'Stations': 'Toronto Subway (Sheppard-Yonge - Don Mills)', 'File': '[TTC] Line 4'},
             },
         },
         "Line 5": {
             "Fantasy": {
-                "Pearson Airport - Kennedy": {'Mode': 7, 'Stations': 'Toronto Light Rail (Pearson - Kennedy)'},
+                "Pearson Airport - Kennedy": {'Mode': 'Light Rail', 'Stations': 'Toronto Light Rail (Pearson - Kennedy)'},
             },
             "Present": {
-                "Mount Dennis - Kennedy": {'Mode': 7, 'Stations': 'Toronto Light Rail (Mount Dennis - Kennedy)', 'File': '[TTC] Line 5'},
+                "Mount Dennis - Kennedy": {'Mode': 'Light Rail', 'Stations': 'Toronto Light Rail (Mount Dennis - Kennedy)', 'File': '[TTC] Line 5'},
             },
         },
         "Line 6": {
             "Fantasy": {
-                "Finch West - Humber College": {'Mode': 7, 'Stations': 'Toronto Light Rail (Finch West - Humber College)'},
+                "Finch West - Humber College": {'Mode': 'Light Rail', 'Stations': 'Toronto Light Rail (Finch West - Humber College)'},
             },
             "Present": {
-                "Finch West - Humber College": {'Mode': 7, 'Stations': 'Toronto Light Rail (Finch West - Humber College)', 'File': '[TTC] Line 6'},
+                "Finch West - Humber College": {'Mode': 'Light Rail', 'Stations': 'Toronto Light Rail (Finch West - Humber College)', 'File': '[TTC] Line 6'},
             },
         },
     },
     "Texas Central": {
         "TCR": {
             "Fantasy": {
-                "Dallas - Houston": {'Mode': 1, 'Stations': '-Intercity HS (Dallas - Houston)'},
+                "Dallas - Houston": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Dallas - Houston)'},
             },
         },
     },
     "Transit Windsor": {
         "Lake Line": {
             "Fantasy": {
-                "Windsor - Belle River": {'Mode': 4, 'Stations': 'Windsor Commuter Rail (Downtown - Belle River)'},
+                "Windsor - Belle River": {'Mode': 'Heavy Rail', 'Stations': 'Windsor Commuter Rail (Downtown - Belle River)'},
             },
         },
     },
     "Translink": {
         "SkyTrain Canada Line": {
             "Fantasy": {
-                "Waterfront - Airport": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Airport)'},
-                "Waterfront - Richmond": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Richmond)'},
+                "Waterfront - Airport": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Airport)'},
+                "Waterfront - Richmond": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Richmond)'},
             },
             "Present": {
-                "Waterfront - Airport": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Airport)', 'File': '[Translink] Canada Line (Airport)'},
-                "Waterfront - Richmond": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Richmond)', 'File': '[Translink] Canada Line (Richmond)'},
+                "Waterfront - Airport": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Airport)', 'File': '[Translink] Canada Line (Airport)'},
+                "Waterfront - Richmond": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Richmond)', 'File': '[Translink] Canada Line (Richmond)'},
             },
         },
         "SkyTrain Expo Line": {
             "Fantasy": {
-                "Waterfront - Langley": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Langley)'},
-                "Waterfront - Lougheed": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Lougheed)'},
+                "Waterfront - Langley": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Langley)'},
+                "Waterfront - Lougheed": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Lougheed)'},
             },
             "Present": {
-                "Waterfront - King George": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - King George)', 'File': '[Translink] Expo Line (King George)'},
-                "Waterfront - Lougheed": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (Waterfront - Lougheed)', 'File': '[Translink] Expo Line (Lougheed)'},
+                "Waterfront - King George": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - King George)', 'File': '[Translink] Expo Line (King George)'},
+                "Waterfront - Lougheed": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (Waterfront - Lougheed)', 'File': '[Translink] Expo Line (Lougheed)'},
             },
         },
         "SkyTrain Millennium Line": {
             "Fantasy": {
-                "UBC - Coquitlam": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (UBC - Coquitlam)'},
+                "UBC - Coquitlam": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (UBC - Coquitlam)'},
             },
             "Present": {
-                "UBC - Coquitlam": {'Mode': 6, 'Stations': 'Vancouver SkyTrain (VCC - Coquitlam)', 'File': '[Translink] Millennium Line'},
+                "UBC - Coquitlam": {'Mode': 'Light Metro', 'Stations': 'Vancouver SkyTrain (VCC - Coquitlam)', 'File': '[Translink] Millennium Line'},
             },
         },
         "Vancouver Light Rail": {
             "Fantasy": {
-                "Airport - Lochdale": {'Mode': 7, 'Stations': 'Vancouver Light Rail (Airport - Lochdale)'},
+                "Airport - Lochdale": {'Mode': 'Light Rail', 'Stations': 'Vancouver Light Rail (Airport - Lochdale)'},
             },
         },
     },
     "TriMet": {
         "MAX Blue Line": {
             "Fantasy": {
-                "Hillsboro - Gresham": {'Mode': 7, 'Stations': 'Portland MAX (Hillsboro - Gresham)'},
+                "Hillsboro - Gresham": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Hillsboro - Gresham)'},
             },
             "Present": {
-                "Hillsboro - Gresham": {'Mode': 7, 'Stations': 'Portland MAX (Hillsboro - Gresham)', 'File': '[TriMet] Blue Line'},
+                "Hillsboro - Gresham": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Hillsboro - Gresham)', 'File': '[TriMet] Blue Line'},
             },
         },
         "MAX Green Line": {
             "Fantasy": {
-                "Clackamas - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Clackamas - Loop)'},
+                "Clackamas - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Clackamas - Loop)'},
             },
             "Present": {
-                "Clackamas - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Clackamas - Loop)', 'File': '[TriMet] Green Line'},
+                "Clackamas - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Clackamas - Loop)', 'File': '[TriMet] Green Line'},
             },
         },
         "MAX Orange Line": {
             "Fantasy": {
-                "Milwaukie - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Milwaukie - Loop)'},
+                "Milwaukie - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Milwaukie - Loop)'},
             },
             "Present": {
-                "Milwaukie - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Milwaukie - Loop)', 'File': '[TriMet] Orange Line'},
+                "Milwaukie - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Milwaukie - Loop)', 'File': '[TriMet] Orange Line'},
             },
         },
         "MAX Red Line": {
             "Fantasy": {
-                "Fairgrounds - Airport": {'Mode': 7, 'Stations': 'Portland MAX (Fairgrounds - Airport)'},
+                "Fairgrounds - Airport": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Fairgrounds - Airport)'},
             },
             "Present": {
-                "Fairgrounds - Airport": {'Mode': 7, 'Stations': 'Portland MAX (Fairgrounds - Airport)', 'File': '[TriMet] Red Line'},
+                "Fairgrounds - Airport": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Fairgrounds - Airport)', 'File': '[TriMet] Red Line'},
             },
         },
         "MAX Yellow Line": {
             "Fantasy": {
-                "Expo Center - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Expo Center - Loop)'},
+                "Expo Center - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Expo Center - Loop)'},
             },
             "Present": {
-                "Expo Center - Loop": {'Mode': 7, 'Stations': 'Portland MAX (Expo Center - Loop)', 'File': '[TriMet] Yellow Line'},
+                "Expo Center - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Expo Center - Loop)', 'File': '[TriMet] Yellow Line'},
             },
         },
         "WES": {
             "Fantasy": {
-                "Beaverton - Wilsonville": {'Mode': 4, 'Stations': 'Portland Regional Rail (Beaverton - Wilsonville)'},
+                "Beaverton - Wilsonville": {'Mode': 'Heavy Rail', 'Stations': 'Portland Regional Rail (Beaverton - Wilsonville)'},
             },
             "Present": {
-                "Beaverton - Wilsonville": {'Mode': 4, 'Stations': 'Portland Regional Rail (Beaverton - Wilsonville)', 'File': '[TriMet] WES'},
+                "Beaverton - Wilsonville": {'Mode': 'Heavy Rail', 'Stations': 'Portland Regional Rail (Beaverton - Wilsonville)', 'File': '[TriMet] WES'},
             },
         },
         "Woodburn Line": {
             "Fantasy": {
-                "Portland - Woodburn": {'Mode': 4, 'Stations': 'Portland Regional Rail (Union - Woodburn)'},
+                "Portland - Woodburn": {'Mode': 'Heavy Rail', 'Stations': 'Portland Regional Rail (Union - Woodburn)'},
             },
         },
     },
     "Trinity Metro": {
         "TRE": {
             "Fantasy": {
-                "Dallas - Fort Worth": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Union - Fort Worth T&P)'},
+                "Dallas - Fort Worth": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Union - Fort Worth T&P)'},
             },
             "Present": {
-                "Dallas - Fort Worth": {'Mode': 4, 'Stations': 'Dallas Heavy Rail (Union - Fort Worth T&P)', 'File': '[Trinity Metro] TRE', 'Link': 'https://brouter.damsy.net/latest/#map=15/32.7520/-97.3217/standard&lonlats=-96.808146,32.775436;-96.821056,32.803878;-96.996875,32.815966;-97.050476,32.818167;-97.222738,32.800027;-97.32574,32.75233;-97.329013,32.745409;-97.315484,32.758366;-97.222041,32.799896;-97.02198,32.816231;-96.99746,32.815789;-96.967821,32.815158;-96.943885,32.814698;-96.912675,32.814004;-96.867238,32.813192;-96.839322,32.808692;-96.824409,32.804355;-96.812285,32.787433;-96.810193,32.779575;-96.808188,32.775427&profile=rail'},
+                "Dallas - Fort Worth": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Heavy Rail (Union - Fort Worth T&P)', 'File': '[Trinity Metro] TRE', 'Link': 'https://brouter.damsy.net/latest/#map=15/32.7520/-97.3217/standard&lonlats=-96.808146,32.775436;-96.821056,32.803878;-96.996875,32.815966;-97.050476,32.818167;-97.222738,32.800027;-97.32574,32.75233;-97.329013,32.745409;-97.315484,32.758366;-97.222041,32.799896;-97.02198,32.816231;-96.99746,32.815789;-96.967821,32.815158;-96.943885,32.814698;-96.912675,32.814004;-96.867238,32.813192;-96.839322,32.808692;-96.824409,32.804355;-96.812285,32.787433;-96.810193,32.779575;-96.808188,32.775427&profile=rail'},
             },
         },
         "TexRail": {
             "Fantasy": {
-                "Fort Worth - DFW Airport": {'Mode': 4, 'Stations': 'Dallas Regional Rail (Medical District - DFW)'},
+                "Fort Worth - DFW Airport": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Regional Rail (Medical District - DFW)'},
             },
             "Present": {
-                "Fort Worth - DFW Airport": {'Mode': 4, 'Stations': 'Dallas Regional Rail (Fort Worth - DFW)', 'File': '[Trinity Metro] TexRail', 'Link': 'https://brouter.damsy.net/latest/#map=10/32.8283/-97.3073/standard&lonlats=-97.329018,32.745405;-97.325923,32.752489;-97.321143,32.758543;-97.153559,32.903974;-97.054424,32.933812;-97.041201,32.905722;-97.041496,32.915539;-97.068479,32.935126;-97.078811,32.93356;-97.338374,32.795807;-97.32603,32.751947;-97.329007,32.745612&profile=rail'},
+                "Fort Worth - DFW Airport": {'Mode': 'Heavy Rail', 'Stations': 'Dallas Regional Rail (Fort Worth - DFW)', 'File': '[Trinity Metro] TexRail', 'Link': 'https://brouter.damsy.net/latest/#map=10/32.8283/-97.3073/standard&lonlats=-97.329018,32.745405;-97.325923,32.752489;-97.321143,32.758543;-97.153559,32.903974;-97.054424,32.933812;-97.041201,32.905722;-97.041496,32.915539;-97.068479,32.935126;-97.078811,32.93356;-97.338374,32.795807;-97.32603,32.751947;-97.329007,32.745612&profile=rail'},
             },
         },
     },
     "UTA": {
         "FrontRunner": {
             "Fantasy": {
-                "Provo - Ogden": {'Mode': 4, 'Stations': 'Salt Lake City FrontRunner (Provo - Ogden)'},
+                "Provo - Ogden": {'Mode': 'Heavy Rail', 'Stations': 'Salt Lake City FrontRunner (Provo - Ogden)'},
             },
             "Present": {
-                "Provo - Ogden": {'Mode': 4, 'Stations': 'Salt Lake City FrontRunner (Provo - Ogden) [Old]', 'File': '[UTA] FrontRunner', 'Link': 'https://brouter.damsy.net/latest/#map=15/40.2291/-111.6777/standard&lonlats=-111.659757,40.225324;-111.679137,40.231455;-111.766542,40.33465;-111.904351,40.515895;-111.900741,40.562794;-111.896471,40.659472;-111.909775,40.764092;-111.910536,40.765502;-111.904989,40.772908;-111.903187,40.880246;-111.902704,40.986775;-111.964733,41.056796;-111.981532,41.226094;-112.032223,41.195113;-111.96484,41.056698;-111.905826,40.988549;-111.90294,40.881101;-111.905188,40.773147;-111.909061,40.762161;-111.908342,40.740283;-111.896267,40.660423;-111.900762,40.563629;-111.904474,40.515475;-111.896449,40.425119;-111.766593,40.334603;-111.72556,40.280049;-111.679212,40.231313;-111.659766,40.225265&profile=rail'},
+                "Provo - Ogden": {'Mode': 'Heavy Rail', 'Stations': 'Salt Lake City FrontRunner (Provo - Ogden) [Old]', 'File': '[UTA] FrontRunner', 'Link': 'https://brouter.damsy.net/latest/#map=15/40.2291/-111.6777/standard&lonlats=-111.659757,40.225324;-111.679137,40.231455;-111.766542,40.33465;-111.904351,40.515895;-111.900741,40.562794;-111.896471,40.659472;-111.909775,40.764092;-111.910536,40.765502;-111.904989,40.772908;-111.903187,40.880246;-111.902704,40.986775;-111.964733,41.056796;-111.981532,41.226094;-112.032223,41.195113;-111.96484,41.056698;-111.905826,40.988549;-111.90294,40.881101;-111.905188,40.773147;-111.909061,40.762161;-111.908342,40.740283;-111.896267,40.660423;-111.900762,40.563629;-111.904474,40.515475;-111.896449,40.425119;-111.766593,40.334603;-111.72556,40.280049;-111.679212,40.231313;-111.659766,40.225265&profile=rail'},
             },
         },
         "TRAX Blue Line": {
             "Fantasy": {
-                "Airport - Draper": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (Airport - Draper)'},
+                "Airport - Draper": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (Airport - Draper)'},
             },
             "Present": {
-                "Central - Draper": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (Central - Draper)', 'File': '[UTA] TRAX Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.76253/-111.90694/standard&lonlats=-111.908346,40.761711;-111.89146,40.766049;-111.892995,40.754186;-111.896954,40.739462;-111.898295,40.651756;-111.892748,40.609864;-111.886246,40.599527;-111.860972,40.525723;-111.858788,40.525466;-111.863662,40.526958;-111.885168,40.573295;-111.891106,40.608852;-111.89808,40.652517;-111.896803,40.715305;-111.896846,40.72913;-111.896696,40.752139;-111.89101,40.757684;-111.895344,40.769476;-111.898284,40.769459;-111.907564,40.765079;-111.908294,40.763536;-111.908376,40.76171&profile=rail'},
+                "Central - Draper": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (Central - Draper)', 'File': '[UTA] TRAX Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.76253/-111.90694/standard&lonlats=-111.908346,40.761711;-111.89146,40.766049;-111.892995,40.754186;-111.896954,40.739462;-111.898295,40.651756;-111.892748,40.609864;-111.886246,40.599527;-111.860972,40.525723;-111.858788,40.525466;-111.863662,40.526958;-111.885168,40.573295;-111.891106,40.608852;-111.89808,40.652517;-111.896803,40.715305;-111.896846,40.72913;-111.896696,40.752139;-111.89101,40.757684;-111.895344,40.769476;-111.898284,40.769459;-111.907564,40.765079;-111.908294,40.763536;-111.908376,40.76171&profile=rail'},
             },
         },
         "TRAX Green Line": {
             "Fantasy": {
-                "Airport - West Valley": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (Airport - West Valley) [New]'},
+                "Airport - West Valley": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (Airport - West Valley) [New]'},
             },
             "Present": {
-                "Airport - West Valley": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (Airport - West Valley) [Old]', 'File': '[UTA] TRAX Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78284/-111.98182/standard&lonlats=-111.983524,40.784312;-111.980043,40.780436;-111.956885,40.768586;-111.911497,40.771499;-111.899614,40.769252;-111.896975,40.739852;-111.929542,40.712309;-111.958105,40.695333;-111.96005,40.694348;-111.95799,40.695468;-111.89852,40.722323;-111.896803,40.724356;-111.892024,40.754096;-111.891053,40.767229;-111.898075,40.76937;-111.914366,40.771572;-111.956987,40.768728;-111.981921,40.775586;-111.980124,40.781829;-111.983522,40.784273&profile=rail'},
+                "Airport - West Valley": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (Airport - West Valley) [Old]', 'File': '[UTA] TRAX Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.78284/-111.98182/standard&lonlats=-111.983524,40.784312;-111.980043,40.780436;-111.956885,40.768586;-111.911497,40.771499;-111.899614,40.769252;-111.896975,40.739852;-111.929542,40.712309;-111.958105,40.695333;-111.96005,40.694348;-111.95799,40.695468;-111.89852,40.722323;-111.896803,40.724356;-111.892024,40.754096;-111.891053,40.767229;-111.898075,40.76937;-111.914366,40.771572;-111.956987,40.768728;-111.981921,40.775586;-111.980124,40.781829;-111.983522,40.784273&profile=rail'},
             },
         },
         "TRAX Orange Line": {
             "Fantasy": {
-                "Airport - Arapeen Dr": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (Airport - Arapeen)'},
+                "Airport - Arapeen Dr": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (Airport - Arapeen)'},
             },
         },
         "TRAX Red Line": {
             "Fantasy": {
-                "University - Daybreak Pkwy": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (University - Daybreak Pkwy) [New]'},
+                "University - Daybreak Pkwy": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (University - Daybreak Pkwy) [New]'},
             },
             "Present": {
-                "University - Daybreak Pkwy": {'Mode': 7, 'Stations': 'Salt Lake City TRAX (University - Daybreak Pkwy) [Old]', 'File': '[UTA] TRAX Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.76696/-111.83888/standard&lonlats=-111.839184,40.769891;-111.890253,40.760691;-111.893,40.754178;-111.89573,40.684389;-111.898499,40.636989;-111.907951,40.623588;-111.941028,40.603698;-111.991153,40.587999;-112.013752,40.543675;-112.024621,40.559265;-111.988685,40.589152;-111.907446,40.623375;-111.900998,40.631892;-111.898252,40.63405;-111.898096,40.652969;-111.895838,40.685268;-111.89676,40.718632;-111.891975,40.753979;-111.877668,40.760622;-111.837693,40.768732;-111.839206,40.769876&profile=rail'},
+                "University - Daybreak Pkwy": {'Mode': 'Light Rail', 'Stations': 'Salt Lake City TRAX (University - Daybreak Pkwy) [Old]', 'File': '[UTA] TRAX Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.76696/-111.83888/standard&lonlats=-111.839184,40.769891;-111.890253,40.760691;-111.893,40.754178;-111.89573,40.684389;-111.898499,40.636989;-111.907951,40.623588;-111.941028,40.603698;-111.991153,40.587999;-112.013752,40.543675;-112.024621,40.559265;-111.988685,40.589152;-111.907446,40.623375;-111.900998,40.631892;-111.898252,40.63405;-111.898096,40.652969;-111.895838,40.685268;-111.89676,40.718632;-111.891975,40.753979;-111.877668,40.760622;-111.837693,40.768732;-111.839206,40.769876&profile=rail'},
             },
         },
         "TRAX S-Line": {
             "Fantasy": {
-                "Central Pointe - Fairmont": {'Mode': 8, 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)'},
+                "Central Pointe - Fairmont": {'Mode': 'Streetcar', 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)'},
             },
             "Present": {
-                "Central Pointe - Fairmont": {'Mode': 8, 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)', 'File': '[UTA] TRAX S-Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.72286/-111.89538/standard&lonlats=-111.896742,40.723586;-111.861562,40.722776;-111.878114,40.722192;-111.896695,40.723586&profile=rail'},
+                "Central Pointe - Fairmont": {'Mode': 'Streetcar', 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)', 'File': '[UTA] TRAX S-Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.72286/-111.89538/standard&lonlats=-111.896742,40.723586;-111.861562,40.722776;-111.878114,40.722192;-111.896695,40.723586&profile=rail'},
             },
         },
     },
     "VIA Rail": {
         "Canadian": {
             "Fantasy": {
-                "Toronto - Calgary - Vancouver": {'Mode': 2, 'Stations': '-Intercity LS (Toronto - Vancouver) [Via CGY]'},
-                "Toronto - Edmonton - Vancouver": {'Mode': 2, 'Stations': '-Intercity LS (Toronto - Vancouver) [Via EDM]'},
+                "Toronto - Calgary - Vancouver": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Toronto - Vancouver) [Via CGY]'},
+                "Toronto - Edmonton - Vancouver": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Toronto - Vancouver) [Via EDM]'},
             },
             "Present": {
-                "Toronto - Vancouver": {'Mode': 2, 'Stations': '-Intercity LS (Toronto - Vancouver) [Old]', 'File': '[VIA Rail] Canadian', 'Link': 'https://brouter.damsy.net/latest/#map=15/49.1323/-122.3122/standard&lonlats=-79.382732,43.644066;-79.415773,43.830912;-80.90258,46.524892;-97.132772,49.88812;-106.739581,52.104489;-113.430651,53.583633;-113.472344,53.583544;-113.519282,53.581359;-113.557236,53.583627;-120.343101,50.733379;-122.297852,49.133339;-122.303289,49.128167;-122.444762,49.173834;-122.578465,49.199622;-122.66981,49.21806;-122.728636,49.243023;-122.744869,49.249046;-122.792505,49.26408;-123.097622,49.273783;-122.791893,49.264129;-122.745888,49.249039;-122.553434,49.180308;-122.343804,49.131506;-122.322244,49.131489;-122.274656,49.11656;-121.413345,49.464408;-120.342962,50.733486;-113.557032,53.583584;-113.531063,53.573499;-113.552991,53.583583;-113.530808,53.573499;-113.518403,53.58125;-113.471839,53.583442;-113.449684,53.583468;-113.429364,53.583435;-106.7339,52.104983;-106.665938,52.08666;-97.133528,49.889668;-80.901711,46.524357;-79.417119,43.831848;-79.382744,43.644094&profile=rail'},
+                "Toronto - Vancouver": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Toronto - Vancouver) [Old]', 'File': '[VIA Rail] Canadian', 'Link': 'https://brouter.damsy.net/latest/#map=15/49.1323/-122.3122/standard&lonlats=-79.382732,43.644066;-79.415773,43.830912;-80.90258,46.524892;-97.132772,49.88812;-106.739581,52.104489;-113.430651,53.583633;-113.472344,53.583544;-113.519282,53.581359;-113.557236,53.583627;-120.343101,50.733379;-122.297852,49.133339;-122.303289,49.128167;-122.444762,49.173834;-122.578465,49.199622;-122.66981,49.21806;-122.728636,49.243023;-122.744869,49.249046;-122.792505,49.26408;-123.097622,49.273783;-122.791893,49.264129;-122.745888,49.249039;-122.553434,49.180308;-122.343804,49.131506;-122.322244,49.131489;-122.274656,49.11656;-121.413345,49.464408;-120.342962,50.733486;-113.557032,53.583584;-113.531063,53.573499;-113.552991,53.583583;-113.530808,53.573499;-113.518403,53.58125;-113.471839,53.583442;-113.449684,53.583468;-113.429364,53.583435;-106.7339,52.104983;-106.665938,52.08666;-97.133528,49.889668;-80.901711,46.524357;-79.417119,43.831848;-79.382744,43.644094&profile=rail'},
             },
         },
         "Churchill": {
             "Fantasy": {
-                "Winnipeg - Churchill": {'Mode': 2, 'Stations': '-Intercity LS (Winnipeg - Churchill)'},
+                "Winnipeg - Churchill": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Winnipeg - Churchill)'},
             },
             "Present": {
-                "Winnipeg - Churchill": {'Mode': 2, 'Stations': '-Intercity LS (Winnipeg - Churchill)', 'File': '[VIA Rail] Churchill', 'Link': 'https://brouter.damsy.net/latest/#map=17/49.95575/-98.19215/standard&lonlats=-97.134023,49.889603;-97.141242,49.872626;-97.180429,49.850194;-97.204767,49.847952;-97.412665,49.836284;-97.404442,55.456058;-97.83115,55.739948;-97.391095,55.46129;-94.175368,58.767967;-97.394485,55.46092;-97.831272,55.74001;-97.407746,55.455833;-97.193588,49.848852;-97.145147,49.865763;-97.133958,49.889617&profile=rail'},
+                "Winnipeg - Churchill": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Winnipeg - Churchill)', 'File': '[VIA Rail] Churchill', 'Link': 'https://brouter.damsy.net/latest/#map=17/49.95575/-98.19215/standard&lonlats=-97.134023,49.889603;-97.141242,49.872626;-97.180429,49.850194;-97.204767,49.847952;-97.412665,49.836284;-97.404442,55.456058;-97.83115,55.739948;-97.391095,55.46129;-94.175368,58.767967;-97.394485,55.46092;-97.831272,55.74001;-97.407746,55.455833;-97.193588,49.848852;-97.145147,49.865763;-97.133958,49.889617&profile=rail'},
             },
         },
         "Corridor": {
             "Fantasy": {
-                "Québec - Sarnia": {'Mode': 3, 'Stations': '-Intercity LS (Québec - Sarnia)'},
-                "Québec - Windsor": {'Mode': 3, 'Stations': '-Intercity LS (Québec - Windsor)'},
-                "Toronto - Niagara Falls": {'Mode': 3, 'Stations': '-Intercity LS (Toronto - Niagara)'},
+                "Québec - Sarnia": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Québec - Sarnia)'},
+                "Québec - Windsor": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Québec - Windsor)'},
+                "Toronto - Niagara Falls": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Toronto - Niagara)'},
             },
             "Present": {
-                "Québec - Sarnia": {'Mode': 3, 'Stations': '-Intercity LS (Québec - Sarnia)', 'File': '[VIA Rail] Corridor (Sarnia)', 'Link': 'https://brouter.damsy.net/latest/#map=9/43.2642/-80.9033/standard&lonlats=-71.21457,46.8183;-71.231232,46.835547;-71.312138,46.752112;-73.569324,45.502189;-73.916552,45.419333;-73.925425,45.416098;-75.510415,44.720307;-76.132258,44.371186;-76.502035,44.262159;-77.385238,44.175425;-78.764725,43.875186;-78.835305,43.883059;-78.902779,43.864656;-79.047409,43.846753;-79.255065,43.716907;-79.298168,43.686865;-79.33963,43.670324;-79.538358,43.634765;-80.30861,43.368897;-81.247037,42.980897;-81.254995,42.97875;-82.390973,42.95721;-81.432552,42.953336;-81.255087,42.978569;-81.244669,42.981477;-80.306293,43.369158;-79.610914,43.589943;-79.538645,43.634526;-79.412946,43.640159;-79.377868,43.644977;-79.335022,43.672347;-79.298353,43.686836;-79.255173,43.716756;-79.179819,43.758341;-79.046406,43.846877;-78.937401,43.864361;-78.875855,43.873771;-78.83752,43.882517;-78.76439,43.875012;-77.373308,44.180015;-76.535686,44.25751;-76.503865,44.262759;-76.131864,44.371148;-75.510192,44.720362;-74.71599,45.042114;-73.916091,45.419396;-73.555908,45.485541;-73.56927,45.50216;-73.535925,45.489275;-71.312824,46.752078;-71.231033,46.835198;-71.21464,46.818294&profile=rail'},
-                "Québec - Windsor": {'Mode': 3, 'Stations': '-Intercity LS (Québec - Windsor) [Old]', 'File': '[VIA Rail] Corridor (Windsor)', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.95470/-81.42631/standard&lonlats=-71.21457,46.8183;-71.231232,46.835547;-71.312138,46.752112;-73.569324,45.502189;-73.916552,45.419333;-73.925425,45.416098;-75.510415,44.720307;-76.132258,44.371186;-76.502035,44.262159;-77.385238,44.175425;-78.764725,43.875186;-78.835305,43.883059;-78.902779,43.864656;-79.047409,43.846753;-79.255065,43.716907;-79.298168,43.686865;-79.33963,43.670324;-79.538358,43.634765;-80.30861,43.368897;-81.247037,42.980897;-81.259357,42.977572;-83.00886,42.325115;-81.426609,42.955747;-81.25896,42.977486;-81.244669,42.981477;-80.306293,43.369158;-79.610914,43.589943;-79.538645,43.634526;-79.412946,43.640159;-79.377868,43.644977;-79.335022,43.672347;-79.298353,43.686836;-79.255173,43.716756;-79.179819,43.758341;-79.046406,43.846877;-78.937401,43.864361;-78.875855,43.873771;-78.83752,43.882517;-78.76439,43.875012;-77.373308,44.180015;-76.535686,44.25751;-76.503865,44.262759;-76.131864,44.371148;-75.510192,44.720362;-74.71599,45.042114;-73.916091,45.419396;-73.555908,45.485541;-73.56927,45.50216;-73.535925,45.489275;-71.312824,46.752078;-71.231033,46.835198;-71.21464,46.818294&profile=rail'},
-                "Toronto - Niagara Falls": {'Mode': 3, 'Stations': '-Intercity LS (Toronto - Niagara)', 'File': '[VIA Rail] Corridor (Niagara)', 'Link': 'https://brouter.damsy.net/latest/#map=11/43.2785/-79.6255/standard&lonlats=-79.377729,43.645151;-79.417559,43.636475;-79.483525,43.626574;-79.587171,43.556028;-79.607757,43.537079;-79.648637,43.496705;-79.664038,43.477054;-79.695125,43.442785;-79.810261,43.340321;-79.853901,43.313664;-79.871303,43.268011;-79.853874,43.263882;-79.703429,43.228366;-79.062392,43.109;-79.08592,43.13173;-79.165496,43.14082;-79.705564,43.229;-79.868771,43.267449;-79.878212,43.26948;-79.855666,43.312505;-79.80987,43.340602;-79.695409,43.442493;-79.681354,43.455867;-79.663936,43.477171;-79.648535,43.496853;-79.607634,43.537192;-79.587343,43.555842;-79.544808,43.592289;-79.48315,43.626807;-79.417216,43.636444;-79.377718,43.645125&profile=rail'},
+                "Québec - Sarnia": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Québec - Sarnia)', 'File': '[VIA Rail] Corridor (Sarnia)', 'Link': 'https://brouter.damsy.net/latest/#map=9/43.2642/-80.9033/standard&lonlats=-71.21457,46.8183;-71.231232,46.835547;-71.312138,46.752112;-73.569324,45.502189;-73.916552,45.419333;-73.925425,45.416098;-75.510415,44.720307;-76.132258,44.371186;-76.502035,44.262159;-77.385238,44.175425;-78.764725,43.875186;-78.835305,43.883059;-78.902779,43.864656;-79.047409,43.846753;-79.255065,43.716907;-79.298168,43.686865;-79.33963,43.670324;-79.538358,43.634765;-80.30861,43.368897;-81.247037,42.980897;-81.254995,42.97875;-82.390973,42.95721;-81.432552,42.953336;-81.255087,42.978569;-81.244669,42.981477;-80.306293,43.369158;-79.610914,43.589943;-79.538645,43.634526;-79.412946,43.640159;-79.377868,43.644977;-79.335022,43.672347;-79.298353,43.686836;-79.255173,43.716756;-79.179819,43.758341;-79.046406,43.846877;-78.937401,43.864361;-78.875855,43.873771;-78.83752,43.882517;-78.76439,43.875012;-77.373308,44.180015;-76.535686,44.25751;-76.503865,44.262759;-76.131864,44.371148;-75.510192,44.720362;-74.71599,45.042114;-73.916091,45.419396;-73.555908,45.485541;-73.56927,45.50216;-73.535925,45.489275;-71.312824,46.752078;-71.231033,46.835198;-71.21464,46.818294&profile=rail'},
+                "Québec - Windsor": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Québec - Windsor) [Old]', 'File': '[VIA Rail] Corridor (Windsor)', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.95470/-81.42631/standard&lonlats=-71.21457,46.8183;-71.231232,46.835547;-71.312138,46.752112;-73.569324,45.502189;-73.916552,45.419333;-73.925425,45.416098;-75.510415,44.720307;-76.132258,44.371186;-76.502035,44.262159;-77.385238,44.175425;-78.764725,43.875186;-78.835305,43.883059;-78.902779,43.864656;-79.047409,43.846753;-79.255065,43.716907;-79.298168,43.686865;-79.33963,43.670324;-79.538358,43.634765;-80.30861,43.368897;-81.247037,42.980897;-81.259357,42.977572;-83.00886,42.325115;-81.426609,42.955747;-81.25896,42.977486;-81.244669,42.981477;-80.306293,43.369158;-79.610914,43.589943;-79.538645,43.634526;-79.412946,43.640159;-79.377868,43.644977;-79.335022,43.672347;-79.298353,43.686836;-79.255173,43.716756;-79.179819,43.758341;-79.046406,43.846877;-78.937401,43.864361;-78.875855,43.873771;-78.83752,43.882517;-78.76439,43.875012;-77.373308,44.180015;-76.535686,44.25751;-76.503865,44.262759;-76.131864,44.371148;-75.510192,44.720362;-74.71599,45.042114;-73.916091,45.419396;-73.555908,45.485541;-73.56927,45.50216;-73.535925,45.489275;-71.312824,46.752078;-71.231033,46.835198;-71.21464,46.818294&profile=rail'},
+                "Toronto - Niagara Falls": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Toronto - Niagara)', 'File': '[VIA Rail] Corridor (Niagara)', 'Link': 'https://brouter.damsy.net/latest/#map=11/43.2785/-79.6255/standard&lonlats=-79.377729,43.645151;-79.417559,43.636475;-79.483525,43.626574;-79.587171,43.556028;-79.607757,43.537079;-79.648637,43.496705;-79.664038,43.477054;-79.695125,43.442785;-79.810261,43.340321;-79.853901,43.313664;-79.871303,43.268011;-79.853874,43.263882;-79.703429,43.228366;-79.062392,43.109;-79.08592,43.13173;-79.165496,43.14082;-79.705564,43.229;-79.868771,43.267449;-79.878212,43.26948;-79.855666,43.312505;-79.80987,43.340602;-79.695409,43.442493;-79.681354,43.455867;-79.663936,43.477171;-79.648535,43.496853;-79.607634,43.537192;-79.587343,43.555842;-79.544808,43.592289;-79.48315,43.626807;-79.417216,43.636444;-79.377718,43.645125&profile=rail'},
             },
         },
         "Ocean": {
             "Fantasy": {
-                "Québec - Halifax": {'Mode': 2, 'Stations': '-Intercity LS (Québec - Halifax)'},
+                "Québec - Halifax": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Québec - Halifax)'},
             },
             "Present": {
-                "Québec - Halifax": {'Mode': 2, 'Stations': '-Intercity LS (Québec - Halifax)', 'File': '[VIA Rail] Ocean', 'Link': 'https://brouter.damsy.net/latest/#map=19/46.81870/-71.21482/standard&lonlats=-71.214401,46.818377;-71.220141,46.825483;-71.246295,46.718552;-68.016357,48.598041;-63.567782,44.639437;-68.01919,48.602128;-71.246864,46.718564;-71.219867,46.825137;-71.214436,46.818346&profile=rail'},
+                "Québec - Halifax": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Québec - Halifax)', 'File': '[VIA Rail] Ocean', 'Link': 'https://brouter.damsy.net/latest/#map=19/46.81870/-71.21482/standard&lonlats=-71.214401,46.818377;-71.220141,46.825483;-71.246295,46.718552;-68.016357,48.598041;-63.567782,44.639437;-68.01919,48.602128;-71.246864,46.718564;-71.219867,46.825137;-71.214436,46.818346&profile=rail'},
             },
         },
         "Prairie Link": {
             "Fantasy": {
-                "Calgary - Edmonton": {'Mode': 1, 'Stations': '-Intercity HS (Calgary - Edmonton)'},
+                "Calgary - Edmonton": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Calgary - Edmonton)'},
             },
         },
         "Prince George": {
             "Fantasy": {
-                "Vancouver - Prince George": {'Mode': 2, 'Stations': '-Intercity LS (Vancouver - Prince George)'},
+                "Vancouver - Prince George": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Vancouver - Prince George)'},
             },
         },
         "Prince Rupert": {
             "Fantasy": {
-                "Jasper - Prince Rupert": {'Mode': 2, 'Stations': '-Intercity LS (Jasper - Prince Rupert)'},
+                "Jasper - Prince Rupert": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Jasper - Prince Rupert)'},
             },
             "Present": {
-                "Jasper - Prince Rupert": {'Mode': 2, 'Stations': '-Intercity LS (Jasper - Prince Rupert)', 'File': '[VIA Rail] Prince Rupert', 'Link': 'https://brouter.damsy.net/latest/#map=18/52.87709/-118.07935/standard&lonlats=-118.078857,52.87768;-130.35229,54.296159;-118.078951,52.877691&profile=rail'},
+                "Jasper - Prince Rupert": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Jasper - Prince Rupert)', 'File': '[VIA Rail] Prince Rupert', 'Link': 'https://brouter.damsy.net/latest/#map=18/52.87709/-118.07935/standard&lonlats=-118.078857,52.87768;-130.35229,54.296159;-118.078951,52.877691&profile=rail'},
             },
         },
         "Saguenay": {
             "Fantasy": {
-                "Montréal - Saguenay": {'Mode': 2, 'Stations': '-Intercity LS (Montréal - Saguenay)'},
+                "Montréal - Saguenay": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Montréal - Saguenay)'},
             },
             "Present": {
-                "Montréal - Jonquière": {'Mode': 2, 'Stations': '-Intercity LS (Montréal - Jonquière)', 'File': '[VIA Rail] Saguenay', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.4808/-73.5938/standard&lonlats=-73.569388,45.502076;-73.579688,45.476751;-71.252931,48.41158;-73.549926,45.653215;-73.675464,45.491209;-73.686156,45.448518;-73.636857,45.449782;-73.589333,45.474502;-73.556522,45.48358;-73.569308,45.5021&profile=rail'},
+                "Montréal - Jonquière": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Montréal - Jonquière)', 'File': '[VIA Rail] Saguenay', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.4808/-73.5938/standard&lonlats=-73.569388,45.502076;-73.579688,45.476751;-71.252931,48.41158;-73.549926,45.653215;-73.675464,45.491209;-73.686156,45.448518;-73.636857,45.449782;-73.589333,45.474502;-73.556522,45.48358;-73.569308,45.5021&profile=rail'},
             },
         },
         "Senneterre": {
             "Fantasy": {
-                "Montréal - Senneterre": {'Mode': 2, 'Stations': '-Intercity LS (Montréal - Senneterre)'},
+                "Montréal - Senneterre": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Montréal - Senneterre)'},
             },
             "Present": {
-                "Montréal - Senneterre": {'Mode': 2, 'Stations': '-Intercity LS (Montréal - Senneterre)', 'File': '[VIA Rail] Senneterre', 'Link': 'https://brouter.damsy.net/latest/#map=7/47.156/-74.762/standard&lonlats=-73.569388,45.502076;-73.579688,45.476751;-77.244766,48.392389;-73.549926,45.653215;-73.675464,45.491209;-73.686156,45.448518;-73.636857,45.449782;-73.589333,45.474502;-73.556522,45.48358;-73.569308,45.5021&profile=rail'},
+                "Montréal - Senneterre": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Montréal - Senneterre)', 'File': '[VIA Rail] Senneterre', 'Link': 'https://brouter.damsy.net/latest/#map=7/47.156/-74.762/standard&lonlats=-73.569388,45.502076;-73.579688,45.476751;-77.244766,48.392389;-73.549926,45.653215;-73.675464,45.491209;-73.686156,45.448518;-73.636857,45.449782;-73.589333,45.474502;-73.556522,45.48358;-73.569308,45.5021&profile=rail'},
             },
         },
         "Victoria": {
             "Fantasy": {
-                "Victoria - Courtenay": {'Mode': 3, 'Stations': '-Intercity LS (Victoria - Courtenay)'},
-                "Victoria - Port Alberni": {'Mode': 3, 'Stations': '-Intercity LS (Victoria - Port Alberni)'},
+                "Victoria - Courtenay": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Victoria - Courtenay)'},
+                "Victoria - Port Alberni": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Victoria - Port Alberni)'},
             },
         },
         "White River": {
             "Fantasy": {
-                "Sudbury - White River": {'Mode': 2, 'Stations': '-Intercity LS (Sudbury - White River)'},
+                "Sudbury - White River": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Sudbury - White River)'},
             },
             "Present": {
-                "Sudbury - White River": {'Mode': 2, 'Stations': '-Intercity LS (Sudbury - White River)', 'File': '[VIA Rail] White River', 'Link': 'https://brouter.damsy.net/latest/#map=12/46.5177/-80.9651/standard&lonlats=-80.989977,46.486342;-85.282788,48.589844;-81.021348,46.503117;-80.990013,46.486303&profile=rail'},
+                "Sudbury - White River": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Sudbury - White River)', 'File': '[VIA Rail] White River', 'Link': 'https://brouter.damsy.net/latest/#map=12/46.5177/-80.9651/standard&lonlats=-80.989977,46.486342;-85.282788,48.589844;-81.021348,46.503117;-80.990013,46.486303&profile=rail'},
             },
         },
         "Wild Rose": {
             "Fantasy": {
-                "Calgary - Edmonton": {'Mode': 3, 'Stations': '-Intercity LS (Calgary - Edmonton)'},
+                "Calgary - Edmonton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Calgary - Edmonton)'},
             },
         },
     },
     "VRE": {
         "Fredericksburg Line": {
             "Fantasy": {
-                "Washington - Spotsylvania": {'Mode': 4, 'Stations': 'Washington Regional Rail (Union - Spotsylvania)'},
+                "Washington - Spotsylvania": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Union - Spotsylvania)'},
             },
         },
         "Manassas Line": {
             "Fantasy": {
-                "Washington - Manassas": {'Mode': 4, 'Stations': 'Washington Regional Rail (Union - Manassas)'},
+                "Washington - Manassas": {'Mode': 'Heavy Rail', 'Stations': 'Washington Regional Rail (Union - Manassas)'},
             },
         },
     },
     "VTA": {
         "Blue Line": {
             "Fantasy": {
-                "Baypointe - Santa Teresa": {'Mode': 7, 'Stations': 'San Jose VTA (Baypointe - Santa Teresa)'},
+                "Baypointe - Santa Teresa": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Baypointe - Santa Teresa)'},
             },
             "Present": {
-                "Baypointe - Santa Teresa": {'Mode': 7, 'Stations': 'San Jose VTA (Baypointe - Santa Teresa) [Old]', 'File': '[VTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/37.3344/-121.8907/standard&lonlats=-121.941507,37.41088;-121.94424,37.409556;-121.943731,37.407404;-121.886216,37.332205;-121.893193,37.328767;-121.891835,37.322986;-121.884084,37.31081;-121.813005,37.243141;-121.78959,37.235906;-121.790652,37.239259;-121.874079,37.297604;-121.890103,37.329897;-121.903385,37.353337;-121.904688,37.355085;-121.918773,37.374147;-121.942368,37.405964;-121.943881,37.409616;-121.941486,37.41085&profile=rail'},
+                "Baypointe - Santa Teresa": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Baypointe - Santa Teresa) [Old]', 'File': '[VTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/37.3344/-121.8907/standard&lonlats=-121.941507,37.41088;-121.94424,37.409556;-121.943731,37.407404;-121.886216,37.332205;-121.893193,37.328767;-121.891835,37.322986;-121.884084,37.31081;-121.813005,37.243141;-121.78959,37.235906;-121.790652,37.239259;-121.874079,37.297604;-121.890103,37.329897;-121.903385,37.353337;-121.904688,37.355085;-121.918773,37.374147;-121.942368,37.405964;-121.943881,37.409616;-121.941486,37.41085&profile=rail'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Old Ironside - Winchester": {'Mode': 7, 'Stations': 'San Jose VTA (Ironside - Winchester)'},
+                "Old Ironside - Winchester": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Ironside - Winchester)'},
             },
             "Present": {
-                "Old Ironside - Winchester": {'Mode': 7, 'Stations': 'San Jose VTA (Ironside - Winchester) [Old]', 'File': '[VTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/37.3278/-121.8959/standard&lonlats=-121.979899,37.403277;-121.976016,37.403339;-121.891803,37.339553;-121.894212,37.328178;-121.903567,37.327783;-121.930239,37.299665;-121.948261,37.279167;-121.947156,37.280584;-121.946397,37.28157;-121.887512,37.331275;-121.903229,37.353115;-121.904688,37.355158;-121.918775,37.374083;-121.942481,37.406066;-121.944176,37.408457;-121.97551,37.403452;-121.9799,37.403249&profile=rail'},
+                "Old Ironside - Winchester": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Ironside - Winchester) [Old]', 'File': '[VTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/37.3278/-121.8959/standard&lonlats=-121.979899,37.403277;-121.976016,37.403339;-121.891803,37.339553;-121.894212,37.328178;-121.903567,37.327783;-121.930239,37.299665;-121.948261,37.279167;-121.947156,37.280584;-121.946397,37.28157;-121.887512,37.331275;-121.903229,37.353115;-121.904688,37.355158;-121.918775,37.374083;-121.942481,37.406066;-121.944176,37.408457;-121.97551,37.403452;-121.9799,37.403249&profile=rail'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Mountain View - Alum Rock": {'Mode': 7, 'Stations': 'San Jose VTA (Mountain View - Alum Rock)'},
+                "Mountain View - Alum Rock": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Mountain View - Alum Rock)'},
             },
             "Present": {
-                "Mountain View - Alum Rock": {'Mode': 7, 'Stations': 'San Jose VTA (Mountain View - Alum Rock)', 'File': '[VTA] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.36059/-121.83665/standard&lonlats=-122.077809,37.395281;-122.067922,37.391304;-122.010217,37.403825;-121.984801,37.403395;-121.961809,37.408184;-121.871354,37.396308;-121.832888,37.359119;-121.832153,37.35808;-121.833044,37.35978;-121.871279,37.396363;-121.91869,37.412484;-121.939257,37.411951;-121.976089,37.403446;-121.984318,37.403587;-122.026595,37.411193;-122.050552,37.400096;-122.060144,37.390985;-122.074955,37.394296;-122.077777,37.395257&profile=rail'},
+                "Mountain View - Alum Rock": {'Mode': 'Light Rail', 'Stations': 'San Jose VTA (Mountain View - Alum Rock)', 'File': '[VTA] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.36059/-121.83665/standard&lonlats=-122.077809,37.395281;-122.067922,37.391304;-122.010217,37.403825;-121.984801,37.403395;-121.961809,37.408184;-121.871354,37.396308;-121.832888,37.359119;-121.832153,37.35808;-121.833044,37.35978;-121.871279,37.396363;-121.91869,37.412484;-121.939257,37.411951;-121.976089,37.403446;-121.984318,37.403587;-122.026595,37.411193;-122.050552,37.400096;-122.060144,37.390985;-122.074955,37.394296;-122.077777,37.395257&profile=rail'},
             },
         },
     },
     "Valley Metro": {
         "A Line": {
             "Fantasy": {
-                "Gilbert Rd - Downtown": {'Mode': 7, 'Stations': 'Phoenix Light Rail (Gilbert Rd - Downtown)'},
+                "Gilbert Rd - Downtown": {'Mode': 'Light Rail', 'Stations': 'Phoenix Light Rail (Gilbert Rd - Downtown)'},
             },
             "Present": {
-                "Gilbert Rd - Downtown": {'Mode': 7, 'Stations': 'Phoenix Light Rail (Gilbert Rd - Downtown)', 'File': '[Valley Metro] A Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.41531/-111.79451/standard&lonlats=-111.790137,33.415386;-111.793479,33.415381;-111.817335,33.41514;-111.825247,33.415095;-111.842049,33.415171;-111.868367,33.414961;-111.893579,33.414831;-111.970199,33.446384;-112.023264,33.448232;-112.071319,33.448649;-112.078421,33.44795;-112.0706,33.446025;-112.022181,33.447122;-111.9379,33.426754;-111.918696,33.414737;-111.89436,33.414716;-111.873586,33.414804;-111.86819,33.414728;-111.824164,33.414987;-111.790139,33.415435&profile=rail'},
+                "Gilbert Rd - Downtown": {'Mode': 'Light Rail', 'Stations': 'Phoenix Light Rail (Gilbert Rd - Downtown)', 'File': '[Valley Metro] A Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.41531/-111.79451/standard&lonlats=-111.790137,33.415386;-111.793479,33.415381;-111.817335,33.41514;-111.825247,33.415095;-111.842049,33.415171;-111.868367,33.414961;-111.893579,33.414831;-111.970199,33.446384;-112.023264,33.448232;-112.071319,33.448649;-112.078421,33.44795;-112.0706,33.446025;-112.022181,33.447122;-111.9379,33.426754;-111.918696,33.414737;-111.89436,33.414716;-111.873586,33.414804;-111.86819,33.414728;-111.824164,33.414987;-111.790139,33.415435&profile=rail'},
             },
         },
         "B Line": {
             "Fantasy": {
-                "Metro Parkway - Baseline": {'Mode': 7, 'Stations': 'Phoenix Light Rail (Metro Parkway - Baseline)'},
+                "Metro Parkway - Baseline": {'Mode': 'Light Rail', 'Stations': 'Phoenix Light Rail (Metro Parkway - Baseline)'},
             },
             "Present": {
-                "Metro Parkway - Baseline": {'Mode': 7, 'Stations': 'Phoenix Light Rail (Metro Parkway - Baseline)', 'File': '[Valley Metro] B Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.37956/-112.07348/standard&lonlats=-112.073185,33.3779;-112.073733,33.463194;-112.073733,33.484328;-112.073652,33.50674;-112.099568,33.546746;-112.099527,33.566338;-112.112517,33.574743;-112.118992,33.575201;-112.112308,33.573701;-112.099672,33.566322;-112.099895,33.518486;-112.074012,33.462084;-112.073333,33.377908&profile=rail'},
+                "Metro Parkway - Baseline": {'Mode': 'Light Rail', 'Stations': 'Phoenix Light Rail (Metro Parkway - Baseline)', 'File': '[Valley Metro] B Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/33.37956/-112.07348/standard&lonlats=-112.073185,33.3779;-112.073733,33.463194;-112.073733,33.484328;-112.073652,33.50674;-112.099568,33.546746;-112.099527,33.566338;-112.112517,33.574743;-112.118992,33.575201;-112.112308,33.573701;-112.099672,33.566322;-112.099895,33.518486;-112.074012,33.462084;-112.073333,33.377908&profile=rail'},
             },
         },
         "S Line": {
             "Fantasy": {
-                "Dorsey Ln - Marina Heights": {'Mode': 8, 'Stations': 'Tempe Streetcar (Dorsey Ln - Marina Heights)'},
+                "Dorsey Ln - Marina Heights": {'Mode': 'Streetcar', 'Stations': 'Tempe Streetcar (Dorsey Ln - Marina Heights)'},
             },
             "Present": {
-                "Dorsey Ln - Marina Heights": {'Mode': 8, 'Stations': 'Tempe Streetcar (Dorsey Ln - Marina Heights)', 'File': '[Valley Metro] S Line', 'Link': 'https://brouter.damsy.net/latest/#map=19/33.41505/-111.91823/standard&lonlats=-111.917037,33.414707;-111.92152,33.414813;-111.938624,33.415895;-111.939719,33.426856;-111.932423,33.429308;-111.942186,33.429703;-111.94268,33.42238;-111.940212,33.417775;-111.922338,33.414586;-111.917037,33.414655&profile=rail'},
+                "Dorsey Ln - Marina Heights": {'Mode': 'Streetcar', 'Stations': 'Tempe Streetcar (Dorsey Ln - Marina Heights)', 'File': '[Valley Metro] S Line', 'Link': 'https://brouter.damsy.net/latest/#map=19/33.41505/-111.91823/standard&lonlats=-111.917037,33.414707;-111.92152,33.414813;-111.938624,33.415895;-111.939719,33.426856;-111.932423,33.429308;-111.942186,33.429703;-111.94268,33.42238;-111.940212,33.417775;-111.922338,33.414586;-111.917037,33.414655&profile=rail'},
             },
         },
     },
     "WMATA": {
         "Blue Line": {
             "Fantasy": {
-                "Van Dorn - Largo": {'Mode': 5, 'Stations': 'Washington Metro (Van Dorn - Largo)'},
+                "Van Dorn - Largo": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Van Dorn - Largo)'},
             },
         },
         "Green Line": {
             "Fantasy": {
-                "Branch Av - Greenbelt": {'Mode': 5, 'Stations': 'Washington Metro (Branch Av - Greenbelt)'},
+                "Branch Av - Greenbelt": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Branch Av - Greenbelt)'},
             },
         },
         "Orange Line": {
             "Fantasy": {
-                "Vienna - New Carrollton": {'Mode': 5, 'Stations': 'Washington Metro (Vienna - New Carrollton)'},
+                "Vienna - New Carrollton": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Vienna - New Carrollton)'},
             },
         },
         "Red Line": {
             "Fantasy": {
-                "Shady Grove - Glenmont": {'Mode': 5, 'Stations': 'Washington Metro (Shady Grove - Glenmont)'},
+                "Shady Grove - Glenmont": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Shady Grove - Glenmont)'},
             },
         },
         "Silver Line": {
             "Fantasy": {
-                "Ashburn - Largo": {'Mode': 5, 'Stations': 'Washington Metro (Ashburn - Largo)'},
-                "Ashburn - New Carrollton": {'Mode': 5, 'Stations': 'Washington Metro (Ashburn - New Carrollton)'},
+                "Ashburn - Largo": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Ashburn - Largo)'},
+                "Ashburn - New Carrollton": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Ashburn - New Carrollton)'},
             },
         },
         "Yellow Line": {
             "Fantasy": {
-                "Huntington - Greenbelt": {'Mode': 5, 'Stations': 'Washington Metro (Huntington - Greenbelt)'},
+                "Huntington - Greenbelt": {'Mode': 'Heavy Metro', 'Stations': 'Washington Metro (Huntington - Greenbelt)'},
             },
         },
     },
     "WeGo": {
         "Bellevue Line": {
             "Fantasy": {
-                "Nashville - Bellevue": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Union - Bellevue)'},
+                "Nashville - Bellevue": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Union - Bellevue)'},
             },
         },
         "Franklin Line": {
             "Fantasy": {
-                "Nashville - Franklin": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Union - Franklin)'},
+                "Nashville - Franklin": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Union - Franklin)'},
             },
         },
         "Gallatin Line": {
             "Fantasy": {
-                "Nashville - Gallatin": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Union - Gallatin)'},
+                "Nashville - Gallatin": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Union - Gallatin)'},
             },
         },
         "Murfreesboro Line": {
             "Fantasy": {
-                "Nashville - Murfreesboro": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Union - Murfreesboro)'},
+                "Nashville - Murfreesboro": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Union - Murfreesboro)'},
             },
         },
         "Star": {
             "Fantasy": {
-                "Nashville - Lebanon": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)'},
+                "Nashville - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)'},
             },
             "Present": {
-                "Nashville - Lebanon": {'Mode': 4, 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)', 'File': '[TDOT] WeGo Star', 'Link': 'https://brouter.damsy.net/latest/#map=16/36.1605/-86.7676/standard&lonlats=-86.773761,36.16211;-86.296686,36.211741;-86.773818,36.162087&profile=rail'},
+                "Nashville - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)', 'File': '[TDOT] WeGo Star', 'Link': 'https://brouter.damsy.net/latest/#map=16/36.1605/-86.7676/standard&lonlats=-86.773761,36.16211;-86.296686,36.211741;-86.773818,36.162087&profile=rail'},
             },
         },
     },
     "YUL Airport": {
         "Montréal VAL": {
             "Fantasy": {
-                "YUL Airport": {'Mode': 9, 'Stations': 'Montréal Peoplemover (Dorval - Aéroport)'},
+                "YUL Airport": {'Mode': 'Peoplemover', 'Stations': 'Montréal Peoplemover (Dorval - Aéroport)'},
             },
         },
     },
     "YYC Airport": {
         "Airport Shuttle": {
             "Fantasy": {
-                "YYC Airport": {'Mode': 9, 'Stations': 'Calgary Peoplemover (Airport Hub - 88 Ave)'},
+                "YYC Airport": {'Mode': 'Peoplemover', 'Stations': 'Calgary Peoplemover (Airport Hub - 88 Ave)'},
             },
         },
     },
     "YYZ Airport": {
         "YYZ Terminal Link": {
             "Fantasy": {
-                "YYZ Airport": {'Mode': 9, 'Stations': 'Toronto Peoplemover (YYZ Airport)'},
+                "YYZ Airport": {'Mode': 'Peoplemover', 'Stations': 'Toronto Peoplemover (YYZ Airport)'},
             },
         },
     },
