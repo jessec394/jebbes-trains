@@ -8,4 +8,5 @@ Modes = {
     7: {"Name": "Light Rail",                     "Weight": 3.0, "Size": 10, "Color": "#43A047", "zOrder": 4},
     8: {"Name": "Streetcar",                      "Weight": 3.0, "Size": 10, "Color": "#EBCC1C", "zOrder": 5},
     9: {"Name": "Peoplemover",                    "Weight": 2.0, "Size": 10, "Color": "#2D2D2D", "zOrder": 8},
+    "Monorail": {"Name": "Monorail",                    "Weight": 2.0, "Size": 10, "Color": "#2D2D2D", "zOrder": 9},
 }

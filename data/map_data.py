@@ -912,6 +912,7 @@ Stations = {
     "69th St Transit Center": {'Location': (39.962350, -75.259400)},
     "69th Street": {'Location': (51.037570, -114.188650)},
     "6th & Main": {'Location': (39.103184, -84.510180)},
+    "6th St": {'Location': (32.753080, -96.824110)},
     "6th St/Arts District": {'Location': (34.037740, -118.230460)},
     "6th St/Mill Ave": {'Location': (33.424870, -111.939900)},
     "6th Street SW": {'Location': (51.046760, -114.074850)},
@@ -1412,6 +1413,7 @@ Stations = {
     "Beaverton TC (MAX)": {'Location': (45.491450, -122.801650), 'Label': 'Beaverton TC'},
     "Beaverton TC (WES)": {'Location': (45.490640, -122.801150), 'Label': 'Beaverton TC'},
     "Becker": {'Location': (45.391730, -93.876800)},
+    "Beckley": {'Location': (32.758890, -96.822830)},
     "Bedford": {'Location': (41.391660, -81.538160)},
     "Bedford Av": {'Location': (40.716960, -73.956320)},
     "Bedford Hills": {'Location': (41.237140, -73.700350)},
@@ -1514,6 +1516,7 @@ Stations = {
     "Birmingham (AL)": {'Location': (33.512660, -86.806650), 'Label': 'Birmingham', 'Major': True},
     "Birmingham (MO)": {'Location': (39.167580, -94.454750), 'Label': 'Birmingham'},
     "Biscotasing": {'Location': (47.299980, -82.102950)},
+    "Bishop Arts": {'Location': (32.749080, -96.824410)},
     "Bismarck": {'Location': (46.804620, -100.786490)},
     "Black River Falls": {'Location': (44.307010, -90.811420)},
     "Black Rock": {'Location': (42.936940, -78.897150)},
@@ -2814,6 +2817,7 @@ Stations = {
     "E 79th St (Subway)": {'Location': (41.503830, -81.633530), 'Label': 'E 79th St'},
     "E 9th St": {'Location': (41.500250, -81.686740)},
     "E St": {'Location': (32.638830, -117.098920)},
+    "EBJ Union Station": {'Location': (32.776090, -96.807240), 'Major': True},
     "EVMC/Fort Norfolk": {'Location': (36.858690, -76.303490)},
     "EWR Station 1": {'Location': (40.687370, -74.190790), 'Label': 'Station 1'},
     "EWR Station 2": {'Location': (40.689600, -74.187330), 'Label': 'Station 2'},
@@ -3518,7 +3522,8 @@ Stations = {
     "Green's Farms": {'Location': (41.122450, -73.315060)},
     "Greenbelt": {'Location': (39.011050, -76.911220)},
     "Greenboro": {'Location': (45.359710, -75.659440)},
-    "Greenbriar": {'Location': (33.684010, -84.499940)},
+    "Greenbriar (Atlanta)": {'Location': (33.684010, -84.499940), 'Label': 'Greenbriar'},
+    "Greenbriar (Dallas)": {'Location': (32.762270, -96.815350), 'Label': 'Greenbriar'},
     "Greenbriar Place North": {'Location': (29.957260, -95.386710)},
     "Greenbush": {'Location': (42.178780, -70.746640)},
     "Greenfield": {'Location': (42.318850, -72.626440)},
@@ -5403,6 +5408,7 @@ Stations = {
     "Oak-VGH": {'Location': (49.263430, -123.126600)},
     "Oakdale": {'Location': (40.743490, -73.132430)},
     "Oakdale/Palou": {'Location': (37.734390, -122.390860)},
+    "Oakenwald": {'Location': (32.758890, -96.822830)},
     "Oakland City": {'Location': (33.716960, -84.425130)},
     "Oakland Coliseum (APM)": {'Location': (37.752350, -122.196200), 'Label': 'Coliseum'},
     "Oakland Coliseum (BART)": {'Location': (37.753640, -122.196790), 'Label': 'Coliseum'},
@@ -9531,7 +9537,7 @@ Segments = {
         "F": ['[R] Atlanta MARTA (Five Points - Airport)', 'Atlanta MARTA (Five Points - Dunwoody)'],
     },
     "Atlanta MARTA (Beltway Loop)": {
-        "L": ['Delmar', 'D.L. Hollowell', 'S Cobb', 'Vinings Heights', 'Paces Ferry', 'Cumberland Blvd', 'Truist Park', 'Powers Ferry', 'Northside Drive (MARTA)', 'Riverside Dr (Atlanta)', 'Roswell', 'Northside Medical Center', 'Chamblee Dunwoody', 'Peachtree', 'Doraville (MARTA)', 'Chamblee Tucker', 'Northlake', 'Ponce de Leon', 'N Decatur', 'Indian Creek W', 'Redwing Circle', 'Meadowdale', 'Snapfinger', 'Rainbow', 'Panthersville', 'Clifton Springs', 'Bouldercrest', 'Moreland Ave', 'Expo Center', 'Old Dixie', 'South Loop', 'Fayetteville Rd', '[X] Atlanta Airport Bend', 'Roosevelt Hwy', 'Redwine', 'Greenbriar', 'Cascade'],
+        "L": ['Delmar', 'D.L. Hollowell', 'S Cobb', 'Vinings Heights', 'Paces Ferry', 'Cumberland Blvd', 'Truist Park', 'Powers Ferry', 'Northside Drive (MARTA)', 'Riverside Dr (Atlanta)', 'Roswell', 'Northside Medical Center', 'Chamblee Dunwoody', 'Peachtree', 'Doraville (MARTA)', 'Chamblee Tucker', 'Northlake', 'Ponce de Leon', 'N Decatur', 'Indian Creek W', 'Redwing Circle', 'Meadowdale', 'Snapfinger', 'Rainbow', 'Panthersville', 'Clifton Springs', 'Bouldercrest', 'Moreland Ave', 'Expo Center', 'Old Dixie', 'South Loop', 'Fayetteville Rd', '[X] Atlanta Airport Bend', 'Roosevelt Hwy', 'Redwine', 'Greenbriar (Atlanta)', 'Cascade'],
     },
     "Atlanta MARTA (Five Points - Airport)": {
         "F": ['Five Points', 'Garnett', 'West End', 'Murphy Crossing', 'Oakland City', 'Lakewood/Ft. McPherson', 'East Point', 'College Park/ATL', 'Atlanta Airport', '[X] Atlanta Airport Bend', 'Fayetteville Rd'],
@@ -10347,6 +10353,9 @@ Segments = {
     },
     "Dallas Regional Rail (Medical District - DFW)": {
         "F": ['Near Southside/Medical District', '[X] Fort Worth Southside Bend', 'Dallas Regional Rail (Fort Worth - DFW)'],
+    },
+    "Dallas Streetcar": {
+        "F": ['EBJ Union Station', 'Greenbriar (Dallas)', 'Oakenwald', 'Beckley', '6th St', 'Bishop Arts'],
     },
     "Dayton Light Rail": {
         "F": ['Shiloh', 'Siebenthaler Ave', 'Hillcrest Ave', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St', 'Wright Stop Plaza', 'Dayton Union Station (LRT)', 'Apple St', 'University of Dayton', 'Oakwood', 'Dorothy Ln', 'Kettering'],
@@ -14091,6 +14100,14 @@ Lines = {
                 "UNT - Rowlett": {'Mode': 7, 'Stations': 'Dallas Light Rail (UNT - Rowlett)', 'File': '[DART] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=10/32.9724/-96.6426/standard&lonlats=-96.801543,32.653786;-96.797705,32.655645;-96.788942,32.676967;-96.797372,32.701692;-96.800612,32.746979;-96.788011,32.759327;-96.785549,32.763077;-96.787367,32.765291;-96.792753,32.788186;-96.793123,32.79159;-96.765749,32.840492;-96.654555,32.913153;-96.567367,32.903657;-96.562834,32.904182;-96.569006,32.903513;-96.605605,32.905258;-96.687879,32.905614;-96.71387,32.897493;-96.7339,32.867764;-96.733332,32.857636;-96.768195,32.840312;-96.774965,32.837914;-96.793327,32.792409;-96.806229,32.780767;-96.805821,32.772914;-96.787727,32.760247;-96.795328,32.749884;-96.801116,32.746948;-96.802726,32.744542;-96.805392,32.723031;-96.797892,32.70203;-96.791798,32.690649;-96.789103,32.676948;-96.791659,32.658932;-96.796374,32.656507;-96.801515,32.653744&profile=rail'},
             },
         },
+        "Dallas Streetcar": {
+            "Fantasy": {
+                "Union Station - Bishop Arts": {'Mode': 8, 'Stations': 'Dallas Streetcar'},
+            },
+            "Present": {
+                "Union Station - Bishop Arts": {'Mode': 8, 'Stations': 'Dallas Streetcar', 'File': '[DART] Dallas Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=15/32.7641/-96.8150/standard&lonlats=-96.806958,32.775494;-96.818583,32.760207;-96.824264,32.749754;-96.824474,32.748985;-96.823958,32.750085;-96.818358,32.759945;-96.806776,32.775549&profile=rail'},
+            },
+        },
         "Green Line": {
             "Fantasy": {
                 "Carrollton - Buckner": {'Mode': 7, 'Stations': 'Dallas Light Rail (Carrollton - Buckner)'},
@@ -14477,7 +14494,7 @@ Lines = {
     "LVCVA": {
         "Las Vegas Monorail": {
             "Present": {
-                "MGM Grand - Sahara": {'Mode': 9, 'Stations': 'Las Vegas Monorail', 'File': '[LVCVA] Las Vegas Monorail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.1222/-115.1687/standard&lonlats=-115.167693,36.102114;-115.154882,36.125623;-115.154553,36.142603;-115.167929,36.10211'},
+                "MGM Grand - Sahara": {'Mode': "Monorail", 'Stations': 'Las Vegas Monorail', 'File': '[LVCVA] Las Vegas Monorail', 'Link': 'https://brouter.damsy.net/latest/#map=14/36.1222/-115.1687/standard&lonlats=-115.167693,36.102114;-115.154882,36.125623;-115.154553,36.142603;-115.167929,36.10211'},
             },
         },
     },
