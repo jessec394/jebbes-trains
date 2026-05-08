@@ -12656,10 +12656,10 @@ Segments = {
         "L": ['[X] Portland Lovejoy Junction W', 'NW 11th & Johnson', 'NW 11th & Glisan', 'NW 11th & Couch', 'SW 11th & Alder', 'SW 11th & Taylor', 'SW 11th & Jefferson', 'SW 11th & Clay', '[X] Portland 11th Bend S', 'SW Park & Market', 'SW 5th & Market', 'SW 5th & Mill', 'SW 3rd & Harrison', 'SW Harrison Street', 'S River Parkway & Moody', 'S Moody & Meade'],
     },
     "Portland Streetcar (A)": {
-        "L": ['[X] Portland Lovejoy Junction E', 'NW 9th & Lovejoy', '[X] Portland Broadway Bridge Bend', 'Portland Broadway Junction', 'N Weidler & Ross', 'NE Weidler & 2nd', 'NE Weidler & Grand', '[X] Portland Weidler Bend', 'NE 7th & Halsey', 'NE 7th & Holladay', '[X] Portland Oregon Bend E', 'NE Oregon & Grand', '[X] Portland Oregon Bend W', 'NE MLK & Hoyt', 'NE MLK & Burnside', 'SE MLK & Stark', 'SE MLK & Morrison', 'SE MLK & Taylor', 'SE MLK & Hawthorne', 'SE MLK & Mill', 'SE Water/OMSI', '[X] Portland Tilikum Bridge Bend N', '[X] Portland Tilikum Bridge Bend S', '[X] South Waterfront/S Moody', 'Portland Streetcar (10th Ave)'],
+        "L": ['[X] Portland Lovejoy Junction E', 'NW 9th & Lovejoy', '[X] Portland Broadway Bridge Bend', '[X] Portland Broadway Junction', 'N Weidler & Ross', 'NE Weidler & 2nd', 'NE Weidler & Grand', '[X] Portland Weidler Bend', 'NE 7th & Halsey', 'NE 7th & Holladay', '[X] Portland Oregon Bend E', 'NE Oregon & Grand', '[X] Portland Oregon Bend W', 'NE MLK & Hoyt', 'NE MLK & Burnside', 'SE MLK & Stark', 'SE MLK & Morrison', 'SE MLK & Taylor', 'SE MLK & Hawthorne', 'SE MLK & Mill', 'SE Water/OMSI', '[X] Portland Tilikum Bridge Bend N', '[X] Portland Tilikum Bridge Bend S', '[X] South Waterfront/S Moody', 'Portland Streetcar (10th Ave)'],
     },
     "Portland Streetcar (B)": {
-        "L": ['[X] Portland Lovejoy Junction E', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 11th & Marshall', 'Portland Streetcar (11th Ave)', '[X] South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'SE Water/OMSI', 'SE Grand & Mill', 'SE Grand & Hawthorne', 'SE Grand & Taylor', 'SE Grand & Belmont', 'SE Grand & Stark', 'SE Grand & Burnside', 'NE Grand & Hoyt', 'NE Grand & Holladay', 'NE Grand & Multnomah', 'NE Grand & Broadway', 'NE Broadway & 2nd', 'Portland Broadway Bend', 'N Broadway & Ross', 'Portland Broadway Junction', '[X] Portland Broadway Bridge Bend', 'NW 9th & Lovejoy', '[X] Portland Lovejoy Junction E'],
+        "L": ['[X] Portland Lovejoy Junction E', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 11th & Marshall', 'Portland Streetcar (11th Ave)', '[X] South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'SE Water/OMSI', 'SE Grand & Mill', 'SE Grand & Hawthorne', 'SE Grand & Taylor', 'SE Grand & Belmont', 'SE Grand & Stark', 'SE Grand & Burnside', 'NE Grand & Hoyt', 'NE Grand & Holladay', 'NE Grand & Multnomah', 'NE Grand & Broadway', 'NE Broadway & 2nd', '[X] Portland Broadway Bend', 'N Broadway & Ross', '[X] Portland Broadway Junction', '[X] Portland Broadway Bridge Bend', 'NW 9th & Lovejoy', '[X] Portland Lovejoy Junction E'],
     },
     "Portland Streetcar (NS)": {
         "L": ['NW 23rd & Marshall', '[X] Portland 23rd Bend S', 'NW 22nd & Lovejoy', 'NW 21st & Lovejoy', 'NW 18th & Lovejoy', 'NW 13th & Lovejoy', 'Portland Streetcar (11th Ave)', 'S Moody & Gibbs', 'S Moody & Gaines', 'S Lowell & Bond', 'S Bond & Lane', 'OHSU Commons', 'S Moody & Gibbs', 'Portland Streetcar (10th Ave)', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 12th & Northrup', 'NW 14th & Northrup', 'NW 18th & Northrup', 'NW 21st & Northrup', 'NW 22nd & Northrup', '[X] Portland 23rd Bend N', 'NW 23rd & Marshall'],
@@ -17052,28 +17052,28 @@ Lines = {
                 "Expo Center - Loop": {'Mode': 'Light Rail', 'Stations': 'Portland MAX (Expo Center - Loop)', 'File': '[TriMet] Yellow Line'},
             },
         },
-        "Portland Streetcar (A)": {
+        "Portland Streetcar A": {
             "Fantasy": {
-                "Clockwise": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (A)'},
+                "Clockwise": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (A)'},
             },
             "Present": {
-                "Clockwise": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (A)', 'File': '[TriMet] Portland Streetcar (A)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5203/-122.6710/standard&lonlats=-122.681429,45.529471;-122.658534,45.532868;-122.659264,45.528749;-122.66201,45.523063;-122.662268,45.509054;-122.67073,45.502907;-122.6732,45.506866;-122.685367,45.513332;-122.681231,45.529471&profile=rail'},
+                "Clockwise": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (A)', 'File': '[TriMet] Portland Streetcar (A)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5203/-122.6710/standard&lonlats=-122.681429,45.529471;-122.658534,45.532868;-122.659264,45.528749;-122.66201,45.523063;-122.662268,45.509054;-122.67073,45.502907;-122.6732,45.506866;-122.685367,45.513332;-122.681231,45.529471&profile=rail'},
             },
         },
-        "Portland Streetcar (B)": {
+        "Portland Streetcar B": {
             "Fantasy": {
-                "Counter-Clockwise": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (B)'},
+                "Counter-Clockwise": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (B)'},
             },
             "Present": {
-                "Counter-Clockwise": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (B)', 'File': '[TriMet] Portland Streetcar (B)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5197/-122.6658/standard&lonlats=-122.681504,45.530944;-122.682567,45.531117;-122.683344,45.519955;-122.686601,45.514918;-122.67849,45.509686;-122.672388,45.50257;-122.672322,45.502526;-122.671457,45.502647;-122.665958,45.505437;-122.660208,45.511815;-122.661667,45.535182;-122.681204,45.530953&profile=rail'},
+                "Counter-Clockwise": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (B)', 'File': '[TriMet] Portland Streetcar (B)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5197/-122.6658/standard&lonlats=-122.681504,45.530944;-122.682567,45.531117;-122.683344,45.519955;-122.686601,45.514918;-122.67849,45.509686;-122.672388,45.50257;-122.672322,45.502526;-122.671457,45.502647;-122.665958,45.505437;-122.660208,45.511815;-122.661667,45.535182;-122.681204,45.530953&profile=rail'},
             },
         },
-        "Portland Streetcar (NS)": {
+        "Portland Streetcar NS": {
             "Fantasy": {
-                "North-South": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (NS)'},
+                "North-South": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (NS)'},
             },
             "Present": {
-                "North-South": {'Mode': 'Light Rail', 'Stations': 'Portland Streetcar (NS)', 'File': '[TriMet] Portland Streetcar (NS)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5144/-122.6700/standard&lonlats=-122.69757,45.529694;-122.686644,45.515038;-122.674048,45.506994;-122.672331,45.494101;-122.67055,45.498826;-122.673715,45.507114;-122.685592,45.513188;-122.681193,45.52917;-122.682953,45.531605;-122.697244,45.53144;-122.697579,45.529984&profile=rail'},
+                "North-South": {'Mode': 'Streetcar', 'Stations': 'Portland Streetcar (NS)', 'File': '[TriMet] Portland Streetcar (NS)', 'Link': 'https://brouter.damsy.net/latest/#map=14/45.5144/-122.6700/standard&lonlats=-122.69757,45.529694;-122.686644,45.515038;-122.674048,45.506994;-122.672331,45.494101;-122.67055,45.498826;-122.673715,45.507114;-122.685592,45.513188;-122.681193,45.52917;-122.682953,45.531605;-122.697244,45.53144;-122.697579,45.529984&profile=rail'},
             },
         },
         "WES": {
