@@ -6399,6 +6399,7 @@ Stations = {
     "S Moody & Gaines": {'Location': (45.496210, -122.671960)},
     "S Moody & Gibbs": {'Location': (45.499370, -122.671840)},
     "S Moody & Meade North": {'Location': (45.503290, -122.672720)},
+    "S River Parkway & Moody": {'Location': (45.507070, -122.673940)},
     "S Woodland": {'Location': (41.478890, -81.584510)},
     "SAIT/AUArts/Jubilee": {'Location': (51.063160, -114.091370)},
     "SDSU Transit Center": {'Location': (32.773320, -117.070520)},
@@ -6456,7 +6457,6 @@ Stations = {
     "SW Harrison Street": {'Location': (45.508810, -122.676560)},
     "SW Park & Market": {'Location': (45.513760, -122.684090)},
     "SW Park & Mill": {'Location': (45.513050, -122.684550)},
-    "SW River Parkway & Moody": {'Location': (45.507070, -122.673940)},
     "SWIC College": {'Location': (38.516210, -89.919670), 'Label': 'College'},
     "Sackville": {'Location': (45.890410, -64.367540)},
     "Saco": {'Location': (43.496050, -70.449200)},
@@ -12650,7 +12650,7 @@ Segments = {
         "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', 'SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', 'Hector Campbell', 'Clackamas', 'Oregon City', 'Canby', 'Aurora (OR)', 'Hubbard', 'Woodburn'],
     },
     "Portland Streetcar (10th Ave)": {
-        "L": ['S Moody & Meade North', 'S River Parkway & Moody', 'SW River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glidan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
+        "L": ['S Moody & Meade North', 'S River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glidan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
     },
     "Portland Streetcar (11th Ave)": {
         "L": ['[X] Portland Lovejoy Junction W', 'NW 11th & Johnson', 'NW 11th & Glisan', 'NW 11th & Couch', 'SW 11th & Alder', 'SW 11th & Taylor', 'SW 11th & Jefferson', 'SW 11th & Clay', '[X] Portland 11th Bend S', 'SW Park & Market', 'SW 5th & Market', 'SW 5th & Mill', 'SW 3rd & Harrison', 'SW Harrison Street', 'S River Parkway & Moody', 'S Moody & Meade'],
