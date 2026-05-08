@@ -14782,6 +14782,9 @@ Lines = {
         },
         "South Lake Union Streetcar": {
             "Fantasy": {
+                "Westlake - South Lake Union": {'Mode': 'Streetcar', 'Stations': 'Seattle Streetcar (South Lake Union)'},
+            },
+            "Present": {
                 "Westlake - South Lake Union": {'Mode': 'Streetcar', 'Stations': 'Seattle Streetcar (South Lake Union)', 'File': '[King County Metro] South Lake Union Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=18/47.61409/-122.33670/standard&lonlats=-122.337279,47.612873;-122.33757,47.614872;-122.336926,47.622737;-122.332162,47.62768;-122.335902,47.625979;-122.338107,47.614926;-122.337329,47.612867&profile=rail'},
             },
         },
