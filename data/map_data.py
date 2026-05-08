@@ -6550,7 +6550,8 @@ Stations = {
     "Seaford (NY)": {'Location': (40.675730, -73.486510), 'Label': 'Seaford'},
     "Seaport": {'Location': (40.707620, -74.003880)},
     "Seaport Village": {'Location': (32.712020, -117.168620)},
-    "Seattle Center": {'Location': (47.621280, -122.349750)},
+    "Seattle Center": {'Location': (47.62326, -122.35415)},
+    "Seattle Center (Monorail)": {'Location': (47.621280, -122.349750), 'Label': 'Seattle Center'},
     "Seattle King Street Station": {'Location': (47.598380, -122.329900), 'Major': True},
     "Sebring": {'Location': (27.496550, -81.434300)},
     "Secane": {'Location': (39.915680, -75.309800)},
@@ -12967,7 +12968,7 @@ Segments = {
         "F": ['South Kirkland', 'Wilburton', 'Bellevue (WA)', 'East Main', 'Richards Road', 'Eastgate (Seattle)', 'Lakemont', 'Central Issaquah'],
     },
     "Seattle Monorail": {
-        "F": ['Westlake (Seattle Monorail)', 'Seattle Center'],
+        "F": ['Westlake (Seattle Monorail)', 'Seattle Center (Monorail)'],
     },
     "Seattle Sounder (King Street - Everett)": {
         "F": ['Seattle King Street Station', '[X] SVF', '[X] Smith Cove', '[X] Interbay', 'Edmonds (WA)', 'Mukilteo', 'Everett (Main)'],
