@@ -1,5 +1,4 @@
 Nodes = {
-	"Alexandria Junction": {'Location': (38.806630, -77.106580)},
 	"Atlanta Airport Bend": {'Location': (33.620140, -84.460950)},
 	"Atlanta Clairmont Junction N": {'Location': (33.794710, -84.307080)},
 	"Atlanta Clairmont Junction S": {'Location': (33.790740, -84.307750)},
@@ -460,7 +459,10 @@ Nodes = {
 	"San Diego La Jolla Junction": {'Location': (32.853720, -117.231070)},
 	"San Diego La Mesa Junction": {'Location': (32.772750, -117.024960)},
 	"San Diego Research Park Bend": {'Location': (32.870800, -117.176410)},
+	"San Francisco Castro Junction": {'Location': (37.764110, -122.433150)},
 	"San Francisco Dubcoe Junction": {'Location': (37.769500, -122.429060)},
+	"San Francisco Embarcadero Bend": {'Location': (37.807990, -122.417570)},
+	"San Francisco Embarcadero Junction": {'Location': (37.808120, -122.409060)},
 	"San Francisco Ferry Bend": {'Location': (37.795220, -122.393850)},
 	"San Francisco Port View Bend": {'Location': (37.810520, -122.332090)},
 	"San Francisco SFO Junction": {'Location': (37.615120, -122.401050)},
@@ -540,6 +542,7 @@ Nodes = {
 	"Vancouver Waterfront Bend (SkyTrain)": {'Location': (49.287790, -123.119300)},
 	"Vancouver Willingdon Junction": {'Location': (49.262200, -123.005020)},
 	"Veracruz Bend": {'Location': (18.600180, -95.791290)},
+	"Washington Alexandria Junction": {'Location': (38.806630, -77.106580)},
 	"Washington Anacostia Bend E": {'Location': (38.895500, -76.951020)},
 	"Washington Anacostia Bend W": {'Location': (38.897470, -76.966620)},
 	"Washington Green-Yellow Junction": {'Location': (38.878560, -77.020930)},
@@ -677,6 +680,8 @@ Stations = {
     "175 St (Fort Washington)": {'Location': (40.846430, -73.940100), 'Label': '175 St'},
     "176 St (Jerome)": {'Location': (40.848460, -73.911740), 'Label': '176 St'},
     "179 St (Hillside)": {'Location': (40.712720, -73.783560), 'Label': 'Jamaica-179 St'},
+    "17th & Castro": {'Location': (37.762530, -122.434790)},
+    "17th & Noe": {'Location': (37.762770, -122.433080)},
     "17th St/SMC": {'Location': (34.023150, -118.480390)},
     "18 Av": {'Location': (40.620130, -73.989490)},
     "18 Av (McDonald)": {'Location': (40.629750, -73.976960), 'Label': '18 Av'},
@@ -1397,6 +1402,8 @@ Stations = {
     "Bayside": {'Location': (40.763250, -73.772030)},
     "Bayview (Ottawa)": {'Location': (45.409240, -75.722050), 'Label': 'Bayview'},
     "Bayview (Toronto)": {'Location': (43.766870, -79.386300), 'Label': 'Bayview'},
+    "Beach & Jones": {'Location': (37.807180, -122.417420)},
+    "Beach & Mason": {'Location': (37.807370, -122.414350)},
     "Beach 105 St": {'Location': (40.583440, -73.827230)},
     "Beach 116 St": {'Location': (40.580540, -73.837420), 'Label': 'Rockaway Park-Beach 116 St'},
     "Beach 25 St": {'Location': (40.599520, -73.761750)},
@@ -2708,6 +2715,7 @@ Stations = {
     "Dome Creek": {'Location': (53.748100, -121.029920)},
     "Dominion City": {'Location': (49.142790, -97.156050)},
     "Don Bosco": {'Location': (9.063080, -79.420380)},
+    "Don Chee & Steuart": {'Location': (37.793920, -122.393440)},
     "Don Mills": {'Location': (43.775710, -79.345360)},
     "Don Valley": {'Location': (43.720550, -79.338880)},
     "Donelson": {'Location': (36.166990, -86.666510)},
@@ -4039,6 +4047,7 @@ Stations = {
     "Jefferson St": {'Location': (40.706580, -73.922860)},
     "Jefferson/USC": {'Location': (34.022050, -118.278190)},
     "Jenkintown-Wyncote": {'Location': (40.093140, -75.137960)},
+    "Jerome & Powell": {'Location': (37.808590, -122.413350)},
     "Jersey Avenue": {'Location': (40.476940, -74.467410)},
     "Jersey Avenue (LRT)": {'Location': (40.714970, -74.048500), 'Label': 'Jersey Avenue'},
     "Jessup (GA)": {'Location': (31.605870, -81.881930), 'Label': 'Jessup'},
@@ -4724,8 +4733,28 @@ Stations = {
     "Mariner": {'Location': (47.879570, -122.237630)},
     "Mario Capecchi": {'Location': (40.760840, -111.835110)},
     "Mariposa": {'Location': (33.923210, -118.387590)},
-    "Market & Castro St": {'Location': (37.762680, -122.435290), 'Label': 'Castro'},
+    "Market & 2nd": {'Location': (37.789720, -122.400860)},
+    "Market & 3rd": {'Location': (37.787380, -122.403740)},
+    "Market & 5th": {'Location': (37.783790, -122.408290)},
+    "Market & 7th": {'Location': (37.780710, -122.412320)},
+    "Market & 8th": {'Location': (37.778930, -122.414580)},
+    "Market & 9th": {'Location': (37.777280, -122.416530)},
+    "Market & Battery": {'Location': (37.791240, -122.398990)},
+    "Market & Castro St": {'Location': (37.762810, -122.434760), 'Label': 'Castro'},
+    "Market & Church": {'Location': (37.767890, -122.428580)},
     "Market & Church St": {'Location': (37.767190, -122.429170), 'Label': 'Church'},
+    "Market & Dolores": {'Location': (37.768850, -122.427160)},
+    "Market & Drumm": {'Location': (37.793520, -122.396060)},
+    "Market & Gough": {'Location': (37.773260, -122.421760)},
+    "Market & Guerrero": {'Location': (37.770570, -122.424970)},
+    "Market & Kearny": {'Location': (37.787930, -122.403200)},
+    "Market & Main": {'Location': (37.793020, -122.396690)},
+    "Market & New Montgomery": {'Location': (37.788570, -122.402290)},
+    "Market & Noe": {'Location': (37.763920, -122.433380)},
+    "Market & Sanchez": {'Location': (37.766200, -122.430710)},
+    "Market & South Van Ness": {'Location': (37.774870, -122.419590)},
+    "Market & Stockton": {'Location': (37.785910, -122.405730)},
+    "Market & Taylor": {'Location': (37.782420, -122.410160)},
     "Market Center": {'Location': (32.804560, -96.823670)},
     "Market-11th St": {'Location': (39.951680, -75.158040), 'Label': '11th St'},
     "Market-13th St": {'Location': (39.952130, -75.161450), 'Label': '13th St'},
@@ -6796,6 +6825,7 @@ Stations = {
     "Stewart Ridge": {'Location': (41.674340, -87.631440)},
     "Stirling": {'Location': (40.674720, -74.493400)},
     "Stockdale": {'Location': (39.294110, -94.341540)},
+    "Stockton & Beach": {'Location': (37.807840, -122.410810)},
     "Stockton-Cabral": {'Location': (37.957080, -121.278880)},
     "Stockton-San Joaquin St": {'Location': (37.945300, -121.285560)},
     "Stokes-Windermere": {'Location': (41.530560, -81.584820)},
@@ -6952,6 +6982,14 @@ Stations = {
     "Teyahualco": {'Location': (19.655340, -99.135850)},
     "The Banks": {'Location': (39.098229, -84.509856)},
     "The Couture": {'Location': (43.037180, -87.899980)},
+    "The Embarcadero & Bay": {'Location': (37.806920, -122.406250)},
+    "The Embarcadero & Broadway": {'Location': (37.799520, -122.397860)},
+    "The Embarcadero & Chestnut": {'Location': (37.804990, -122.403090)},
+    "The Embarcadero & Ferry Building": {'Location': (37.795460, -122.394210)},
+    "The Embarcadero & Green": {'Location': (37.801220, -122.399350)},
+    "The Embarcadero & Greenwich": {'Location': (37.803070, -122.401150)},
+    "The Embarcadero & Stockton": {'Location': (37.808350, -122.410280)},
+    "The Embarcadero & Washington": {'Location': (37.796400, -122.395240)},
     "The Glen": {'Location': (42.096861, -87.815457)},
     "The Pas": {'Location': (53.823410, -101.248480)},
     "Theater District EB": {'Location': (29.760750, -95.367690), 'Label': 'Theater District'},
@@ -12703,6 +12741,17 @@ Segments = {
     "San Francisco SMART (Larkspur - Windsor)": {
         "F": ['Larkspur', 'San Rafael (CA)', 'Marin Civic Center', 'Novato Downtown', 'Novato San Marin', 'Petaluma Downtown', 'Cotati', 'Rohnert Park', 'Santa Rosa Downtown', 'Santa Rosa North', 'Sonoma County Airport', 'Windsor (CA)'],
     },
+    "San Francisco Streetcar (Embarcadero)": {
+        "F": ['Don Chee & Steuart', 'The Embarcadero & Ferry Building', 'The Embarcadero & Washington', 'The Embarcadero & Broadway', 'The Embarcadero & Green', 'The Embarcadero & Greenwich', 'The Embarcadero & Chestnut', 'The Embarcadero & Bay'],
+        "L": ['[X] San Francisco Embarcadero Junction', 'The Embarcadero & Stockton', 'Jerome & Powell', '[X] San Francisco Embarcadero Bend', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[X] San Francisco Embarcadero Junction'],
+    },
+    "San Francisco Streetcar (Embarcadero-Market)": {
+        "F": ['[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)'],
+    },
+    "San Francisco Streetcar (Market)": {
+        "F": ['Market & Drumm', 'Market & Main', 'Market & Battery', 'Market & 2nd', 'Market & New Montgomery', 'Market & Kearney', 'Market & 3rd', 'Market & Stockton', 'Market & 5th', 'Market & Taylor', 'Market & 7th', 'Market & 8th', 'Market & 9th', 'Market & South Van Ness', 'Market & Gough', 'Market & Guerrero', 'Market & Dolores', 'Market & Church', 'Market & Sanchez'],
+        "L": ['[X] San Francisco Castro Junction', '17th & Noe', '17th & Castro', 'Market & Noe', '[X] Market & Castro St', '[X] San Francisco Castro Junction'],
+    },
     "San Jose ACE (Diridon - Stockton)": {
         "F": ['-Intercity LS (San Jose - Fremont)', 'Pleasanton', 'Livermore', 'Vasco Rd', 'Tracy', 'Lathrop/Manteca', '[X] Stockton South Junction', 'Stockton-Cabral'],
     },
@@ -13071,7 +13120,7 @@ Segments = {
         "F": ['Washington Metro Center', '[X] Washington Metro Center Bend SW', 'Farragut North', 'Dupont Circle', 'Woodley Park-Zoo/Adams Morgan', 'Cleveland Park', 'Van Ness-UDC', 'Tenleytown-AU', 'Friendship Heights', 'Bethesda', 'Washington-Maryland Medical Center', 'Grosvenor-Strathmore', 'North Bethesda', 'Twinbrook', 'Rockville', 'Shady Grove'],
     },
     "Washington Metro (Metro Center - Van Dorn)": {
-        "F": ['Washington Metro (Metro Center - Pentagon)', 'Washington Metro (Pentagon - Alexandria)', '[X] Alexandria Junction', 'Van Dorn St'],
+        "F": ['Washington Metro (Metro Center - Pentagon)', 'Washington Metro (Pentagon - Alexandria)', '[X] Washington Alexandria Junction', 'Van Dorn St'],
     },
     "Washington Metro (Metro Center - Vienna)": {
         "F": ['Washington Metro (Metro Center - West Falls)', 'West Falls Church', 'Dunn Loring-Merrifield', 'Vienna (VA)'],
@@ -13116,7 +13165,7 @@ Segments = {
         "F": ['Washington Regional Rail (Union - Point of Rocks)', 'Monocacy', 'Frederick'],
     },
     "Washington Regional Rail (Union - Manassas)": {
-        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Alexandria Junction', 'Backlick Rd', 'Rolling Rd', 'Burke Centre', 'Manassas Park', 'Manassas', 'Broad Run'],
+        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Washington Alexandria Junction', 'Backlick Rd', 'Rolling Rd', 'Burke Centre', 'Manassas Park', 'Manassas', 'Broad Run'],
     },
     "Washington Regional Rail (Union - Martinsburg)": {
         "F": ['Washington Regional Rail (Union - Point of Rocks)', 'Point of Rocks', 'Brunswick (MD)', 'Harpers Ferry', 'Duffields', 'Martinsburg'],
@@ -13128,7 +13177,7 @@ Segments = {
         "F": ['Washington Union Station', '[X] NoMa-Gallaudet U', '[X] Rhode Island Ave-Brentwood', '[X] Brookland-CUA', '[X] Fort Totten', '[X] Takoma', 'Silver Spring', '[X] Woodside/16th St', 'Kensington', 'Garrett Park', '[X] Twinbrook', 'Rockville', '[X] Shady Grove', 'Washington Grove', 'Gaithersburg', 'Metropolitan Grove', 'Germantown (MD)', 'Boyds', 'Barnesville', 'Dickerson', '[X] Point of Rocks Junction'],
     },
     "Washington Regional Rail (Union - Spotsylvania)": {
-        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Alexandria Junction', '[X] Van Dorn St', 'Franconia-Springfield', 'Lorton', 'Woodbridge (VA)', 'Rippon', 'Quantico', 'Brooke', 'Leeland Rd', 'Fredericksburg', 'Spotsylvania'],
+        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Washington Alexandria Junction', '[X] Van Dorn St', 'Franconia-Springfield', 'Lorton', 'Woodbridge (VA)', 'Rippon', 'Quantico', 'Brooke', 'Leeland Rd', 'Fredericksburg', 'Spotsylvania'],
     },
     "Windsor Commuter Rail (Downtown - Belle River)": {
         "F": ['Windsor (ON) [New]', '[X] Windsor South Junction', 'Walkerville', '[X] Windsor North Junction', 'Thompson Park', 'WFCU Centre', 'Tecumseh', 'Patillo Rd', 'Emeryville (ON)', 'Belle River'],
@@ -14880,7 +14929,7 @@ Lines = {
         },
         "Mattapan Line": {
             "Fantasy": {
-                "Ashmont - Mattapan": {'Mode': 'Light Rail', 'Stations': 'Boston T Light Rail (Ashmont - Mattapan)'},
+                "Ashmont - Mattapan": {'Mode': 'Streetcar', 'Stations': 'Boston T Light Rail (Ashmont - Mattapan)'},
             },
         },
         "Nashua Line": {
@@ -15711,6 +15760,14 @@ Lines = {
         },
     },
     "Muni": {
+        "F": {
+            "Fantasy": {
+                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)'},
+            },
+            "Present": {
+                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)', 'File': '[Muni] F', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7872/-122.4104/standard&lonlats=-122.40666,37.807052;-122.393666,37.793982;-122.397931,37.792049;-122.425117,37.770592;-122.427027,37.769103;-122.432349,37.764981;-122.431834,37.762619;-122.428712,37.76627;-122.42891,37.767437;-122.425441,37.770261;-122.420697,37.773928;-122.413804,37.779452;-122.39961,37.790663;-122.395007,37.7943;-122.393422,37.794092;-122.394653,37.795945;-122.407887,37.807834;-122.417639,37.8078;-122.409775,37.80791;-122.406683,37.807025&profile=rail'},
+            },
+        },
         "J": {
             "Fantasy": {
                 "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)'},
