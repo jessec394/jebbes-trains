@@ -489,6 +489,8 @@ Nodes = {
 	"San Jose Tasman Junction": {'Location': (37.409220, -121.944880)},
 	"Sandusky East Bend": {'Location': (41.370790, -82.493280)},
 	"Seattle Lynnwood Bend": {'Location': (47.789260, -122.329260)},
+	"Seattle SLUS Bend": {'Location': (47.620820, -122.337260)},
+	"Seattle SLUS Junction": {'Location': (47.620830, -122.338510)},
 	"Seattle Spokane Viaduct Bend": {'Location': (47.572050, -122.331750)},
 	"Seattle Sumner Bend": {'Location': (47.205060, -122.247680)},
 	"South Bend Airport Junction": {'Location': (41.683320, -86.309220)},
@@ -626,6 +628,7 @@ Stations = {
     "128 Ave NE": {'Location': (51.151190, -113.952370)},
     "12th & Imperial (EW)": {'Location': (32.705250, -117.154300), 'Label': '12th & Imperial'},
     "12th & Imperial (NS)": {'Location': (32.706000, -117.153380), 'Label': '12th & Imperial'},
+    "12th & Jackson": {'Location': (47.599200, -122.315730)},
     "12th & Main": {'Location': (39.108382, -84.511470)},
     "12th & Vine": {'Location': (39.108356, -84.514531)},
     "12th St (Houston)": {'Location': (29.791170, -95.446000), 'Label': '12th St'},
@@ -655,6 +658,7 @@ Stations = {
     "148 St-Lenox Terminal": {'Location': (40.824050, -73.936930)},
     "149 St-Grand Concourse": {'Location': (40.818400, -73.926720)},
     "14th & Elm": {'Location': (39.109828, -84.518483)},
+    "14th & Washington": {'Location': (47.600580, -122.314050)},
     "15 St-Prospect Park": {'Location': (40.660710, -73.979250)},
     "15/16th & Locust St": {'Location': (39.948630, -75.167790)},
     "152 St": {'Location': (49.166090, -122.801390)},
@@ -900,6 +904,7 @@ Stations = {
     "59 St-Columbus Circle (ACBD)": {'Location': (40.768650, -73.981450), 'Label': '59 St-Columbus Circle'},
     "59th & Brookside": {'Location': (39.020420, -94.588250)},
     "59th St (University of Chicago)": {'Location': (41.787350, -87.588860)},
+    "5th & Jackson": {'Location': (47.599190, -122.326790)},
     "5th & Missouri": {'Location': (38.624990, -90.159460)},
     "5th Ave": {'Location': (39.987100, -83.005520)},
     "5th St": {'Location': (39.101110, -84.512950)},
@@ -953,6 +958,7 @@ Stations = {
     "79 St (New Utrecht)": {'Location': (40.613630, -74.000570), 'Label': '79 St'},
     "79th & Wornall": {'Location': (38.985050, -94.594550)},
     "79th St (Chatham)": {'Location': (41.750810, -87.597230)},
+    "7th & Jackson/Chinatown": {'Location': (47.599180, -122.323260)},
     "7th & State": {'Location': (39.116540, -94.626830)},
     "7th Ave/Camelback": {'Location': (33.509300, -112.083340)},
     "7th St": {'Location': (44.903360, -93.168040)},
@@ -1738,6 +1744,10 @@ Stations = {
     "Broad-Wyoming": {'Location': (40.024550, -75.147900), 'Label': 'Wyoming'},
     "Broadview": {'Location': (43.676870, -79.358320)},
     "Broadway & 12th": {'Location': (39.100120, -94.588420)},
+    "Broadway & Denny-Capitol Hill": {'Location': (47.618040, -122.320980)},
+    "Broadway & Marion": {'Location': (47.609860, -122.320710)},
+    "Broadway & Pike-Pine": {'Location': (47.615070, -122.320750)},
+    "Broadway & Terrace": {'Location': (47.605430, -122.320760)},
     "Broadway (31st)": {'Location': (40.761970, -73.925510), 'Label': 'Broadway'},
     "Broadway (Boston - Commuter Rail)": {'Location': (42.342630, -71.058810), 'Label': 'Broadway'},
     "Broadway (Boston - Subway)": {'Location': (42.342570, -71.056940), 'Label': 'Broadway'},
@@ -3152,6 +3162,7 @@ Stations = {
     "Fairmount": {'Location': (42.253680, -71.119230)},
     "Fairpark": {'Location': (40.771490, -111.923930)},
     "Fairview": {'Location': (43.587520, -79.626740)},
+    "Fairview & Campus Drive": {'Location': (47.627570, -122.332400)},
     "Fairview Ave": {'Location': (44.956412, -93.178755)},
     "Fairview Heights (LA)": {'Location': (33.975250, -118.336070), 'Label': 'Fairview Heights'},
     "Fairview Heights (STL)": {'Location': (38.593610, -90.047800), 'Label': 'Fairview Heights'},
@@ -4345,6 +4356,7 @@ Stations = {
     "Lake Quivira": {'Location': (39.048740, -94.773720)},
     "Lake St-Midtown": {'Location': (44.948353, -93.238874)},
     "Lake Tapawingo": {'Location': (39.021180, -94.305560)},
+    "Lake Union Park": {'Location': (47.625830, -122.336370)},
     "Lake View": {'Location': (42.712470, -78.937010)},
     "Lake Villa": {'Location': (42.417470, -88.079460)},
     "Lake Worth": {'Location': (26.616100, -80.069020)},
@@ -5572,6 +5584,7 @@ Stations = {
     "Oates Rd": {'Location': (29.820210, -95.239670)},
     "Oba": {'Location': (49.059560, -84.105710)},
     "Observatorio": {'Location': (19.399110, -99.199490), 'Major': True},
+    "Occidental Mall": {'Location': (47.599190, -122.333370)},
     "Ocean & Jules Ave": {'Location': (37.724990, -122.461520)},
     "Ocean & Junipero Blvd": {'Location': (37.731310, -122.471840)},
     "Ocean & Lee St": {'Location': (37.723450, -122.453850)},
@@ -6537,7 +6550,7 @@ Stations = {
     "Seaford (NY)": {'Location': (40.675730, -73.486510), 'Label': 'Seaford'},
     "Seaport": {'Location': (40.707620, -74.003880)},
     "Seaport Village": {'Location': (32.712020, -117.168620)},
-    "Seattle Center": {'Location': (47.623260, -122.354150)},
+    "Seattle Center": {'Location': (47.621280, -122.349750)},
     "Seattle King Street Station": {'Location': (47.598380, -122.329900), 'Major': True},
     "Sebring": {'Location': (27.496550, -81.434300)},
     "Secane": {'Location': (39.915680, -75.309800)},
@@ -7042,6 +7055,8 @@ Stations = {
     "Terrace": {'Location': (54.514490, -128.586580)},
     "Terre Haute": {'Location': (39.475730, -87.412800)},
     "Terrebonne": {'Location': (45.728110, -73.521120)},
+    "Terry & Mercer": {'Location': (47.623410, -122.337040)},
+    "Terry & Thomas": {'Location': (47.621360, -122.337260)},
     "Teterboro": {'Location': (40.864850, -74.062670)},
     "Texarkana": {'Location': (33.419900, -94.042950)},
     "Teyahualco": {'Location': (19.655340, -99.135850)},
@@ -7631,10 +7646,17 @@ Stations = {
     "Westfield (NJ)": {'Location': (40.649410, -74.347620), 'Label': 'Westfield'},
     "Westfield (PA)": {'Location': (40.410300, -80.019970), 'Label': 'Westfield'},
     "Westgate": {'Location': (44.967491, -93.206492)},
-    "Westgate (LVM)": {'Location': (36.137060, -115.152910), 'Label': 'Westgate'},
+    "Westgate (Las Vegas Monorail)": {'Location': (36.137060, -115.152910), 'Label': 'Westgate'},
     "Westgate-Brinker": {'Location': (39.954480, -83.083810)},
     "Westhampton": {'Location': (40.830080, -72.651770)},
     "Westlake": {'Location': (47.611570, -122.336720)},
+    "Westlake & 7th": {'Location': (47.614860, -122.337860)},
+    "Westlake & 9th-Denny": {'Location': (47.617950, -122.338520)},
+    "Westlake & Mercer": {'Location': (47.624060, -122.338580)},
+    "Westlake & Olive": {'Location': (47.613120, -122.337320)},
+    "Westlake & Thomas": {'Location': (47.621480, -122.338580)},
+    "Westlake (Seattle Monorail)": {'Location': (47.612070, -122.336960), 'Label': 'Westlake'},
+    "Westlake (Streetcar)": {'Location': (47.611440, -122.337560), 'Label': 'Westlake'},
     "Westlake/MacArthur Park": {'Location': (34.056920, -118.276150)},
     "Westland": {'Location': (42.322840, -83.424300)},
     "Westminster-72nd": {'Location': (39.822785, -105.029166)},
@@ -7861,6 +7883,7 @@ Stations = {
     "Yazoo City": {'Location': (32.848420, -90.415160)},
     "Yemassee": {'Location': (32.688280, -80.846900)},
     "Yerba Buena/Moscone": {'Location': (37.782150, -122.401550)},
+    "Yesler & Broadway": {'Location': (47.601740, -122.320220)},
     "Yonkers": {'Location': (40.935610, -73.902310)},
     "Yorba Linda": {'Location': (33.866500, -117.818160)},
     "York & 144th": {'Location': (39.955162, -104.956165)},
@@ -11142,7 +11165,7 @@ Segments = {
         "F": ['Union Plaza', '[X] Las Vegas Fremont Bend', 'Las Vegas/Fremont', 'Las Vegas/Bonneville', 'Las Vegas/Charleston', 'Las Vegas/Wyoming', 'Las Vegas/Sahara', 'Las Vegas/Elvis Presley', 'Las Vegas Convention Center (Subway)', 'Las Vegas/Sands', 'Las Vegas/Bellagio', 'Las Vegas/Flamingo', 'Las Vegas/Harmon', 'Las Vegas/Tropicana', 'Las Vegas/Mandalay Bay', 'Las Vegas/Russell'],
     },
     "Las Vegas Monorail": {
-        "F": ['Sahara (Monorail)', 'Westgate (LVM)', 'Las Vegas Convention Center (Monorail)', "Harrah's & The LINQ", 'Flamingo & Caesars Palace', 'Horseshoe/Paris', 'MGM Grand'],
+        "F": ['Sahara (Monorail)', 'Westgate (Las Vegas Monorail)', 'Las Vegas Convention Center (Monorail)', "Harrah's & The LINQ", 'Flamingo & Caesars Palace', 'Horseshoe/Paris', 'MGM Grand'],
     },
     "Las Vegas Peoplemover (Aria)": {
         "F": ['Park MGM', 'Crystals/Aria/Waldorf Astoria', 'Bellagio/Vdara'],
@@ -12943,6 +12966,9 @@ Segments = {
     "Seattle LINK (South Kirkland - Issaquah)": {
         "F": ['South Kirkland', 'Wilburton', 'Bellevue (WA)', 'East Main', 'Richards Road', 'Eastgate (Seattle)', 'Lakemont', 'Central Issaquah'],
     },
+    "Seattle Monorail": {
+        "F": ['Westlake (Seattle Monorail)', 'Seattle Center'],
+    },
     "Seattle Sounder (King Street - Everett)": {
         "F": ['Seattle King Street Station', '[X] SVF', '[X] Smith Cove', '[X] Interbay', 'Edmonds (WA)', 'Mukilteo', 'Everett (Main)'],
     },
@@ -12951,6 +12977,13 @@ Segments = {
     },
     "Seattle Sounder (Tacoma - Everett)": {
         "F": ['[R] Seattle Sounder (King Street - Everett)', 'Seattle Sounder (King Street - Lakewood)'],
+    },
+    "Seattle Streetcar (Capitol Hill)": {
+        "F": ['Occidental Mall', '5th & Jackson', '7th & Jackson/Chinatown', '12th & Jackson', '14th & Washington', 'Yesler & Broadway', 'Broadway & Terrace', 'Broadway & Marion', 'Broadway & Pike-Pine', 'Broadway & Denny-Capitol Hill'],
+    },
+    "Seattle Streetcar (South Lake Union)": {
+        "F": ['Westlake (Streetcar)', 'Westlake & Olive', 'Westlake & 7th', 'Westlake & 9th-Denny', '[X] Seattle SLUS Junction', '[X] Seattle SLUS Bend', 'Terry & Thomas', 'Terry & Mercer', 'Lake Union Park', 'Fairview & Campus Drive'],
+        "R": ['Fairview & Campus Drive', 'Lake Union Park', 'Westlake & Mercer', 'Westlake & Thomas', '[X] Seattle SLUS Junction', 'Westlake & 9th-Denny', 'Westlake & 7th', 'Westlake & Olive', 'Westlake (Streetcar)'],
     },
     "St. Louis Approach (Gateway - Bridge East)": {
         "F": ['St. Louis Approach (Gateway - Bridge West)', '[X] St. Louis Bridge East'],
@@ -14734,6 +14767,21 @@ Lines = {
         "Muncie Line": {
             "Fantasy": {
                 "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Muncie)'},
+            },
+        },
+    },
+    "King County Metro": {
+        "Capitol Hill Streetcar": {
+            "Fantasy": {
+                "Occidental Mall - Capitol Hill": {'Mode': 'Streetcar', 'Stations': 'Seattle Streetcar (Capitol Hill)'},
+            },
+            "Present": {
+                "Occidental Mall - Capitol Hill": {'Mode': 'Streetcar', 'Stations': 'Seattle Streetcar (Capitol Hill)', 'File': '[King County Metro] Capitol Hill Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=15/47.6070/-122.3213/standard&lonlats=-122.3335,47.599179;-122.332458,47.599164;-122.320769,47.61724;-122.321002,47.618197;-122.320957,47.617131;-122.333501,47.59924&profile=rail'},
+            },
+        },
+        "South Lake Union Streetcar": {
+            "Fantasy": {
+                "Westlake - South Lake Union": {'Mode': 'Streetcar', 'Stations': 'Seattle Streetcar (South Lake Union)', 'File': '[King County Metro] South Lake Union Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=18/47.61409/-122.33670/standard&lonlats=-122.337279,47.612873;-122.33757,47.614872;-122.336926,47.622737;-122.332162,47.62768;-122.335902,47.625979;-122.338107,47.614926;-122.337329,47.612867&profile=rail'},
             },
         },
     },
@@ -16568,18 +16616,18 @@ Lines = {
         },
         "Hyde Cable Car": {
             "Fantasy": {
-                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Hyde)'},
+                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Powell-Hyde)'},
             },
             "Present": {
-                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Hyde)', 'File': '[SFMTA] Hyde Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79442/-122.41305/standard&lonlats=-122.407716,37.784801;-122.409896,37.795467;-122.420343,37.805817;-122.421128,37.806949;-122.420515,37.805436;-122.417135,37.793753;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
+                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Powell-Hyde)', 'File': '[SFMTA] Hyde Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79442/-122.41305/standard&lonlats=-122.407716,37.784801;-122.409896,37.795467;-122.420343,37.805817;-122.421128,37.806949;-122.420515,37.805436;-122.417135,37.793753;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
             },
         },
         "Mason Cable Car": {
             "Fantasy": {
-                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Mason)'},
+                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Powell-Mason)'},
             },
             "Present": {
-                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Mason)', 'File': '[SFMTA] Mason Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79457/-122.41069/standard&lonlats=-122.407716,37.784801;-122.410784,37.795593;-122.415024,37.804543;-122.415238,37.805132;-122.415102,37.804248;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
+                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Powell-Mason)', 'File': '[SFMTA] Mason Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79457/-122.41069/standard&lonlats=-122.407716,37.784801;-122.410784,37.795593;-122.415024,37.804543;-122.415238,37.805132;-122.415102,37.804248;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
             },
         },
         "Muni F": {
@@ -16702,6 +16750,16 @@ Lines = {
             },
             "Present": {
                 "Snowdon - Galeries d'Anjou": {'Mode': 'Heavy Metro', 'Stations': 'Montréal Metro (Snowdon - Saint-Michel)', 'File': '[STM] Line 5'},
+            },
+        },
+    },
+    "Seattle Monorail Services": {
+        "Seattle Center Monorail": {
+            "Fantasy": {
+                "Westlake - Seattle Center": {'Mode': 'Monorail', 'Stations': 'Seattle Monorail'},
+            },
+            "Present": {
+                "Westlake - Seattle Center": {'Mode': 'Monorail', 'Stations': 'Seattle Monorail', 'File': '[SMS] Seattle Center Monorail', 'Link': 'https://brouter.damsy.net/latest/#map=16/47.6165/-122.3432/standard&lonlats=-122.336867,47.611903;-122.349989,47.621194;-122.336889,47.611894'},
             },
         },
     },
