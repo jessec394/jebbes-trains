@@ -14851,10 +14851,10 @@ Lines = {
         },
         "Green Line": {
             "Fantasy": {
-                "Medford/Tufts - Boston College": {'Mode': 'Heavy Metro', 'Stations': 'Boston Light Rail (Medford - Boston College)'},
-                "Medford/Tufts - Cleveland Circle": {'Mode': 'Heavy Metro', 'Stations': 'Boston Light Rail (Medford - Cleveland Circle)'},
-                "Medford/Tufts - Heath Street": {'Mode': 'Heavy Metro', 'Stations': 'Boston Light Rail (Medford - Heath Street)'},
-                "Medford/Tufts - Riverside": {'Mode': 'Heavy Metro', 'Stations': 'Boston Light Rail (Medford - Riverside)'},
+                "Medford/Tufts - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Boston College)'},
+                "Medford/Tufts - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Cleveland Circle)'},
+                "Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Heath Street)'},
+                "Medford/Tufts - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Riverside)'},
             },
         },
         "Greenbush Line": {
