@@ -461,10 +461,17 @@ Nodes = {
 	"San Diego Research Park Bend": {'Location': (32.870800, -117.176410)},
 	"San Francisco Castro Junction": {'Location': (37.764110, -122.433150)},
 	"San Francisco Dubcoe Junction": {'Location': (37.769500, -122.429060)},
-	"San Francisco Embarcadero Bend": {'Location': (37.807990, -122.417570)},
+	"San Francisco Embarcadero Bend N": {'Location': (37.807990, -122.417570)},
+	"San Francisco Embarcadero Bend S": {'Location': (37.807180, -122.417420)},
 	"San Francisco Embarcadero Junction": {'Location': (37.808120, -122.409060)},
 	"San Francisco Ferry Bend": {'Location': (37.795220, -122.393850)},
+	"San Francisco Hyde Bend": {'Location': (37.793700, -122.417920)},
+	"San Francisco Hyde Junction": {'Location': (37.794630, -122.418080)},
+	"San Francisco Mason Junction N": {'Location': (37.795420, -122.411520)},
+	"San Francisco Mason Junction S": {'Location': (37.794500, -122.411350)},
 	"San Francisco Port View Bend": {'Location': (37.810520, -122.332090)},
+	"San Francisco Powell Bend": {'Location': (37.795610, -122.409880)},
+	"San Francisco Powell Junction": {'Location': (37.794720, -122.409690)},
 	"San Francisco SFO Junction": {'Location': (37.615120, -122.401050)},
 	"San Francisco Salesforce Bend E": {'Location': (37.780380, -122.390260)},
 	"San Francisco Salesforce Bend W": {'Location': (37.787370, -122.399010)},
@@ -1402,6 +1409,7 @@ Stations = {
     "Bayside": {'Location': (40.763250, -73.772030)},
     "Bayview (Ottawa)": {'Location': (45.409240, -75.722050), 'Label': 'Bayview'},
     "Bayview (Toronto)": {'Location': (43.766870, -79.386300), 'Label': 'Bayview'},
+    "Beach & Hyde": {'Location': (37.806500, -122.420490)},
     "Beach & Jones": {'Location': (37.807180, -122.417420)},
     "Beach & Mason": {'Location': (37.807370, -122.414350)},
     "Beach 105 St": {'Location': (40.583440, -73.827230)},
@@ -1878,6 +1886,24 @@ Stations = {
     "Calhoun Falls": {'Location': (34.093480, -82.596610)},
     "Caliente": {'Location': (37.613610, -114.513150)},
     "California": {'Location': (38.628600, -92.562860)},
+    "California & Battery": {'Location': (37.793130, -122.400100)},
+    "California & Davis": {'Location': (37.793410, -122.397790)},
+    "California & Drumm": {'Location': (37.793520, -122.396790)},
+    "California & Front": {'Location': (37.793270, -122.398920)},
+    "California & Grant": {'Location': (37.792390, -122.405780)},
+    "California & Hyde": {'Location': (37.790890, -122.417570)},
+    "California & Jones": {'Location': (37.791340, -122.414300)},
+    "California & Kearny": {'Location': (37.792580, -122.404250)},
+    "California & Larkin": {'Location': (37.790710, -122.419240)},
+    "California & Leavenworth": {'Location': (37.791100, -122.415940)},
+    "California & Mason": {'Location': (37.791750, -122.411010)},
+    "California & Montgomery": {'Location': (37.792770, -122.402890)},
+    "California & Polk": {'Location': (37.790490, -122.420830)},
+    "California & Powell": {'Location': (37.791950, -122.409340)},
+    "California & Sandsome": {'Location': (37.792990, -122.401240)},
+    "California & Stockton": {'Location': (37.792160, -122.407640)},
+    "California & Taylor": {'Location': (37.791630, -122.412280)},
+    "California & Van Ness": {'Location': (37.790410, -122.422010)},
     "California Ave": {'Location': (37.429160, -122.141910)},
     "California/21st": {'Location': (41.854293, -87.694557), 'Label': 'California'},
     "Calkiní": {'Location': (20.377500, -90.067630), 'Major': True},
@@ -2381,6 +2407,8 @@ Stations = {
     "Columbia City (IN)": {'Location': (41.149060, -85.485160), 'Label': 'Columbia City'},
     "Columbia City (WA)": {'Location': (47.559740, -122.292640), 'Label': 'Columbia City'},
     "Columbia Heights": {'Location': (38.928900, -77.032440)},
+    "Columbus & Chestnut": {'Location': (37.803750, -122.415000)},
+    "Columbus & Lombard": {'Location': (37.802690, -122.413530)},
     "Columbus (IN)": {'Location': (39.205160, -85.924760), 'Label': 'Columbus'},
     "Columbus (OH)": {'Location': (39.970722, -83.000876), 'Label': 'Columbus Convention Center', 'Major': True},
     "Columbus (WI)": {'Location': (43.340811, -89.012437), 'Label': 'Columbus'},
@@ -3920,6 +3948,19 @@ Stations = {
     "Hyannis Transportation Center": {'Location': (41.655970, -70.279880)},
     "Hyatts": {'Location': (40.215370, -83.087830)},
     "Hyattsville Crossing": {'Location': (38.965250, -76.956350)},
+    "Hyde & Bay": {'Location': (37.804600, -122.420090)},
+    "Hyde & Beach": {'Location': (37.806900, -122.421070)},
+    "Hyde & Broadway": {'Location': (37.796360, -122.418450)},
+    "Hyde & Chestnut": {'Location': (37.802830, -122.419700)},
+    "Hyde & Filbert": {'Location': (37.799960, -122.419170)},
+    "Hyde & Green": {'Location': (37.798180, -122.418790)},
+    "Hyde & Greenwich": {'Location': (37.800990, -122.419350)},
+    "Hyde & Jackson": {'Location': (37.794430, -122.418040)},
+    "Hyde & Lombard": {'Location': (37.801840, -122.419520)},
+    "Hyde & North Point": {'Location': (37.805630, -122.420270)},
+    "Hyde & Pacific": {'Location': (37.795310, -122.418220)},
+    "Hyde & Union": {'Location': (37.799090, -122.418990)},
+    "Hyde & Vallejo": {'Location': (37.797150, -122.418600)},
     "Hyde Park (MA)": {'Location': (42.254790, -71.125550), 'Label': 'Hyde Park'},
     "Hyde Park (OH)": {'Location': (40.058220, -82.946240), 'Label': 'Hyde Park'},
     "Hyde Park - Dorset Village": {'Location': (33.988180, -118.330810)},
@@ -4009,6 +4050,10 @@ Stations = {
     "JJK Center": {'Location': (38.623300, -90.124560)},
     "JW Clay/UNC Charlotte": {'Location': (35.310710, -80.745230)},
     "Jackson": {'Location': (49.281210, -123.092950)},
+    "Jackson & Jones": {'Location': (37.795010, -122.415000)},
+    "Jackson & Leavenworth": {'Location': (37.794850, -122.416360)},
+    "Jackson & Mason": {'Location': (37.795390, -122.411760)},
+    "Jackson & Taylor": {'Location': (37.795240, -122.413350)},
     "Jackson (MI)": {'Location': (42.247970, -84.399810), 'Label': 'Jackson'},
     "Jackson (MS)": {'Location': (32.300910, -90.190960), 'Label': 'Jackson'},
     "Jackson Av": {'Location': (40.816220, -73.908010)},
@@ -4800,6 +4845,14 @@ Stations = {
     "Marysville (CA)": {'Location': (39.141790, -121.599410), 'Label': 'Marysville'},
     "Marysville (OH)": {'Location': (40.237900, -83.362280), 'Label': 'Marysville'},
     "Mascouche": {'Location': (45.729770, -73.598780)},
+    "Mason & Broadway": {'Location': (37.797400, -122.412050)},
+    "Mason & Filbert": {'Location': (37.800800, -122.412730)},
+    "Mason & Green": {'Location': (37.798980, -122.412360)},
+    "Mason & Greenwich": {'Location': (37.801730, -122.412930)},
+    "Mason & Jackson": {'Location': (37.795590, -122.411550)},
+    "Mason & Pacific": {'Location': (37.796190, -122.411660)},
+    "Mason & Union": {'Location': (37.799960, -122.412550)},
+    "Mason & Vallejo": {'Location': (37.798310, -122.412240)},
     "Mason City": {'Location': (43.144210, -93.210560)},
     "Massachusetts Ave": {'Location': (32.723520, -117.039580)},
     "Massachussetts Ave": {'Location': (42.341490, -71.083420)},
@@ -5922,6 +5975,16 @@ Stations = {
     "Powder Springs": {'Location': (33.857640, -84.684660)},
     "Powder Springs P&R": {'Location': (33.866720, -84.701650)},
     "Powell": {'Location': (40.158530, -83.078570)},
+    "Powell & Bush": {'Location': (37.790040, -122.408700)},
+    "Powell & California": {'Location': (37.792210, -122.409190)},
+    "Powell & Clay": {'Location': (37.793730, -122.409460)},
+    "Powell & Geary": {'Location': (37.787490, -122.408210)},
+    "Powell & Jackson": {'Location': (37.795130, -122.409770)},
+    "Powell & Market": {'Location': (37.784870, -122.407690)},
+    "Powell & O'Farrell": {'Location': (37.786310, -122.408000)},
+    "Powell & Pine": {'Location': (37.791210, -122.408940)},
+    "Powell & Sacramento": {'Location': (37.792900, -122.409260)},
+    "Powell & Sutter": {'Location': (37.789060, -122.408510)},
     "Powell St": {'Location': (37.784360, -122.407990)},
     "Power": {'Location': (40.771510, -111.934220)},
     "Power & Light (14th & Main)": {'Location': (39.096900, -94.583330)},
@@ -6947,6 +7010,8 @@ Stations = {
     "Tasker Morris": {'Location': (39.929800, -75.168510)},
     "Tasman": {'Location': (37.408510, -121.944350)},
     "Taunton": {'Location': (41.900420, -71.100000)},
+    "Taylor & Bay": {'Location': (37.805270, -122.415220)},
+    "Taylor & Francisco": {'Location': (37.804360, -122.415110)},
     "Taylor (MI)": {'Location': (42.254980, -83.268340), 'Label': 'Taylor'},
     "Taylor (TX)": {'Location': (30.567660, -97.407950), 'Label': 'Taylor'},
     "Taylor Station": {'Location': (39.988730, -82.843530)},
@@ -7399,6 +7464,11 @@ Stations = {
     "Warsaw": {'Location': (41.235820, -85.855960)},
     "Wasco": {'Location': (35.593930, -119.331930)},
     "Washago": {'Location': (44.748360, -79.334870)},
+    "Washington & Hyde": {'Location': (37.793720, -122.417700)},
+    "Washington & Jones": {'Location': (37.794030, -122.414830)},
+    "Washington & Leavenworth": {'Location': (37.793890, -122.416130)},
+    "Washington & Mason": {'Location': (37.794550, -122.410990)},
+    "Washington & Taylor": {'Location': (37.794270, -122.413190)},
     "Washington (MO)": {'Location': (38.561570, -91.012460), 'Label': 'Washington'},
     "Washington (PA)": {'Location': (40.167640, -80.239510), 'Label': 'Washington'},
     "Washington Ave/Memorial Park": {'Location': (29.770960, -95.392040)},
@@ -12699,6 +12769,26 @@ Segments = {
     "San Francisco BART (Richmond - Santa Clara)": {
         "F": ['[R] San Francisco BART (Oakland - Richmond)', 'San Francisco BART (Oakland - Santa Clara)'],
     },
+    "San Francisco Cable Car (California)": {
+        "F": ['California & Drumm', 'California & Davis', 'California & Front', 'California & Battery', 'California & Sandsome', 'California & Montgomery', 'California & Kearny', 'California & Grant', 'California & Stockton', 'California & Powell', 'California & Mason', 'California & Taylor', 'California & Jones', 'California & Leavenworth', 'California & Hyde', 'California & Larkin', 'California & Polk', 'California & Van Ness'],
+    },
+    "San Francisco Cable Car (Hyde)": {
+        "F": ['[X] San Francisco Hyde Junction', 'Hyde & Pacific', 'Hyde & Broadway', 'Hyde & Vallejo', 'Hyde & Green', 'Hyde & Union', 'Hyde & Filbert', 'Hyde & Greenwich', 'Hyde & Lombard', 'Hyde & Chestnut', 'Hyde & Bay', 'Hyde & North Point', 'Beach & Hyde', 'Hyde & Beach'],
+    },
+    "San Francisco Cable Car (Mason)": {
+        "F": ['[X] San Francisco Powell Junction', 'Mason & Pacific', 'Mason & Broadway', 'Mason & Vallejo', 'Mason & Green', 'Mason & Union', 'Mason & Filbert', 'Mason & Greenwich', 'Columbus & Lombard', 'Columbus & Chestnut', 'Taylor & Francisco', 'Taylor & Bay'],
+    },
+    "San Francisco Cable Car (Powell)": {
+        "F": ['Powell & Market', "Powell & O'Farrell", 'Powell & Geary', 'Powell & Sutter', 'Powell & Bush', 'Powell & Pine', 'Powell & California', 'Powell & Sacramento', 'Powell & Clay', '[X] San Francisco Powell Junction'],
+    },
+    "San Francisco Cable Car (Powell-Hyde)": {
+        "F": ['San Francisco Cable Car (Powell)', 'Powell & Jackson', '[X] San Francisco Powell Bend', '[X] San Francisco Mason Junction N', 'Jackson & Mason', 'Jackson & Taylor', 'Jackson & Jones', 'Jackson & Leavenworth', 'San Francisco Cable Car (Hyde)'],
+        "R": ['[R] San Francisco Cable Car (Hyde)', 'Hyde & Jackson', 'Washington & Hyde', 'Washington & Jones', 'Washington & Taylor', '[X] San Francisco Mason Junction S', '[R] San Francisco Cable Car (Powell)'],
+    },
+    "San Francisco Cable Car (Powell-Mason)": {
+        "F": ['San Francisco Cable Car (Powell)', 'Powell & Jackson', '[X] San Francisco Powell Bend', 'San Francisco Cable Car (Mason)'],
+        "R": ['[R] San Francisco Cable Car (Mason)', '[X] San Francisco Mason Junction S', '[R] San Francisco Cable Car (Powell)'],
+    },
     "San Francisco Caltrain (4th & King - Gilroy)": {
         "F": ['San Francisco (4th & King)', '22nd St', 'Bayshore (San Francisco)', 'South San Francisco (Caltrain)', 'San Bruno (Caltrain)', '[X] San Francisco SFO Junction', 'Millbrae', 'Burlingame Terrace', 'Burlingame', 'San Mateo', 'Hayward Park', 'Hillsdale (CA)', 'Belmont - Ralston Ave', 'San Carlos', 'Redwood City', 'Atherton', 'Menlo Park', 'Palo Alto', 'Stanford University', 'California Ave', 'San Antonio (Caltrain)', 'Mountain View (CA)', 'Sunnyvale', 'Lawrence Expy', 'Santa Clara - University', 'College Park - Alameda', 'San Francisco Caltrain (Diridon - Gilroy)'],
     },
@@ -12743,7 +12833,7 @@ Segments = {
     },
     "San Francisco Streetcar (Embarcadero)": {
         "F": ['Don Chee & Steuart', 'The Embarcadero & Ferry Building', 'The Embarcadero & Washington', 'The Embarcadero & Broadway', 'The Embarcadero & Green', 'The Embarcadero & Greenwich', 'The Embarcadero & Chestnut', 'The Embarcadero & Bay'],
-        "L": ['[X] San Francisco Embarcadero Junction', 'The Embarcadero & Stockton', 'Jerome & Powell', '[X] San Francisco Embarcadero Bend', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[X] San Francisco Embarcadero Junction'],
+        "L": ['[X] San Francisco Embarcadero Junction', 'The Embarcadero & Stockton', 'Jerome & Powell', '[X] San Francisco Embarcadero Bend N', '[X] San Francisco Embarcadero Bend S', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[X] San Francisco Embarcadero Junction'],
     },
     "San Francisco Streetcar (Embarcadero-Market)": {
         "F": ['[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)'],
@@ -15759,64 +15849,6 @@ Lines = {
             },
         },
     },
-    "Muni": {
-        "F": {
-            "Fantasy": {
-                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)'},
-            },
-            "Present": {
-                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)', 'File': '[Muni] F', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7872/-122.4104/standard&lonlats=-122.40666,37.807052;-122.393666,37.793982;-122.397931,37.792049;-122.425117,37.770592;-122.427027,37.769103;-122.432349,37.764981;-122.431834,37.762619;-122.428712,37.76627;-122.42891,37.767437;-122.425441,37.770261;-122.420697,37.773928;-122.413804,37.779452;-122.39961,37.790663;-122.395007,37.7943;-122.393422,37.794092;-122.394653,37.795945;-122.407887,37.807834;-122.417639,37.8078;-122.409775,37.80791;-122.406683,37.807025&profile=rail'},
-            },
-        },
-        "J": {
-            "Fantasy": {
-                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)'},
-            },
-            "Present": {
-                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)', 'File': '[Muni] J', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.76813/-122.42835/standard&lonlats=-122.396065,37.793589;-122.429141,37.769088;-122.429039,37.767149;-122.447093,37.722827;-122.447114,37.721115;-122.446672,37.720971;-122.444864,37.722781;-122.441747,37.726196;-122.395955,37.79351&profile=rail'},
-            },
-        },
-        "K": {
-            "Fantasy": {
-                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)'},
-            },
-            "Present": {
-                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)', 'File': '[Muni] K', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.72341/-122.44783/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470849,37.736466;-122.471761,37.732953;-122.446334,37.721183;-122.445001,37.722861;-122.447847,37.723067;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
-            },
-        },
-        "L": {
-            "Fantasy": {
-                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)'},
-            },
-            "Present": {
-                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)', 'File': '[Muni] L', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7678/-122.4264/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.478949,37.742943;-122.505691,37.736224;-122.504103,37.737547;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
-            },
-        },
-        "M": {
-            "Fantasy": {
-                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)'},
-            },
-            "Present": {
-                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)', 'File': '[Muni] M', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7588/-122.4208/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470887,37.736338;-122.475178,37.723309;-122.475801,37.72117;-122.446642,37.72065;-122.448571,37.718501;-122.474384,37.719404;-122.471203,37.735452;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
-            },
-        },
-        "N": {
-            "Fantasy": {
-                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)'},
-            },
-            "Present": {
-                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)', 'File': '[Muni] N', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7771/-122.4575/standard&lonlats=-122.395165,37.775513;-122.393022,37.777054;-122.429892,37.769506;-122.47932,37.761708;-122.508658,37.76038;-122.509283,37.760039;-122.505586,37.760361;-122.427966,37.769438;-122.393524,37.776823;-122.395177,37.775521&profile=rail'},
-            },
-        },
-        "T": {
-            "Fantasy": {
-                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)'},
-            },
-            "Present": {
-                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)', 'File': '[Muni] T', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79310/-122.40856/standard&lonlats=-122.408387,37.795707;-122.407994,37.793219;-122.391563,37.774404;-122.393419,37.727501;-122.405041,37.709181;-122.400312,37.71323;-122.392523,37.729329;-122.388285,37.759055;-122.389696,37.773802;-122.393156,37.775755;-122.408446,37.7957&profile=rail'},
-            },
-        },
-    },
     "NCTD": {
         "Coaster": {
             "Fantasy": {
@@ -16525,6 +16557,88 @@ Lines = {
             },
         },
     },
+    "SFMTA": {
+        "California Cable Car": {
+            "Fantasy": {
+                "Market St - Van Ness Ave": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (California)'},
+            },
+            "Present": {
+                "Market St - Van Ness Ave": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (California)', 'File': '[SFMTA] California Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=16/37.7919/-122.4095/standard&lonlats=-122.395999,37.793762;-122.396812,37.793654;-122.404014,37.79274;-122.42148,37.790542;-122.422116,37.790457;-122.421413,37.790447;-122.39678,37.793577;-122.395994,37.793732&profile=rail'},
+            },
+        },
+        "Hyde Cable Car": {
+            "Fantasy": {
+                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Hyde)'},
+            },
+            "Present": {
+                "Market St - Beach St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Hyde)', 'File': '[SFMTA] Hyde Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79442/-122.41305/standard&lonlats=-122.407716,37.784801;-122.409896,37.795467;-122.420343,37.805817;-122.421128,37.806949;-122.420515,37.805436;-122.417135,37.793753;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
+            },
+        },
+        "Mason Cable Car": {
+            "Fantasy": {
+                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Mason)'},
+            },
+            "Present": {
+                "Market St - Bay St": {'Mode': 'Streetcar', 'Stations': 'San Francisco Cable Car (Mason)', 'File': '[SFMTA] Mason Cable Car', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79457/-122.41069/standard&lonlats=-122.407716,37.784801;-122.410784,37.795593;-122.415024,37.804543;-122.415238,37.805132;-122.415102,37.804248;-122.409641,37.793833;-122.407762,37.784798&profile=rail'},
+            },
+        },
+        "Muni F": {
+            "Fantasy": {
+                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)'},
+            },
+            "Present": {
+                "Fisherman's Wharf - The Castro": {'Mode': 'Streetcar', 'Stations': 'San Francisco Streetcar (Embarcadero-Market)', 'File': '[SFMTA] Muni F Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7872/-122.4104/standard&lonlats=-122.40666,37.807052;-122.393666,37.793982;-122.397931,37.792049;-122.425117,37.770592;-122.427027,37.769103;-122.432349,37.764981;-122.431834,37.762619;-122.428712,37.76627;-122.42891,37.767437;-122.425441,37.770261;-122.420697,37.773928;-122.413804,37.779452;-122.39961,37.790663;-122.395007,37.7943;-122.393422,37.794092;-122.394653,37.795945;-122.407887,37.807834;-122.417639,37.8078;-122.409775,37.80791;-122.406683,37.807025&profile=rail'},
+            },
+        },
+        "Muni J": {
+            "Fantasy": {
+                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)'},
+            },
+            "Present": {
+                "Embarcadero - Holly Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Holly Park)', 'File': '[SFMTA] Muni J Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.76813/-122.42835/standard&lonlats=-122.396065,37.793589;-122.429141,37.769088;-122.429039,37.767149;-122.447093,37.722827;-122.447114,37.721115;-122.446672,37.720971;-122.444864,37.722781;-122.441747,37.726196;-122.395955,37.79351&profile=rail'},
+            },
+        },
+        "Muni K": {
+            "Fantasy": {
+                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)'},
+            },
+            "Present": {
+                "Embarcadero - Balboa Park": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Balboa Park)', 'File': '[SFMTA] Muni K Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.72341/-122.44783/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470849,37.736466;-122.471761,37.732953;-122.446334,37.721183;-122.445001,37.722861;-122.447847,37.723067;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+            },
+        },
+        "Muni L": {
+            "Fantasy": {
+                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)'},
+            },
+            "Present": {
+                "Embarcadero - San Francisco Zoo": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Zoo)', 'File': '[SFMTA] Muni L Train', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7678/-122.4264/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.478949,37.742943;-122.505691,37.736224;-122.504103,37.737547;-122.465502,37.741244;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+            },
+        },
+        "Muni M": {
+            "Fantasy": {
+                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)'},
+            },
+            "Present": {
+                "Embarcadero - Oceanview": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Embarcadero - Oceanview)', 'File': '[SFMTA] Muni M Train', 'Link': 'https://brouter.damsy.net/latest/#map=13/37.7588/-122.4208/standard&lonlats=-122.396065,37.793589;-122.440449,37.760919;-122.470887,37.736338;-122.475178,37.723309;-122.475801,37.72117;-122.446642,37.72065;-122.448571,37.718501;-122.474384,37.719404;-122.471203,37.735452;-122.440095,37.760948;-122.395955,37.79351&profile=rail'},
+            },
+        },
+        "Muni N": {
+            "Fantasy": {
+                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)'},
+            },
+            "Present": {
+                "Oracle Park - Ocean Beach": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Oracle Park - Ocean Beach)', 'File': '[SFMTA] Muni N Train', 'Link': 'https://brouter.damsy.net/latest/#map=14/37.7771/-122.4575/standard&lonlats=-122.395165,37.775513;-122.393022,37.777054;-122.429892,37.769506;-122.47932,37.761708;-122.508658,37.76038;-122.509283,37.760039;-122.505586,37.760361;-122.427966,37.769438;-122.393524,37.776823;-122.395177,37.775521&profile=rail'},
+            },
+        },
+        "Muni T": {
+            "Fantasy": {
+                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)'},
+            },
+            "Present": {
+                "Chinatown - Sunnydale": {'Mode': 'Light Rail', 'Stations': 'San Francisco MUNI (Chinatown - Sunnydale)', 'File': '[SFMTA] Muni T Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/37.79310/-122.40856/standard&lonlats=-122.408387,37.795707;-122.407994,37.793219;-122.391563,37.774404;-122.393419,37.727501;-122.405041,37.709181;-122.400312,37.71323;-122.392523,37.729329;-122.388285,37.759055;-122.389696,37.773802;-122.393156,37.775755;-122.408446,37.7957&profile=rail'},
+            },
+        },
+    },
     "SFRTA": {
         "Tri-Rail": {
             "Fantasy": {
@@ -17075,7 +17189,7 @@ Lines = {
                 "Nashville - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)'},
             },
             "Present": {
-                "Nashville - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)', 'File': '[TDOT] WeGo Star', 'Link': 'https://brouter.damsy.net/latest/#map=16/36.1605/-86.7676/standard&lonlats=-86.773761,36.16211;-86.296686,36.211741;-86.773818,36.162087&profile=rail'},
+                "Nashville - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Nashville Regional Rail (Riverfront - Lebanon)', 'File': '[WeGo] Star', 'Link': 'https://brouter.damsy.net/latest/#map=16/36.1605/-86.7676/standard&lonlats=-86.773761,36.16211;-86.296686,36.211741;-86.773818,36.162087&profile=rail'},
             },
         },
     },

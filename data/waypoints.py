@@ -356,7 +356,7 @@ Waypoints = {
         "Link": 'https://blvdsubway.com/',
         "Description": "A cut-and-cover subway under Roosevelt Blvd would extend SEPTA to a historically underserved region of Philadelphia."
     },
-    "San Francisco Salesforce TC": {
+    "Salesforce Transit Center": {
         "Source": "Transbay Joint Powers Authority",
         "Location": (37.78711, -122.39357),
         "Radius": RadiusS,
