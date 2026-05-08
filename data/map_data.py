@@ -12799,7 +12799,7 @@ Segments = {
         "F": ['[X] San Francisco Hyde Junction', 'Hyde & Pacific', 'Hyde & Broadway', 'Hyde & Vallejo', 'Hyde & Green', 'Hyde & Union', 'Hyde & Filbert', 'Hyde & Greenwich', 'Hyde & Lombard', 'Hyde & Chestnut', 'Hyde & Bay', 'Hyde & North Point', 'Beach & Hyde', 'Hyde & Beach'],
     },
     "San Francisco Cable Car (Mason)": {
-        "F": ['[X] San Francisco Powell Junction', 'Mason & Pacific', 'Mason & Broadway', 'Mason & Vallejo', 'Mason & Green', 'Mason & Union', 'Mason & Filbert', 'Mason & Greenwich', 'Columbus & Lombard', 'Columbus & Chestnut', 'Taylor & Francisco', 'Taylor & Bay'],
+        "F": ['[X] San Francisco Mason Junction N', 'Mason & Pacific', 'Mason & Broadway', 'Mason & Vallejo', 'Mason & Green', 'Mason & Union', 'Mason & Filbert', 'Mason & Greenwich', 'Columbus & Lombard', 'Columbus & Chestnut', 'Taylor & Francisco', 'Taylor & Bay'],
     },
     "San Francisco Cable Car (Powell)": {
         "F": ['Powell & Market', "Powell & O'Farrell", 'Powell & Geary', 'Powell & Sutter', 'Powell & Bush', 'Powell & Pine', 'Powell & California', 'Powell & Sacramento', 'Powell & Clay', '[X] San Francisco Powell Junction'],
