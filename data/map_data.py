@@ -4478,8 +4478,8 @@ Stations = {
     "Lincoln (NE)": {'Location': (40.815880, -96.713940), 'Label': 'Lincoln'},
     "Lincoln (NH)": {'Location': (44.031990, -71.680500), 'Label': 'Lincoln'},
     "Lincoln Harbor": {'Location': (40.761400, -74.024000)},
-    "Lincoln Park (CO - New)": {'Location': (39.729536, -105.007587), 'Label': 'Lincoln Park'},
-    "Lincoln Park (CO - Old)": {'Location': (39.732140, -105.005640), 'Label': '10th & Osage'},
+    "Lincoln Park (CO) [New]": {'Location': (39.729536, -105.007587), 'Label': 'Lincoln Park'},
+    "Lincoln Park (CO) [Old]": {'Location': (39.732140, -105.005640), 'Label': '10th & Osage'},
     "Lincoln Park (NJ)": {'Location': (40.924140, -74.301830), 'Label': 'Lincoln Park'},
     "Lincoln Rd": {'Location': (42.413760, -71.325520)},
     "Lincoln St/SW 3rd Ave": {'Location': (45.507920, -122.680620)},
@@ -7354,8 +7354,8 @@ Stations = {
     "Warren Ave & Helen St": {'Location': (32.237260, -110.946440)},
     "Warren Avenue": {'Location': (42.357118, -83.064496)},
     "Warren Road": {'Location': (39.475950, -76.653740)},
-    "Warren Street (Boston)": {'Location': (40.742430, -74.181180), 'Label': 'Warren Street'},
-    "Warren Street (Newark)": {'Location': (42.348270, -71.140420), 'Label': 'Warren Street'},
+    "Warren Street (Boston)": {'Location': (42.348270, -71.140420), 'Label': 'Warren Street'},
+    "Warren Street (Newark)": {'Location': (40.742430, -74.181180), 'Label': 'Warren Street'},
     "Warrensburg": {'Location': (38.762810, -93.740900)},
     "Warrenville": {'Location': (41.821640, -88.214520)},
     "Warsaw": {'Location': (41.235820, -85.855960)},
@@ -10582,7 +10582,7 @@ Segments = {
     "Denver Commuter Rail (Union North - Westridge)": {
         "F": ['Denver Light Rail (Union - Littleton)', 'Westridge'],
         "Drop": ['Empower Field at Mile High'],
-        "Swap": [('Auraria West (Old - LRT)', 'Auraria West (New - Commuter)'), ('Lincoln Park (CO - Old)', 'Lincoln Park (CO - New)')],
+        "Swap": [('Auraria West (Old - LRT)', 'Auraria West (New - Commuter)'), ('Lincoln Park (CO) [Old]', 'Lincoln Park (CO) [New]')],
     },
     "Denver Commuter Rail (Union North - Wheat Ridge)": {
         "F": ['Denver Commuter Rail (Union North - Pecos Junction)', 'Clear Creek & Federal', '60th & Sheridan', 'Olde Town Arvada', 'Arvada Ridge', 'Wheat Ridge & Ward'],
@@ -10609,18 +10609,18 @@ Segments = {
         "F": ['Decatur-Federal', 'Knox', 'Perry (Denver)', 'Sheridan', 'Lamar St', 'Lakewood-Wadsworth', 'Garrison', 'Oak', 'Federal Center', 'Red Rocks College', 'Jefferson County Government Center'],
     },
     "Denver Light Rail (Florida - Loop)": {
-        "F": ['Florida', 'Iliff', 'Nine Mile', 'Dayton (Denver)', '[X] Denver Belleview Junction', 'Southmoor', 'Yale', 'Colorado Blvd', 'University of Denver', 'Louisiana-Pearl', 'I-25 & Broadway', 'Alameda', 'Lincoln Park (CO - New)', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
+        "F": ['Florida', 'Iliff', 'Nine Mile', 'Dayton (Denver)', '[X] Denver Belleview Junction', 'Southmoor', 'Yale', 'Colorado Blvd', 'University of Denver', 'Louisiana-Pearl', 'I-25 & Broadway', 'Alameda', 'Lincoln Park (CO) [New]', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
         "L": ['Denver Light Rail (Loop Approach West)'],
     },
     "Denver Light Rail (Florida - Loop) [Old]": {
-        "F": ['Florida', 'Iliff', 'Nine Mile', 'Dayton (Denver)', '[X] Denver Belleview Junction', 'Southmoor', 'Yale', 'Colorado Blvd', 'University of Denver', 'Louisiana-Pearl', 'I-25 & Broadway', 'Alameda', 'Lincoln Park (CO - Old)', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
+        "F": ['Florida', 'Iliff', 'Nine Mile', 'Dayton (Denver)', '[X] Denver Belleview Junction', 'Southmoor', 'Yale', 'Colorado Blvd', 'University of Denver', 'Louisiana-Pearl', 'I-25 & Broadway', 'Alameda', 'Lincoln Park (CO) [Old]', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
         "L": ['Denver Light Rail (Loop Approach West)'],
     },
     "Denver Light Rail (I-25 - Littleton)": {
         "F": ['I-25 & Broadway', 'Evans Ave (CO)', 'Englewood', 'Oxford-City of Sheridan', '[X] Denver Littleton Bend', 'Littleton Downtown', 'Littleton-Mineral'],
     },
     "Denver Light Rail (I-25 - Loop)": {
-        "F": ['I-25 & Broadway', 'Alameda', 'Lincoln Park (CO - Old)', 'Denver Light Rail (Auraria - Loop)'],
+        "F": ['I-25 & Broadway', 'Alameda', 'Lincoln Park (CO) [Old]', 'Denver Light Rail (Auraria - Loop)'],
     },
     "Denver Light Rail (I-25 - Ridgegate)": {
         "F": ['I-25 & Broadway', 'Louisiana-Pearl', 'University of Denver', 'Colorado Blvd', 'Yale', 'Southmoor', '[X] Denver Belleview Junction', 'Belleview', 'Orchard (CO)', 'Arapahoe at Village Center', 'Dry Creek', 'County Line (CO)', 'Lincoln (CO)', 'Sky Ridge', 'Lone Tree City Center', 'RidgeGate Parkway'],
@@ -10643,13 +10643,13 @@ Segments = {
     },
     "Denver Light Rail (RidgeGate - Loop)": {
         "F": ['[R] Denver Light Rail (I-25 - Ridgegate)', 'Denver Light Rail (I-25 - Loop)'],
-        "Swap": [('Lincoln Park (CO - Old)', 'Lincoln Park (CO - New)')],
+        "Swap": [('Lincoln Park (CO) [Old]', 'Lincoln Park (CO) [New]')],
     },
     "Denver Light Rail (Union - Auraria)": {
         "F": ['Denver Union Station - North', 'Ball Arena/Elitch Gardens', 'Empower Field at Mile High', 'Auraria West (Old - LRT)'],
     },
     "Denver Light Rail (Union - I-25)": {
-        "F": ['Denver Light Rail (Union - Auraria)', 'Lincoln Park (CO - Old)', 'Alameda', 'I-25 & Broadway'],
+        "F": ['Denver Light Rail (Union - Auraria)', 'Lincoln Park (CO) [Old]', 'Alameda', 'I-25 & Broadway'],
     },
     "Denver Light Rail (Union - Jefferson County)": {
         "F": ['Denver Light Rail (Union - Auraria)', 'Denver Light Rail (Decatur - Jefferson County)'],
