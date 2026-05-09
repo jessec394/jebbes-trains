@@ -3272,6 +3272,7 @@ Stations = {
     "Flamingo/Pecos": {'Location': (36.115210, -115.101570), 'Label': 'Pecos'},
     "Flamingo/Rainbow": {'Location': (36.114530, -115.242080), 'Label': 'Rainbow'},
     "Flamingo/Sandhill": {'Location': (36.115280, -115.091350), 'Label': 'Sandhill'},
+    "Flamingo/Town Center": {'Location': (36.115520, -115.328370), 'Label': 'Town Center Dr'},
     "Flamingo/Valley View": {'Location': (36.115540, -115.190940), 'Label': 'Valley View'},
     "Flatbush Av-Brooklyn College": {'Location': (40.632920, -73.947720)},
     "Flatbush Av-Nostrand Av": {'Location': (40.630530, -73.947970)},
@@ -3328,6 +3329,7 @@ Stations = {
     "Forest/Jupiter": {'Location': (32.908100, -96.679380)},
     "Forge Park/495": {'Location': (42.089880, -71.439000)},
     "Forks": {'Location': (47.048780, -81.863760)},
+    "Forrer Blvd": {'Location': (39.717560, -84.172190)},
     "Forsyth (GA)": {'Location': (33.035690, -83.934680), 'Label': 'Forsyth'},
     "Forsyth (MO)": {'Location': (38.649060, -90.328080), 'Label': 'Forsyth'},
     "Forsythe": {'Location': (48.235410, -76.428330)},
@@ -4566,7 +4568,9 @@ Stations = {
     "Lincoln Park (CO) [New]": {'Location': (39.729536, -105.007587), 'Label': 'Lincoln Park'},
     "Lincoln Park (CO) [Old]": {'Location': (39.732140, -105.005640), 'Label': '10th & Osage'},
     "Lincoln Park (NJ)": {'Location': (40.924140, -74.301830), 'Label': 'Lincoln Park'},
+    "Lincoln Park Blvd": {'Location': (39.696650, -84.169260)},
     "Lincoln Rd": {'Location': (42.413760, -71.325520)},
+    "Lincoln St": {'Location': (39.749940, -84.189200)},
     "Lincoln St/SW 3rd Ave": {'Location': (45.507920, -122.680620)},
     "Lincoln Village": {'Location': (39.952390, -83.126440)},
     "Lincoln/1st Ave": {'Location': (33.441680, -112.074960)},
@@ -5629,8 +5633,8 @@ Stations = {
     "Oakridge-41st Ave": {'Location': (49.233150, -123.116640)},
     "Oakton-Skokie": {'Location': (42.027105, -87.747572)},
     "Oakville": {'Location': (43.455560, -79.682260)},
-    "Oakwood": {'Location': (39.724070, -84.173360)},
-    "Oakwood Ave": {'Location': (43.697220, -79.443050)},
+    "Oakwood Ave (Dayton)": {'Location': (39.727540, -84.178130), 'Label': 'Oakwood Ave'},
+    "Oakwood Ave (Toronto)": {'Location': (43.697220, -79.443050), 'Label': 'Oakwood Ave'},
     "Oakwood Heights (Detroit)": {'Location': (42.290170, -83.145570), 'Label': 'Oakwood Heights'},
     "Oakwood Heights (New York)": {'Location': (40.564680, -74.126860), 'Label': 'Oakwood Heights'},
     "Oakwood Rd": {'Location': (34.228060, -83.884150)},
@@ -5849,6 +5853,7 @@ Stations = {
     "Patillo Rd": {'Location': (42.305180, -82.817340)},
     "Patterson (BC)": {'Location': (49.229750, -123.012660), 'Label': 'Patterson'},
     "Patterson (NY)": {'Location': (41.511740, -73.604260), 'Label': 'Patterson'},
+    "Patterson Rd": {'Location': (39.724880, -84.173680)},
     "Paulden": {'Location': (34.890670, -112.468570)},
     "Paulina": {'Location': (41.943702, -87.670769)},
     "Pauls Valley": {'Location': (34.741770, -97.218370)},
@@ -5856,6 +5861,7 @@ Stations = {
     "Pawling": {'Location': (41.564720, -73.600310)},
     "Pawtucket/Central Falls": {'Location': (41.878760, -71.392000)},
     "Paycom Center": {'Location': (35.463740, -97.516250)},
+    "Peach Orchard Rd": {'Location': (39.710170, -84.171160)},
     "Peachtree": {'Location': (33.920070, -84.296900)},
     "Peachtree Center": {'Location': (33.758110, -84.387340)},
     "Peachtree City": {'Location': (33.401580, -84.598030)},
@@ -6895,6 +6901,7 @@ Stations = {
     "Springfield (MO)": {'Location': (37.231210, -93.279200), 'Label': 'Springfield'},
     "Springfield (OH)": {'Location': (39.922270, -83.811399), 'Label': 'Springfield'},
     "Springhill Junction": {'Location': (45.691880, -64.111210)},
+    "Springhouse Rd": {'Location': (39.733100, -84.183870)},
     "Springwells": {'Location': (42.314510, -83.114610)},
     "Sproat Street/Adelaide Street": {'Location': (42.341567, -83.053972)},
     "Spuyten Duyvil": {'Location': (40.878930, -73.922130)},
@@ -7237,7 +7244,8 @@ Stations = {
     "Trois Pistoles": {'Location': (48.127090, -69.173390)},
     "Trois-Rivières": {'Location': (46.348390, -72.549640)},
     "Trolley": {'Location': (40.760670, -111.873320)},
-    "Troy": {'Location': (42.542590, -83.190890)},
+    "Troy (MI)": {'Location': (42.542590, -83.190890), 'Label': 'Troy'},
+    "Troy (OH)": {'Location': (40.038970, -84.199810), 'Label': 'Troy'},
     "Troy Ave": {'Location': (39.722600, -86.150270)},
     "Truckee": {'Location': (39.327490, -120.185670)},
     "Truist Park": {'Location': (33.889940, -84.469550)},
@@ -8591,7 +8599,7 @@ Segments = {
         "Keep": ['Cincinnati Union Terminal', 'Hamilton (OH)', 'Dayton Union Station'],
     },
     "-Intercity LS (Cincinnati - Detroit)": {
-        "F": ['-Intercity LS (Cincinnati - Dayton)', '[X] Dayton East Junction', 'Sidney', 'Lima', 'Findlay', 'Bowling Green (OH)', 'Toledo', '[R] -Intercity LS (Detroit - Toledo)'],
+        "F": ['-Intercity LS (Cincinnati - Dayton)', '[X] Dayton East Junction', 'Troy (OH)', 'Sidney', 'Lima', 'Findlay', 'Bowling Green (OH)', 'Toledo', '[R] -Intercity LS (Detroit - Toledo)'],
     },
     "-Intercity LS (Cincinnati - Hamilton)": {
         "F": ['Cincinnati Commuter (Union - Hamilton)'],
@@ -8809,7 +8817,7 @@ Segments = {
     },
     "-Intercity LS (Detroit - Pontiac)": {
         "F": ['Detroit Regional Rail (Central - Pontiac)'],
-        "Keep": ['Michigan Central Station', 'Royal Oak (MI)', 'Troy', 'Pontiac (MI)'],
+        "Keep": ['Michigan Central Station', 'Royal Oak (MI)', 'Troy (MI)', 'Pontiac (MI)'],
     },
     "-Intercity LS (Detroit - Port Huron)": {
         "F": ['Detroit Regional Rail (Central - New Haven)', 'Richmond (MI)', 'Port Huron'],
@@ -10756,7 +10764,7 @@ Segments = {
         "F": ['EBJ Union Station', 'Greenbriar (Dallas)', 'Oakenwald', 'Beckley', '6th St', 'Bishop Arts'],
     },
     "Dayton Light Rail": {
-        "F": ['Shiloh', 'Siebenthaler Ave', 'Hillcrest Ave', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St', 'Wright Stop Plaza', 'Dayton Union Station (LRT)', 'Apple St', 'University of Dayton', 'Oakwood', 'Dorothy Ln', 'Kettering'],
+        "F": ['Shiloh', 'Siebenthaler Ave', 'Hillcrest Ave', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St', 'Wright Stop Plaza', 'Dayton Union Station (LRT)', 'Lincoln St', 'Apple St', 'University of Dayton', 'Springhouse Rd', 'Oakwood Ave (Dayton)', 'Patterson Rd', 'Forrer Blvd', 'Peach Orchard Rd', 'Dorothy Ln', 'Lincoln Park Blvd', 'Kettering'],
     },
     "Denver Approach (Union Main - East)": {
         "F": ['Denver Union Station - Main', '[X] Denver Union Junction', '[X] 48th & Brighton'],
@@ -10938,7 +10946,7 @@ Segments = {
         "F": ['Michigan Central Station', '[X] Windsor Tunnel Bend', 'Windsor (ON) [New]'],
     },
     "Detroit Regional Rail (New Center - Pontiac)": {
-        "F": ['Detroit Approach (New Center - East)', 'Highland Park (Detroit Regional)', 'Hazel Park-Ferndale', 'Royal Oak (MI)', 'Troy', 'Bloomfield Hills', 'Pontiac (MI)', 'Waterford'],
+        "F": ['Detroit Approach (New Center - East)', 'Highland Park (Detroit Regional)', 'Hazel Park-Ferndale', 'Royal Oak (MI)', 'Troy (MI)', 'Bloomfield Hills', 'Pontiac (MI)', 'Waterford'],
     },
     "Detroit Subway (Fort)": {
         "F": ['Cadillac Square', '3rd Ave (Fort)', 'Trumbull (Fort)', 'Rosa Parks Blvd', '15th St', 'Ambassador Bridge', 'Grand Blvd (Fort)', 'Clark Ave (Fort)', 'Campbell St', 'Livernois (Fort)', 'Green St (Detroit)', 'Lawndale St', 'Dearborn St', 'Oakwood Heights (Detroit)', 'Dix St', 'Raupp Rd', 'Elizabeth St-Melvindale', 'Allen Rd', 'Enterprise Dr', 'Fairlane Dr', 'Southfield Rd', 'Dearborn Hospital'],
@@ -11230,7 +11238,7 @@ Segments = {
         "F": ['Downtown Summerlin', '[X] Summerlin Bend', 'Charleston/Town Center', 'Charleston/Hualapai', 'Charleston/Apple', 'Charleston/Rampart', 'Charleston/Durango', 'Charleston/Buffalo', 'Charleston/Rainbow', 'Charleston/Jones', 'Charleston/Decatur', 'Charleston/Valley View', 'University Medical Center (Las Vegas)', 'Charleston/Main', 'Las Vegas/Charleston', 'Charleston/Maryland', 'Charleston/Fremont', 'Charleston/Pecos', 'Charleston/Lamb', 'Charleston/Nellis'],
     },
     "Las Vegas Light Rail (Flamingo Line)": {
-        "F": ['Flamingo/Hualapai', 'Flamingo/Fort Apache', 'Flamingo/Durango', 'Flamingo/Buffalo', 'Flamingo/Rainbow', 'Flamingo/Jones', 'Flamingo/Decatur', 'Flamingo/Valley View', 'Flamingo/Hotel Rio', 'Las Vegas/Flamingo', 'Flamingo/Hoval', 'Flamingo/Paradise', 'Flamingo/Maryland', 'Flamingo/Eastern', 'Flamingo/Pecos', 'Flamingo/Sandhill', 'Flamingo/Mountain Vista', 'Flamingo/Boulder Hwy'],
+        "F": ['Flamingo/Town Center', 'Flamingo/Hualapai', 'Flamingo/Fort Apache', 'Flamingo/Durango', 'Flamingo/Buffalo', 'Flamingo/Rainbow', 'Flamingo/Jones', 'Flamingo/Decatur', 'Flamingo/Valley View', 'Flamingo/Hotel Rio', 'Las Vegas/Flamingo', 'Flamingo/Hoval', 'Flamingo/Paradise', 'Flamingo/Maryland', 'Flamingo/Eastern', 'Flamingo/Pecos', 'Flamingo/Sandhill', 'Flamingo/Mountain Vista', 'Flamingo/Boulder Hwy'],
     },
     "Las Vegas Light Rail (Maryland Line)": {
         "F": ['Las Vegas/Warm Springs', '[X] Las Vegas I-215 Junction W', 'Gilespie', '[X] Las Vegas I-215 Junction E', 'Sunset/Airport Transfer', '[X] Las Vegas T1 Bend S', 'LAS Terminal 1', '[X] Las Vegas T1 Bend N', 'LAS Terminal 3', 'Maryland/Hacienda', 'Maryland/Tropicana', 'Maryland/Harmon', 'Maryland/Flamingo', 'Maryland/Twain', 'Maryland/Desert Inn', 'Sunrise Hospital', 'Maryland/Sahara', 'Maryland/Oakley', 'Maryland/Charleston', '[X] Las Vegas Orleans Bend', 'Las Vegas/Bonneville', 'Bonneville Transit Center', '[X] Las Vegas Main St Bend', 'Union Plaza', 'Main/Washington', 'Main/Owens', 'Las Vegas/Tonopah', 'Las Vegas/Lake Mead', 'Las Vegas/Civic Center', 'Las Vegas/Bassler', 'Las Vegas/Van Der Meer', 'Las Vegas/Cheyenne'],
@@ -13189,7 +13197,7 @@ Segments = {
         "F": ['Finch West-Keele', 'Sentinel', 'Tobermory', 'Driftwood', 'Jane-Finch', 'Norfinch-Oakdale', 'Signet-Arrow', 'Emery (LRT)', 'Milvan-Rumike', 'Duncanwoods', 'Pearldale', 'Rowntree Mills', 'Mt. Olive', 'Stevenson-Finch', 'Albion-Finch', 'Martin Grove-Finch', 'Westmore-Finch', 'Humber College'],
     },
     "Toronto Light Rail (Mount Dennis - Kennedy)": {
-        "F": ['Mount Dennis', 'Keelesdale', 'Eglinton-Caledonia', 'Fairbank', 'Oakwood Ave', 'Cedarvale (Toronto Line 5)', 'Forest Hill (ON)', 'Chaplin', 'Avenue', 'Eglinton-Yonge', 'Mt. Pleasant (ON)', 'Leaside', 'Laird', 'Sunnybrook Park', 'Don Valley', 'Aga Khan Park', 'Wynford', 'Sloane', "O'Connor", 'Pharmacy', 'Hakimi Lebovic', 'Golden Mile', 'Birchmount', 'Ionview', 'Kennedy'],
+        "F": ['Mount Dennis', 'Keelesdale', 'Eglinton-Caledonia', 'Fairbank', 'Oakwood Ave (Toronto)', 'Cedarvale (Toronto Line 5)', 'Forest Hill (ON)', 'Chaplin', 'Avenue', 'Eglinton-Yonge', 'Mt. Pleasant (ON)', 'Leaside', 'Laird', 'Sunnybrook Park', 'Don Valley', 'Aga Khan Park', 'Wynford', 'Sloane', "O'Connor", 'Pharmacy', 'Hakimi Lebovic', 'Golden Mile', 'Birchmount', 'Ionview', 'Kennedy'],
     },
     "Toronto Light Rail (Pearson - Kennedy)": {
         "F": ['YYZ Terminal 1', 'Eglinton-Renforth', 'Eglinton-Martin Grove', 'Eglinton-Kipling', 'Eglinton-Islington', 'Eglinton-Royal York', 'Eglinton-Scarlett', 'Eglinton-Jane', 'Toronto Light Rail (Mount Dennis - Kennedy)'],
@@ -14723,6 +14731,9 @@ Lines = {
         "SunRail": {
             "Fantasy": {
                 "DeLand - Orlando - Poinciana": {'Mode': 'Heavy Rail', 'Stations': 'Orlando SunRail (Poinciana - DeLand)'},
+            },
+            "Present": {
+                "DeLand - Orlando - Poinciana": {'Mode': 'Heavy Rail', 'Stations': 'Orlando SunRail (Poinciana - DeLand)', 'File': '[FDOT] SunRail', 'Link': 'https://brouter.damsy.net/latest/#map=13/28.5896/-81.3345/standard&lonlats=-81.352809,29.018151;-81.298131,28.813407;-81.366093,28.583811;-81.38088,28.548086;-81.382524,28.531279;-81.377535,28.500567;-81.366986,28.452774;-81.367042,28.440846;-81.369896,28.430982;-81.389455,28.345836;-81.421341,28.282383;-81.484796,28.258906;-81.482329,28.258741;-81.480237,28.258732;-81.389036,28.346922;-81.374542,28.393453;-81.366927,28.453583;-81.377272,28.499806;-81.381097,28.517794;-81.381682,28.523361;-81.380842,28.548793;-81.365218,28.584211;-81.298788,28.813889;-81.352761,29.018163&profile=rail'},
             },
         },
     },
@@ -16426,7 +16437,7 @@ Lines = {
         },
         "Flamingo Line": {
             "Fantasy": {
-                "Hualapai Wy - Boulder Hwy": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Flamingo Line)'},
+                "Town Center Dr - Boulder Hwy": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Flamingo Line)'},
             },
         },
         "Maryland Line": {
