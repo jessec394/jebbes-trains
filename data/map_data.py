@@ -414,6 +414,7 @@ Nodes = {
 	"Portland MAX NS Loop SE": {'Location': (45.508350, -122.683370)},
 	"Portland MAX NS Loop SW": {'Location': (45.508590, -122.683960)},
 	"Portland ME Junction": {'Location': (43.648080, -70.279890)},
+	"Portland Market Junction": {'Location': (45.512840, -122.680780)},
 	"Portland NW Bend 1": {'Location': (45.533340, -122.681220)},
 	"Portland NW Bend 2": {'Location': (45.548180, -122.705620)},
 	"Portland NW Bend 3": {'Location': (45.558680, -122.738770)},
@@ -6398,7 +6399,7 @@ Stations = {
     "S Lowell & Bond": {'Location': (45.493890, -122.671370)},
     "S Moody & Gaines": {'Location': (45.496210, -122.671960)},
     "S Moody & Gibbs": {'Location': (45.499370, -122.671840)},
-    "S Moody & Meade North": {'Location': (45.503290, -122.672720)},
+    "S Moody & Meade": {'Location': (45.503290, -122.672720)},
     "S River Parkway & Moody": {'Location': (45.507070, -122.673940)},
     "S Woodland": {'Location': (41.478890, -81.584510)},
     "SAIT/AUArts/Jubilee": {'Location': (51.063160, -114.091370)},
@@ -12619,7 +12620,7 @@ Segments = {
         "F": ['Portland MAX (Loop EW - Fairgrounds)', 'Washington/SE 12th Ave', 'Tuality Hospital/SE 8th Ave', 'Hillsboro Central/SE 3rd TC', 'Hatfield Government Center'],
     },
     "Portland MAX (Loop NB)": {
-        "F": ['[X] Portland MAX NS Loop SE', 'SW 5th & Jackson', 'SW 5th & Montgomery', 'SW 5th & Jefferson', 'Pioneer Place/SW 5th Ave', 'SW 5th & Oak', '[X] Portland Burnside Bend E', 'NW 5th & Couch', 'NW 5th & Glisan', '[X] Portland MAX NS Loop NE'],
+        "F": ['[X] Portland MAX NS Loop SE', 'SW 5th & Jackson', 'SW 5th & Montgomery', '[X] Portland Market Junction', 'SW 5th & Jefferson', 'Pioneer Place/SW 5th Ave', 'SW 5th & Oak', '[X] Portland Burnside Bend E', 'NW 5th & Couch', 'NW 5th & Glisan', '[X] Portland MAX NS Loop NE'],
     },
     "Portland MAX (Loop NS - Clackamas)": {
         "F": ['[R] Portland MAX (Gateway - Loop NS)', 'Portland MAX (Gateway - Clackamas)'],
@@ -12628,7 +12629,7 @@ Segments = {
         "F": ['Portland MAX (Loop NS - Rose Quarter)', 'Interstate/Rose Quarter', 'Albina/Mississippi', 'Overlook Park', 'N Prescott St', 'N Killingsworth St', 'Rosa Parks', 'N Lombard TC', 'N Denver Ave', 'Delta Park/Vanport', 'Portland Expo Center'],
     },
     "Portland MAX (Loop NS - Milwaukie)": {
-        "F": ['[X] Portland MAX NS Loop SE', 'Lincoln St/SW 3rd Ave', '[X] S Moody & Meade North', 'South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'OMSI/SE Water', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', 'SE 17th Ave & Rhine St', 'SE 17th Ave & Holgate Blvd', 'SE Bybee Blvd', 'SE Tacoma/Johnson Creek', 'Milwaukie/Main St', 'SE Park Ave'],
+        "F": ['[X] Portland MAX NS Loop SE', 'Lincoln St/SW 3rd Ave', '[X] S Moody & Meade', 'South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'OMSI/SE Water', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', 'SE 17th Ave & Rhine St', 'SE 17th Ave & Holgate Blvd', 'SE Bybee Blvd', 'SE Tacoma/Johnson Creek', 'Milwaukie/Main St', 'SE Park Ave'],
     },
     "Portland MAX (Loop NS - Rose Quarter)": {
         "F": ['[X] Portland MAX NS Loop NE', '[X] Portland SE Bend', '[X] Portland 3rd Ave (Michigan) Bend', '[X] Portland Steel Bridge W', '[X] Portland Steel Bridge E', '[X] Portland Rose Quarter Junction'],
@@ -12650,10 +12651,10 @@ Segments = {
         "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', 'SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', 'Hector Campbell', 'Clackamas', 'Oregon City', 'Canby', 'Aurora (OR)', 'Hubbard', 'Woodburn'],
     },
     "Portland Streetcar (10th Ave)": {
-        "L": ['S Moody & Meade North', 'S River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glidan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
+        "L": ['S Moody & Meade', 'S River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glidan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
     },
     "Portland Streetcar (11th Ave)": {
-        "L": ['[X] Portland Lovejoy Junction W', 'NW 11th & Johnson', 'NW 11th & Glisan', 'NW 11th & Couch', 'SW 11th & Alder', 'SW 11th & Taylor', 'SW 11th & Jefferson', 'SW 11th & Clay', '[X] Portland 11th Bend S', 'SW Park & Market', 'SW 5th & Market', 'SW 5th & Mill', 'SW 3rd & Harrison', 'SW Harrison Street', 'S River Parkway & Moody', 'S Moody & Meade'],
+        "L": ['[X] Portland Lovejoy Junction W', 'NW 11th & Johnson', 'NW 11th & Glisan', 'NW 11th & Couch', 'SW 11th & Alder', 'SW 11th & Taylor', 'SW 11th & Jefferson', 'SW 11th & Clay', '[X] Portland 11th Bend S', 'SW Park & Market', 'SW 5th & Market', '[X] Portland Market Junction', '[X] SW 5th & Montgomery', 'SW 3rd & Harrison', 'SW Harrison Street', 'S River Parkway & Moody', 'S Moody & Meade'],
     },
     "Portland Streetcar (A)": {
         "L": ['[X] Portland Lovejoy Junction E', 'NW 9th & Lovejoy', '[X] Portland Broadway Bridge Bend', '[X] Portland Broadway Junction', 'N Weidler & Ross', 'NE Weidler & 2nd', 'NE Weidler & Grand', '[X] Portland Weidler Bend', 'NE 7th & Halsey', 'NE 7th & Holladay', '[X] Portland Oregon Bend E', 'NE Oregon & Grand', '[X] Portland Oregon Bend W', 'NE MLK & Hoyt', 'NE MLK & Burnside', 'SE MLK & Stark', 'SE MLK & Morrison', 'SE MLK & Taylor', 'SE MLK & Hawthorne', 'SE MLK & Mill', 'SE Water/OMSI', '[X] Portland Tilikum Bridge Bend N', '[X] Portland Tilikum Bridge Bend S', '[X] South Waterfront/S Moody', 'Portland Streetcar (10th Ave)'],
