@@ -401,10 +401,13 @@ Nodes = {
 	"Portland East Bend N": {'Location': (45.526630, -122.664790)},
 	"Portland East Bend S": {'Location': (45.509750, -122.664730)},
 	"Portland Goose Hollow Bend": {'Location': (45.517990, -122.692760)},
+	"Portland Grand Bend": {'Location': (45.535010, -122.660550)},
 	"Portland I-5 Bend N": {'Location': (45.441360, -122.743510)},
 	"Portland I-5 Bend S": {'Location': (45.280400, -122.767940)},
 	"Portland Lovejoy Junction E": {'Location': (45.530050, -122.681310)},
 	"Portland Lovejoy Junction W": {'Location': (45.530020, -122.682430)},
+	"Portland Lowell Bend E": {'Location': (45.493880, -122.671000)},
+	"Portland Lowell Bend W": {'Location': (45.493890, -122.672030)},
 	"Portland MAX EW Loop NE": {'Location': (45.517740, -122.673590)},
 	"Portland MAX EW Loop NW": {'Location': (45.521910, -122.689170)},
 	"Portland MAX EW Loop SE": {'Location': (45.517090, -122.673950)},
@@ -4111,6 +4114,7 @@ Stations = {
     "Jean-Talon": {'Location': (45.539600, -73.613640)},
     "Jeanne-d'Arc": {'Location': (45.469080, -75.546000)},
     "Jeannette": {'Location': (40.328600, -79.617160)},
+    "Jefferson & Powell": {'Location': (37.808590, -122.413350)},
     "Jefferson Av": {'Location': (40.583810, -74.102950)},
     "Jefferson City": {'Location': (38.578800, -92.170050)},
     "Jefferson County Government Center": {'Location': (39.726489, -105.201381)},
@@ -4119,7 +4123,6 @@ Stations = {
     "Jefferson St": {'Location': (40.706580, -73.922860)},
     "Jefferson/USC": {'Location': (34.022050, -118.278190)},
     "Jenkintown-Wyncote": {'Location': (40.093140, -75.137960)},
-    "Jerome & Powell": {'Location': (37.808590, -122.413350)},
     "Jersey Avenue": {'Location': (40.476940, -74.467410)},
     "Jersey Avenue (LRT)": {'Location': (40.714970, -74.048500), 'Label': 'Jersey Avenue'},
     "Jessup (GA)": {'Location': (31.605870, -81.881930), 'Label': 'Jessup'},
@@ -12661,10 +12664,10 @@ Segments = {
         "L": ['[X] Portland Lovejoy Junction E', 'NW 9th & Lovejoy', '[X] Portland Broadway Bridge Bend', '[X] Portland Broadway Junction', 'N Weidler & Ross', 'NE Weidler & 2nd', 'NE Weidler & Grand', '[X] Portland Weidler Bend', 'NE 7th & Halsey', 'NE 7th & Holladay', '[X] Portland Oregon Bend E', 'NE Oregon & Grand', '[X] Portland Oregon Bend W', 'NE MLK & Hoyt', 'NE MLK & Burnside', 'SE MLK & Stark', 'SE MLK & Morrison', 'SE MLK & Taylor', 'SE MLK & Hawthorne', 'SE MLK & Mill', 'SE Water/OMSI', '[X] Portland Tilikum Bridge Bend N', '[X] Portland Tilikum Bridge Bend S', '[X] South Waterfront/S Moody', 'Portland Streetcar (10th Ave)'],
     },
     "Portland Streetcar (B)": {
-        "L": ['[X] Portland Lovejoy Junction E', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 11th & Marshall', 'Portland Streetcar (11th Ave)', '[X] South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'SE Water/OMSI', 'SE Grand & Mill', 'SE Grand & Hawthorne', 'SE Grand & Taylor', 'SE Grand & Belmont', 'SE Grand & Stark', 'SE Grand & Burnside', 'NE Grand & Hoyt', 'NE Grand & Holladay', 'NE Grand & Multnomah', 'NE Grand & Broadway', 'NE Broadway & 2nd', '[X] Portland Broadway Bend', 'N Broadway & Ross', '[X] Portland Broadway Junction', '[X] Portland Broadway Bridge Bend', 'NW 9th & Lovejoy', '[X] Portland Lovejoy Junction E'],
+        "L": ['[X] Portland Lovejoy Junction E', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 11th & Marshall', 'Portland Streetcar (11th Ave)', '[X] South Waterfront/S Moody', '[X] Portland Tilikum Bridge Bend S', '[X] Portland Tilikum Bridge Bend N', 'SE Water/OMSI', 'SE Grand & Mill', 'SE Grand & Hawthorne', 'SE Grand & Taylor', 'SE Grand & Belmont', 'SE Grand & Stark', 'SE Grand & Burnside', 'NE Grand & Hoyt', 'NE Grand & Holladay', 'NE Grand & Multnomah', 'NE Grand & Broadway', '[X] Portland Grand Bend', 'NE Broadway & 2nd', '[X] Portland Broadway Bend', 'N Broadway & Ross', '[X] Portland Broadway Junction', '[X] Portland Broadway Bridge Bend', 'NW 9th & Lovejoy', '[X] Portland Lovejoy Junction E'],
     },
     "Portland Streetcar (NS)": {
-        "L": ['NW 23rd & Marshall', '[X] Portland 23rd Bend S', 'NW 22nd & Lovejoy', 'NW 21st & Lovejoy', 'NW 18th & Lovejoy', 'NW 13th & Lovejoy', 'Portland Streetcar (11th Ave)', 'S Moody & Gibbs', 'S Moody & Gaines', 'S Lowell & Bond', 'S Bond & Lane', 'OHSU Commons', 'S Moody & Gibbs', 'Portland Streetcar (10th Ave)', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 12th & Northrup', 'NW 14th & Northrup', 'NW 18th & Northrup', 'NW 21st & Northrup', 'NW 22nd & Northrup', '[X] Portland 23rd Bend N', 'NW 23rd & Marshall'],
+        "L": ['NW 23rd & Marshall', '[X] Portland 23rd Bend S', 'NW 22nd & Lovejoy', 'NW 21st & Lovejoy', 'NW 18th & Lovejoy', 'NW 13th & Lovejoy', 'Portland Streetcar (11th Ave)', 'S Moody & Gibbs', 'S Moody & Gaines', '[X] Portland Lowell Bend W', 'S Lowell & Bond', '[X] Portland Lowell Bend E', 'S Bond & Lane', 'OHSU Commons', 'S Moody & Gibbs', 'Portland Streetcar (10th Ave)', 'NW 10th & Northrup', '[X] Portland 10th Bend N', '[X] Portland 11th Bend N', 'NW 12th & Northrup', 'NW 14th & Northrup', 'NW 18th & Northrup', 'NW 21st & Northrup', 'NW 22nd & Northrup', '[X] Portland 23rd Bend N', 'NW 23rd & Marshall'],
     },
     "Princeton Dinky (Princeton Junction - Princeton University)": {
         "F": ['Princeton Junction', 'Princeton University'],
@@ -12953,15 +12956,13 @@ Segments = {
         "F": ['Larkspur', 'San Rafael (CA)', 'Marin Civic Center', 'Novato Downtown', 'Novato San Marin', 'Petaluma Downtown', 'Cotati', 'Rohnert Park', 'Santa Rosa Downtown', 'Santa Rosa North', 'Sonoma County Airport', 'Windsor (CA)'],
     },
     "San Francisco Streetcar (Embarcadero)": {
-        "F": ['Don Chee & Steuart', 'The Embarcadero & Ferry Building', 'The Embarcadero & Washington', 'The Embarcadero & Broadway', 'The Embarcadero & Green', 'The Embarcadero & Greenwich', 'The Embarcadero & Chestnut', 'The Embarcadero & Bay'],
-        "L": ['[X] San Francisco Embarcadero Junction', 'The Embarcadero & Stockton', 'Jerome & Powell', '[X] San Francisco Embarcadero Bend N', '[X] San Francisco Embarcadero Bend S', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[X] San Francisco Embarcadero Junction'],
+        "F": ['Don Chee & Steuart', 'The Embarcadero & Ferry Building', 'The Embarcadero & Washington', 'The Embarcadero & Broadway', 'The Embarcadero & Green', 'The Embarcadero & Greenwich', 'The Embarcadero & Chestnut', 'The Embarcadero & Bay', '[X] San Francisco Embarcadero Junction'],
     },
     "San Francisco Streetcar (Embarcadero-Market)": {
-        "F": ['[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)'],
+        "L": ['Jefferson & Powell', '[X] San Francisco Embarcadero Bend N', '[X] San Francisco Embarcadero Bend S', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)', '[X] San Francisco Castro Junction', '17th & Noe', '17th & Castro', 'Market & Noe', '[X] Market & Castro St', '[X] San Francisco Castro Junction', '[R] San Francisco Streetcar (Market)', 'San Francisco Streetcar (Embarcadero)', 'The Embarcadero & Stockton', 'Jefferson & Powell'],
     },
     "San Francisco Streetcar (Market)": {
         "F": ['Market & Drumm', 'Market & Main', 'Market & Battery', 'Market & 2nd', 'Market & New Montgomery', 'Market & Kearney', 'Market & 3rd', 'Market & Stockton', 'Market & 5th', 'Market & Taylor', 'Market & 7th', 'Market & 8th', 'Market & 9th', 'Market & South Van Ness', 'Market & Gough', 'Market & Guerrero', 'Market & Dolores', 'Market & Church', 'Market & Sanchez'],
-        "L": ['[X] San Francisco Castro Junction', '17th & Noe', '17th & Castro', 'Market & Noe', '[X] Market & Castro St', '[X] San Francisco Castro Junction'],
     },
     "San Jose ACE (Diridon - Stockton)": {
         "F": ['-Intercity LS (San Jose - Fremont)', 'Pleasanton', 'Livermore', 'Vasco Rd', 'Tracy', 'Lathrop/Manteca', '[X] Stockton South Junction', 'Stockton-Cabral'],
@@ -13580,7 +13581,7 @@ Lines = {
                 "Vancouver - Eugene": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Vancouver - Eugene)'},
             },
             "Present": {
-                "Vancouver - Eugene": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Vancouver - Eugene) [Old]', 'File': '[Amtrak] Cascades'},
+                "Vancouver - Eugene": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Vancouver - Eugene) [Old]', 'File': '[Amtrak] Cascades', 'Link': 'https://brouter.damsy.net/latest/#map=13/45.5349/-122.6751/standard&lonlats=-123.097537,49.273769;-122.494308,48.757921;-122.197425,47.975774;-122.329572,47.59805;-122.428572,47.239367;-122.913518,46.142177;-122.727993,45.717228;-122.717296,45.703526;-122.701664,45.614983;-122.748662,45.575878;-122.728679,45.556301;-122.715898,45.552059;-122.701297,45.544649;-122.675807,45.528554;-122.664918,45.521669;-123.104172,44.628924;-123.091354,44.055175;-123.100616,44.631673;-122.664703,45.522059;-122.677031,45.529659;-122.701388,45.544781;-122.716051,45.552153;-122.728856,45.556349;-122.748249,45.576005;-122.701288,45.615028;-122.719377,45.706277;-122.913156,46.14298;-122.425847,47.239592;-122.32947,47.599162;-122.196824,47.974287;-123.097638,49.27379&profile=rail'},
             },
         },
         "Centennial": {
