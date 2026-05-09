@@ -2149,6 +2149,7 @@ Stations = {
     "Charleston/Hualapai": {'Location': (36.158957, -115.313157), 'Label': 'Hulapai'},
     "Charleston/Jones": {'Location': (36.159195, -115.224597), 'Label': 'Jones'},
     "Charleston/Lamb": {'Location': (36.158953, -115.081124), 'Label': 'Lamb'},
+    "Charleston/Las Vegas": {'Location': (36.158849, -115.147472), 'Label': 'Las Vegas Blvd'},
     "Charleston/Main": {'Location': (36.158841, -115.154302), 'Label': 'Main'},
     "Charleston/Maryland": {'Location': (36.158873, -115.136271), 'Label': 'Maryland'},
     "Charleston/Nellis": {'Location': (36.159015, -115.062915), 'Label': 'Nellis'},
@@ -3267,6 +3268,7 @@ Stations = {
     "Flamingo/Hoval": {'Location': (36.114520, -115.164940), 'Label': 'Hoval'},
     "Flamingo/Hualapai": {'Location': (36.115240, -115.313880), 'Label': 'Hualapai'},
     "Flamingo/Jones": {'Location': (36.114500, -115.226140), 'Label': 'Jones'},
+    "Flamingo/Las Vegas": {'Location': (36.114697, -115.172880), 'Label': 'Las Vegas Blvd'},
     "Flamingo/Maryland": {'Location': (36.114580, -115.138520), 'Label': 'Maryland'},
     "Flamingo/Mountain Vista": {'Location': (36.114930, -115.073180), 'Label': 'Mountain Vista'},
     "Flamingo/Paradise": {'Location': (36.114470, -115.152830), 'Label': 'Paradise'},
@@ -4450,11 +4452,11 @@ Stations = {
     "Las Vegas/Bassler": {'Location': (36.206654, -115.112275), 'Label': 'Bassler'},
     "Las Vegas/Bellagio": {'Location': (36.120033, -115.172448), 'Label': 'Bellagio'},
     "Las Vegas/Bonneville": {'Location': (36.163458, -115.144425), 'Label': 'Bonneville/Arts District'},
-    "Las Vegas/Charleston": {'Location': (36.158849, -115.147472)},
+    "Las Vegas/Charleston": {'Location': (36.158849, -115.147472), 'Label': 'Charleston'},
     "Las Vegas/Cheyenne": {'Location': (36.217244, -115.094185), 'Label': 'Cheyenne'},
     "Las Vegas/Civic Center": {'Location': (36.201461, -115.121124), 'Label': 'Civic Center'},
     "Las Vegas/Elvis Presley": {'Location': (36.137240, -115.161586), 'Label': 'Circus Circus'},
-    "Las Vegas/Flamingo": {'Location': (36.114697, -115.172880)},
+    "Las Vegas/Flamingo": {'Location': (36.114697, -115.172880), 'Label': 'Flamingo'},
     "Las Vegas/Fremont": {'Location': (36.168081, -115.141437), 'Label': 'Las Vegas/Fremont'},
     "Las Vegas/Harmon": {'Location': (36.108422, -115.172991), 'Label': 'Harmon'},
     "Las Vegas/Lake Mead": {'Location': (36.196257, -115.128543), 'Label': 'Lake Mead'},
@@ -11237,10 +11239,10 @@ Segments = {
         "F": ['[R] Las Vegas Metro (Centennial Line)', 'Las Vegas Metro (Boulder Line)'],
     },
     "Las Vegas Light Rail (Charleston Line)": {
-        "F": ['Downtown Summerlin', '[X] Summerlin Bend', 'Charleston/Town Center', 'Charleston/Hualapai', 'Charleston/Apple', 'Charleston/Rampart', 'Charleston/Durango', 'Charleston/Buffalo', 'Charleston/Rainbow', 'Charleston/Jones', 'Charleston/Decatur', 'Charleston/Valley View', 'University Medical Center (Las Vegas)', 'Charleston/Main', 'Las Vegas/Charleston', 'Charleston/Maryland', 'Charleston/Fremont', 'Charleston/Pecos', 'Charleston/Lamb', 'Charleston/Nellis'],
+        "F": ['Downtown Summerlin', '[X] Summerlin Bend', 'Charleston/Town Center', 'Charleston/Hualapai', 'Charleston/Apple', 'Charleston/Rampart', 'Charleston/Durango', 'Charleston/Buffalo', 'Charleston/Rainbow', 'Charleston/Jones', 'Charleston/Decatur', 'Charleston/Valley View', 'University Medical Center (Las Vegas)', 'Charleston/Main', 'Charleston/Las Vegas', 'Charleston/Maryland', 'Charleston/Fremont', 'Charleston/Pecos', 'Charleston/Lamb', 'Charleston/Nellis'],
     },
     "Las Vegas Light Rail (Flamingo Line)": {
-        "F": ['Flamingo/Town Center', 'Flamingo/Hualapai', 'Flamingo/Fort Apache', 'Flamingo/Durango', 'Flamingo/Buffalo', 'Flamingo/Rainbow', 'Flamingo/Jones', 'Flamingo/Decatur', 'Flamingo/Valley View', 'Flamingo/Hotel Rio', 'Las Vegas/Flamingo', 'Flamingo/Hoval', 'Flamingo/Paradise', 'Flamingo/Maryland', 'Flamingo/Eastern', 'Flamingo/Pecos', 'Flamingo/Sandhill', 'Flamingo/Mountain Vista', 'Flamingo/Boulder Hwy'],
+        "F": ['Flamingo/Town Center', 'Flamingo/Hualapai', 'Flamingo/Fort Apache', 'Flamingo/Durango', 'Flamingo/Buffalo', 'Flamingo/Rainbow', 'Flamingo/Jones', 'Flamingo/Decatur', 'Flamingo/Valley View', 'Flamingo/Hotel Rio', 'Flamingo/Las Vegas', 'Flamingo/Hoval', 'Flamingo/Paradise', 'Flamingo/Maryland', 'Flamingo/Eastern', 'Flamingo/Pecos', 'Flamingo/Sandhill', 'Flamingo/Mountain Vista', 'Flamingo/Boulder Hwy'],
     },
     "Las Vegas Light Rail (Maryland Line)": {
         "F": ['Las Vegas/Warm Springs', '[X] Las Vegas I-215 Junction W', 'Gilespie', '[X] Las Vegas I-215 Junction E', 'Sunset/Airport Transfer', '[X] Las Vegas T1 Bend S', 'LAS Terminal 1', '[X] Las Vegas T1 Bend N', 'LAS Terminal 3', 'Maryland/Hacienda', 'Maryland/Tropicana', 'Maryland/Harmon', 'Maryland/Flamingo', 'Maryland/Twain', 'Maryland/Desert Inn', 'Sunrise Hospital', 'Maryland/Sahara', 'Maryland/Oakley', 'Maryland/Charleston', '[X] Las Vegas Orleans Bend', 'Las Vegas/Bonneville', 'Bonneville Transit Center', '[X] Las Vegas Main St Bend', 'Union Plaza', 'Main/Washington', 'Main/Owens', 'Las Vegas/Tonopah', 'Las Vegas/Lake Mead', 'Las Vegas/Civic Center', 'Las Vegas/Bassler', 'Las Vegas/Van Der Meer', 'Las Vegas/Cheyenne'],
@@ -16439,7 +16441,7 @@ Lines = {
         },
         "Flamingo Line": {
             "Fantasy": {
-                "Town Center Dr - Boulder Hwy": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Flamingo Line)'},
+                "Town Center Dr - Boulder Hwy": {'Mode': 'Light Rail', 'Stations': 'Las Vegas Light Rail (Flamingo Line)', 'File': '[RTC] Flamingo Line'},
             },
         },
         "Maryland Line": {
