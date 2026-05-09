@@ -3182,7 +3182,8 @@ Stations = {
     "Fairpark": {'Location': (40.771490, -111.923930)},
     "Fairview": {'Location': (43.587520, -79.626740)},
     "Fairview & Campus Drive": {'Location': (47.627570, -122.332400)},
-    "Fairview Ave": {'Location': (44.956412, -93.178755)},
+    "Fairview Ave (Dayton)": {'Location': (39.785540, -84.210870), 'Label': 'Fairview Ave'},
+    "Fairview Ave (St. Paul)": {'Location': (44.956412, -93.178755), 'Label': 'Fairview Ave'},
     "Fairview Heights (LA)": {'Location': (33.975250, -118.336070), 'Label': 'Fairview Heights'},
     "Fairview Heights (STL)": {'Location': (38.593610, -90.047800), 'Label': 'Fairview Heights'},
     "Fairview-Pointe-Claire": {'Location': (45.460030, -73.835240)},
@@ -4208,7 +4209,7 @@ Stations = {
     "Kent Des Moines": {'Location': (47.389550, -122.294400)},
     "Kent Street": {'Location': (42.344140, -71.114140)},
     "Kenton": {'Location': (40.644810, -83.612140)},
-    "Kettering": {'Location': (39.689080, -84.168630)},
+    "Kettering": {'Location': (39.690090, -84.168670)},
     "Kew Gardens": {'Location': (40.709670, -73.830520)},
     "Kew Gardens-Union Tpke": {'Location': (40.714170, -73.831130)},
     "Kewa": {'Location': (35.511120, -106.321880)},
@@ -5582,7 +5583,8 @@ Stations = {
     "Nostrand Av (Eastern)": {'Location': (40.669730, -73.950510), 'Label': 'Nostrand Av'},
     "Nostrand Av (Fulton)": {'Location': (40.681450, -73.956800), 'Label': 'Nostrand Av'},
     "Nostrand Avenue": {'Location': (40.678390, -73.948140)},
-    "Nottingham Rd": {'Location': (42.376960, -82.934240)},
+    "Nottingham Rd (Dayton)": {'Location': (39.805120, -84.221930), 'Label': 'Nottingham Rd'},
+    "Nottingham Rd (Detroit)": {'Location': (42.376960, -82.934240), 'Label': 'Nottingham Rd'},
     "Novato Downtown": {'Location': (38.105980, -122.564440)},
     "Novato San Marin": {'Location': (38.120730, -122.566130)},
     "Novi": {'Location': (42.481550, -83.481170)},
@@ -6735,7 +6737,7 @@ Stations = {
     "Shreveport": {'Location': (32.506250, -93.751120)},
     "Shrewsbury-Lansdowne I-44": {'Location': (38.593660, -90.319460)},
     "Sidney": {'Location': (40.286320, -84.162150)},
-    "Siebenthaler Ave": {'Location': (39.798930, -84.218130)},
+    "Siebenthaler Ave": {'Location': (39.798040, -84.217690)},
     "Sierra Madre Villa": {'Location': (34.147750, -118.081450)},
     "Signai": {'Location': (48.295900, -76.829650)},
     "Signet-Arrow": {'Location': (43.753110, -79.537060)},
@@ -10764,7 +10766,7 @@ Segments = {
         "F": ['EBJ Union Station', 'Greenbriar (Dallas)', 'Oakenwald', 'Beckley', '6th St', 'Bishop Arts'],
     },
     "Dayton Light Rail": {
-        "F": ['Shiloh', 'Siebenthaler Ave', 'Hillcrest Ave', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St', 'Wright Stop Plaza', 'Dayton Union Station (LRT)', 'Lincoln St', 'Apple St', 'University of Dayton', 'Springhouse Rd', 'Oakwood Ave (Dayton)', 'Patterson Rd', 'Forrer Blvd', 'Peach Orchard Rd', 'Dorothy Ln', 'Lincoln Park Blvd', 'Kettering'],
+        "F": ['Shiloh', 'Nottingham Rd (Dayton)', 'Siebenthaler Ave', 'Hillcrest Ave', 'Fairview Ave (Dayton)', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St', 'Wright Stop Plaza', 'Dayton Union Station (LRT)', 'Lincoln St', 'Apple St', 'University of Dayton', 'Springhouse Rd', 'Oakwood Ave (Dayton)', 'Patterson Rd', 'Forrer Blvd', 'Peach Orchard Rd', 'Dorothy Ln', 'Lincoln Park Blvd', 'Kettering'],
     },
     "Denver Approach (Union Main - East)": {
         "F": ['Denver Union Station - Main', '[X] Denver Union Junction', '[X] 48th & Brighton'],
@@ -10958,7 +10960,7 @@ Segments = {
         "F": ['Grand Circus', 'Brush St', 'Russell St (Detroit)', 'Chene St (Gratiot)', 'Mack Ave (Gratiot)', 'Mt. Elliot St (Gratiot)', 'Forest Ave (Detroit)', 'Van Dyke (Gratiot)', 'Burns Ave', 'McClellan Ave', 'Edgewood St', 'Outer Dr'],
     },
     "Detroit Subway (Jefferson)": {
-        "F": ['Cadillac Square', 'Rivard St', 'Saint Aubin St', 'Chene St (Jefferson)', 'McDougall', 'Mt. Elliot St (Jefferson)', 'Grand Blvd (Jefferson)', 'Van Dyke (Jefferson)', 'Gold Coast', 'Waterworks Park', 'Marquette Dr', 'St. Jean', 'Conner St', 'Lakeview St', 'Alter Rd', 'Nottingham Rd'],
+        "F": ['Cadillac Square', 'Rivard St', 'Saint Aubin St', 'Chene St (Jefferson)', 'McDougall', 'Mt. Elliot St (Jefferson)', 'Grand Blvd (Jefferson)', 'Van Dyke (Jefferson)', 'Gold Coast', 'Waterworks Park', 'Marquette Dr', 'St. Jean', 'Conner St', 'Lakeview St', 'Alter Rd', 'Nottingham Rd (Detroit)'],
     },
     "Detroit Subway (Michigan)": {
         "F": ['Grand Circus', '3rd Ave (Michigan)', 'Trumbull (Michigan)', 'Michigan Central Station (Subway)', '19th St', 'Grand Blvd (Michigan)', 'Clark Ave (Michigan)', 'Junction Ave', 'Livernois (Michigan)', 'Martin St', 'Central St (Detroit)', 'Lonyo St', 'Wyoming Ave', 'Oakman Blvd', 'Schaefer Rd (Subway)', 'Chase Rd', 'Greenfield Rd', 'Mercury Dr'],
@@ -11573,7 +11575,7 @@ Segments = {
         "Swap": [('Stadium Village (Old)', 'Stadium Village (New)'), ('Prospect Park (Old)', 'Prospect Park (New)')],
     },
     "Minneapolis Light Rail (Target Field - Union Depot) [Old]": {
-        "F": ['Minneapolis Light Rail (Downtown Minneapolis)', 'West Bank', 'East Bank', 'Stadium Village (Old)', 'Prospect Park (Old)', 'Westgate', 'Raymond Ave', 'Fairview Ave', 'Snelling/University', 'Hamline Ave', 'Lexington Pkwy', 'Victoria St', 'Dale St', 'Western Ave (St. Paul)', 'Capitol/Rice St', 'Robert St', '10th St (St. Paul)', 'Central (St. Paul)', 'St. Paul Union Depot (LRT)'],
+        "F": ['Minneapolis Light Rail (Downtown Minneapolis)', 'West Bank', 'East Bank', 'Stadium Village (Old)', 'Prospect Park (Old)', 'Westgate', 'Raymond Ave', 'Fairview Ave (St. Paul)', 'Snelling/University', 'Hamline Ave', 'Lexington Pkwy', 'Victoria St', 'Dale St', 'Western Ave (St. Paul)', 'Capitol/Rice St', 'Robert St', '10th St (St. Paul)', 'Central (St. Paul)', 'St. Paul Union Depot (LRT)'],
     },
     "Minneapolis Light Rail (Union Depot - Mall of America)": {
         "F": ['St. Paul Union Depot', 'Science Museum', 'Smith Ave', 'Randolph Ave', 'Otto Ave', 'Montreal Ave', 'Rankin St', '7th St', 'Edgcumbe Rd', 'Highland Bridge', 'VA Medical Center (MSP)', 'Fort Snelling', 'MSP Terminal 1', 'MSP Terminal 2', 'American Blvd', 'Bloomington Central', '30th Ave', 'Mall of America (New)'],
