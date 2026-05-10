@@ -683,6 +683,7 @@ Stations = {
     "149 St-Grand Concourse": {'Location': (40.818400, -73.926720)},
     "14th & Elm": {'Location': (39.109828, -84.518483)},
     "14th & Washington": {'Location': (47.600580, -122.314050)},
+    "15 St": {'Location': (40.625240, -73.960860)},
     "15 St-Prospect Park": {'Location': (40.660710, -73.979250)},
     "15/16th & Locust St": {'Location': (39.948630, -75.167790)},
     "152 St": {'Location': (49.166090, -122.801390)},
@@ -926,6 +927,7 @@ Stations = {
     "55th-56th-57th St": {'Location': (41.792890, -87.587740)},
     "5600 W. Old Bingham Hwy": {'Location': (40.569440, -112.024870)},
     "57 St": {'Location': (40.758000, -73.963140)},
+    "57 St (Flatlands)": {'Location': (40.630030, -73.921770), 'Label': '57 St'},
     "57 St-7 Av": {'Location': (40.764840, -73.980530)},
     "57th & State": {'Location': (39.116660, -94.709800)},
     "57th Ave": {'Location': (49.219110, -123.140150)},
@@ -940,6 +942,7 @@ Stations = {
     "5th Ave": {'Location': (39.987100, -83.005520)},
     "5th St": {'Location': (39.101110, -84.512950)},
     "5th St/Ash Ave": {'Location': (33.425110, -111.943460)},
+    "60 St": {'Location': (40.616420, -73.978760)},
     "600 South (East)": {'Location': (40.755900, -111.891090), 'Label': '600 South'},
     "600 South (West)": {'Location': (40.755780, -111.902540), 'Label': '600 South'},
     "60th & Sheridan": {'Location': (39.803683, -105.049175)},
@@ -954,6 +957,7 @@ Stations = {
     "63rd/Ashland": {'Location': (41.778945, -87.664364)},
     "63rd/Cottage Grove": {'Location': (41.780412, -87.605836), 'Label': 'Cottage Grove'},
     "63rd/Halsted": {'Location': (41.779041, -87.643773), 'Label': 'Halsted'},
+    "65 St": {'Location': (40.613510, -73.981770)},
     "65 St (Broadway)": {'Location': (40.749310, -73.897600), 'Label': '65 St'},
     "65th & State": {'Location': (39.116720, -94.728250)},
     "66 St-Lincoln Center": {'Location': (40.773640, -73.982230)},
@@ -1004,13 +1008,17 @@ Stations = {
     "8 Av": {'Location': (40.634580, -74.010800)},
     "8 Mile/Sherwood": {'Location': (42.447560, -83.036880)},
     "8 St (Broadway)": {'Location': (40.730630, -73.992370), 'Label': '8 St-NYU'},
+    "80 St": {'Location': (40.635270, -73.913680)},
     "80 St-Hudson St": {'Location': (40.679320, -73.859050)},
     "800 South": {'Location': (40.751440, -111.902540)},
     "81 St (Central Park)": {'Location': (40.781440, -73.972150), 'Label': '81 St-Museum of Natural History'},
+    "82 St": {'Location': (40.603950, -73.991730)},
     "82 St-Jackson Hts": {'Location': (40.747590, -73.883890)},
     "8351 S. 2700 W.": {'Location': (40.598970, -111.957250)},
     "83rd St": {'Location': (41.745360, -87.551550)},
     "83rd St (Avalon Park)": {'Location': (41.744370, -87.598710)},
+    "84 St": {'Location': (40.637640, -73.909990)},
+    "85 St": {'Location': (40.601930, -73.993800)},
     "85 St-Forest Pkwy": {'Location': (40.692390, -73.859970)},
     "85th & Wornall": {'Location': (38.974170, -94.595090)},
     "85th Ave": {'Location': (45.108510, -93.376860)},
@@ -1109,6 +1117,7 @@ Stations = {
     "Alaska Junction": {'Location': (47.561110, -122.386780)},
     "Albany": {'Location': (44.630430, -123.102660)},
     "Albany (GA)": {'Location': (31.581660, -84.149130), 'Label': 'Albany'},
+    "Albany Av": {'Location': (40.627610, -73.937060)},
     "Albany-Rensselaer": {'Location': (42.641060, -73.741200)},
     "Albert Lea": {'Location': (43.649260, -93.361710)},
     "Albertson": {'Location': (40.771940, -73.641740)},
@@ -1338,6 +1347,7 @@ Stations = {
     "Avenue J": {'Location': (40.625240, -73.960720)},
     "Avenue M": {'Location': (40.618060, -73.959380)},
     "Avenue N": {'Location': (40.615260, -73.974140)},
+    "Avenue O": {'Location': (40.610140, -73.985290)},
     "Avenue P": {'Location': (40.608820, -73.972900)},
     "Avenue U": {'Location': (40.598960, -73.955760)},
     "Avenue U (7th)": {'Location': (40.596530, -73.978950), 'Label': 'Avenue U'},
@@ -1423,6 +1433,7 @@ Stations = {
     "Basking Ridge": {'Location': (40.711380, -74.555280)},
     "Bass Lake Rd": {'Location': (45.054210, -93.357720)},
     "Bassett Creek Valley": {'Location': (44.974347, -93.295701)},
+    "Bath Av": {'Location': (40.598950, -73.996940)},
     "Bathurst (NB)": {'Location': (47.620210, -65.670640), 'Label': 'Bathurst'},
     "Bathurst (Toronto)": {'Location': (43.666000, -79.411210)},
     "Bathurst-Sheppard": {'Location': (43.755460, -79.438460)},
@@ -1486,6 +1497,7 @@ Stations = {
     "Beckley": {'Location': (32.758890, -96.822830)},
     "Bedford": {'Location': (41.391660, -81.538160)},
     "Bedford Av": {'Location': (40.716960, -73.956320)},
+    "Bedford Av (Avenue J)": {'Location': (40.626200, -73.952140), 'Label': 'Bedford Av'},
     "Bedford Hills": {'Location': (41.237140, -73.700350)},
     "Bedford Park Blvd (Grand Concourse)": {'Location': (40.873260, -73.887140), 'Label': 'Bedford Park Blvd'},
     "Bedford Park Blvd-Lehman College": {'Location': (40.873410, -73.890210)},
@@ -2478,6 +2490,7 @@ Stations = {
     "Concord (NH)": {'Location': (43.212470, -71.537840), 'Label': 'Concord'},
     "Concorde": {'Location': (45.560440, -73.710090)},
     "Conestoga": {'Location': (43.498270, -80.529590)},
+    "Coney Island Av": {'Location': (40.624830, -73.964620)},
     "Coney Island-Stillwell Av": {'Location': (40.577270, -73.981230)},
     "Confederation": {'Location': (43.241870, -79.760330)},
     "Congress Heights": {'Location': (38.845400, -76.987790)},
@@ -3132,7 +3145,7 @@ Stations = {
     "Englewood Route 4": {'Location': (40.881270, -73.983930)},
     "Englewood Town Center": {'Location': (40.894420, -73.974990)},
     "Ensemble/HCC": {'Location': (29.738870, -95.379240)},
-    "Enterprise (BC)": {'Location': (51.968360, -121.802530), 'Label': 'Enterprise'},
+    "Enterprise": {'Location': (51.968360, -121.802530)},
     "Enterprise Dr": {'Location': (42.284010, -83.193830)},
     "Eola": {'Location': (41.776380, -88.232340)},
     "Ephrata": {'Location': (47.320840, -119.549290)},
@@ -3297,9 +3310,11 @@ Stations = {
     "Flamingo/Sandhill": {'Location': (36.115280, -115.091350), 'Label': 'Sandhill'},
     "Flamingo/Town Center": {'Location': (36.115520, -115.328370), 'Label': 'Town Center Dr'},
     "Flamingo/Valley View": {'Location': (36.115540, -115.190940), 'Label': 'Valley View'},
+    "Flatbush Av": {'Location': (40.627250, -73.942650)},
     "Flatbush Av-Brooklyn College": {'Location': (40.632920, -73.947720)},
     "Flatbush Av-Nostrand Av": {'Location': (40.630530, -73.947970)},
     "Flatiron": {'Location': (39.934354, -105.121905)},
+    "Flatlands Av": {'Location': (40.628320, -73.925500)},
     "Flats East Bank": {'Location': (41.499530, -81.703680)},
     "Fleetwood (BC)": {'Location': (49.157350, -122.778890), 'Label': 'Fleetwood'},
     "Fleetwood (NY)": {'Location': (40.926740, -73.839980), 'Label': 'Fleetwood'},
@@ -4261,6 +4276,8 @@ Stations = {
     "Kingman (AZ)": {'Location': (35.188240, -114.052490), 'Label': 'Kingman'},
     "Kings Hwy": {'Location': (40.608660, -73.957670)},
     "Kings Hwy (7th)": {'Location': (40.605050, -73.980560), 'Label': 'Kings Hwy'},
+    "Kings Hwy (Avenue J)": {'Location': (40.627850, -73.933160), 'Label': 'Kings Hwy'},
+    "Kings Hwy (Bay)": {'Location': (40.606770, -73.988800), 'Label': 'Kings Hwy'},
     "Kings Hwy (McDonald)": {'Location': (40.603210, -73.972350), 'Label': 'Kings Hwy'},
     "Kings Mountain": {'Location': (35.244470, -81.342550)},
     "Kings Park": {'Location': (40.883830, -73.254430)},
@@ -4954,6 +4971,7 @@ Stations = {
     "McCormick Place": {'Location': (41.853130, -87.616070)},
     "McCullough": {'Location': (35.301120, -80.752870)},
     "McDonald Av": {'Location': (40.627130, -73.977400)},
+    "McDonald Av (Bay)": {'Location': (40.620910, -73.975280), 'Label': 'McDonald Av'},
     "McDonough": {'Location': (33.448100, -84.154800)},
     "McDougall": {'Location': (42.340260, -83.017860)},
     "McDowell St": {'Location': (35.221050, -80.835870)},
@@ -5606,6 +5624,7 @@ Stations = {
     "Norwood Park": {'Location': (41.991830, -87.799030)},
     "Norwood-205 St": {'Location': (40.874940, -73.878280)},
     "Norwood-Montgomery": {'Location': (39.163910, -84.453970)},
+    "Nostrand Av": {'Location': (40.626730, -73.947360)},
     "Nostrand Av (Eastern)": {'Location': (40.669730, -73.950510), 'Label': 'Nostrand Av'},
     "Nostrand Av (Fulton)": {'Location': (40.681450, -73.956800), 'Label': 'Nostrand Av'},
     "Nostrand Avenue": {'Location': (40.678390, -73.948140)},
@@ -5673,8 +5692,10 @@ Stations = {
     "Ocean & Jules Ave": {'Location': (37.724990, -122.461520)},
     "Ocean & Junipero Blvd": {'Location': (37.731310, -122.471840)},
     "Ocean & Lee St": {'Location': (37.723450, -122.453850)},
+    "Ocean Av": {'Location': (40.625800, -73.955780)},
     "Ocean Beach": {'Location': (37.760240, -122.508250)},
     "Ocean Pkwy": {'Location': (40.576380, -73.969180)},
+    "Ocean Pkwy (Avenue J)": {'Location': (40.624100, -73.971290), 'Label': 'Ocean Pkwy'},
     "Oceanside (CA)": {'Location': (33.190550, -117.378210), 'Label': 'Oceanside Transit Center'},
     "Oceanside (NY)": {'Location': (40.635000, -73.654610), 'Label': 'Oceanside'},
     "Oconomowoc": {'Location': (43.109400, -88.498670)},
@@ -6177,6 +6198,7 @@ Stations = {
     "Rainier Beach": {'Location': (47.522400, -122.279410)},
     "Raleigh Union Station": {'Location': (35.777290, -78.647510), 'Major': True},
     "Ralph Av": {'Location': (40.678880, -73.921670)},
+    "Ralph Av (Flatlands)": {'Location': (40.632410, -73.918060), 'Label': 'Ralph Ave'},
     "Ramsey (MN)": {'Location': (45.231843, -93.461567), 'Label': 'Ramsey'},
     "Ramsey (ON)": {'Location': (47.446370, -82.338700), 'Label': 'Ramsey'},
     "Ramsey-Main St": {'Location': (41.056420, -74.141960)},
@@ -6236,6 +6258,7 @@ Stations = {
     "Remington": {'Location': (39.227310, -84.322960)},
     "Remington Park": {'Location': (35.527740, -97.473830)},
     "Remsen Av": {'Location': (40.647060, -73.914060)},
+    "Remsen Av (Flatlands)": {'Location': (40.640510, -73.905560), 'Label': 'Remsen Av'},
     "Renfrew": {'Location': (49.258910, -123.045380)},
     "Renfrew (LRT)": {'Location': (49.281130, -123.043410), 'Label': 'Renfrew'},
     "Reno": {'Location': (39.528720, -119.811560)},
@@ -6334,6 +6357,7 @@ Stations = {
     "Rockaway Av (Fulton)": {'Location': (40.678340, -73.911810), 'Label': 'Rockaway Av'},
     "Rockaway Av (Livonia)": {'Location': (40.662560, -73.908900), 'Label': 'Rockaway Av'},
     "Rockaway Blvd": {'Location': (40.680390, -73.843840)},
+    "Rockaway Pkwy (Flatlands)": {'Location': (40.643440, -73.901050), 'Label': 'Rockaway Pkwy'},
     "Rockford": {'Location': (42.264380, -89.090880)},
     "Rockland": {'Location': (44.100770, -69.113240)},
     "Rocklin": {'Location': (38.791050, -121.237400)},
@@ -7407,6 +7431,7 @@ Stations = {
     "Utica (MI)": {'Location': (42.625900, -83.042000), 'Label': 'Utica'},
     "Utica (NY)": {'Location': (43.104180, -75.223220), 'Label': 'Utica'},
     "Utica Av": {'Location': (40.636580, -73.929280)},
+    "Utica Av (Avenue J)": {'Location': (40.628140, -73.928470), 'Label': 'Utica Av'},
     "Utica Av (Fulton)": {'Location': (40.679380, -73.930980), 'Label': 'Utica Av'},
     "Uvalde": {'Location': (29.233290, -99.791440)},
     "VA Medical Center (Cincinnati)": {'Location': (39.139800, -84.509370), 'Label': 'VA Medical Center'},
@@ -8224,6 +8249,9 @@ Segments = {
         "F": ['Albuquerque Rail Runner (Albuquerque - Kewa)'],
         "Keep": ['Albuquerque'],
     },
+    "-Intercity LS (Andover - Ithaca)": {
+        "F": ['Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono', 'Scranton', 'Binghamton', 'Ithaca'],
+    },
     "-Intercity LS (Atlanta - Albany)": {
         "F": ['-Intercity LS (Atlanta - Macon)', 'Cordele', 'Albany (GA)'],
     },
@@ -8860,9 +8888,6 @@ Segments = {
     "-Intercity LS (Detroit - Traverse City)": {
         "F": ['-Intercity LS (Detroit - Cadillac)', 'Traverse City'],
     },
-    "-Intercity LS (Dover - Ithaca)": {
-        "F": ['Dover (NJ)', 'Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono', 'Scranton', 'Binghamton', 'Ithaca'],
-    },
     "-Intercity LS (Edmonton - Winnipeg)": {
         "F": ['Edmonton Approach (North - East)', 'Wainwright', 'Saskatoon', 'Melville', 'Portage la Prairie', 'Winnipeg Union Station'],
     },
@@ -9288,10 +9313,10 @@ Segments = {
         "Keep": ['New York Penn Station', 'Newark Penn Station', 'Somerville'],
     },
     "-Intercity LS (New York - Ithaca East)": {
-        "F": ['-Intercity LS (New York - Dover East)', '-Intercity LS (Dover - Ithaca)'],
+        "F": ['-Intercity LS (New York - Dover East)', '-Intercity LS (Andover - Ithaca)'],
     },
     "-Intercity LS (New York - Ithaca West)": {
-        "F": ['-Intercity LS (New York - Dover West)', '-Intercity LS (Dover - Ithaca)'],
+        "F": ['-Intercity LS (New York - Dover West)', '-Intercity LS (Andover - Ithaca)'],
     },
     "-Intercity LS (New York - Memphis)": {
         "F": ['-Intercity LS (New York - Washington)', '-Intercity LS (Washington - Nashville)', '-Intercity LS (Nashville - Memphis)'],
@@ -9769,7 +9794,7 @@ Segments = {
         "Keep": ['Vancouver Waterfront Station', 'Mission Harbour'],
     },
     "-Intercity LS (Vancouver - Prince George)": {
-        "F": ['-Intercity LS (Vancouver - Horseshoe Bay)', 'Lions Bay', 'Squamish', 'Whistler', 'Pemberton', 'Mt. Curie', 'Lillooet', 'Clinton (BC)', '70 Mile House', '100 Mile House', 'Enterprise (BC)', 'Williams Lake', 'Alexandria (BC)', 'Quesnel', 'Woodpecker', 'Prince George'],
+        "F": ['-Intercity LS (Vancouver - Horseshoe Bay)', 'Lions Bay', 'Squamish', 'Whistler', 'Pemberton', 'Mt. Curie', 'Lillooet', 'Clinton (BC)', '70 Mile House', '100 Mile House', 'Enterprise', 'Williams Lake', 'Alexandria (BC)', 'Quesnel', 'Woodpecker', 'Prince George'],
     },
     "-Intercity LS (Vancouver - White Rock)": {
         "F": ['Vancouver Commuter Rail (Waterfront - White Rock)'],
@@ -11821,6 +11846,9 @@ Segments = {
     },
     "New York Light Rail (1st Ave)": {
         "F": ['South Ferry (LRT)', 'Hanover Square', 'Seaport', 'Oliver St', '[X] New York Pine Bend', 'Grand St (Allen)', 'Houston St (Allen)', '7 St', '14 St', '20 St', '23 St/VA Hospital', '28 St', '34 St', '42 St/UN Plaza', '50 St', '57 St', '67 St', '72 St', '79 St', '86 St', '96 St', '106 St', '116 St', '125 St'],
+    },
+    "New York Light Rail (Flatlands)": {
+        "F": ['Bath Av', '85 St', '82 St', 'Kings Hwy (Bay)', 'Avenue O', '65 St', '60 St', 'McDonald Av (Bay)', 'Ocean Pkwy (Avenue J)', 'Coney Island Av', '15 St', 'Ocean Av', 'Bedford Av (Avenue J)', 'Nostrand Av', 'Flatbush Av', 'Albany Av', 'Kings Hwy (Avenue J)', 'Utica Av (Avenue J)', 'Flatlands Av', '57 St (Flatlands)', 'Ralph Av (Flatlands)', '80 St', '84 St', 'Remsen Av (Flatlands)', 'Rockaway Pkwy (Flatlands)'],
     },
     "New York PATH (33 St - Hoboken)": {
         "F": ['33 St (6th)', '23 St (6th)', '14 St (6th)', '9 St (6th)', 'Christopher St', '[X] Hoboken Junction (PATH)', 'Hoboken Terminal'],
@@ -15317,11 +15345,6 @@ Lines = {
                 "South Ferry - Van Cortlandt": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - Van Cortlandt)'},
             },
         },
-        "1st Ave Light Rail": {
-            "Fantasy": {
-                "South Ferry - 125 St": {'Mode': 'Light Rail', 'Stations': 'New York Light Rail (1st Ave)'},
-            },
-        },
         "2 Train": {
             "Fantasy": {
                 "Flatbush Av - 241 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush - 241 St)'},
@@ -15365,6 +15388,11 @@ Lines = {
         "B Train": {
             "Fantasy": {
                 "Brighton Beach - Bedford Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Brighton Beach - Bedford Park)'},
+            },
+        },
+        "B6": {
+            "Fantasy": {
+                "Bath Av - Rockaway Pkwy": {'Mode': 'Light Rail', 'Stations': 'New York Light Rail (Flatlands)'},
             },
         },
         "C Train": {
@@ -15465,6 +15493,11 @@ Lines = {
             "Fantasy": {
                 "Middle Village - Forest Hills": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Middle Village - Forest Hills)'},
                 "Middle Village - Rockaway Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Middle Village - Rockaway Park)'},
+            },
+        },
+        "M15": {
+            "Fantasy": {
+                "South Ferry - 125 St": {'Mode': 'Light Rail', 'Stations': 'New York Light Rail (1st Ave)'},
             },
         },
         "Metro-North Danbury Line": {
