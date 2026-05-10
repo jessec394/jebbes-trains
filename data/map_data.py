@@ -968,6 +968,7 @@ Stations = {
     "69th St Transit Center": {'Location': (39.962350, -75.259400)},
     "69th Street": {'Location': (51.037570, -114.188650)},
     "6th & Main": {'Location': (39.103184, -84.510180)},
+    "6th Ave": {'Location': (47.256920, -122.452850)},
     "6th St": {'Location': (32.753080, -96.824110)},
     "6th St/Arts District": {'Location': (34.037740, -118.230460)},
     "6th St/Mill Ave": {'Location': (33.424870, -111.939900)},
@@ -3917,6 +3918,7 @@ Stations = {
     "Hillsdale (CA)": {'Location': (37.542380, -122.301610), 'Label': 'Hillsdale'},
     "Hillsdale (NJ)": {'Location': (41.002440, -74.040910), 'Label': 'Hillsdale'},
     "Hillsport": {'Location': (49.451020, -85.548030)},
+    "Hilltop District": {'Location': (47.251760, -122.451670)},
     "Hinckley": {'Location': (46.015280, -92.938470)},
     "Hinsdale": {'Location': (41.802820, -87.928310)},
     "Hinton": {'Location': (53.400840, -117.587980)},
@@ -5717,6 +5719,7 @@ Stations = {
     "Olathe": {'Location': (38.884220, -94.821750)},
     "Olathe East": {'Location': (38.883290, -94.801630)},
     "Olathe Pointe": {'Location': (38.913440, -94.772360)},
+    "Old City Hall": {'Location': (47.257740, -122.440420)},
     "Old Concord Rd": {'Location': (35.259910, -80.772730)},
     "Old Court": {'Location': (39.371280, -76.744140)},
     "Old Cummer": {'Location': (43.793700, -79.371400)},
@@ -6457,6 +6460,8 @@ Stations = {
     "Rydal": {'Location': (40.107290, -75.110740)},
     "Rye": {'Location': (40.986140, -73.682910)},
     "Ryers": {'Location': (40.063740, -75.086740)},
+    "S 25th": {'Location': (47.239080, -122.434200)},
+    "S 4th": {'Location': (47.261320, -122.442720)},
     "S Bond & Lane": {'Location': (45.495530, -122.670960)},
     "S Cobb": {'Location': (33.824700, -84.489740)},
     "S Lowell & Bond": {'Location': (45.493890, -122.671370)},
@@ -6983,6 +6988,7 @@ Stations = {
     "St. James North": {'Location': (37.338400, -121.892180)},
     "St. James South": {'Location': (37.338510, -121.890920)},
     "St. Jean": {'Location': (42.366980, -82.970610)},
+    "St. Joseph": {'Location': (47.245280, -122.450190)},
     "St. Joseph (MI)": {'Location': (42.109150, -86.484470), 'Label': 'St. Joseph'},
     "St. Joseph (MO)": {'Location': (39.753860, -94.853950), 'Label': 'St. Joseph'},
     "St. Lawrence Av": {'Location': (40.831530, -73.867250)},
@@ -7144,8 +7150,14 @@ Stations = {
     "TMU": {'Location': (43.656280, -79.380450)},
     "TSU/UH Athletics District": {'Location': (29.722040, -95.351350)},
     "Tacoma Ave": {'Location': (39.792600, -86.119750)},
+    "Tacoma Convention Center": {'Location': (47.249510, -122.438440), 'Label': 'Convention Center'},
     "Tacoma Dome": {'Location': (47.239600, -122.428160), 'Major': True},
     "Tacoma Dome (LINK)": {'Location': (47.238120, -122.427360), 'Label': 'Tacoma Dome', 'Major': True},
+    "Tacoma Dome (Streetcar)": {'Location': (47.239870, -122.428120), 'Label': 'Tacoma Dome', 'Major': True},
+    "Tacoma General": {'Location': (47.260070, -122.453560)},
+    "Tacoma Stadium District": {'Location': (47.263870, -122.449000), 'Label': 'Stadium District'},
+    "Tacoma Theater District": {'Location': (47.252530, -122.439240), 'Label': 'Theater District'},
+    "Tacoma Union Station": {'Location': (47.244870, -122.436620), 'Label': 'Union Sation'},
     "Takoma": {'Location': (38.975610, -77.017900)},
     "Takoma-Langley": {'Location': (38.989510, -76.988400)},
     "Talbot Ave": {'Location': (42.292880, -71.078380)},
@@ -13199,6 +13211,9 @@ Segments = {
     "St. Paul Approach (Union Depot - West)": {
         "F": ['St. Paul Union Depot', '[X] Science Museum', '[X] Smith Ave'],
     },
+    "Tacoma Streetcar": {
+        "F": ['Tacoma Dome (Streetcar)', 'S 25th', 'Tacoma Union Station', 'Tacoma COnvention Center', 'Tacoma Theater District', 'Old City Hall', 'S 4th', 'Tacoma Stadium Districts', 'Tacoma General', '6th Ave', 'Hilltop District'],
+    },
     "Tempe Streetcar (Dorsey Ln - Marina Heights)": {
         "F": ['[R] Tempe Streetcar (Downtown - Dorsey Ln)', '6th St/Mill Ave', '3rd St/Mill Ave', 'Tempe Streetcar (Downtown - Marina Heights)'],
         "R": ['[R] Tempe Streetcar (Downtown - Marina Heights)', 'Tempe Beach Park/Rio Salado Pkwy', '3rd St/Ash Ave', '5th St/Ash Ave', 'University Dr/Ash Ave', 'Tempe Streetcar (Downtown - Dorsey Ln)'],
@@ -17003,6 +17018,14 @@ Lines = {
                 "Tacoma - Everett": {'Mode': 'Heavy Rail', 'Stations': 'Seattle Sounder (Tacoma - Everett)', 'File': '[Sound Transit] Sounder'},
             },
         },
+        "Tacoma Streetcar": {
+            "Fantasy": {
+                "Tacoma Dome - St. Joseph": {'Mode': 'Streetcar', 'Stations': 'Tacoma Streetcar'},
+            },
+            "Present": {
+                "Tacoma Dome - St. Joseph": {'Mode': 'Streetcar', 'Stations': 'Tacoma Streetcar', 'File': '[Sound Transit] Tacoma Streetcar', 'Link': 'https://brouter.damsy.net/latest/#map=14/47.2560/-122.4317/standard&lonlats=-122.427942,47.239894;-122.436683,47.245315;-122.45018,47.244892;-122.450631,47.247863;-122.436866,47.245007;-122.427922,47.239801&profile=rail'},
+            },
+        },
     },
     "Sun Tran": {
         "Sun Link": {
@@ -17500,5 +17523,23 @@ Lines = {
                 "YYZ Airport": {'Mode': 'Peoplemover', 'Stations': 'Toronto Peoplemover (YYZ Airport)'},
             },
         },
+    },
+}
+
+Destinations = {
+    "Airports": {
+        "(DEN) Denver International Airport": {"Location": (39.856340, -104.676400), "Stations": ['Denver Airport']},
+        "(LAS) Las Vegas Harry Reid International Airport": {"Location": (36.083090, -115.148220), "Stations": ['LAS Terminal 1', 'LAS Terminal 3']},
+        "(MSP) Minneapolis-St. Paul International Airport": {"Location": (44.885050, -93.214430), "Stations": ['MSP Terminal 1', 'MSP Terminal 2']},
+        "(PDX) Portland International Airport": {"Location": (45.585260, -122.591710), "Stations": ['Portland International Airport']},
+        "(SEA) Seattle-Tacoma International Airport": {"Location": (47.448360, -122.308590), "Stations": ['SeaTac/Airport']},
+        "(SLC) Salt Lake City International Airport": {"Location": (40.790310, -111.977140), "Stations": ['SLC Airport']},
+        "(SNS) Southern Nevada Supplemental Airport": {"Location": (35.688930, -115.359790), "Stations": ['Southern Nevada Airport']},
+        "(YVR) Vancouver International Airport": {"Location": (49.193370, -123.175120), "Stations": ['YVR-Airport']},
+    },
+    "Universities": {
+        "University of Denver": {"Location": (39.676610, -104.961890), "Stations": ['University of Denver']},
+        "University of Minnesota Twin Cities": {"Location": (44.975350, -93.233070), "Stations": ['East Bank', 'West Bank']},
+        "University of Nevada, Las Vegas": {"Location": (36.107920, -115.142760), "Stations": ['Maryland/Harmon']},
     },
 }

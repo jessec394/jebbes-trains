@@ -42,7 +42,6 @@ for key in sorted(Segments.keys()):
     output += "    },\n"
 output += "}\n\n"
 
-# --- Lines ---
 output += "Lines = {\n"
 for operator_key in sorted(Lines.keys()):
     operator_dict = Lines[operator_key]
@@ -61,6 +60,21 @@ for operator_key in sorted(Lines.keys()):
                             output += f'                "{pattern_key}": {repr(patterns[pattern_key])},\n'
                     output += "            },\n"
             output += "        },\n"
+    output += "    },\n"
+output += "}\n\n"
+
+output += "Destinations = {\n"
+for category in sorted(Destinations.keys()):
+    output += f'    "{category}": {{\n'
+    category_content = Destinations[category]
+    for dest_name in sorted(category_content.keys()):
+        details = category_content[dest_name]
+        if isinstance(details, dict) and 'Location' in details:
+            loc_str = formatCoordinates(details['Location'])
+            sorted_stations = sorted(details.get('Stations', []))
+            output += f'        "{dest_name}": {{"Location": {loc_str}, "Stations": {repr(sorted_stations)}}},\n'
+        else:
+            output += f'        "{dest_name}": {repr(details)},\n'
     output += "    },\n"
 output += "}"
 
