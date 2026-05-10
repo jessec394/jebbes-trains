@@ -1581,6 +1581,7 @@ Stations = {
     "Bingen-White Salmon": {'Location': (45.715020, -121.468730)},
     "Bingham Junction": {'Location': (40.617070, -111.915640)},
     "Binghampton": {'Location': (35.146910, -89.968520)},
+    "Binghamton": {'Location': (42.103500, -75.907750)},
     "Binz": {'Location': (29.719920, -95.379770)},
     "Birchmount": {'Location': (43.730170, -79.277050)},
     "Birmingham (AL)": {'Location': (33.512660, -86.806650), 'Label': 'Birmingham', 'Major': True},
@@ -3159,6 +3160,7 @@ Stations = {
     "Evans Ave (CO)": {'Location': (39.677992, -104.992784), 'Label': 'Evans'},
     "Evans Terminal": {'Location': (42.225980, -83.347180)},
     "Evanston": {'Location': (41.268890, -110.964350)},
+    "Evansville": {'Location': (37.992340, -87.554570)},
     "Everett (LINK)": {'Location': (47.974820, -122.197730), 'Label': 'Everett Station'},
     "Everett (Main)": {'Location': (47.975480, -122.197670), 'Label': 'Everett'},
     "Everett/Revs": {'Location': (42.398490, -71.067830)},
@@ -3938,6 +3940,7 @@ Stations = {
     "Honoré-Beaugrand": {'Location': (45.596570, -73.535350)},
     "Hope": {'Location': (33.668990, -93.592250)},
     "Hopkins": {'Location': (42.858290, -78.832830)},
+    "Hopkinsville": {'Location': (36.863890, -87.484830)},
     "Hornepayne": {'Location': (49.217190, -84.773560)},
     "Horseshoe Bay": {'Location': (49.374170, -123.269940)},
     "Horseshoe/Paris": {'Location': (36.112300, -115.167440)},
@@ -4092,6 +4095,7 @@ Stations = {
     "Islington Ave": {'Location': (43.645280, -79.523930)},
     "Islip": {'Location': (40.736010, -73.208960)},
     "Itasca": {'Location': (41.971500, -88.014070)},
+    "Ithaca": {'Location': (42.444980, -76.510840)},
     "Ivanhoe": {'Location': (41.633180, -87.630480)},
     "Ivy Ridge": {'Location': (40.034160, -75.235620)},
     "Izamal": {'Location': (20.936300, -89.085120)},
@@ -8856,6 +8860,9 @@ Segments = {
     "-Intercity LS (Detroit - Traverse City)": {
         "F": ['-Intercity LS (Detroit - Cadillac)', 'Traverse City'],
     },
+    "-Intercity LS (Dover - Ithaca)": {
+        "F": ['Dover (NJ)', 'Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono', 'Scranton', 'Binghamton', 'Ithaca'],
+    },
     "-Intercity LS (Edmonton - Winnipeg)": {
         "F": ['Edmonton Approach (North - East)', 'Wainwright', 'Saskatoon', 'Melville', 'Portage la Prairie', 'Winnipeg Union Station'],
     },
@@ -8914,6 +8921,12 @@ Segments = {
     },
     "-Intercity LS (Indianapolis - Louisville)": {
         "F": ['-Intercity LS (Indianapolis - Franklin)', 'Columbus (IN)', 'Scottsburg', 'Louisville'],
+    },
+    "-Intercity LS (Indianapolis - Nashville)": {
+        "F": ['-Intercity LS (Indianapolis - Terre Haute)', 'Evansville', 'Hopkinsville', '[R] -Intercity LS (Nashville - Goodlettsville)'],
+    },
+    "-Intercity LS (Indianapolis - Terre Haute)": {
+        "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis North Airport Bend', 'Terre Haute'],
     },
     "-Intercity LS (Indianapolis - Toledo)": {
         "F": ['Indianapolis Regional Rail (Union - Muncie)', 'Fort Wayne', '[X] Liberty Center Junction', '[R] Toledo Approach (Toledo - West)'],
@@ -9201,6 +9214,10 @@ Segments = {
         "F": ['Nashville Regional Rail (Union - Gallatin)'],
         "Keep": ['Nashville Union Station', 'Gallatin'],
     },
+    "-Intercity LS (Nashville - Goodlettsville)": {
+        "F": ['Nashville Regional Rail (Union - Amqui)'],
+        "Keep": ['Nashville Union Station'],
+    },
     "-Intercity LS (Nashville - Memphis)": {
         "F": ['-Intercity LS (Nashville - Bellevue)', 'McKenzie', '[R] -Intercity LS (Memphis - Arlington)'],
     },
@@ -9270,6 +9287,12 @@ Segments = {
         "F": ['New York Regional Rail (Penn Station - High Bridge)'],
         "Keep": ['New York Penn Station', 'Newark Penn Station', 'Somerville'],
     },
+    "-Intercity LS (New York - Ithaca East)": {
+        "F": ['-Intercity LS (New York - Dover East)', '-Intercity LS (Dover - Ithaca)'],
+    },
+    "-Intercity LS (New York - Ithaca West)": {
+        "F": ['-Intercity LS (New York - Dover West)', '-Intercity LS (Dover - Ithaca)'],
+    },
     "-Intercity LS (New York - Memphis)": {
         "F": ['-Intercity LS (New York - Washington)', '-Intercity LS (Washington - Nashville)', '-Intercity LS (Nashville - Memphis)'],
     },
@@ -9326,12 +9349,6 @@ Segments = {
     },
     "-Intercity LS (New York - Schenectady)": {
         "F": ['-Intercity LS (New York - Albany)', 'Schenectady'],
-    },
-    "-Intercity LS (New York - Scranton East)": {
-        "F": ['-Intercity LS (New York - Dover East)', 'Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono', 'Scranton'],
-    },
-    "-Intercity LS (New York - Scranton West)": {
-        "F": ['-Intercity LS (New York - Dover West)', 'Andover (NJ)', 'Blairstown', 'East Stroudsburg', 'Mt. Pocono', 'Scranton'],
     },
     "-Intercity LS (New York - Springfield)": {
         "F": ['-Intercity LS (New York - New Haven)', '-Intercity LS (New Haven - Springfield)'],
@@ -9637,7 +9654,7 @@ Segments = {
         "F": ['-Intercity LS (Seattle - Everett)', 'Stanwood', 'Mt. Vernon (WA)', 'Fairhaven', '[R] -Intercity LS (Vancouver - White Rock)'],
     },
     "-Intercity LS (St. Louis - Indianapolis)": {
-        "F": ['St. Louis Approach (Gateway - Bridge East)', 'Effingham', 'Terre Haute', '[X] Indianapolis North Airport Bend', '[R] Indianapolis Approach (Union - West)'],
+        "F": ['St. Louis Approach (Gateway - Bridge East)', 'Effingham', '[R] -Intercity LS (Indianapolis - Terre Haute)'],
     },
     "-Intercity LS (St. Louis - Kansas City)": {
         "F": ['St. Louis Approach (Gateway - West)', 'Kirkwood', 'Washington (MO)', 'Hermann', 'Jefferson City', 'California', 'Sedalia', 'Warrensburg', '[R] -Intercity LS (Kansas City - Pleasant Hill)'],
@@ -11784,6 +11801,9 @@ Segments = {
     "Nashville Regional Rail (Riverfront - Lebanon)": {
         "F": ['Nashville Riverfront', '[X] Nashville Riverfront Bend', 'Donelson', 'Hermitage', 'Mt. Juliet', 'Martha', 'Hamilton Springs', 'Lebanon (TN)'],
     },
+    "Nashville Regional Rail (Union - Amqui)": {
+        "F": ['Nashville Approach (Union - North)', 'Nissan Stadium', 'Greenwood (TN)', 'Briley Pkwy', 'Madison (TN)', 'Amqui (TN)'],
+    },
     "Nashville Regional Rail (Union - Bellevue)": {
         "F": ['Nashville Approach (Union - North)', 'Centennial Medical Center', 'West End Park', 'Kenner Ave', 'Belle Meade', 'Warner Park', 'Bellevue'],
     },
@@ -11791,7 +11811,7 @@ Segments = {
         "F": ['Nashville Union Station', '[X] Nashville East Junction', 'Geodis Park', 'Berry Hill', 'Oak Hill', 'Brentwood', 'Moores Ln', 'Franklin (TN)'],
     },
     "Nashville Regional Rail (Union - Gallatin)": {
-        "F": ['Nashville Approach (Union - North)', 'Nissan Stadium', 'Greenwood (TN)', 'Briley Pkwy', 'Madison (TN)', 'Amqui (TN)', 'Hendersonville', 'Avondale (TN)', 'Gallatin'],
+        "F": ['Nashville Regional Rail (Union - Amqui)', 'Hendersonville', 'Avondale (TN)', 'Gallatin'],
     },
     "Nashville Regional Rail (Union - Murfreesboro)": {
         "F": ['Nashville Union Station', '[X] Nashville East Junction', 'Hart St', 'Bakertown', 'Bell Forge', 'La Vergne', 'Smyrna (TN)', 'Williamsburg', 'Murfreesboro'],
@@ -13846,8 +13866,8 @@ Lines = {
         },
         "Lackawanna Service": {
             "Fantasy": {
-                "New York - Montclair - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Scranton East)'},
-                "New York - Morristown - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Scranton West)'},
+                "New York - Montclair - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Ithaca East)'},
+                "New York - Morristown - Scranton": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Ithaca West)'},
             },
         },
         "Lake Shore Limited": {
@@ -14156,6 +14176,11 @@ Lines = {
         "Tiger": {
             "Fantasy": {
                 "Chicago - Detroit": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Detroit)'},
+            },
+        },
+        "Tulip": {
+            "Fantasy": {
+                "Indianapolis - Nashville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Indianapolis - Nashville)'},
             },
         },
         "Valley Flyer": {
