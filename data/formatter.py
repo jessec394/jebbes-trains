@@ -72,7 +72,13 @@ for category in sorted(Destinations.keys()):
         if isinstance(details, dict) and 'Location' in details:
             loc_str = formatCoordinates(details['Location'])
             sorted_stations = sorted(details.get('Stations', []))
-            output += f'        "{dest_name}": {{"Location": {loc_str}, "Stations": {repr(sorted_stations)}}},\n'
+
+            present = details.get('Present', True)
+            fantasy = details.get('Fantasy', True)
+
+            output += (f'        "{dest_name}": {{"Location": {loc_str}, '
+                       f'"Stations": {repr(sorted_stations)}, '
+                       f'\'Present\': {present}, \'Fantasy\': {fantasy}}},\n')
         else:
             output += f'        "{dest_name}": {repr(details)},\n'
     output += "    },\n"
