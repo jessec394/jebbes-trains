@@ -1952,6 +1952,7 @@ Stations = {
     "Cadillac (MI)": {'Location': (44.246620, -85.398610), 'Label': 'Cadillac'},
     "Cadillac Center": {'Location': (42.333710, -83.046150)},
     "Cadillac Square": {'Location': (42.331170, -83.046530), 'Major': True},
+    "Cadrecha Plaza": {'Location': (27.960680, -82.445500)},
     "Cal State LA": {'Location': (34.062820, -118.167950)},
     "Cal State San Marcos": {'Location': (33.134790, -117.153580)},
     "Caledonia": {'Location': (42.812790, -87.826400)},
@@ -2108,6 +2109,7 @@ Stations = {
     "Centennial Hills": {'Location': (36.271985, -115.264838)},
     "Centennial Medical Center": {'Location': (36.154590, -86.813500)},
     "Centennial Olympic Park": {'Location': (33.759420, -84.391970)},
+    "Centennial Park": {'Location': (27.961040, -82.437240)},
     "Centennial Place": {'Location': (33.770960, -84.400350)},
     "Centennial/Ann": {'Location': (36.262960, -115.253552), 'Label': 'Ann'},
     "Centennial/Cheyenne": {'Location': (36.217371, -115.212328), 'Label': 'Cheyenne'},
@@ -2161,6 +2163,7 @@ Stations = {
     "Centre Av": {'Location': (40.648530, -73.664250)},
     "Centre St": {'Location': (51.046370, -114.061240)},
     "CentrePort/DFW Airport": {'Location': (32.816970, -97.052840)},
+    "Centro Ybor": {'Location': (27.961060, -82.441230)},
     "Century City": {'Location': (34.057900, -118.415150)},
     "Century Park": {'Location': (53.457680, -113.516360)},
     "Cermak-Chinatown": {'Location': (41.853628, -87.631102)},
@@ -2651,6 +2654,7 @@ Stations = {
     "Cumberland (IL)": {'Location': (42.052380, -87.912200), 'Label': 'Cumberland'},
     "Cumberland (MD)": {'Location': (39.650520, -78.757930), 'Label': 'Cumberland'},
     "Cumberland (Mainline)": {'Location': (33.878730, -84.472310), 'Label': 'Cumberland'},
+    "Cumberland Avenue": {'Location': (27.945750, -82.445600)},
     "Cumberland Blvd": {'Location': (33.879890, -84.473210)},
     "Curry Hollow Rd": {'Location': (40.335800, -79.972470)},
     "Curtner": {'Location': (37.293250, -121.872430)},
@@ -2808,6 +2812,7 @@ Stations = {
     "Devils Lake": {'Location': (48.110390, -98.861510)},
     "Devon Park": {'Location': (40.047220, -75.422780)},
     "Dexter": {'Location': (42.340670, -83.888120)},
+    "Dick Greco Plaza": {'Location': (27.941570, -82.454810)},
     "Dickerson": {'Location': (39.220100, -77.422140)},
     "Dickinson (ND)": {'Location': (46.878550, -102.788570), 'Label': 'Dickinson'},
     "Dickinson (TX)": {'Location': (29.461480, -95.046410), 'Label': 'Dickinson'},
@@ -3754,6 +3759,7 @@ Stations = {
     "Guy-Concordia": {'Location': (45.495750, -73.578970)},
     "Gwynedd Valley": {'Location': (40.184870, -75.256840)},
     "H St": {'Location': (32.630170, -117.095550)},
+    "HSBC": {'Location': (27.941910, -82.451970)},
     "Hackensack": {'Location': (40.886270, -74.048310)},
     "Hackensack Waterfront": {'Location': (40.717140, -74.099150)},
     "Hackettstown": {'Location': (40.851960, -74.834720)},
@@ -4170,11 +4176,13 @@ Stations = {
     "Jackson/19th": {'Location': (39.750270, -105.214940), 'Label': '19th'},
     "Jackson/Euclid": {'Location': (40.771530, -111.915170)},
     "Jacksonville": {'Location': (30.365440, -81.724050), 'Major': True},
+    "Jacksonville Central Station": {'Location': (30.327070, -81.662350), 'Label': 'Central'},
     "Jacquet River": {'Location': (47.920380, -66.001190)},
     "Jamaica": {'Location': (40.699860, -73.807630), 'Major': True, 'Type': 'Airport'},
     "Jamaica AirTrain": {'Location': (40.698940, -73.808420), 'Major': True, 'Label': 'Jamaica'},
     "Jamaica Center-Parsons/Archer": {'Location': (40.702240, -73.800650)},
     "Jamaica-Van Wyck": {'Location': (40.702450, -73.816620)},
+    "James Weldon Johnson Park": {'Location': (30.329430, -81.659830)},
     "Jamestown": {'Location': (46.909020, -98.706340)},
     "Jane": {'Location': (43.649940, -79.483830)},
     "Jane-Finch": {'Location': (43.757130, -79.518780)},
@@ -4189,6 +4197,7 @@ Stations = {
     "Jean-Talon": {'Location': (45.539600, -73.613640)},
     "Jeanne-d'Arc": {'Location': (45.469080, -75.546000)},
     "Jeannette": {'Location': (40.328600, -79.617160)},
+    "Jefferson": {'Location': (30.327590, -81.667500)},
     "Jefferson & Powell": {'Location': (37.808590, -122.413350)},
     "Jefferson Av": {'Location': (40.583810, -74.102950)},
     "Jefferson City": {'Location': (38.578800, -92.170050)},
@@ -4307,6 +4316,7 @@ Stations = {
     "King of Prussia (PA)": {'Location': (40.108910, -75.410580), 'Label': 'King of Prussia'},
     "King-Bathurst": {'Location': (43.643910, -79.402660)},
     "Kingman (AZ)": {'Location': (35.188240, -114.052490), 'Label': 'Kingman'},
+    "Kings Ave": {'Location': (30.315510, -81.653220)},
     "Kings Hwy": {'Location': (40.608660, -73.957670)},
     "Kings Hwy (7th)": {'Location': (40.605050, -73.980560), 'Label': 'Kings Hwy'},
     "Kings Hwy (Avenue J)": {'Location': (40.627850, -73.933160), 'Label': 'Kings Hwy'},
@@ -4413,6 +4423,7 @@ Stations = {
     "LaSalle-Peru": {'Location': (41.324970, -89.123960)},
     "LaSalle/Van Buren": {'Location': (41.876874, -87.631445)},
     "LaVergne": {'Location': (41.835380, -87.783730)},
+    "LaVilla": {'Location': (30.329040, -81.672210)},
     "Lac Bouchette": {'Location': (48.269400, -72.173120)},
     "Lac Darey": {'Location': (47.670890, -73.140470)},
     "Lac Malouin": {'Location': (47.394380, -72.224320)},
@@ -6116,6 +6127,7 @@ Stations = {
     "Port Jefferson": {'Location': (40.934630, -73.053670)},
     "Port Jervis": {'Location': (41.374890, -74.694610)},
     "Port Kent": {'Location': (44.523960, -73.403440)},
+    "Port Tampa Bay": {'Location': (27.951590, -82.445420)},
     "Port Washington": {'Location': (40.829570, -73.687560)},
     "Portage": {'Location': (43.547157, -89.467348)},
     "Portage la Prairie": {'Location': (49.977380, -98.288260)},
@@ -6365,6 +6377,7 @@ Stations = {
     "Riverdale-254th St": {'Location': (40.904630, -73.913550)},
     "Riverfront Stadium": {'Location': (40.747210, -74.171510)},
     "Riverhead": {'Location': (40.919660, -72.667560)},
+    "Riverplace": {'Location': (30.317690, -81.656620)},
     "Riverside (CA)": {'Location': (33.975720, -117.369800), 'Label': 'Riverside'},
     "Riverside (IL)": {'Location': (41.827180, -87.820130), 'Label': 'Riverside'},
     "Riverside (MA)": {'Location': (42.337370, -71.252620), 'Label': 'Riverside'},
@@ -6445,6 +6458,7 @@ Stations = {
     "Roosevelt/Rising Sun": {'Location': (40.025840, -75.122130), 'Label': 'Rising Sun'},
     "Roosevelt/Rockhill": {'Location': (40.139140, -74.960280), 'Label': 'Rockhill'},
     "Roosevelt/Welsh-Grant": {'Location': (40.078890, -75.030570), 'Label': 'Welsh-Grant'},
+    "Rosa L. Parks": {'Location': (30.333280, -81.658710)},
     "Rosa Parks": {'Location': (45.569870, -122.682150)},
     "Rosa Parks Blvd": {'Location': (42.322390, -83.066760)},
     "Roscoe": {'Location': (34.219040, -118.597290)},
@@ -6652,6 +6666,7 @@ Stations = {
     "San Leandro": {'Location': (37.721780, -122.160740)},
     "San Luis Obispo": {'Location': (35.276520, -120.654560)},
     "San Luis Potosí": {'Location': (22.152350, -100.968480), 'Major': True},
+    "San Marco": {'Location': (30.317710, -81.660820)},
     "San Marcos": {'Location': (29.876510, -97.941180)},
     "San Marcos Civic Center": {'Location': (33.142170, -117.161980)},
     "San Mateo": {'Location': (37.567860, -122.323770)},
@@ -7119,6 +7134,7 @@ Stations = {
     "Strathearn": {'Location': (53.531690, -113.462460)},
     "Strathroy": {'Location': (42.954680, -81.622910)},
     "Strawberry Hill": {'Location': (39.114220, -94.617130)},
+    "Streetcar Society": {'Location': (27.961060, -82.443263)},
     "Streetsville": {'Location': (43.576000, -79.708270)},
     "Stuart": {'Location': (27.198240, -80.253460)},
     "Studemont": {'Location': (29.768960, -95.391840)},
@@ -7729,6 +7745,7 @@ Stations = {
     "Wassaic": {'Location': (41.814840, -73.562330)},
     "Watchung Ave": {'Location': (40.829660, -74.207040)},
     "Water Square": {'Location': (42.325230, -83.052670)},
+    "Water Street": {'Location': (27.943440, -82.448530)},
     "Waterbury": {'Location': (41.554460, -73.047050)},
     "Waterford": {'Location': (42.688800, -83.395580)},
     "Waterfront Entertainment Center": {'Location': (39.940920, -75.128440)},
@@ -7924,6 +7941,7 @@ Stations = {
     "Whiteland": {'Location': (39.549580, -86.077610)},
     "Whitewood": {'Location': (50.330660, -102.264980)},
     "Whitford": {'Location': (40.014660, -75.638060)},
+    "Whiting": {'Location': (27.945250, -82.456730)},
     "Whitlock Av (Mainline)": {'Location': (40.827120, -73.885500), 'Label': 'Whitlock Av'},
     "Whitlock Av (Subway)": {'Location': (40.827090, -73.886210), 'Label': 'Whitlock Av'},
     "Whitman": {'Location': (42.082520, -70.923280)},
@@ -8107,6 +8125,7 @@ Stations = {
     "York & 144th": {'Location': (39.955162, -104.956165)},
     "York Mills": {'Location': (43.744860, -79.406480)},
     "York St": {'Location': (40.700460, -73.986840)},
+    "York Street": {'Location': (27.948170, -82.445510)},
     "York Street/Freemason": {'Location': (36.853560, -76.293880)},
     "York University": {'Location': (43.773900, -79.499820)},
     "York-Dauphi": {'Location': (39.985610, -75.131970)},
@@ -11317,6 +11336,15 @@ Segments = {
     "Indianapolis Subway (West - East)": {
         "F": ['[R] Indianapolis Subway (Downtown - West)', 'Indianapolis Subway (Downtown - East)'],
     },
+    "Jacksonville Skyway (Rosa Parks - Central)": {
+        "F": ['Rosa L. Parks', 'James Weldon Johnson Park', 'Jacksonville Central Station'],
+    },
+    "Jacksonville Skyway (Rosa Parks - Kings Ave)": {
+        "F": ['Jacksonville Skyway (Rosa Parks - Central)', 'San Marco', 'Riverplace', 'Kings Ave'],
+    },
+    "Jacksonville Skyway (Rosa Parks - LaVilla)": {
+        "F": ['Jacksonville Skyway (Rosa Parks - Central)', 'Jefferson', 'LaVilla'],
+    },
     "Kansas City Approach (Union - East)": {
         "F": ['Kansas City Approach (Union - I-70)', 'Independence Ave'],
     },
@@ -13277,6 +13305,9 @@ Segments = {
     "Tacoma Streetcar": {
         "F": ['Tacoma Dome (Streetcar)', 'S 25th', 'Tacoma Union Station', 'Tacoma COnvention Center', 'Tacoma Theater District', 'Old City Hall', 'S 4th', 'Tacoma Stadium Districts', 'Tacoma General', '6th Ave', 'Hilltop District'],
     },
+    "Tampa Streetcar": {
+        "F": ['Whiting', 'Dick Greco Plaza', 'HSBC', 'Water Street', 'Cumberland Avenue', 'York Street', 'Port Tampa Bay', 'Cadrecha Plaza', 'Streetcar Society', 'Centro Ybor', 'Centennial Park'],
+    },
     "Tempe Streetcar (Dorsey Ln - Marina Heights)": {
         "F": ['[R] Tempe Streetcar (Downtown - Dorsey Ln)', '6th St/Mill Ave', '3rd St/Mill Ave', 'Tempe Streetcar (Downtown - Marina Heights)'],
         "R": ['[R] Tempe Streetcar (Downtown - Marina Heights)', 'Tempe Beach Park/Rio Salado Pkwy', '3rd St/Ash Ave', '5th St/Ash Ave', 'University Dr/Ash Ave', 'Tempe Streetcar (Downtown - Dorsey Ln)'],
@@ -15012,6 +15043,16 @@ Lines = {
             },
         },
     },
+    "HART": {
+        "TECO Line": {
+            "Fantasy": {
+                "Whiting - Centennial Park": {'Mode': 'Streetcar', 'Stations': 'Tampa Streetcar'},
+            },
+            "Present": {
+                "Whiting - Centennial Park": {'Mode': 'Streetcar', 'Stations': 'Tampa Streetcar', 'File': '[HART] TECO Line', 'Link': 'https://brouter.damsy.net/latest/#map=15/27.9499/-82.4411/standard&lonlats=-82.456736,27.945323;-82.455204,27.941422;-82.445076,27.948633;-82.441449,27.960907;-82.437116,27.96106;-82.441208,27.961139;-82.445762,27.948454;-82.454731,27.941714;-82.456228,27.944303;-82.45682,27.945294&profile=rail'},
+            },
+        },
+    },
     "Hampton Roads Transit": {
         "Norfolk Light Rail": {
             "Fantasy": {
@@ -15053,6 +15094,18 @@ Lines = {
         "Muncie Line": {
             "Fantasy": {
                 "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Muncie)'},
+            },
+        },
+    },
+    "JTA": {
+        "Skyway": {
+            "Fantasy": {
+                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - Kings Ave'},
+                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - LaVilla'},
+            },
+            "Present": {
+                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - Kings Ave', 'File': '[JTA] Skyway (Kings Ave)', 'Link': 'https://brouter.damsy.net/latest/#map=16/30.3222/-81.6568/standard&lonlats=-81.65885,30.333611;-81.654038,30.31658;-81.65288,30.314821;-81.654704,30.317534;-81.659049,30.33162;-81.659049,30.333991'},
+                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - LaVilla', 'File': '[JTA] Skyway (LaVilla)', 'Link': 'https://brouter.damsy.net/latest/#map=17/30.32883/-81.66474/standard&lonlats=-81.658866,30.333546;-81.672889,30.329064;-81.668801,30.327698;-81.659381,30.330082;-81.658984,30.333722'},
             },
         },
     },
@@ -17657,6 +17710,7 @@ Destinations = {
     },
     "Universities": {
         "Portland State University": {"Location": (45.511110, -122.683330), "Stations": ['SW 5th & Jackson', 'SW 5th & Mill', 'SW 6th & College', 'SW 6th & Montgomery'], 'Present': True, 'Fantasy': True},
+        "The University of Alabama in Huntsville": {"Location": (34.725160, -86.640470), "Stations": ['University of Alabama'], 'Present': True, 'Fantasy': True},
         "The University of British Columbia": {"Location": (49.259310, -123.247490), "Stations": ['UBC Exchange'], 'Present': True, 'Fantasy': True},
         "University of Colorado Boulder": {"Location": (40.007340, -105.265980), "Stations": ['Broadway/Euclid', 'Broadway/University'], 'Present': True, 'Fantasy': True},
         "University of Denver": {"Location": (39.676610, -104.961890), "Stations": ['University of Denver'], 'Present': True, 'Fantasy': True},

@@ -182,7 +182,7 @@ Waypoints = {
     },
     "Interborough Express": {
         "Source": "MTA",
-        "Location": (40.63175, -73.92414),
+        "Location": (40.64653, -73.92664),
         "Radius": RadiusS,
         "Image": 'Interborough Express.png',
         "Link": 'https://www.mta.info/project/interborough-express',
