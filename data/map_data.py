@@ -11934,14 +11934,17 @@ Segments = {
     "Montréal Peoplemover (Dorval - Aéroport)": {
         "F": ['Dorval', 'Aéroport Montréal-Trudeau'],
     },
+    "Montréal REM (Brossard - Anse-à-l'Orme)": {
+        "F": ['[R] Montréal REM (Gare Centrale - Brossard)', "Montréal REM (Gare Centrale - Anse-à-l'Orme)"],
+    },
     "Montréal REM (Brossard - Aéroport)": {
         "F": ['[R] Montréal REM (Gare Centrale - Brossard)', 'Montréal REM (Gare Centrale - Aéroport)'],
     },
     "Montréal REM (Brossard - Deux-Montagnes)": {
         "F": ['[R] Montréal REM (Gare Centrale - Brossard)', 'Montréal REM (Gare Centrale - Deux-Montagnes)'],
     },
-    "Montréal REM (Brossard - Sainte-Anne-De-Bellevue)": {
-        "F": ['[R] Montréal REM (Gare Centrale - Brossard)', 'Montréal REM (Gare Centrale - Sainte-Anne)'],
+    "Montréal REM (Gare Centrale - Anse-à-l'Orme)": {
+        "F": ['Montréal REM (Gare Centrale - Saraguay Junction)', '[X] Montréal Saraguay Junction S', 'Des Sources', 'Fairview-Pointe-Claire', 'Kirkland', 'Sainte-Anne-de-Bellevue (Metro)'],
     },
     "Montréal REM (Gare Centrale - Aéroport)": {
         "F": ['Montréal REM (Gare Centrale - Saraguay Junction)', '[X] Montréal Saraguay Junction S', 'Marie-Curie', 'Aéroport Montréal-Trudeau'],
@@ -11951,9 +11954,6 @@ Segments = {
     },
     "Montréal REM (Gare Centrale - Deux-Montagnes)": {
         "F": ['Montréal REM (Gare Centrale - Saraguay Junction)', 'Sunnybrooke', 'Roxboro-Pierrefonds', 'Île-Bigras', 'Sainte-Dorothée', 'Grand-Moulin', 'Deux-Montagnes'],
-    },
-    "Montréal REM (Gare Centrale - Sainte-Anne)": {
-        "F": ['Montréal REM (Gare Centrale - Saraguay Junction)', '[X] Montréal Saraguay Junction S', 'Des Sources', 'Fairview-Pointe-Claire', 'Kirkland', 'Sainte-Anne-de-Bellevue (Metro)'],
     },
     "Montréal REM (Gare Centrale - Saraguay Junction)": {
         "F": ['Montréal Gare Centrale', 'McGill (REM)', 'Édouard-Montpetit', 'Canora', 'Côte-de-Liesse', '[X] Montréal Côte-de-Liesse Junction', 'Montpellier', 'Du Ruisseau', 'Bois-Franc (REM)', '[X] Montréal Saraguay Junction N'],
@@ -16630,12 +16630,15 @@ Lines = {
                 "Brossard - Deux-Montagnes": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)'},
             },
             "Present": {
-                "Brossard - Deux-Montagnes": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)', 'File': '[REM] Ligne A'},
+                "Brossard - Deux-Montagnes": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Deux-Montagnes)', 'File': '[REM] Ligne A', 'Link': 'https://brouter.damsy.net/latest/#map=17/45.54501/-73.91042/standard&lonlats=-73.431284,45.437819;-73.427245,45.439088;-73.537078,45.470334;-73.640081,45.515568;-73.661286,45.521684;-73.913006,45.54587;-73.792849,45.505384;-73.73333,45.514474;-73.639094,45.515152;-73.569976,45.501454;-73.561361,45.497417;-73.537132,45.470281;-73.478429,45.465202;-73.427352,45.439165;-73.43127,45.437797&profile=rail'},
             },
         },
         "Ligne B": {
             "Fantasy": {
-                "Brossard - Sainte-Anne-De-Bellevue": {'Mode': 'Light Metro', 'Stations': 'Montréal REM (Brossard - Sainte-Anne-De-Bellevue)'},
+                "Brossard - Anse-à-l'Orme": {'Mode': 'Light Metro', 'Stations': "Montréal REM (Brossard - Anse-à-l'Orme)"},
+            },
+            "Present": {
+                "Brossard - Anse-à-l'Orme": {'Mode': 'Light Metro', 'Stations': "Montréal REM (Brossard - Anse-à-l'Orme)", 'File': '[REM] Ligne B', 'Link': 'https://brouter.damsy.net/latest/#map=16/45.4333/-73.9060/standard&lonlats=-73.431284,45.437819;-73.427245,45.439088;-73.537078,45.470334;-73.640081,45.515568;-73.661286,45.521684;-73.910512,45.431332;-73.898056,45.436202;-73.73333,45.514474;-73.639094,45.515152;-73.569976,45.501454;-73.561361,45.497417;-73.537132,45.470281;-73.478429,45.465202;-73.427352,45.439165;-73.43127,45.437797&profile=rail'},
             },
         },
         "Ligne C": {
