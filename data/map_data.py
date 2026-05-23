@@ -1208,6 +1208,7 @@ Stations = {
     "American Fork": {'Location': (40.374770, -111.820640)},
     "American Legion Drive": {'Location': (40.889510, -74.054270)},
     "Ameriplex": {'Location': (39.672460, -86.298240)},
+    "Ames": {'Location': (42.024280, -93.612170)},
     "Amherst (NS)": {'Location': (45.830460, -64.212560), 'Label': 'Amherst'},
     "Amherst (OH)": {'Location': (41.396380, -82.222340), 'Label': 'Amherst'},
     "Amherst St": {'Location': (42.939820, -78.838620)},
@@ -3613,7 +3614,8 @@ Stations = {
     "Geneva": {'Location': (41.881660, -88.310000)},
     "Geodis Park": {'Location': (36.131660, -86.772680)},
     "Georges-Vanier": {'Location': (45.488910, -73.576510)},
-    "Georgetown": {'Location': (43.655370, -79.919050)},
+    "Georgetown (KY)": {'Location': (38.206630, -84.547800), 'Label': 'Georgetown'},
+    "Georgetown (ON)": {'Location': (43.655370, -79.919050), 'Label': 'Georgetown'},
     "Georgia Ave-Petworth": {'Location': (38.936940, -77.024180)},
     "Georgia State": {'Location': (33.750430, -84.386270)},
     "German Village": {'Location': (39.947080, -82.997720)},
@@ -4202,6 +4204,7 @@ Stations = {
     "Ionview": {'Location': (43.731300, -79.272110)},
     "Iowa City": {'Location': (41.653470, -91.533900)},
     "Iowa Falls": {'Location': (42.513340, -93.273790)},
+    "Iowa State University": {'Location': (42.032000, -93.644240)},
     "Ipswich": {'Location': (42.676790, -70.840580)},
     "Irapuato": {'Location': (20.677390, -101.340470)},
     "Iris": {'Location': (45.355720, -75.769660)},
@@ -8882,7 +8885,7 @@ Segments = {
         "F": ['-Intercity LS (Cincinnati - Covington)', 'Maysville', 'South Shore (KY)', 'Ashland (KY)', 'Huntington (WV)'],
     },
     "-Intercity LS (Cincinnati - Knoxville)": {
-        "F": ['Cincinnati Union Terminal', 'Walton', 'Lexington', 'Somerset (KY)', 'Knoxville'],
+        "F": ['Cincinnati Approach (Union - South)', 'Walton', 'Georgetown (KY)', 'Lexington', 'Somerset (KY)', 'Knoxville'],
     },
     "-Intercity LS (Cincinnati - Louisville)": {
         "F": ['-Intercity LS (Cincinnati - Covington)', 'Walton', 'La Grange', 'Louisville'],
@@ -9951,7 +9954,7 @@ Segments = {
     },
     "-Intercity LS (Toronto - Kitchener)": {
         "F": ['Toronto GO (Union - Kitchener)'],
-        "Keep": ['Toronto Union Station', 'Malton', 'Brampton Innovation District', 'Georgetown', 'Guelph Central Station', 'Kitchener'],
+        "Keep": ['Toronto Union Station', 'Malton', 'Brampton Innovation District', 'Georgetown (ON)', 'Guelph Central Station', 'Kitchener'],
     },
     "-Intercity LS (Toronto - London via Kitchener)": {
         "F": ['-Intercity LS (Toronto - Kitchener)', 'Stratford (ON)', 'St. Marys', 'London'],
@@ -10134,6 +10137,9 @@ Segments = {
     },
     "Albuquerque Rail Runner (Santa Fe - Belen)": {
         "F": ['[R] Albuquerque Rail Runner (Albuquerque - Santa Fe)', 'Albuquerque Rail Runner (Albuquerque - Belen)'],
+    },
+    "Ames Shuttle": {
+        "F": ['Nevada', 'Ames', 'Iowa State University'],
     },
     "Atlanta Approach (Central - North)": {
         "F": ['Atlanta Central Station', 'Centennial Place', 'Westside Provisions'],
@@ -13523,7 +13529,7 @@ Segments = {
         "Skip": ['Park Lawn'],
     },
     "Toronto GO (Union - Kitchener)": {
-        "F": ['Toronto GO (Union - Weston)', 'Etobicoke North', 'Toronto Pearson Junction', 'Malton', 'Bramalea', 'Brampton Innovation District', 'Mount Pleasant (ON)', 'Georgetown', 'Acton', 'Guelph Central Station', 'Kitchener'],
+        "F": ['Toronto GO (Union - Weston)', 'Etobicoke North', 'Toronto Pearson Junction', 'Malton', 'Bramalea', 'Brampton Innovation District', 'Mount Pleasant (ON)', 'Georgetown (ON)', 'Acton', 'Guelph Central Station', 'Kitchener'],
     },
     "Toronto GO (Union - Markham Rd)": {
         "F": ['Toronto Union Station', '[X] Toronto East Junction', '[X] Toronto Danforth Junction', 'Eglinton (GO Peterborough)', 'Agincourt South', 'Markham Rd'],
@@ -14952,6 +14958,13 @@ Lines = {
             },
             "Present": {
                 "Cleveland Airport - Stokes-Windermere": {'Mode': 'Heavy Metro', 'Stations': 'Cleveland Light Rail (Airport - Stokes-Windmere) [Old]', 'File': '[Cleveland RTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/41.4849/-81.6581/standard&lonlats=-81.584939,41.530511;-81.592616,41.522644;-81.604278,41.501587;-81.63434,41.485867;-81.652257,41.480455;-81.659054,41.48154;-81.672133,41.488356;-81.699293,41.495783;-81.70132,41.484036;-81.736173,41.478371;-81.758537,41.48049;-81.778552,41.47179;-81.8059,41.441154;-81.820523,41.423606;-81.823972,41.419463;-81.838145,41.411416;-81.823061,41.42038;-81.818442,41.425935;-81.805261,41.441693;-81.778069,41.47195;-81.755528,41.480982;-81.7362,41.478309;-81.701165,41.484835;-81.699228,41.495741;-81.67198,41.488267;-81.658974,41.481342;-81.650525,41.480655;-81.633739,41.48582;-81.604117,41.501459;-81.591752,41.523435;-81.584854,41.530535&profile=rail'},
+            },
+        },
+    },
+    "CyRide": {
+        "Campus Connector": {
+            "Fantasy": {
+                "Nevada - Iowa State": {'Mode': 'Heavy Rail', 'Stations': 'Ames Shuttle'},
             },
         },
     },
@@ -17952,6 +17965,7 @@ Destinations = {
         "Colorado Mesa University": {"Location": (39.080490, -108.553400), "Stations": ['Grand Junction'], 'Present': True, 'Fantasy': True},
         "Colorado State University": {"Location": (40.572940, -105.084830), "Stations": ['Fort Collins'], 'Present': True, 'Fantasy': True},
         "Dalhousie University": {"Location": (44.636940, -63.590330), "Stations": ['Halifax'], 'Present': True, 'Fantasy': True},
+        "Iowa State University": {"Location": (42.026650, -93.646450), "Stations": ['Iowa State University'], 'Present': True, 'Fantasy': True},
         "North Dakota State University": {"Location": (46.897750, -96.802430), "Stations": ['Fargo'], 'Present': True, 'Fantasy': True},
         "Portland State University": {"Location": (45.511110, -122.683330), "Stations": ['SW 5th & Jackson', 'SW 5th & Mill', 'SW 6th & College', 'SW 6th & Montgomery'], 'Present': True, 'Fantasy': True},
         "Stanford University": {"Location": (37.427660, -122.170060), "Stations": ['Palo Alto', 'Stanford University'], 'Present': True, 'Fantasy': True},
@@ -17967,6 +17981,7 @@ Destinations = {
         "University of Colorado Colorado Springs": {"Location": (38.892810, -104.800790), "Stations": ['Regent Circle'], 'Present': True, 'Fantasy': True},
         "University of Denver": {"Location": (39.676610, -104.961890), "Stations": ['University of Denver'], 'Present': True, 'Fantasy': True},
         "University of Indianapolis": {"Location": (39.709570, -86.134660), "Stations": ['Hanna Ave', 'University of Indianapolis'], 'Present': True, 'Fantasy': True},
+        "University of Iowa": {"Location": (41.662700, -91.554970), "Stations": ['Iowa City'], 'Present': True, 'Fantasy': True},
         "University of Minnesota Crookston": {"Location": (47.801750, -96.609820), "Stations": ['Crookston'], 'Present': True, 'Fantasy': True},
         "University of Minnesota Twin Cities": {"Location": (44.975350, -93.233070), "Stations": ['East Bank', 'West Bank'], 'Present': True, 'Fantasy': True},
         "University of Nevada, Las Vegas": {"Location": (36.107920, -115.142760), "Stations": ['Maryland/Harmon'], 'Present': True, 'Fantasy': True},
