@@ -14366,7 +14366,7 @@ Lines = {
         },
         "Summit City": {
             "Fantasy": {
-                "Cincinnati - Fort Wayne": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Summit City)'},
+                "Cincinnati - Fort Wayne": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cincinnati - Fort Wayne)'},
             },
         },
         "Sun City": {
