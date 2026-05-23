@@ -161,6 +161,8 @@ Nodes = {
 	"Indianapolis Merrill Bend E": {'Location': (39.758940, -86.157260)},
 	"Indianapolis Merrill Bend W": {'Location': (39.759020, -86.162020)},
 	"Indianapolis North Airport Bend": {'Location': (39.760320, -86.313360)},
+	"Indianapolis Northwest Bend N": {'Location': (39.821030, -86.225950)},
+	"Indianapolis Northwest Bend S": {'Location': (39.781910, -86.225310)},
 	"Indianapolis Stout Field Bend": {'Location': (39.748450, -86.264570)},
 	"Indianapolis West Bend": {'Location': (39.764100, -86.176110)},
 	"JFK AirTrain Bend 1": {'Location': (40.697050, -73.813430)},
@@ -2142,10 +2144,11 @@ Stations = {
     "Central & St. James": {'Location': (39.104490, -94.610270)},
     "Central (Edmonton)": {'Location': (53.541040, -113.491860), 'Label': 'Central'},
     "Central (St. Paul)": {'Location': (44.946184, -93.092294), 'Label': 'Central'},
-    "Central Av (Myrtle)": {'Location': (40.697820, -73.927360), 'Label': 'Central Av'},
-    "Central Ave": {'Location': (41.678060, -83.549800)},
+    "Central Av": {'Location': (40.697820, -73.927360)},
     "Central Ave (Boston)": {'Location': (42.270060, -71.073460), 'Label': 'Central Ave'},
     "Central Ave (Columbus)": {'Location': (39.957670, -83.038160), 'Label': 'Central Ave'},
+    "Central Ave (Indianapolis)": {'Location': (39.788420, -86.148920), 'Label': 'Central Ave'},
+    "Central Ave (Toledo)": {'Location': (41.678060, -83.549800), 'Label': 'Central Ave'},
     "Central Ave/Camelback": {'Location': (33.508590, -112.075290)},
     "Central Avenue": {'Location': (40.865230, -74.031930)},
     "Central Islip": {'Location': (40.792000, -73.193690)},
@@ -2476,6 +2479,7 @@ Stations = {
     "Coliseum": {'Location': (53.570860, -113.458050)},
     "College & State": {'Location': (39.116690, -94.742980)},
     "College Ave": {'Location': (39.766850, -86.145650)},
+    "College Ave (LRT)": {'Location': (39.788470, -86.144030), 'Label': 'College Ave'},
     "College Ave North": {'Location': (39.825070, -86.145060)},
     "College Ave/Apache Blvd": {'Location': (33.414670, -111.935270)},
     "College Avenue": {'Location': (41.868470, -88.090300)},
@@ -2585,6 +2589,7 @@ Stations = {
     "Corinth": {'Location': (34.932850, -88.518650)},
     "Corktown": {'Location': (43.652380, -79.363410)},
     "Cornelius": {'Location': (35.480790, -80.857400)},
+    "Cornell Ave": {'Location': (39.788510, -86.139660)},
     "Cornell Rd": {'Location': (41.508190, -81.606230)},
     "Cornwall": {'Location': (45.042100, -74.743400)},
     "Cornwells Heights": {'Location': (40.071730, -74.952090)},
@@ -2749,6 +2754,7 @@ Stations = {
     "Danforth/Greenwood": {'Location': (43.682560, -79.330260)},
     "Danville": {'Location': (36.584060, -79.383810)},
     "Darby": {'Location': (39.913040, -75.254450)},
+    "Darby Court": {'Location': (39.798280, -86.268220)},
     "Darby Glen": {'Location': (40.017530, -83.134590)},
     "Darien": {'Location': (41.077160, -73.471660)},
     "Dauphin": {'Location': (51.150240, -100.052320)},
@@ -2807,6 +2813,7 @@ Stations = {
     "Delavan-Canisus College": {'Location': (42.922520, -78.857150)},
     "Delawanna": {'Location': (40.831840, -74.131490)},
     "Delaware": {'Location': (40.300265, -83.058317)},
+    "Delaware St": {'Location': (39.788410, -86.152970)},
     "Delaware Valley University": {'Location': (40.297280, -75.161740)},
     "Delicias": {'Location': (28.198540, -105.466950)},
     "Delmar": {'Location': (33.756190, -84.493900)},
@@ -3047,6 +3054,7 @@ Stations = {
     "East Pkwy": {'Location': (35.115820, -89.982520)},
     "East Point": {'Location': (33.678260, -84.439210)},
     "East Riverfront": {'Location': (38.628590, -90.175250)},
+    "East Riverside Dr": {'Location': (39.789180, -86.190250)},
     "East Rockaway": {'Location': (40.641820, -73.657930)},
     "East Somerville": {'Location': (42.379470, -71.086620)},
     "East St": {'Location': (39.766870, -86.149050)},
@@ -4127,6 +4135,7 @@ Stations = {
     "IAH Terminal D/E": {'Location': (29.986600, -95.332900), 'Label': 'Terminal D/E'},
     "IAH Transit Center": {'Location': (29.981720, -95.272480), 'Type': 'Airport'},
     "IU Health": {'Location': (39.790420, -86.161460)},
+    "IU Health (LRT)": {'Location': (39.788310, -86.162070), 'Label': 'IU Health'},
     "Ilford": {'Location': (56.065240, -95.605050)},
     "Iliff": {'Location': (39.673338, -104.826911)},
     "Illinois": {'Location': (32.723170, -96.805220)},
@@ -4144,6 +4153,8 @@ Stations = {
     "Indiana Statehouse": {'Location': (39.767170, -86.161730), 'Label': 'Statehouse', 'Major': True},
     "Indiana-Wellington Heights": {'Location': (34.034300, -118.192180)},
     "Indianapolis Airport": {'Location': (39.714310, -86.298640), 'Type': 'Airport'},
+    "Indianapolis Motor Speedway": {'Location': (39.786940, -86.238510)},
+    "Indianapolis Motor Speedway (LRT)": {'Location': (39.787440, -86.238520), 'Label': 'Speedway'},
     "Indianapolis Union Station": {'Location': (39.762450, -86.160230), 'Major': True},
     "Indianapolis Union Station (Subway)": {'Location': (39.762990, -86.161880), 'Label': 'Union Station', 'Major': True},
     "Indianapolis Zoo": {'Location': (39.766040, -86.176590), 'Label': 'Zoo'},
@@ -4338,6 +4349,7 @@ Stations = {
     "Kent Des Moines": {'Location': (47.389550, -122.294400)},
     "Kent Street": {'Location': (42.344140, -71.114140)},
     "Kenton": {'Location': (40.644810, -83.612140)},
+    "Kessler Blvd": {'Location': (39.787870, -86.210450)},
     "Kettering": {'Location': (39.690090, -84.168670)},
     "Kew Gardens": {'Location': (40.709670, -73.830520)},
     "Kew Gardens-Union Tpke": {'Location': (40.714170, -73.831130)},
@@ -4487,6 +4499,7 @@ Stations = {
     "Lafayette (IN)": {'Location': (40.419430, -86.896150), 'Label': 'Lafayette'},
     "Lafayette (LA)": {'Location': (30.226700, -92.014250), 'Label': 'Lafayette'},
     "Lafayette Av": {'Location': (40.685970, -73.973660)},
+    "Lafayette Rd": {'Location': (39.787980, -86.201540)},
     "Lafayette Square": {'Location': (42.886390, -78.874230)},
     "Lafayette Street": {'Location': (40.924990, -74.156460)},
     "Laforest": {'Location': (47.034680, -81.214210)},
@@ -4750,6 +4763,7 @@ Stations = {
     "Livermore": {'Location': (37.685040, -121.766910)},
     "Livernois (Fort)": {'Location': (42.306610, -83.103480), 'Label': 'Livernois'},
     "Livernois (Michigan)": {'Location': (42.331130, -83.120330), 'Label': 'Livernois'},
+    "Livingston Ave": {'Location': (39.787650, -86.224340)},
     "Livonia": {'Location': (42.375780, -83.355160)},
     "Livonia Av": {'Location': (40.663950, -73.900560)},
     "Lizton": {'Location': (39.887140, -86.541520)},
@@ -4857,6 +4871,7 @@ Stations = {
     "MLK Drive (Jersey City)": {'Location': (40.712010, -74.077320), 'Label': 'MLK Drive'},
     "MLK Jr (Austin)": {'Location': (30.279690, -97.709150), 'Label': 'MLK Jr'},
     "MLK Jr (South Dallas)": {'Location': (32.773910, -96.764840), 'Label': 'MLK Jr'},
+    "MLK Jr St": {'Location': (39.788250, -86.169640)},
     "MLK/Scott": {'Location': (39.077930, -84.507010)},
     "MSP Terminal 1": {'Location': (44.880722, -93.205283), 'Label': 'Terminal 1', 'Type': 'Airport'},
     "MSP Terminal 2": {'Location': (44.874164, -93.224156), 'Label': 'Terminal 2', 'Type': 'Airport'},
@@ -5139,6 +5154,7 @@ Stations = {
     "Meriden": {'Location': (41.538770, -72.801410)},
     "Meridian Ave": {'Location': (35.425310, -97.600430)},
     "Meridian Park": {'Location': (39.810150, -86.156710)},
+    "Meridian St": {'Location': (39.788400, -86.157820)},
     "Meridian Union Station": {'Location': (32.363980, -88.696480)},
     "Merillon Avenue": {'Location': (40.735530, -73.661330)},
     "Merion": {'Location': (39.997550, -75.251320)},
@@ -5294,6 +5310,7 @@ Stations = {
     "Montauk": {'Location': (41.048240, -71.953190)},
     "Montaño": {'Location': (35.136920, -106.632460)},
     "Montcalm": {'Location': (49.203960, -123.137210)},
+    "Montcalm St": {'Location': (39.788700, -86.179510)},
     "Montcalm Street": {'Location': (42.339120, -83.052309)},
     "Montclair (CA)": {'Location': (34.094090, -117.695540), 'Label': 'Montclair'},
     "Montclair (NJ)": {'Location': (40.808180, -74.208680), 'Label': 'Montclair'},
@@ -5504,6 +5521,7 @@ Stations = {
     "Near East Side": {'Location': (39.966700, -82.961770)},
     "Near Northside": {'Location': (39.797330, -86.157200)},
     "Near Southside/Medical District": {'Location': (32.730830, -97.348660)},
+    "Near Westside": {'Location': (39.775030, -86.207310)},
     "Neck Rd": {'Location': (40.595150, -73.955020)},
     "Needham Heights": {'Location': (42.293450, -71.235960)},
     "Needham Junction": {'Location': (42.273210, -71.235830)},
@@ -7051,6 +7069,7 @@ Stations = {
     "Spadina": {'Location': (43.667170, -79.404350)},
     "Spartanburg": {'Location': (34.953520, -81.937510)},
     "Speedway": {'Location': (39.120660, -94.833890)},
+    "Speedway East": {'Location': (39.787550, -86.230320)},
     "Speonk": {'Location': (40.821210, -72.704840)},
     "Sperling-Burnaby Lake": {'Location': (49.259200, -122.964000)},
     "Splendora": {'Location': (30.234240, -95.161720)},
@@ -7372,6 +7391,7 @@ Stations = {
     "Thornton Crossroads & 104th": {'Location': (39.882135, -104.942399)},
     "Three Lakes East": {'Location': (30.049180, -95.585800)},
     "Thurman-Greenlawn": {'Location': (39.939580, -82.996260)},
+    "Tibbs Ave": {'Location': (39.787800, -86.216510)},
     "Ticonderoga": {'Location': (43.853850, -73.389740)},
     "Tiffany Springs": {'Location': (39.273590, -94.669180)},
     "Tifton": {'Location': (31.451120, -83.510880)},
@@ -8237,7 +8257,7 @@ Segments = {
         "Keep": ['Chicago Union Station'],
     },
     "-Intercity HS (Chicago - Indianapolis)": {
-        "F": ['-Intercity HS (Chicago - Gary)', 'East Lafayette', 'North Indianapolis', '[R] Indianapolis Approach (Union - West)'],
+        "F": ['-Intercity HS (Chicago - Gary)', 'East Lafayette', 'North Indianapolis', '[X] Indianapolis Northwest Bend N', '[X] Indianapolis Northwest Bend S', '[X] Near Westside', '[R] Indianapolis Approach (Union - West)'],
     },
     "-Intercity HS (Chicago - Liberty Center)": {
         "F": ['-Intercity HS (Chicago - Gary)', 'Valparaiso (HSR)', 'Fort Wayne', '[X] Liberty Center Junction'],
@@ -11391,8 +11411,14 @@ Segments = {
     "Indianapolis Approach (Union - West)": {
         "F": ['Indianapolis Union Station', '[X] Indianapolis West Bend', ''],
     },
+    "Indianapolis Light Rail": {
+        "F": ['Indianapolis Motor Speedway (LRT)', 'Speedway East', 'Livingston Ave', 'Tibbs Ave', 'Kessler Blvd', 'Lafayette Rd', 'East Riverside Dr', 'Montcalm St', 'MLK Jr St', 'IU Health (LRT)', 'Meridian St', 'Delaware St', 'Central Ave (Indianapolis)', 'College Ave (LRT)', 'Cornell Ave'],
+    },
     "Indianapolis Regional Rail (Union - Franklin)": {
         "F": ['Indianapolis Approach (Union - East)', 'Raymond St (Mainline)', 'University of Indianapolis', 'Edgewood (IN)', 'Southport (IN)', 'County Line (IN)', 'Greenwood (IN)', 'East Worthsville', 'Whiteland', 'County Rd 300', 'Franklin (IN)'],
+    },
+    "Indianapolis Regional Rail (Union - Lizton via Speedway)": {
+        "F": ['Indianapolis Approach (Union - West)', 'Near Westside', 'Indianapolis Motor Speedway', 'Darby Court', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
     "Indianapolis Regional Rail (Union - Lizton)": {
         "F": ['Indianapolis Approach (Union - West)', 'Stout Field', '[X] Indianapolis Airport Bend (Mainline)', 'Rockville Rd', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
@@ -12344,7 +12370,7 @@ Segments = {
         "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St (6th)', '14 St (6th)', '23 St (6th)', '[X] 33 St (6th)', '34 St-Herald Sq', '42 St (6th)', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '[X] NY Central Park Junction (FQ)', '63 St (Lexington)', '[X] NY 2nd-63rd Junction (FQT)', 'Roosevelt Island', '[X] 21 St-Queensbridge', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '36 St (Northern)', '[X] Northern Blvd', '[X] 65 St (Broadway)', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av (Broadway)', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd (Queens)', '[X] 63 Dr-Rego Park', '[X] 67 Av (Queens)', 'Forest Hills-71 Av', '75 Av (Queens)', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Sutphin Blvd', 'Parsons Blvd (Hillside)', '169 St (Hillside)', '179 St (Hillside)'],
     },
     "New York Subway (Broadway-Lafayette - Middle Village)": {
-        "F": ['Broadway-Lafayette St', '[X] Houston St (Chrystie)', '[X] NY Delancey-Chrystie Junction (BDMT)', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway-Boerum', 'Lorimer St (Broadway)', 'Flushing Av (Broadway)', 'Myrtle Av (Broadway)', 'Central Av (Myrtle)', 'Knickerbocker Av', 'Myrtle-Wyckoff Avs', 'Seneca Av', 'Forest Av', 'Fresh Pond Rd', 'Middle Village-Metropolitan Av'],
+        "F": ['Broadway-Lafayette St', '[X] Houston St (Chrystie)', '[X] NY Delancey-Chrystie Junction (BDMT)', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway-Boerum', 'Lorimer St (Broadway)', 'Flushing Av (Broadway)', 'Myrtle Av (Broadway)', 'Central Av', 'Knickerbocker Av', 'Myrtle-Wyckoff Avs', 'Seneca Av', 'Forest Av', 'Fresh Pond Rd', 'Middle Village-Metropolitan Av'],
     },
     "New York Subway (Broadway-Lafayette - Norwood)": {
         "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St (6th)', '[X] 14 St (6th)', '[X] 23 St (6th)', '[X] 33 St (6th)', '34 St-Herald Sq', '42 St (6th)', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '7 Av (53rd)', '[X] NY 8th Av-53rd St Junction (ACEBD)', '59 St-Columbus Circle (ACBD)', '[X] 72 St (Central Park)', '[X] 81 St (Central Park)', '[X] 86 St (Central Park)', '[X] 96 St (Central Park)', '[X] 103 St (Central Park)', '[X] 110 St (Central Park)', '[X] 116 St (Central Park)', '125 St (St. Nicholas)', '[X] 135 St (St. Nicholas)', '145 St (St. Nicholas)', '155 St', '161 St (River)', '[X] NY Grand Concourse-161st Bend (BD)', '167 St (Grand Concourse)', '170 St (Grand Concourse)', '174-175 Sts (Grand Concourse)', 'Tremont Av', '182-183 Sts (Grand Concourse)', 'Fordham Rd (Grand Concourse)', 'Kingsbridge Rd (Grand Concourse)', 'Bedford Park Blvd (Grand Concourse)', 'Norwood-205 St'],
@@ -13404,7 +13430,7 @@ Segments = {
         "F": ['Toledo', '[X] Toledo West Junction'],
     },
     "Toledo Light Rail": {
-        "F": ['University Medical Center (Toledo)', 'Detroit Ave', 'Anthony Wayne', 'Toledo Zoo', 'Waterworks Dr', 'South Ave (Toledo)', 'Western Ave (Toledo)', 'Newton St', 'Clayton St', 'Monroe St', 'Jackson St (Toledo)', '[X] Toledo Cherry Bend', 'Huron St', 'Bancroft St', 'St. Vincents Hospital', 'Franklin Ave (Toledo)', 'Central Ave', 'Collingwood Blvd', '[X] Toledo Detroit Bend', 'Phillips Ave', '[X] Toledo Sylvania Bend', 'West Toledo'],
+        "F": ['University Medical Center (Toledo)', 'Detroit Ave', 'Anthony Wayne', 'Toledo Zoo', 'Waterworks Dr', 'South Ave (Toledo)', 'Western Ave (Toledo)', 'Newton St', 'Clayton St', 'Monroe St', 'Jackson St (Toledo)', '[X] Toledo Cherry Bend', 'Huron St', 'Bancroft St', 'St. Vincents Hospital', 'Franklin Ave (Toledo)', 'Central Ave (Toledo)', 'Collingwood Blvd', '[X] Toledo Detroit Bend', 'Phillips Ave', '[X] Toledo Sylvania Bend', 'West Toledo'],
     },
     "Toronto GO (Union - Aldershot)": {
         "F": ['Toronto Union Station', '[X] Toronto West Junction', 'Exhibition', '[X] Toronto West Bend', 'Park Lawn', 'Mimico', 'Long Branch (ON)', 'Port Credit', 'Clarkson', 'Oakville', 'Bronte', 'Appleby', 'Burlington', 'Aldershot', '[X] Hamilton Junction'],
@@ -15163,6 +15189,11 @@ Lines = {
         },
     },
     "IndyGo": {
+        "Crosstown": {
+            "Fantasy": {
+                "Speedway - Cornell Ave": {'Mode': 'Light Rail', 'Stations': 'Indianapolis Light Rail'},
+            },
+        },
         "Franklin Line": {
             "Fantasy": {
                 "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Franklin)'},
@@ -15181,6 +15212,7 @@ Lines = {
         "Lizton Line": {
             "Fantasy": {
                 "Indianapolis - Lizton": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton)'},
+                "Indianapolis - Lizton vis Speedway": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton via Speedway)'},
             },
         },
         "Muncie Line": {
