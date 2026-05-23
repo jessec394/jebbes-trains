@@ -1654,6 +1654,7 @@ Stations = {
     "Blue Island-Vermont": {'Location': (41.654840, -87.677770)},
     "Blue River": {'Location': (52.105380, -119.300430)},
     "Blue Springs": {'Location': (39.017470, -94.279480)},
+    "Bluffton": {'Location': (40.741140, -85.178220)},
     "Bob Wallace Ave": {'Location': (34.712200, -86.574270)},
     "Boca Raton (Brightline)": {'Location': (26.353820, -80.087490), 'Label': 'Boca Raton'},
     "Boca Raton (Tri-Rail)": {'Location': (26.392440, -80.099400), 'Label': 'Boca Raton'},
@@ -3874,6 +3875,7 @@ Stations = {
     "Harrison/Arena": {'Location': (40.739420, -74.155860), 'Label': 'Harrison'},
     "Harsimus Cove": {'Location': (40.722660, -74.037280)},
     "Hart St": {'Location': (36.141220, -86.763560)},
+    "Hartford City": {'Location': (40.449570, -85.359400)},
     "Hartford Union Station": {'Location': (41.768810, -72.681570), 'Major': True},
     "Hartsdale": {'Location': (41.011150, -73.795600)},
     "Harvard": {'Location': (42.419850, -88.617500)},
@@ -4665,6 +4667,7 @@ Stations = {
     "Levittown": {'Location': (40.140160, -74.816960)},
     "Lewistown": {'Location': (40.588200, -77.580340)},
     "Lewisville/Old Town": {'Location': (33.047360, -96.986330), 'Label': 'Old Town'},
+    "Lexington": {'Location': (38.058560, -84.516180)},
     "Lexington Market (LRT)": {'Location': (39.291920, -76.619690), 'Label': 'Lexington Market'},
     "Lexington Market (Metro)": {'Location': (39.291730, -76.620900), 'Label': 'Lexington Market'},
     "Lexington Pkwy": {'Location': (44.955733, -93.146662)},
@@ -6392,6 +6395,7 @@ Stations = {
     "Richards Road": {'Location': (47.580830, -122.169550)},
     "Richmond (BART)": {'Location': (37.936760, -122.353050), 'Label': 'Richmond'},
     "Richmond (CA)": {'Location': (37.936770, -122.353900), 'Label': 'Richmond'},
+    "Richmond (IN)": {'Location': (39.834840, -84.889520), 'Label': 'Richmond'},
     "Richmond (MI)": {'Location': (42.806200, -82.749090), 'Label': 'Richmond'},
     "Richmond (TX)": {'Location': (29.583160, -95.763360), 'Label': 'Richmond'},
     "Richmond - Main St": {'Location': (37.535100, -77.428700), 'Major': True},
@@ -6951,7 +6955,8 @@ Stations = {
     "Socorro": {'Location': (34.056640, -106.883920)},
     "Solana Beach": {'Location': (32.992980, -117.271270)},
     "Somers": {'Location': (42.639290, -87.822120)},
-    "Somerset": {'Location': (39.991660, -75.122300)},
+    "Somerset (KY)": {'Location': (37.092070, -84.614510), 'Label': 'Somerset'},
+    "Somerset (Philadelphia)": {'Location': (39.991660, -75.122300), 'Label': 'Somerset'},
     "Somerset-Bridlewood": {'Location': (50.898970, -114.068930)},
     "Somerton": {'Location': (40.130700, -75.012080)},
     "Somerville": {'Location': (40.566070, -74.613960)},
@@ -8781,7 +8786,7 @@ Segments = {
         "Skip": ['Oconomowoc', 'Watertown', 'Camp Douglas'],
     },
     "-Intercity LS (Chicago - Toledo)": {
-        "F": ['-Intercity LS (Chicago - Chesterton Junction)', '[X] Hudson Lake', '[X] South Bend Airport Junction', 'South Bend', 'Elkhart', 'Kendallville', 'Bryan', '[X] Delta Bend', '[R] Toledo Approach (Toledo - West)'],
+        "F": ['-Intercity LS (Chicago - Chesterton Junction)', '[X] Hudson Lake', '[X] South Bend Airport Junction', 'South Bend', 'Elkhart', 'Kendallville', '[R] -Intercity LS (Toledo - Bryan)'],
     },
     "-Intercity LS (Chicago - Toronto)": {
         "F": ['-Intercity LS (Chicago - Detroit via Ann Arbor)', 'Detroit Regional Rail (International Shuttle)', '[R] -Intercity LS (Toronto - Windsor)'],
@@ -8806,12 +8811,18 @@ Segments = {
     "-Intercity LS (Cincinnati - Detroit)": {
         "F": ['-Intercity LS (Cincinnati - Dayton)', '[X] Dayton East Junction', 'Troy (OH)', 'Sidney', 'Lima', 'Findlay', 'Bowling Green (OH)', 'Toledo', '[R] -Intercity LS (Detroit - Toledo)'],
     },
+    "-Intercity LS (Cincinnati - Fort Wayne)": {
+        "F": ['-Intercity LS (Cincinnati - Hamilton)', 'Richmond (IN)', '[R] -Intercity LS (Fort Wayne - Muncie)'],
+    },
     "-Intercity LS (Cincinnati - Hamilton)": {
         "F": ['Cincinnati Commuter (Union - Hamilton)'],
         "Keep": ['Cincinnati Union Terminal', 'Hamilton (OH)'],
     },
     "-Intercity LS (Cincinnati - Huntington)": {
         "F": ['-Intercity LS (Cincinnati - Covington)', 'Maysville', 'South Shore (KY)', 'Ashland (KY)', 'Huntington (WV)'],
+    },
+    "-Intercity LS (Cincinnati - Knoxville)": {
+        "F": ['Cincinnati Union Terminal', 'Walton', 'Lexington', 'Somerset (KY)', 'Knoxville'],
     },
     "-Intercity LS (Cincinnati - Louisville)": {
         "F": ['-Intercity LS (Cincinnati - Covington)', 'Walton', 'La Grange', 'Louisville'],
@@ -9044,6 +9055,9 @@ Segments = {
     "-Intercity LS (Fargo - Spokane South)": {
         "F": ['Fargo', 'Jamestown', 'Bismarck', 'Dickinson (ND)', 'Glendive', 'Miles City', 'Billings', 'Bozeman', 'Helena', 'Missoula', 'Thompson Falls', 'Sandpoint', 'Spokane'],
     },
+    "-Intercity LS (Fort Wayne - Muncie)": {
+        "F": ['Fort Wayne', 'Bluffton', 'Hartford City', 'Muncie'],
+    },
     "-Intercity LS (Fort Worth - Cleveland)": {
         "F": ['-Intercity LS (Fort Worth - Oklahoma City)', '[R] -Intercity LS (St. Louis - Oklahoma City)', '-Intercity LS (St. Louis - Indianapolis)', '-Intercity LS (Indianapolis - Toledo)', '[R] -Intercity LS (Cleveland - Toledo)'],
     },
@@ -9094,6 +9108,10 @@ Segments = {
     "-Intercity LS (Indianapolis - Louisville)": {
         "F": ['-Intercity LS (Indianapolis - Franklin)', 'Columbus (IN)', 'Scottsburg', 'Louisville'],
     },
+    "-Intercity LS (Indianapolis - Muncie)": {
+        "F": ['Indianapolis Regional Rail (Union - Muncie)'],
+        "Keep": ['Indianapolis Union Station', 'Anderson (IN)', 'Muncie'],
+    },
     "-Intercity LS (Indianapolis - Nashville)": {
         "F": ['-Intercity LS (Indianapolis - Terre Haute)', 'Evansville', 'Hopkinsville', '[R] -Intercity LS (Nashville - Goodlettsville)'],
     },
@@ -9101,8 +9119,7 @@ Segments = {
         "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis North Airport Bend', 'Terre Haute'],
     },
     "-Intercity LS (Indianapolis - Toledo)": {
-        "F": ['Indianapolis Regional Rail (Union - Muncie)', 'Fort Wayne', '[X] Liberty Center Junction', '[R] Toledo Approach (Toledo - West)'],
-        "Keep": ['Indianapolis Union Station', 'Anderson (IN)', 'Muncie', 'Fort Wayne', 'Toledo'],
+        "F": ['-Intercity LS (Indianapolis - Muncie)', '[R] -Intercity LS (Fort Wayne - Muncie)', '[R] -Intercity LS (Toledo - Bryan)'],
     },
     "-Intercity LS (Jacksonville - Gainesville)": {
         "F": ['Jacksonville', 'Starke', 'Alachua', 'Gainesville'],
@@ -9857,6 +9874,9 @@ Segments = {
     },
     "-Intercity LS (Tijuana - Santa Barbara)": {
         "F": ['[R] -Intercity LS (San Diego - Tijuana)', '-Intercity LS (San Diego - Santa Barbara)'],
+    },
+    "-Intercity LS (Toledo - Bryan)": {
+        "F": ['[R] Toledo Approach (Toledo - West)', '[X] Delta Bend', 'Bryan'],
     },
     "-Intercity LS (Toronto - Aldershot)": {
         "F": ['Toronto GO (Union - Aldershot)'],
@@ -12711,7 +12731,7 @@ Segments = {
         "F": ['Fern Rock Transit Center', 'Broad-Olney', 'Broad-Logan', 'Broad-Wyoming', 'Broad-Hunting Park', 'Broad-Erie', 'Broad-Allegheny', 'Broad-North Philadelphia', 'Susquehanna-Dauphin', 'Broad-Cecil B. Moore', 'Broad-Girard', 'Broad-Fairmount'],
     },
     "Philadelphia Subway (Frankford Line)": {
-        "F": ['Market-2nd St', 'Spring Garden', 'Front-Girard', 'Berks', 'York-Dauphi', 'Huntingdon (SEPTA)', 'Somerset', 'Allegheny Ave', 'Tioga', 'Erie-Torresdale', 'Church Ruan', 'Arrott Transit Center', 'Frankford Transit Center', 'Roosevelt/Bustleton'],
+        "F": ['Market-2nd St', 'Spring Garden', 'Front-Girard', 'Berks', 'York-Dauphi', 'Huntingdon (SEPTA)', 'Somerset (Philadelphia)', 'Allegheny Ave', 'Tioga', 'Erie-Torresdale', 'Church Ruan', 'Arrott Transit Center', 'Frankford Transit Center', 'Roosevelt/Bustleton'],
     },
     "Philadelphia Subway (Market Line)": {
         "F": ['Market-2nd St', 'Market-5th St', 'Market-8th St', 'Market-11th St', 'Market-13th St', 'Market-15th St', 'Market-30th St', 'Market-34th St', 'Market-40th St', 'Market-46th St', 'Market-52nd St', 'Market-56th St', 'Market-60th St', 'Market-63rd St', 'Millbourne', '69th St Transit Center'],
@@ -14118,6 +14138,11 @@ Lines = {
                 "New York - Toronto": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New York - Toronto)', 'File': '[Amtrak] Maple Leaf', 'Link': 'https://brouter.damsy.net/latest/#map=12/40.8319/-73.9328/standard&lonlats=-73.992941,40.749909;-73.990345,40.769943;-73.905509,40.923136;-73.983749,41.50029;-73.984782,41.507159;-73.938101,41.707751;-73.741243,42.654318;-74.183797,42.92999;-75.983763,43.076317;-76.17074,43.076149;-76.23183,43.07234;-77.609932,43.163111;-77.663882,43.149495;-78.679361,42.912954;-78.727223,42.907272;-78.782771,42.900903;-78.874369,42.878504;-79.067938,43.109059;-79.558657,43.196182;-79.853429,43.313887;-79.681258,43.455988;-79.415778,43.636828;-79.377632,43.644954;-79.421019,43.635527;-79.683865,43.453592;-79.856095,43.312325;-79.557911,43.195939;-79.061973,43.108813;-78.872041,42.877999;-78.723832,42.907618;-78.69141,42.911315;-78.677269,42.912929;-77.66363,43.149454;-77.607642,43.164212;-76.228686,43.071477;-76.168578,43.078633;-75.982263,43.076398;-74.1837,42.929798;-73.740309,42.653648;-73.93797,41.706015;-73.984664,41.505797;-73.983937,41.500358;-73.902572,40.935689;-73.907178,40.921109;-73.992971,40.749868&profile=rail'},
             },
         },
+        "Marble City": {
+            "Fantasy": {
+                "Cincinnati - Knoxville": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Cincinnati - Knoxville)'},
+            },
+        },
         "Mardi Gras Service": {
             "Fantasy": {
                 "New Orleans - Mobile": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (New Orleans - Mobile)'},
@@ -14337,6 +14362,11 @@ Lines = {
             },
             "Present": {
                 "Chicago - Los Angeles": {'Mode': 'Intercity Rail (Distance)', 'Stations': '-Intercity LS (Chicago - Los Angeles via ABQ)', 'File': '[Amtrak] Southwest Chief', 'Link': 'https://brouter.damsy.net/latest/#map=18/34.05525/-118.23418/standard&lonlats=-87.639128,41.878345;-87.647842,41.860316;-87.684948,41.857765;-87.775859,41.837431;-87.901354,41.80906;-88.073015,41.797748;-88.316715,41.75393;-91.314395,40.629307;-94.411679,39.150707;-94.52391,39.099568;-94.587189,39.085912;-94.677086,39.040461;-94.748808,38.953076;-94.75156,38.93766;-102.620373,38.08998;-106.647871,35.080567;-111.650341,35.197509;-116.021799,34.685099;-116.151656,34.723193;-116.275671,34.727148;-116.546552,34.814243;-116.876421,34.86154;-116.979107,34.883546;-117.014796,34.903166;-117.025659,34.904543;-117.134538,34.867194;-117.31118,34.104462;-117.363634,33.984288;-117.370838,33.974124;-117.373633,33.969937;-117.471153,33.899729;-117.743214,33.881648;-117.832741,33.868077;-117.987601,33.875845;-118.059865,33.916111;-118.121776,33.983403;-118.143365,33.990715;-118.191047,34.006757;-118.209361,34.013005;-118.22885,34.040054;-118.234869,34.054322;-118.228962,34.039916;-118.224982,34.02243;-118.212027,34.013845;-118.184583,34.004511;-118.176193,34.001776;-118.142842,33.990515;-118.083691,33.965177;-118.059742,33.915862;-117.92219,33.868616;-117.865164,33.868634;-117.834206,33.86801;-117.661809,33.879279;-117.629639,33.883345;-117.562466,33.881808;-117.469221,33.900322;-117.376342,33.965224;-117.368719,33.976922;-117.350475,33.995488;-117.333051,34.02869;-117.309351,34.104378;-117.135689,34.866448;-117.09619,34.883088;-117.023336,34.904516;-116.988446,34.885887;-116.959832,34.880149;-116.88443,34.862702;-116.275434,34.727055;-116.225374,34.719674;-116.162031,34.719851;-116.024053,34.685734;-116.004274,34.635254;-115.484566,34.517974;-113.023165,35.400681;-111.648374,35.196828;-106.647061,35.083811;-104.507763,37.172763;-102.628602,38.089361;-102.616414,38.089866;-94.745064,38.958332;-94.583225,39.086799;-94.522923,39.099701;-94.411418,39.150679;-91.311514,40.629734;-90.350393,40.957089;-88.316227,41.754053;-88.071875,41.797922;-87.898838,41.809606;-87.775859,41.837419;-87.683953,41.858027;-87.647386,41.860264;-87.63916,41.878331&profile=rail'},
+            },
+        },
+        "Summit City": {
+            "Fantasy": {
+                "Cincinnati - Fort Wayne": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Summit City)'},
             },
         },
         "Sun City": {
