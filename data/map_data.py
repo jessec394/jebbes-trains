@@ -204,6 +204,7 @@ Nodes = {
 	"Las Vegas Orleans Bend": {'Location': (36.159980, -115.136470)},
 	"Las Vegas T1 Bend N": {'Location': (36.087170, -115.148160)},
 	"Las Vegas T1 Bend S": {'Location': (36.080530, -115.142520)},
+	"Lebanon Bend": {'Location': (40.041180, -86.487220)},
 	"Liberty Center Junction": {'Location': (41.435430, -84.032900)},
 	"Los Angeles Atlantic/Telegraph Bend": {'Location': (34.011070, -118.160110)},
 	"Los Angeles East Ventura Junction": {'Location': (34.247310, -119.201580)},
@@ -1353,6 +1354,7 @@ Stations = {
     "Auburndale - Francis Lewis": {'Location': (40.761460, -73.789840)},
     "Auden": {'Location': (50.229160, -87.889870)},
     "Augusta": {'Location': (33.469030, -81.982010)},
+    "Augusta Green": {'Location': (39.883050, -86.236470)},
     "Auraria West (New - Commuter)": {'Location': (39.741790, -105.013010), 'Label': 'Auraria West'},
     "Auraria West (New - LRT)": {'Location': (39.740502, -105.008794), 'Label': 'Auraria West'},
     "Auraria West (Old - LRT)": {'Location': (39.741640, -105.010910), 'Label': 'Auraria West'},
@@ -3035,6 +3037,7 @@ Stations = {
     "Eagan": {'Location': (44.817110, -93.226350)},
     "Eagle Harbour": {'Location': (49.358030, -123.260560)},
     "Eagle Pass": {'Location': (28.709500, -100.498450)},
+    "Eagledale": {'Location': (39.808930, -86.225690)},
     "Eagles Landing Pkwy": {'Location': (33.515780, -84.205290)},
     "Eakin Rd": {'Location': (39.932420, -83.054680)},
     "Earlington Heights": {'Location': (25.812450, -80.230050)},
@@ -3816,6 +3819,7 @@ Stations = {
     "Guelph Central Station": {'Location': (43.544350, -80.246910)},
     "Guildwood": {'Location': (43.754810, -79.198610)},
     "Guilford": {'Location': (41.275810, -72.673640)},
+    "Guion Creek": {'Location': (39.854170, -86.226420)},
     "Gulfport": {'Location': (30.369030, -89.094780)},
     "Gulph Mills": {'Location': (40.071150, -75.342600)},
     "Gun Hill Rd (Sexton)": {'Location': (40.870060, -73.845930), 'Label': 'Gun Hill Rd'},
@@ -4666,6 +4670,7 @@ Stations = {
     "Leander": {'Location': (30.586520, -97.855780)},
     "Leaside": {'Location': (43.711110, -79.376940)},
     "Leavenworth": {'Location': (47.606030, -120.643250), 'Label': 'Leavenworth Icicle Station'},
+    "Lebanon (IN)": {'Location': (40.038680, -86.454580), 'Label': 'Lebanon'},
     "Lebanon (NJ)": {'Location': (40.636850, -74.836060), 'Label': 'Lebanon'},
     "Lebanon (TN)": {'Location': (36.212050, -86.297180), 'Label': 'Lebanon'},
     "Lechería": {'Location': (19.599220, -99.186630)},
@@ -6008,6 +6013,7 @@ Stations = {
     "Parc": {'Location': (45.531600, -73.623940)},
     "Parent": {'Location': (47.919580, -74.614220)},
     "Park & Market": {'Location': (32.710970, -117.153770)},
+    "Park 100": {'Location': (39.912440, -86.250110)},
     "Park Avenue Newark": {'Location': (40.758220, -74.185160)},
     "Park Farms": {'Location': (38.980960, -94.499960)},
     "Park Fletcher": {'Location': (39.735540, -86.264520)},
@@ -6134,6 +6140,7 @@ Stations = {
     "Piedmont Hospital": {'Location': (33.811700, -84.391840)},
     "Piedras Negras": {'Location': (28.695940, -100.516420)},
     "Pierce College": {'Location': (34.187490, -118.571660)},
+    "Pierce St": {'Location': (39.996520, -86.347040)},
     "Pierre": {'Location': (44.369650, -100.356790)},
     "Pikes Peak Ave": {'Location': (38.833180, -104.821750)},
     "Pikes Peak Center": {'Location': (38.830660, -104.825520)},
@@ -6526,7 +6533,6 @@ Stations = {
     "Rockridge": {'Location': (37.844750, -122.251230)},
     "Rockville": {'Location': (39.084220, -77.145990)},
     "Rockville Centre": {'Location': (40.658300, -73.646040)},
-    "Rockville Rd": {'Location': (39.765050, -86.302760)},
     "Rockwell": {'Location': (41.966211, -87.695028)},
     "Rockwood": {'Location': (42.069140, -83.249550)},
     "Rocky Mount": {'Location': (35.937950, -77.797670)},
@@ -7233,7 +7239,6 @@ Stations = {
     "Stony Island": {'Location': (41.766060, -87.587340)},
     "Storm Lake": {'Location': (42.643380, -95.202120)},
     "Stouffville": {'Location': (43.970910, -79.249980)},
-    "Stout Field": {'Location': (39.747350, -86.249510)},
     "Strachan": {'Location': (48.030040, -74.865880)},
     "Strafford": {'Location': (40.049560, -75.403770)},
     "Stralak": {'Location': (46.804790, -81.680010)},
@@ -8250,6 +8255,7 @@ Stations = {
     "Zia Road": {'Location': (35.646410, -105.957010)},
     "Zinacantepec": {'Location': (19.280050, -99.694120)},
     "Zion": {'Location': (42.449210, -87.817960)},
+    "Zionsville": {'Location': (39.950580, -86.272710)},
     "Zoo Ampitheatre": {'Location': (35.517660, -97.476660)},
     "Édouard-Montpetit": {'Location': (45.509910, -73.612640)},
     "Île-Bigras": {'Location': (45.519760, -73.852790)},
@@ -8287,7 +8293,7 @@ Segments = {
         "Keep": ['Chicago Union Station'],
     },
     "-Intercity HS (Chicago - Indianapolis)": {
-        "F": ['-Intercity HS (Chicago - Gary)', 'East Lafayette', 'North Indianapolis', '[X] Indianapolis Northwest Bend N', '[X] Indianapolis Northwest Bend S', '[X] Near Westside', '[R] Indianapolis Approach (Union - West)'],
+        "F": ['-Intercity HS (Chicago - Gary)', 'East Lafayette', '[R] -Intercity HS (Indianapolis - Lebanon)'],
     },
     "-Intercity HS (Chicago - Liberty Center)": {
         "F": ['-Intercity HS (Chicago - Gary)', 'Valparaiso (HSR)', 'Fort Wayne', '[X] Liberty Center Junction'],
@@ -8312,6 +8318,10 @@ Segments = {
     },
     "-Intercity HS (Dallas - Houston)": {
         "F": ['Dallas/North Texas Station', 'Brazos Valley', 'Houston West Station'],
+    },
+    "-Intercity HS (Indianapolis - Lebanon)": {
+        "F": ['Indianapolis Regional Rail (Union - Eagledale)', 'North Indianapolis', '[X] Lebanon Bend'],
+        "Keep": ['Indianapolis Union Station', 'North Indianapolis'],
     },
     "-Intercity HS (Las Vegas - Los Angeles via ONT)": {
         "F": ['-Intercity HS (Las Vegas - Victor Valley)', 'Hesperia', 'Rancho Cucamonga', 'Ontario Airport', '[X] Los Angeles North Junction', 'Los Angeles Union Station'],
@@ -9156,7 +9166,7 @@ Segments = {
         "Keep": ['Indianapolis Union Station', 'Greenwood (IN)', 'Franklin (IN)'],
     },
     "-Intercity LS (Indianapolis - Lizton)": {
-        "F": ['Indianapolis Regional Rail (Union - Lizton)'],
+        "F": ['Indianapolis Regional Rail (Union - Lizton via Airport)'],
         "Keep": ['Indianapolis Union Station'],
     },
     "-Intercity LS (Indianapolis - Louisville)": {
@@ -11456,20 +11466,29 @@ Segments = {
     "Indianapolis Regional Rail (Union - Chatham Junction)": {
         "F": ['Indianapolis Approach (Union - East)', '[X] Indianapolis Chatham Junction'],
     },
+    "Indianapolis Regional Rail (Union - Eagledale)": {
+        "F": ['Indianapolis Regional Rail (Union - Speedway)', 'Eagledale', '[X] Indianapolis Northwest Junction N'],
+    },
     "Indianapolis Regional Rail (Union - Franklin)": {
         "F": ['Indianapolis Approach (Union - East)', 'Raymond St (Mainline)', 'University of Indianapolis', 'Edgewood (IN)', 'Southport (IN)', 'County Line (IN)', 'Greenwood (IN)', 'East Worthsville', 'Whiteland', 'County Rd 300', 'Franklin (IN)'],
     },
-    "Indianapolis Regional Rail (Union - Lizton via Speedway)": {
-        "F": ['Indianapolis Approach (Union - West)', 'Near Westside', 'Indianapolis Motor Speedway', 'Darby Court', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
+    "Indianapolis Regional Rail (Union - Lebanon)": {
+        "F": ['Indianapolis Regional Rail (Union - Eagledale)', 'Guion Creek', 'Augusta Green', 'Park 100', 'Zionsville', 'Pierce St', 'Lebanon (IN)'],
+    },
+    "Indianapolis Regional Rail (Union - Lizton via Airport)": {
+        "F": ['Indianapolis Regional Rail (Union - Stout Field)', '[X] Indianapolis Airport Bend (Mainline)', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
     "Indianapolis Regional Rail (Union - Lizton)": {
-        "F": ['Indianapolis Regional Rail (Union - Stout Field)', 'Stout Field', '[X] Indianapolis Airport Bend (Mainline)', 'Rockville Rd', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
+        "F": ['Indianapolis Regional Rail (Union - Speedway)', 'Indianapolis Motor Speedway', 'Darby Court', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
     "Indianapolis Regional Rail (Union - Mooresville)": {
         "F": ['Indianapolis Regional Rail (Union - Stout Field)', 'Minnesota St (Indianapolis)', 'Mars Hill', 'Decatur (IN)', 'Ameriplex', 'Friendswood', 'Mooresville'],
     },
     "Indianapolis Regional Rail (Union - Noblesville)": {
         "F": ['Indianapolis Regional Rail (Union - 30th St)', '38th St (Indianapolis)', '52nd St', 'Eastwood', 'Allisonville', 'Castleton', '96th St', 'Fishers', '146th St', 'Noblesville'],
+    },
+    "Indianapolis Regional Rail (Union - Speedway)": {
+        "F": ['Indianapolis Approach (Union - West)', 'Near Westside', '[X] Indianapolis Northwest Junction S'],
     },
     "Indianapolis Regional Rail (Union - Stout Field)": {
         "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis Stout Field Junction'],
@@ -15239,7 +15258,7 @@ Lines = {
     "IndyGo": {
         "Anderson Line": {
             "Fantasy": {
-                "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Anderson)'},
+                "Indianapolis - Anderson": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Anderson)'},
             },
         },
         "Carmel Line": {
@@ -15257,6 +15276,11 @@ Lines = {
                 "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Franklin)'},
             },
         },
+        "Lebanon Line": {
+            "Fantasy": {
+                "Indianapolis - Lebanon": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lebanon)'},
+            },
+        },
         "Line 1": {
             "Fantasy": {
                 "Meadows - Southport": {'Mode': 'Heavy Metro', 'Stations': 'Indianapolis Subway (North - South)'},
@@ -15270,7 +15294,6 @@ Lines = {
         "Lizton Line": {
             "Fantasy": {
                 "Indianapolis - Lizton": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton)'},
-                "Indianapolis - Lizton vis Speedway": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton via Speedway)'},
             },
         },
         "Mooresville Line": {
