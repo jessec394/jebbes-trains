@@ -157,6 +157,7 @@ Nodes = {
 	"Indianapolis 38th St Bend": {'Location': (39.824890, -86.156850)},
 	"Indianapolis Airport Bend (Mainline)": {'Location': (39.734430, -86.302570)},
 	"Indianapolis Airport Bend (Subway)": {'Location': (39.711410, -86.265190)},
+	"Indianapolis Chatham Junction": {'Location': (39.781150, -86.140130)},
 	"Indianapolis East Junction": {'Location': (39.762400, -86.155910)},
 	"Indianapolis Merrill Bend E": {'Location': (39.758940, -86.157260)},
 	"Indianapolis Merrill Bend W": {'Location': (39.759020, -86.162020)},
@@ -622,6 +623,7 @@ Stations = {
     "104 St-Jamaica Av": {'Location': (40.694720, -73.846930)},
     "106 St": {'Location': (40.789360, -73.940270)},
     "106 St (2nd)": {'Location': (40.790620, -73.942450), 'Label': '106 St'},
+    "106th St": {'Location': (39.943150, -86.136300)},
     "107th St": {'Location': (41.699790, -87.608890)},
     "107th St-Beverly Hills": {'Location': (41.698980, -87.670110)},
     "10th & State": {'Location': (39.116530, -94.635130)},
@@ -716,7 +718,8 @@ Stations = {
     "16th & California": {'Location': (39.744732, -104.992702)},
     "16th & Stout": {'Location': (39.746326, -104.992523)},
     "16th Ave": {'Location': (49.257520, -123.138800)},
-    "16th St": {'Location': (35.485420, -97.515850)},
+    "16th St (Indianapolis)": {'Location': (39.787890, -86.140040), 'Label': '16th St'},
+    "16th St (OKC)": {'Location': (35.485420, -97.515850), 'Label': '16th St'},
     "16th St Mission": {'Location': (37.765360, -122.419560)},
     "16th/Arapahoe": {'Location': (39.747840, -104.995690)},
     "16th/Blake": {'Location': (39.750560, -104.999160)},
@@ -827,6 +830,7 @@ Stations = {
     "300 West": {'Location': (40.746330, -111.899120)},
     "30th & Downing": {'Location': (39.758938, -104.973525)},
     "30th Ave": {'Location': (44.855850, -93.231580)},
+    "30th St (Indianapolis)": {'Location': (39.810150, -86.137480), 'Label': '30th St'},
     "30th St (OKC)": {'Location': (35.500880, -97.476700), 'Label': '30th St'},
     "32nd & Commercial": {'Location': (32.705920, -117.124550)},
     "32nd & State": {'Location': (39.116770, -94.665730)},
@@ -855,7 +859,7 @@ Stations = {
     "36th St (OKC)": {'Location': (35.507220, -97.476680), 'Label': '36th St'},
     "38th & Blake (A)": {'Location': (39.770680, -104.973772), 'Label': '38th & Blake'},
     "38th & Blake (L)": {'Location': (39.769689, -104.973474), 'Label': '38th & Blake'},
-    "38th St (Indianapolis)": {'Location': (39.824490, -86.156850), 'Label': '38th St'},
+    "38th St (Indianapolis)": {'Location': (39.825860, -86.129360), 'Label': '38th St'},
     "38th St (Minneapolis)": {'Location': (44.934708, -93.229480), 'Label': '38th St'},
     "38th St/Washington": {'Location': (33.448100, -111.999890)},
     "39 Av (31st)": {'Location': (40.752690, -73.932800), 'Label': '39 Av-Dutch Kills'},
@@ -932,8 +936,10 @@ Stations = {
     "51st": {'Location': (41.802442, -87.618541)},
     "51st/53rd St (Hyde Park)": {'Location': (41.800880, -87.587170)},
     "52 St-Lincoln Av": {'Location': (40.744120, -73.912450)},
+    "52nd St": {'Location': (39.848300, -86.119670)},
     "53 St (4th)": {'Location': (40.645070, -74.014020), 'Label': '53 St'},
     "53 St (Lexington)": {'Location': (40.757710, -73.969420), 'Label': 'Lexington Av-53 St'},
+    "54th St (Indianapolis)": {'Location': (39.850650, -86.140510), 'Label': '54th St'},
     "54th St (OKC)": {'Location': (35.411560, -97.600790), 'Label': '54th St'},
     "54th/Cermak": {'Location': (41.851804, -87.757743)},
     "55 St (2nd)": {'Location': (40.758020, -73.966240), 'Label': '55 St'},
@@ -1080,6 +1086,7 @@ Stations = {
     "96 St (Broadway)": {'Location': (40.794190, -73.972130), 'Label': '96 St'},
     "96 St (Central Park)": {'Location': (40.791670, -73.964690), 'Label': '96 St'},
     "96 St (Lexington)": {'Location': (40.785870, -73.950930), 'Label': '96 St'},
+    "96th St": {'Location': (39.928300, -86.035920)},
     "99-352nd": {'Location': (47.286210, -122.308730)},
     "99th St": {'Location': (41.713700, -87.667480)},
     "9th St": {'Location': (35.229630, -80.834960)},
@@ -1170,6 +1177,7 @@ Stations = {
     "Allentown": {'Location': (40.597140, -75.460520)},
     "Allerton Av": {'Location': (40.865390, -73.867260)},
     "Alliance": {'Location': (40.921160, -81.092490)},
+    "Allisonville": {'Location': (39.884010, -86.072260)},
     "Allston Street": {'Location': (42.348680, -71.138020)},
     "Alma": {'Location': (49.264360, -123.185860)},
     "Alma (MI)": {'Location': (43.375950, -84.659410), 'Label': 'Alma'},
@@ -1800,6 +1808,7 @@ Stations = {
     "Britton": {'Location': (35.566060, -97.530980)},
     "Broad & Plymouth Ave": {'Location': (37.713210, -122.455930)},
     "Broad Channel": {'Location': (40.607990, -73.815800)},
+    "Broad Ripple": {'Location': (39.869220, -86.141170)},
     "Broad Run": {'Location': (38.729270, -77.526070)},
     "Broad St (Columbus)": {'Location': (39.960560, -83.011030), 'Label': 'Broad St'},
     "Broad St (New York)": {'Location': (40.706320, -74.011220), 'Label': 'Broad St'},
@@ -2067,6 +2076,7 @@ Stations = {
     "Carlisle": {'Location': (39.581450, -84.319930)},
     "Carlsbad Poinsettia": {'Location': (33.109130, -117.319260)},
     "Carlsbad Village": {'Location': (33.160920, -117.350820)},
+    "Carmel": {'Location': (39.967460, -86.129630)},
     "Carnegie": {'Location': (40.411010, -80.084120)},
     "Carnegie Mellon": {'Location': (40.443390, -79.947190)},
     "Carnegie at Spring": {'Location': (33.759540, -84.389640)},
@@ -2101,6 +2111,7 @@ Stations = {
     "Castle Hill Av": {'Location': (40.834210, -73.851650)},
     "Castle Rock": {'Location': (39.374089, -104.865665)},
     "Castle Shannon": {'Location': (40.368160, -80.030230)},
+    "Castleton": {'Location': (39.905710, -86.051110)},
     "Castro Valley": {'Location': (37.690740, -122.075600)},
     "Cathedral City": {'Location': (33.846500, -116.457460)},
     "Cathedral Square": {'Location': (43.042592, -87.905112)},
@@ -3082,6 +3093,7 @@ Stations = {
     "Eastman": {'Location': (32.197470, -83.175750)},
     "Easton": {'Location': (40.686500, -75.214180)},
     "Eastwick": {'Location': (39.891800, -75.244950)},
+    "Eastwood": {'Location': (39.868160, -86.096580)},
     "Eastwood Hills": {'Location': (39.034160, -94.513710)},
     "Eaton": {'Location': (41.478460, -81.550060)},
     "Eau Claire": {'Location': (44.818720, -91.501290)},
@@ -3356,6 +3368,7 @@ Stations = {
     "Firestone": {'Location': (33.951610, -118.180170)},
     "First Avenue": {'Location': (40.435570, -79.996460)},
     "Fish Creek-Lacombe": {'Location': (50.923290, -114.073140)},
+    "Fishers": {'Location': (39.956290, -86.016900)},
     "Fitchburg": {'Location': (42.580860, -71.792730)},
     "Fitzpatrick": {'Location': (47.484800, -72.773520)},
     "Fitzsimons": {'Location': (39.754949, -104.840514)},
@@ -4149,7 +4162,8 @@ Stations = {
     "Indian School/Central Ave": {'Location': (33.495750, -112.073780)},
     "Indiana": {'Location': (41.821818, -87.621965)},
     "Indiana & 12th": {'Location': (39.098520, -94.542200)},
-    "Indiana State Fairgrounds": {'Location': (39.825440, -86.137060), 'Label': 'Fairgrounds'},
+    "Indiana State Fairgrounds (Mainline)": {'Location': (39.827560, -86.140210), 'Label': 'Fairgrounds'},
+    "Indiana State Fairgrounds (Metro)": {'Location': (39.825440, -86.137060), 'Label': 'Fairgrounds'},
     "Indiana Statehouse": {'Location': (39.767170, -86.161730), 'Label': 'Statehouse', 'Major': True},
     "Indiana-Wellington Heights": {'Location': (34.034300, -118.192180)},
     "Indianapolis Airport": {'Location': (39.714310, -86.298640), 'Type': 'Airport'},
@@ -4355,6 +4369,7 @@ Stations = {
     "Kew Gardens-Union Tpke": {'Location': (40.714170, -73.831130)},
     "Kewa": {'Location': (35.511120, -106.321880)},
     "Kewanee": {'Location': (41.246000, -89.927570)},
+    "Keystone Ave": {'Location': (39.825320, -86.121130)},
     "Kichi Zibi": {'Location': (45.392400, -75.759960)},
     "Kiest": {'Location': (32.707270, -96.801200)},
     "Killarney": {'Location': (40.373730, -80.007930)},
@@ -5118,6 +5133,7 @@ Stations = {
     "Meadowbrook/Allendale": {'Location': (29.684560, -95.255070)},
     "Meadowdale": {'Location': (33.737040, -84.230790)},
     "Meadowlands Sports Complex": {'Location': (40.812990, -74.072200)},
+    "Meadows Dr": {'Location': (39.825360, -86.114630)},
     "Meadowvale": {'Location': (43.597570, -79.754350)},
     "MedPark": {'Location': (33.182370, -97.090500)},
     "Medford": {'Location': (40.817310, -72.999300)},
@@ -5153,6 +5169,7 @@ Stations = {
     "Mercy Hospital": {'Location': (42.848100, -78.812190)},
     "Meriden": {'Location': (41.538770, -72.801410)},
     "Meridian Ave": {'Location': (35.425310, -97.600430)},
+    "Meridian Hills": {'Location': (39.889800, -86.140700)},
     "Meridian Park": {'Location': (39.810150, -86.156710)},
     "Meridian St": {'Location': (39.788400, -86.157820)},
     "Meridian Union Station": {'Location': (32.363980, -88.696480)},
@@ -5655,6 +5672,7 @@ Stations = {
     "North Branch": {'Location': (40.592500, -74.684340)},
     "North Broad": {'Location': (39.992350, -75.154520)},
     "North Carrollton/Frankford": {'Location': (32.991810, -96.937040)},
+    "North Central": {'Location': (39.913550, -86.136280)},
     "North Charleston": {'Location': (32.875420, -79.998210)},
     "North Chicago": {'Location': (42.328730, -87.837040)},
     "North Coast": {'Location': (41.506650, -81.693740)},
@@ -5883,6 +5901,7 @@ Stations = {
     "Orange-Highland Ave": {'Location': (40.766850, -74.243610)},
     "Orchard (CA)": {'Location': (37.394980, -121.934150), 'Label': 'Orchard'},
     "Orchard (CO)": {'Location': (39.613529, -104.896192), 'Label': 'Orchard'},
+    "Orchard Ave": {'Location': (39.825400, -86.128830)},
     "Oregon City": {'Location': (45.365950, -122.596060)},
     "Oreland": {'Location': (40.118130, -75.183890)},
     "Orem Central": {'Location': (40.279930, -111.725360)},
@@ -6910,6 +6929,7 @@ Stations = {
     "Sheridan St": {'Location': (26.031960, -80.168010)},
     "Sheridan/Irving Park": {'Location': (41.953890, -87.655164), 'Label': 'Sheridan'},
     "Sherman Dr": {'Location': (39.769190, -86.102150)},
+    "Sherman Dr (38th)": {'Location': (39.825320, -86.103130), 'Label': 'Sherman Dr'},
     "Sherman Way": {'Location': (34.200570, -118.597060)},
     "Shiloh": {'Location': (39.812330, -84.227110)},
     "Shiloh Road": {'Location': (33.012530, -96.665350)},
@@ -7789,6 +7809,7 @@ Stations = {
     "Warsaw": {'Location': (41.235820, -85.855960)},
     "Wasco": {'Location': (35.593930, -119.331930)},
     "Washago": {'Location': (44.748360, -79.334870)},
+    "Washington & 38th": {'Location': (39.824490, -86.156850), 'Label': '38th St'},
     "Washington & Hyde": {'Location': (37.793720, -122.417700)},
     "Washington & Jones": {'Location': (37.794030, -122.414830)},
     "Washington & Leavenworth": {'Location': (37.793890, -122.416130)},
@@ -11414,6 +11435,18 @@ Segments = {
     "Indianapolis Light Rail": {
         "F": ['Indianapolis Motor Speedway (LRT)', 'Speedway East', 'Livingston Ave', 'Tibbs Ave', 'Kessler Blvd', 'Lafayette Rd', 'East Riverside Dr', 'Montcalm St', 'MLK Jr St', 'IU Health (LRT)', 'Meridian St', 'Delaware St', 'Central Ave (Indianapolis)', 'College Ave (LRT)', 'Cornell Ave'],
     },
+    "Indianapolis Regional Rail (Union - 30th St)": {
+        "F": ['Indianapolis Regional Rail (Union - Chatham Junction)', '16th St (Indianapolis)', '30th St (Indianapolis)'],
+    },
+    "Indianapolis Regional Rail (Union - Carmel)": {
+        "F": ['Indianapolis Regional Rail (Union - 30th St)', 'Indiana State Fairgrounds (Mainline)', '54th St (Indianapolis)', 'Broad Ripple', 'Meridian Hills', 'North Central', '106th St', 'Carmel'],
+    },
+    "Indianapolis Regional Rail (Union - Chatham Junction)": {
+        "F": ['Indianapolis Approach (Union - East)', '[X] Indianapolis Chatham Junction'],
+    },
+    "Indianapolis Regional Rail (Union - Fishers)": {
+        "F": ['Indianapolis Regional Rail (Union - 30th St)', '38th St (Indianapolis)', '52nd St', 'Eastwood', 'Allisonville', 'Castleton', '96th St', 'Fishers'],
+    },
     "Indianapolis Regional Rail (Union - Franklin)": {
         "F": ['Indianapolis Approach (Union - East)', 'Raymond St (Mainline)', 'University of Indianapolis', 'Edgewood (IN)', 'Southport (IN)', 'County Line (IN)', 'Greenwood (IN)', 'East Worthsville', 'Whiteland', 'County Rd 300', 'Franklin (IN)'],
     },
@@ -11424,13 +11457,13 @@ Segments = {
         "F": ['Indianapolis Approach (Union - West)', 'Stout Field', '[X] Indianapolis Airport Bend (Mainline)', 'Rockville Rd', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
     "Indianapolis Regional Rail (Union - Muncie)": {
-        "F": ['Indianapolis Approach (Union - East)', 'Tacoma Ave', 'Emerson Ave (Mainline)', 'Lawrence-Franklin Rd', 'McChordsville', 'Fortville', 'Pendleton', 'Anderson (IN)', 'Muncie'],
+        "F": ['Indianapolis Regional Rail (Union - Chatham Junction)', 'Tacoma Ave', 'Emerson Ave (Mainline)', 'Lawrence-Franklin Rd', 'McChordsville', 'Fortville', 'Pendleton', 'Anderson (IN)', 'Muncie'],
     },
     "Indianapolis Subway (Downtown - East)": {
         "F": ['Indiana Statehouse', 'Washington/Meridian', 'Carson Transit Center', 'East St', 'College Ave', 'Highland Ave (Indianapolis)', 'Arsenal Heights', 'Rural St', 'Sherman Dr', 'Emerson Ave (Subway)', 'Arlington Ave', 'East Gate'],
     },
     "Indianapolis Subway (Downtown - North)": {
-        "F": ['Indiana Statehouse', 'Ohio St', 'Michigan St', 'St. Clair St', 'Old Northside', '10th St (Indianapolis)', 'IU Health', '21st St', '[X] Indianapolis 21st St Bend W', '[X] Indianapolis 21st St Bend E', 'Near Northside', 'Fall Creek', 'Meridian Park', 'Mapleton', '38th St (Indianapolis)', '[X] Indianapolis 38th St Bend', 'College Ave North', 'Indiana State Fairgrounds'],
+        "F": ['Indiana Statehouse', 'Ohio St', 'Michigan St', 'St. Clair St', 'Old Northside', '10th St (Indianapolis)', 'IU Health', '21st St', '[X] Indianapolis 21st St Bend W', '[X] Indianapolis 21st St Bend E', 'Near Northside', 'Fall Creek', 'Meridian Park', 'Mapleton', 'Washington & 38th', '[X] Indianapolis 38th St Bend', 'College Ave North', 'Indiana State Fairgrounds (Metro)', 'Orchard Ave', 'Keystone Ave', 'Meadows Dr', 'Sherman Dr (38th)'],
     },
     "Indianapolis Subway (Downtown - South)": {
         "F": ['Indiana Statehouse', 'Indianapolis Union Station (Subway)', 'Lucas Oil Stadium', '[X] Indianapolis Merrill Bend W', '[X] Indianapolis Merrill Bend E', 'McCarty St', 'Morris St', 'Gates-Hendricks', 'Minnesota St', 'Raymond St (Subway)', 'Garfield Park', 'Troy Ave', 'Sumner Ave', 'Hanna Ave', 'Lawrence Ave', 'Thompson Rd', 'Epler Ave', 'Edgewood Ave', 'Banta Rd', 'Southport Rd'],
@@ -12566,7 +12599,7 @@ Segments = {
         "F": ['Oakland Coliseum (APM)', 'Oakland International Airport'],
     },
     "Oklahoma City Light Rail": {
-        "F": ['Remington Park', '[X] OKC Remington Bend', 'Science Museum/Zoo', 'Zoo Ampitheatre', 'Metro Tech', '36th St (OKC)', '30th St (OKC)', '26th St (OKC)', '[X] OKC MLK Bend', 'MLK Ave (OKC)', 'Prospect Ave', 'Kelley Ave', 'Oklahoma Capitol', 'Oklahoma Ave', 'Robinson Ave', '[X] OKC Robinson Bend', '20th St (OKC)', '16th St', '13th St (OKC)', '10th St (OKC)', '8th St (OKC)', '4th St (OKC)', 'Main St (OKC)', 'Paycom Center', 'OKC Convention Center', '11th St (OKC)', '15th St (OKC)', 'Wiley Post Park', 'Capitol Hill (OKC)', '[X] OKC Capitol Hill Bend', 'Walker Ave', 'Western Ave (OKC)', 'Blackwelder Ave', 'Pennsylvania Ave', 'Agnew Ave', 'May Ave', 'Dumas Ave', 'Roff Ave', 'Meridian Ave', '54th St (OKC)', 'OKC Airport'],
+        "F": ['Remington Park', '[X] OKC Remington Bend', 'Science Museum/Zoo', 'Zoo Ampitheatre', 'Metro Tech', '36th St (OKC)', '30th St (OKC)', '26th St (OKC)', '[X] OKC MLK Bend', 'MLK Ave (OKC)', 'Prospect Ave', 'Kelley Ave', 'Oklahoma Capitol', 'Oklahoma Ave', 'Robinson Ave', '[X] OKC Robinson Bend', '20th St (OKC)', '16th St (OKC)', '13th St (OKC)', '10th St (OKC)', '8th St (OKC)', '4th St (OKC)', 'Main St (OKC)', 'Paycom Center', 'OKC Convention Center', '11th St (OKC)', '15th St (OKC)', 'Wiley Post Park', 'Capitol Hill (OKC)', '[X] OKC Capitol Hill Bend', 'Walker Ave', 'Western Ave (OKC)', 'Blackwelder Ave', 'Pennsylvania Ave', 'Agnew Ave', 'May Ave', 'Dumas Ave', 'Roff Ave', 'Meridian Ave', '54th St (OKC)', 'OKC Airport'],
     },
     "Oklahoma City Regional Rail (Downtown - Edmond)": {
         "F": ['Oklahoma City', 'Jefferson Park/Capitol', 'Wildewood Hills', 'Britton', 'Chisholm Creek', 'Northgate (OKC)', 'Edmond'],
@@ -15189,9 +15222,19 @@ Lines = {
         },
     },
     "IndyGo": {
+        "Carmel Line": {
+            "Fantasy": {
+                "Indianapolis - Carmel": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Carmel)'},
+            },
+        },
         "Crosstown": {
             "Fantasy": {
                 "Speedway - Cornell Ave": {'Mode': 'Light Rail', 'Stations': 'Indianapolis Light Rail'},
+            },
+        },
+        "Fishers Line": {
+            "Fantasy": {
+                "Indianapolis - Fishers": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Fishers)'},
             },
         },
         "Franklin Line": {
@@ -15201,7 +15244,7 @@ Lines = {
         },
         "Line 1": {
             "Fantasy": {
-                "38th St - Southport": {'Mode': 'Heavy Metro', 'Stations': 'Indianapolis Subway (North - South)'},
+                "Meadows - Southport": {'Mode': 'Heavy Metro', 'Stations': 'Indianapolis Subway (North - South)'},
             },
         },
         "Line 2": {
