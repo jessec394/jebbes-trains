@@ -11497,7 +11497,7 @@ Segments = {
         "F": ['Indiana Statehouse', 'Washington/Meridian', 'Carson Transit Center', 'East St', 'College Ave', 'Highland Ave (Indianapolis)', 'Arsenal Heights', 'Rural St', 'Sherman Dr', 'Emerson Ave (Subway)', 'Arlington Ave', 'East Gate'],
     },
     "Indianapolis Subway (Downtown - North)": {
-        "F": ['Indiana Statehouse', 'Ohio St', 'Michigan St', 'St. Clair St', 'Old Northside', '10th St (Indianapolis)', 'IU Health', '21st St', '[X] Indianapolis 21st St Bend W', '[X] Indianapolis 21st St Bend E', 'Near Northside', 'Fall Creek', 'Meridian Park', 'Mapleton', 'Washington & 38th', '[X] Indianapolis 38th St Bend', 'College Ave North', 'Indiana State Fairgrounds (Metro)', 'Orchard Ave', 'Keystone Ave', 'Meadows Dr', 'Sherman Dr (38th)'],
+        "F": ['Indiana Statehouse', 'Ohio St', 'Michigan St', 'St. Clair St', '10th St (Indianapolis)', 'Old Northside', 'IU Health', '21st St', '[X] Indianapolis 21st St Bend W', '[X] Indianapolis 21st St Bend E', 'Near Northside', 'Fall Creek', 'Meridian Park', 'Mapleton', 'Washington & 38th', '[X] Indianapolis 38th St Bend', 'College Ave North', 'Indiana State Fairgrounds (Metro)', 'Orchard Ave', 'Keystone Ave', 'Meadows Dr', 'Sherman Dr (38th)'],
     },
     "Indianapolis Subway (Downtown - South)": {
         "F": ['Indiana Statehouse', 'Indianapolis Union Station (Subway)', 'Lucas Oil Stadium', '[X] Indianapolis Merrill Bend W', '[X] Indianapolis Merrill Bend E', 'McCarty St', 'Morris St', 'Gates-Hendricks', 'Minnesota St (KC)', 'Raymond St (Subway)', 'Garfield Park', 'Troy Ave', 'Sumner Ave', 'Hanna Ave', 'Lawrence Ave', 'Thompson Rd', 'Epler Ave', 'Edgewood Ave', 'Banta Rd', 'Southport Rd'],
