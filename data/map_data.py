@@ -165,6 +165,7 @@ Nodes = {
 	"Indianapolis Northwest Bend N": {'Location': (39.821030, -86.225950)},
 	"Indianapolis Northwest Bend S": {'Location': (39.781910, -86.225310)},
 	"Indianapolis Stout Field Bend": {'Location': (39.748450, -86.264570)},
+	"Indianapolis Stout Field Junction": {'Location': (39.754580, -86.220540)},
 	"Indianapolis West Bend": {'Location': (39.764100, -86.176110)},
 	"JFK AirTrain Bend 1": {'Location': (40.697050, -73.813430)},
 	"JFK AirTrain Bend 2": {'Location': (40.673530, -73.801290)},
@@ -693,6 +694,7 @@ Stations = {
     "145 St (Broadway)": {'Location': (40.826430, -73.950440), 'Label': '145 St'},
     "145 St (Malcolm X)": {'Location': (40.820410, -73.936240), 'Label': '145 St'},
     "145 St (St. Nicholas)": {'Location': (40.824240, -73.944910), 'Label': '145 St'},
+    "146th St": {'Location': (39.999620, -86.008690)},
     "147th St": {'Location': (44.736980, -93.217700)},
     "147th St (Sibley Blvd)": {'Location': (41.622860, -87.636030)},
     "148 St-Lenox Terminal": {'Location': (40.824050, -73.936930)},
@@ -1204,6 +1206,7 @@ Stations = {
     "American Blvd": {'Location': (44.858725, -93.223170)},
     "American Fork": {'Location': (40.374770, -111.820640)},
     "American Legion Drive": {'Location': (40.889510, -74.054270)},
+    "Ameriplex": {'Location': (39.672460, -86.298240)},
     "Amherst (NS)": {'Location': (45.830460, -64.212560), 'Label': 'Amherst'},
     "Amherst (OH)": {'Location': (41.396380, -82.222340), 'Label': 'Amherst'},
     "Amherst St": {'Location': (42.939820, -78.838620)},
@@ -2807,6 +2810,7 @@ Stations = {
     "Decatur (AL)": {'Location': (34.599570, -86.986730), 'Label': 'Decatur'},
     "Decatur (Buffalo)": {'Location': (42.968620, -78.823410), 'Label': 'Decatur'},
     "Decatur (GA)": {'Location': (33.774690, -84.295340), 'Label': 'Decatur'},
+    "Decatur (IN)": {'Location': (39.695140, -86.270210), 'Label': 'Decatur'},
     "Decatur-Federal": {'Location': (39.737287, -105.024002)},
     "Decker Lake": {'Location': (40.704880, -111.948680)},
     "Decker Oaks": {'Location': (30.144480, -95.637160)},
@@ -3538,6 +3542,7 @@ Stations = {
     "Fresno (TX)": {'Location': (29.537680, -95.449460), 'Label': 'Fresno'},
     "Fridley": {'Location': (45.078860, -93.270889)},
     "Friendship Heights": {'Location': (38.960930, -77.086070)},
+    "Friendswood": {'Location': (39.646090, -86.330620)},
     "Frisco City": {'Location': (31.431810, -87.400170)},
     "Front Park": {'Location': (42.897560, -78.897640)},
     "Front-Girard": {'Location': (39.969240, -75.136180)},
@@ -5025,6 +5030,7 @@ Stations = {
     "Marlborough": {'Location': (51.059070, -113.981690)},
     "Marquette Dr": {'Location': (42.363020, -82.978960)},
     "Mars": {'Location': (41.919120, -87.794470)},
+    "Mars Hill": {'Location': (39.714570, -86.238090)},
     "Marshall (MN)": {'Location': (44.450160, -95.796790), 'Label': 'Marshall'},
     "Marshall (TX)": {'Location': (32.551580, -94.367380), 'Label': 'Marskall'},
     "Marsheutz Ave": {'Location': (34.716740, -86.577260)},
@@ -5278,7 +5284,8 @@ Stations = {
     "Minerva Park": {'Location': (40.078220, -82.930210)},
     "Minneapolis Target Field": {'Location': (44.983269, -93.277072), 'Major': True},
     "Minnesota Avenue": {'Location': (38.899130, -76.946780)},
-    "Minnesota St": {'Location': (39.744450, -86.154480)},
+    "Minnesota St (Indianapolis)": {'Location': (39.743600, -86.220840), 'Label': 'Minnesota St'},
+    "Minnesota St (KC)": {'Location': (39.744450, -86.154480), 'Label': 'Minnesota St'},
     "Minot": {'Location': (48.236120, -101.298600)},
     "Mint St": {'Location': (35.229460, -80.845690)},
     "Miquick": {'Location': (47.219870, -72.251320)},
@@ -5362,6 +5369,7 @@ Stations = {
     "Moore": {'Location': (35.338790, -97.484300)},
     "Moores Ln": {'Location': (35.966440, -86.817820)},
     "Moores Mill": {'Location': (33.822290, -84.449310)},
+    "Mooresville": {'Location': (39.609750, -86.370980)},
     "Moorpark": {'Location': (34.284860, -118.878050)},
     "Moose Jaw": {'Location': (50.389250, -105.535250)},
     "Moraine": {'Location': (39.710130, -84.236110)},
@@ -5647,6 +5655,7 @@ Stations = {
     "Nobel Dr": {'Location': (32.866900, -117.230430)},
     "Noble (OK)": {'Location': (35.140060, -97.398290), 'Label': 'Noble'},
     "Noble (PA)": {'Location': (40.104480, -75.124660), 'Label': 'Noble'},
+    "Noblesville": {'Location': (40.037610, -86.014740)},
     "Nogales (AZ)": {'Location': (31.334380, -110.940630), 'Label': 'Nogales'},
     "Nogales (SO)": {'Location': (31.331330, -110.943350), 'Label': 'Heroica Nogales'},
     "Noonday": {'Location': (34.066920, -84.520580)},
@@ -9135,6 +9144,10 @@ Segments = {
     "-Intercity LS (Huntsville - Mobile)": {
         "F": ['Huntsville', 'Decatur (AL)', 'Birmingham (AL)', '-Intercity LS (Montgomery - Mobile)'],
     },
+    "-Intercity LS (Indianapolis - Anderson)": {
+        "F": ['Indianapolis Regional Rail (Union - Anderson)'],
+        "Keep": ['Indianapolis Union Station', 'Anderson (IN)'],
+    },
     "-Intercity LS (Indianapolis - Cincinnati)": {
         "F": ['Indianapolis Approach (Union - East)', 'Connersville', 'Oxford', '[R] -Intercity LS (Cincinnati - Hamilton)'],
     },
@@ -9149,10 +9162,6 @@ Segments = {
     "-Intercity LS (Indianapolis - Louisville)": {
         "F": ['-Intercity LS (Indianapolis - Franklin)', 'Columbus (IN)', 'Scottsburg', 'Louisville'],
     },
-    "-Intercity LS (Indianapolis - Muncie)": {
-        "F": ['Indianapolis Regional Rail (Union - Muncie)'],
-        "Keep": ['Indianapolis Union Station', 'Anderson (IN)', 'Muncie'],
-    },
     "-Intercity LS (Indianapolis - Nashville)": {
         "F": ['-Intercity LS (Indianapolis - Terre Haute)', 'Evansville', 'Hopkinsville', '[R] -Intercity LS (Nashville - Goodlettsville)'],
     },
@@ -9160,7 +9169,7 @@ Segments = {
         "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis North Airport Bend', 'Terre Haute'],
     },
     "-Intercity LS (Indianapolis - Toledo)": {
-        "F": ['-Intercity LS (Indianapolis - Muncie)', '[R] -Intercity LS (Fort Wayne - Muncie)', '[R] -Intercity LS (Toledo - Bryan)'],
+        "F": ['-Intercity LS (Indianapolis - Anderson)', 'Muncie', '[R] -Intercity LS (Fort Wayne - Muncie)', '[R] -Intercity LS (Toledo - Bryan)'],
     },
     "-Intercity LS (Jacksonville - Gainesville)": {
         "F": ['Jacksonville', 'Starke', 'Alachua', 'Gainesville'],
@@ -11438,14 +11447,14 @@ Segments = {
     "Indianapolis Regional Rail (Union - 30th St)": {
         "F": ['Indianapolis Regional Rail (Union - Chatham Junction)', '16th St (Indianapolis)', '30th St (Indianapolis)'],
     },
+    "Indianapolis Regional Rail (Union - Anderson)": {
+        "F": ['Indianapolis Regional Rail (Union - Chatham Junction)', 'Tacoma Ave', 'Emerson Ave (Mainline)', 'Lawrence-Franklin Rd', 'McChordsville', 'Fortville', 'Pendleton', 'Anderson (IN)'],
+    },
     "Indianapolis Regional Rail (Union - Carmel)": {
         "F": ['Indianapolis Regional Rail (Union - 30th St)', 'Indiana State Fairgrounds (Mainline)', '54th St (Indianapolis)', 'Broad Ripple', 'Meridian Hills', 'North Central', '106th St', 'Carmel'],
     },
     "Indianapolis Regional Rail (Union - Chatham Junction)": {
         "F": ['Indianapolis Approach (Union - East)', '[X] Indianapolis Chatham Junction'],
-    },
-    "Indianapolis Regional Rail (Union - Fishers)": {
-        "F": ['Indianapolis Regional Rail (Union - 30th St)', '38th St (Indianapolis)', '52nd St', 'Eastwood', 'Allisonville', 'Castleton', '96th St', 'Fishers'],
     },
     "Indianapolis Regional Rail (Union - Franklin)": {
         "F": ['Indianapolis Approach (Union - East)', 'Raymond St (Mainline)', 'University of Indianapolis', 'Edgewood (IN)', 'Southport (IN)', 'County Line (IN)', 'Greenwood (IN)', 'East Worthsville', 'Whiteland', 'County Rd 300', 'Franklin (IN)'],
@@ -11454,10 +11463,16 @@ Segments = {
         "F": ['Indianapolis Approach (Union - West)', 'Near Westside', 'Indianapolis Motor Speedway', 'Darby Court', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
     "Indianapolis Regional Rail (Union - Lizton)": {
-        "F": ['Indianapolis Approach (Union - West)', 'Stout Field', '[X] Indianapolis Airport Bend (Mainline)', 'Rockville Rd', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
+        "F": ['Indianapolis Regional Rail (Union - Stout Field)', 'Stout Field', '[X] Indianapolis Airport Bend (Mainline)', 'Rockville Rd', 'Clermont', 'Brownsburg', 'Pittsboro', 'Lizton'],
     },
-    "Indianapolis Regional Rail (Union - Muncie)": {
-        "F": ['Indianapolis Regional Rail (Union - Chatham Junction)', 'Tacoma Ave', 'Emerson Ave (Mainline)', 'Lawrence-Franklin Rd', 'McChordsville', 'Fortville', 'Pendleton', 'Anderson (IN)', 'Muncie'],
+    "Indianapolis Regional Rail (Union - Mooresville)": {
+        "F": ['Indianapolis Regional Rail (Union - Stout Field)', 'Minnesota St (Indianapolis)', 'Mars Hill', 'Decatur (IN)', 'Ameriplex', 'Friendswood', 'Mooresville'],
+    },
+    "Indianapolis Regional Rail (Union - Noblesville)": {
+        "F": ['Indianapolis Regional Rail (Union - 30th St)', '38th St (Indianapolis)', '52nd St', 'Eastwood', 'Allisonville', 'Castleton', '96th St', 'Fishers', '146th St', 'Noblesville'],
+    },
+    "Indianapolis Regional Rail (Union - Stout Field)": {
+        "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis Stout Field Junction'],
     },
     "Indianapolis Subway (Downtown - East)": {
         "F": ['Indiana Statehouse', 'Washington/Meridian', 'Carson Transit Center', 'East St', 'College Ave', 'Highland Ave (Indianapolis)', 'Arsenal Heights', 'Rural St', 'Sherman Dr', 'Emerson Ave (Subway)', 'Arlington Ave', 'East Gate'],
@@ -11466,7 +11481,7 @@ Segments = {
         "F": ['Indiana Statehouse', 'Ohio St', 'Michigan St', 'St. Clair St', 'Old Northside', '10th St (Indianapolis)', 'IU Health', '21st St', '[X] Indianapolis 21st St Bend W', '[X] Indianapolis 21st St Bend E', 'Near Northside', 'Fall Creek', 'Meridian Park', 'Mapleton', 'Washington & 38th', '[X] Indianapolis 38th St Bend', 'College Ave North', 'Indiana State Fairgrounds (Metro)', 'Orchard Ave', 'Keystone Ave', 'Meadows Dr', 'Sherman Dr (38th)'],
     },
     "Indianapolis Subway (Downtown - South)": {
-        "F": ['Indiana Statehouse', 'Indianapolis Union Station (Subway)', 'Lucas Oil Stadium', '[X] Indianapolis Merrill Bend W', '[X] Indianapolis Merrill Bend E', 'McCarty St', 'Morris St', 'Gates-Hendricks', 'Minnesota St', 'Raymond St (Subway)', 'Garfield Park', 'Troy Ave', 'Sumner Ave', 'Hanna Ave', 'Lawrence Ave', 'Thompson Rd', 'Epler Ave', 'Edgewood Ave', 'Banta Rd', 'Southport Rd'],
+        "F": ['Indiana Statehouse', 'Indianapolis Union Station (Subway)', 'Lucas Oil Stadium', '[X] Indianapolis Merrill Bend W', '[X] Indianapolis Merrill Bend E', 'McCarty St', 'Morris St', 'Gates-Hendricks', 'Minnesota St (KC)', 'Raymond St (Subway)', 'Garfield Park', 'Troy Ave', 'Sumner Ave', 'Hanna Ave', 'Lawrence Ave', 'Thompson Rd', 'Epler Ave', 'Edgewood Ave', 'Banta Rd', 'Southport Rd'],
     },
     "Indianapolis Subway (Downtown - West)": {
         "F": ['Indiana Statehouse', 'West St', 'Indianapolis Zoo', 'Harding St', 'Belmont Ave (Indianapolis)', 'Warman Ave', 'Alton Ave', 'Shelton Heights', 'Fleming St', 'Lynhurst Dr', '[X] Indianapolis Stout Field Bend', 'Park Fletcher', '[X] Indianapolis Airport Bend (Subway)', 'Indianapolis Airport'],
@@ -15222,6 +15237,11 @@ Lines = {
         },
     },
     "IndyGo": {
+        "Anderson Line": {
+            "Fantasy": {
+                "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Anderson)'},
+            },
+        },
         "Carmel Line": {
             "Fantasy": {
                 "Indianapolis - Carmel": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Carmel)'},
@@ -15230,11 +15250,6 @@ Lines = {
         "Crosstown": {
             "Fantasy": {
                 "Speedway - Cornell Ave": {'Mode': 'Light Rail', 'Stations': 'Indianapolis Light Rail'},
-            },
-        },
-        "Fishers Line": {
-            "Fantasy": {
-                "Indianapolis - Fishers": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Fishers)'},
             },
         },
         "Franklin Line": {
@@ -15258,9 +15273,14 @@ Lines = {
                 "Indianapolis - Lizton vis Speedway": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Lizton via Speedway)'},
             },
         },
-        "Muncie Line": {
+        "Mooresville Line": {
             "Fantasy": {
-                "Indianapolis - Muncie": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Muncie)'},
+                "Indianapolis - Mooresville": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Mooresville)'},
+            },
+        },
+        "Noblesville Line": {
+            "Fantasy": {
+                "Indianapolis - Noblesville": {'Mode': 'Heavy Rail', 'Stations': 'Indianapolis Regional Rail (Union - Noblesville)'},
             },
         },
     },
