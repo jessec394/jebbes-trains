@@ -23,9 +23,8 @@ for key in sorted(Stations.keys()):
     if isinstance(content, dict) and 'Location' in content:
         location_string = formatCoordinates(content['Location'])
         inner_parts = [f"'Location': {location_string}"]
-        for k, v in content.items():
-            if k != 'Location':
-                inner_parts.append(f"{repr(k)}: {repr(v)}")
+        for k in sorted(v for v in content.keys() if v != 'Location'):
+            inner_parts.append(f"{repr(k)}: {repr(content[k])}")
         station_content = "{" + ", ".join(inner_parts) + "}"
         output += f'    "{key}": {station_content},\n'
     else:
@@ -37,8 +36,8 @@ for key in sorted(Segments.keys()):
     content = Segments[key]
     output += f'    "{key}": {{\n'
     if isinstance(content, dict):
-        for inner_key, inner_value in content.items():
-            output += f'        "{inner_key}": {repr(inner_value)},\n'
+        for inner_key in sorted(content.keys()):
+            output += f'        "{inner_key}": {repr(content[inner_key])},\n'
     output += "    },\n"
 output += "}\n\n"
 
@@ -66,19 +65,15 @@ output += "}\n\n"
 output += "Destinations = {\n"
 for category in sorted(Destinations.keys()):
     output += f'    "{category}": {{\n'
-    category_content = Destinations[category]
-    for dest_name in sorted(category_content.keys()):
-        details = category_content[dest_name]
+    for dest_name in sorted(Destinations[category].keys()):
+        details = Destinations[category][dest_name]
         if isinstance(details, dict) and 'Location' in details:
             loc_str = formatCoordinates(details['Location'])
-            sorted_stations = sorted(details.get('Stations', []))
-
-            present = details.get('Present', True)
-            fantasy = details.get('Fantasy', True)
-
-            output += (f'        "{dest_name}": {{"Location": {loc_str}, '
-                       f'"Stations": {repr(sorted_stations)}, '
-                       f'\'Present\': {present}, \'Fantasy\': {fantasy}}},\n')
+            inner = f'"Location": {loc_str}'
+            inner += f', "Stations": {repr(sorted(details.get("Stations", [])))}'
+            for k in sorted(v for v in details.keys() if v not in ('Location', 'Stations')):
+                inner += f', {repr(k)}: {repr(details[k])}'
+            output += f'        "{dest_name}": {{{inner}}},\n'
         else:
             output += f'        "{dest_name}": {repr(details)},\n'
     output += "    },\n"
