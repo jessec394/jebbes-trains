@@ -162,8 +162,8 @@ Nodes = {
 	"Indianapolis Merrill Bend E": {'Location': (39.758940, -86.157260)},
 	"Indianapolis Merrill Bend W": {'Location': (39.759020, -86.162020)},
 	"Indianapolis North Airport Bend": {'Location': (39.760320, -86.313360)},
-	"Indianapolis Northwest Bend N": {'Location': (39.821030, -86.225950)},
-	"Indianapolis Northwest Bend S": {'Location': (39.781910, -86.225310)},
+	"Indianapolis Northwest Bend": {'Location': (39.781910, -86.225310)},
+	"Indianapolis Northwest Junction": {'Location': (39.821030, -86.225950)},
 	"Indianapolis Stout Field Bend": {'Location': (39.748450, -86.264570)},
 	"Indianapolis Stout Field Junction": {'Location': (39.754580, -86.220540)},
 	"Indianapolis West Bend": {'Location': (39.764100, -86.176110)},
@@ -10336,12 +10336,6 @@ Segments = {
     "Boston Light Rail (East Somerville - Medford)": {
         "F": ['East Somerville', 'Gilman Square', 'Magoun Square', 'Ball Square', 'Medford/Tufts'],
     },
-    "Boston Light Rail (Medford - Boston College)": {
-        "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Boston College)'],
-    },
-    "Boston Light Rail (Medford - Cleveland Circle)": {
-        "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Cleveland Circle)'],
-    },
     "Boston Light Rail (Medford - Heath Street)": {
         "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Heath Street)'],
     },
@@ -10349,7 +10343,7 @@ Segments = {
         "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Riverside)'],
     },
     "Boston Light Rail (North Station - Boston College)": {
-        "F": ['Boston Light Rail (North Station - Kenmore)', 'Blandford Street', 'Boston University East', 'Boston University Central', 'Armory Street', 'Babcock Street', 'Packards Corner', 'Harvard Avenue', 'Griggs Street', 'Warren Street (Boston)', 'Washington Street (Boston)', 'Sutherland Road', 'Chiswick Road', 'Chestnut Hill Avenue', 'South Street', 'Boston College'],
+        "F": ['Boston Light Rail (North Station - Kenmore)', 'Blandford Street', 'Boston University East', 'Boston University Central', 'Armory Street', 'Babcock Street', 'Packards Corner', 'Harvard Avenue', 'Griggs Street', 'Allston Street', 'Warren Street (Boston)', 'Washington Street (Boston)', 'Sutherland Road', 'Chiswick Road', 'Chestnut Hill Avenue', 'South Street', 'Boston College'],
     },
     "Boston Light Rail (North Station - Cleveland Circle)": {
         "F": ['Boston Light Rail (North Station - Kenmore)', "Saint Mary's Street", 'Hawes Street', 'Kent Street', 'Saint Paul Street', 'Coolidge Corner', 'Summit Avenue', 'Brandon Hall', 'Fairbanks Street', 'Washington Square', 'Tappan Street', 'Dean Road', 'Englewood Avenue', 'Cleveland Circle'],
@@ -10358,7 +10352,7 @@ Segments = {
         "F": ['Boston North Station', 'Haymarket', 'Boston Government Center', 'Park Street', 'Boylston', 'Arlington (MA)', 'Copley'],
     },
     "Boston Light Rail (North Station - Heath Street)": {
-        "F": ['Boston Light Rail (North Station - Copley)', 'Prudential', 'Symphony (Boston)', 'Northeastern University', 'Longwood Medical Area', 'Brigham Circle', 'Fenwood Road', 'Mission Park', 'Riverway', 'Heath Street'],
+        "F": ['Boston Light Rail (North Station - Copley)', 'Prudential', 'Symphony (Boston)', 'Northeastern University', 'Museum of Fine Arts', 'Longwood Medical Area', 'Brigham Circle', 'Fenwood Road', 'Mission Park', 'Riverway', 'Back of the Hill', 'Heath Street'],
     },
     "Boston Light Rail (North Station - Kenmore)": {
         "F": ['Boston Light Rail (North Station - Copley)', 'Hynes Convention Center', 'Kenmore (Boston)'],
@@ -10374,6 +10368,12 @@ Segments = {
     },
     "Boston Light Rail (North Station - Union Square)": {
         "F": ['Boston Light Rail (North Station - Lechmere)', 'Union Square'],
+    },
+    "Boston Light Rail (Union Square - Boston College)": {
+        "F": ['[R] Boston Light Rail (North Station - Union Square)', 'Boston Light Rail (North Station - Boston College)'],
+    },
+    "Boston Light Rail (Union Square - Cleveland Circle)": {
+        "F": ['[R] Boston Light Rail (North Station - Union Square)', 'Boston Light Rail (North Station - Cleveland Circle)'],
     },
     "Boston NSRL": {
         "F": ['Boston North Station', '[X] Haymarket', 'Boston South Station'],
@@ -10921,7 +10921,7 @@ Segments = {
         "F": ['[R] Cleveland Subway (Tower City - Wright Ave)', 'Cleveland Subway (Tower City - Little Italy)'],
     },
     "Colorado Springs Light Rail": {
-        "F": ['Manitou Springs', 'El Monte Pl', 'Crystal Park Rd', 'Beckers Ln', 'Columbia Rd', 'Colorado/Ridge', 'Colorado/34th', 'Colorado/31st', 'Colorado/30th', 'Colorado/28th', 'Colorado/26th', 'Colorado/23rd', 'Colorado/21st', 'Colorado/17th', 'Colorado/14th', 'Colorado/11th', 'Colorado/Limit', 'Colorado/Walnut', '[X] Colorado Springs Cascade Bend', 'Pines Peak Center', '[X] Colorado Springs Vermijo Bend W', '[X] Colorado Springs Vermijo Bend E', 'Pioneers Museum', 'Pikes Peak Ave', 'Platte Ave', 'Willamette Ave', 'Cache La Poudre', 'Uintah St', 'Columbia St', 'Caramillo St', 'Fontanero St', 'Jackson St (Colorado Springs)', 'Harrison St', 'Fillmore St', 'Commerce St', 'Nichols Blvd', 'Mt View Ln', 'Austin Bluffs Pkwy', 'Mallow Rd', 'West Edge', 'Regent Circle'],
+        "F": ['Manitou Springs', 'El Monte Pl', 'Crystal Park Rd', 'Beckers Ln', 'Columbia Rd', 'Colorado/Ridge', 'Colorado/34th', 'Colorado/31st', 'Colorado/30th', 'Colorado/28th', 'Colorado/26th', 'Colorado/23rd', 'Colorado/21st', 'Colorado/17th', 'Colorado/14th', 'Colorado/11th', 'Colorado/Limit', 'Colorado/Walnut', '[X] Colorado Springs Cascade Bend', 'Pikes Peak Center', '[X] Colorado Springs Vermijo Bend W', '[X] Colorado Springs Vermijo Bend E', 'Pioneers Museum', 'Pikes Peak Ave', 'Platte Ave', 'Willamette Ave', 'Cache La Poudre', 'Uintah St', 'Columbia St', 'Caramillo St', 'Fontanero St', 'Jackson St (Colorado Springs)', 'Harrison St', 'Fillmore St', 'Commerce St', 'Nichols Blvd', 'Mt View Ln', 'Austin Bluffs Pkwy', 'Mallow Rd', 'West Edge', 'Regent Circle'],
     },
     "Columbus Approach (Columbus - Northeast)": {
         "F": ['Columbus (OH)', '[X] Columbus Hayes Junction'],
@@ -11199,7 +11199,7 @@ Segments = {
         "F": ['Detroit New Center', '[X] Detroit New Center Junction'],
     },
     "Detroit People Mover": {
-        "L": ['Financial District', 'Millender Center', 'Renaissance Center', 'Bricktown', 'Greektown', 'Cadillac Center', 'Broadway', 'Grand Circus Park', 'Times Square', 'Michigan', 'Ford/Cass', 'Huntington Place', 'Water Square', 'Financial District'],
+        "L": ['Financial District', 'Millender Center', 'Renaissance Center', 'Bricktown', 'Greektown', 'Cadillac Center', 'Broadway', 'Grand Circus Park', 'Times Square', 'Michigan', 'Fort/Cass', 'Huntington Place', 'Water Square', 'Financial District'],
     },
     "Detroit Peoplemover (DTW Airport)": {
         "F": ['Detroit Airport Transfer', 'Evans Terminal'],
@@ -11473,7 +11473,7 @@ Segments = {
         "F": ['Indianapolis Approach (Union - East)', '[X] Indianapolis Chatham Junction'],
     },
     "Indianapolis Regional Rail (Union - Eagledale)": {
-        "F": ['Indianapolis Regional Rail (Union - Speedway)', 'Eagledale', '[X] Indianapolis Northwest Junction N'],
+        "F": ['Indianapolis Regional Rail (Union - Speedway)', 'Eagledale', '[X] Indianapolis Northwest Junction'],
     },
     "Indianapolis Regional Rail (Union - Franklin)": {
         "F": ['Indianapolis Approach (Union - East)', 'Raymond St (Mainline)', 'University of Indianapolis', 'Edgewood (IN)', 'Southport (IN)', 'County Line (IN)', 'Greenwood (IN)', 'East Worthsville', 'Whiteland', 'County Rd 300', 'Franklin (IN)'],
@@ -11494,7 +11494,7 @@ Segments = {
         "F": ['Indianapolis Regional Rail (Union - 30th St)', '38th St (Indianapolis)', '52nd St', 'Eastwood', 'Allisonville', 'Castleton', '96th St', 'Fishers', '146th St', 'Noblesville'],
     },
     "Indianapolis Regional Rail (Union - Speedway)": {
-        "F": ['Indianapolis Approach (Union - West)', 'Near Westside', '[X] Indianapolis Northwest Junction S'],
+        "F": ['Indianapolis Approach (Union - West)', 'Near Westside', '[X] Indianapolis Northwest Bend'],
     },
     "Indianapolis Regional Rail (Union - Stout Field)": {
         "F": ['Indianapolis Approach (Union - West)', '[X] Indianapolis Stout Field Junction'],
@@ -13024,7 +13024,7 @@ Segments = {
         "F": ['Portland Approach (Union - East)', '[X] Portland Tilikum Bridge Junction', 'Clinton St/SE 12th Ave', '[X] Portland Yard Bend N', '[X] Portland Yard Bend S', 'SE Bybee Blvd', '[X] SE Tacoma/Johnson Creek', 'Hector Campbell', 'Clackamas', 'Oregon City', 'Canby', 'Aurora (OR)', 'Hubbard', 'Woodburn'],
     },
     "Portland Streetcar (10th Ave)": {
-        "L": ['S Moody & Meade', 'S River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', '[X] Portland Montgomery Junction', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glidan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
+        "L": ['S Moody & Meade', 'S River Parkway & Moody', 'SW Harrison Street', 'SW 3rd & Harrison', '[X] Portland Montgomery Junction', 'SW 5th & Mill', 'SW Park & Mill', '[X] Portland 10th Bend S', 'SW 10th & Clay', 'SW 10th & Jefferson', 'SW 10th & Taylor', 'SW 10th & Alder', 'NW 10th & Couch', 'NW 10th & Glisan', 'NW 10th & Johnson', '[X] Portland Lovejoy Junction E'],
     },
     "Portland Streetcar (11th Ave)": {
         "L": ['[X] Portland Lovejoy Junction W', 'NW 11th & Johnson', 'NW 11th & Glisan', 'NW 11th & Couch', 'SW 11th & Alder', 'SW 11th & Taylor', 'SW 11th & Jefferson', 'SW 11th & Clay', '[X] Portland 11th Bend S', 'SW Park & Market', 'SW 5th & Market', '[X] Portland Market Junction', '[X] SW 5th & Montgomery', '[X] Portland Montgomery Junction', 'SW 3rd & Harrison', 'SW Harrison Street', 'S River Parkway & Moody', 'S Moody & Meade'],
@@ -13269,14 +13269,14 @@ Segments = {
         "F": ['[X] San Francisco Hyde Junction', 'Hyde & Pacific', 'Hyde & Broadway', 'Hyde & Vallejo', 'Hyde & Green', 'Hyde & Union', 'Hyde & Filbert', 'Hyde & Greenwich', 'Hyde & Lombard', 'Hyde & Chestnut', 'Hyde & Bay', 'Hyde & North Point', 'Beach & Hyde', 'Hyde & Beach'],
     },
     "San Francisco Cable Car (Mason)": {
-        "F": ['[X] San Francisco Mason Junction N', 'Mason & Pacific', 'Mason & Broadway', 'Mason & Vallejo', 'Mason & Green', 'Mason & Union', 'Mason & Filbert', 'Mason & Greenwich', 'Columbus & Lombard', 'Columbus & Chestnut', 'Taylor & Francisco', 'Taylor & Bay'],
+        "F": ['[X] San Francisco Mason Junction N', 'Mason & Jackson', 'Mason & Pacific', 'Mason & Broadway', 'Mason & Vallejo', 'Mason & Green', 'Mason & Union', 'Mason & Filbert', 'Mason & Greenwich', 'Columbus & Lombard', 'Columbus & Chestnut', 'Taylor & Francisco', 'Taylor & Bay'],
     },
     "San Francisco Cable Car (Powell)": {
         "F": ['Powell & Market', "Powell & O'Farrell", 'Powell & Geary', 'Powell & Sutter', 'Powell & Bush', 'Powell & Pine', 'Powell & California', 'Powell & Sacramento', 'Powell & Clay', '[X] San Francisco Powell Junction'],
     },
     "San Francisco Cable Car (Powell-Hyde)": {
         "F": ['San Francisco Cable Car (Powell)', 'Powell & Jackson', '[X] San Francisco Powell Bend', '[X] San Francisco Mason Junction N', 'Jackson & Mason', 'Jackson & Taylor', 'Jackson & Jones', 'Jackson & Leavenworth', 'San Francisco Cable Car (Hyde)'],
-        "R": ['[R] San Francisco Cable Car (Hyde)', 'Hyde & Jackson', 'Washington & Hyde', 'Washington & Jones', 'Washington & Taylor', '[X] San Francisco Mason Junction S', '[R] San Francisco Cable Car (Powell)'],
+        "R": ['[R] San Francisco Cable Car (Hyde)', 'Hyde & Jackson', '[X] San Francisco Hyde Bend', 'Washington & Hyde', 'Washington & Leavenworth', 'Washington & Jones', 'Washington & Taylor', '[X] San Francisco Mason Junction S', 'Washington & Mason', '[R] San Francisco Cable Car (Powell)'],
     },
     "San Francisco Cable Car (Powell-Mason)": {
         "F": ['San Francisco Cable Car (Powell)', 'Powell & Jackson', '[X] San Francisco Powell Bend', 'San Francisco Cable Car (Mason)'],
@@ -13328,10 +13328,10 @@ Segments = {
         "F": ['Don Chee & Steuart', 'The Embarcadero & Ferry Building', 'The Embarcadero & Washington', 'The Embarcadero & Broadway', 'The Embarcadero & Green', 'The Embarcadero & Greenwich', 'The Embarcadero & Chestnut', 'The Embarcadero & Bay', '[X] San Francisco Embarcadero Junction'],
     },
     "San Francisco Streetcar (Embarcadero-Market)": {
-        "L": ['Jefferson & Powell', '[X] San Francisco Embarcadero Bend N', '[X] San Francisco Embarcadero Bend S', 'Besch & Jones', 'Beach & Mason', 'Stockton & Beach', '[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)', '[X] San Francisco Castro Junction', '17th & Noe', '17th & Castro', 'Market & Noe', '[X] Market & Castro St', '[X] San Francisco Castro Junction', '[R] San Francisco Streetcar (Market)', 'San Francisco Streetcar (Embarcadero)', 'The Embarcadero & Stockton', 'Jefferson & Powell'],
+        "L": ['Jefferson & Powell', '[X] San Francisco Embarcadero Bend N', '[X] San Francisco Embarcadero Bend S', 'Beach & Jones', 'Beach & Mason', 'Stockton & Beach', '[R] San Francisco Streetcar (Embarcadero)', 'San Francisco Streetcar (Market)', '[X] San Francisco Castro Junction', '17th & Noe', '17th & Castro', 'Market & Noe', '[X] Market & Castro St', '[X] San Francisco Castro Junction', '[R] San Francisco Streetcar (Market)', 'San Francisco Streetcar (Embarcadero)', 'The Embarcadero & Stockton', 'Jefferson & Powell'],
     },
     "San Francisco Streetcar (Market)": {
-        "F": ['Market & Drumm', 'Market & Main', 'Market & Battery', 'Market & 2nd', 'Market & New Montgomery', 'Market & Kearney', 'Market & 3rd', 'Market & Stockton', 'Market & 5th', 'Market & Taylor', 'Market & 7th', 'Market & 8th', 'Market & 9th', 'Market & South Van Ness', 'Market & Gough', 'Market & Guerrero', 'Market & Dolores', 'Market & Church', 'Market & Sanchez'],
+        "F": ['Market & Drumm', 'Market & Main', 'Market & Battery', 'Market & 2nd', 'Market & New Montgomery', 'Market & Kearny', 'Market & 3rd', 'Market & Stockton', 'Market & 5th', 'Market & Taylor', 'Market & 7th', 'Market & 8th', 'Market & 9th', 'Market & South Van Ness', 'Market & Gough', 'Market & Guerrero', 'Market & Dolores', 'Market & Church', 'Market & Sanchez'],
     },
     "San Jose ACE (Diridon - Stockton)": {
         "F": ['-Intercity LS (San Jose - Fremont)', 'Pleasanton', 'Livermore', 'Vasco Rd', 'Tracy', 'Lathrop/Manteca', '[X] Stockton South Junction', 'Stockton-Cabral'],
@@ -13484,7 +13484,7 @@ Segments = {
         "F": ['St. Paul Union Depot', '[X] Science Museum', '[X] Smith Ave'],
     },
     "Tacoma Streetcar": {
-        "F": ['Tacoma Dome (Streetcar)', 'S 25th', 'Tacoma Union Station', 'Tacoma COnvention Center', 'Tacoma Theater District', 'Old City Hall', 'S 4th', 'Tacoma Stadium Districts', 'Tacoma General', '6th Ave', 'Hilltop District'],
+        "F": ['Tacoma Dome (Streetcar)', 'S 25th', 'Tacoma Union Station', 'Tacoma Convention Center', 'Tacoma Theater District', 'Old City Hall', 'S 4th', 'Tacoma Stadium District', 'Tacoma General', '6th Ave', 'Hilltop District', 'St. Joseph'],
     },
     "Tampa Streetcar": {
         "F": ['Whiting', 'Dick Greco Plaza', 'HSBC', 'Water Street', 'Cumberland Avenue', 'York Street', 'Port Tampa Bay', 'Cadrecha Plaza', 'Streetcar Society', 'Centro Ybor', 'Centennial Park'],
@@ -15323,12 +15323,12 @@ Lines = {
     "JTA": {
         "Skyway": {
             "Fantasy": {
-                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - Kings Ave'},
-                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - LaVilla'},
+                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Jacksonville Skyway (Rosa Parks - Kings Ave)'},
+                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Jacksonville Skyway (Rosa Parks - LaVilla)'},
             },
             "Present": {
-                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - Kings Ave', 'File': '[JTA] Skyway (Kings Ave)', 'Link': 'https://brouter.damsy.net/latest/#map=16/30.3222/-81.6568/standard&lonlats=-81.65885,30.333611;-81.654038,30.31658;-81.65288,30.314821;-81.654704,30.317534;-81.659049,30.33162;-81.659049,30.333991'},
-                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Rosa Parks - LaVilla', 'File': '[JTA] Skyway (LaVilla)', 'Link': 'https://brouter.damsy.net/latest/#map=17/30.32883/-81.66474/standard&lonlats=-81.658866,30.333546;-81.672889,30.329064;-81.668801,30.327698;-81.659381,30.330082;-81.658984,30.333722'},
+                "Rosa L. Parks - Kings Ave": {'Mode': 'Peoplemover', 'Stations': 'Jacksonville Skyway (Rosa Parks - Kings Ave)', 'File': '[JTA] Skyway (Kings Ave)', 'Link': 'https://brouter.damsy.net/latest/#map=16/30.3222/-81.6568/standard&lonlats=-81.65885,30.333611;-81.654038,30.31658;-81.65288,30.314821;-81.654704,30.317534;-81.659049,30.33162;-81.659049,30.333991'},
+                "Rosa L. Parks - LaVilla": {'Mode': 'Peoplemover', 'Stations': 'Jacksonville Skyway (Rosa Parks - LaVilla)', 'File': '[JTA] Skyway (LaVilla)', 'Link': 'https://brouter.damsy.net/latest/#map=17/30.32883/-81.66474/standard&lonlats=-81.658866,30.333546;-81.672889,30.329064;-81.668801,30.327698;-81.659381,30.330082;-81.658984,30.333722'},
             },
         },
     },
@@ -15603,10 +15603,10 @@ Lines = {
         },
         "Green Line": {
             "Fantasy": {
-                "Medford/Tufts - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Boston College)'},
-                "Medford/Tufts - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Cleveland Circle)'},
                 "Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Heath Street)'},
                 "Medford/Tufts - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Riverside)'},
+                "Union Square - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Boston College)'},
+                "Union Square - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Cleveland Circle)'},
             },
         },
         "Greenbush Line": {
@@ -17967,6 +17967,7 @@ Destinations = {
         "Dalhousie University": {"Location": (44.636940, -63.590330), "Stations": ['Halifax'], 'Present': True, 'Fantasy': True},
         "Iowa State University": {"Location": (42.026650, -93.646450), "Stations": ['Iowa State University'], 'Present': True, 'Fantasy': True},
         "North Dakota State University": {"Location": (46.897750, -96.802430), "Stations": ['Fargo'], 'Present': True, 'Fantasy': True},
+        "Northeastern University": {"Location": (42.339800, -71.089170), "Stations": ['Northeastern University', 'Ruggles'], 'Present': True, 'Fantasy': True},
         "Portland State University": {"Location": (45.511110, -122.683330), "Stations": ['SW 5th & Jackson', 'SW 5th & Mill', 'SW 6th & College', 'SW 6th & Montgomery'], 'Present': True, 'Fantasy': True},
         "Stanford University": {"Location": (37.427660, -122.170060), "Stations": ['Palo Alto', 'Stanford University'], 'Present': True, 'Fantasy': True},
         "The University of Alabama in Huntsville": {"Location": (34.725160, -86.640470), "Stations": ['University of Alabama'], 'Present': True, 'Fantasy': True},

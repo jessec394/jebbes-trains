@@ -222,7 +222,7 @@ Waypoints = {
     },
     "LaGuardia Subway Extension": {
         "Source": "Proposal",
-        "Location": (40.77659, -73.87869),
+        "Location": (40.77816, -73.89386),
         "Radius": RadiusS,
         "Image": 'LaGuardia Subway.jpg',
         "Link": 'https://www.vanshnookenraggen.com/_index/2018/06/the-r-train-laguardia-airport-and-the-ripple-effect-in-transit',
