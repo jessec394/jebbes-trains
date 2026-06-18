@@ -9200,6 +9200,7 @@ Segments = {
     },
     "-Intercity LS (Chicago - Boston) [Old]": {
         "F": ['-Intercity LS (Chicago - Boston)'],
+        "Skip": ['Cleveland Airport (Mainline)'],
         "Swap": [('Buffalo Central Terminal', 'Depew-Buffalo')],
     },
     "-Intercity LS (Chicago - Carbondale)": {
@@ -10627,12 +10628,12 @@ Segments = {
         "F": ['Washington Regional Rail (Union - Baltimore)'],
         "Keep": ['Washington Union Station', 'New Carrollton', 'BWI Thurgood Marshall', 'Baltimore Penn Station'],
     },
-    "-Intercity LS (Washington - Boston)": {
-        "F": ['[R] -Intercity LS (New York - Washington)', '-Intercity LS (New York - Boston)'],
-    },
     "-Intercity LS (Washington - Boston Express)": {
         "F": ['-Intercity LS (Washington - Boston)'],
-        "Skip": ['Washington Union Station', 'BWI Thurgood Marshall', 'Baltimore Penn Station', 'Wilmington (DE)', 'Philadelphia 30th Street Station', 'Trenton Transit Center', 'Metropark', 'Newark Penn Station', 'New York Penn Station', 'Stamford', 'New Haven Union Station', 'New London', 'Providence', 'Route 128', 'Boston South Station']
+        "Keep": ['Washington Union Station', 'BWI Thurgood Marshall', 'Baltimore Penn Station', 'Wilmington (DE)', 'Philadelphia 30th Street Station', 'Trenton Transit Center', 'Metropark', 'Newark Penn Station', 'New York Penn Station', 'Stamford', 'New Haven Union Station', 'New London', 'Providence', 'Route 128', 'Boston South Station'],
+    },
+    "-Intercity LS (Washington - Boston)": {
+        "F": ['[R] -Intercity LS (New York - Washington)', '-Intercity LS (New York - Boston)'],
     },
     "-Intercity LS (Washington - Charleston)": {
         "F": ['-Intercity LS (Washington - Manassas)', 'Culpeper', 'Charlottesville', 'Staunton', 'Clifton Forge', 'White Sulphur Springs', 'Prince-Beckley', 'Charleston (WV)'],
