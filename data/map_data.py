@@ -17248,7 +17248,7 @@ Lines = {
                 "Talleres - Exposición": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Talleres - Exposición)'},
             },
             "Present": {
-                "Talleres - Exposición": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Talleres - Exposición)'},
+                "Talleres - Exposición": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Talleres - Exposición)', 'File': '[Metrorrey] 1 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/25.67981/-100.24752/standard&lonlats=-100.368884,25.759716;-100.318828,25.686315;-100.300503,25.684338;-100.244834,25.679474;-100.248477,25.679904;-100.334128,25.68703;-100.361685,25.748511;-100.36581,25.755155;-100.368653,25.759798&profile=rail'},
             },
         },
         "2 Train": {
@@ -17256,7 +17256,7 @@ Lines = {
                 "Zaragoza - Sendero": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Sendero)'},
             },
             "Present": {
-                "Zaragoza - Sendero": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Sendero)'},
+                "Zaragoza - Sendero": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Sendero)', 'File': '[Metrorrey] 2 Train', 'Link': 'https://brouter.damsy.net/latest/#map=18/25.66865/-100.31247/standard&lonlats=-100.310197,25.667784;-100.318871,25.671144;-100.292693,25.769344;-100.294125,25.764004;-100.316817,25.690932;-100.312504,25.668076&profile=rail'},
             },
         },
         "3 Train": {
@@ -17264,7 +17264,7 @@ Lines = {
                 "Zaragoza - Hospital": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Hospital)'},
             },
             "Present": {
-                "Zaragoza - Hospital": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Hospital)'},
+                "Zaragoza - Hospital": {'Mode': 'Heavy Metro', 'Stations': 'Monterrey Metrorrey (Zaragoza - Hospital)', 'File': '[Metrorrey] 3 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/25.66917/-100.30739/standard&lonlats=-100.30987,25.667552;-100.277211,25.710991;-100.273118,25.714168;-100.278681,25.71044;-100.30977,25.667706&profile=rail'},
             },
         },
     },
@@ -18132,7 +18132,7 @@ Lines = {
                 "Auditorio - Estación Periférico Sur": {'Mode': 'Light Rail', 'Stations': 'Guadalajara Light Rail (Auditorio - Estación Periférico Sur)'},
             },
             "Present": {
-                "Auditorio - Estación Periférico Sur": {'Mode': 'Light Rail', 'Stations': 'Guadalajara Light Rail (Auditorio - Estación Periférico Sur)'},
+                "Auditorio - Estación Periférico Sur": {'Mode': 'Light Rail', 'Stations': 'Guadalajara Light Rail (Auditorio - Estación Periférico Sur)', 'File': '[SITEUR] L1', 'Link': 'https://brouter.damsy.net/latest/#map=17/20.61000/-103.39905/standard&lonlats=-103.350699,20.735891;-103.353045,20.729134;-103.397977,20.611035;-103.401156,20.607118;-103.397784,20.61105;-103.35297,20.729097;-103.350638,20.735867&profile=rail'},
             },
         },
         "L2": {
@@ -18140,7 +18140,7 @@ Lines = {
                 "Juárez - Tetlán": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Juárez - Tetlán)'},
             },
             "Present": {
-                "Juárez - Tetlán": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Juárez - Tetlán)'},
+                "Juárez - Tetlán": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Juárez - Tetlán)', 'File': '[SITEUR] L2', 'Link': 'https://brouter.damsy.net/latest/#map=19/20.67494/-103.35490/standard&lonlats=-103.356075,20.674742;-103.275742,20.659753;-103.280067,20.661658;-103.352187,20.675249;-103.35608,20.67493&profile=rail'},
             },
         },
         "L3": {
@@ -18148,7 +18148,7 @@ Lines = {
                 "Arcos de Zapopan - Central de Autobuses": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Arcos de Zapopan - Central de Autobuses)'},
             },
             "Present": {
-                "Arcos de Zapopan - Central de Autobuses": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Arcos de Zapopan - Central de Autobuses)'},
+                "Arcos de Zapopan - Central de Autobuses": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Arcos de Zapopan - Central de Autobuses)', 'File': '[SITEUR] L3', 'Link': 'https://brouter.damsy.net/latest/#map=17/20.62498/-103.28797/standard&lonlats=-103.40776,20.741481;-103.405187,20.739612;-103.284614,20.623077;-103.287315,20.623983;-103.405901,20.740189;-103.407816,20.741412&profile=rail'},
             },
         },
         "L4": {
@@ -18156,7 +18156,7 @@ Lines = {
                 "Las Juntas - Tlajomulco Centro": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Las Juntas - Tlajomulco Centro)'},
             },
             "Present": {
-                "Las Juntas - Tlajomulco Centro": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Las Juntas - Tlajomulco Centro)'},
+                "Las Juntas - Tlajomulco Centro": {'Mode': 'Light Metro', 'Stations': 'Guadalajara Light Rail (Las Juntas - Tlajomulco Centro)', 'File': '[SITEUR] L4', 'Link': 'https://brouter.damsy.net/latest/#map=17/20.46903/-103.43427/standard&lonlats=-103.34068,20.608277;-103.437087,20.468408;-103.434246,20.469199;-103.341477,20.604878;-103.340628,20.608265&profile=rail'},
             },
         },
     },
@@ -18196,7 +18196,7 @@ Lines = {
                 "Pantitlán - Observatorio": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Observatorio)'},
             },
             "Present": {
-                "Pantitlán - Observatorio": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Observatorio)'},
+                "Pantitlán - Observatorio": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Observatorio)', 'File': '[STC] Línea 1', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.42515/-99.14237/standard&lonlats=-99.201075,19.398077;-99.074562,19.41694;-99.201109,19.398184&profile=rail'},
             },
         },
         "Metro Línea 12": {
@@ -18204,7 +18204,7 @@ Lines = {
                 "Mixcoac - Tláhuac": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Mixcoac - Tláhuac)'},
             },
             "Present": {
-                "Mixcoac - Tláhuac": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Mixcoac - Tláhuac)'},
+                "Mixcoac - Tláhuac": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Mixcoac - Tláhuac)', 'File': '[STC] Línea 12', 'Link': 'https://brouter.damsy.net/latest/#map=13/19.3411/-99.1003/standard&lonlats=-99.188055,19.376035;-99.014121,19.285287;-99.188006,19.376124&profile=rail'},
             },
         },
         "Metro Línea 2": {
@@ -18212,7 +18212,7 @@ Lines = {
                 "Cuatro Caminos - Tasqueña": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Cuatro Caminos - Tasqueña)'},
             },
             "Present": {
-                "Cuatro Caminos - Tasqueña": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Cuatro Caminos - Tasqueña)'},
+                "Cuatro Caminos - Tasqueña": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Cuatro Caminos - Tasqueña)', 'File': '[STC] Línea 2', 'Link': 'https://brouter.damsy.net/latest/#map=18/19.45931/-99.21444/standard&lonlats=-99.216167,19.4585;-99.139944,19.34387;-99.143994,19.344173;-99.210738,19.460715;-99.215861,19.458514&profile=rail'},
             },
         },
         "Metro Línea 3": {
@@ -18220,7 +18220,7 @@ Lines = {
                 "Indios Verdes - Universidad": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Indios Verdes - Universidad)'},
             },
             "Present": {
-                "Indios Verdes - Universidad": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Indios Verdes - Universidad)'},
+                "Indios Verdes - Universidad": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Indios Verdes - Universidad)', 'File': '[STC] Línea 3', 'Link': 'https://brouter.damsy.net/latest/#map=21/19.49585/-99.11919/standard&lonlats=-99.119236,19.49597;-99.173993,19.32355;-99.119162,19.495956&profile=rail'},
             },
         },
         "Metro Línea 4": {
@@ -18228,7 +18228,7 @@ Lines = {
                 "Martín Carrera - Santa Anita": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Martín Carrera - Santa Anita)'},
             },
             "Present": {
-                "Martín Carrera - Santa Anita": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Martín Carrera - Santa Anita)'},
+                "Martín Carrera - Santa Anita": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Martín Carrera - Santa Anita)', 'File': '[STC] Línea 4', 'Link': 'https://brouter.damsy.net/latest/#map=19/19.48488/-99.10390/standard&lonlats=-99.103793,19.485699;-99.12174,19.402078;-99.10372,19.485647&profile=rail'},
             },
         },
         "Metro Línea 5": {
@@ -18236,7 +18236,7 @@ Lines = {
                 "Pantitlán - Politécnico": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Politécnico)'},
             },
             "Present": {
-                "Pantitlán - Politécnico": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Politécnico)'},
+                "Pantitlán - Politécnico": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Politécnico)', 'File': '[STC] Línea 5', 'Link': 'https://brouter.damsy.net/latest/#map=16/19.4196/-99.0767/standard&lonlats=-99.149506,19.501224;-99.07354,19.414651;-99.078371,19.4176;-99.149357,19.501277&profile=rail'},
             },
         },
         "Metro Línea 6": {
@@ -18244,7 +18244,7 @@ Lines = {
                 "El Rosario - Martín Carrera": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Martín Carrera)'},
             },
             "Present": {
-                "El Rosario - Martín Carrera": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Martín Carrera)'},
+                "El Rosario - Martín Carrera": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Martín Carrera)', 'File': '[STC] Línea 6', 'Link': 'https://brouter.damsy.net/latest/#map=18/19.50363/-99.20028/standard&lonlats=-99.199694,19.505158;-99.104834,19.481901;-99.199664,19.505149&profile=rail'},
             },
         },
         "Metro Línea 7": {
@@ -18252,7 +18252,7 @@ Lines = {
                 "El Rosario - Barranca del Muerto": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Barranca del Muerto)'},
             },
             "Present": {
-                "El Rosario - Barranca del Muerto": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Barranca del Muerto)'},
+                "El Rosario - Barranca del Muerto": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (El Rosario - Barranca del Muerto)', 'File': '[STC] Línea 7', 'Link': 'https://brouter.damsy.net/latest/#map=16/19.5029/-99.1942/standard&lonlats=-99.199955,19.505231;-99.189559,19.359565;-99.199931,19.505225&profile=rail'},
             },
         },
         "Metro Línea 8": {
@@ -18260,7 +18260,7 @@ Lines = {
                 "Garibaldi y Lagunilla - Constitución de 1917": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Garibaldi y Lagunilla - Constitución de 1917)'},
             },
             "Present": {
-                "Garibaldi y Lagunilla - Constitución de 1917": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Garibaldi y Lagunilla - Constitución de 1917)'},
+                "Garibaldi y Lagunilla - Constitución de 1917": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Garibaldi y Lagunilla - Constitución de 1917)', 'File': '[STC] Línea 8', 'Link': 'https://brouter.damsy.net/latest/#map=18/19.44375/-99.13920/standard&lonlats=-99.138222,19.445065;-99.062854,19.345629;-99.137959,19.444911&profile=rail'},
             },
         },
         "Metro Línea 9": {
@@ -18268,7 +18268,7 @@ Lines = {
                 "Pantitlán - Tacubaya": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Tacubaya)'},
             },
             "Present": {
-                "Pantitlán - Tacubaya": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Tacubaya)'},
+                "Pantitlán - Tacubaya": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - Tacubaya)', 'File': '[STC] Línea 9', 'Link': 'https://brouter.damsy.net/latest/#map=18/19.41415/-99.07244/standard&lonlats=-99.071821,19.415977;-99.188315,19.400671;-99.071737,19.415928&profile=rail'},
             },
         },
         "Metro Línea A": {
@@ -18276,7 +18276,7 @@ Lines = {
                 "Pantitlán - La Paz": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - La Paz)'},
             },
             "Present": {
-                "Pantitlán - La Paz": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - La Paz)'},
+                "Pantitlán - La Paz": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Pantitlán - La Paz)', 'File': '[STC] Línea A', 'Link': 'https://brouter.damsy.net/latest/#map=17/19.41398/-99.07135/standard&lonlats=-99.071573,19.41595;-99.058635,19.398197;-98.960544,19.349802;-98.961655,19.352216;-99.074546,19.410809;-99.07161,19.41597&profile=rail'},
             },
         },
         "Metro Línea B": {
@@ -18284,7 +18284,7 @@ Lines = {
                 "Buenavista - Ciudad Azteca": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Buenavista - Ciudad Azteca)'},
             },
             "Present": {
-                "Buenavista - Ciudad Azteca": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Buenavista - Ciudad Azteca)'},
+                "Buenavista - Ciudad Azteca": {'Mode': 'Heavy Metro', 'Stations': 'México Metro (Buenavista - Ciudad Azteca)', 'File': '[STC] Línea B', 'Link': 'https://brouter.damsy.net/latest/#map=16/19.5312/-99.0351/standard&lonlats=-99.153143,19.446188;-99.027224,19.535212;-99.153111,19.44635&profile=rail'},
             },
         },
     },
