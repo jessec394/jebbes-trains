@@ -9076,6 +9076,9 @@ Segments = {
     "-Intercity LS (Bakersfield - Stockton)": {
         "F": ['Bakersfield (Amtrak)', 'Wasco', 'Colonel Allensworth Park', 'Corocran', 'Hanford', 'Fresno (CA-Amtrak)', 'Madera', 'Merced (CA)', 'Turlock', 'Modesto (Amtrak)', '[X] Stockton South Junction'],
     },
+    "-Intercity LS (Boston - Brunswick)": {
+        "F": ['-Intercity LS (Boston - Portland)', '[X] Portland ME Junction', 'Freeport (ME)', 'Brunswick (ME)'],
+    },
     "-Intercity LS (Boston - Buffalo Central)": {
         "F": ['-Intercity LS (Boston - Schenectady)', '[R] -Intercity LS (Buffalo Central - Schenectady)'],
     },
@@ -9107,7 +9110,7 @@ Segments = {
         "Keep": ['Boston South Station', 'Boston Back Bay', 'Ruggles', 'Forest Hills (MA)', 'Route 128', 'Providence'],
     },
     "-Intercity LS (Boston - Rockland)": {
-        "F": ['-Intercity LS (Boston - Portland)', '[X] Portland ME Junction', 'Freeport (ME)', 'Brunswick (ME)', 'Rockland'],
+        "F": ['-Intercity LS (Boston - Brunswick)', 'Rockland'],
     },
     "-Intercity LS (Boston - Schenectady)": {
         "F": ['-Intercity LS (Boston - Worcester)', 'Palmer', 'Springfield (MA)', 'Pittsfield', 'Albany-Rensselaer', 'Schenectady'],
@@ -14538,6 +14541,9 @@ Lines = {
             "Fantasy": {
                 "Washington - Boston": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Washington - Boston)'},
             },
+            "Present": {
+                "Washington - Boston": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Washington - Boston)', 'File': '[Amtrak] Acela', 'Link': 'https://brouter.damsy.net/latest/#map=8/40.745/-74.471/standard&lonlats=-77.006087,38.898339;-76.976502,38.918255;-76.883311,38.939282;-76.694076,39.177499;-76.613191,39.306874;-75.550264,39.736581;-75.464535,39.789837;-75.4175,39.822623;-75.334545,39.866064;-75.228863,39.9265;-75.18145,39.956172;-75.154274,39.997482;-74.907038,40.093497;-74.77929,40.197126;-74.162741,40.734944;-74.008691,40.756831;-73.969381,40.742778;-72.925213,41.298364;-72.807448,41.276855;-72.650029,41.28058;-72.205619,41.316944;-72.073617,41.360923;-71.796556,41.38469;-71.551327,41.489778;-71.449268,41.707743;-71.427644,41.796914;-71.41271,41.829789;-71.223652,42.027431;-71.153963,42.167309;-71.146865,42.210783;-71.071297,42.347483;-71.05478,42.35079;-71.072724,42.347547;-71.147096,42.210549;-71.153941,42.162019;-71.412994,41.829581;-71.427548,41.796764;-71.449062,41.708314;-71.476793,41.609776;-71.562415,41.483184;-71.801035,41.384645;-72.07609,41.361788;-72.097993,41.345641;-72.358682,41.309365;-72.37816,41.300226;-72.400868,41.291887;-72.783962,41.274549;-72.879009,41.29122;-72.926691,41.296894;-73.964598,40.742353;-74.013047,40.758929;-74.165053,40.733355;-74.75419,40.218383;-74.779269,40.197323;-74.904943,40.09384;-75.099229,40.001681;-75.164477,39.993573;-75.181562,39.955963;-75.417575,39.822529;-75.464396,39.789874;-75.526999,39.745119;-75.552002,39.737329;-75.563005,39.737067;-76.615192,39.307841;-76.69435,39.176404;-76.976647,38.918334;-77.006124,38.898369&profile=rail'},
+            },
         },
         "Adirondack": {
             "Fantasy": {
@@ -14749,6 +14755,9 @@ Lines = {
         "Downeaster": {
             "Fantasy": {
                 "Boston - Rockland": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Rockland)'},
+            },
+            "Present": {
+                "Boston - Brunswick": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Brunswick)', 'File': '[Amtrak] Downeaster', 'Link': 'https://brouter.damsy.net/latest/#map=17/42.36808/-71.06541/standard&lonlats=-71.062016,42.366469;-71.072659,42.37456;-71.076077,42.502775;-71.086333,42.774464;-70.279246,43.646277;-70.291317,43.653345;-70.280743,43.653334;-69.969773,43.91096;-69.965351,43.911637;-69.970905,43.910971;-70.280979,43.65224;-70.291285,43.653378;-70.279444,43.645764;-71.086285,42.772836;-71.075385,42.501809;-71.076747,42.385099;-71.062045,42.366452&profile=rail'},
             },
         },
         "Emerald Coast": {
@@ -15402,6 +15411,9 @@ Lines = {
         "CapeFLYER": {
             "Fantasy": {
                 "Boston - Cape Cod": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Cape Cod)'},
+            },
+            "Present": {
+                "Boston - Cape Cod": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Boston - Cape Cod)', 'File': '[CCRTA] CapeFLYER', 'Link': 'https://brouter.damsy.net/latest/#map=10/41.9845/-70.5569/standard&lonlats=-71.054796,42.350798;-71.016601,42.084421;-70.280147,41.655107;-71.016483,42.086601;-71.054691,42.350783&profile=rail'},
             },
         },
     },
@@ -17348,6 +17360,9 @@ Lines = {
             "Fantasy": {
                 "Philadelphia - Atlantic City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Philadelphia - Atlantic City)'},
             },
+            "Present": {
+                "Philadelphia - Atlantic City": {'Mode': 'Intercity Rail (Regional)', 'Stations': '-Intercity LS (Philadelphia - Atlantic City)', 'File': '[NJ Transit] Atlantic City Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/39.36477/-74.44615/standard&lonlats=-75.181711,39.954296;-75.073029,39.98514;-74.449566,39.365243;-74.440463,39.362801;-74.451331,39.365928;-75.073223,39.98546;-75.15628,39.996828;-75.181763,39.954303&profile=rail'},
+            },
         },
         "Bergen Line": {
             "Fantasy": {
@@ -18294,7 +18309,7 @@ Lines = {
                 "Tasqueña - Xochimilco": {'Mode': 'Light Rail', 'Stations': 'México Tram (Tasqueña - Xochimilco)'},
             },
             "Present": {
-                "Tasqueña - Xochimilco": {'Mode': 'Light Rail', 'Stations': 'México Tram (Tasqueña - Xochimilco)'},
+                "Tasqueña - Xochimilco": {'Mode': 'Light Rail', 'Stations': 'México Tram (Tasqueña - Xochimilco)', 'File': '[STE] Tren Ligero', 'Link': 'http://brouter.damsy.net/latest/#map=17/19.26012/-99.10938/standard&lonlats=-99.140315,19.34371;-99.142148,19.343837;-99.145896,19.303516;-99.1117,19.260818;-99.107736,19.259413;-99.112746,19.261537;-99.13864,19.325505;-99.140315,19.343693&profile=rail'},
             },
         },
     },
