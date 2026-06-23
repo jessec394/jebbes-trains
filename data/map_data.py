@@ -1208,7 +1208,7 @@ Stations = {
     "Albany (GA)": {'Location': (31.581660, -84.149130), 'Label': 'Albany'},
     "Albany (OR)": {'Location': (44.630430, -123.102660), 'Label': 'Albany'},
     "Albany Av": {'Location': (40.627610, -73.937060)},
-    "Albany-Rensselaer": {'Location': (42.641060, -73.741200)},
+    "Albany-Rensselaer": {'Location': (42.641060, -73.741200), 'Major': True},
     "Albert Lea": {'Location': (43.649260, -93.361710)},
     "Albertson": {'Location': (40.771940, -73.641740)},
     "Albertville": {'Location': (45.239000, -93.660320)},
@@ -7902,6 +7902,7 @@ Stations = {
     "Symphony (Seattle)": {'Location': (47.607810, -122.336020), 'Label': 'Symphony'},
     "Syosset": {'Location': (40.824700, -73.500960)},
     "Syracuse": {'Location': (43.077060, -76.169920)},
+    "Syracuse (HSR)": {'Location': (43.053340, -76.154160), 'Label': 'Syracuse'},
     "TC Jester": {'Location': (29.774840, -95.417430)},
     "TF Green Airport": {'Location': (41.726050, -71.442720)},
     "TMC Transit Center": {'Location': (29.704030, -95.402890)},
@@ -8934,6 +8935,9 @@ Stations = {
 }
 
 Segments = {
+    "-Intercity HS (Albany - Buffalo)": {
+        "F": ['Albany-Rensselaer', '[X] Utica (NY)', 'Syracuse (HSR)', 'Buffalo Central Terminal'],
+    },
     "-Intercity HS (Anaheim - Sacramento)": {
         "F": ['[R] -Intercity HS (Los Angeles - Anaheim)', '-Intercity HS (Los Angeles - Palmdale)', '-Intercity HS (Palmdale - Merced)', 'Modesto (CAHSR)', '[R] Stockton Approach (Cabral - South)', '[R] -Intercity HS (Sacramento - Stockton)'],
     },
@@ -8949,6 +8953,9 @@ Segments = {
     },
     "-Intercity HS (Calgary - Edmonton)": {
         "F": ['Calgary Approach (Main - East)', 'YYC Airport Hub', 'Red Deer', 'Leduc/YEG', '[X] Edmonton South Bend', 'Edmonton'],
+    },
+    "-Intercity HS (Chicago - Cincinnati)": {
+        "F": ['-Intercity HS (Chicago - Indianapolis)', '-Intercity HS (Indianapolis - Cincinnati)'],
     },
     "-Intercity HS (Chicago - Cleveland)": {
         "F": ['-Intercity HS (Chicago - Liberty Center)', '[R] Toledo Approach (Toledo - West)', '[R] -Intercity HS (Cleveland - Toledo)'],
@@ -8976,11 +8983,18 @@ Segments = {
         "F": ['Chicago Metra (Union - Lake Forest)', '[X] Sturtevant', '[X] Milwaukee Airport [Main]', '[R] Milwaukee Approach (Intermodal - South)'],
         "Keep": ['Chicago Union Station', 'Milwaukee Intermodal Station [Main]'],
     },
+    "-Intercity HS (Chicago - New York)": {
+        "F": ['-Intercity HS (Chicago - Cleveland)', '-Intercity HS (Cleveland - Buffalo)', '[R] -Intercity HS (New York - Buffalo)'],
+    },
     "-Intercity HS (Chicago - St. Louis)": {
         "F": ['-Intercity HS (Chicago - Matteson (ME))', 'Kankakee', 'Bloomington-Normal', 'Springfield (IL)', '[X] Staunton Node', '[X] East St. Louis', '[R] St. Louis Approach (Gateway - Bridge East)'],
     },
     "-Intercity HS (Chicago - St. Paul)": {
         "F": ['-Intercity HS (Chicago - Milwaukee)', '-Intercity HS (Milwaukee - Madison)', '[R] -Intercity HS (St. Paul - Rochester)'],
+    },
+    "-Intercity HS (Cleveland - Buffalo)": {
+        "F": ['-Intercity LS (Cleveland - Buffalo Central)'],
+        "Keep": ['Cleveland Waterfront Station', 'Erie (PA)', 'Buffalo Central Terminal'],
     },
     "-Intercity HS (Cleveland - Toledo)": {
         "F": ['Cleveland Regional (Riverfront - Hopkins Airport)', '[X] Norwalk OH Bend', 'Toledo'],
@@ -8991,6 +9005,9 @@ Segments = {
     },
     "-Intercity HS (Detroit - Windsor)": {
         "F": ['-Intercity LS (Detroit - Windsor)'],
+    },
+    "-Intercity HS (Indianapolis - Cincinnati)": {
+        "F": ['Indianapolis Approach (Union - East)', '[R] Cincinnati Approach (Union - North)'],
     },
     "-Intercity HS (Indianapolis - Lebanon)": {
         "F": ['Indianapolis Regional Rail (Union - Eagledale)', 'North Indianapolis', '[X] Lebanon Bend'],
@@ -9038,6 +9055,9 @@ Segments = {
     "-Intercity HS (New York - Boston)": {
         "F": ['-Intercity HS (New York - New Haven)', '[R] -Intercity HS (Providence - New Haven)', '[R] -Intercity HS (Boston - Providence)'],
     },
+    "-Intercity HS (New York - Buffalo)": {
+        "F": ['-Intercity HS (New York - Albany)', '-Intercity HS (Albany - Buffalo)'],
+    },
     "-Intercity HS (New York - Cleveland)": {
         "F": ['-Intercity HS (New York - Philadelphia)', '-Intercity HS (Philadelphia - Pittsburgh)', '-Intercity HS (Pittsburgh - Cleveland)'],
     },
@@ -9052,6 +9072,9 @@ Segments = {
     },
     "-Intercity HS (New York - Philadelphia)": {
         "F": ['-Intercity HS (New York - Trenton)', '[R] -Intercity HS (Philadelphia - Trenton)'],
+    },
+    "-Intercity HS (New York - Toronto)": {
+        "F": ['-Intercity HS (New York - Buffalo)', '[R] -Intercity HS (Toronto - Buffalo)'],
     },
     "-Intercity HS (New York - Trenton)": {
         "F": ['-Intercity LS (New York - Trenton)'],
@@ -9110,6 +9133,10 @@ Segments = {
     },
     "-Intercity HS (St. Paul - Rochester)": {
         "F": ['St. Paul Union Depot [Main]', '[X] St. Paul East Junction', '[X] Lower Afton Rd', '[X] Newport (MN)', 'Rochester (MN)'],
+    },
+    "-Intercity HS (Toronto - Buffalo)": {
+        "F": ['Toronto GO (Union - St. Catherines)', 'Buffalo Exchange Street Station', 'Buffalo Approach (Exchange - East)', 'Buffalo Central Terminal'],
+        "Keep": ['Toronto Union Station [Main]', 'Buffalo Exchange Street Station', 'Buffalo Central Terminal'],
     },
     "-Intercity HS (Toronto - Detroit)": {
         "F": ['-Intercity HS (Toronto - Weston)', 'Kitchener Central Station', 'London', '[X] Tilbury Bend HS', '[X] Windsor South Junction', 'Windsor (ON) [New]', '[R] -Intercity HS (Detroit - Windsor)'],
@@ -9722,7 +9749,7 @@ Segments = {
         "Skip": ['Fort Worth T&P'],
     },
     "-Intercity LS (Denver Main - Kansas City)": {
-        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction', '[X] 38th & Blake [A]', '[X] 40th & Colorado', '[X] Central Park', '[X] Peoria (CO)', 'Limon', 'Oakley (KS)', 'Hays', 'Salina', 'Junction City', 'Manhattan (KS)', '[R] -Intercity LS (Kansas City - Topeka)'],
+        "F": ['Denver Approach (Union Main - East)', '[X] 38th & Blake [A]', '[X] 40th & Colorado', '[X] Central Park', '[X] Peoria (CO)', 'Limon', 'Oakley (KS)', 'Hays', 'Salina', 'Junction City', 'Manhattan (KS)', '[R] -Intercity LS (Kansas City - Topeka)'],
     },
     "-Intercity LS (Denver Main - Kremmling)": {
         "F": ['-Intercity LS (Denver Main - Pecos Junction)', '[X] Clear Creek & Federal', '[X] 60th & Sheridan', 'Winter Park (CO)', 'Fraser-Winter Park', 'Granby', 'Kremmling'],
@@ -9734,7 +9761,7 @@ Segments = {
         "F": ['-Intercity LS (Denver Main - Fort Collins)', 'Cheyenne', 'Bridgeport (NE)', 'Crawford', 'Rapid City', 'Pierre', 'Mitchell', '[R] -Intercity LS (Minneapolis - Sioux Falls)'],
     },
     "-Intercity LS (Denver Main - Omaha)": {
-        "F": ['Denver Approach (Union Main - East)', '[X] Denver Hudson Bend', 'Fort Morgan', 'McCook', 'Holdrege', 'Hastings (NE)', 'Lincoln (NE)', 'Omaha'],
+        "F": ['Denver Approach (Union Main - East)', '[X] 48th & Brighton', '[X] Denver Hudson Bend', 'Fort Morgan', 'McCook', 'Holdrege', 'Hastings (NE)', 'Lincoln (NE)', 'Omaha'],
     },
     "-Intercity LS (Denver Main - Pecos Junction)": {
         "F": ['Denver Approach (Union Main - North)', '[X] 41st & Fox', '[X] Pecos Junction'],
@@ -11592,6 +11619,9 @@ Segments = {
     "Chicago SSL (Millennium - South Bend)": {
         "F": ['Chicago Metra (Millennium - Mark Twain)', 'Chicago SSL (Mark Twain - South Bend)'],
     },
+    "Cincinnati Approach (Union - North)": {
+        "F": ['Cincinnati Union Terminal', '[X] Cincinnati North Bend'],
+    },
     "Cincinnati Approach (Union - South)": {
         "F": ['Cincinnati Union Terminal', '[X] Cincinnati South Junction'],
     },
@@ -11608,7 +11638,7 @@ Segments = {
         "F": ['Cincinnati Commuter (Union - Winton Junction)', '[X] Cincinnati Ivorydale Bend', 'Carthage East', 'Reading (OH)', 'Sharonville', 'Wetherington', 'Kyles Station', 'Oxford State Rd', 'Middletown-University'],
     },
     "Cincinnati Commuter (Union - Winton Junction)": {
-        "F": ['Cincinnati Union Terminal', '[X] Cincinnati North Bend', '[X] Cincinnati Northside Bend', 'Winton Junction'],
+        "F": ['Cincinnati Approach (Union - North)', '[X] Cincinnati Northside Bend', 'Winton Junction'],
     },
     "Cincinnati Streetcar": {
         "L": ['The Banks', '[X] Cincinnati Banks Bend E', '4th & Main', '6th & Main', '8th & Main', 'Court & Main', '12th & Main', '[X] Cincinnati 12th St Bend E', '12th & Vine', '[X] Cincinnati 12th St Bend W', '14th & Elm', 'Liberty & Elm', 'Findlay Market - Elm', 'Brewery District (Cincinnati)', '[X] Cincinnati Henry Bend W', '[X] Cincinnati Henry Bend E', 'Findlay Market - Race', 'Liberty & Race', 'Washington Park (Cincinnati)', '[X] Cincinnati Central Bend W', 'Central Parkway', '[X] Cincinnati Central Bend E', 'Public Library', 'Aronoff Center', 'Fountain Square', '[X] Cincinnati Banks Bend W', 'The Banks'],
@@ -11863,30 +11893,30 @@ Segments = {
         "F": ['Shiloh', 'Nottingham Rd (Dayton)', 'Siebenthaler Ave', 'Hillcrest Ave', 'Fairview Ave (Dayton)', 'Santa Clara Ave', 'Riverdale (Dayton)', 'McPherson St', '1st St (Dayton)', 'Wright Stop Plaza', 'Dayton Union Station [LRT]', 'Lincoln St', 'Apple St', 'University of Dayton', 'Springhouse Rd', 'Oakwood Ave (Dayton)', 'Patterson Rd', 'Forrer Blvd', 'Peach Orchard Rd', 'Dorothy Ln', 'Lincoln Park Blvd', 'Kettering'],
     },
     "Denver Approach (Union Main - East)": {
-        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction', '[X] 48th & Brighton'],
+        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction'],
     },
     "Denver Approach (Union Main - North)": {
-        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction', '[X] Denver Union Junction North'],
+        "F": ['Denver Approach (Union Main - East)', '[X] Denver Union Junction North'],
     },
     "Denver Approach (Union North - North)": {
         "F": ['Denver Union Station [North]', '[X] Denver Union Junction North'],
     },
     "Denver Commuter Rail (Union Main - Airport)": {
-        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction', '38th & Blake [A]', '40th & Colorado', 'Central Park', 'Peoria (CO)', '40th & Airport', '61st & Peña', '[X] Denver Airport Bend', 'Denver Airport'],
+        "F": ['Denver Approach (Union Main - East)', '38th & Blake [A]', '40th & Colorado', 'Central Park', 'Peoria (CO)', '40th & Airport', '61st & Peña', '[X] Denver Airport Bend', 'Denver Airport'],
     },
     "Denver Commuter Rail (Union Main - Eastlake)": {
-        "F": ['Denver Union Station [Main]', '[X] Denver Union Junction', '48th & Brighton', 'Commerce City & 72nd', 'Original Thornton & 88th', 'Thornton Crossroads & 104th', 'Northglenn & 112th', 'Eastlake & 124th'],
+        "F": ['Denver Approach (Union Main - East)', '48th & Brighton', 'Commerce City & 72nd', 'Original Thornton & 88th', 'Thornton Crossroads & 104th', 'Northglenn & 112th', 'Eastlake & 124th'],
     },
     "Denver Commuter Rail (Union Main - North Thornton)": {
         "F": ['Denver Commuter Rail (Union Main - Eastlake)', 'York & 144th', 'North Thornton & Hwy 7'],
     },
     "Denver Commuter Rail (Union Main - Westminster)": {
         "F": ['Denver Commuter Rail (Union North - Westminster)'],
-        "Swap": [('Denver Union Station [North]', 'Denver Union Station [Main]')],
+        "Swap": [('Denver Union Station [North]', 'Denver Approach (Union - East)')],
     },
     "Denver Commuter Rail (Union Main - Wheat Ridge)": {
         "F": ['Denver Commuter Rail (Union North - Wheat Ridge)'],
-        "Swap": [('Denver Union Station [North]', 'Denver Union Station [Main]')],
+        "Swap": [('Denver Union Station [North]', 'Denver Approach (Union - East)')],
     },
     "Denver Commuter Rail (Union North - Golden)": {
         "F": ['Denver Commuter Rail (Union North - Wheat Ridge)', '44th & McIntyre', 'Golden'],
@@ -14563,7 +14593,7 @@ Segments = {
         "F": ['Toronto Union Station [Main]', '[X] Toronto West Junction', '[X] Toronto Parkdale Junction', 'Bloor', '[X] Toronto Pelham Junction', 'Lambton', 'Kipling', 'Dixie', 'Cooksville', 'Erindale', 'Streetsville', 'Meadowvale', 'Lisgar', 'Milton (ON)'],
     },
     "Toronto GO (Union - Niagara)": {
-        "F": ['Toronto GO (Union - Aldershot)', 'West Harbour', 'Confederation', 'Grimsby', 'St. Catherines', 'Niagara Falls (ON)'],
+        "F": ['Toronto GO (Union - St. Catherines)', 'Niagara Falls (ON)'],
     },
     "Toronto GO (Union - Niagara) [Old]": {
         "F": ['Toronto GO (Union - Niagara)'],
@@ -14580,6 +14610,9 @@ Segments = {
     },
     "Toronto GO (Union - Scarborough)": {
         "F": ['Toronto Union Station [Main]', '[X] Toronto East Junction', 'Danforth (Toronto)', '[X] Toronto East Bend', 'Scarborough'],
+    },
+    "Toronto GO (Union - St. Catherines)": {
+        "F": ['Toronto GO (Union - Aldershot)', 'West Harbour', 'Confederation', 'Grimsby', 'St. Catherines'],
     },
     "Toronto GO (Union - Stouffville)": {
         "F": ['Toronto GO (Union - Scarborough)', 'Kennedy', '[X] Agincourt South', 'Agincourt', 'Milliken', 'Unionville', 'Centennial', 'Markham', 'Mount Joy (ON)', 'Stouffville', 'Old Elm'],
@@ -14975,6 +15008,9 @@ Lines = {
             "Fantasy": {
                 "Chicago - Washington": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Chicago - Washington)'},
             },
+            "Present": {
+                "Chicago - Washington": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Chicago - Washington)'},
+            },
         },
         "Caprock Chief": {
             "Fantasy": {
@@ -15187,6 +15223,11 @@ Lines = {
         "Goldfinch": {
             "Fantasy": {
                 "St. Paul - Sioux City": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (St. Paul - Sioux City)'},
+            },
+        },
+        "Great Lakes Flyer": {
+            "Fantasy": {
+                "Chicago - New York": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - New York)'},
             },
         },
         "Gulf Coast Limited": {
@@ -15452,7 +15493,7 @@ Lines = {
         },
         "Peony": {
             "Fantasy": {
-                "Chicago - Indianapolis": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Indianapolis)'},
+                "Chicago - Cincinnati": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (Chicago - Cincinnati)'},
             },
         },
         "Pere Marquette": {
@@ -15494,6 +15535,11 @@ Lines = {
         "Purple Finch": {
             "Fantasy": {
                 "Boston - Montréal": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Boston - Montréal)'},
+            },
+        },
+        "Queen Flyer": {
+            "Fantasy": {
+                "New York - Toronto": {'Mode': 'High-Speed Rail', 'Stations': '-Intercity HS (New York - Toronto)'},
             },
         },
         "River City": {
