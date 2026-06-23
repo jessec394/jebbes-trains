@@ -124,14 +124,6 @@ Waypoints = {
         "Link": 'http://fivepointstransformation.com/home',
         "Description": "The massive overhaul of MARTA's central transit hub will include renovated facilities, new amenities, public spaces, and retail opportunities."
     },
-    "Future Cleveland Stadium Site": {
-        "Source": "Cleveland Browns",
-        "Location": (41.41224, -81.82319),
-        "Radius": RadiusS,
-        "Image": 'Cleveland Stadium.jpg',
-        "Link": 'https://www.clevelandbrowns.com/news/browns-to-focus-stadium-efforts-on-dome-in-brook-park',
-        "Description": "Cleveland's new stadium in Brookpark will best be served by an infill station on the existing Red Line. This gives Amtrak an opportunity to co-locate its proposed Cleveland Airport station at this site, allowing 3C+D trains to serve both the stadium and the airport without a last-mile bus connection."
-    },
     "Grand Central Madison": {
         "Source": "MTA",
         "Location": (40.75699, -73.97834),
@@ -171,14 +163,6 @@ Waypoints = {
         "Image": 'Hazel McCallion LRT.jpg',
         "Link": 'https://www.metrolinx.com/en/projects-and-programs/hazel-mccallion-lrt',
         "Description": "18 kilometers of light rail along Hurontario St will connect Port Credit, Brampton, and Mississauga's growing city centre."
-    },
-    "I-25 & Broadway": {
-        "Source": "Denver Summit FC",
-        "Location": (39.70097, -104.99426),
-        "Radius": RadiusS,
-        "Image": 'Denver Summit.jpg',
-        "Link": 'https://www.caaicon.com/portfolio/denver-summit-fc-stadium',
-        "Description": "The current I-25 & Broadway station is a major transfer point beteween the southwest and southeast rail corridors. It currently sits next to vacant land which is being developed into a stadium for the NWSL's Denver Summit FC expansion team."
     },
     "Interborough Express": {
         "Source": "MTA",
@@ -230,7 +214,7 @@ Waypoints = {
     },
     "Las Vegas Brightline Station": {
         "Source": "Brightline West",
-        "Location": (36.05253, -115.18236),
+        "Location": (36.04700, -115.16861),
         "Radius": RadiusS,
         "Image": 'Las Vegas Brightline Station.jpg',
         "Link": 'https://www.brightlinewest.com/overview/project',
@@ -243,14 +227,6 @@ Waypoints = {
         "Image": 'Las Vegas Union Plaza.jpg',
         "Link": 'http://classiclasvegas.squarespace.com/classic-las-vegas-blog/2010/7/11/the-union-plaza-a-look-back-to-the-beginning.html;jsessionid=A78FDA2D2B70E0F00CF777D659767AAC.v5-web012',
         "Description": "Union Plaza once served downtown Las Vegas as the city's intercity rail hub. Proposals to revive routes to Los Angeles and Salt Lake City would ideally restore this historic station."
-    },
-    "Lincoln Park Stadium": {
-        "Source": "Denver Broncos",
-        "Location": (39.72880, -105.01160),
-        "Radius": RadiusS,
-        "Image": 'New Broncos Stadium.png',
-        "Link": 'https://www.enr.com/articles/62529-4b-denver-broncos-stadium-plan-advances-at-burnham-yard-with-2031-target',
-        "Description": "Denver is constructing a new NFL stadium for the Broncos at the current 10th & Osage (soon Lincoln Park) station. This will include surrounding mixed-use development."
     },
     "Newark AirTrain Replacement": {
         "Source": "Port Authority of NY/NJ",
