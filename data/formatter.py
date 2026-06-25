@@ -7,7 +7,22 @@ file_path = os.path.join(directory, 'map_data.py')
 def formatCoordinates(tuple):
     return f"({tuple[0]:.6f}, {tuple[1]:.6f})"
 
-output = "Nodes = {\n"
+# Maps each Radius constant's value back to its name so Waypoints entries
+# render as e.g. 'Radius': RadiusX instead of the literal float they hold
+# at runtime.
+RadiusNames = {
+    RadiusX: "RadiusX",
+    RadiusL: "RadiusL",
+    RadiusM: "RadiusM",
+    RadiusS: "RadiusS",
+}
+
+output = "RadiusX = 10.0\n"
+output += "RadiusL = 5.0\n"
+output += "RadiusM = 1.0\n"
+output += "RadiusS = 0.2\n\n"
+
+output += "Nodes = {\n"
 for key in sorted(Nodes.keys()):
     content = Nodes[key]
     if isinstance(content, dict) and 'Location' in content:
@@ -77,6 +92,19 @@ for category in sorted(Destinations.keys()):
         else:
             output += f'        "{dest_name}": {repr(details)},\n'
     output += "    },\n"
+output += "}\n\n"
+
+output += "Waypoints = {\n"
+for key in sorted(Waypoints.keys()):
+    content = Waypoints[key]
+    loc_str = formatCoordinates(content['Location'])
+    radius_str = RadiusNames.get(content.get('Radius'), repr(content.get('Radius')))
+    inner = f'"Source": {repr(content["Source"])}'
+    inner += f', "Location": {loc_str}'
+    inner += f', "Radius": {radius_str}'
+    for k in sorted(v for v in content.keys() if v not in ('Source', 'Location', 'Radius')):
+        inner += f', {repr(k)}: {repr(content[k])}'
+    output += f'    "{key}": {{{inner}}},\n'
 output += "}"
 
 with open(file_path, 'w', encoding='utf-8') as f:
