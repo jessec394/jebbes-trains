@@ -410,7 +410,8 @@ Nodes = {
 	"PATCO Center City Bend": {'Location': (39.946940, -75.154390)},
 	"PATCO/BSL Junction": {'Location': (39.954160, -75.152920)},
 	"Philadelphia 10th St Junction": {'Location': (40.033360, -75.140630)},
-	"Philadelphia Airport Junction": {'Location': (39.875900, -75.256240)},
+	"Philadelphia Airport Bend": {'Location': (39.875900, -75.256240)},
+	"Philadelphia Airport Junction": {'Location': (39.939110, -75.211310)},
 	"Philadelphia Allegheny Bend": {'Location': (40.004190, -75.164920)},
 	"Philadelphia East Junction": {'Location': (40.001400, -75.097360)},
 	"Philadelphia South Junction (All)": {'Location': (39.944470, -75.203300)},
@@ -14279,7 +14280,7 @@ Segments = {
         "F": ['15/16th & Locust St', '12/13th & Locust St', '9/10th & Locust St', '[X] PATCO Center City Bend', 'Market-8th St', '[X] PATCO/BSL Junction', 'Franklin Square', '[X] PATCO Camden Bend', 'Camden City Hall', 'Walter Rand TC', 'Ferry Avenue', 'Collingswood', 'Westmont/Haddon', 'Haddonfield', 'Woodcrest', 'Ashland (NJ)'],
     },
     "Philadelphia Regional Rail (30th St - Airport)": {
-        "F": ['Philadelphia 30th Street Station', 'Penn Medicine', '[X] Philadelphia South Junction (All)', '[X] Philadelphia Airport Junction', 'Eastwick', '[X] Philadelphia Airport Junction', 'PHL Terminal A', 'PHL Terminal C/D', 'PHL Terminal E/F'],
+        "F": ['Philadelphia 30th Street Station', 'Penn Medicine', '[X] Philadelphia South Junction (All)', '[X] Philadelphia Airport Junction', 'Eastwick', '[X] Philadelphia Airport Bend', 'PHL Terminal A', 'PHL Terminal C/D', 'PHL Terminal E/F'],
     },
     "Philadelphia Regional Rail (30th St - Chestnut Hill West)": {
         "F": ['Philadelphia Regional Rail (30th St - North Philadelphia Junction)', 'North Philadelphia Platform 2', '[X] North Philadelphia Northeast Bend', '[X] Philadelphia Allegheny Bend', 'Queen Lane', 'Chelten Avenue', 'Tulpehocken', 'Upsal', 'Carpenter', 'Richard Allen Lane', 'St. Martins', 'Chestnut Hill-Highland', 'Chestnut Hill West'],
