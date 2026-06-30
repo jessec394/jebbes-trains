@@ -414,8 +414,10 @@ Nodes = {
 	"Philadelphia Airport Junction": {'Location': (39.939110, -75.211310)},
 	"Philadelphia Allegheny Bend": {'Location': (40.004190, -75.164920)},
 	"Philadelphia East Junction": {'Location': (40.001400, -75.097360)},
+	"Philadelphia Girard Bridge Bend": {'Location': (39.975480, -75.191410)},
 	"Philadelphia South Junction (All)": {'Location': (39.944470, -75.203300)},
 	"Philadelphia South Junction (Amtrak)": {'Location': (39.947400, -75.187700)},
+	"Philadelphia West Parkside Junction": {'Location': (39.979100, -75.229260)},
 	"Philadelphia Zoo Junction": {'Location': (39.970170, -75.200560)},
 	"Phoenix Central Park Junction": {'Location': (33.439390, -112.073790)},
 	"Phoenix Downtown Bend N": {'Location': (33.448290, -112.077780)},
@@ -683,8 +685,8 @@ Stations = {
     "103 St-Corona Plaza": {'Location': (40.749820, -73.862710)},
     "103rd St": {'Location': (41.706660, -87.632950)},
     "103rd St (Rosemoor)": {'Location': (41.706820, -87.607300)},
-    "103rd St - Washington Hts": {'Location': (41.705570, -87.655880)},
     "103rd St-Beverly Hills": {'Location': (41.706170, -87.669010)},
+    "103rd St-Washington Hts": {'Location': (41.705570, -87.655880)},
     "103rd St/Watts Towers": {'Location': (33.942210, -118.243150)},
     "104 St": {'Location': (40.681640, -73.837760)},
     "104 St-Jamaica Av": {'JZ': {'Location': (40.69517, -73.8443), 'Label': '104 St-Jamaica Av'}, 'M': {'Location': (40.69472, -73.84693), 'Label': '104 St-Jamaica Av'}},
@@ -872,6 +874,7 @@ Stations = {
     "25th & Welton": {'Location': (39.753348, -104.979787)},
     "25th Ave/Dunlap": {'Location': (33.567570, -112.111430)},
     "25th St": {'Location': (35.241730, -80.817110)},
+    "26th & Poplar": {'Location': (39.972750, -75.179170)},
     "26th St": {'Location': (35.496360, -97.476710)},
     "26th St/Bergamot": {'Location': (34.027980, -118.469200)},
     "27 de Febrero": {'Location': (18.502460, -69.999070)},
@@ -1737,8 +1740,7 @@ Stations = {
     "Belmar": {'Location': (40.180360, -74.027460)},
     "Belmont": {'Location': (35.242370, -81.037430)},
     "Belmont - Ralston Ave": {'Location': (37.521310, -122.276360)},
-    "Belmont Ave (Indianapolis)": {'Location': (39.766240, -86.196900), 'Label': 'Belmont Ave'},
-    "Belmont Ave (Philadelphia)": {'Location': (39.973580, -75.214500), 'Label': 'Belmont Ave'},
+    "Belmont Ave": {'Location': (39.766240, -86.196900), 'Label': 'Belmont Ave'},
     "Belmont-Concord Ave": {'Location': (42.395830, -71.176260)},
     "Belmont/Warren": {'Location': (41.795190, -88.038110)},
     "Belt Line": {'Location': (32.888000, -96.986560)},
@@ -2767,6 +2769,7 @@ Stations = {
     "Colfax/Yosemite": {'Location': (39.740160, -104.884650), 'Label': 'Yosemite'},
     "Coliseo": {'Location': (22.911030, -81.301440)},
     "Coliseum": {'Location': (53.570860, -113.458050)},
+    "College & 24th": {'Location': (39.972370, -75.175450)},
     "College & Bathurst": {'Location': (43.656670, -79.407900)},
     "College & Spadina": {'Location': (43.658370, -79.400150)},
     "College & State": {'Location': (39.116690, -94.742980)},
@@ -3921,6 +3924,9 @@ Stations = {
     "Francisquito Ave": {'Location': (34.067290, -117.971860)},
     "Franconia-Springfield": {'Location': (38.765930, -77.168580)},
     "Frankford": {'Location': (32.997890, -96.872420)},
+    "Frankford & Delaware": {'Location': (39.965060, -75.134140)},
+    "Frankford & Girard": {'Location': (39.968650, -75.134490)},
+    "Frankford & Richmond": {'Location': (39.966250, -75.134490)},
     "Frankford Transit Center": {'Location': (40.023050, -75.077920)},
     "Frankfort": {'Location': (41.492510, -87.845930)},
     "Franklin": {'Location': (38.462780, -121.448050)},
@@ -4091,6 +4097,48 @@ Stations = {
     "Gilmore (SkyTrain)": {'Location': (49.264950, -123.013640), 'Label': 'Gilmore'},
     "Gilroy": {'Location': (37.004180, -121.566680)},
     "Gilroy Road": {'Location': (39.482250, -76.661630)},
+    "Girard & 11th": {'Location': (39.970770, -75.154320)},
+    "Girard & 12th": {'Location': (39.970980, -75.155930)},
+    "Girard & 16th": {'Location': (39.971820, -75.162800)},
+    "Girard & 17th": {'Location': (39.972020, -75.164350)},
+    "Girard & 19th": {'Location': (39.972450, -75.167520)},
+    "Girard & 20th": {'Location': (39.972630, -75.169090)},
+    "Girard & 26th": {'Location': (39.973930, -75.179000)},
+    "Girard & 27th": {'Location': (39.974110, -75.180500)},
+    "Girard & 28th": {'Location': (39.974280, -75.181960)},
+    "Girard & 29th": {'Location': (39.974530, -75.183670)},
+    "Girard & 2nd": {'Location': (39.969440, -75.139800)},
+    "Girard & 31st": {'Location': (39.974920, -75.186810)},
+    "Girard & 33rd": {'Location': (39.975080, -75.187700)},
+    "Girard & 34th": {'Location': (39.974840, -75.196730)},
+    "Girard & 39th": {'Location': (39.974290, -75.201800)},
+    "Girard & 3rd": {'Location': (39.969710, -75.141600)},
+    "Girard & 40th": {'Location': (39.973990, -75.204630)},
+    "Girard & 41st": {'Location': (39.973770, -75.206530)},
+    "Girard & 42nd": {'Location': (39.973500, -75.209070)},
+    "Girard & 4th": {'Location': (39.969880, -75.143010)},
+    "Girard & 51st": {'Location': (39.971840, -75.223740)},
+    "Girard & 52nd": {'Location': (39.971350, -75.225980)},
+    "Girard & 54th": {'Location': (39.971020, -75.228920)},
+    "Girard & 56th": {'Location': (39.970630, -75.232660)},
+    "Girard & 59th": {'Location': (39.970060, -75.237590)},
+    "Girard & 5th": {'Location': (39.970120, -75.145230)},
+    "Girard & 60th": {'Location': (39.969890, -75.239360)},
+    "Girard & 61st": {'Location': (39.969830, -75.241330)},
+    "Girard & 62nd": {'Location': (39.970090, -75.243360)},
+    "Girard & 63rd": {'Location': (39.970240, -75.244610)},
+    "Girard & 7th": {'Location': (39.970320, -75.148270)},
+    "Girard & 8th": {'Location': (39.970370, -75.150100)},
+    "Girard & Belmont": {'Location': (39.973200, -75.211960)},
+    "Girard & Berks": {'Location': (39.971710, -75.125990)},
+    "Girard & Broad": {'Location': (39.971420, -75.159590), 'Major': True},
+    "Girard & Columbia": {'Location': (39.970120, -75.130530)},
+    "Girard & Corinthian": {'Location': (39.972830, -75.170460)},
+    "Girard & Front": {'Location': (39.968840, -75.136360)},
+    "Girard & Lancaster": {'Location': (39.972900, -75.218670)},
+    "Girard & Merion": {'Location': (39.972720, -75.216430)},
+    "Girard & Palmer": {'Location': (39.970840, -75.128510)},
+    "Girard & Ridge": {'Location': (39.972310, -75.166560)},
     "Girdwood": {'Location': (48.457970, -84.771040)},
     "Gish": {'Location': (37.362380, -121.910050)},
     "Gladstone": {'Location': (40.720300, -74.666300)},
@@ -4429,6 +4477,9 @@ Stations = {
     "Hato Rey": {'Location': (18.429440, -66.060220)},
     "Hattiesburg": {'Location': (31.327090, -89.286400)},
     "Hatuey": {'Location': (21.187900, -77.543660)},
+    "Haverford & 61st": {'Location': (39.970930, -75.240790)},
+    "Haverford & 62nd": {'Location': (39.971670, -75.242730)},
+    "Haverford & 63rd": {'Location': (39.971910, -75.244710)},
     "Haverford (HSL)": {'Location': (40.009830, -75.315100), 'Label': 'Haverford'},
     "Haverford (Mainline)": {'Location': (40.014040, -75.299910), 'Label': 'Haverford'},
     "Haverhill": {'Location': (42.772980, -71.086550)},
@@ -6877,7 +6928,7 @@ Stations = {
     "Peel": {'Location': (45.500880, -73.574600)},
     "Pelham": {'Location': (40.910150, -73.808850)},
     "Pelham Bay Park": {'Location': (40.852680, -73.827710)},
-    "Pelham Pkwy": {'Location': (40.858860, -73.855450)},
+    "Pelham Pkwy (Esplande)": {'Location': (40.858860, -73.855450), 'Label': 'Pelham Pkwy'},
     "Pelham Pkwy (White Plains)": {'Location': (40.857180, -73.867710), 'Label': 'Pelham Pkwy'},
     "Pemberton": {'Location': (50.322900, -122.804930)},
     "Pendleton": {'Location': (40.001150, -85.737760)},
@@ -7044,6 +7095,8 @@ Stations = {
     "Pontiac (IL)": {'Location': (40.878780, -88.639630), 'Label': 'Pontiac'},
     "Pontiac (MI)": {'Location': (42.632610, -83.292170), 'Label': 'Pontiac'},
     "Poplar": {'Location': (40.375390, -80.038510)},
+    "Poplar & 25th": {'Location': (39.972530, -75.177470)},
+    "Poplar & Stillman": {'Location': (39.972480, -75.178180)},
     "Poplar Bluff": {'Location': (36.753900, -90.393360)},
     "Popotla": {'Location': (19.452910, -99.175490)},
     "Port Alberni": {'Location': (49.270830, -124.812030)},
@@ -7307,8 +7360,18 @@ Stations = {
     "Richard Allen Lane": {'Location': (40.057490, -75.194720)},
     "Richard Street": {'Location': (40.699120, -74.078630)},
     "Richards Road": {'Location': (47.580830, -122.169550)},
+    "Richmond & Allegheny": {'Location': (39.982870, -75.101540)},
+    "Richmond & Ann": {'Location': (39.979750, -75.107530)},
+    "Richmond & Cambria": {'Location': (39.978910, -75.109050)},
     "Richmond & Church": {'Location': (43.652650, -79.375540)},
+    "Richmond & Clearfield": {'Location': (39.981580, -75.103990)},
+    "Richmond & Cumberland": {'Location': (39.974150, -75.118170)},
+    "Richmond & Girard": {'Location': (39.973060, -75.119590)},
+    "Richmond & Huntingdon": {'Location': (39.975440, -75.115730)},
+    "Richmond & Lehigh": {'Location': (39.976730, -75.113300)},
+    "Richmond & Somerset": {'Location': (39.977980, -75.110880)},
     "Richmond & Spadina": {'Location': (43.647530, -79.395800)},
+    "Richmond & Westmoreland": {'Location': (39.984250, -75.099550)},
     "Richmond (BART)": {'Location': (37.936760, -122.353050), 'Label': 'Richmond'},
     "Richmond (CA)": {'Location': (37.936770, -122.353900), 'Label': 'Richmond'},
     "Richmond (IN)": {'Location': (39.834840, -84.889520), 'Label': 'Richmond'},
@@ -9447,7 +9510,7 @@ Segments = {
         "Keep": ['Chicago Union Station', 'Valparaiso (HSR)', 'Fort Wayne'],
     },
     "-Intercity HS (Chicago - Matteson (ME))": {
-        "F": ['-Intercity LS (Chicago - Airline Bridge)', '[X] 35th St-Lou Jones', '[X] Rock Island 63rd St Bend', '[X] Gresham', '[X] 95th St - Longwood Manor', '[X] 103rd St - Washington Hts', '[X] Rock Island HSR Split', '[X] I-57 HSR Bend 1', '[X] I-57 HSR Bend 2'],
+        "F": ['-Intercity LS (Chicago - Airline Bridge)', '[X] 35th St-Lou Jones', '[X] Rock Island 63rd St Bend', '[X] Gresham', '[X] 95th St - Longwood Manor', '[X] 103rd St-Washington Hts', '[X] Rock Island HSR Split', '[X] I-57 HSR Bend 1', '[X] I-57 HSR Bend 2'],
     },
     "-Intercity HS (Chicago - Milwaukee)": {
         "F": ['Chicago Metra (Union - Lake Forest)', '[X] Sturtevant', '[X] Milwaukee Airport [Main]', '[R] Milwaukee Approach (Intermodal - South)'],
@@ -12052,7 +12115,7 @@ Segments = {
         "F": ['Chicago Metra (LaSalle - Gresham)', 'Brainerd', '91st St-Beverly Hills', '95th St-Beverly Hills', '99th St', '103rd St-Beverly Hills', '107th St-Beverly Hills', '111th St-Morgan Park', '115th St-Morgan Park', '119th St', '123rd St/Blue Island', 'Prairie St', 'Chicago Metra (Blue Island - Joliet)'],
     },
     "Chicago Metra (LaSalle - Joliet)": {
-        "F": ['Chicago Metra (LaSalle - Gresham)', '95th St - Longwood Manor', '103rd St - Washington Hts', '[X] Rock Island HSR Split', '[X] Chicago Blue Island Bend', 'Chicago Metra (Blue Island - Joliet)'],
+        "F": ['Chicago Metra (LaSalle - Gresham)', '95th St - Longwood Manor', '103rd St-Washington Hts', '[X] Rock Island HSR Split', '[X] Chicago Blue Island Bend', 'Chicago Metra (Blue Island - Joliet)'],
     },
     "Chicago Metra (Mark Twain - Kensington)": {
         "F": ['Chicago Metra (Airline Bridge - 63rd St)', '75th St (Grand Crossing)', '79th St (Chatham)', '83rd St (Avalon Park)', '87th St (Woodruff)', '91st St', '95th St/Chicago State University', '103rd St (Rosemoor)', '107th St', '111th St (Pullman)', '115th St (Kensington)'],
@@ -12936,7 +12999,7 @@ Segments = {
         "F": ['Indiana Statehouse', 'Indianapolis Union Station [Subway]', 'Lucas Oil Stadium', '[X] Indianapolis Merrill Bend W', '[X] Indianapolis Merrill Bend E', 'McCarty St', 'Morris St', 'Gates-Hendricks', 'Minnesota St (KC)', 'Raymond St (Subway)', 'Garfield Park', 'Troy Ave', 'Sumner Ave', 'Hanna Ave', 'Lawrence Ave', 'Thompson Rd', 'Epler Ave', 'Edgewood Ave', 'Banta Rd', 'Southport Rd'],
     },
     "Indianapolis Subway (Downtown - West)": {
-        "F": ['Indiana Statehouse', 'West St', 'Indianapolis Zoo', 'Harding St', 'Belmont Ave (Indianapolis)', 'Warman Ave', 'Alton Ave', 'Shelton Heights', 'Fleming St', 'Lynhurst Dr', '[X] Indianapolis Stout Field Bend', 'Park Fletcher', '[X] Indianapolis Airport Bend (Subway)', 'Indianapolis Airport'],
+        "F": ['Indiana Statehouse', 'West St', 'Indianapolis Zoo', 'Harding St', 'Belmont Ave', 'Warman Ave', 'Alton Ave', 'Shelton Heights', 'Fleming St', 'Lynhurst Dr', '[X] Indianapolis Stout Field Bend', 'Park Fletcher', '[X] Indianapolis Airport Bend (Subway)', 'Indianapolis Airport'],
     },
     "Indianapolis Subway (North - South)": {
         "F": ['[R] Indianapolis Subway (Downtown - North)', 'Indianapolis Subway (Downtown - South)'],
@@ -13724,7 +13787,7 @@ Segments = {
     },
     "New York Regional Rail (Grand Central - New Haven) [Old]": {
         "F": ['New York Regional Rail (Grand Central - New Haven)'],
-        "Skip": ['Hunts Point Av (Mainline)'],
+        "Skip": ['Hunts Point Av (Mainline)', 'Morris Park (Mainline)', 'Co-Op City'],
     },
     "New York Regional Rail (Grand Central - Port Washington)": {
         "F": ['New York Regional Rail (Grand Central - Woodside)', 'New York Regional Rail (Woodside - Port Washington)'],
@@ -14039,7 +14102,7 @@ Segments = {
         "F": ['Brooklyn Bridge-City Hall', 'Canal St (Lafayette)', 'Spring St (Lafayette)', 'Bleecker St', 'Astor Pl', '14 St-Union Sq [456]', '23 St (Park)', '28 St (Park)', '33 St', '[X] NY Grand Central Bend S (456)', 'Grand Central-42 St [456]', '[X] NY Grand Central Bend N (456)', '51 St', 'Lexington Av-59 St', '68 St-Hunter College', '77 St (Lexington)', '86 St (Lexington)', '96 St (Lexington)', '103 St (Lexington)', '110 St (Lexington)', '116 St (Lexington)', '125 St (Lexington)', '[X] NY I-87 Junction (456)'],
     },
     "New York Subway (City Hall - Dyre Av)": {
-        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av (Westchester)', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park (Subway)', 'Pelham Pkwy', 'Gun Hill Rd (Sexton)', 'Baychester Av', 'Eastchester-Dyre Av'],
+        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av (Westchester)', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park (Subway)', 'Pelham Pkwy (Esplande)', 'Gun Hill Rd (Sexton)', 'Baychester Av', 'Eastchester-Dyre Av'],
     },
     "New York Subway (City Hall - Flatbush Av)": {
         "F": ['New York Subway (City Hall - Franklin Av)', '[X] Nostrand Av (Eastern)', 'President St-Medgar Evers College', 'Sterling St', 'Winthrop St', 'Church Av (Nostrand)', 'Beverly Rd (Nostrand)', 'Newkirk Av-Little Haiti', 'Flatbush Av-Brooklyn College'],
@@ -14286,7 +14349,7 @@ Segments = {
         "F": ['Philadelphia Regional Rail (30th St - North Philadelphia Junction)', 'North Philadelphia Platform 2', '[X] North Philadelphia Northeast Bend', '[X] Philadelphia Allegheny Bend', 'Queen Lane', 'Chelten Avenue', 'Tulpehocken', 'Upsal', 'Carpenter', 'Richard Allen Lane', 'St. Martins', 'Chestnut Hill-Highland', 'Chestnut Hill West'],
     },
     "Philadelphia Regional Rail (30th St - Cynwyd)": {
-        "F": ['Philadelphia Approach (30th St - West)', 'Belmont Ave (Philadelphia)', 'Wynnefield', 'Bala', 'Cynwyd'],
+        "F": ['Philadelphia Approach (30th St - West)', '[X] Philadelphia West Parkside Junction', 'Wynnefield', 'Bala', 'Cynwyd'],
     },
     "Philadelphia Regional Rail (30th St - Frankford Ave Junction)": {
         "F": ['Philadelphia Regional Rail (30th St - North Philadelphia Junction)', 'North Philadelphia', '[X] Philadelphia East Junction'],
@@ -14307,7 +14370,7 @@ Segments = {
         "F": ['Philadelphia Regional Rail (30th St - Jefferson)', 'Temple University'],
     },
     "Philadelphia Regional Rail (30th St - Thorndale)": {
-        "F": ['Philadelphia Approach (30th St - West)', 'Belmont Ave (Philadelphia)', 'Overbrook (Philadelphia)', 'Merion', 'Narberth', 'Wynnewood', 'Ardmore (PA)', 'Haverford (Mainline)', 'Bryn Mawr (Philadelphia)', 'Rosemont-Airdale Rd', 'Villanova (Mainline)', 'Radnor (Mainline)', 'St. Davids', 'Wayne Ave', 'Strafford', 'Devon Park', 'Berwyn-Lancaster Ave', 'Daylesford', 'Paoli', 'Malvern', 'Exton', 'Whitford', 'Downingtown', 'Thorndale'],
+        "F": ['Philadelphia Approach (30th St - West)', '[X] Philadelphia West Parkside Junction', 'Overbrook (Philadelphia)', 'Merion', 'Narberth', 'Wynnewood', 'Ardmore (PA)', 'Haverford (Mainline)', 'Bryn Mawr (Philadelphia)', 'Rosemont-Airdale Rd', 'Villanova (Mainline)', 'Radnor (Mainline)', 'St. Davids', 'Wayne Ave', 'Strafford', 'Devon Park', 'Berwyn-Lancaster Ave', 'Daylesford', 'Paoli', 'Malvern', 'Exton', 'Whitford', 'Downingtown', 'Thorndale'],
     },
     "Philadelphia Regional Rail (30th St - Trenton)": {
         "F": ['Philadelphia Regional Rail (30th St - Frankford Ave Junction)', 'Bridesburg', 'Tacony', 'Holmesburg', 'Torresdale', 'Cornwells Heights', 'Eddington', 'Croydon', 'Bristol (PA)', 'Levittown', 'Trenton Transit Center'],
@@ -14395,14 +14458,31 @@ Segments = {
     "Philadelphia Subway (Roosevelt Line)": {
         "F": ['Roosevelt/Rockhill', 'Roosevelt/Neshaminy Mall', 'Roosevelt/Old Lincoln', 'Roosevelt/Southampton', 'Roosevelt/Welsh-Grant', 'Roosevelt/Rhawn', 'Roosevelt/Cottman', 'Roosevelt/Bustleton', 'Roosevelt/Pratt', 'Roosevelt/Adams', 'Roosevelt/Rising Sun', 'Roosevelt/North 9th', 'Broad-Erie', 'Broad-North Philadelphia', 'Broad-Girard', '[X] Broad-Fairmount', 'Philadelphia Chinatown', '[X] PATCO/BSL Junction', 'Market-8th St'],
     },
-    "Philadelphia Tram (69th St - Collingdale)": {
-        "F": ['Philadelphia Tram (69th St - Drexel Hill Junction)', 'Garrettford', 'Drexel Manor', 'Marshall Rd', 'Creek Rd', 'Baltimore Av', 'Penn St', 'Springfield Rd', 'Clifton-Aldan [Tram]', 'Woodlawn-Providence', 'Magnolia Av', 'North St', 'Bartram Av', 'Andrews Av', 'MacDade Blvd', 'Sharon Hill'],
+    "Philadelphia Trolley (69th St - Collingdale)": {
+        "F": ['Philadelphia Trolley (69th St - Drexel Hill Junction)', 'Garrettford', 'Drexel Manor', 'Marshall Rd', 'Creek Rd', 'Baltimore Av', 'Penn St', 'Springfield Rd', 'Clifton-Aldan [Tram]', 'Woodlawn-Providence', 'Magnolia Av', 'North St', 'Bartram Av', 'Andrews Av', 'MacDade Blvd', 'Sharon Hill'],
     },
-    "Philadelphia Tram (69th St - Drexel Hill Junction)": {
+    "Philadelphia Trolley (69th St - Drexel Hill Junction)": {
         "F": ['69th St Transit Center', 'Fairfield Av', 'Walnut St (Philadelphia)', 'Avon Rd', 'Hilltop Rd', 'Beverly Blvd', 'Congress Av', 'Lansdowne Av', 'Drexel Park', 'Irvington Rd', 'Drexel Hill Junction'],
     },
-    "Philadelphia Tram (69th St - Media)": {
-        "F": ['Philadelphia Tram (69th St - Drexel Hill Junction)', 'Huey Av', 'School Ln', 'Aronimink', 'Drexelbrook', 'Drexeline', 'Scenic Rd', 'Brookside-Springfield', 'Saxer Av', 'Leamy Av', 'Woodland Av', 'Thompson Av', 'Springfield Mall', 'Paper Mill Rd', 'Pine Ridge', 'Beatty Rd', 'Providence Rd', 'Manchester Av', 'Edgmont St', 'Monroe St (Philadelphia)', 'Jackson St', 'Olive St', 'Veterans Sq', 'Orange St'],
+    "Philadelphia Trolley (69th St - Media)": {
+        "F": ['Philadelphia Trolley (69th St - Drexel Hill Junction)', 'Huey Av', 'School Ln', 'Aronimink', 'Drexelbrook', 'Drexeline', 'Scenic Rd', 'Brookside-Springfield', 'Saxer Av', 'Leamy Av', 'Woodland Av', 'Thompson Av', 'Springfield Mall', 'Paper Mill Rd', 'Pine Ridge', 'Beatty Rd', 'Providence Rd', 'Manchester Av', 'Edgmont St', 'Monroe St (Philadelphia)', 'Jackson St', 'Olive St', 'Veterans Sq', 'Orange St'],
+    },
+    "Philadelphia Trolley (College Loop - Carroll Park)": {
+        "F": ['Girard & 26th', 'Girard & 27th', 'Girard & 28th', 'Girard & 29th', 'Girard & 31st', 'Girard & 33rd', '[X] Philadelphia Girard Bridge Bend', 'Girard & 34th', 'Girard & 39th', 'Girard & 40th', 'Girard & 41st', 'Girard & 42nd', 'Girard & Belmont', 'Girard & Merion', 'Girard & Lancaster', 'Girard & 51st', 'Girard & 52nd', 'Girard & 54th', 'Girard & 56th', 'Girard & 59th', 'Girard & 60th'],
+    },
+    "Philadelphia Trolley (College Loop EB)": {
+        "F": ['26th & Poplar', 'Poplar & Stillman'],
+    },
+    "Philadelphia Trolley (College Loop WB)": {
+        "F": ['Poplar & 25th'],
+    },
+    "Philadelphia Trolley (Girard)": {
+        "F": ['Philadelphia Trolley (Westmoreland - College Loop)', 'Philadelphia Trolley (College Loop WB)', 'Philadelphia Trolley (College Loop - Carroll Park)'],
+        "L": ['Haverford & 61st', 'Haverford & 62nd', 'Haverford & 63rd', 'Girard & 63rd', 'Girard & 62nd', 'Girard & 61st'],
+        "R": ['[R] Philadelphia Trolley (College Loop - Carroll Park)', 'Philadelphia Trolley (College Loop EB)', '[R] Philadelphia Trolley (Westmoreland - College Loop)'],
+    },
+    "Philadelphia Trolley (Westmoreland - College Loop)": {
+        "F": ['Richmond & Westmoreland', 'Richmond & Allegheny', 'Richmond & Clearfield', 'Richmond & Ann', 'Richmond & Cambria', 'Richmond & Somerset', 'Richmond & Lehigh', 'Richmond & Huntingdon', 'Richmond & Cumberland', 'Richmond & Girard', 'Girard & Berks', 'Girard & Palmer', 'Girard & Columbia', 'Frankford & Girard', 'Frankford & Richmond', 'Frankford & Delaware', 'Frankford & Richmond', 'Frankford & Girard', 'Girard & Front', 'Girard & 2nd', 'Girard & 3rd', 'Girard & 4th', 'Girard & 5th', 'Girard & 7th', 'Girard & 8th', 'Girard & 11th', 'Girard & 12th', 'Girard & Broad', 'Girard & 16th', 'Girard & 17th', 'Girard & Ridge', 'Girard & 19th', 'Girard & 20th', 'Girard & Corinthian', 'College & 24th'],
     },
     "Phoenix Approach (Central - East)": {
         "F": ['Phoenix', '[X] Phoenix East Bend'],
@@ -17806,7 +17886,7 @@ Lines = {
         },
     },
     "MTA": {
-        "1 Train": {
+        "1": {
             "Fantasy": {
                 "South Ferry - 242 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - Van Cortlandt)'},
             },
@@ -17814,7 +17894,7 @@ Lines = {
                 "South Ferry - 242 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - Van Cortlandt)', 'File': '[MTA] 1 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.88652/-73.89963/standard&lonlats=-74.012964,40.701674;-74.014794,40.703034;-74.007946,40.717089;-73.99014,40.7516;-73.987805,40.75483;-73.966759,40.804;-73.950318,40.826562;-73.899193,40.887733;-73.898179,40.889907;-73.901403,40.884067;-73.953068,40.823009;-73.990226,40.751618;-73.999231,40.7392;-74.014966,40.70317;-74.013015,40.70162&profile=rail'},
             },
         },
-        "2 Train": {
+        "2": {
             "Fantasy": {
                 "Flatbush Av - 241 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush - 241 St)'},
             },
@@ -17822,7 +17902,7 @@ Lines = {
                 "Flatbush Av - 241 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush - 241 St)', 'File': '[MTA] 2 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.90019/-73.85196/standard&lonlats=-73.947392,40.631965;-73.947821,40.635218;-73.958805,40.670882;-74.008446,40.716474;-74.008002,40.71705;-73.990112,40.751618;-73.96723,40.799238;-73.907154,40.816828;-73.868734,40.848217;-73.851712,40.901621;-73.850428,40.903276;-73.85507,40.897805;-73.868251,40.849382;-73.92433,40.817833;-73.93779,40.818364;-73.967455,40.79938;-73.990203,40.75164;-73.999226,40.739189;-73.956721,40.670398;-73.948014,40.635454;-73.947532,40.631925&profile=rail'},
             },
         },
-        "3 Train": {
+        "3": {
             "Fantasy": {
                 "New Lots Av - Lenox Terminal": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (New Lots Av - Lenox Terminal)'},
             },
@@ -17830,7 +17910,7 @@ Lines = {
                 "New Lots Av - Lenox Terminal": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (New Lots Av - Lenox Terminal)', 'File': '[MTA] 3 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.82162/-73.93405/standard&lonlats=-73.883171,40.666445;-73.89996,40.663944;-73.957622,40.670646;-74.008466,40.71646;-74.007707,40.717422;-73.989811,40.752036;-73.96724,40.799196;-73.936905,40.824178;-73.935923,40.821027;-73.989758,40.752252;-73.999237,40.739198;-73.957365,40.670524;-73.953112,40.669996;-73.903291,40.663354;-73.888164,40.665511;-73.883165,40.666426&profile=rail'},
             },
         },
-        "4 Train": {
+        "4": {
             "Fantasy": {
                 "Utica Av - Woodlawn": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Utica Av - Woodlawn)'},
             },
@@ -17838,7 +17918,7 @@ Lines = {
                 "Utica Av - Woodlawn": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Utica Av - Woodlawn)', 'File': '[MTA] 4 Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.88499/-73.87789/standard&lonlats=-73.930855,40.668786;-73.958687,40.670899;-73.962311,40.671584;-74.001103,40.717784;-73.925323,40.828712;-73.920447,40.836915;-73.895502,40.869736;-73.878057,40.886772;-73.887278,40.877577;-73.88851,40.875434;-73.888944,40.874537;-73.895802,40.869627;-73.926299,40.827315;-73.962327,40.671508;-73.93086,40.668737&profile=rail'},
             },
         },
-        "5 Train": {
+        "5": {
             "Fantasy": {
                 "Flatbush Av - Dyre Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush Av - Dyre Av)'},
                 "Flatbush Av - Nereid Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush Av - Nereid Av)'},
@@ -17848,7 +17928,7 @@ Lines = {
                 "Flatbush Av - Nereid Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Flatbush Av - Nereid Av)', 'File': '[MTA] 5 Train (Nereid)', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.89836/-73.85413/standard&lonlats=-73.947274,40.631917;-73.947824,40.634846;-73.958687,40.670899;-73.962311,40.671584;-74.001103,40.717784;-73.907068,40.816871;-73.873073,40.842154;-73.868068,40.849345;-73.853783,40.898998;-73.860698,40.887872;-73.863525,40.88256;-73.868895,40.848254;-73.876469,40.8409;-73.923853,40.817699;-73.926803,40.818503;-73.96307,40.671608;-73.962305,40.671513;-73.948022,40.635623;-73.947521,40.632099&profile=rail'},
             },
         },
-        "6 Train": {
+        "6": {
             "Fantasy": {
                 "City Hall - Pelham Park (Express)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (City Hall - Pelham Park Express)'},
                 "City Hall - Pelham Park (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (City Hall - Pelham Park Local)'},
@@ -17858,7 +17938,7 @@ Lines = {
                 "City Hall - Pelham Park (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (City Hall - Pelham Park Local)', 'File': '[MTA] 6 Train (Local)', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.8503/-73.8301/standard&lonlats=-74.00508,40.712275;-73.939804,40.80108;-73.857313,40.833536;-73.829978,40.850503;-73.827031,40.852829;-73.830225,40.850801;-73.85845,40.833552;-73.997426,40.722207;-74.005149,40.71236&profile=rail'},
             },
         },
-        "7 Train": {
+        "7": {
             "Fantasy": {
                 "Hudson Yards - Flushing (Express)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hudson Yards - Flushing Express)'},
                 "NY Hudson Yards - Flushing (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hudson Yards - Flushing Local)'},
@@ -17868,7 +17948,7 @@ Lines = {
                 "NY Hudson Yards - Flushing (Local)": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hudson Yards - Flushing Local)', 'File': '[MTA] 7 Train (Local)', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.75722/-73.83653/standard&lonlats=-74.00225,40.755221;-73.986373,40.754925;-73.959521,40.744323;-73.944965,40.747739;-73.936304,40.747797;-73.897326,40.74618;-73.890508,40.746916;-73.850913,40.75295;-73.845004,40.754712;-73.831274,40.759099;-73.828833,40.759692;-73.846412,40.754458;-73.868927,40.749317;-73.892356,40.74679;-73.936256,40.74786;-73.945536,40.74644;-73.960358,40.744924;-73.986338,40.754966;-73.998789,40.759529;-74.002328,40.755253&profile=rail'},
             },
         },
-        "A Train": {
+        "A": {
             "Fantasy": {
                 "Far Rockaway - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Far Rockaway - 207 St)'},
                 "Ozone Park - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Ozone Park - 207 St)'},
@@ -17880,7 +17960,7 @@ Lines = {
                 "Rockaway Park - 207 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Rockaway Park - 207 St)', 'File': '[MTA] A Train (Rockaway Park)', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.58258/-73.83024/standard&lonlats=-73.836652,40.580547;-73.814027,40.587852;-73.815524,40.607517;-73.829198,40.658467;-73.830448,40.66099;-73.840324,40.680748;-73.859158,40.679418;-73.869782,40.675738;-73.87619,40.674816;-73.901226,40.678047;-73.930006,40.679373;-73.944812,40.68016;-73.999872,40.702797;-73.981582,40.768429;-73.952491,40.8109;-73.951153,40.812319;-73.939364,40.840874;-73.918505,40.868248;-73.928338,40.86517;-73.944533,40.824446;-73.946794,40.819826;-73.950157,40.813454;-73.951257,40.812315;-73.952807,40.810553;-73.972543,40.781035;-73.976057,40.776206;-73.982277,40.767633;-74.000065,40.702582;-73.946322,40.680207;-73.907296,40.678132;-73.901242,40.678006;-73.876324,40.674757;-73.84042,40.680345;-73.830244,40.660103;-73.829514,40.65865;-73.836669,40.580584&profile=rail'},
             },
         },
-        "B Train": {
+        "B": {
             "Fantasy": {
                 "Brighton Beach - Bedford Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Brighton Beach - Bedford Park)'},
             },
@@ -17893,7 +17973,7 @@ Lines = {
                 "Bath Av - Rockaway Pkwy": {'Mode': 'Light Rail', 'Stations': 'New York Light Rail (Flatlands)'},
             },
         },
-        "C Train": {
+        "C": {
             "Fantasy": {
                 "Euclid Av - 168 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Euclid Av - 168 St)'},
             },
@@ -17901,7 +17981,7 @@ Lines = {
                 "Euclid Av - 168 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Euclid Av - 168 St)', 'File': '[MTA] C Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.71217/-74.00584/standard&lonlats=-73.871105,40.675644;-73.873605,40.675231;-73.881005,40.674149;-73.921887,40.678942;-73.999701,40.702895;-73.996561,40.74787;-73.939345,40.840955;-73.940067,40.836135;-73.994974,40.750179;-74.00214,40.740314;-73.99925,40.701844;-73.9872,40.694648;-73.987211,40.694514;-73.920865,40.678681;-73.878824,40.67435;-73.871044,40.6754&profile=rail'},
             },
         },
-        "D Train": {
+        "D": {
             "Fantasy": {
                 "Coney Island - Norwood": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Norwood)'},
             },
@@ -17909,7 +17989,7 @@ Lines = {
                 "Coney Island - Norwood": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Norwood)', 'File': '[MTA] D Train', 'Link': 'https://brouter.damsy.net/latest/#map=14/40.5942/-73.9679/standard&lonlats=-73.981346,40.576478;-73.984262,40.591792;-74.000816,40.611477;-73.997201,40.73677;-73.890401,40.870612;-73.877848,40.874385;-73.885455,40.876145;-73.887026,40.873294;-73.947338,40.818287;-73.982296,40.767548;-73.997684,40.736266;-73.999601,40.73357;-73.999824,40.733255;-73.996868,40.626934;-73.997608,40.624246;-74.001594,40.610543;-73.983881,40.589201;-73.981429,40.576489&profile=rail'},
             },
         },
-        "E Train": {
+        "E": {
             "Fantasy": {
                 "World Trade Center - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (WTC - Jamaica)'},
             },
@@ -17917,7 +17997,7 @@ Lines = {
                 "World Trade Center - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (WTC - Jamaica)', 'File': '[MTA] E Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.71428/-74.00734/standard&lonlats=-74.010051,40.712147;-74.003972,40.725577;-73.98438,40.763751;-73.958416,40.750833;-73.858091,40.728282;-73.814349,40.699934;-73.800053,40.702381;-73.814768,40.700291;-73.858847,40.729019;-73.959961,40.753133;-73.971505,40.758639;-73.984616,40.76382;-73.996318,40.748332;-74.002179,40.74025;-74.004034,40.725564;-74.010087,40.712156&profile=rail'},
             },
         },
-        "F Train": {
+        "F": {
             "Fantasy": {
                 "Coney Island - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Jamaica)'},
             },
@@ -17925,7 +18005,7 @@ Lines = {
                 "Coney Island - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Jamaica)', 'File': '[MTA] F Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.57894/-73.97760/standard&lonlats=-73.98144,40.578376;-73.974456,40.58109;-73.973206,40.59681;-73.988795,40.66991;-73.991109,40.671006;-73.988414,40.708592;-73.927128,40.751991;-73.802585,40.707669;-73.79464,40.709865;-73.777909,40.714009;-73.795879,40.709771;-73.803529,40.707633;-73.92793,40.752128;-73.988146,40.707645;-73.99123,40.670853;-73.988945,40.669755;-73.972685,40.606545;-73.973525,40.595228;-73.974702,40.580609;-73.981474,40.578372&profile=rail'},
             },
         },
-        "G Train": {
+        "G": {
             "Fantasy": {
                 "Court Sq - Church Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Court Sq - Church Av)'},
             },
@@ -17933,7 +18013,7 @@ Lines = {
                 "Court Sq - Church Av": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Court Sq - Church Av)', 'File': '[MTA] G Train', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7468/-73.9417/standard&lonlats=-73.979627,40.64314;-73.943535,40.746737;-73.948395,40.69156;-73.995178,40.67321;-73.979403,40.643165&profile=rail'},
             },
         },
-        "J Train": {
+        "J": {
             "Fantasy": {
                 "Broad St - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad St - Jamaica)'},
             },
@@ -17941,7 +18021,7 @@ Lines = {
                 "Broad St - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad St - Jamaica)', 'File': '[MTA] J Train', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7116/-74.0025/standard&lonlats=-74.011124,40.706303;-73.906746,40.680662;-73.826661,40.700691;-73.800048,40.70233;-73.826757,40.700821;-73.872698,40.685015;-73.933815,40.69625;-73.955112,40.707515;-73.984884,40.717533;-74.000736,40.717227;-74.011197,40.706327&profile=rail'},
             },
         },
-        "L Train": {
+        "L": {
             "Fantasy": {
                 "8 Av - Rockaway Pkwy": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (8 Av - Rockaway Pkwy)'},
             },
@@ -17949,7 +18029,7 @@ Lines = {
                 "8 Av - Rockaway Pkwy": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (8 Av - Rockaway Pkwy)', 'File': '[MTA] L Train', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.68246/-73.90422/standard&lonlats=-74.003268,40.740147;-74.000993,40.739035;-73.902521,40.645771;-73.89959,40.650377;-73.955747,40.716645;-74.000862,40.739205;-74.003252,40.740291&profile=rail'},
             },
         },
-        "M Train": {
+        "M": {
             "Fantasy": {
                 "Middle Village - Rockaway Park": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Middle Village - Rockaway Park)'},
             },
@@ -17962,7 +18042,7 @@ Lines = {
                 "South Ferry - 125 St": {'Mode': 'Light Rail', 'Stations': 'New York Light Rail (1st Ave)'},
             },
         },
-        "N Train": {
+        "N": {
             "Fantasy": {
                 "Coney Island - LaGuardia": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - LaGuardia)'},
             },
@@ -17970,7 +18050,7 @@ Lines = {
                 "Coney Island - Astoria-Ditmars": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - Astoria-Ditmars)', 'File': '[MTA] N Train', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7732/-73.9118/standard&lonlats=-73.981069,40.576649;-73.978136,40.593441;-74.009775,40.648883;-73.944018,40.752463;-73.913918,40.773376;-73.911145,40.775593;-73.933305,40.752312;-73.978243,40.766997;-74.010095,40.648937;-73.978634,40.594187;-73.981028,40.576647&profile=rail'},
             },
         },
-        "Q Train": {
+        "Q": {
             "Fantasy": {
                 "Coney Island - 125 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - 125 St)'},
             },
@@ -17978,7 +18058,7 @@ Lines = {
                 "Coney Island - 96 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Coney Island - 96 St)', 'File': '[MTA] Q Train', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.57718/-73.97839/standard&lonlats=-73.946024,40.785984;-73.975925,40.768939;-73.95965,40.618391;-73.957499,40.606805;-73.981247,40.578397;-73.975164,40.576258;-73.963974,40.576787;-73.957316,40.607017;-73.959467,40.618476;-73.975174,40.768742;-73.94583,40.785905&profile=rail'},
             },
         },
-        "R Train": {
+        "R": {
             "Fantasy": {
                 "Bay Ridge - Forest Hills": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Bay Ridge - Forest Hills)'},
             },
@@ -17986,7 +18066,7 @@ Lines = {
                 "Bay Ridge - Forest Hills": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Bay Ridge - Forest Hills)', 'File': '[MTA] R Train', 'Link': 'https://brouter.damsy.net/latest/#map=16/40.7233/-73.8495/standard&lonlats=-74.03109,40.615917;-73.978415,40.76673;-73.847201,40.722864;-73.84417,40.721535;-73.848625,40.723582;-73.978586,40.767009;-74.031235,40.615952&profile=rail'},
             },
         },
-        "Shuttle": {
+        "S": {
             "Fantasy": {
                 "42 St Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (42 St - Times Sq)'},
                 "Prospect Park Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Prospect Park - Franklin Av)'},
@@ -17998,12 +18078,12 @@ Lines = {
                 "Rockaway Shuttle": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad Channel - Rockaway Park)', 'File': '[MTA] Shuttle (Rockaway Park)', 'Link': 'https://brouter.damsy.net/latest/#map=17/40.58257/-73.83087/standard&lonlats=-73.816271,40.60928;-73.837008,40.580479;-73.830389,40.582161;-73.816129,40.609309&profile=rail'},
             },
         },
-        "T Train": {
+        "T": {
             "Fantasy": {
                 "Hanover Sq - 125 St": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Hanover Square - 125 St)'},
             },
         },
-        "W Train": {
+        "W": {
             "Fantasy": {
                 "South Ferry - LaGuardia": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - LaGuardia)'},
             },
@@ -18011,12 +18091,12 @@ Lines = {
                 "South Ferry - Astoria-Ditmars": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (South Ferry - Astoria-Ditmars)', 'File': '[MTA] W Train', 'Link': 'https://brouter.damsy.net/latest/#map=15/40.7636/-73.9244/standard&lonlats=-74.012825,40.702732;-73.944002,40.752465;-73.942773,40.751906;-73.914042,40.773201;-73.911037,40.775691;-73.922128,40.766063;-73.943994,40.752511;-73.978415,40.767054;-74.009917,40.711892;-74.012862,40.702732;-74.012863,40.702727&profile=rail'},
             },
         },
-        "X Train": {
+        "X": {
             "Fantasy": {
                 "Brooklyn Army Terminal - Roosevelt Av": {'Mode': 'Light Metro', 'Stations': 'New York IBX (Queens - Brooklyn)'},
             },
         },
-        "Z Train": {
+        "Z": {
             "Fantasy": {
                 "Broad St - Jamaica": {'Mode': 'Heavy Metro', 'Stations': 'New York Subway (Broad St - Jamaica)'},
             },
@@ -19533,18 +19613,18 @@ Lines = {
         },
         "D1": {
             "Fantasy": {
-                "69th St - Media": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Tram (69th St - Media)'},
+                "69th St - Media": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (69th St - Media)'},
             },
             "Present": {
-                "69th St - Media": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Tram (69th St - Media)'},
+                "69th St - Media": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (69th St - Media)'},
             },
         },
         "D2": {
             "Fantasy": {
-                "69th St - Collingdale": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Tram (69th St - Collingdale)'},
+                "69th St - Collingdale": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (69th St - Collingdale)'},
             },
             "Present": {
-                "69th St - Collingdale": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Tram (69th St - Collingdale)'},
+                "69th St - Collingdale": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (69th St - Collingdale)'},
             },
         },
         "Fox Chase Line": {
@@ -19553,6 +19633,14 @@ Lines = {
             },
             "Present": {
                 "Center City - Fox Chase": {'Mode': 'Heavy Rail', 'Stations': 'Philadelphia Regional Rail (Suburban - Fox Chase)'},
+            },
+        },
+        "G": {
+            "Fantasy": {
+                "Westmoreland - Haddington": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (Girard)'},
+            },
+            "Present": {
+                "Westmoreland - Haddington": {'Mode': 'Streetcar', 'Stations': 'Philadelphia Trolley (Girard)'},
             },
         },
         "L": {
@@ -21043,7 +21131,7 @@ Destinations = {
         "Palacio de los Deportes": {"Location": (19.405330, -99.099860), "Stations": ['Velódromo'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Palacio de los Deportes.jpg', 'Wikipedia/ProtoplasmaKid']},
         "Paycom Center": {"Location": (29.416980, -98.478810), "Stations": ['Oklahoma City', 'Paycom Center'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Paycom Center.png', 'Paycom Center']},
         "Paycor Stadium": {"Location": (39.095440, -84.516050), "Stations": ['Stadium District', 'The Banks'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Paycor Stadium.png', 'Visit Cincy']},
-        "Pennsylvania Convention Center": {"Location": (39.955120, -75.162640), "Stations": ['Market-15th St', 'Philadelphia Suburban Station'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Pennsylvania Convention Center.jpg', 'Philadelphia Convention and Visitors Bureau']},
+        "Pennsylvania Convention Center": {"Location": (39.955120, -75.162640), "Stations": ['Market-15th St', 'Philadelphia Suburban Station', 'Race-Vine'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Pennsylvania Convention Center.jpg', 'Philadelphia Convention and Visitors Bureau']},
         "Petco Park": {"Location": (32.707610, -117.157040), "Stations": ['Gaslamp Quarter'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Petco Park.jpg', 'Wikipedia/Mds08011']},
         "Phoenix Convention Center": {"Location": (33.449890, -112.070530), "Stations": ['3rd St/Washington'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Phoenix Convention Center.jpg', 'Visit Phoenix']},
         "Place Bell": {"Location": (45.556130, -73.721220), "Stations": ['Montmorency'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Place Bell.jpg', 'Wikipedia/Bryantriplex']},
