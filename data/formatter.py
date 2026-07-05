@@ -7,7 +7,7 @@ file_path = os.path.join(directory, 'map_data.py')
 def formatCoordinates(tuple):
     return f"({tuple[0]:.6f}, {tuple[1]:.6f})"
 
-# Maps each Radius constant's value back to its name so Waypoints entries
+# Maps each Radius constant's value back to its name so Projects entries
 # render as e.g. 'Radius': RadiusX instead of the literal float they hold
 # at runtime.
 RadiusNames = {
@@ -94,9 +94,9 @@ for category in sorted(Destinations.keys()):
     output += "    },\n"
 output += "}\n\n"
 
-output += "Waypoints = {\n"
-for key in sorted(Waypoints.keys()):
-    content = Waypoints[key]
+output += "Projects = {\n"
+for key in sorted(Projects.keys()):
+    content = Projects[key]
     loc_str = formatCoordinates(content['Location'])
     radius_str = RadiusNames.get(content.get('Radius'), repr(content.get('Radius')))
     inner = f'"Source": {repr(content["Source"])}'
