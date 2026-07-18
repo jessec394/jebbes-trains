@@ -7,9 +7,6 @@ file_path = os.path.join(directory, 'map_data.py')
 def formatCoordinates(tuple):
     return f"({tuple[0]:.6f}, {tuple[1]:.6f})"
 
-# Maps each Radius constant's value back to its name so Projects entries
-# render as e.g. 'Radius': RadiusX instead of the literal float they hold
-# at runtime.
 RadiusNames = {
     RadiusX: "RadiusX",
     RadiusL: "RadiusL",
