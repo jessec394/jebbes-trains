@@ -11,7 +11,8 @@ Nodes = {
 	"Austin Downtown Bend W": {'Location': (30.268100, -97.746640)},
 	"Baltimore West Bend": {'Location': (39.314240, -76.641740)},
 	"Bergenwood HBLR Junction": {'Location': (40.811380, -74.018560)},
-	"Boston Lechmere Junction": {'Location': (42.375050, -71.082350)},
+	"Boston Chelsea Bend E": {'Location': (42.384860, -71.021920)},
+	"Boston Chelsea Bend W": {'Location': (42.394450, -71.028710)},
 	"Boston South Junction": {'Location': (42.346010, -71.057990)},
 	"Boulder Downtown Bend": {'Location': (40.015870, -105.279280)},
 	"Buffalo Exchange Junction": {'Location': (42.875660, -78.858780)},
@@ -70,7 +71,6 @@ Nodes = {
 	"Cincinnati North Bend": {'Location': (39.147860, -84.544220)},
 	"Cincinnati Northside Bend": {'Location': (39.157650, -84.536610)},
 	"Cincinnati South Junction": {'Location': (39.104510, -84.539040)},
-	"City Centre [Mississauga] Bend": {'Location': (43.599740, -79.643230)},
 	"Cleveland Cudell Junction": {'Location': (41.480830, -81.754760)},
 	"Cleveland St. Clair Bend": {'Location': (41.515350, -81.668770)},
 	"Cleveland West Junction": {'Location': (41.495510, -81.699750)},
@@ -300,6 +300,7 @@ Nodes = {
 	"Minneapolis South Junction": {'Location': (44.979370, -93.283310)},
 	"Minneapolis Southeast Junction": {'Location': (44.975690, -93.293680)},
 	"Minneapolis US Bank Junction": {'Location': (44.970620, -93.252590)},
+	"Mississauga City Centre Bend": {'Location': (43.599740, -79.643230)},
 	"Montréal Berri Bend": {'Location': (45.512380, -73.554640)},
 	"Montréal Brossard Bend": {'Location': (45.436830, -73.458190)},
 	"Montréal Charlevoix Bend E": {'Location': (45.478300, -73.569350)},
@@ -1364,6 +1365,7 @@ Stations = {
     "Airport Marriott": {'Location': (29.986750, -95.342230)},
     "Airport North": {'Location': (32.933750, -97.054110)},
     "Airport Terminal [Columbus]": {'Location': (39.998050, -82.883800), 'Type': 'Airport'},
+    "Airport Transit Center": {'Location': (42.374310, -71.030230), 'Type': 'Airport'},
     "Airport West": {'Location': (33.643680, -84.452800), 'Type': 'Airport'},
     "Airport [Atlanta]": {'APM': {'Location': (33.64085, -84.44677)}, 'MARTA': {'Location': (33.64086, -84.44622), 'Type': 'Airport'}},
     "Airport [Austin]": {'Location': (30.203350, -97.666880), 'Type': 'Airport'},
@@ -2088,13 +2090,12 @@ Stations = {
     "Borough Hall [South]": {'Location': (40.692510, -73.990630)},
     "Borregas": {'Location': (37.411930, -122.019030)},
     "Bosque de Aragón": {'Location': (19.458100, -99.069290)},
-    "Boston Airport": {'Location': (42.374310, -71.030230), 'Label': 'Airport', 'Type': 'Airport'},
     "Boston Bar": {'Location': (49.869380, -121.444650)},
     "Boston College": {'Location': (42.340180, -71.167190)},
     "Boston Landing": {'Location': (42.357310, -71.140130)},
     "Boston North Station": {'Location': (42.366440, -71.061970), 'Major': True},
     "Boston South Station": {'Location': (42.351920, -71.055070), 'Major': True},
-    "Boston University Central": {'Location': (42.350110, -71.107100)},
+    "Boston University Central": {'LRT': {'Location': (42.35011, -71.1071)}, 'Ring': {'Location': (42.35017, -71.106)}},
     "Boston University East": {'Location': (42.349670, -71.104200)},
     "Botanic Garden": {'Location': (40.670620, -73.959100)},
     "Botanical Garden": {'Location': (40.867250, -73.881700)},
@@ -2127,10 +2128,10 @@ Stations = {
     "Bowery": {'Location': (40.720150, -73.993490)},
     "Bowesville": {'Location': (45.293500, -75.632830)},
     "Bowie State": {'Location': (39.017800, -76.764980)},
-    "Bowling Green (KY)": {'Location': (36.969950, -86.476950), 'Label': 'Bowling Green'},
-    "Bowling Green (NY)": {'Location': (40.704510, -74.014260), 'Label': 'Bowling Green'},
-    "Bowling Green (OH)": {'Location': (41.374360, -83.644590), 'Label': 'Bowling Green'},
-    "Bowling Green (VA)": {'Location': (38.033960, -77.375860), 'Label': 'Bowling Green'},
+    "Bowling Green [KY]": {'Location': (36.969950, -86.476950)},
+    "Bowling Green [NY]": {'Location': (40.704510, -74.014260)},
+    "Bowling Green [OH]": {'Location': (41.374360, -83.644590)},
+    "Bowling Green [VA]": {'Location': (38.033960, -77.375860)},
     "Bowmore & Gerrard": {'Location': (43.677860, -79.315080)},
     "Bowness": {'Location': (51.088000, -114.188140)},
     "Boyde Rd": {'Location': (40.430580, -80.135470)},
@@ -2170,13 +2171,13 @@ Stations = {
     "Brea Union Plaza": {'Location': (33.911000, -117.868950)},
     "Breakneck Ridge": {'Location': (41.450170, -73.982480)},
     "Bremmer & Spadina": {'Location': (43.641030, -79.393120)},
-    "Brentwood": {'Location': (36.031760, -86.785890)},
-    "Brentwood (AB)": {'Location': (51.086870, -114.131510), 'Label': 'Brentwood'},
-    "Brentwood (NY)": {'Location': (40.781150, -73.242510), 'Label': 'Brentwood'},
     "Brentwood I-64": {'Location': (38.628440, -90.338000)},
     "Brentwood Town Centre": {'Location': (49.266380, -123.001600)},
-    "Brewery District (Cincinnati)": {'Location': (39.117140, -84.520341), 'Label': 'Brewery District'},
-    "Brewery District (Columbus)": {'Location': (39.947500, -83.002660), 'Label': 'Brewery District'},
+    "Brentwood [AB]": {'Location': (51.086870, -114.131510)},
+    "Brentwood [NY]": {'Location': (40.781150, -73.242510)},
+    "Brentwood [TN]": {'Location': (36.031760, -86.785890)},
+    "Brewery District [Cincinnati]": {'Location': (39.117140, -84.520341)},
+    "Brewery District [Columbus]": {'Location': (39.947500, -83.002660)},
     "Brewerytown": {'Location': (39.982660, -75.183370)},
     "Brewster": {'Location': (41.394720, -73.619770)},
     "Brewster Heights": {'Location': (41.412950, -73.623000)},
@@ -2204,9 +2205,9 @@ Stations = {
     "Briley Pkwy": {'Location': (36.237740, -86.727990)},
     "Brimley-Triton": {'Location': (43.773400, -79.262370)},
     "Brisas del Golf": {'Location': (9.049190, -79.458920)},
-    "Bristol": {'Location': (43.614480, -79.663540)},
-    "Bristol (PA)": {'Location': (40.104870, -74.854690), 'Label': 'Bristol'},
-    "Bristol (VA)": {'Location': (36.615360, -82.167830), 'Label': 'Bristol'},
+    "Bristol [Mississauga]": {'Location': (43.614480, -79.663540)},
+    "Bristol [PA]": {'Location': (40.104870, -74.854690)},
+    "Bristol [VA]": {'Location': (36.615360, -82.167830)},
     "Britannia": {'Location': (43.626280, -79.679580)},
     "Brittanica": {'Location': (49.812650, -97.112270)},
     "Britton": {'Location': (35.566060, -97.530980)},
@@ -2226,7 +2227,6 @@ Stations = {
     "Broad-Hunting Park": {'Location': (40.017580, -75.149370), 'Label': 'Hunting Park'},
     "Broad-Logan": {'Location': (40.029980, -75.146660), 'Label': 'Logan'},
     "Broad-North Philadelphia": {'Location': (39.994350, -75.154300)},
-    "Broad-Olney": {'Location': (40.038740, -75.144110), 'Label': 'Olney Transit Center'},
     "Broad-Oregon": {'Location': (39.916520, -75.171160), 'Label': 'Oregon'},
     "Broad-Pattison": {'Location': (39.905430, -75.173910), 'Label': 'NRG'},
     "Broad-Snyder": {'Location': (39.924350, -75.169700), 'Label': 'Snyder'},
@@ -2241,25 +2241,24 @@ Stations = {
     "Broadway & Pike-Pine": {'Location': (47.615070, -122.320750)},
     "Broadway & St. Charles": {'Location': (29.937230, -90.126710)},
     "Broadway & Terrace": {'Location': (47.605430, -122.320760)},
-    "Broadway (31st)": {'Location': (40.761970, -73.925510), 'Label': 'Broadway'},
-    "Broadway (Boston)": {'Commuter': {'Location': (42.34263, -71.05881), 'Label': 'Broadway'}, 'Subway': {'Location': (42.34257, -71.05694), 'Label': 'Broadway'}},
-    "Broadway (Cleveland)": {'Location': (41.445500, -81.624970), 'Label': 'Broadway'},
-    "Broadway (Columbus)": {'Location': (40.031590, -83.015870), 'Label': 'Broadway'},
-    "Broadway (Detroit)": {'Location': (42.335440, -83.048210), 'Label': 'Broadway'},
-    "Broadway (Sacramento)": {'Location': (38.559180, -121.488230), 'Label': 'Broadway'},
-    "Broadway (Union)": {'Location': (40.705350, -73.950240), 'Label': 'Broadway'},
     "Broadway Blvd & 6th Ave": {'Location': (32.221140, -110.968340)},
     "Broadway Blvd & Church Ave": {'Location': (32.221030, -110.972570)},
     "Broadway Blvd & Granada Ave": {'Location': (32.221260, -110.975380)},
     "Broadway Blvd & Stone Ave": {'Location': (32.220950, -110.970790)},
-    "Broadway Junction (North)": {'Location': (40.678890, -73.903290), 'Label': 'Broadway Junction'},
-    "Broadway Junction (South)": {'Location': (40.678340, -73.904070), 'Label': 'Broadway Junction'},
+    "Broadway Junction [North]": {'Location': (40.678890, -73.903290)},
+    "Broadway Junction [South]": {'Location': (40.678340, -73.904070)},
     "Broadway Plaza": {'Location': (36.735500, -119.792850), 'Major': True},
-    "Broadway-Arcola": {'Location': (40.922300, -74.115240), 'Label': 'Broadway'},
-    "Broadway-Boerum": {'Location': (40.705350, -73.950240), 'Label': 'Broadway'},
+    "Broadway [Astoria]": {'Location': (40.761970, -73.925510)},
+    "Broadway [Boston]": {'Commuter': {'Location': (42.34263, -71.05881)}, 'Subway': {'Location': (42.34257, -71.05694)}},
+    "Broadway [Brooklyn]": {'Location': (40.705350, -73.950240)},
+    "Broadway [Cleveland]": {'Location': (41.445500, -81.624970)},
+    "Broadway [Columbus]": {'Location': (40.031590, -83.015870)},
+    "Broadway [Detroit]": {'Location': (42.335440, -83.048210)},
+    "Broadway [Fair Lawn]": {'Location': (40.922300, -74.115240)},
+    "Broadway [Flushing]": {'Location': (40.761820, -73.802040)},
+    "Broadway [Sacramento]": {'Location': (38.559180, -121.488230)},
     "Broadway-City Hall": {'Location': (49.262830, -123.114530), 'Major': True},
     "Broadway-Lafayette St": {'Location': (40.725280, -73.995790)},
-    "Broadway-Northern Blvd": {'Location': (40.761820, -73.802040), 'Label': 'Broadway'},
     "Broadway/12th": {'Location': (39.735250, -104.987420), 'Label': '12th'},
     "Broadway/1st": {'Location': (39.718350, -104.987520), 'Label': '1st'},
     "Broadway/6th": {'Location': (39.725640, -104.987480), 'Label': '6th'},
@@ -2461,6 +2460,7 @@ Stations = {
     "Camarones": {'Location': (19.479080, -99.190010)},
     "Cambodia Town": {'Location': (33.782600, -118.178680)},
     "Cambridge": {'Location': (45.570700, -93.221260)},
+    "Cambridgeport": {'Location': (42.357800, -71.100820)},
     "Camden": {'Location': (34.248150, -80.625190)},
     "Camden Yards": {'Location': (39.282970, -76.619520)},
     "Camden [Baltimore]": {'Location': (39.283780, -76.619660), 'Major': True},
@@ -3984,7 +3984,7 @@ Stations = {
     "Evanston": {'Location': (41.268890, -110.964350)},
     "Evansville": {'Location': (37.992340, -87.554570)},
     "Everett": {'LINK': {'Location': (47.97482, -122.19773), 'Label': 'Everett Station'}, 'Main': {'Location': (47.97548, -122.19767)}},
-    "Everett/Revs": {'Location': (42.398490, -71.067830)},
+    "Everett/Revs": {'Location': (42.396640, -71.069510)},
     "Excalibur": {'Location': (36.098240, -115.174260)},
     "Excalibur North": {'Location': (36.100120, -115.173480)},
     "Excelsior Springs": {'Location': (39.340480, -94.242060)},
@@ -4085,7 +4085,7 @@ Stations = {
     "Felix": {'Location': (47.204250, -81.407760)},
     "Fenton": {'Location': (42.797990, -83.704530)},
     "Fenton Parkway": {'Location': (32.778320, -117.127030)},
-    "Fenway": {'Location': (42.345400, -71.104200)},
+    "Fenway": {'LRT': {'Location': (42.3454, -71.1042)}, 'Ring': {'Location': (42.34496, -71.10424)}},
     "Fenwood Road": {'Location': (42.333740, -71.105920)},
     "Ferguson": {'Location': (47.812960, -73.417430)},
     "Ferland": {'Location': (50.314410, -88.425990)},
@@ -4753,8 +4753,8 @@ Stations = {
     "Guiteras": {'Location': (23.140300, -82.310430)},
     "Gulfport": {'Location': (30.369030, -89.094780)},
     "Gulph Mills": {'Location': (40.071150, -75.342600)},
-    "Gun Hill Rd (Sexton)": {'Location': (40.870060, -73.845930), 'Label': 'Gun Hill Rd'},
-    "Gun Hill Rd (White Plains)": {'Location': (40.877740, -73.866300), 'Label': 'Gun Hill Rd'},
+    "Gun Hill Rd [Sexton]": {'Location': (40.870060, -73.845930)},
+    "Gun Hill Rd [White Plains]": {'Location': (40.877740, -73.866300)},
     "Gunns Loop": {'Location': (43.671910, -79.471840)},
     "Guthrie": {'Location': (35.877480, -97.429540)},
     "Guy-Concordia": {'Location': (45.495750, -73.578970)},
@@ -5180,6 +5180,7 @@ Stations = {
     "Inkster": {'Location': (42.290468, -83.312715)},
     "Inlet Centre": {'Location': (49.277210, -122.828190)},
     "Inman Park/Reynoldstown": {'Location': (33.757700, -84.352570)},
+    "Inner Belt": {'Location': (42.375060, -71.082350)},
     "Innerbelt": {'Location': (39.960130, -83.017720)},
     "Innovation Center": {'Location': (38.961030, -77.416040)},
     "Instituto del Petróleo": {'Location': (19.489320, -99.144710)},
@@ -6045,6 +6046,7 @@ Stations = {
     "MCI Airport": {'Location': (39.298250, -94.718440), 'Type': 'Airport'},
     "MGM Grand": {'Location': (36.102430, -115.167790)},
     "MIA": {'Location': (25.795150, -80.277050)},
+    "MIT": {'Location': (42.363060, -71.089860)},
     "MLK & Center": {'Location': (43.066970, -87.914070)},
     "MLK & Meinecke": {'Location': (43.061630, -87.914130)},
     "MLK Ave": {'Location': (35.493120, -97.477700)},
@@ -6274,8 +6276,8 @@ Stations = {
     "Maryland/Tropicana": {'Location': (36.100917, -115.136936), 'Label': 'Tropicana'},
     "Maryland/Twain": {'Location': (36.122637, -115.137361), 'Label': 'Twain'},
     "Marymoor Village": {'Location': (47.667260, -122.109800)},
-    "Marysville (CA)": {'Location': (39.141790, -121.599410), 'Label': 'Marysville'},
-    "Marysville (OH)": {'Location': (40.237900, -83.362280), 'Label': 'Marysville'},
+    "Marysville [CA]": {'Location': (39.141790, -121.599410)},
+    "Marysville [OH]": {'Location': (40.237900, -83.362280)},
     "María Montez": {'Location': (18.478660, -69.968250)},
     "Mascouche": {'Location': (45.729770, -73.598780)},
     "Mason & Broadway": {'Location': (37.797400, -122.412050)},
@@ -6298,8 +6300,8 @@ Stations = {
     "Matheson": {'Location': (43.619440, -79.670260)},
     "Matsonford": {'Location': (40.058270, -75.339540)},
     "Mattapan": {'Location': (42.267620, -71.092480)},
-    "Matteson (ME)": {'Location': (41.498440, -87.702490), 'Label': 'Matteson'},
-    "Matteson (OCS)": {'Location': (41.494690, -87.705560), 'Label': 'Matteson'},
+    "Matteson [ME]": {'Location': (41.498440, -87.702490)},
+    "Matteson [OCS]": {'Location': (41.494690, -87.705560)},
     "Mattituck": {'Location': (40.991820, -72.535910)},
     "Mattoon": {'Location': (39.483010, -88.375860)},
     "Mauricio Báez": {'Location': (18.487490, -69.904910)},
@@ -6329,18 +6331,18 @@ Stations = {
     "McCook": {'Location': (40.197510, -100.625670)},
     "McCormick Place": {'Location': (41.853130, -87.616070)},
     "McCullough": {'Location': (35.301120, -80.752870)},
-    "McDonald Av (Bay)": {'Location': (40.620910, -73.975280), 'Label': 'McDonald Av'},
-    "McDonald Av (IBX)": {'Location': (40.627130, -73.977400), 'Label': 'McDonald Av'},
+    "McDonald Av [Bay]": {'Location': (40.620910, -73.975280)},
+    "McDonald Av [IBX]": {'Location': (40.627130, -73.977400)},
     "McDonough": {'Location': (33.448100, -84.154800)},
     "McDougall": {'Location': (42.340260, -83.017860)},
     "McDowell St": {'Location': (35.221050, -80.835870)},
     "McDowell/Central Ave": {'Location': (33.464960, -112.073810)},
     "McGill": {'REM': {'Location': (45.50278, -73.57243)}, 'STM': {'Location': (45.50409, -73.57165)}},
     "McGovern": {'Location': (40.222550, -80.215930)},
-    "McGowen": {'Location': (29.745020, -95.374390)},
-    "McGowen (Metro)": {'Location': (29.742270, -95.368920), 'Label': 'McGowen'},
-    "McGregor (BC)": {'Location': (54.076920, -121.843470), 'Label': 'McGregor'},
-    "McGregor (TX)": {'Location': (31.443330, -97.405000), 'Label': 'McGregor'},
+    "McGowen [LRT]": {'Location': (29.745020, -95.374390)},
+    "McGowen [Metro]": {'Location': (29.742270, -95.368920)},
+    "McGregor [BC]": {'Location': (54.076920, -121.843470)},
+    "McGregor [TX]": {'Location': (31.443330, -97.405000)},
     "McHenry": {'Location': (42.343410, -88.276010)},
     "McKalla": {'Location': (30.387970, -97.717550)},
     "McKee": {'Location': (37.372500, -121.845330)},
@@ -6348,8 +6350,8 @@ Stations = {
     "McKeesport": {'Location': (40.352450, -79.860310)},
     "McKenzie": {'Location': (36.130200, -88.520080)},
     "McKernan/Belgravia": {'Location': (53.512600, -113.526190)},
-    "McKinley Ave (Columbus)": {'Location': (39.969490, -83.061470), 'Label': 'McKinley Ave'},
-    "McKinley Ave (Fresno)": {'Location': (36.765550, -119.781550), 'Label': 'McKinley Ave'},
+    "McKinley Ave [Columbus]": {'Location': (39.969490, -83.061470)},
+    "McKinley Ave [Fresno]": {'Location': (36.765550, -119.781550)},
     "McKnight-Westwinds": {'Location': (51.109620, -113.975220)},
     "McLean": {'Location': (38.924400, -77.210360)},
     "McMicken Ave": {'Location': (39.116740, -84.516900)},
@@ -6467,12 +6469,12 @@ Stations = {
     "Middleborough/Lakeville": {'Location': (41.878190, -70.918360)},
     "Middlebury": {'Location': (44.017420, -73.169770)},
     "Middlefield": {'Location': (37.395420, -122.052210)},
-    "Middletown (CA)": {'Location': (32.733800, -117.174920), 'Label': 'Middletown'},
-    "Middletown (DE)": {'Location': (39.459130, -75.721210), 'Label': 'Middletown'},
-    "Middletown (NY)": {'Location': (41.457510, -74.370410), 'Label': 'Middletown'},
-    "Middletown (PA)": {'Location': (40.195670, -76.736520), 'Label': 'Middletown'},
     "Middletown Rd": {'Location': (40.843910, -73.836270)},
     "Middletown Township": {'Location': (40.390800, -74.116950)},
+    "Middletown [CA]": {'Location': (32.733800, -117.174920)},
+    "Middletown [DE]": {'Location': (39.459130, -75.721210)},
+    "Middletown [NY]": {'Location': (41.457510, -74.370410)},
+    "Middletown [PA]": {'Location': (40.195670, -76.736520)},
     "Middletown-University": {'Location': (39.513870, -84.392080)},
     "Midlothian [IL]": {'Location': (41.626460, -87.711740)},
     "Midlothian [TX]": {'Location': (32.482800, -96.993370)},
@@ -6744,7 +6746,7 @@ Stations = {
     "Museum District": {'East': {'Location': (29.72432, -95.38816)}, 'West': {'Location': (29.72484, -95.389)}},
     "Museum Park": {'Location': (25.785910, -80.187930)},
     "Museum [Toronto]": {'Location': (43.667000, -79.393430)},
-    "Museum of Fine Arts": {'Location': (42.337910, -71.095180)},
+    "Museum of Fine Arts": {'LRT': {'Location': (42.33791, -71.09518)}, 'Ring': {'Location': (42.33792, -71.09616)}},
     "Musk": {'Location': (47.949020, -83.707170)},
     "Muttart": {'Location': (53.536260, -113.479930)},
     "Myrtle": {'Location': (44.018200, -78.968510)},
@@ -7221,6 +7223,7 @@ Stations = {
     "Olivos": {'Location': (19.304320, -99.059500)},
     "Olmsted Falls": {'Location': (41.375000, -81.905960)},
     "Olney": {'Location': (40.033450, -75.122580)},
+    "Olney Transit Center": {'Location': (40.038740, -75.144110)},
     "Oltorf": {'Location': (30.238270, -97.753970)},
     "Olympia Fields": {'Location': (41.521130, -87.690310)},
     "Olympia-Lacey": {'Location': (46.991350, -122.793930)},
@@ -9085,7 +9088,7 @@ Stations = {
     "Terminal 5 [ORD]": {'Location': (41.975110, -87.890120)},
     "Terminal 7 [JFK]": {'Location': (40.648220, -73.783150)},
     "Terminal 8 [JFK]": {'Location': (40.646730, -73.789000)},
-    "Terminal A [BOS]": {'Location': (42.365360, -71.021980)},
+    "Terminal A [BOS]": {'APM': {'Location': (42.36536, -71.02198)}, 'Ring': {'Location': (42.36507, -71.0215), 'Type': 'Airport'}},
     "Terminal A [IAH]": {'Location': (29.986720, -95.349960)},
     "Terminal A [LGA]": {'AirTrain': {'Location': (40.77342, -73.88456)}, 'Subway': {'Location': (40.7737, -73.88495), 'Type': 'Airport'}},
     "Terminal A [PHL]": {'Location': (39.876130, -75.245700), 'Type': 'Airport'},
@@ -9723,7 +9726,8 @@ Stations = {
     "Wellesley Hills": {'Location': (42.310270, -71.277030)},
     "Wellesley Square": {'Location': (42.297270, -71.294470)},
     "Wellington & Church": {'Location': (43.648700, -79.373980)},
-    "Wellington [Boston]": {'Location': (42.402370, -71.077070)},
+    "Wellington [Boston-Ring]": {'Location': (42.368020, -71.088830)},
+    "Wellington [Boston-Subway]": {'Location': (42.402370, -71.077070)},
     "Wellington [Chicago]": {'Location': (41.936320, -87.653260)},
     "Wells Rd": {'Location': (30.189130, -81.711240)},
     "Wells [ME]": {'Location': (43.320780, -70.612140)},
@@ -10033,10 +10037,10 @@ Stations = {
     "Woodbine & Kingston": {'Location': (43.673720, -79.308030)},
     "Woodbine & Queen": {'Location': (43.668630, -79.305940)},
     "Woodbourne": {'Location': (40.190890, -74.890970)},
-    "Woodbridge (NJ)": {'Location': (40.555940, -74.278020), 'Label': 'Woodbridge'},
-    "Woodbridge (ON)": {'Location': (43.780620, -79.593800), 'Label': 'Woodbridge'},
-    "Woodbridge (VA)": {'Location': (38.658960, -77.247930), 'Label': 'Woodbridge'},
     "Woodbridge Pkwy": {'Location': (33.011230, -96.574290)},
+    "Woodbridge [NJ]": {'Location': (40.555940, -74.278020)},
+    "Woodbridge [ON]": {'Location': (43.780620, -79.593800)},
+    "Woodbridge [VA]": {'Location': (38.658960, -77.247930)},
     "Woodbridge-Flowery Branch": {'Location': (34.168280, -83.951840)},
     "Woodburn": {'Location': (45.143190, -122.855480)},
     "Woodbury": {'Location': (39.836330, -75.149830)},
@@ -10046,8 +10050,8 @@ Stations = {
     "Wooddale Ave": {'Location': (44.938588, -93.354794)},
     "Woodfield & Gerrard": {'Location': (43.671670, -79.324160)},
     "Woodfield & Queen": {'Location': (43.665140, -79.321530)},
-    "Woodhaven Blvd (Jamaica)": {'Location': (40.693900, -73.851520), 'Label': 'Woodhaven Blvd'},
-    "Woodhaven Blvd (Queens)": {'Location': (40.733450, -73.870270), 'Label': 'Woodhaven Blvd'},
+    "Woodhaven Blvd [Jamaica]": {'Location': (40.693900, -73.851520)},
+    "Woodhaven Blvd [Queens]": {'Location': (40.733450, -73.870270)},
     "Woodhill": {'Location': (41.482720, -81.618520)},
     "Woodland": {'Location': (42.332740, -71.243240)},
     "Woodland & 42nd": {'Location': (39.946980, -75.206900)},
@@ -10102,6 +10106,7 @@ Stations = {
     "Woodway Dr/Memorial Park": {'Location': (29.766850, -95.448520)},
     "Woolridge Square": {'Location': (30.272290, -97.745070)},
     "Worcester": {'Location': (42.261230, -71.794960)},
+    "World Trade Center": {'Location': (42.349910, -71.041490)},
     "World Trade Center [Church]": {'Location': (40.712090, -74.010130), 'Major': True},
     "World Trade Center [PATH]": {'Location': (40.712700, -74.011940), 'Major': True},
     "Worth": {'Location': (41.691400, -87.795890)},
@@ -10247,7 +10252,7 @@ Segments = {
         "F": ['-Intercity HS (Chicago - Gary)', 'Valparaiso [HSR]', 'Fort Wayne', '[X] Liberty Center Junction'],
         "Keep": ['Chicago Union Station', 'Valparaiso [HSR]', 'Fort Wayne'],
     },
-    "-Intercity HS (Chicago - Matteson (ME))": {
+    "-Intercity HS (Chicago - Matteson [ME])": {
         "F": ['-Intercity LS (Chicago - Airline Bridge)', '[X] 35th St-Lou Jones', '[X] Rock Island 63rd St Bend', '[X] Gresham', '[X] 95th St-Longwood Manor', '[X] 103rd St-Washington Hts', '[X] Rock Island HSR Split', '[X] I-57 HSR Bend 1', '[X] I-57 HSR Bend 2'],
     },
     "-Intercity HS (Chicago - Milwaukee)": {
@@ -10258,7 +10263,7 @@ Segments = {
         "F": ['-Intercity HS (Chicago - Cleveland)', '-Intercity HS (Cleveland - Buffalo)', '[R] -Intercity HS (New York - Buffalo)'],
     },
     "-Intercity HS (Chicago - St. Louis)": {
-        "F": ['-Intercity HS (Chicago - Matteson (ME))', 'Kankakee', 'Bloomington-Normal', 'Springfield (IL)', '[X] Staunton Node', '[X] East St. Louis', '[R] St. Louis Approach (Gateway - Bridge East)'],
+        "F": ['-Intercity HS (Chicago - Matteson [ME])', 'Kankakee', 'Bloomington-Normal', 'Springfield (IL)', '[X] Staunton Node', '[X] East St. Louis', '[R] St. Louis Approach (Gateway - Bridge East)'],
     },
     "-Intercity HS (Chicago - St. Paul)": {
         "F": ['-Intercity HS (Chicago - Milwaukee)', '-Intercity HS (Milwaukee - Madison)', '[R] -Intercity HS (St. Paul - Rochester)'],
@@ -10686,7 +10691,7 @@ Segments = {
         "Skip": ['Hammond-Whiting', 'Gary'],
     },
     "-Intercity LS (Chicago - Columbus)": {
-        "F": ['-Intercity LS (Chicago - Fort Wayne)', 'Lima', 'Kenton', 'Marysville (OH)', '[R] -Intercity LS (Columbus - Amlin)'],
+        "F": ['-Intercity LS (Chicago - Fort Wayne)', 'Lima', 'Kenton', 'Marysville [OH]', '[R] -Intercity LS (Columbus - Amlin)'],
     },
     "-Intercity LS (Chicago - Denver)": {
         "F": ['-Intercity LS (Chicago - Omaha via OSC)', '[R] -Intercity LS (Denver Main - Omaha)'],
@@ -10763,7 +10768,7 @@ Segments = {
         "F": ['-Intercity LS (Chicago - St. Paul)', '[R] -Intercity LS (Minneapolis - St. Paul)'],
     },
     "-Intercity LS (Chicago - Nashville)": {
-        "F": ['-Intercity LS (Chicago - Louisville)', 'Elizabethtown [KY]', 'Bowling Green (KY)', '[R] -Intercity LS (Nashville - Gallatin)'],
+        "F": ['-Intercity LS (Chicago - Louisville)', 'Elizabethtown [KY]', 'Bowling Green [KY]', '[R] -Intercity LS (Nashville - Gallatin)'],
     },
     "-Intercity LS (Chicago - New Orleans)": {
         "F": ['-Intercity LS (Chicago - Carbondale)', 'Fulton', 'Newbern-Dyersburg', 'Memphis Approach (Central - South)', 'Marks', 'Greenwood [MS]', 'Yazoo City', 'Jackson [MS]', 'Brookhaven', 'McComb', 'Hammond', '[X] New Orleans Lake Bend N', '[X] New Orleans Lake Bend S', '[R] -Intercity LS (New Orleans - Kenner Junction)'],
@@ -10856,7 +10861,7 @@ Segments = {
         "F": ['-Intercity LS (Chicago - Detroit via Ann Arbor)', '-Intercity LS (Detroit - Windsor)', '[R] -Intercity LS (Toronto - Windsor)'],
     },
     "-Intercity LS (Chicago - University Park)": {
-        "F": ['-Intercity LS (Chicago - Mark Twain)', 'Chicago Metra (Mark Twain - Kensington)', '[X] Chicago Kensington Junction', '[X] Riverdale [Chicago]', '[X] Ivanhoe', '[X] 147th St [Chicago]', '[X] Harvey [IL]', '[X] Hazel Crest', '[X] Calumet', 'Homewood', '[X] Flossmoor', '[X] Olympia Fields', '[X] 211th St (Lincoln Hwy)', '[X] Matteson (ME)', '[X] Richton Park', '[X] University Park'],
+        "F": ['-Intercity LS (Chicago - Mark Twain)', 'Chicago Metra (Mark Twain - Kensington)', '[X] Chicago Kensington Junction', '[X] Riverdale [Chicago]', '[X] Ivanhoe', '[X] 147th St [Chicago]', '[X] Harvey [IL]', '[X] Hazel Crest', '[X] Calumet', 'Homewood', '[X] Flossmoor', '[X] Olympia Fields', '[X] 211th St (Lincoln Hwy)', '[X] Matteson [ME]', '[X] Richton Park', '[X] University Park'],
         "Keep": ['Chicago Union Station', 'Homewood'],
     },
     "-Intercity LS (Chicago - Washington)": {
@@ -10873,7 +10878,7 @@ Segments = {
         "Keep": ['Cincinnati Union Terminal {Main}', 'Hamilton [OH]', 'Dayton Union Station {Main}'],
     },
     "-Intercity LS (Cincinnati - Detroit)": {
-        "F": ['-Intercity LS (Cincinnati - Dayton)', '[X] Dayton East Junction', 'Troy [OH]', 'Sidney', 'Lima', 'Findlay', 'Bowling Green (OH)', 'Toledo', '[R] -Intercity LS (Detroit - Toledo)'],
+        "F": ['-Intercity LS (Cincinnati - Dayton)', '[X] Dayton East Junction', 'Troy [OH]', 'Sidney', 'Lima', 'Findlay', 'Bowling Green [OH]', 'Toledo', '[R] -Intercity LS (Detroit - Toledo)'],
     },
     "-Intercity LS (Cincinnati - Fort Wayne)": {
         "F": ['-Intercity LS (Cincinnati - Hamilton)', 'Richmond [IN]', '[R] -Intercity LS (Fort Wayne - Muncie)'],
@@ -11159,7 +11164,7 @@ Segments = {
         "F": ['Fort Worth Central Station', '[X] Fort Worth North Junction', '[X] Fort Worth Saginaw Junction', 'Gainesville [TX]', 'Ardmore [OK]', 'Pauls Valley', 'Purcell', '[R] -Intercity LS (Oklahoma - Noble)'],
     },
     "-Intercity LS (Fort Worth - San Antonio)": {
-        "F": ['Fort Worth Approach (Central - Morningside)', 'Cleburne', 'McGregor (TX)', 'Temple', 'Taylor [TX]', '[R] -Intercity LS (Austin - Round Rock)', '[X] Slaughter Ln', 'Buda', 'San Marcos', 'New Braunfels [TX]', '[R] San Antonio Approach (Downtown - North S)'],
+        "F": ['Fort Worth Approach (Central - Morningside)', 'Cleburne', 'McGregor [TX]', 'Temple', 'Taylor [TX]', '[R] -Intercity LS (Austin - Round Rock)', '[X] Slaughter Ln', 'Buda', 'San Marcos', 'New Braunfels [TX]', '[R] San Antonio Approach (Downtown - North S)'],
     },
     "-Intercity LS (Fort Worth - Weatherford)": {
         "F": ['Dallas Regional Rail (Fort Worth Central - Weatherford)'],
@@ -11279,7 +11284,7 @@ Segments = {
         "F": ['Jacksonville Approach (Central - West)', 'Baldwin [FL]', 'Macclenny', 'Lake City', 'Live Oak', 'Madison [FL]', 'Tallahassee', 'Quincy [FL]', 'Sneads', 'Marianna', 'Chipley', 'Bonifay', 'Defuniak Springs', 'Crestview [FL]', 'Pensacola', 'Atmore', 'Mobile'],
     },
     "-Intercity LS (Jasper - Prince George)": {
-        "F": ['Jasper [BC]', 'Valemount', 'Harvey [BC]', 'Dunster', 'McBride', 'Goat River', 'Loos', 'Dome Creek', 'Bend', 'Penny', 'Longworth', 'Hutton', 'Sinclair Mills', 'McGregor (BC)', 'Upper Fraser', 'Aleza Lake', 'Willow River', 'Prince George'],
+        "F": ['Jasper [BC]', 'Valemount', 'Harvey [BC]', 'Dunster', 'McBride', 'Goat River', 'Loos', 'Dome Creek', 'Bend', 'Penny', 'Longworth', 'Hutton', 'Sinclair Mills', 'McGregor [BC]', 'Upper Fraser', 'Aleza Lake', 'Willow River', 'Prince George'],
     },
     "-Intercity LS (Jasper - Prince Rupert)": {
         "F": ['-Intercity LS (Jasper - Prince George)', 'Vanderhoof', 'Fort Fraser', 'Endako', 'Burns Lake', 'Houston [BC]', 'Telkwa', 'Smithers', 'New Hazelton', 'Kitwanga', 'Cedarvale [BC]', 'Dorreen', 'Pacific [BC]', 'Usk', 'Terrace', 'Kwinitsa', 'Cassiar Cannery', 'Prince Rupert'],
@@ -11607,7 +11612,7 @@ Segments = {
         "F": ['-Intercity LS (New York - Providence)', '[R] -Intercity LS (Boston - Providence)'],
     },
     "-Intercity LS (New York - Bristol)": {
-        "F": ['-Intercity LS (New York - Roanoke)', 'Christiansburg', 'Bristol (VA)'],
+        "F": ['-Intercity LS (New York - Roanoke)', 'Christiansburg', 'Bristol [VA]'],
     },
     "-Intercity LS (New York - Buffalo Central)": {
         "F": ['-Intercity LS (New York - Schenectady)', '[R] -Intercity LS (Buffalo Central - Schenectady)'],
@@ -11824,7 +11829,7 @@ Segments = {
         "Skip": ['Brewerytown', 'North Philadelphia'],
     },
     "-Intercity LS (Philadelphia - Harrisburg)": {
-        "F": ['-Intercity LS (Philadelphia - Lancaster)', 'Mount Joy (PA)', 'Elizabethtown [PA]', 'Middletown (PA)', 'Harrisburg [PA]'],
+        "F": ['-Intercity LS (Philadelphia - Lancaster)', 'Mount Joy (PA)', 'Elizabethtown [PA]', 'Middletown [PA]', 'Harrisburg [PA]'],
     },
     "-Intercity LS (Philadelphia - Lancaster)": {
         "F": ['-Intercity LS (Philadelphia - Thorndale)', 'Coatesville', 'Parkesburg', 'Lancaster [PA]'],
@@ -11844,7 +11849,7 @@ Segments = {
         "F": ['-Intercity LS (Philadelphia - Norristown)', 'King of Prussia', 'Phoenixville', 'Pottstown', 'Reading [PA]'],
     },
     "-Intercity LS (Philadelphia - Salisbury)": {
-        "F": ['-Intercity LS (Philadelphia - Newark)', 'Middletown (DE)', 'Dover (DE)', 'Harrington', 'Seaford [DE]', 'Salisbury [MD]'],
+        "F": ['-Intercity LS (Philadelphia - Newark)', 'Middletown [DE]', 'Dover (DE)', 'Harrington', 'Seaford [DE]', 'Salisbury [MD]'],
     },
     "-Intercity LS (Philadelphia - Scranton)": {
         "F": ['-Intercity LS (Philadelphia - Harrisburg)', '-Intercity LS (Harrisburg - Scranton)'],
@@ -11966,7 +11971,7 @@ Segments = {
         "Keep": ['Sacramento Valley Station {Main}', 'Davis [CA]'],
     },
     "-Intercity LS (Sacramento - Eugene)": {
-        "F": ['Sacramento Approach (Valley - North)', 'Marysville (CA)', 'Chico', 'Redding [CA]', 'Dunsmuir', 'Klamath Falls', 'Chemult', 'Eugene'],
+        "F": ['Sacramento Approach (Valley - North)', 'Marysville [CA]', 'Chico', 'Redding [CA]', 'Dunsmuir', 'Klamath Falls', 'Chemult', 'Eugene'],
     },
     "-Intercity LS (Sacramento - Stockton)": {
         "F": ['Sacramento Regional Rail (Valley - Stockton)'],
@@ -12248,7 +12253,7 @@ Segments = {
         "Keep": ['Washington Union Station {Main}', 'Rockville', 'Harpers Ferry', 'Duffields', 'Martinsburg'],
     },
     "-Intercity LS (Washington - Nashville)": {
-        "F": ['-Intercity LS (Washington - Lynchburg)', 'Roanoke', 'Christiansburg', 'Bristol (VA)', 'Johnson City', '-Intercity LS (Knoxville - Chattanooga)', '[R] -Intercity LS (Nashville - Chattanooga)'],
+        "F": ['-Intercity LS (Washington - Lynchburg)', 'Roanoke', 'Christiansburg', 'Bristol [VA]', 'Johnson City', '-Intercity LS (Knoxville - Chattanooga)', '[R] -Intercity LS (Nashville - Chattanooga)'],
     },
     "-Intercity LS (Washington - Newark)": {
         "F": ['Washington Regional Rail (Union - Newark)'],
@@ -12270,7 +12275,7 @@ Segments = {
         "F": ['-Intercity LS (Washington - Richmond)', 'Petersburg', 'Weldon', 'Rocky Mount', 'Wilson [NC]', 'Selma', '[R] -Intercity LS (Raleigh - Clayton)'],
     },
     "-Intercity LS (Washington - Richmond)": {
-        "F": ['-Intercity LS (Washington - Spotsylvania)', 'Bowling Green (VA)', 'Ashland [VA]', 'Richmond-Staples Mill Road'],
+        "F": ['-Intercity LS (Washington - Spotsylvania)', 'Bowling Green [VA]', 'Ashland [VA]', 'Richmond-Staples Mill Road'],
     },
     "-Intercity LS (Washington - Roanoke)": {
         "F": ['-Intercity LS (Washington - Lynchburg)', 'Roanoke'],
@@ -12548,53 +12553,47 @@ Segments = {
     "Baltimore Subway (Johns Hopkins - Owings Mills)": {
         "F": ['Johns Hopkins', 'Shot Tower', 'Charles Center', 'Lexington Market {Subway}', 'State Center', 'Upton', 'Penn-North', 'Mondawmin', 'West Cold Spring', 'Rogers Ave', 'Reisterstown Plaza', 'Milford Mill', 'Old Court', 'Owings Mills'],
     },
-    "Boston Light Rail (East Somerville - Medford)": {
-        "F": ['East Somerville', 'Gilman Square', 'Magoun Square', 'Ball Square', 'Medford/Tufts'],
+    "Boston Light Rail (Government Center - Boston College)": {
+        "F": ['Boston Light Rail (Government Center - Kenmore)', 'Blandford Street', 'Boston University East', 'Boston University Central {LRT}', 'Armory Street', 'Babcock Street', 'Packards Corner', 'Harvard Avenue', 'Griggs Street', 'Allston Street', 'Warren Street [Boston]', 'Washington Street [Boston]', 'Sutherland Road', 'Chiswick Road', 'Chestnut Hill Avenue', 'South Street', 'Boston College'],
     },
-    "Boston Light Rail (Medford - Heath Street)": {
-        "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Heath Street)'],
+    "Boston Light Rail (Government Center - Cleveland Circle)": {
+        "F": ['Boston Light Rail (Government Center - Kenmore)', "Saint Mary's Street", 'Hawes Street', 'Kent Street', 'Saint Paul Street', 'Coolidge Corner', 'Summit Avenue', 'Brandon Hall', 'Fairbanks Street', 'Washington Square', 'Tappan Street', 'Dean Road', 'Englewood Avenue', 'Cleveland Circle'],
     },
-    "Boston Light Rail (Medford - Riverside)": {
-        "F": ['[R] Boston Light Rail (North Station - Medford)', 'Boston Light Rail (North Station - Riverside)'],
+    "Boston Light Rail (Government Center - Copley)": {
+        "F": ['Government Center [Boston]', 'Park Street', 'Boylston', 'Arlington [MA]', 'Copley'],
     },
-    "Boston Light Rail (North Station - Boston College)": {
-        "F": ['Boston Light Rail (North Station - Kenmore)', 'Blandford Street', 'Boston University East', 'Boston University Central', 'Armory Street', 'Babcock Street', 'Packards Corner', 'Harvard Avenue', 'Griggs Street', 'Allston Street', 'Warren Street [Boston]', 'Washington Street [Boston]', 'Sutherland Road', 'Chiswick Road', 'Chestnut Hill Avenue', 'South Street', 'Boston College'],
+    "Boston Light Rail (Government Center - Heath Street)": {
+        "F": ['Boston Light Rail (Government Center - Copley)', 'Prudential', 'Symphony [Boston]', 'Northeastern University', 'Museum of Fine Arts {LRT}', 'Longwood Medical Area', 'Brigham Circle', 'Fenwood Road', 'Mission Park', 'Riverway', 'Back of the Hill', 'Heath Street'],
     },
-    "Boston Light Rail (North Station - Cleveland Circle)": {
-        "F": ['Boston Light Rail (North Station - Kenmore)', "Saint Mary's Street", 'Hawes Street', 'Kent Street', 'Saint Paul Street', 'Coolidge Corner', 'Summit Avenue', 'Brandon Hall', 'Fairbanks Street', 'Washington Square', 'Tappan Street', 'Dean Road', 'Englewood Avenue', 'Cleveland Circle'],
+    "Boston Light Rail (Government Center - Inner Belt)": {
+        "F": ['Government Center [Boston]', 'Haymarket', 'Boston North Station', 'Science Park/West End', 'Lechmere', '[X] Inner Belt'],
     },
-    "Boston Light Rail (North Station - Copley)": {
-        "F": ['Boston North Station', 'Haymarket', 'Government Center [Boston]', 'Park Street', 'Boylston', 'Arlington [MA]', 'Copley'],
+    "Boston Light Rail (Government Center - Kenmore)": {
+        "F": ['Boston Light Rail (Government Center - Copley)', 'Hynes Convention Center', 'Kenmore [Boston]'],
     },
-    "Boston Light Rail (North Station - Heath Street)": {
-        "F": ['Boston Light Rail (North Station - Copley)', 'Prudential', 'Symphony [Boston]', 'Northeastern University', 'Museum of Fine Arts', 'Longwood Medical Area', 'Brigham Circle', 'Fenwood Road', 'Mission Park', 'Riverway', 'Back of the Hill', 'Heath Street'],
+    "Boston Light Rail (Government Center - Medford/Tufts)": {
+        "F": ['Boston Light Rail (Government Center - Inner Belt)', 'Boston Light Rail (Inner Belt - Medford/Tufts)'],
     },
-    "Boston Light Rail (North Station - Kenmore)": {
-        "F": ['Boston Light Rail (North Station - Copley)', 'Hynes Convention Center', 'Kenmore [Boston]'],
+    "Boston Light Rail (Government Center - Riverside)": {
+        "F": ['Boston Light Rail (Government Center - Kenmore)', 'Fenway {LRT}', 'Longwood [Boston]', 'Brookline Village', 'Brookline Hills', 'Beaconsfield [Boston]', 'Reservoir [Boston]', 'Chestnut Hill', 'Newton Centre', 'Newton Highlands', 'Eliot', 'Waban', 'Woodland', 'Riverside [MA]'],
     },
-    "Boston Light Rail (North Station - Lechmere)": {
-        "F": ['Boston North Station', 'Science Park/West End', 'Lechmere', '[X] Boston Lechmere Junction'],
+    "Boston Light Rail (Government Center - Union Square)": {
+        "F": ['Boston Light Rail (Government Center - Inner Belt)', 'Union Square'],
     },
-    "Boston Light Rail (North Station - Medford)": {
-        "F": ['Boston Light Rail (North Station - Lechmere)', 'Boston Light Rail (East Somerville - Medford)'],
+    "Boston Light Rail (Inner Belt - Medford/Tufts)": {
+        "F": ['[X] Inner Belt', 'East Somerville', 'Gilman Square', 'Magoun Square', 'Ball Square', 'Medford/Tufts'],
     },
-    "Boston Light Rail (North Station - Riverside)": {
-        "F": ['Boston Light Rail (North Station - Kenmore)', 'Fenway', 'Longwood [Boston]', 'Brookline Village', 'Brookline Hills', 'Beaconsfield [Boston]', 'Reservoir [Boston]', 'Chestnut Hill', 'Newton Centre', 'Newton Highlands', 'Eliot', 'Waban', 'Woodland', 'Riverside [MA]'],
+    "Boston Light Rail (Medford/Tufts - Heath Street)": {
+        "F": ['[R] Boston Light Rail (Government Center - Medford/Tufts)', 'Boston Light Rail (Government Center - Heath Street)'],
     },
-    "Boston Light Rail (North Station - Union Square)": {
-        "F": ['Boston Light Rail (North Station - Lechmere)', 'Union Square'],
-    },
-    "Boston Light Rail (Union Square - Boston College)": {
-        "F": ['[R] Boston Light Rail (North Station - Union Square)', 'Boston Light Rail (North Station - Boston College)'],
-    },
-    "Boston Light Rail (Union Square - Cleveland Circle)": {
-        "F": ['[R] Boston Light Rail (North Station - Union Square)', 'Boston Light Rail (North Station - Cleveland Circle)'],
+    "Boston Light Rail (Union Square - Riverside)": {
+        "F": ['[R] Boston Light Rail (Government Center - Union Square)', 'Boston Light Rail (Government Center - Riverside)'],
     },
     "Boston NSRL": {
         "F": ['Boston North Station', '[X] Haymarket', 'Boston South Station'],
     },
-    "Boston Peoplemover (BOS Airport)": {
-        "F": ['Transit Center [BOS]', 'Terminal E [BOS]', 'Terminal C [BOS]', 'Terminal B [BOS]', 'Terminal A [BOS]', 'Rental Car Center [BOS]'],
+    "Boston Peoplemover (Logan Airport)": {
+        "F": ['Transit Center [BOS]', 'Terminal E [BOS]', 'Terminal C [BOS]', 'Terminal B [BOS]', 'Terminal A [BOS] {APM}', 'Rental Car Center [BOS]'],
     },
     "Boston T Commuter (Ballardvale - Haverhill)": {
         "F": ['Ballardvale', 'Andover [MA]', 'Lawrence (MA)', 'Bradford', 'Haverhill'],
@@ -12618,13 +12617,13 @@ Segments = {
         "F": ['Boston NSRL', 'Boston T Commuter (South - Greenbush)'],
     },
     "Boston T Commuter (North - Haverhill)": {
-        "F": ['Boston North Station', '[X] Community College', '[X] Sullivan Square', '[X] Assembly Square', '[X] Wellington', 'Malden Center', '[X] Oak Grove [MA]', 'Wyoming Hill', 'Melrose/Cedar Park', 'Melrose Highlands', 'Greenwood [MA]', 'Wakefield', 'Reading [MA]', 'North Wilmington', 'Boston T Commuter (Ballardvale - Haverhill)'],
+        "F": ['Boston North Station', '[X] Community College', '[X] Sullivan Square', '[X] Assembly Square', '[X] Wellington [Boston-Subway]', 'Malden Center', '[X] Oak Grove [MA]', 'Wyoming Hill', 'Melrose/Cedar Park', 'Melrose Highlands', 'Greenwood [MA]', 'Wakefield', 'Reading [MA]', 'North Wilmington', 'Boston T Commuter (Ballardvale - Haverhill)'],
     },
     "Boston T Commuter (North - Kingston)": {
         "F": ['Boston NSRL', 'Boston T Commuter (South - Kingston)'],
     },
     "Boston T Commuter (North - Littleton)": {
-        "F": ['Boston North Station', '[X] Community College', '[X] Boston Lechmere Junction', '[X] Union Square', '[X] Porter', 'Belmont-Concord Ave', 'Waverley', 'Waltham', 'Brandeis/Roberts', 'Kendal Green', 'Hastings [MA]', 'Lincoln Rd', 'Concord [MA]', 'West Concord [MA]', 'South Acton', 'Littleton/Route 495'],
+        "F": ['Boston North Station', '[X] Community College', '[X] Inner Belt', '[X] Union Square', '[X] Porter', 'Belmont-Concord Ave', 'Waverley', 'Waltham', 'Brandeis/Roberts', 'Kendal Green', 'Hastings [MA]', 'Lincoln Rd', 'Concord [MA]', 'West Concord [MA]', 'South Acton', 'Littleton/Route 495'],
     },
     "Boston T Commuter (North - Lowell)": {
         "F": ['Boston T Commuter (North - Wilmington)', 'North Billerica', 'Lowell [MA]'],
@@ -12712,10 +12711,10 @@ Segments = {
         "F": ['Boston T Commuter (South - Forest Hills)', 'Hyde Park [Boston]', 'Readville', 'Route 128', 'Canton Junction', 'Sharon', 'Mansfield [MA]', '[R] Providence Regional Rail (Providence - Attleboro)'],
     },
     "Boston T Commuter (South - Quincy)": {
-        "F": ['Boston South Station', '[X] Boston South Junction', 'Broadway (Boston) {Commuter}', 'JFK/UMass', '[X] Savin Hill', '[X] North Quincy', '[X] Wollaston', 'Quincy Center', '[X] Quincy Adams'],
+        "F": ['Boston South Station', '[X] Boston South Junction', 'Broadway [Boston] {Commuter}', 'JFK/UMass', '[X] Savin Hill', '[X] North Quincy', '[X] Wollaston', 'Quincy Center', '[X] Quincy Adams'],
     },
     "Boston T Commuter (South - Readville)": {
-        "F": ['Boston South Station', '[X] Boston South Junction', 'Broadway (Boston) {Commuter}', 'Newmarket (MA)', 'Uphams Corner', 'Four Corners/Geneva', 'Talbot Ave', 'Morton St', 'Blue Hill Ave', 'Fairmount', 'Readville'],
+        "F": ['Boston South Station', '[X] Boston South Junction', 'Broadway [Boston] {Commuter}', 'Newmarket (MA)', 'Uphams Corner', 'Four Corners/Geneva', 'Talbot Ave', 'Morton St', 'Blue Hill Ave', 'Fairmount', 'Readville'],
     },
     "Boston T Commuter (South - Rockport)": {
         "F": ['[R] Boston NSRL', 'Boston T Commuter (North - Rockport)'],
@@ -12730,7 +12729,7 @@ Segments = {
         "F": ['Boston South Station', '[X] Boston South Junction', 'Back Bay', 'Lansdowne (MA)', 'Boston Landing', 'Newtonville', 'West Newton', 'Auburndale', 'Wellesley Farms', 'Wellesley Hills', 'Wellesley Square', 'Natick Center', 'West Natick', 'Framingham', 'Ashland-High St', 'Southborough', 'Westborough', 'Grafton', 'Worcester'],
     },
     "Boston T Commuter Rail (East Somerville - Tufts)": {
-        "F": ['Boston Light Rail (East Somerville - Medford)'],
+        "F": ['Boston Light Rail (Inner Belt - Medford/Tufts)'],
         "Keep": [],
     },
     "Boston T Light Rail (Ashmont - Mattapan)": {
@@ -12743,16 +12742,19 @@ Segments = {
         "F": ['Boston T Subway (Alewife - Savin Hill)', 'North Quincy', 'Wollaston', 'Quincy Center', 'Quincy Adams'],
     },
     "Boston T Subway (Alewife - Savin Hill)": {
-        "F": ['Alewife', 'Davis [Boston]', 'Porter', 'Harvard [University]', 'Central [Cambridge]', 'Kendall/MIT', 'Charles/MGH', 'Park Street', 'Downtown Crossing', 'Boston South Station', 'Broadway (Boston) {Subway}', 'Andrew', 'JFK/UMass', 'Savin Hill'],
+        "F": ['Alewife', 'Davis [Boston]', 'Porter', 'Harvard [University]', 'Central [Cambridge]', 'Kendall/MIT', 'Charles/MGH', 'Park Street', 'Downtown Crossing', 'Boston South Station', 'Broadway [Boston] {Subway}', 'Andrew', 'JFK/UMass', 'Savin Hill'],
     },
     "Boston T Subway (Bowdoin - Wonderland)": {
-        "F": ['Bowdoin', 'Government Center [Boston]', 'State [Boston]', 'Aquarium [Boston]', 'Maverick', 'Boston Airport', 'Wood Island', 'Orient Heights', 'Suffolk Downs', 'Beachmont', 'Revere Beach', 'Wonderland'],
+        "F": ['Bowdoin', 'Government Center [Boston]', 'State [Boston]', 'Aquarium [Boston]', 'Maverick', 'Airport Transit Center', 'Wood Island', 'Orient Heights', 'Suffolk Downs', 'Beachmont', 'Revere Beach', 'Wonderland'],
     },
     "Boston T Subway (Charles/MGH - Wonderland)": {
         "F": ['Charles/MGH', 'Boston T Subway (Bowdoin - Wonderland)'],
     },
     "Boston T Subway (Forest Hills - Oak Grove)": {
-        "F": ['Forest Hills [MA]', 'Green St [Boston]', 'Stony Brook', 'Jackson Square', 'Roxbury Crossing', 'Ruggles', 'Massachussetts Ave', 'Back Bay', 'Tufts Medical Center', 'Chinatown [Boston]', 'Downtown Crossing', 'State [Boston]', 'Haymarket', 'Boston North Station', 'Community College', 'Sullivan Square', 'Assembly Square', 'Wellington [Boston]', 'Malden Center', 'Oak Grove [MA]'],
+        "F": ['Forest Hills [MA]', 'Green St [Boston]', 'Stony Brook', 'Jackson Square', 'Roxbury Crossing', 'Ruggles', 'Massachussetts Ave', 'Back Bay', 'Tufts Medical Center', 'Chinatown [Boston]', 'Downtown Crossing', 'State [Boston]', 'Haymarket', 'Boston North Station', 'Community College', 'Sullivan Square', 'Assembly Square', 'Wellington [Boston-Subway]', 'Malden Center', 'Oak Grove [MA]'],
+    },
+    "Boston T Subway (Urban Ring)": {
+        "L": ['Boston South Station', 'World Trade Center', 'Terminal A [BOS] {Ring}', 'Airport Transit Center', '[X] Boston Chelsea Bend E', '[X] Boston Chelsea Bend W', 'Chelsea', 'Everett/Revs', 'Sullivan Square', 'Inner Belt', 'Wellington [Boston-Ring]', 'MIT', 'Cambridgeport', 'Boston University Central {Ring}', 'Fenway {Ring}', 'Museum of Fine Arts {Ring}', 'Ruggles', 'Massachussetts Ave', 'Back Bay', '[X] Boston South Junction'],
     },
     "Boulder Streetcar": {
         "F": ['Boulder Junction {LRT}', '28th/Pearl', '28th/Canyon', 'Canyon/Folsom', 'Canyon/21st', 'Downtown Boulder', '[X] Boulder Downtown Bend', 'Broadway/Arapahoe', 'Broadway/University', 'Broadway/Euclid', 'Broadway/Baseline'],
@@ -12809,7 +12811,7 @@ Segments = {
         "F": ['Calgary Light Rail (City Hall - Saddletowne)', '88 Ave NE', '128 Ave NE', 'Stonegate'],
     },
     "Calgary Light Rail (City Hall - Tuscany)": {
-        "F": ['Calgary Light Rail (City Hall - 8th St)', 'Sunnyside', 'SAIT/AUArts/Jubilee', 'Lions Park', 'Banff Trail', 'University [Calgary]', 'Brentwood (AB)', 'Dalhousie', 'Crowfoot', 'Tuscany'],
+        "F": ['Calgary Light Rail (City Hall - 8th St)', 'Sunnyside', 'SAIT/AUArts/Jubilee', 'Lions Park', 'Banff Trail', 'University [Calgary]', 'Brentwood [AB]', 'Dalhousie', 'Crowfoot', 'Tuscany'],
     },
     "Calgary Light Rail (Tuscany - Somerset)": {
         "F": ['[R] Calgary Light Rail (City Hall - Tuscany)', 'Calgary Light Rail (City Hall - Somerset)'],
@@ -12941,7 +12943,7 @@ Segments = {
         "F": ['Blue Island-Vermont', 'Robbins', 'Midlothian [IL]', 'Oak Forest', 'Tinley Park', 'Tinley-80th', 'Hickory Creek', 'Mokena', 'New Lenox {N}', '[X] Joliet East Junction', 'Joliet Union Station'],
     },
     "Chicago Metra (Joliet - Dyer)": {
-        "F": ['Joliet Union Station', '[X] Joliet East Junction', 'New Lenox {S}', 'Frankfort', 'Matteson (OCS)', 'Chicago Heights', 'Calumet Expy', 'Dyer'],
+        "F": ['Joliet Union Station', '[X] Joliet East Junction', 'New Lenox {S}', 'Frankfort', 'Matteson [OCS]', 'Chicago Heights', 'Calumet Expy', 'Dyer'],
     },
     "Chicago Metra (Joliet - Waukegan)": {
         "F": ['Joliet Union Station', 'Plainfield [IL]', 'Lakewood Valley', 'Eola', 'Warrenville', 'West Chicago [OCS]', 'Wayne [IL]', 'Bartlett Junction', 'Golf Rd (OCS)', 'South Barrington', 'Barrington Junction', 'Lake Zurich', 'Vernon Junction', 'Mettawa', 'Great Lakes', 'North Chicago', 'Waukegan'],
@@ -12974,7 +12976,7 @@ Segments = {
         "F": ['Chicago Metra (Millennium - 63rd St)', 'Stony Island', 'Bryn Mawr (Chicago South)', 'South Shore (Chicago)', 'Windsor Park', 'Cheltenham/79th St', '83rd St', '87th St', 'South Chicago (93rd)'],
     },
     "Chicago Metra (Millennium - University Park)": {
-        "F": ['Chicago Metra (Millennium - Kensington)', '[X] Chicago Kensington Junction', 'Riverdale [Chicago]', 'Ivanhoe', '147th St [Chicago]', 'Harvey [IL]', 'Hazel Crest', 'Calumet', 'Homewood', 'Flossmoor', 'Olympia Fields', '211th St (Lincoln Hwy)', 'Matteson (ME)', 'Richton Park', 'University Park'],
+        "F": ['Chicago Metra (Millennium - Kensington)', '[X] Chicago Kensington Junction', 'Riverdale [Chicago]', 'Ivanhoe', '147th St [Chicago]', 'Harvey [IL]', 'Hazel Crest', 'Calumet', 'Homewood', 'Flossmoor', 'Olympia Fields', '211th St (Lincoln Hwy)', 'Matteson [ME]', 'Richton Park', 'University Park'],
     },
     "Chicago Metra (Ogilvie - Crystal Lake)": {
         "F": ['Chicago Approach (Ogilvie - North)', 'Clybourn', 'Irving Park Rd', 'Mayfair', 'Jefferson Park [Metra]', 'Gladstone Park', 'Norwood Park', 'Edison Park', 'Park Ridge [IL]', 'Dee Road', 'Des Plaines', 'Cumberland [IL]', 'Mt. Prospect', 'Arlington Heights', 'Arlington Park [IL]', 'Palatine', 'Barrington', 'Barrington Junction', 'Fox River Grove', 'Cary [IL]', 'Pingree Road'],
@@ -13066,7 +13068,7 @@ Segments = {
         "F": ['Cincinnati Approach (Union - North)', '[X] Cincinnati Northside Bend', 'Winton Junction'],
     },
     "Cincinnati Streetcar": {
-        "L": ['The Banks', '[X] Cincinnati Banks Bend E', '4th & Main', '6th & Main', '8th & Main', 'Court & Main', '12th & Main', '[X] Cincinnati 12th St Bend E', '12th & Vine', '[X] Cincinnati 12th St Bend W', '14th & Elm', 'Liberty & Elm', 'Findlay Market-Elm', 'Brewery District (Cincinnati)', '[X] Cincinnati Henry Bend W', '[X] Cincinnati Henry Bend E', 'Findlay Market-Race', 'Liberty & Race', 'Washington Park [Cincinnati]', '[X] Cincinnati Central Bend W', 'Central Parkway', '[X] Cincinnati Central Bend E', 'Public Library', 'Aronoff Center', 'Fountain Square', '[X] Cincinnati Banks Bend W', 'The Banks'],
+        "L": ['The Banks', '[X] Cincinnati Banks Bend E', '4th & Main', '6th & Main', '8th & Main', 'Court & Main', '12th & Main', '[X] Cincinnati 12th St Bend E', '12th & Vine', '[X] Cincinnati 12th St Bend W', '14th & Elm', 'Liberty & Elm', 'Findlay Market-Elm', 'Brewery District [Cincinnati]', '[X] Cincinnati Henry Bend W', '[X] Cincinnati Henry Bend E', 'Findlay Market-Race', 'Liberty & Race', 'Washington Park [Cincinnati]', '[X] Cincinnati Central Bend W', 'Central Parkway', '[X] Cincinnati Central Bend E', 'Public Library', 'Aronoff Center', 'Fountain Square', '[X] Cincinnati Banks Bend W', 'The Banks'],
     },
     "Cincinnati Subway (Downtown - Airport)": {
         "F": ['Central/Vine', '7th St [Cincinnati]', '5th St [Cincinnati]', 'Stadium District [Cincinnati]', 'Riverside [Covington]', '4th St [Covington]', '8th St [Covington]', 'MLK/Scott', 'Russell St [Covington]', 'Main St [Covington]', 'Kyles Ln', 'Dixie Hwy', 'Crescent Springs', '[X] Cincinnati I-71 Bend', 'Mineola Pike', '[X] Cincinnati Airport Bend', 'CVG Airport'],
@@ -13137,7 +13139,7 @@ Segments = {
         "Skip": ['W 117-Madison', 'Triskett', 'Puritas', 'Brookpark'],
     },
     "Cleveland Regional (Riverfront - Hudson)": {
-        "F": ['Cleveland Approach (Riverfront - Southeast)', 'Euclid-E 55th St', 'E 79th St [North] {Mainline}', 'Broadway (Cleveland)', 'Garfield Heights', 'Bedford', 'Northfield [OH]', 'Macedonia', 'Hudson [OH]'],
+        "F": ['Cleveland Approach (Riverfront - Southeast)', 'Euclid-E 55th St', 'E 79th St [North] {Mainline}', 'Broadway [Cleveland]', 'Garfield Heights', 'Bedford', 'Northfield [OH]', 'Macedonia', 'Hudson [OH]'],
     },
     "Cleveland Regional (Riverfront - Painesville)": {
         "F": ['Cleveland Approach (Riverfront - East)', 'St. Clair-Superior', 'Glenville', 'E 152nd St', 'Euclid [Cleveland]', 'Lakeland-Worden', 'Willoughby', 'Mentor', 'Painesville'],
@@ -13167,7 +13169,7 @@ Segments = {
         "F": ['Columbus Convention Center {Main}', '[X] Columbus Central Junction'],
     },
     "Columbus Regional (Central - Amlin)": {
-        "F": ['Columbus Approach (Columbus - Southeast)', '[X] Columbus Franklinton Junction', 'McKinley Ave (Columbus)', 'West Scioto', 'Highpoint-Glen', 'Northwest Columbus', 'Avondale Woods', 'Amlin'],
+        "F": ['Columbus Approach (Columbus - Southeast)', '[X] Columbus Franklinton Junction', 'McKinley Ave [Columbus]', 'West Scioto', 'Highpoint-Glen', 'Northwest Columbus', 'Avondale Woods', 'Amlin'],
     },
     "Columbus Regional (Central - Delaware)": {
         "F": ['Columbus Approach (Columbus - Northeast)', 'Expo Center/State Fair', 'North Linden', 'Overbrook Dr', 'East Beechwold', 'Old Worthington [Mainline]', 'Flint [OH]', 'Orange [OH]', 'Gregory', 'Delaware'],
@@ -13182,7 +13184,7 @@ Segments = {
         "F": ['Columbus Regional (Central - South Columbus)', 'Lockbourne Rd', 'Glenbrook (OH)', 'Eastland [OH]', 'Independence Village', 'Pickerington'],
     },
     "Columbus Regional (Central - South Columbus)": {
-        "F": ['Columbus Approach (Columbus - Southeast)', 'Broad St [Columbus]', 'Brewery District (Columbus)', 'Greenlawn Ave', 'South Columbus {Mainline}'],
+        "F": ['Columbus Approach (Columbus - Southeast)', 'Broad St [Columbus]', 'Brewery District [Columbus]', 'Greenlawn Ave', 'South Columbus {Mainline}'],
     },
     "Columbus Regional (Central - Timberlake)": {
         "F": ['Columbus Approach (Columbus - Southeast)', '[X] Columbus Franklinton Junction', 'Franklinton', '[X] Columbus Franklinton Bend', 'South Hilltop', 'Eakin Rd', 'Urbancrest', 'Grove City', 'Autumn Grove', 'Pleasant Corners', 'Timberlake'],
@@ -13209,7 +13211,7 @@ Segments = {
         "F": ['[R] Columbus Subway (Broad St West)', 'Columbus Subway (Broad St East)'],
     },
     "Columbus Subway (High St North)": {
-        "F": ['Metro Center [Columbus]', 'Columbus Convention Center {Subway}', 'Short North', '5th Ave [Columbus]', '10th Ave', 'University District', 'Old North', 'Tulane-Weber', 'Broadway (Columbus)', 'Hollenback Rd', 'Clintonville', 'Morse Rd', 'Selby Blvd', 'Old Worthington [Subway]', 'Wilson Bridge Rd', 'Crosswoods'],
+        "F": ['Metro Center [Columbus]', 'Columbus Convention Center {Subway}', 'Short North', '5th Ave [Columbus]', '10th Ave', 'University District', 'Old North', 'Tulane-Weber', 'Broadway [Columbus]', 'Hollenback Rd', 'Clintonville', 'Morse Rd', 'Selby Blvd', 'Old Worthington [Subway]', 'Wilson Bridge Rd', 'Crosswoods'],
     },
     "Columbus Subway (High St South)": {
         "F": ['Metro Center [Columbus]', 'Main St [Columbus]', 'German Village', 'Thurman-Greenlawn', 'Merion Village', 'South Columbus {Metro}', 'Cullman Rd', 'Williams Rd', 'Great Southern TC'],
@@ -13519,7 +13521,7 @@ Segments = {
         "F": ['Detroit New Center', '[X] Detroit New Center Junction'],
     },
     "Detroit People Mover": {
-        "L": ['Financial District', 'Millender Center', 'Renaissance Center', 'Bricktown', 'Greektown', 'Cadillac Center', 'Broadway (Detroit)', 'Grand Circus Park', 'Times Square', 'Michigan', 'Fort/Cass', 'Huntington Place', 'Water Square', 'Financial District'],
+        "L": ['Financial District', 'Millender Center', 'Renaissance Center', 'Bricktown', 'Greektown', 'Cadillac Center', 'Broadway [Detroit]', 'Grand Circus Park', 'Times Square', 'Michigan', 'Fort/Cass', 'Huntington Place', 'Water Square', 'Financial District'],
     },
     "Detroit Peoplemover (DTW Airport)": {
         "F": ['Detroit Airport Transfer', 'Evans Terminal'],
@@ -13621,7 +13623,7 @@ Segments = {
         "F": ['Fort Worth Central Station', '[X] Fort Worth South Junction'],
     },
     "Fresno Light Rail": {
-        "F": ['Chaffee Zoo', 'Palm Ave [Fresno]', 'Broadway/Belmont', 'Sacramento St', 'Mural District', 'Broadway Plaza', 'Courthouse [Fresno]', 'City Hall [Fresno]', 'Regional Medical Center', 'Fresno/Belmont', 'Olive Ave', 'McKinley Ave (Fresno)', 'Clinton Ave', 'Shields Ave', 'Dakota Ave', 'Ashlan Ave', 'Gettysburg Ave', 'Shaw Ave', 'Barstow Ave', 'First St [Fresno]', "Valley Children's Stadium", 'Cal State Fresno', 'Chestnut Ave', 'Villa Ave', 'Clovis Ave', 'Fordham Ave', 'Armstrong Ave', 'Temperance Ave', 'Bullard Ave', 'Sierra Ave', 'Clovis Medical Center'],
+        "F": ['Chaffee Zoo', 'Palm Ave [Fresno]', 'Broadway/Belmont', 'Sacramento St', 'Mural District', 'Broadway Plaza', 'Courthouse [Fresno]', 'City Hall [Fresno]', 'Regional Medical Center', 'Fresno/Belmont', 'Olive Ave', 'McKinley Ave [Fresno]', 'Clinton Ave', 'Shields Ave', 'Dakota Ave', 'Ashlan Ave', 'Gettysburg Ave', 'Shaw Ave', 'Barstow Ave', 'First St [Fresno]', "Valley Children's Stadium", 'Cal State Fresno', 'Chestnut Ave', 'Villa Ave', 'Clovis Ave', 'Fordham Ave', 'Armstrong Ave', 'Temperance Ave', 'Bullard Ave', 'Sierra Ave', 'Clovis Medical Center'],
     },
     "Guadalajara Light Rail (Arcos de Zapopan - Central de Autobuses)": {
         "F": ['Arcos de Zapopan', 'Periférico Belenes', 'Mercado del Mar', 'Zapopan Centro', 'Plaza Patria', 'Circunvalación Country', 'Ávila Camacho', 'La Normal (CETRAM)', 'Santuario', 'Guadalajara Centro', 'Independencia', 'Plaza de la Bandera', 'CUCEI', 'Revolución', 'Río Nilo', 'Tlaquepaque Centro', 'Lázaro Cárdenas [Guadalajara]', 'Central de Autobuses'],
@@ -13735,10 +13737,10 @@ Segments = {
         "F": ['Houston Light Rail (Northline - Wheeler)', 'Museum District {West}', 'Hermann Park/Rice U'],
     },
     "Houston Light Rail (Northline - Wheeler)": {
-        "F": ['Northline Transit Center/HCC', 'Melbourne/North Lindale', 'Lindale Park', 'Cavalcade', 'Moody Park', 'Fulton/North Central', 'Quitman/Near Northside', 'Burnett TC/Casa de Amigos', 'UH-Downtown', '[X] Franklin/Main', 'Preston', 'Central Station Main', 'Main Street Square', 'Bell [Houston]', 'Downtown Transit Center [Houston]', 'McGowen', 'Ensemble/HCC', 'Wheeler'],
+        "F": ['Northline Transit Center/HCC', 'Melbourne/North Lindale', 'Lindale Park', 'Cavalcade', 'Moody Park', 'Fulton/North Central', 'Quitman/Near Northside', 'Burnett TC/Casa de Amigos', 'UH-Downtown', '[X] Franklin/Main', 'Preston', 'Central Station Main', 'Main Street Square', 'Bell [Houston]', 'Downtown Transit Center [Houston]', 'McGowen [LRT]', 'Ensemble/HCC', 'Wheeler'],
     },
     "Houston Metro": {
-        "F": ['Stadium Park', '[X] Houston Astrodome Bend', 'Holly Hall', 'Corder', 'VA Medical Center [Houston]', 'Holcombe', 'Hermann Park', 'MacGregor Way', 'Binz', 'Southmore', 'Blodgett', 'Alabama', 'Elgin [Houston]', 'McGowen (Metro)', 'Gray', 'Pease', 'Toyota Center', 'Convention District [Metro]', 'Capitol-Rusk', 'Daikin Park', 'Franklin (Houston)', '[X] Houston Franklin Bend', 'Caroline', 'Franklin/Main', '[X] Houston Louisiana Bend', 'Aquarium [Houston]', 'Houston [Houston]', 'Silver', 'Sawyer [Houston]', 'Studemont', 'Yale [Houston]', 'Thompson [Houston]', 'Shepherd-Durham', 'Detering', 'Westcott', 'Durford', 'Silver Eagle', 'Algona', '12th St', 'Houston West Station {Metro}'],
+        "F": ['Stadium Park', '[X] Houston Astrodome Bend', 'Holly Hall', 'Corder', 'VA Medical Center [Houston]', 'Holcombe', 'Hermann Park', 'MacGregor Way', 'Binz', 'Southmore', 'Blodgett', 'Alabama', 'Elgin [Houston]', 'McGowen [Metro]', 'Gray', 'Pease', 'Toyota Center', 'Convention District [Metro]', 'Capitol-Rusk', 'Daikin Park', 'Franklin (Houston)', '[X] Houston Franklin Bend', 'Caroline', 'Franklin/Main', '[X] Houston Louisiana Bend', 'Aquarium [Houston]', 'Houston [Houston]', 'Silver', 'Sawyer [Houston]', 'Studemont', 'Yale [Houston]', 'Thompson [Houston]', 'Shepherd-Durham', 'Detering', 'Westcott', 'Durford', 'Silver Eagle', 'Algona', '12th St', 'Houston West Station {Metro}'],
     },
     "Houston Peoplemover (IAH Airport New)": {
         "F": ['Houston Peoplemover (IAH Airport Old)', 'Ecopark', 'East Parking', 'IAH Transit Center'],
@@ -14656,7 +14658,7 @@ Segments = {
         "F": ['Nashville Approach (Union - North)', 'Centennial Medical Center', 'West End Park', 'Kenner Ave', 'Belle Meade', 'Warner Park', 'Bellevue [TN]'],
     },
     "Nashville Regional Rail (Union - Franklin)": {
-        "F": ['Nashville Union Station', '[X] Nashville East Junction', 'GEODIS Park', 'Berry Hill', 'Oak Hill', 'Brentwood', 'Moores Ln', 'Franklin (TN)'],
+        "F": ['Nashville Union Station', '[X] Nashville East Junction', 'GEODIS Park', 'Berry Hill', 'Oak Hill', 'Brentwood [TN]', 'Moores Ln', 'Franklin (TN)'],
     },
     "Nashville Regional Rail (Union - Gallatin)": {
         "F": ['Nashville Regional Rail (Union - Amqui)', 'Hendersonville', 'Avondale [TN]', 'Gallatin'],
@@ -14716,13 +14718,13 @@ Segments = {
         "F": ['New Orleans Union Terminal {Streetcar}', 'Julia & Loyola', 'Hyatt Regency', 'Poydras & Loyola', 'Tulane', 'Rampart & Canal', 'Conti St', 'St. Ann St', 'Ursulines Ave', 'Esplanade Ave', 'Pauger St', 'Elysian Fields Ave'],
     },
     "New York IBX (Queens - Brooklyn)": {
-        "F": ['Roosevelt Av', 'Grand Av', 'Eliot Av', 'Middle Village-Metropolitan Av', 'Myrtle Av [IBX]', '[X] NY Wyckoff-Cooper Junction (LX)', 'Wilson Av', '[X] Bushwick Av-Aberdeen St', '[X] Broadway Junction (North)', 'Atlantic Av', 'Sutter Av', 'Livonia Av', '[X] NY New Lots-Van Sinderen Junction (LX)', 'Linden Blvd', 'Remsen Av [IBX]', 'Utica Av [IBX]', 'Flatbush Av-Nostrand Av', 'E 16 St', 'McDonald Av (IBX)', '62 St', '[X] Fort Hamilton Pkwy', '8 Av', '4 Av', 'Brooklyn Army Terminal'],
+        "F": ['Roosevelt Av', 'Grand Av', 'Eliot Av', 'Middle Village-Metropolitan Av', 'Myrtle Av [IBX]', '[X] NY Wyckoff-Cooper Junction (LX)', 'Wilson Av', '[X] Bushwick Av-Aberdeen St', '[X] Broadway Junction [North]', 'Atlantic Av', 'Sutter Av', 'Livonia Av', '[X] NY New Lots-Van Sinderen Junction (LX)', 'Linden Blvd', 'Remsen Av [IBX]', 'Utica Av [IBX]', 'Flatbush Av-Nostrand Av', 'E 16 St', 'McDonald Av [IBX]', '62 St', '[X] Fort Hamilton Pkwy', '8 Av', '4 Av', 'Brooklyn Army Terminal'],
     },
     "New York Light Rail (1st Ave)": {
         "F": ['South Ferry {LRT}', 'Hanover Square', 'Seaport', 'Oliver St', '[X] New York Pine Bend', 'Grand St [Allen]', 'Houston St [Allen]', '7 St', '14 St [1st]', '20 St', '23 St/VA Hospital', '28 St [1st]', '34 St [1st]', '42 St/UN Plaza', '50 St [1st]', '57 St [1st]', '67 St', '72 St [1st]', '79 St [1st]', '86 St [1st]', '96 St [1st]', '106 St [1st]', '116 St [1st]', '125 St [1st]'],
     },
     "New York Light Rail (Flatlands)": {
-        "F": ['Bath Av', '85 St', '82 St', 'Kings Hwy [Bay]', 'Avenue O', '65 St [Bay]', '60 St', 'McDonald Av (Bay)', 'Ocean Pkwy [Avenue J]', 'Coney Island Av', '15 St', 'Ocean Av', 'Bedford Av [Avenue J]', 'Nostrand Av [Avenue J]', 'Flatbush Av', 'Albany Av', 'Kings Hwy [Avenue J]', 'Utica Av [Avenue J]', 'Flatlands Av', '57 St [Flatlands]', 'Ralph Av [Flatlands]', '80 St', '84 St', 'Remsen Av [Flatlands]', 'Rockaway Pkwy'],
+        "F": ['Bath Av', '85 St', '82 St', 'Kings Hwy [Bay]', 'Avenue O', '65 St [Bay]', '60 St', 'McDonald Av [Bay]', 'Ocean Pkwy [Avenue J]', 'Coney Island Av', '15 St', 'Ocean Av', 'Bedford Av [Avenue J]', 'Nostrand Av [Avenue J]', 'Flatbush Av', 'Albany Av', 'Kings Hwy [Avenue J]', 'Utica Av [Avenue J]', 'Flatlands Av', '57 St [Flatlands]', 'Ralph Av [Flatlands]', '80 St', '84 St', 'Remsen Av [Flatlands]', 'Rockaway Pkwy'],
     },
     "New York PATH (33 St - Hoboken)": {
         "F": ['33rd St [New York]', '23 St [6th]', '14 St-6 Av', '9 St [6th]', 'Christopher St', '[X] Hoboken Junction (PATH)', 'Hoboken Terminal {Main}'],
@@ -14830,7 +14832,7 @@ Segments = {
         "F": ['New York Regional Rail (Hoboken - Suffern via Clifton)', 'New York Regional Rail (Suffern - Port Jervis)'],
     },
     "New York Regional Rail (Hoboken - Ridgewood via Bergen)": {
-        "F": ['New York Regional Rail (Hoboken - Secaucus Junction)', '[X] Rutherford Junction West', 'Rutherford', 'Wesmont', 'Garfield [NJ]', 'Plauderville', 'Saddlebrook', 'Broadway-Arcola', 'Radburn', 'Glen Rock Boro Hall', 'Ridgewood'],
+        "F": ['New York Regional Rail (Hoboken - Secaucus Junction)', '[X] Rutherford Junction West', 'Rutherford', 'Wesmont', 'Garfield [NJ]', 'Plauderville', 'Saddlebrook', 'Broadway [Fair Lawn]', 'Radburn', 'Glen Rock Boro Hall', 'Ridgewood'],
     },
     "New York Regional Rail (Hoboken - Ridgewood via Clifton)": {
         "F": ['New York Regional Rail (Hoboken - Secaucus Junction)', 'Kingsland', 'Lyndhurst', 'Delawanna', 'Passaic', 'Clifton (NJ)', 'Paterson', 'Hawthorne [NJ] {NJT}', 'Glen Rock', 'Ridgewood'],
@@ -14887,7 +14889,7 @@ Segments = {
         "F": ['New York Regional Rail (Jamaica - Hicksville)', 'Syosset', 'Cold Spring Harbor', 'Huntington (NY)', 'Greenlawn', 'Northport', 'Kings Park', 'Smithtown', 'St. James [NY]', 'Stony Brook University', 'Port Jefferson'],
     },
     "New York Regional Rail (Jamaica - Ronkonkoma)": {
-        "F": ['New York Regional Rail (Jamaica - Hicksville)', 'Bethpage', '[X] Farmingdale Junction', 'Farmingdale', 'Pinelawn', 'Wyandanch', 'Deer Park', 'Brentwood (NY)', 'Central Islip', 'Ronkonkoma'],
+        "F": ['New York Regional Rail (Jamaica - Hicksville)', 'Bethpage', '[X] Farmingdale Junction', 'Farmingdale', 'Pinelawn', 'Wyandanch', 'Deer Park', 'Brentwood [NY]', 'Central Islip', 'Ronkonkoma'],
     },
     "New York Regional Rail (Jamaica - Valley Stream North)": {
         "F": ['Jamaica [NYC] {LIRR}', '[X] Jamaica East Junction', 'St. Albans [NY]', 'Rosedale', 'Valley Stream'],
@@ -14917,7 +14919,7 @@ Segments = {
         "F": ['New York Regional Rail (Penn Station - Jamaica)', 'New York Regional Rail (Jamaica - Babylon)'],
     },
     "New York Regional Rail (Penn Station - Bay Head)": {
-        "F": ['New York Regional Rail (Penn Station - Newark Penn)', 'New York Regional Rail (Newark Penn - Rahway)', 'Avenel', 'Woodbridge (NJ)', 'Perth Amboy', 'South Amboy', 'Aberdeen-Matawan', 'Hazlet', 'Middletown Township', 'Red Bank', 'Little Silver', 'Monmouth Park', 'Monmouth-Long Branch', 'Elberon', 'Allenhurst', 'Asbury Park', 'Bradley Beach', 'Belmar', 'Spring Lake', 'Manasquan', 'Point Pleasant Beach', 'Bay Head'],
+        "F": ['New York Regional Rail (Penn Station - Newark Penn)', 'New York Regional Rail (Newark Penn - Rahway)', 'Avenel', 'Woodbridge [NJ]', 'Perth Amboy', 'South Amboy', 'Aberdeen-Matawan', 'Hazlet', 'Middletown Township', 'Red Bank', 'Little Silver', 'Monmouth Park', 'Monmouth-Long Branch', 'Elberon', 'Allenhurst', 'Asbury Park', 'Bradley Beach', 'Belmar', 'Spring Lake', 'Manasquan', 'Point Pleasant Beach', 'Bay Head'],
     },
     "New York Regional Rail (Penn Station - Croton-Harmon)": {
         "F": ['New York Penn Station', '[X] Hudson Yards Junction', 'West 62nd St', 'West 125th St', 'New York Regional Rail (Spuyten Junction - Croton-Harmon)'],
@@ -15001,10 +15003,10 @@ Segments = {
         "F": ['Stamford', 'Glenbrook (CT)', 'Springdale [CT]', 'Talmadge Hill', 'New Canaan'],
     },
     "New York Regional Rail (Suffern - Port Jervis)": {
-        "F": ['Suffern', 'Sloatsburg', 'Tuxedo', 'Harriman', 'Salisbury Mills/Cornwall', 'Campbell Hall', 'Middletown (NY)', 'Otisville', 'Port Jervis'],
+        "F": ['Suffern', 'Sloatsburg', 'Tuxedo', 'Harriman', 'Salisbury Mills/Cornwall', 'Campbell Hall', 'Middletown [NY]', 'Otisville', 'Port Jervis'],
     },
     "New York Regional Rail (Woodside - Port Washington)": {
-        "F": ['[X] NY Wynwood Junction', 'Elmhurst Av [LIRR]', 'Mets-Willets Point {LIRR}', 'Flushing Main St', 'Flushing-Murray Hill', 'Broadway-Northern Blvd', 'Auburndale-Francis Lewis', 'Bayside', 'Douglaston', 'Little Neck', 'Great Neck', 'Manhasset', 'Plandome', 'Port Washington'],
+        "F": ['[X] NY Wynwood Junction', 'Elmhurst Av [LIRR]', 'Mets-Willets Point {LIRR}', 'Flushing Main St', 'Flushing-Murray Hill', 'Broadway [Flushing]', 'Auburndale-Francis Lewis', 'Bayside', 'Douglaston', 'Little Neck', 'Great Neck', 'Manhasset', 'Plandome', 'Port Washington'],
     },
     "New York Staten Island Railway": {
         "F": ['St. George [NY]', 'Tompkinsville', 'Stapleton', 'Clifton (NY)', 'Grasmere', 'Old Town [Staten Island]', 'Dongan Hills', 'Jefferson Av', 'Grant City', 'New Dorp', 'Oakwood Heights [New York]', 'Bay Terrace', 'Great Kills', 'Eltingville', 'Annadale', 'Huguenot', "Prince's Bay", 'Pleasant Plains', 'Richmond Valley', 'Arthur Kill', 'Tottenville'],
@@ -15013,7 +15015,7 @@ Segments = {
         "F": ['Grand Central-42 St {S}', 'Times Sq-42 St {S}'],
     },
     "New York Subway (8 Av - Rockaway Pkwy)": {
-        "F": ['14 St-8 Av', '14 St-6 Av', '14 St-Union Sq {L}', '3 Av', '1 Av', '[X] NY FDR-14th Bend (L)', 'Bedford Av [7th]', '[X] NY Metropolitan-Union Junction (GL)', 'Lorimer St [Metropolitan]', 'Graham Av', 'Grand St [Bushwick]', 'Montrose Av', 'Morgan Av', 'Jefferson St', 'DeKalb Av (Wyckoff)', 'Myrtle-Wyckoff Avs', 'Halsey St [Wyckoff]', '[X] NY Wyckoff-Cooper Junction (LX)', 'Wilson Av', 'Bushwick Av-Aberdeen St', 'Broadway Junction (North)', 'Atlantic Av', 'Sutter Av', 'Livonia Av', '[X] NY New Lots-Van Sinderen Junction (LX)', 'New Lots Av [Van Sinderen]', 'E 105 St', 'Canarsie-Rockaway Pkwy'],
+        "F": ['14 St-8 Av', '14 St-6 Av', '14 St-Union Sq {L}', '3 Av', '1 Av', '[X] NY FDR-14th Bend (L)', 'Bedford Av [7th]', '[X] NY Metropolitan-Union Junction (GL)', 'Lorimer St [Metropolitan]', 'Graham Av', 'Grand St [Bushwick]', 'Montrose Av', 'Morgan Av', 'Jefferson St', 'DeKalb Av (Wyckoff)', 'Myrtle-Wyckoff Avs', 'Halsey St [Wyckoff]', '[X] NY Wyckoff-Cooper Junction (LX)', 'Wilson Av', 'Bushwick Av-Aberdeen St', 'Broadway Junction [North]', 'Atlantic Av', 'Sutter Av', 'Livonia Av', '[X] NY New Lots-Van Sinderen Junction (LX)', 'New Lots Av [Van Sinderen]', 'E 105 St', 'Canarsie-Rockaway Pkwy'],
     },
     "New York Subway (Bay Ridge - Forest Hills)": {
         "F": ['[R] New York Subway (Canal St - Bay Ridge)', 'New York Subway (Canal St - Forest Hills)'],
@@ -15025,7 +15027,7 @@ Segments = {
         "F": ['Broad Channel', '[X] NY Rockaways Junction (A)', 'Beach 90 St', 'Beach 98 St', 'Beach 105 St', 'Beach 116 St'],
     },
     "New York Subway (Broad St - Jamaica)": {
-        "F": ['Broad St [New York]', 'Fulton St [Nassau]', 'Chambers St (Centre)', 'Canal St (Centre)', '[X] NY Cleveland-Kenmare Bend (JZ)', 'Bowery', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway-Boerum', 'Lorimer St [Broadway]', 'Flushing Av [Broadway]', 'Myrtle Av [Broadway]', 'Kosciuszko St', 'Gates Av', 'Halsey St [Broadway]', 'Chauncey St', 'Broadway Junction (North)', 'Alabama Av', 'Van Siclen Av [Fulton]', 'Cleveland St', 'Norwood Av', 'Crescent St', 'Cypress Hills', '75 St-Elderts Ln', '85 St-Forest Pkwy', 'Woodhaven Blvd (Jamaica)', '104 St-Jamaica Av {JZ}', '111 St [Jamaica]', '121 St', '[X] Jamaica West Junction', 'Sutphin Blvd-Archer Av-JFK Airport', 'Jamaica Center-Parsons/Archer'],
+        "F": ['Broad St [New York]', 'Fulton St [Nassau]', 'Chambers St (Centre)', 'Canal St (Centre)', '[X] NY Cleveland-Kenmare Bend (JZ)', 'Bowery', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway [Brooklyn]', 'Lorimer St [Broadway]', 'Flushing Av [Broadway]', 'Myrtle Av [Broadway]', 'Kosciuszko St', 'Gates Av', 'Halsey St [Broadway]', 'Chauncey St', 'Broadway Junction [North]', 'Alabama Av', 'Van Siclen Av [Fulton]', 'Cleveland St', 'Norwood Av', 'Crescent St', 'Cypress Hills', '75 St-Elderts Ln', '85 St-Forest Pkwy', 'Woodhaven Blvd [Jamaica]', '104 St-Jamaica Av {JZ}', '111 St [Jamaica]', '121 St', '[X] Jamaica West Junction', 'Sutphin Blvd-Archer Av-JFK Airport', 'Jamaica Center-Parsons/Archer'],
     },
     "New York Subway (Broadway-Lafayette - Bedford Park)": {
         "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '[X] 14 St-6 Av', '[X] 23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '7 Av [53rd]', '[X] NY 8th Av-53rd St Junction (ACEBD)', '59 St-Columbus Circle {ACBD}', '72 St [Central Park]', '81 St-Museum of Natural History', '86 St [Central Park]', '96 St [Central Park]', '103 St [Central Park]', 'Cathedral Pkwy-110 St', '116 St [Central Park]', '125 St [St. Nicholas]', '135 St [St. Nicholas]', '145 St [St. Nicholas]', '155 St [Douglass]', '161 St-Yankee Stadium', '[X] NY Grand Concourse-161st Bend (BD)', '167 St [Grand Concourse]', '170 St [Grand Concourse]', '174-175 Sts', 'Tremont Av', '182-183 Sts', 'Fordham Rd [Grand Concourse]', 'Kingsbridge Rd [Grand Concourse]', 'Bedford Park Blvd'],
@@ -15040,19 +15042,19 @@ Segments = {
         "F": ['Broadway-Lafayette St', '[X] Houston St [Chrystie]', '[X] NY Delancey-Chrystie Junction (BDMT)', 'Grand St [Chrystie]', '[X] NY Manhattan Bridge Junction (BDNQ)', '[X] York St', '[X] NY Flatbush-Willoughby Junction (BQR)', 'DeKalb Av (Flatbush)', '[X] NY Fulton-Flatbush Junction (BQR2345)', '[X] NY Fulton-Ashland Junction (BDNQR)', '[X] NY Ashland-Hanson Bend (DNR)', 'Atlantic Av-Barclays Ctr {DNR}', '[X] Union St', '[X] 9 St [4th]', '[X] Prospect Av [4th]', '[X] 25 Av [4th]', '36 St [4th]', '9 Av', 'Fort Hamilton Pkwy [New Utrecht]', '50 St [New Utrecht]', '55 St [New Utrecht]', '62 St', '71 St', '79 St [New Utrecht]', '18 Av [New Utrecht]', '20 Av [86th]', 'Bay Pkwy [86th]', '25 Av [86th]', 'Bay 50 St', '[X] NY Coney Island Junction (DN)', 'Coney Island-Stillwell Av'],
     },
     "New York Subway (Broadway-Lafayette - Forest Hills)": {
-        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd (Queens)', '63 Dr-Rego Park', '67 Av', 'Forest Hills-71 Av'],
+        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd [Queens]', '63 Dr-Rego Park', '67 Av', 'Forest Hills-71 Av'],
     },
     "New York Subway (Broadway-Lafayette - Jamaica)": {
-        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '[X] NY Central Park Junction (FQ)', 'Lexington Av-63 St', '[X] NY 2nd-63rd Junction (FQT)', 'Roosevelt Island', '[X] 21 St-Queensbridge', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '36 St [Northern]', '[X] Northern Blvd', '[X] 65 St [Broadway]', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av [Subway]', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd (Queens)', '[X] 63 Dr-Rego Park', '[X] 67 Av', 'Forest Hills-71 Av', '75 Av', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Sutphin Blvd', 'Parsons Blvd', '169 St', 'Jamaica-179 St'],
+        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '[X] NY Central Park Junction (FQ)', 'Lexington Av-63 St', '[X] NY 2nd-63rd Junction (FQT)', 'Roosevelt Island', '[X] 21 St-Queensbridge', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '36 St [Northern]', '[X] Northern Blvd', '[X] 65 St [Broadway]', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av [Subway]', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd [Queens]', '[X] 63 Dr-Rego Park', '[X] 67 Av', 'Forest Hills-71 Av', '75 Av', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Sutphin Blvd', 'Parsons Blvd', '169 St', 'Jamaica-179 St'],
     },
     "New York Subway (Broadway-Lafayette - Middle Village)": {
-        "F": ['Broadway-Lafayette St', '[X] Houston St [Chrystie]', '[X] NY Delancey-Chrystie Junction (BDMT)', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway-Boerum', 'Lorimer St [Broadway]', 'Flushing Av [Broadway]', 'Myrtle Av [Broadway]', 'Central Av', 'Knickerbocker Av', 'Myrtle-Wyckoff Avs', 'Seneca Av', 'Forest Av', 'Fresh Pond Rd', 'Middle Village-Metropolitan Av'],
+        "F": ['Broadway-Lafayette St', '[X] Houston St [Chrystie]', '[X] NY Delancey-Chrystie Junction (BDMT)', 'Delancey St-Essex St', 'Marcy Av', 'Hewes St', '[X] Broadway [Brooklyn]', 'Lorimer St [Broadway]', 'Flushing Av [Broadway]', 'Myrtle Av [Broadway]', 'Central Av', 'Knickerbocker Av', 'Myrtle-Wyckoff Avs', 'Seneca Av', 'Forest Av', 'Fresh Pond Rd', 'Middle Village-Metropolitan Av'],
     },
     "New York Subway (Broadway-Lafayette - Norwood)": {
         "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '[X] 14 St-6 Av', '[X] 23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '7 Av [53rd]', '[X] NY 8th Av-53rd St Junction (ACEBD)', '59 St-Columbus Circle {ACBD}', '[X] 72 St [Central Park]', '[X] 81 St-Museum of Natural History', '[X] 86 St [Central Park]', '[X] 96 St [Central Park]', '[X] 103 St [Central Park]', '[X] Cathedral Pkwy-110 St', '[X] 116 St [Central Park]', '125 St [St. Nicholas]', '[X] 135 St [St. Nicholas]', '145 St [St. Nicholas]', '155 St [Douglass]', '161 St-Yankee Stadium', '[X] NY Grand Concourse-161st Bend (BD)', '167 St [Grand Concourse]', '170 St [Grand Concourse]', '174-175 Sts', 'Tremont Av', '182-183 Sts', 'Fordham Rd [Grand Concourse]', 'Kingsbridge Rd [Grand Concourse]', 'Bedford Park Blvd', 'Norwood-205 St'],
     },
     "New York Subway (Broadway-Lafayette - Rockaway Park)": {
-        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd (Queens)', '63 Dr-Rego Park', 'Metropolitan Av-Parkside', '104 St-Jamaica Av {M}', 'Atlantic Av-Woodhaven', 'Liberty Av-Rockaway Blvd', 'Aqueduct Racetrack', 'Aqueduct-N Conduit Av', 'Howard Beach {Subway}', 'Broad Channel', '[X] NY Rockaways Junction (A)', 'Beach 90 St', 'Beach 98 St', 'Beach 105 St', 'Beach 116 St'],
+        "F": ['Broadway-Lafayette St', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-6 Av', '23 St [6th]', '[X] 33rd St [New York]', '34 St-Herald Sq', '42 St-Bryant Pk', '47-50 Sts-Rockefeller Ctr', '[X] NY 6th Av-53rd Junction (EBDFM)', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd [Queens]', '63 Dr-Rego Park', 'Metropolitan Av-Parkside', '104 St-Jamaica Av {M}', 'Atlantic Av-Woodhaven', 'Liberty Av-Rockaway Blvd', 'Aqueduct Racetrack', 'Aqueduct-N Conduit Av', 'Howard Beach {Subway}', 'Broad Channel', '[X] NY Rockaways Junction (A)', 'Beach 90 St', 'Beach 98 St', 'Beach 105 St', 'Beach 116 St'],
     },
     "New York Subway (Canal St - 125 St)": {
         "F": ['New York Subway (Canal St - 96 St)', '106 St [2nd]', '116 St [2nd]', '[X] NY SAS Bend', '125 St [Lexington]', '125 St [Malcolm X]', '125 St [St. Nicholas]', '125 St [Broadway]'],
@@ -15061,10 +15063,10 @@ Segments = {
         "F": ['[X] Canal St (Broadway)', '[X] Prince St', '[X] 8 St-NYU', '14 St-Union Sq {NQRW}', '[X] 23 St [Broadway]', '[X] 28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '[X] 49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '[X] NY Central Park Junction (FQ)', 'Lexington Av-63 St', '[X] NY 2nd-63rd Junction (FQT)', '72 St [2nd]', '86 St [2nd]', '72 St [2nd]', '96 St [2nd]'],
     },
     "New York Subway (Canal St - Astoria-Ditmars Express)": {
-        "F": ['[X] Canal St (Broadway)', '[X] Prince St', '[X] 8 St-NYU', '14 St-Union Sq {NQRW}', '[X] 23 St [Broadway]', '[X] 28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', 'Queensboro Plaza', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '39 Av-Dutch Kills', '36 Av', 'Broadway (31st)', '30 Av', 'Astoria Blvd', 'Astoria-Ditmars Blvd'],
+        "F": ['[X] Canal St (Broadway)', '[X] Prince St', '[X] 8 St-NYU', '14 St-Union Sq {NQRW}', '[X] 23 St [Broadway]', '[X] 28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', 'Queensboro Plaza', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '39 Av-Dutch Kills', '36 Av', 'Broadway [Astoria]', '30 Av', 'Astoria Blvd', 'Astoria-Ditmars Blvd'],
     },
     "New York Subway (Canal St - Astoria-Ditmars Local)": {
-        "F": ['[X] Canal St (Broadway)', 'Prince St', '8 St-NYU', '14 St-Union Sq {NQRW}', '23 St [Broadway]', '28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', 'Queensboro Plaza', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '39 Av-Dutch Kills', '36 Av', 'Broadway (31st)', '30 Av', 'Astoria Blvd', 'Astoria-Ditmars Blvd'],
+        "F": ['[X] Canal St (Broadway)', 'Prince St', '8 St-NYU', '14 St-Union Sq {NQRW}', '23 St [Broadway]', '28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', 'Queensboro Plaza', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '39 Av-Dutch Kills', '36 Av', 'Broadway [Astoria]', '30 Av', 'Astoria Blvd', 'Astoria-Ditmars Blvd'],
     },
     "New York Subway (Canal St - Bay Ridge)": {
         "F": ['New York Subway (Canal St - South Ferry)', 'Court St', '[X] Borough Hall [North]', '[X] NY Fulton-Brooklyn Bridge Junction (R2345)', 'Jay St-MetroTech {E}', '[X] NY Flatbush-Willoughby Junction (BQR)', 'DeKalb Av (Flatbush)', '[X] NY Fulton-Flatbush Junction (BQR2345)', '[X] NY Fulton-Ashland Junction (BDNQR)', '[X] NY Ashland-Hanson Bend (DNR)', 'Atlantic Av-Barclays Ctr {DNR}', 'Union St', '9 St [4th]', 'Prospect Av [4th]', '25 Av [4th]', '36 St [4th]', '45 St', '53 St', '59 St', '[X] 4 Av', 'Bay Ridge Av', '77 St [4th]', '86 St [4th]', 'Bay Ridge-95 St'],
@@ -15076,7 +15078,7 @@ Segments = {
         "F": ['[X] Canal St (Broadway)', 'Canal St (Lafayette)', '[X] Canal St (Centre)', '[X] NY Manhattan Bridge Junction (BDNQ)', '[X] York St', '[X] NY Flatbush-Willoughby Junction (BQR)', '[X] DeKalb Av (Flatbush)', '[X] NY Fulton-Flatbush Junction (BQR2345)', '[X] NY Fulton-Ashland Junction (BDNQR)', '[X] NY Ashland-Hanson Bend (DNR)', 'Atlantic Av-Barclays Ctr {DNR}', '[X] Union St', '[X] 9 St [4th]', '[X] Prospect Av [4th]', '[X] 25 Av [4th]', '36 St [4th]', '[X] 45 St', '[X] 53 St', '59 St', '[X] 4 Av', '8 Av', 'Fort Hamilton Pkwy', '[X] 62 St', 'New Utrecht Av', '18 Av [64th]', '20 Av [64th]', 'Bay Pkwy [7th]', 'Kings Hwy [7th]', 'Avenue U [7th]', '86 St [7th]', '[X] NY Coney Island Junction (DN)', 'Coney Island-Stillwell Av'],
     },
     "New York Subway (Canal St - Forest Hills)": {
-        "F": ['[X] Canal St (Broadway)', 'Prince St', '8 St-NYU', '14 St-Union Sq {NQRW}', '23 St [Broadway]', '28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', '[X] NY Queens Plaza West Junction (EMR)', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd (Queens)', '63 Dr-Rego Park', '67 Av', 'Forest Hills-71 Av'],
+        "F": ['[X] Canal St (Broadway)', 'Prince St', '8 St-NYU', '14 St-Union Sq {NQRW}', '23 St [Broadway]', '28 St [Broadway]', '34 St-Herald Sq', 'Times Sq-42 St {NQRW}', '[X] Times Sq-42 St {S}', '49 St', '57 St-7 Av', '[X] NY Central Park Junction (NQRW)', '5 Av-59 St', 'Lexington Av-59 St', '[X] NY Queensboro Plaza West Junction (NRW)', '[X] NY Queens Plaza West Junction (EMR)', '[X] Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '36 St [Northern]', 'Steinway St', '46 St', 'Northern Blvd', '65 St [Broadway]', 'Jackson Hts-Roosevelt Av', 'Elmhurst Av [Subway]', 'Grand Av-Newtown', 'Woodhaven Blvd [Queens]', '63 Dr-Rego Park', '67 Av', 'Forest Hills-71 Av'],
     },
     "New York Subway (Canal St - LaGuardia Express)": {
         "F": ['New York Subway (Canal St - Astoria-Ditmars Express)', '[X] NY LGA Subway Bend 1', '[X] NY LGA Subway Bend 2', 'Terminal A [LGA] {Subway}', 'Terminal B [LGA] {Subway}', 'Terminal C [LGA] {Subway}'],
@@ -15091,7 +15093,7 @@ Segments = {
         "F": ['Chambers St (Broadway)', '[X] Franklin St', '[X] Canal St (Varick)', '[X] Houston St [Varick]', '[X] Christopher St-Stonewall', '14 St [7th]', '[X] 18 St', '[X] 23 St [7th]', '[X] 28 St [7th]', '34 St-Penn Station [7th]', 'Times Sq-42 St {123}', '[X] 50 St [Broadway]', '[X] 59 St-Columbus Circle {123}', '[X] 66 St-Lincoln Center', '72 St [Broadway]', '[X] 79 St [Broadway]', '[X] 86 St [Broadway]', '96 St [Broadway]', '[X] NY 103 St Junction (123)', '[X] 103 St [Central Park]', '110 St-Malcolm X Plaza', '116 St [Malcolm X]', '125 St [Malcolm X]', '135 St [Malcolm X]'],
     },
     "New York Subway (Chambers St - 241 St)": {
-        "F": ['New York Subway (Chambers St - 135 St)', '[X] 145 St [Malcolm X]', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Bronx Park East', 'Pelham Pkwy [White Plains]', 'Allerton Av', 'Burke Av', 'Gun Hill Rd (White Plains)', '219 St', '225 St', '233 St', 'Nereid Av', 'Wakefield-241 St'],
+        "F": ['New York Subway (Chambers St - 135 St)', '[X] 145 St [Malcolm X]', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Bronx Park East', 'Pelham Pkwy [White Plains]', 'Allerton Av', 'Burke Av', 'Gun Hill Rd [White Plains]', '219 St', '225 St', '233 St', 'Nereid Av', 'Wakefield-241 St'],
     },
     "New York Subway (Chambers St - Flatbush)": {
         "F": ['New York Subway (Chambers St - Franklin Av)', '[X] Nostrand Av [Eastern]', 'President St-Medgar Evers College', 'Sterling St', 'Winthrop St', 'Church Av (Nostrand)', 'Beverly Rd (Nostrand)', 'Newkirk Av-Little Haiti', 'Flatbush Av-Brooklyn College'],
@@ -15112,16 +15114,16 @@ Segments = {
         "F": ['Brooklyn Bridge-City Hall', 'Canal St (Lafayette)', 'Spring St (Lafayette)', 'Bleecker St', 'Astor Pl', '14 St-Union Sq {456}', '23 St [Park]', '28 St [Park]', '33 St', '[X] NY Grand Central Bend S (456)', 'Grand Central-42 St {456}', '[X] NY Grand Central Bend N (456)', '51 St', 'Lexington Av-59 St', '68 St-Hunter College', '77 St [Lexington]', '86 St [Lexington]', '96 St [Lexington]', '103 St [Lexington]', '110 St [Lexington]', '116 St [Lexington]', '125 St [Lexington]', '[X] NY I-87 Junction (456)'],
     },
     "New York Subway (City Hall - Dyre Av)": {
-        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park [Subway]', 'Pelham Pkwy [Esplande]', 'Gun Hill Rd (Sexton)', 'Baychester Av', 'Eastchester-Dyre Av'],
+        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Morris Park [Subway]', 'Pelham Pkwy [Esplande]', 'Gun Hill Rd [Sexton]', 'Baychester Av', 'Eastchester-Dyre Av'],
     },
     "New York Subway (City Hall - Flatbush Av)": {
         "F": ['New York Subway (City Hall - Franklin Av)', '[X] Nostrand Av [Eastern]', 'President St-Medgar Evers College', 'Sterling St', 'Winthrop St', 'Church Av (Nostrand)', 'Beverly Rd (Nostrand)', 'Newkirk Av-Little Haiti', 'Flatbush Av-Brooklyn College'],
     },
     "New York Subway (City Hall - Franklin Av)": {
-        "F": ['Brooklyn Bridge-City Hall', '[X] NY Broadway-Vesey Junction (RW45)', 'Fulton St [Broadway]', 'Wall St [Broadway]', 'Bowling Green (NY)', '[X] NY Battery Park Bend (45)', '[X] NY South Ferry Bend (45)', '[X] NY I-278 Bend (45)', 'Borough Hall [South]', '[X] NY Fulton-Brooklyn Bridge Junction (R2345)', '[X] Hoyt St', '[X] NY Fulton-Flatbush Junction (BQR2345)', 'Nevins St', 'Atlantic Av-Barclays Ctr {2345}', '[X] NY Atlantic-Flatbush Junction (BQ2345)', '[X] Bergen St (Flatbush)', '[X] 7 Av [Flatbush]', '[X] Grand Army Plaza', '[X] NY Grand Army Junction (BQ2345)', '[X] Eastern Pkwy-Brooklyn Museum', 'Franklin Av-Medgar Evers College'],
+        "F": ['Brooklyn Bridge-City Hall', '[X] NY Broadway-Vesey Junction (RW45)', 'Fulton St [Broadway]', 'Wall St [Broadway]', 'Bowling Green [NY]', '[X] NY Battery Park Bend (45)', '[X] NY South Ferry Bend (45)', '[X] NY I-278 Bend (45)', 'Borough Hall [South]', '[X] NY Fulton-Brooklyn Bridge Junction (R2345)', '[X] Hoyt St', '[X] NY Fulton-Flatbush Junction (BQR2345)', 'Nevins St', 'Atlantic Av-Barclays Ctr {2345}', '[X] NY Atlantic-Flatbush Junction (BQ2345)', '[X] Bergen St (Flatbush)', '[X] 7 Av [Flatbush]', '[X] Grand Army Plaza', '[X] NY Grand Army Junction (BQ2345)', '[X] Eastern Pkwy-Brooklyn Museum', 'Franklin Av-Medgar Evers College'],
     },
     "New York Subway (City Hall - Nereid Av)": {
-        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Bronx Park East', 'Pelham Pkwy [White Plains]', 'Allerton Av', 'Burke Av', 'Gun Hill Rd (White Plains)', '219 St', '225 St', '233 St', 'Nereid Av'],
+        "F": ['New York Subway (City Hall - 138 St Express)', '138 St-Grand Concourse', '149 St-Grand Concourse', '3 Av-149 St', 'Jackson Av', 'Prospect Av [Westchester]', 'Intervale Av', 'Simpson St', 'Freeman St', '174 St', 'West Farms Sq-E Tremont Av', 'E 180 St', 'Bronx Park East', 'Pelham Pkwy [White Plains]', 'Allerton Av', 'Burke Av', 'Gun Hill Rd [White Plains]', '219 St', '225 St', '233 St', 'Nereid Av'],
     },
     "New York Subway (City Hall - Pelham Park Express)": {
         "F": ['New York Subway (City Hall - 138 St Express)', '3 Av-138 St', '[X] Brook Av', '[X] Cypress Av', "[X] E 143 St-St Mary's St", '[X] E 149 St', '[X] Longwood Av', 'Hunts Point Av {Subway}', '[X] Whitlock Av {Subway}', '[X] Elder Av', '[X] Morrison Av-Soundview', '[X] St. Lawrence Av', 'Parkchester', '[X] Castle Hill Av', '[X] Zerega Av', '[X] Westchester Sq-E Tremont Av', '[X] Middletown Rd', '[X] Buhre Av', 'Pelham Bay Park'],
@@ -15180,7 +15182,7 @@ Segments = {
         "F": ['Fulton St [Nassau]', '[X] Fulton St [Broadway]', '[X] NY Fulton-Church Junction (ACRW)', 'World Trade Center [Church]', 'Chambers St (Church)', '[X] NY Church-Franklin Bend (ACE)', 'Canal St (6th)', '[X] Spring St (6th)', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-8 Av', '[X] 23 St [8th]', '34 St-Penn Station [8th]', '42 St-Port Authority Bus Terminal', '[X] 50 St [8th]', '[X] NY 8th Av-53rd St Junction (ACEBD)', '59 St-Columbus Circle {ACBD}', '[X] 72 St [Central Park]', '[X] 81 St-Museum of Natural History', '[X] 86 St [Central Park]', '[X] 96 St [Central Park]', '[X] 103 St [Central Park]', '[X] Cathedral Pkwy-110 St', '[X] 116 St [Central Park]', '125 St [St. Nicholas]', '[X] 135 St [St. Nicholas]', '145 St [St. Nicholas]', '[X] 155 St [St. Nicholas]', '[X] 163 St-Amsterdam Av', '168 St-Washington Hts', '175 St', '181 St [Fort Washington]', '190 St', 'Dyckman St (Broadway)', 'Inwood-207 St'],
     },
     "New York Subway (Fulton St - Euclid Av)": {
-        "F": ['Fulton St [Nassau]', '[X] Fulton St [William]', 'High St-Brooklyn Bridge', '[X] NY Jay-High Junction (ACF)', 'Jay St-MetroTech {W}', '[X] NY Schermerhorn-Smith Bend (ACFG)', 'Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', 'Lafayette Av', 'Clinton-Washington Avs (Fulton)', 'Franklin Av (Fulton)', 'Nostrand Av [Fulton]', 'Kingston-Throop Avs', 'Utica Av [Fulton]', 'Ralph Av [Fulton]', 'Rockaway Av [Fulton]', 'Broadway Junction (South)', '[X] NY Pennsylvania-Jamaica Bend (AC)', 'Liberty Av', '[X] NY Pennsylvania-Pitkin Bend (AC)', 'Van Siclen Av [Pitkin]', 'Shepherd Av', 'Euclid Av'],
+        "F": ['Fulton St [Nassau]', '[X] Fulton St [William]', 'High St-Brooklyn Bridge', '[X] NY Jay-High Junction (ACF)', 'Jay St-MetroTech {W}', '[X] NY Schermerhorn-Smith Bend (ACFG)', 'Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', 'Lafayette Av', 'Clinton-Washington Avs (Fulton)', 'Franklin Av (Fulton)', 'Nostrand Av [Fulton]', 'Kingston-Throop Avs', 'Utica Av [Fulton]', 'Ralph Av [Fulton]', 'Rockaway Av [Fulton]', 'Broadway Junction [South]', '[X] NY Pennsylvania-Jamaica Bend (AC)', 'Liberty Av', '[X] NY Pennsylvania-Pitkin Bend (AC)', 'Van Siclen Av [Pitkin]', 'Shepherd Av', 'Euclid Av'],
     },
     "New York Subway (Fulton St - Far Rockaway)": {
         "F": ['New York Subway (Fulton St - Rockaway Blvd)', 'Aqueduct Racetrack', 'Aqueduct-N Conduit Av', 'Howard Beach {Subway}', 'Broad Channel', '[X] NY Rockaways Junction (A)', 'Beach 67 St', 'Beach 60 St', 'Beach 44 St', 'Beach 36 St', 'Beach 25 St', 'Far Rockaway-Mott Av'],
@@ -15189,7 +15191,7 @@ Segments = {
         "F": ['New York Subway (Fulton St - Rockaway Blvd)', '104 St', '111 St-Greenwood Av', 'Ozone Park-Lefferts Blvd'],
     },
     "New York Subway (Fulton St - Rockaway Blvd)": {
-        "F": ['Fulton St [Nassau]', '[X] Fulton St [William]', 'High St-Brooklyn Bridge', '[X] NY Jay-High Junction (ACF)', 'Jay St-MetroTech {W}', '[X] NY Schermerhorn-Smith Bend (ACFG)', 'Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', '[X] Lafayette Av', '[X] Clinton-Washington Avs (Fulton)', '[X] Franklin Av (Fulton)', 'Nostrand Av [Fulton]', '[X] Kingston-Throop Avs', 'Utica Av [Fulton]', '[X] Ralph Av', '[X] Rockaway Av [Fulton]', 'Broadway Junction (South)', '[X] NY Pennsylvania-Jamaica Bend (AC)', '[X] Liberty Av', '[X] NY Pennsylvania-Pitkin Bend (AC)', '[X] Van Siclen Av [Pitkin]', '[X] Shepherd Av', 'Euclid Av', 'Grant Av', '80 St-Hudson St', '88 St', 'Rockaway Blvd', '[X] Liberty Av-Rockaway Blvd'],
+        "F": ['Fulton St [Nassau]', '[X] Fulton St [William]', 'High St-Brooklyn Bridge', '[X] NY Jay-High Junction (ACF)', 'Jay St-MetroTech {W}', '[X] NY Schermerhorn-Smith Bend (ACFG)', 'Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', '[X] Lafayette Av', '[X] Clinton-Washington Avs (Fulton)', '[X] Franklin Av (Fulton)', 'Nostrand Av [Fulton]', '[X] Kingston-Throop Avs', 'Utica Av [Fulton]', '[X] Ralph Av', '[X] Rockaway Av [Fulton]', 'Broadway Junction [South]', '[X] NY Pennsylvania-Jamaica Bend (AC)', '[X] Liberty Av', '[X] NY Pennsylvania-Pitkin Bend (AC)', '[X] Van Siclen Av [Pitkin]', '[X] Shepherd Av', 'Euclid Av', 'Grant Av', '80 St-Hudson St', '88 St', 'Rockaway Blvd', '[X] Liberty Av-Rockaway Blvd'],
     },
     "New York Subway (Fulton St - Rockaway Park)": {
         "F": ['New York Subway (Fulton St - Rockaway Blvd)', 'Aqueduct Racetrack', 'Aqueduct-N Conduit Av', 'Howard Beach {Subway}', 'New York Subway (Broad Channel - Rockaway Park)'],
@@ -15201,7 +15203,7 @@ Segments = {
         "F": ['Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Smith Bend (ACFG)', 'Bergen St (Smith)', 'Carroll St', 'Smith-9 Sts', '4 Av-9 St', '7 Av [9th]', '15 St-Prospect Park', 'Fort Hamilton Pkwy [Prospect]', 'Church Av (McDonald)'],
     },
     "New York Subway (Hoyt St - Court Sq)": {
-        "F": ['Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', 'Fulton St [Lafayette]', 'Clinton-Washington Avs (Lafayette)', 'Classon Av', 'Bedford-Nostrand Avs', '[X] NY Lafayette-Marcy Bend (G)', 'Myrtle-Willoughby Avs', 'Flushing Av [Marcy]', 'Broadway (Union)', 'Metropolitan Av', 'Nassau Av', 'Greenpoint Av', '[X] Vernon Blvd-Jackson Av', '21 St', 'Court Sq [Jackson]'],
+        "F": ['Hoyt-Schermerhorn Sts', '[X] NY Schermerhorn-Flatbush Bend (ACG)', '[X] NY Fulton-Fort Greene Junction (ACG)', 'Fulton St [Lafayette]', 'Clinton-Washington Avs (Lafayette)', 'Classon Av', 'Bedford-Nostrand Avs', '[X] NY Lafayette-Marcy Bend (G)', 'Myrtle-Willoughby Avs', 'Flushing Av [Marcy]', 'Broadway [Brooklyn]', 'Metropolitan Av', 'Nassau Av', 'Greenpoint Av', '[X] Vernon Blvd-Jackson Av', '21 St', 'Court Sq [Jackson]'],
     },
     "New York Subway (Hudson Yards - Flushing Express)": {
         "F": ['34 St-Hudson Yards', '[X] NY Hudson Yards Bend (7)', '[X] Times Sq-42 St {7}', '[X] 42 St-Bryant Pk', '5 Av', 'Grand Central-42 St {7}', '[X] 42 St-UN', 'Vernon Blvd-Jackson Av', 'Hunters Point Av', 'Court Sq [45 Av]', '[X] NY Queensboro Plaza West Junction (NRW)', 'Queensboro Plaza', '[X] Queens Plaza', '[X] 33 St-Rawson St', '[X] 40 St-Lowery St', '[X] 46 St-Bliss St', '[X] 52 St-Lincoln Av', '61 St-Woodside', '[X] 69 St', '[X] 74 St-Broadway', '[X] 82 St-Jackson Hts', '[X] 90 St-Elmhurst Av', 'Junction Blvd', '[X] 103 St-Corona Plaza', '[X] 111 St [Roosevelt]', 'Mets-Willets Point {Subway}', 'Flushing-Main St'],
@@ -15241,7 +15243,7 @@ Segments = {
         "F": ['[R] New York Subway (City Hall - Utica Av)', 'New York Subway (City Hall - Woodlawn)'],
     },
     "New York Subway (WTC - Jamaica)": {
-        "F": ['World Trade Center [Church]', '[X] Chambers St (Church)', '[X] NY Church-Franklin Bend (ACE)', 'Canal St (6th)', 'Spring St (6th)', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-8 Av', '23 St [8th]', '34 St-Penn Station [8th]', '42 St-Port Authority Bus Terminal', '50 St [8th]', '[X] NY 8th Av-53rd St Junction (ACEBD)', '7 Av [53rd]', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', '[X] Northern Blvd', '[X] 65 St [Broadway]', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av [Subway]', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd (Queens)', '[X] 63 Dr-Rego Park', '[X] 67 Av', 'Forest Hills-71 Av', '75 Av', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Jamaica-Van Wyck', '[X] Jamaica West Junction', 'Sutphin Blvd-Archer Av-JFK Airport', 'Jamaica Center-Parsons/Archer'],
+        "F": ['World Trade Center [Church]', '[X] Chambers St (Church)', '[X] NY Church-Franklin Bend (ACE)', 'Canal St (6th)', 'Spring St (6th)', '[X] NY 6th St-Houston Junction (ACEBDFM)', 'W 4 St-Wash Sq', '[X] 9 St [6th]', '14 St-8 Av', '23 St [8th]', '34 St-Penn Station [8th]', '42 St-Port Authority Bus Terminal', '50 St [8th]', '[X] NY 8th Av-53rd St Junction (ACEBD)', '7 Av [53rd]', '5 Av-53 St', 'Lexington Av-53 St', 'Court Sq-23 St', '[X] NY Queens Plaza West Junction (EMR)', 'Queens Plaza', '[X] NY Northern-41st Junction (EFMNRW)', '[X] NY Northern-31st Junction (EFMNRW)', '[X] 36 St [Northern]', '[X] Northern Blvd', '[X] 65 St [Broadway]', 'Jackson Hts-Roosevelt Av', '[X] Elmhurst Av [Subway]', '[X] Grand Av-Newtown', '[X] Woodhaven Blvd [Queens]', '[X] 63 Dr-Rego Park', '[X] 67 Av', 'Forest Hills-71 Av', '75 Av', 'Kew Gardens-Union Tpke', 'Briarwood', '[X] NY Van Wyck-Jamaica Junction (EF)', 'Jamaica-Van Wyck', '[X] Jamaica West Junction', 'Sutphin Blvd-Archer Av-JFK Airport', 'Jamaica Center-Parsons/Archer'],
     },
     "Newark AirTrain (New)": {
         "F": ['Newark Liberty International Airport', 'EWR Station 3', 'EWR Station 2', 'EWR Station 1'],
@@ -15395,7 +15397,7 @@ Segments = {
         "F": ['Philadelphia Approach (30th St - West)', '[X] Philadelphia West Parkside Junction', 'Overbrook [Philadelphia]', 'Merion', 'Narberth', 'Wynnewood', 'Ardmore [PA]', 'Haverford [Mainline]', 'Bryn Mawr (Philadelphia)', 'Rosemont [Philadelphia]', 'Villanova [Mainline]', 'Radnor [Mainline]', 'St. Davids', 'Wayne Ave', 'Strafford', 'Devon Park', 'Berwyn-Lancaster Ave', 'Daylesford', 'Paoli', 'Malvern', 'Exton', 'Whitford', 'Downingtown', 'Thorndale'],
     },
     "Philadelphia Regional Rail (30th St - Trenton)": {
-        "F": ['Philadelphia Regional Rail (30th St - Frankford Ave Junction)', 'Bridesburg', 'Tacony', 'Holmesburg', 'Torresdale', 'Cornwells Heights', 'Eddington', 'Croydon', 'Bristol (PA)', 'Levittown', 'Trenton Transit Center'],
+        "F": ['Philadelphia Regional Rail (30th St - Frankford Ave Junction)', 'Bridesburg', 'Tacony', 'Holmesburg', 'Torresdale', 'Cornwells Heights', 'Eddington', 'Croydon', 'Bristol [PA]', 'Levittown', 'Trenton Transit Center'],
     },
     "Philadelphia Regional Rail (Airport Junction - Newark)": {
         "F": ['[X] Philadelphia Airport Junction', '[X] Philadelphia Darby Bend', 'Darby', 'Curtis Park', 'Sharon Hill', 'Folcroft', 'Glenolden', 'Norwood', 'Prospect Park [Philadelphia]', 'Ridley Park', 'Crum Lynne', 'Eddystone', 'Chester Transit Center', 'Highland Ave (Philadelphia)', 'Marcus Hook', 'Claymont Transit Center', 'Claymont', 'Wilmington [DE]', "Churchman's Crossing", 'Newark [DE]'],
@@ -15456,17 +15458,17 @@ Segments = {
     },
     "Philadelphia Subway (Broad Line Express)": {
         "F": ['Philadelphia Subway (Broad Line Local)'],
-        "Keep": ['Fern Rock Transit Center', 'Broad-Olney', 'Broad-Erie', 'Broad-North Philadelphia', 'Broad-Girard', 'Broad-Fairmount', 'Broad-Spring Garden', 'Race-Vine', '15th St/City Hall {Subway}', 'Walnut-Locust', 'Broad-Pattison'],
+        "Keep": ['Fern Rock Transit Center', 'Olney Transit Center', 'Broad-Erie', 'Broad-North Philadelphia', 'Broad-Girard', 'Broad-Fairmount', 'Broad-Spring Garden', 'Race-Vine', '15th St/City Hall {Subway}', 'Walnut-Locust', 'Broad-Pattison'],
     },
     "Philadelphia Subway (Broad Line Local)": {
         "F": ['Philadelphia Subway (Broad Line North Local)', 'Broad-Spring Garden', 'Race-Vine', '15th St/City Hall {Subway}', 'Walnut-Locust', 'Lombard-South', 'Ellsworth-Federal', 'Tasker Morris', 'Broad-Snyder', 'Broad-Oregon', 'Broad-Pattison'],
     },
     "Philadelphia Subway (Broad Line North Express)": {
         "F": ['Philadelphia Subway (Broad Line North Local)'],
-        "Keep": ['Fern Rock Transit Center', 'Broad-Olney', 'Broad-Erie', 'Broad-North Philadelphia', 'Broad-Girard', 'Broad-Fairmount'],
+        "Keep": ['Fern Rock Transit Center', 'Olney Transit Center', 'Broad-Erie', 'Broad-North Philadelphia', 'Broad-Girard', 'Broad-Fairmount'],
     },
     "Philadelphia Subway (Broad Line North Local)": {
-        "F": ['Fern Rock Transit Center', 'Broad-Olney', 'Broad-Logan', 'Broad-Wyoming', 'Broad-Hunting Park', 'Broad-Erie', 'Broad-Allegheny', 'Broad-North Philadelphia', 'Susquehanna-Dauphin', 'Broad-Cecil B. Moore', 'Broad-Girard', 'Broad-Fairmount'],
+        "F": ['Fern Rock Transit Center', 'Olney Transit Center', 'Broad-Logan', 'Broad-Wyoming', 'Broad-Hunting Park', 'Broad-Erie', 'Broad-Allegheny', 'Broad-North Philadelphia', 'Susquehanna-Dauphin', 'Broad-Cecil B. Moore', 'Broad-Girard', 'Broad-Fairmount'],
     },
     "Philadelphia Subway (Frankford Line)": {
         "F": ['Market-2nd St', 'Spring Garden', 'Front-Girard', 'Berks', 'York-Dauphi', 'Huntingdon (Philadelphia)', 'Somerset [Philadelphia]', 'Allegheny Ave', 'Tioga', 'Erie-Torresdale', 'Church Ruan', 'Arrott Transit Center', 'Frankford Transit Center', 'Roosevelt/Bustleton'],
@@ -15816,7 +15818,7 @@ Segments = {
         "F": ['Sacramento Light Rail (Loop - 13th St)', '16th St [Sacramento]'],
     },
     "Sacramento Light Rail (Loop - College)": {
-        "F": ['Sacramento Light Rail (Loop - 16th St)', 'Broadway (Sacramento)', '4th Ave/Wayne Hultgren', 'City College [Sacramento]', 'Fruitridge [LRT]', '47th Ave', 'Florin [LRT]', 'Meadowview', 'Morrison Creek', 'Franklin', 'Center Parkway', 'Cosumnes River College'],
+        "F": ['Sacramento Light Rail (Loop - 16th St)', 'Broadway [Sacramento]', '4th Ave/Wayne Hultgren', 'City College [Sacramento]', 'Fruitridge [LRT]', '47th Ave', 'Florin [LRT]', 'Meadowview', 'Morrison Creek', 'Franklin', 'Center Parkway', 'Cosumnes River College'],
     },
     "Sacramento Light Rail (Loop - Folsom)": {
         "F": ['Sacramento Light Rail (Loop - 16th St)', '23rd St [Sacramento]', '29th St [Sacramento]', '39th St', '48th St', '59th St', 'University/65th St', 'Power Inn', 'College Greens', 'Watt/Manlove', 'Starfire', 'Tiber', 'Butterfield', 'Mather Field/Mills', 'Zinfandel', 'Cordova Town Center', 'Sunrise', 'Hazel', 'Iron Point', 'Glenn', 'Historic Folsom'],
@@ -16007,7 +16009,7 @@ Segments = {
         "F": ['San Diego Trolley (Santa Fe - Harborside)', '12th & Imperial {EW}'],
     },
     "San Diego Trolley (Santa Fe - Old Town)": {
-        "F": ['San Diego Santa Fe Depot', 'County Center/Little Italy', 'Middletown (CA)', 'Washington St', 'Old Town Transit Center'],
+        "F": ['San Diego Santa Fe Depot', 'County Center/Little Italy', 'Middletown [CA]', 'Washington St', 'Old Town Transit Center'],
     },
     "San Diego Trolley (Santa Fe - UCSD)": {
         "F": ['San Diego Trolley (Santa Fe - Balboa Ave)', 'Nobel Dr', 'VA Medical Center [San Diego]', 'UCSD Central Campus', 'UCSD Health La Jolla', 'Executive Dr', 'UTC Transit Center'],
@@ -16373,7 +16375,7 @@ Segments = {
         "F": ['Toronto GO (Union - Richmond Hill)', 'Gormley', 'Bloomington Rd'],
     },
     "Toronto GO (Union - Bolton)": {
-        "F": ['Toronto GO (Union - Weston)', 'Emery {GO}', 'Woodbridge (ON)', 'Vaughan', 'Kleinburg', 'Bolton [ON]'],
+        "F": ['Toronto GO (Union - Weston)', 'Emery {GO}', 'Woodbridge [ON]', 'Vaughan', 'Kleinburg', 'Bolton [ON]'],
     },
     "Toronto GO (Union - Danforth Junction)": {
         "F": ['Toronto GO (Union - East Junction)', '[X] Toronto Danforth Junction'],
@@ -16436,7 +16438,7 @@ Segments = {
         "F": ['YYZ Terminal 1', 'Eglinton-Renforth', 'Eglinton-Martin Grove', 'Eglinton-Kipling', 'Eglinton-Islington', 'Eglinton-Royal York', 'Eglinton-Scarlett', 'Eglinton-Jane', 'Toronto Light Rail (Mount Dennis - Kennedy)'],
     },
     "Toronto Light Rail (Port Credit - Brampton)": {
-        "F": ['Port Credit GO', 'Mineola [ON]', 'North Service', 'Queensway', 'Dundas', 'Cooksville GO', 'Fairview [Toronto]', 'Burnhamthorpe', 'Robert Speck', 'City Centre [Mississauga]', '[X] City Centre [Mississauga] Bend', 'Eglinton (Mississauga)', 'Bristol', 'Matheson', 'Britannia', 'Courtneypark', 'Derry', 'Ray Lawson', 'County Court', 'Brampton Gateway Terminal', 'Eglin', 'Clarence [Toronto]', 'Queen [Brampton]', 'Brampton GO'],
+        "F": ['Port Credit GO', 'Mineola [ON]', 'North Service', 'Queensway', 'Dundas', 'Cooksville GO', 'Fairview [Toronto]', 'Burnhamthorpe', 'Robert Speck', 'City Centre [Mississauga]', '[X] Mississauga City Centre Bend', 'Eglinton (Mississauga)', 'Bristol [Mississauga]', 'Matheson', 'Britannia', 'Courtneypark', 'Derry', 'Ray Lawson', 'County Court', 'Brampton Gateway Terminal', 'Eglin', 'Clarence [Toronto]', 'Queen [Brampton]', 'Brampton GO'],
     },
     "Toronto Peoplemover (YYZ Airport)": {
         "F": ['YYZ Terminal 1', 'YYZ Terminal 3', '[X] Toronto Pearson Bend 2', 'YYZ Viscount'],
@@ -16713,7 +16715,7 @@ Segments = {
         "F": ['Washington Union Station {Main}', '[X] NoMa-Gallaudet U', '[X] Rhode Island Ave-Brentwood', '[X] Brookland-CUA', '[X] Fort Totten', '[X] Takoma', 'Silver Spring', '[X] Woodside/16th St', 'Kensington [MD]', 'Garrett Park', '[X] Twinbrook', 'Rockville', '[X] Shady Grove', 'Washington Grove', 'Gaithersburg', 'Metropolitan Grove', 'Germantown (MD)', 'Boyds', 'Barnesville', 'Dickerson', '[X] Point of Rocks Junction'],
     },
     "Washington Regional Rail (Union - Spotsylvania)": {
-        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Washington Alexandria Junction', '[X] Van Dorn St', 'Franconia-Springfield', 'Lorton', 'Woodbridge (VA)', 'Rippon', 'Quantico', 'Brooke', 'Leeland Rd', 'Fredericksburg', 'Spotsylvania'],
+        "F": ['Washington Regional Rail (Union - Alexandria)', '[X] Washington Alexandria Junction', '[X] Van Dorn St', 'Franconia-Springfield', 'Lorton', 'Woodbridge [VA]', 'Rippon', 'Quantico', 'Brooke', 'Leeland Rd', 'Fredericksburg', 'Spotsylvania'],
     },
     "Windsor Commuter Rail (Downtown - Belle River)": {
         "F": ['Windsor [ON] {New}', '[X] Windsor South Junction', 'Walkerville', '[X] Windsor North Junction', 'Thompson Park', 'WFCU Centre', 'Tecumseh', 'Patillo Rd', 'Emeryville [ON]', 'Belle River'],
@@ -18912,16 +18914,16 @@ Lines = {
         },
         "Green Line": {
             "Fantasy": {
-                "Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Heath Street)'},
-                "Medford/Tufts - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Riverside)'},
-                "Union Square - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Boston College)'},
-                "Union Square - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Cleveland Circle)'},
+                "(B) Government Center - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Government Center - Boston College)'},
+                "(C) Government Center - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Government Center - Cleveland Circle)'},
+                "(D) Union Square - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Riverside)'},
+                "(E) Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford/Tufts - Heath Street)'},
             },
             "Present": {
-                "Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Heath Street)'},
-                "Medford/Tufts - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford - Riverside)'},
-                "Union Square - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Boston College)'},
-                "Union Square - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Cleveland Circle)'},
+                "(B) Government Center - Boston College": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Government Center - Boston College)'},
+                "(C) Government Center - Cleveland Circle": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Government Center - Cleveland Circle)'},
+                "(D) Union Square - Riverside": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Union Square - Riverside)'},
+                "(E) Medford/Tufts - Heath Street": {'Mode': 'Light Rail', 'Stations': 'Boston Light Rail (Medford/Tufts - Heath Street)'},
             },
         },
         "Greenbush Line": {
@@ -19013,6 +19015,11 @@ Lines = {
             "Present": {
                 "Alewife - Ashmont": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Alewife - Ashmont)'},
                 "Alewife - Quincy Adams": {'Mode': 'Heavy Metro', 'Stations': 'Boston T Subway (Alewife - Quincy Adams)'},
+            },
+        },
+        "Silver Line": {
+            "Fantasy": {
+                "Urban Ring": {'Mode': 'Light Metro', 'Stations': 'Boston T Subway (Urban Ring)'},
             },
         },
         "South Coast Line": {
@@ -19650,7 +19657,7 @@ Lines = {
     "Massport": {
         "BOS Peoplemover": {
             "Fantasy": {
-                "BOS Airport": {'Mode': 'Peoplemover', 'Stations': 'Boston Peoplemover (BOS Airport)'},
+                "BOS Airport": {'Mode': 'Peoplemover', 'Stations': 'Boston Peoplemover (Logan Airport)'},
             },
         },
     },
@@ -20552,7 +20559,7 @@ Lines = {
         },
     },
     "RIPTA": {
-        "Regional": {
+        "Rhode Island Line": {
             "Fantasy": {
                 "Attleboro - Providence - New London": {'Mode': 'Heavy Rail', 'Stations': 'Providence Regional Rail (Attleboro - New London)'},
             },
@@ -22136,7 +22143,7 @@ Destinations = {
     "Airports": {
         "(ATL) Hartsfield-Jackson Atlanta International Airport": {"Location": (33.632410, -84.433310), "Stations": ['Airport West', 'Airport [Atlanta]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['ATL Airport.png', 'Visit Macon']},
         "(AUS) Austin-Bergstrom International Airport": {"Location": (30.194080, -97.671080), "Stations": ['Airport [Austin]', 'Austin-Bergstrom International Airport'], 'Exists': ['Present', 'Fantasy'], 'Image': ['AUS Airport.jpg', 'KUT News']},
-        "(BOS) Boston Logan International Airport": {"Location": (42.365600, -71.009610), "Stations": ['Boston Airport', 'Transit Center [BOS]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['BOS Airport.jpg', 'Wikipedia/Vmzp85']},
+        "(BOS) Boston Logan International Airport": {"Location": (42.365600, -71.009610), "Stations": ['Airport Transit Center', 'Transit Center [BOS]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['BOS Airport.jpg', 'Wikipedia/Vmzp85']},
         "(BUR) Hollywood Burbank Airport": {"Location": (34.198310, -118.357400), "Stations": ['Burbank Airport-North {Mainline}', 'Burbank Airport-South {Mainline}'], 'Exists': ['Present', 'Fantasy'], 'Image': ['BUR Airport.jpg', 'Corgan']},
         "(BWI) Baltimore/Washington International Thurgood Marshall Airport": {"Location": (39.177410, -76.668390), "Stations": ['BWI Airport', 'BWI Thurgood Marshall Airport Airport'], 'Exists': ['Present', 'Fantasy'], 'Image': ['BWI Airport.jpg', 'Wikipedia/Cicku']},
         "(CLE) Cleveland Hopkins International Airport": {"Location": (41.405790, -81.853860), "Stations": ['Cleveland Airport Terminal', 'Cleveland Hopkins Airport'], 'Exists': ['Present', 'Fantasy'], 'Image': ['CLE Airport.png', 'CLEvolution']},
@@ -22202,6 +22209,7 @@ Destinations = {
         "Bethany Lutheran College": {"Location": (44.166750, -93.991290), "Stations": ['Mankato'], 'Exists': ['Present', 'Fantasy']},
         "Boise State University": {"Location": (43.602330, -116.200970), "Stations": ['Boise'], 'Exists': ['Present', 'Fantasy']},
         "Boston College": {"Location": (42.335540, -71.168490), "Stations": ['Boston College'], 'Exists': ['Present', 'Fantasy']},
+        "Boston University": {"Location": (42.350490, -71.105390), "Stations": ['Boston University Central'], 'Exists': ['Present', 'Fantasy']},
         "Bowie State University": {"Location": (39.019270, -76.759340), "Stations": ['Bowie State'], 'Exists': ['Present', 'Fantasy']},
         "Brown University": {"Location": (41.826770, -71.402540), "Stations": ['Providence'], 'Exists': ['Present', 'Fantasy']},
         "California Institute of Technology": {"Location": (34.137650, -118.125260), "Stations": ['Caltech/PCC'], 'Exists': ['Present', 'Fantasy']},
@@ -22617,7 +22625,7 @@ Destinations = {
         "The Dome at America's Center": {"Location": (38.632820, -90.188500), "Stations": ['St. Louis Convention Center'], 'Exists': ['Present', 'Fantasy'], 'Image': ["The Dome at America's Center.jpg", 'Wikipedia/Kelly Martin']},
         "The Liacouras Center": {"Location": (39.979870, -75.158550), "Stations": ['East Bank', 'Stadium Village [LRT]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['The Liacouras Center.png', 'Temple Athletics']},
         "The Prime F. Osborn III Convention Center": {"Location": (30.328070, -81.672070), "Stations": ['LaVilla'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Jacksonville Convention Center.png', 'Playeasy']},
-        "Thomas M. Menino Convention & Exhibition Center": {"Location": (42.345040, -71.047190), "Stations": ['Broadway (Boston)'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Boston Convention Center.png', 'Meet Boston']},
+        "Thomas M. Menino Convention & Exhibition Center": {"Location": (42.345040, -71.047190), "Stations": ['Broadway [Boston]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Boston Convention Center.png', 'Meet Boston']},
         "Toyota Center": {"Location": (29.757200, -95.355250), "Stations": ['Bell [Houston]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Toyota Center.png', 'Axios']},
         "Toyota Stadium": {"Location": (33.154330, -96.835190), "Stations": ['Frisco'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Toyota Stadium.png', 'FC Dallas']},
         "Tropicana Field": {"Location": (27.768180, -82.653400), "Stations": ['St. Petersburg', 'Tropicana Field'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Tropicana Field.jpg', 'Major League Baseball']},
