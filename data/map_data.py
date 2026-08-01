@@ -4,9 +4,13 @@ RadiusM = 1.0
 RadiusS = 0.2
 
 Nodes = {
-	"Atlanta Airport Bend": {'Location': (33.620140, -84.460950)},
+	"Atlanta Airport Bend": {'Location': (33.629850, -84.446190)},
+	"Atlanta Airport Junction": {'Location': (33.643820, -84.446270)},
+	"Atlanta Airport LRT Bend": {'Location': (33.636820, -84.455280)},
 	"Atlanta Clairmont Junction N": {'Location': (33.794710, -84.307080)},
 	"Atlanta Clairmont Junction S": {'Location': (33.790740, -84.307750)},
+	"Atlanta East Point Junction N": {'Location': (33.680020, -84.439760)},
+	"Atlanta East Point Junction S": {'Location': (33.672500, -84.442440)},
 	"Austin Downtown Bend E": {'Location': (30.265550, -97.737510)},
 	"Austin Downtown Bend W": {'Location': (30.268100, -97.746640)},
 	"Baltimore West Bend": {'Location': (39.314240, -76.641740)},
@@ -1349,6 +1353,7 @@ Stations = {
     "Acton [ON]": {'Location': (43.633800, -80.034110)},
     "Aculco": {'Location': (19.373120, -99.107680)},
     "Acworth": {'Location': (34.066400, -84.677800)},
+    "Adams Dr": {'Location': (33.581920, -84.411460)},
     "Adams/Wabash": {'Location': (41.879536, -87.626135)},
     "Addison Road-Seat Pleasant": {'Location': (38.886720, -76.895540)},
     "Addison [CTA Blue]": {'Location': (41.947354, -87.719153)},
@@ -1457,6 +1462,7 @@ Stations = {
     "Alma [Vancouver]": {'Location': (49.264360, -123.185860)},
     "Almeda": {'Location': (29.604920, -95.422640)},
     "Almeda-Bellfort": {'Location': (29.671490, -95.394660)},
+    "Alpharetta": {'Location': (34.075610, -84.294550)},
     "Alpine": {'Location': (30.357140, -103.661610)},
     "Alquízar": {'Location': (22.803310, -82.582120)},
     "Alta Vista": {'Location': (29.453420, -98.499310)},
@@ -1685,7 +1691,7 @@ Stations = {
     "Aurora [IL]": {'Location': (41.761350, -88.308370)},
     "Aurora [OR]": {'Location': (45.232480, -122.756220)},
     "Aurora-Wellington St": {'Location': (44.000750, -79.459740)},
-    "Austell": {'Location': (33.814390, -84.627470)},
+    "Austell": {'MARTA': {'Location': (33.81282, -84.63462)}, 'Mainline': {'Location': (33.8133, -84.63417)}},
     "Austin Bluffs Pkwy": {'Location': (38.896240, -104.818440)},
     "Austin [CTA Green]": {'Location': (41.887306, -87.774437)},
     "Austin [TX]": {'Location': (30.269580, -97.757070), 'Major': True},
@@ -2053,6 +2059,7 @@ Stations = {
     "Blaine Hill": {'Location': (40.280240, -79.876250)},
     "Blainville": {'Location': (45.672400, -73.866030)},
     "Blair": {'Location': (45.430850, -75.609080)},
+    "Blair Bridge": {'Location': (33.780200, -84.607420)},
     "Blairstown": {'Location': (40.980250, -74.959770)},
     "Blake Rd": {'Location': (44.927822, -93.386374)},
     "Bland": {'Location': (35.215800, -80.855250)},
@@ -3752,7 +3759,7 @@ Stations = {
     "East Orange": {'Location': (40.761350, -74.210980)},
     "East Parking": {'Location': (29.983200, -95.295110)},
     "East Pkwy": {'Location': (35.115820, -89.982520)},
-    "East Point": {'Location': (33.678260, -84.439210)},
+    "East Point": {'MARTA': {'Location': (33.67743, -84.44055)}, 'Mainline': {'Location': (33.67826, -84.43921)}},
     "East Riverfront": {'Location': (38.628590, -90.175250)},
     "East Riverside Dr": {'Location': (39.789180, -86.190250)},
     "East Rockaway": {'Location': (40.641820, -73.657930)},
@@ -4091,8 +4098,7 @@ Stations = {
     "Farragut West": {'Location': (38.901470, -77.042020)},
     "Fashion Place West": {'Location': (40.633820, -111.898310)},
     "Fashion Valley Transit Center": {'Location': (32.765470, -117.169060)},
-    "Fayetteville [Atlanta]": {'Location': (33.617220, -84.449790)},
-    "Fayetteville [NC]": {'Location': (35.055070, -78.884760)},
+    "Fayetteville": {'Location': (35.055070, -78.884760)},
     "Federal Center": {'Location': (39.720000, -105.128948)},
     "Federal Center SW": {'Location': (38.884870, -77.015560)},
     "Federal Circle": {'Location': (40.659810, -73.803500)},
@@ -4160,6 +4166,7 @@ Stations = {
     "Flamingo & Caesars Palace": {'Location': (36.116020, -115.168570)},
     "Flamingo Ave": {'Location': (36.114431, -115.185481)},
     "Flamingo [Boulder]": {'Location': (36.115743, -115.067672)},
+    "Flat Shoals Rd": {'Location': (33.601920, -84.430030)},
     "Flatbush Av": {'Location': (40.627250, -73.942650)},
     "Flatbush Av-Brooklyn College": {'Location': (40.632920, -73.947720)},
     "Flatbush Av-Nostrand Av": {'Location': (40.630530, -73.947970)},
@@ -4396,6 +4403,8 @@ Stations = {
     "Garden City [KS]": {'Location': (37.964200, -100.873290)},
     "Garden City [NY]": {'Location': (40.723210, -73.640380)},
     "Garden Heights": {'Location': (39.963800, -83.116500)},
+    "Garden Ridge Dr": {'Location': (33.595930, -84.417880)},
+    "Garden Walk Blvd": {'Location': (33.597060, -84.428260)},
     "Gardendale": {'Location': (33.922110, -118.166160)},
     "Gardner": {'Location': (38.808010, -94.926550)},
     "Garfield Avenue": {'Location': (40.710530, -74.071100)},
@@ -4779,6 +4788,7 @@ Stations = {
     "Haddonfield": {'Location': (39.897420, -75.036840)},
     "Haggerty Rd": {'Location': (42.268177, -83.444624)},
     "Hague Ave": {'Location': (39.954950, -83.073950)},
+    "Hairston": {'Location': (33.761800, -84.196570)},
     "Hakimi Lebovic": {'Location': (43.727070, -79.291090)},
     "Halethorpe": {'Location': (39.237080, -76.691500)},
     "Halifax [MA]": {'Location': (42.014580, -70.824090)},
@@ -5026,6 +5036,7 @@ Stations = {
     "Hobby/Airport Blvd": {'Location': (29.645550, -95.311860)},
     "Hoboken Terminal": {'Main': {'Location': (40.73488, -74.02891), 'Major': True}, 'HBLR': {'Location': (40.73401, -74.0292), 'Major': True}},
     "Holbrook/Randolph": {'Location': (42.156500, -71.027260)},
+    "Holcomb Bridge": {'Location': (34.021380, -84.324610)},
     "Holcombe": {'Location': (29.705670, -95.384580)},
     "Holdom": {'Location': (49.264710, -122.982160)},
     "Holdrege": {'Location': (40.436070, -99.369910)},
@@ -5175,8 +5186,7 @@ Stations = {
     "Independence Village": {'Location': (39.915920, -82.825210)},
     "Independencia": {'Location': (20.671090, -103.344920)},
     "Indian & Howard Park": {'Location': (43.650540, -79.455120)},
-    "Indian Creek [E]": {'Location': (33.769860, -84.228910)},
-    "Indian Creek [W]": {'Location': (33.769920, -84.232880)},
+    "Indian Creek": {'E': {'Location': (33.76986, -84.22891)}, 'W': {'Location': (33.76992, -84.23288)}},
     "Indian Hill": {'Location': (42.094480, -87.723960)},
     "Indian School/Central Ave": {'Location': (33.495750, -112.073780)},
     "Indiana": {'Location': (41.821818, -87.621965)},
@@ -5469,6 +5479,7 @@ Stations = {
     "King George": {'Location': (49.182790, -122.844790)},
     "King Historic District": {'Location': (33.755550, -84.374910)},
     "King Memorial": {'Location': (33.750000, -84.375540)},
+    "King William Dr": {'Location': (33.572620, -84.361760)},
     "King of Prussia": {'Location': (40.108910, -75.410580)},
     "King-Bathurst": {'Location': (43.643910, -79.402660)},
     "Kingman": {'Location': (35.188240, -114.052490)},
@@ -6733,6 +6744,7 @@ Stations = {
     "Mt. Vernon Sq/7th St-Convention Center": {'Location': (38.905310, -77.022260)},
     "Mt. Vernon Street": {'Location': (40.856710, -74.027980)},
     "Mt. Washington": {'Location': (39.368410, -76.652040)},
+    "Mt. Zion Rd": {'Location': (33.573040, -84.370530)},
     "Mud River": {'Location': (50.318520, -88.516640)},
     "Muirkirk": {'Location': (39.062720, -76.884260)},
     "Mukilteo": {'Location': (47.949140, -122.298980)},
@@ -6987,6 +6999,7 @@ Stations = {
     "Normal": {'Location': (19.444660, -99.167340)},
     "Norman": {'Location': (35.219880, -97.442870)},
     "Norman C. Francis Pkwy": {'Location': (29.969890, -90.093730)},
+    "Norman Dr": {'Location': (33.607740, -84.435880)},
     "Normandie/190th": {'Location': (33.857560, -118.299420)},
     "Normandie/Artesia": {'Location': (33.873560, -118.299070)},
     "Noroton Heights": {'Location': (41.069020, -73.496670)},
@@ -7034,6 +7047,7 @@ Stations = {
     "North Medical Center": {'Location': (30.207400, -95.449090)},
     "North Philadelphia": {'Location': (39.997190, -75.155230)},
     "North Philadelphia Platform 2": {'Location': (39.997460, -75.156380)},
+    "North Point": {'Location': (34.050160, -84.296410)},
     "North Quincy": {'Location': (42.275280, -71.029580)},
     "North Richland Hills/Iron Horse": {'Location': (32.844760, -97.249460)},
     "North Richland Hills/Smithfield": {'Location': (32.865080, -97.211420)},
@@ -7078,8 +7092,9 @@ Stations = {
     "Northmoor": {'Location': (39.189590, -94.607810)},
     "Northpark Dr": {'Location': (30.067880, -95.241500)},
     "Northport": {'Location': (40.880830, -73.326800)},
-    "Northridge": {'LRT': {'Location': (34.22913, -118.53612)}, 'New': {'Location': (34.22903, -118.53687)}, 'Old': {'Location': (34.23064, -118.54543)}},
     "Northridge Park": {'Location': (29.996860, -95.396540)},
+    "Northridge [Atlanta]": {'Location': (33.982130, -84.341850)},
+    "Northridge [Los Angeles]": {'LRT': {'Location': (34.22913, -118.53612)}, 'New': {'Location': (34.22903, -118.53687)}, 'Old': {'Location': (34.23064, -118.54543)}},
     "Northside": {'Location': (25.845550, -80.248810)},
     "Northside Drive [MARTA]": {'Location': (33.906630, -84.431720)},
     "Northside Drive [Mainline]": {'Location': (33.798850, -84.407420)},
@@ -7541,6 +7556,7 @@ Stations = {
     "Phillips Ave": {'Location': (41.689850, -83.553890)},
     "Philmont": {'Location': (40.121980, -75.043820)},
     "Phoenix": {'Location': (33.444290, -112.072060), 'Major': True},
+    "Phoenix Blvd": {'Location': (33.613660, -84.437820)},
     "Phoenixville": {'Location': (40.132780, -75.508060)},
     "Picayune": {'Location': (30.524680, -89.680450)},
     "Pickering": {'Location': (43.831020, -79.085760)},
@@ -7885,7 +7901,7 @@ Stations = {
     "Red River Exhibition": {'Location': (49.888080, -97.329810)},
     "Red Rocks College": {'Location': (39.725078, -105.152216)},
     "Red Wing": {'Location': (44.566608, -92.537014)},
-    "Redan": {'Location': (33.754100, -84.158800)},
+    "Redan": {'MARTA': {'Location': (33.75564, -84.16463)}, 'Mainline': {'Location': (33.75786, -84.16339)}},
     "Redding [CA]": {'Location': (40.583720, -122.393330)},
     "Redding [CT]": {'Location': (41.324790, -73.435120)},
     "Redlands-Esri": {'Location': (34.060140, -117.196450)},
@@ -8003,6 +8019,8 @@ Stations = {
     "River West": {'Location': (41.588400, -93.622160)},
     "River Works": {'Location': (42.449970, -70.969840)},
     "RiverWalk": {'Location': (42.327030, -83.043160)},
+    "Riverdale Mobility Center": {'Location': (33.568310, -84.403670)},
+    "Riverdale Rd": {'Location': (33.617750, -84.449110)},
     "Riverdale [Chicago]": {'Location': (41.646500, -87.623370)},
     "Riverdale [Dayton]": {'Location': (39.775650, -84.200970)},
     "Riverdale [MD]": {'Location': (38.960000, -76.918910)},
@@ -8040,6 +8058,7 @@ Stations = {
     "Robert Speck": {'Location': (43.595840, -79.637930)},
     "Robert St": {'Location': (44.954015, -93.097485)},
     "Roberts": {'Location': (47.330220, -82.199460)},
+    "Roberts Dr": {'Location': (33.566090, -84.413140)},
     "Roberts Rd": {'Location': (40.021400, -75.330230)},
     "Robinson Ave": {'Location': (35.493250, -97.515170)},
     "Robstown": {'Location': (27.793240, -97.657130)},
@@ -8088,7 +8107,6 @@ Stations = {
     "Ronkonkoma": {'Location': (40.808340, -73.105880), 'Type': 'Airport'},
     "Roosevelt Av": {'Location': (40.746240, -73.894420)},
     "Roosevelt Blvd": {'Location': (29.997330, -90.234450)},
-    "Roosevelt Hwy": {'Location': (33.623060, -84.488250)},
     "Roosevelt Island": {'Location': (40.759140, -73.953350)},
     "Roosevelt [Chicago]": {'Green/Orange': {'Location': (41.867355, -87.626646)}, 'Red': {'Location': (41.86744, -87.627436)}},
     "Roosevelt [San Juan]": {'Location': (18.423500, -66.058870)},
@@ -8222,6 +8240,7 @@ Stations = {
     "SMU/Mockingbird": {'Location': (32.837880, -96.774900)},
     "SODO": {'Location': (47.581170, -122.327330)},
     "SR 526/Evergreen": {'Location': (47.923310, -122.227980)},
+    "SR 85": {'Location': (33.594210, -84.409650)},
     "SR 99/Airport Rd": {'Location': (47.889400, -122.258440)},
     "SVF": {'Location': (47.613620, -122.353000)},
     "SW 10th & Alder": {'Location': (45.520530, -122.681720)},
@@ -8586,6 +8605,7 @@ Stations = {
     "Shiloh-Scott": {'Location': (38.538840, -89.879020)},
     "Shiras": {'Location': (40.404070, -80.030160)},
     "Shirley": {'Location': (42.545050, -71.648100)},
+    "Shops of Riverdale": {'Location': (33.561110, -84.411530)},
     "Shoreline North/185th": {'Location': (47.764070, -122.322890)},
     "Shoreline South/148th": {'Location': (47.736100, -122.325230)},
     "Short Hills": {'Location': (40.725150, -74.323790)},
@@ -8743,10 +8763,12 @@ Stations = {
     "Southern Ave": {'Location': (38.840460, -76.975810)},
     "Southern Nevada Airport": {'Location': (35.704532, -115.368133), 'Type': 'Airport'},
     "Southern Pines": {'Location': (35.174940, -79.390400)},
+    "Southern Regional Medical": {'Location': (33.577770, -84.389570)},
     "Southern/Central Ave": {'Location': (33.398840, -112.073350)},
     "Southfield Rd": {'Location': (42.290120, -83.207270)},
     "Southfront Rd": {'Location': (37.717600, -121.702150)},
     "Southgate": {'Location': (53.485750, -113.516720)},
+    "Southlake Mall": {'Location': (33.573780, -84.351790)},
     "Southland": {'Location': (50.964450, -114.076630)},
     "Southmoor": {'Location': (39.648574, -104.916264)},
     "Southmore": {'Location': (29.723200, -95.378630)},
@@ -8974,6 +8996,7 @@ Stations = {
     "Suisun-Fairfield": {'Location': (38.243450, -122.041190)},
     "Suitland": {'Location': (38.844250, -76.932390)},
     "Sullivan & Spadina": {'Location': (43.651210, -79.397290)},
+    "Sullivan Rd": {'Location': (33.628250, -84.447250)},
     "Sullivan Square": {'Location': (42.383990, -71.076960)},
     "Sulphur Springs": {'Location': (28.025180, -82.451270)},
     "Sultan": {'Location': (47.594670, -82.772950)},
@@ -9069,6 +9092,7 @@ Stations = {
     "Tampico": {'Location': (22.211920, -97.860640)},
     "Tanglewood": {'Location': (29.747270, -95.448430)},
     "Tappan Street": {'Location': (42.338610, -71.138400)},
+    "Tara Crossings": {'Location': (33.580540, -84.380050)},
     "Taraval & 17th Ave": {'Location': (37.743060, -122.473290)},
     "Taraval & 19th Ave": {'Location': (37.742970, -122.475820)},
     "Taraval & 23rd Ave [Michigan]": {'Location': (37.742890, -122.480330)},
@@ -9494,6 +9518,7 @@ Stations = {
     "Valley Brook": {'Location': (35.398810, -97.486990)},
     "Valley Children's Stadium": {'Location': (36.815860, -119.758060)},
     "Valley College": {'Location': (34.172870, -118.422920)},
+    "Valley Hill Rd": {'Location': (33.573200, -84.412480)},
     "Valley Junction": {'Location': (41.569320, -93.706110)},
     "Valley Road": {'Location': (42.268330, -71.081350)},
     "Valley Stream": {'Location': (40.661480, -73.704660)},
@@ -12388,7 +12413,7 @@ Segments = {
         "F": ['[R] -Intercity LS (New York - Washington)', '-Intercity LS (New York - Ronkonkoma)'],
     },
     "-Intercity LS (Washington - Savannah)": {
-        "F": ['-Intercity LS (Washington - Richmond)', 'Petersburg', 'Weldon', 'Rocky Mount', 'Wilson [NC]', 'Selma', 'Fayetteville [NC]', 'Dillon', 'Florence [SC]', 'Kingstree', 'Moncks Corner', 'North Charleston', 'Yemassee', 'Savannah'],
+        "F": ['-Intercity LS (Washington - Richmond)', 'Petersburg', 'Weldon', 'Rocky Mount', 'Wilson [NC]', 'Selma', 'Fayetteville', 'Dillon', 'Florence [SC]', 'Kingstree', 'Moncks Corner', 'North Charleston', 'Yemassee', 'Savannah'],
     },
     "-Intercity LS (Washington - Spotsylvania)": {
         "F": ['Washington Regional Rail (Union - Spotsylvania)'],
@@ -12441,13 +12466,19 @@ Segments = {
         "F": ['Atlanta Central Station', 'Centennial Place', 'Westside Provisions'],
     },
     "Atlanta Approach (Central - South)": {
-        "F": ['Atlanta Central Station', '[X] West End', 'Murphy Crossing', 'Oakland City', 'Lakewood/Ft. McPherson', 'East Point'],
+        "F": ['Atlanta Central Station', '[X] West End', 'Murphy Crossing', 'Oakland City', 'Lakewood/Ft. McPherson', '[X] Atlanta East Point Junction N', 'East Point {Mainline}'],
+    },
+    "Atlanta LRT (Airport - Southlake)": {
+        "F": ['Airport [Atlanta] {MARTA}', '[X] Atlanta Airport LRT Bend', 'Sullivan Rd', 'Riverdale Rd', 'Phoenix Blvd', 'Norman Dr', 'Flat Shoals Rd', 'Garden Walk Blvd', 'Garden Ridge Dr', 'SR 85', 'Adams Dr', 'Valley Hill Rd', 'Roberts Dr', 'Shops of Riverdale', 'Riverdale Mobility Center', 'Southern Regional Medical', 'Tara Crossings', 'Mt. Zion Rd', 'King William Dr', 'Southlake Mall', 'Morrow-Southlake'],
     },
     "Atlanta LRT (Armour - Emory)": {
         "F": ['Armour Yards', 'Cheshire Bridge', 'Sage Hill/Briarcliff', 'CDC Emory Point', 'Emory University', 'Clairmont Campus', '[X] Atlanta Clairmont Junction N'],
     },
     "Atlanta LRT (Lindbergh - Avondale)": {
         "F": ['Lindbergh Center', 'Atlanta LRT (Armour - Emory)', '[X] Atlanta Clairmont Junction S', 'N Decatur/Clairmont', 'Scott Blvd', 'Church St [Atlanta]', 'Emory Decatur', 'N Decatur/Dekalb Industrial', 'DeKalb Industrial/N Arcadia', 'Avondale [GA]'],
+    },
+    "Atlanta MARTA (Airport - Alpharetta)": {
+        "F": ['[R] Atlanta MARTA (Five Points - Airport)', 'Atlanta MARTA (Five Points - Alpharetta)'],
     },
     "Atlanta MARTA (Airport - Doraville)": {
         "F": ['[R] Atlanta MARTA (Five Points - Airport)', 'Atlanta MARTA (Five Points - Doraville)'],
@@ -12457,23 +12488,36 @@ Segments = {
         "Skip": ['Murphy Crossing', 'Armour Yards'],
     },
     "Atlanta MARTA (Airport - North Springs)": {
-        "F": ['[R] Atlanta MARTA (Five Points - Airport)', 'Atlanta MARTA (Five Points - Dunwoody)'],
+        "F": ['[R] Atlanta MARTA (Five Points - Airport)', 'Atlanta MARTA (Five Points - North Springs)'],
     },
     "Atlanta MARTA (Airport - North Springs) [Old]": {
         "F": ['Atlanta MARTA (Airport - North Springs)'],
         "Skip": ['Murphy Crossing', 'Armour Yards'],
     },
     "Atlanta MARTA (Beltway Loop)": {
-        "L": ['Delmar', 'D.L. Hollowell', 'S Cobb', 'Vinings Heights', 'Paces Ferry', 'Cumberland Blvd {MARTA}', 'Truist Park', 'Powers Ferry', 'Northside Drive [MARTA]', 'Riverside [Atlanta]', 'Roswell', 'Northside Medical Center', 'Chamblee Dunwoody', 'Peachtree', 'Doraville {MARTA}', 'Chamblee Tucker', 'Northlake', 'Ponce de Leon', 'N Decatur', 'Indian Creek [W]', 'Redwing Circle', 'Meadowdale', 'Snapfinger', 'Rainbow', 'Panthersville', 'Clifton Springs', 'Bouldercrest', 'Moreland [MARTA]', 'Expo Center', 'Old Dixie', 'South Loop', 'Fayetteville [Atlanta]', '[X] Atlanta Airport Bend', 'Roosevelt Hwy', 'Redwine', 'Greenbriar [Atlanta]', 'Cascade'],
+        "L": ['Delmar', 'D.L. Hollowell', 'S Cobb', 'Vinings Heights', 'Paces Ferry', 'Cumberland Blvd {MARTA}', 'Truist Park', 'Powers Ferry', 'Northside Drive [MARTA]', 'Riverside [Atlanta]', 'Roswell', 'Northside Medical Center', 'Chamblee Dunwoody', 'Peachtree', 'Doraville {MARTA}', 'Chamblee Tucker', 'Northlake', 'Ponce de Leon', 'N Decatur', 'Indian Creek {W}', 'Redwing Circle', 'Meadowdale', 'Snapfinger', 'Rainbow', 'Panthersville', 'Clifton Springs', 'Bouldercrest', 'Moreland [MARTA]', 'Expo Center', 'Old Dixie', 'South Loop', '[X] Atlanta Airport Bend', 'Airport [Atlanta] {MARTA}', '[X] Atlanta Airport Junction', 'Redwine', 'Greenbriar [Atlanta]', 'Cascade'],
+    },
+    "Atlanta MARTA (Candler Park - Bankhead)": {
+        "F": ['[R] Atlanta MARTA (Five Points - Candler Park)', 'Atlanta MARTA (Five Points - Bankhead)'],
+        "Skip": ['Krog Street/Hulsey Yard'],
     },
     "Atlanta MARTA (Five Points - Airport)": {
-        "F": ['Five Points [Atlanta]', 'Garnett', 'West End', 'Murphy Crossing', 'Oakland City', 'Lakewood/Ft. McPherson', 'East Point', 'College Park [Atlanta]', 'Airport [Atlanta] {MARTA}', '[X] Atlanta Airport Bend', 'Fayetteville [Atlanta]'],
+        "F": ['Five Points [Atlanta]', 'Garnett', 'West End', 'Murphy Crossing', 'Oakland City', 'Lakewood/Ft. McPherson', '[X] Atlanta East Point Junction N', 'East Point {MARTA}', '[X] Atlanta East Point Junction S', 'College Park [Atlanta]', '[X] Atlanta Airport Junction', 'Airport [Atlanta] {MARTA}'],
+    },
+    "Atlanta MARTA (Five Points - Alpharetta)": {
+        "F": ['Atlanta MARTA (Five Points - North Springs)', 'Northridge [Atlanta]', 'Holcomb Bridge', 'North Point', 'Alpharetta'],
     },
     "Atlanta MARTA (Five Points - Ashby)": {
         "F": ['Five Points [Atlanta]', 'SEC District', 'Vine City', 'Ashby [GA]'],
     },
+    "Atlanta MARTA (Five Points - Austell)": {
+        "F": ['Atlanta MARTA (Five Points - Hamilton E. Holmes)', 'Delmar', 'Fulton Blvd', 'Six Flags', 'Blair Bridge', 'Austell {MARTA}'],
+    },
     "Atlanta MARTA (Five Points - Bankhead)": {
         "F": ['Atlanta MARTA (Five Points - Ashby)', 'Joseph E. Boone', 'Bankhead'],
+    },
+    "Atlanta MARTA (Five Points - Candler Park)": {
+        "F": ['Five Points [Atlanta]', 'Georgia State', 'King Memorial', 'Krog Street/Hulsey Yard', 'Inman Park/Reynoldstown', 'Edgewood-Candler Park'],
     },
     "Atlanta MARTA (Five Points - Cumberland)": {
         "F": ['Atlanta MARTA (Five Points - Bankhead)', 'Howell [GA]', 'West Highlands', 'Bolton [GA]', 'Atlanta Road', 'Vinings Heights', 'Paces Ferry', 'Cumberland Blvd {MARTA}', 'Truist Park'],
@@ -12481,30 +12525,20 @@ Segments = {
     "Atlanta MARTA (Five Points - Doraville)": {
         "F": ['Atlanta MARTA (Five Points - Lindbergh)', 'Lenox', 'Brookhaven/Oglethorpe', 'Chamblee', 'Doraville {Mainline}'],
     },
-    "Atlanta MARTA (Five Points - Dunwoody)": {
-        "F": ['Atlanta MARTA (Five Points - Lindbergh)', 'Buckhead', 'Northside Medical Center', 'Dunwoody', 'Sandy Springs', 'North Springs'],
-    },
     "Atlanta MARTA (Five Points - Hamilton E. Holmes)": {
         "F": ['Atlanta MARTA (Five Points - Ashby)', 'West Lake', 'Hamilton E. Holmes'],
     },
     "Atlanta MARTA (Five Points - Indian Creek)": {
-        "F": ['Five Points [Atlanta]', 'Georgia State', 'King Memorial', 'Krog Street/Hulsey Yard', 'Inman Park/Reynoldstown', 'Edgewood-Candler Park', 'East Lake', 'Decatur [GA]', 'Avondale [GA]', 'Kensington Rd', '[X] Indian Creek [W]', 'Indian Creek [E]'],
+        "F": ['Atlanta MARTA (Five Points - Candler Park)', 'East Lake', 'Decatur [GA]', 'Avondale [GA]', 'Kensington Rd', 'Indian Creek {E}'],
     },
     "Atlanta MARTA (Five Points - Lindbergh)": {
         "F": ['Five Points [Atlanta]', 'Peachtree Center', 'Civic Center [Atlanta]', 'North Ave [Atlanta]', 'Midtown [Atlanta]', 'Arts Center', 'Armour Yards', 'Lindbergh Center'],
     },
-    "Atlanta MARTA (Five Points - Six Flags)": {
-        "F": ['Atlanta MARTA (Five Points - Hamilton E. Holmes)', 'Delmar', 'Fulton Blvd', 'Six Flags'],
+    "Atlanta MARTA (Five Points - North Springs)": {
+        "F": ['Atlanta MARTA (Five Points - Lindbergh)', 'Buckhead', 'Northside Medical Center', 'Dunwoody', 'Sandy Springs', 'North Springs'],
     },
-    "Atlanta MARTA (Indian Creek - Bankhead)": {
-        "F": ['[R] Atlanta MARTA (Five Points - Indian Creek)', 'Atlanta MARTA (Five Points - Bankhead)'],
-    },
-    "Atlanta MARTA (Indian Creek - Bankhead) [Old]": {
-        "F": ['Atlanta MARTA (Indian Creek - Bankhead)'],
-        "Skip": ['Krog Street/Hulsey Yard'],
-    },
-    "Atlanta MARTA (Indian Creek - Cumberland)": {
-        "F": ['[R] Atlanta MARTA (Five Points - Indian Creek)', 'Atlanta MARTA (Five Points - Cumberland)'],
+    "Atlanta MARTA (Five Points - Redan)": {
+        "F": ['Atlanta MARTA (Five Points - Indian Creek)', 'Hairston', 'Redan {MARTA}'],
     },
     "Atlanta MARTA (Indian Creek - Hamilton E. Holmes)": {
         "F": ['[R] Atlanta MARTA (Five Points - Indian Creek)', 'Atlanta MARTA (Five Points - Hamilton E. Holmes)'],
@@ -12513,8 +12547,11 @@ Segments = {
         "F": ['Atlanta MARTA (Indian Creek - Hamilton E. Holmes)'],
         "Skip": ['Krog Street/Hulsey Yard', 'Joseph E. Boone'],
     },
-    "Atlanta MARTA (Indian Creek - Six Flags)": {
-        "F": ['[R] Atlanta MARTA (Five Points - Indian Creek)', 'Atlanta MARTA (Five Points - Six Flags)'],
+    "Atlanta MARTA (Redan - Austell)": {
+        "F": ['[R] Atlanta MARTA (Five Points - Redan)', 'Atlanta MARTA (Five Points - Austell)'],
+    },
+    "Atlanta MARTA (Redan - Cumberland)": {
+        "F": ['[R] Atlanta MARTA (Five Points - Redan)', 'Atlanta MARTA (Five Points - Cumberland)'],
     },
     "Atlanta Peoplemover (ATL Airport)": {
         "F": ['Airport [Atlanta] {APM}', 'Airport West', 'GICC Gateway', 'Rental Car Center [ATL]'],
@@ -12537,7 +12574,7 @@ Segments = {
         "F": ['Atlanta Regional (Central - Emory)', 'North Druid Hills', 'Northlake South', 'Tucker', 'Lilburn', 'North Snellville', 'West Lawrenceville', 'Lawrenceville', 'Dacula', 'Winder', 'Statham', 'Athens [GA]'],
     },
     "Atlanta Regional (Central - Austell)": {
-        "F": ['Atlanta Approach (Central - North)', 'Upper Westside', 'Moores Mill', 'Vinings-West Village', 'Copper Lake', 'Mableton', 'Austell'],
+        "F": ['Atlanta Approach (Central - North)', 'Upper Westside', 'Moores Mill', 'Vinings-West Village', 'Copper Lake', 'Mableton', 'Austell {Mainline}'],
     },
     "Atlanta Regional (Central - Canton)": {
         "F": ['Atlanta Regional (Central - Marietta)', 'Sandy Plains', 'Noonday', 'Woodstock-Arnold Mill', 'Holly Springs', 'Canton [GA]'],
@@ -12546,7 +12583,7 @@ Segments = {
         "F": ['Atlanta Regional (Central - Marietta)', 'Barrett Pkwy', 'Kennesaw', 'Acworth', 'Cartersville'],
     },
     "Atlanta Regional (Central - Covington)": {
-        "F": ['Atlanta Regional (Central - Emory)', '[X] Atlanta Clairmont Junction S', 'East Lake', '[X] Avondale [GA]', 'Avondale Estates', 'Clarkston', 'Stone Mountain', 'Redan', 'Lithonia-Stonecrest', 'Conyers', 'Covington [GA]', 'Social Circle'],
+        "F": ['Atlanta Regional (Central - Emory)', '[X] Atlanta Clairmont Junction S', 'East Lake', '[X] Avondale [GA]', 'Avondale Estates', 'Clarkston', 'Stone Mountain', 'Redan {Mainline}', 'Lithonia-Stonecrest', 'Conyers', 'Covington [GA]', 'Social Circle'],
     },
     "Atlanta Regional (Central - Dallas)": {
         "F": ['Atlanta Regional (Central - Austell)', 'Powder Springs', 'Powder Springs P&R', 'Hiram', 'Dallas'],
@@ -12579,7 +12616,7 @@ Segments = {
         "F": ['Atlanta Regional (Central - Union City)', 'East Fairburn', 'Tyrone [GA]', 'Peachtree City', 'Falcon Field Airport', 'Senoia'],
     },
     "Atlanta Regional (Central - Union City)": {
-        "F": ['Atlanta Approach (Central - South)', '[X] College Park [Atlanta]', 'Airport West', 'Old National Highway', 'South Fulton Pkwy', 'Union City [GA]'],
+        "F": ['Atlanta Approach (Central - South)', '[X] Atlanta East Point Junction S', '[X] College Park [Atlanta]', 'Airport West', 'Old National Highway', 'South Fulton Pkwy', 'Union City [GA]'],
     },
     "Atlanta Regional (Central - Villa Rica)": {
         "F": ['Atlanta Regional (Central - Austell)', 'Lithia Springs', 'Douglasville', 'Villa Rica'],
@@ -14247,7 +14284,7 @@ Segments = {
         "F": ['[X] Glendale Bend S', 'Glendale/Colorado', 'Chevy Chase [G]', 'Eagle Rock Plaza', 'Eagle Rock', 'Townsend', 'Figueroa', 'San Rafael [Los Angeles]', 'Orange Grove', 'Memorial Park {G}', 'Lake [Pasadena]', 'Caltech/PCC', 'Huntington Gardens', 'Rosemead/Huntington', 'Baldwin [Los Angeles]', 'Arcadia [CA]'],
     },
     "Los Angeles Light Rail (Granada Hills - Pasadena)": {
-        "F": ['Granada Hills South', 'Devonshire', 'CSUN North', 'Nordhoff [R]', 'Northridge {LRT}', 'Strathern', 'Sherman [R]', 'Reseda Park', 'Reseda/Oxnard {R}', 'Reseda/Burbank', 'White Oak', 'Balboa [R]', 'Woodley [R]', 'Sepulveda/Ventura', 'Van Nuys/Ventura', 'Woodman [R]', 'Coldwater Canyon', 'Laurel Canyon [R]', 'Tujunga', 'Universal City', 'Burbank Studio District', 'Buena Vista', 'First St [Burbank]', '[X] Burbank LRT Bend', 'Alameda [Burbank]', 'Western [Burbank]', 'Grandview [Burbank]', 'Pacific [Burbank]', '[X] Glendale Bend N', 'Downtown Glendale', 'Glendale Galleria', 'Los Angeles Light Rail (Glendale - Pasadena)'],
+        "F": ['Granada Hills South', 'Devonshire', 'CSUN North', 'Nordhoff [R]', 'Northridge [Los Angeles] {LRT}', 'Strathern', 'Sherman [R]', 'Reseda Park', 'Reseda/Oxnard {R}', 'Reseda/Burbank', 'White Oak', 'Balboa [R]', 'Woodley [R]', 'Sepulveda/Ventura', 'Van Nuys/Ventura', 'Woodman [R]', 'Coldwater Canyon', 'Laurel Canyon [R]', 'Tujunga', 'Universal City', 'Burbank Studio District', 'Buena Vista', 'First St [Burbank]', '[X] Burbank LRT Bend', 'Alameda [Burbank]', 'Western [Burbank]', 'Grandview [Burbank]', 'Pacific [Burbank]', '[X] Glendale Bend N', 'Downtown Glendale', 'Glendale Galleria', 'Los Angeles Light Rail (Glendale - Pasadena)'],
     },
     "Los Angeles Light Rail (Harbor Blvd - Santa Monica)": {
         "F": ['Harbor [E]', 'Los Nietos', 'Friendly Hills', 'Painter', 'Washington/Lambert', 'Washington/Norwalk', 'Washington/Rosemead', 'Washington/Greenwood', '[X] Los Angeles Washington Bend', '[X] Los Angeles Telegraph/Washington Bend', 'Commerce/Citadel', '[X] Los Angeles Atlantic/Telegraph Bend', 'Atlantic/Whittier', 'Los Angeles Light Rail (Atlantic - Santa Monica)'],
@@ -14347,11 +14384,11 @@ Segments = {
         "F": ['Los Angeles Approach (Union - Mission Junction)', '[X] Los Angeles Cypress Park Bend', 'Glendale', '[X] Burbank Pelanconi Bend', 'Burbank [CA]', '[X] Burbank North Junction'],
     },
     "Los Angeles Metrolink (Union - East Ventura Junction)": {
-        "F": ['Los Angeles Metrolink (Union - Burbank)', 'Burbank Airport-South {Mainline}', 'Lankershim', 'Van Nuys {Metrolink}', 'Northridge {New}', 'Chatsworth', 'Simi Valley', 'Moorpark', 'Camarillo [VC]', 'Oxnard', '[X] Los Angeles East Ventura Junction'],
+        "F": ['Los Angeles Metrolink (Union - Burbank)', 'Burbank Airport-South {Mainline}', 'Lankershim', 'Van Nuys {Metrolink}', 'Northridge [Los Angeles] {New}', 'Chatsworth', 'Simi Valley', 'Moorpark', 'Camarillo [VC]', 'Oxnard', '[X] Los Angeles East Ventura Junction'],
     },
     "Los Angeles Metrolink (Union - East Ventura)": {
         "F": ['Los Angeles Metrolink (Union - East Ventura Junction)', 'East Ventura {Old}'],
-        "Swap": [('Northridge {New}', 'Northridge {Old}')],
+        "Swap": [('Northridge [Los Angeles] {New}', 'Northridge [Los Angeles] {Old}')],
     },
     "Los Angeles Metrolink (Union - El Monte)": {
         "F": ['Los Angeles Approach (Union - Mission Junction)', '[X] Los Angeles Taylor Junction', 'Soto St', 'Cal State LA', 'El Monte', 'Five Points [Los Angeles]', '[X] Los Angeles El Monte Junction'],
@@ -19028,7 +19065,7 @@ Lines = {
         },
         "Blue Line": {
             "Fantasy": {
-                "Indian Creek - Six Flags": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek - Six Flags)'},
+                "Redan - Austell": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Redan - Austell)'},
             },
             "Present": {
                 "Indian Creek - Hamilton E. Holmes": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek - Hamilton E. Holmes) [Old]', 'File': '[MARTA] Blue Line', 'Link': 'https://brouter.damsy.net/latest/#map=17/33.75454/-84.46712/standard&lonlats=-84.22868,33.769886;-84.231539,33.769971;-84.279723,33.776191;-84.374072,33.750535;-84.471102,33.754464;-84.441749,33.754326;-84.282791,33.774795;-84.232467,33.769825;-84.228676,33.769978&profile=rail'},
@@ -19069,10 +19106,10 @@ Lines = {
         },
         "Green Line": {
             "Fantasy": {
-                "Indian Creek - Cumberland": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek - Cumberland)'},
+                "Redan - Cumberland": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Redan - Cumberland)'},
             },
             "Present": {
-                "Indian Creek - Bankhead": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Indian Creek - Bankhead) [Old]', 'File': '[MARTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/33.7660/-84.4220/standard&lonlats=-84.22868,33.769886;-84.231539,33.769971;-84.279723,33.776191;-84.374072,33.750535;-84.428896,33.772695;-84.42711,33.767205;-84.282791,33.774795;-84.232467,33.769825;-84.228676,33.769978&profile=rail'},
+                "Candler Park - Bankhead": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Candler Park - Bankhead)', 'File': '[MARTA] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/33.7660/-84.4220/standard&lonlats=-84.22868,33.769886;-84.231539,33.769971;-84.279723,33.776191;-84.374072,33.750535;-84.428896,33.772695;-84.42711,33.767205;-84.282791,33.774795;-84.232467,33.769825;-84.228676,33.769978&profile=rail'},
             },
         },
         "Griffin Line": {
@@ -19097,7 +19134,7 @@ Lines = {
         },
         "Red Line": {
             "Fantasy": {
-                "Airport - North Springs": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Airport - North Springs)'},
+                "Airport - Alpharetta": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Airport - Alpharetta)'},
             },
             "Present": {
                 "Airport - North Springs": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Airport - North Springs) [Old]', 'File': '[MARTA] Red Line', 'Link': 'https://brouter.damsy.net/latest/#map=16/33.6458/-84.4445/standard&lonlats=-84.446224,33.640017;-84.441127,33.675555;-84.429293,33.697043;-84.4288,33.7004;-84.413635,33.734605;-84.393223,33.751815;-84.38737,33.76833;-84.374201,33.814828;-84.370006,33.820386;-84.363091,33.83155;-84.361417,33.899456;-84.34997,33.910707;-84.344391,33.922762;-84.357077,33.945901;-84.34998,33.9108;-84.361519,33.899491;-84.441251,33.675738;-84.446341,33.642974;-84.446333,33.640017&profile=rail'},
@@ -19111,6 +19148,11 @@ Lines = {
         "Silver Line": {
             "Fantasy": {
                 "Beltway Loop": {'Mode': 'Heavy Metro', 'Stations': 'Atlanta MARTA (Beltway Loop)'},
+            },
+        },
+        "Southlake Line": {
+            "Fantasy": {
+                "Airport - Southlake": {'Mode': 'Light Rail', 'Stations': 'Atlanta LRT (Airport - Southlake)'},
             },
         },
         "Villa Rica Line": {
@@ -22969,6 +23011,7 @@ Projects = {
     "Sepulveda Subway": {"Source": 'LA Metro', "Location": (34.110190, -118.476150), "Radius": RadiusM, 'Description': 'LA Metro has selected the heavy metro option for its Sepulveda transit corridor project. This will construct a new subway line serving the San Fernando Valley, UCLA, and eventually the LAX Metro Transit Center.', 'Image': 'LA Metro Sepulveda Line.jpg', 'Link': 'https://www.metro.net/projects/sepulvedacorridor'},
     "Southern Nevada Commuter Rail": {"Source": 'Nevada DOT', "Location": (35.958700, -115.156340), "Radius": RadiusM, 'Description': 'Brightline West is constructing high-speed rail along I-15. The 2021 Nevada State Rail Plan proposed a regional service sharing these tracks between Las Vegas and Primm (with a potential stop at the proposed Southern Nevada Supplemental Airport).', 'Image': 'Brightline West Commuter Rail.png', 'Link': 'https://www.dot.nv.gov/home/showpublisheddocument/19780/637635847516530000'},
     "Southern Nevada Supplemental Airport": {"Source": 'CCDOA', "Location": (35.729920, -115.395990), "Radius": RadiusM, 'Description': "The proposed megahub aims to alleviate congestion at Las Vegas' dated and geographically constrained airport.", 'Image': 'SNSA.jpg', 'Link': 'https://www.snsaproject.info'},
+    "Southlake Corridor": {"Source": 'MARTA', "Location": (33.597920, -84.395050), "Radius": RadiusS, 'Description': "The Southlake BRT corridor will connect Atlanta's southern suburbs to the airport. Like many other current BRT projects, it has been upgraded to light rail for the sake of this far-future map.", 'Image': 'MARTA Southlake BRT.png', 'Link': 'https://connectclayton.com/southlake-bus-rapid-transit/'},
     "Southwest Heavy Rail Upgrade": {"Source": 'Proposal', "Location": (39.760040, -105.003840), "Radius": RadiusS, 'Description': 'The southwest heavy rail upgrade, proposed by Greater Denver Transit, aims to enable through-running at Union Station by activating the unused tail tracks of the light rail stub platforms and connecting them to the northbound mainline. This would allow both Amtrak and RTD commuter trains to pass through Union Station without reversing, which would massively improve the capacity of each line and the daily throughput of trains.', 'Image': 'Denver Heavy Rail Upgrade.jpg', 'Link': 'https://www.greaterdenvertransit.com/frontrangepassengerrail/rtdheavyrailupgrade'},
     "Tacoma LINK Extension": {"Source": 'Sound Transit', "Location": (47.247530, -122.394330), "Radius": RadiusS, 'Description': 'The recently-opened Federal Way extension will continue even farther to Tacoma Dome, allowing LINK to connect to the existing Amtrak and Sounder station there.', 'Image': 'Tacoma LINK Extension.png', 'Link': 'https://www.soundtransit.org/system-expansion/tacoma-dome-link-extension'},
     "Tower City Center": {"Source": 'Proposal', "Location": (41.493980, -81.694960), "Radius": RadiusS, 'Description': 'Cleveland advocates have long proposed restoring Amtrak service to Tower City Center, the former passenger rail terminal and current RTA transit hub. In this fantasy map, the existing riverfront station is not decomissioned in favor of Tower City owing to ongoing station upgrades and surrounding development. However, it is possible that some regional and intercity services might be shifted to Tower City Center in the future.', 'Image': 'Tower City Center.jpg', 'Link': 'https://neo-trans.blog/2023/05/29/getting-tower-city-on-track/'},
