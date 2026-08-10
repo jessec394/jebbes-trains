@@ -10798,7 +10798,7 @@ Segments = {
     },
     "-Intercity LS (Atlanta - Birmingham) [Old]": {
         "F": ['-Intercity LS (Atlanta - Birmingham)'],
-        "Swap": [('Atlanta Regional (Central - Villa Rica)', 'Atlanta Peachtree Station')],
+        "Swap": [('-Intercity LS (Atlanta - Villa Rica)', '-Intercity LS (Atlanta - Villa Rica) [Old]')],
     },
     "-Intercity LS (Atlanta - Brunswick)": {
         "F": ['-Intercity LS (Atlanta - Macon)', 'Cochran', 'Eastman', 'McRae-Helena', 'Hazlehurst', 'Jessup [GA]', 'Brunswick (GA)'],
@@ -10822,7 +10822,7 @@ Segments = {
         "Keep": ['Atlanta Central Station', 'Duluth [GA]', 'Gainesville [GA]'],
     },
     "-Intercity LS (Atlanta - Gainesville) [Old]": {
-        "F": ['-Intercity LS (Atlanta - Gainesville)'],
+        "F": ['Atlanta Regional (Central - Gainesville)'],
         "Keep": ['Atlanta Peachtree Station', 'Gainesville [GA]'],
         "Swap": [('Atlanta Regional (Central - Armour)', 'Atlanta Peachtree Station')],
     },
@@ -10867,6 +10867,11 @@ Segments = {
     "-Intercity LS (Atlanta - Villa Rica)": {
         "F": ['Atlanta Regional (Central - Villa Rica)'],
         "Keep": ['Atlanta Central Station'],
+    },
+    "-Intercity LS (Atlanta - Villa Rica) [Old]": {
+        "F": ['Atlanta Regional (Central - Villa Rica)'],
+        "Keep": ['Atlanta Peachtree Station'],
+        "Swap": [('Atlanta Regional (Central - Villa Rica)', 'Atlanta Peachtree Station')],
     },
     "-Intercity LS (Austin - Round Rock)": {
         "F": ['Austin Commuter Rail (Downtown - Round Rock)'],
@@ -13522,6 +13527,9 @@ Segments = {
     "Cincinnati Subway (Bridgetown - Pleasant Ridge)": {
         "F": ['[R] Cincinnati Subway (Downtown - Bridgetown)', 'Cincinnati Subway (Downtown - Pleasant Ridge)'],
     },
+    "Cincinnati Subway (Carthage - Airport)": {
+        "F": ['[R] Cincinnati Subway (Downtown - Carthage)', 'Cincinnati Subway (Downtown - Airport)'],
+    },
     "Cincinnati Subway (College Hill - Reading)": {
         "F": ['[R] Cincinnati Subway (Downtown - College Hill)', 'Cincinnati Subway (Downtown - Reading)'],
     },
@@ -13530,6 +13538,9 @@ Segments = {
     },
     "Cincinnati Subway (Downtown - Bridgetown)": {
         "F": ['Cincinnati Subway (Downtown - West)', 'Central/TQL Stadium', 'Linn St [Charles]', 'Cincinnati Union Terminal {Subway}', 'Grand Ave [Cincinnati]', 'Price Hill', 'West Price Hill', 'Warsaw Pike', 'Western Hills', 'Midway Ave', 'Werk Rd', 'Lawrence Rd', 'Bridgetown North', 'Westwood Northern Blvd'],
+    },
+    "Cincinnati Subway (Downtown - Carthage)": {
+        "F": ['Central/Vine', 'Liberty St [Cincinnati]', 'McMicken Ave', 'McMillan St [Cincinnati Vine]', 'University of Cincinnati [Subway]', 'MLK Dr [Cincinnati Vine]', 'VA Medical Center [Cincinnati]', 'Cincinnati Zoo', 'Forest Ave [Cincinnati]', 'Mitchell Ave', 'Washington Ave [Cincinnati-Subway]', 'St. Bernard {Subway}', 'Ivorydale', 'Elmwood Place', 'Carthage-69th St'],
     },
     "Cincinnati Subway (Downtown - College Hill)": {
         "F": ['Cincinnati Subway (Downtown - West)', 'Liberty/TQL Stadium', 'Findlay St', 'Linn St [Central]', 'Colerian Ave', 'Marshall Ave', 'MLK/Hopple St', 'Cincinnati State', 'Northside [Cincinnati]', 'Pullan Ave', 'Stanford Dr', 'Rockford Pl', 'Belmont Ave [Cincinnati]', 'College Hill', 'Hollywood Ave', 'North College Hill'],
@@ -13543,14 +13554,8 @@ Segments = {
     "Cincinnati Subway (Downtown - Reading)": {
         "F": ['Cincinnati Subway (Downtown - East)', 'Dorchester Ave', 'McMillan St [Cincinnati Reading]', 'MLK Dr [Cincinnati Reading]', 'Blair Ave', 'Glenwood Ave', 'Dana Ave', 'Paddock Rd', 'Sherman Ave', 'Tennessee Ave', 'Dale Rd', 'Seymour Ave', 'Roselawn', 'Sunnybrook Dr', 'Galbraith Rd', 'Reading-Benson Rd'],
     },
-    "Cincinnati Subway (Downtown - St. Bernard)": {
-        "F": ['Central/Vine', 'Liberty St [Cincinnati]', 'McMicken Ave', 'McMillan St [Cincinnati Vine]', 'University of Cincinnati [Subway]', 'MLK Dr [Cincinnati Vine]', 'VA Medical Center [Cincinnati]', 'Cincinnati Zoo', 'Forest Ave [Cincinnati]', 'Mitchell Ave', 'Washington Ave [Cincinnati-Subway]', 'St. Bernard {Subway}', 'Ivorydale', 'Elmwood Place', 'Carthage-69th St'],
-    },
     "Cincinnati Subway (Downtown - West)": {
         "F": ['Central/Vine', 'Elm St', '[X] Cincinnati Central Bend', '[X] Cincinnati TQL Bend'],
-    },
-    "Cincinnati Subway (St. Bernard - Airport)": {
-        "F": ['[R] Cincinnati Subway (Downtown - St. Bernard)', 'Cincinnati Subway (Downtown - Airport)'],
     },
     "Cleveland Approach (Riverfront - East)": {
         "F": ['Cleveland Waterfront Station', '[X] North Coast', '[X] South Harbor'],
@@ -18429,7 +18434,7 @@ Lines = {
         },
         "Line 1": {
             "Fantasy": {
-                "St. Bernard - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Cincinnati Subway (St. Bernard - Airport)'},
+                "Carthage - Airport": {'Mode': 'Heavy Metro', 'Stations': 'Cincinnati Subway (Carthage - Airport)'},
             },
         },
         "Line 2": {
