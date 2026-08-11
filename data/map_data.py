@@ -10797,7 +10797,7 @@ Segments = {
         "F": ['-Intercity LS (Atlanta - Villa Rica)', 'Anniston', 'Birmingham [AL]'],
     },
     "-Intercity LS (Atlanta - Birmingham) [Old]": {
-        "F": ['-Intercity LS (Atlanta - Birmingham)'],
+        "F": ['-Intercity LS (Atlanta - Villa Rica)', 'Anniston', 'Birmingham [AL]'],
         "Swap": [('-Intercity LS (Atlanta - Villa Rica)', '-Intercity LS (Atlanta - Villa Rica) [Old]')],
     },
     "-Intercity LS (Atlanta - Brunswick)": {
@@ -10869,9 +10869,10 @@ Segments = {
         "Keep": ['Atlanta Central Station'],
     },
     "-Intercity LS (Atlanta - Villa Rica) [Old]": {
+        "Drop": ['Centennial Place', 'Westside Provisions'],
         "F": ['Atlanta Regional (Central - Villa Rica)'],
         "Keep": ['Atlanta Peachtree Station'],
-        "Swap": [('Atlanta Regional (Central - Villa Rica)', 'Atlanta Peachtree Station')],
+        "Swap": [('Atlanta Central Station', 'Atlanta Peachtree Station')],
     },
     "-Intercity LS (Austin - Round Rock)": {
         "F": ['Austin Commuter Rail (Downtown - Round Rock)'],
@@ -23253,8 +23254,7 @@ Destinations = {
         "Hard Rock Stadium": {"Location": (25.957860, -80.238950), "Stations": ['199th St'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Hard Rock Stadium.jpg', 'Greater Miami Convention & Visitors Bureau']},
         "Henry B. González Convention Center": {"Location": (29.420400, -98.483670), "Stations": ['River Walk/Convention Center'], 'Exists': ['Present', 'Fantasy'], 'Image': ['San Antonio Convention Center.jpg', 'Wikipedia/Loadmaster']},
         "Heritage Bank Center": {"Location": (39.097990, -84.504470), "Stations": ['Riverfront Transit Center', 'Stadium District [Cincinnati]', 'The Banks'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Heritage Bank Center.jpg', 'Wikipedia/Ianbolender']},
-        "Highmark Stadium (Old)": {"Location": (42.773750, -78.786970), "Stations": ['Highmark Stadium'], 'Exists': ['Present'], 'Image': ['Highmark Stadium.jpg', 'Wikipedia/Quintin Soloviev']},
-        "Highmark Stadium (Under Construction)": {"Location": (42.773110, -78.792200), "Stations": ['Highmark Stadium'], 'Exists': ['Fantasy'], 'Image': ['New Highmark Stadium.jpg', 'Populous']},
+        "Highmark Stadium": {"Location": (42.773110, -78.792200), "Stations": ['Highmark Stadium'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Highmark Stadium.jpg', 'Populous']},
         "Hodgetown Stadium": {"Location": (35.205010, -101.831730), "Stations": ['Amarillo'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Hodgetown Stadium.png', 'Virtual Builders Exchange']},
         "Hollywood Bowl": {"Location": (34.112220, -118.339120), "Stations": ['Hollywood Bowl'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Hollywood Bowl.png', 'Hollywood Bowl']},
         "Honda Center": {"Location": (33.807840, -117.876460), "Stations": ['Anaheim Intermodal Center'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Honda Center.jpg', 'Urbanize LA']},
