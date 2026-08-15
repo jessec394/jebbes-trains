@@ -5,7 +5,7 @@ Modes = {
     "Heavy Metro":     {"Name": "Heavy Metro",     "Weight": 6.0, "StationSize": 7.5, "MajorScale": 1.5, "TapersAtCityZoom": True,  "Color": "#EB0D0D", "zOrder": 7},
     "Light Metro":     {"Name": "Light Metro",     "Weight": 6.0, "StationSize": 6.5, "MajorScale": 1.4, "TapersAtCityZoom": True,  "Color": "#D87B16", "zOrder": 6},
     "Light Rail":      {"Name": "Light Rail",      "Weight": 3.0, "StationSize": 5.5, "MajorScale": 1.3, "TapersAtCityZoom": True,  "Color": "#43A047", "zOrder": 4},
-    "Streetcar":       {"Name": "Streetcar",       "Weight": 3.0, "StationSize": 4.5, "MajorScale": 1.25,"TapersAtCityZoom": True,  "Color": "#EBCC1C", "zOrder": 5},
+    "Streetcar":       {"Name": "Streetcar",       "Weight": 2.0, "StationSize": 4.5, "MajorScale": 1.25,"TapersAtCityZoom": True,  "Color": "#EBCC1C", "zOrder": 5},
     "Monorail":        {"Name": "Monorail",        "Weight": 3.0, "StationSize": 5.0, "MajorScale": 1.3, "TapersAtCityZoom": True,  "Color": "#808080", "zOrder": 8},
     "Peoplemover":     {"Name": "Peoplemover",     "Weight": 2.0, "StationSize": 4.0, "MajorScale": 1.2, "TapersAtCityZoom": True,  "Color": "#2D2D2D", "zOrder": 8},
 }
