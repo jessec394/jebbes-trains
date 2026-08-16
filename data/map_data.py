@@ -442,6 +442,7 @@ Nodes = {
 	"Nashville Capitol Junction W": {'Location': (36.163960, -86.786400)},
 	"Nashville East Junction": {'Location': (36.145800, -86.770200)},
 	"Nashville North Junction": {'Location': (36.167280, -86.790580)},
+	"Nashville Riverfront Bend": {'Location': (36.156060, -86.762240)},
 	"New Orleans Airport Bend N": {'Location': (30.003870, -90.244770)},
 	"New Orleans Airport Bend S": {'Location': (29.982200, -90.251720)},
 	"New Orleans Canal St Junction": {'Location': (29.951380, -90.065980)},
@@ -580,7 +581,6 @@ Nodes = {
 	"Raleigh Fairgrounds Junction": {'Location': (35.794270, -78.705840)},
 	"Raleigh West Junction": {'Location': (35.777660, -78.650110)},
 	"Ridgewood Junction": {'Location': (40.969550, -74.126640)},
-	"Riverfront Bend": {'Location': (36.156060, -86.762240)},
 	"Riverside Junction": {'Location': (34.065580, -117.328090)},
 	"Rock Island 63rd St Bend": {'Location': (41.780710, -87.628060)},
 	"Rock Island HSR Split": {'Location': (41.691040, -87.661340)},
@@ -595,10 +595,16 @@ Nodes = {
 	"SLC Central Pointe Junction": {'Location': (40.722330, -111.896870)},
 	"SLC Courthouse Junction": {'Location': (40.760650, -111.891080)},
 	"SLC Delta Junction": {'Location': (40.769350, -111.902530)},
+	"SLC North Bend": {'Location': (40.766700, -111.904960)},
+	"SLC North Junction (New)": {'Location': (40.769350, -111.905240)},
+	"SLC North Junction (Old)": {'Location': (40.769270, -111.911700)},
 	"SLC North Temple Bend": {'Location': (40.771600, -111.902520)},
 	"SLC Planetarium Bend": {'Location': (40.765000, -111.902520)},
-	"SLC Rio Grande Junction N": {'Location': (40.764990, -111.905340)},
-	"SLC Rio Grande Junction S": {'Location': (40.760600, -111.905380)},
+	"SLC Rio Grande Bend": {'Location': (40.760600, -111.905360)},
+	"SLC Rio Grande Junction": {'Location': (40.764990, -111.905280)},
+	"SLC Salt Lake Bend": {'Location': (40.666960, -112.368880)},
+	"SLC South Bend": {'Location': (40.749780, -111.905130)},
+	"SLC South Junction": {'Location': (40.743340, -111.908610)},
 	"SLC Temple Bend": {'Location': (40.769350, -111.891100)},
 	"SLC University Junction": {'Location': (40.762310, -111.835670)},
 	"STL 270 Bend": {'Location': (38.774590, -90.341400)},
@@ -928,7 +934,7 @@ Stations = {
     "16th/Arapahoe": {'Location': (39.747840, -104.995690)},
     "16th/Blake": {'Location': (39.750560, -104.999160)},
     "16th/Court": {'Location': (39.742500, -104.988710)},
-    "16th/Mall Loop": {'Location': (39.745530, -104.992640)},
+    "16th/Mall Loop": {'Location': (39.745530, -104.992640), 'Major': True},
     "16th/Platte": {'Location': (39.757370, -105.008100)},
     "170 St [Grand Concourse]": {'Location': (40.838740, -73.913760)},
     "170 St [Jerome]": {'Location': (40.840220, -73.917700)},
@@ -1838,7 +1844,9 @@ Stations = {
     "Augusta & Queen": {'Location': (43.647940, -79.399870)},
     "Augusta Green": {'Location': (39.883050, -86.236470)},
     "Auraria": {'Location': (39.740310, -105.009920)},
-    "Auraria West": {'New-Heavy': {'Location': (39.74179, -105.01301)}, 'New-Light': {'Location': (39.740502, -105.008794)}, 'Old-Light': {'Location': (39.74164, -105.01091)}},
+    "Auraria West [New-Heavy]": {'Location': (39.741790, -105.013010)},
+    "Auraria West [New-Light]": {'Location': (39.740502, -105.008794)},
+    "Auraria West [Old-Light]": {'Location': (39.741640, -105.010910)},
     "Aurora Metro Center": {'Location': (39.708531, -104.819082)},
     "Aurora [Denver]": {'Location': (39.740230, -104.837610)},
     "Aurora [IL]": {'Location': (41.761350, -88.308370)},
@@ -1952,7 +1960,7 @@ Stations = {
     "Baltimore Ave-New Center": {'Location': (42.368400, -83.072090), 'Major': True},
     "Baltimore Ave-UMD": {'Location': (38.985450, -76.936830)},
     "Baltimore Highlands": {'Location': (39.235200, -76.632810)},
-    "Baltimore Penn Station": {'Location': (39.307430, -76.615690), 'Major': True},
+    "Baltimore Penn Station": {'LRT': {'Location': (39.30776, -76.61609), 'Major': True, 'Label': 'Penn Station'}, 'Main': {'Location': (39.30772, -76.61541), 'Major': True}},
     "Baltimore Street": {'Location': (42.368670, -83.072276)},
     "Baltle": {'Location': (21.053590, -77.122650)},
     "Bancroft St [Des Moines]": {'Location': (41.570330, -93.622910)},
@@ -5037,7 +5045,7 @@ Stations = {
     "Güira de Melena": {'Location': (22.798860, -82.507070)},
     "H St": {'Location': (32.630170, -117.095550)},
     "HSBC": {'Location': (27.941910, -82.451970)},
-    "Habana Casablanca Station": {'Location': (23.142340, -82.342310), 'Major': True},
+    "Habana Estación Casablanca": {'Location': (23.142340, -82.342310), 'Major': True},
     "Habana Estación Central": {'Location': (23.129470, -82.355530), 'Major': True},
     "Habana Estación Tulipán": {'Location': (23.115600, -82.392550), 'Major': True},
     "Hacienda": {'Location': (36.094136, -115.136863)},
@@ -5152,8 +5160,8 @@ Stations = {
     "Hartford Union Station": {'Location': (41.768810, -72.681570), 'Major': True},
     "Hartsdale": {'Location': (41.011150, -73.795600)},
     "Harvard Avenue": {'Location': (42.350640, -71.130590)},
+    "Harvard [Boston]": {'Location': (42.373360, -71.118950)},
     "Harvard [IL]": {'Location': (42.419850, -88.617500)},
-    "Harvard [University]": {'Location': (42.373360, -71.118950)},
     "Harvey [BC]": {'Location': (52.958330, -119.446820)},
     "Harvey [IL]": {'Location': (41.609740, -87.643060)},
     "Hastings Cannon Rd": {'Location': (29.500990, -95.268380)},
@@ -5280,6 +5288,7 @@ Stations = {
     "Highland [Boston]": {'Location': (42.284990, -71.153980)},
     "Highland [Philadelphia]": {'Location': (40.070440, -75.211260)},
     "Highland [Pittsburgh]": {'Location': (40.348370, -80.039790)},
+    "Highland [Salt Lake City]": {'Location': (40.722640, -111.856710)},
     "Highland/Griffith": {'Location': (41.529890, -87.463910)},
     "Highlands": {'Location': (41.805110, -87.918270)},
     "Highmark Stadium": {'Location': (42.773590, -78.789710)},
@@ -5371,7 +5380,7 @@ Stations = {
     "Houston [BC]": {'Location': (54.400320, -126.650350)},
     "Houston [Houston]": {'Location': (29.767290, -95.372340)},
     "Houston [San Antonio]": {'Location': (29.424010, -98.426810)},
-    "Houston [TX]": {'New': {'Location': (29.76564, -95.35964), 'Major': True}, 'Old': {'Location': (29.7674, -95.3675), 'Major': True}},
+    "Houston [TX]": {'New': {'Location': (29.76564, -95.35964), 'Major': True, 'Label': 'Houston Central Station'}, 'Old': {'Location': (29.7674, -95.3675), 'Major': True}},
     "Houston-Strabane": {'Location': (40.249160, -80.205840)},
     "Howard & St. Charles": {'Location': (29.942770, -90.072710)},
     "Howard Beach": {'AirTrain': {'Location': (40.66105, -73.82964)}, 'Subway': {'Location': (40.66041, -73.83027), 'Type': 'Airport'}},
@@ -6950,6 +6959,7 @@ Stations = {
     "Mitras": {'Location': (25.705990, -100.342440)},
     "Mixcoac": {'Location': (19.376160, -99.187820)},
     "Mixiuhca": {'Location': (19.408420, -99.113250)},
+    "Moab": {'Location': (38.600150, -109.605140)},
     "Moana Ln": {'Location': (39.492610, -119.796850)},
     "Moapa": {'Location': (36.684060, -114.621230)},
     "Mobile": {'Location': (30.690850, -88.038290)},
@@ -8469,7 +8479,7 @@ Stations = {
     "Rinconada del Bosque": {'Location': (20.692320, -103.441880)},
     "Rincón": {'Location': (22.952230, -82.414870)},
     "Rio Cauto": {'Location': (20.558910, -76.914720)},
-    "Rio Grande Depot": {'Location': (40.762830, -111.905310), 'Major': True},
+    "Rio Grande Depot": {'LRT': {'Location': (40.76281, -111.90528), 'Major': True}, 'Main': {'Location': (40.76281, -111.90499), 'Major': True, 'Label': 'Salt Lake Rio Grande Depot'}},
     "Rio Vista": {'Location': (32.773650, -117.141810)},
     "Rippon": {'Location': (38.612460, -77.253760)},
     "Rising Sun": {'Location': (40.025840, -75.122130)},
@@ -8797,7 +8807,6 @@ Stations = {
     "Salisbury [MD]": {'Location': (38.354760, -75.599340)},
     "Salisbury [NC]": {'Location': (35.667360, -80.466190)},
     "Salt Lake Central Station": {'Main': {'Location': (40.76256, -111.90906), 'Major': True}, 'TRAX': {'Location': (40.76172, -111.9083), 'Major': True, 'Label': 'Salt Lake Central'}},
-    "Salt Lake Rio Grande Depot": {'Location': (40.762840, -111.904690), 'Major': True},
     "Saltillo": {'Location': (25.449270, -101.002840)},
     "Salto del Agua": {'1': {'Location': (19.42695, -99.1434)}, '8': {'Location': (19.42718, -99.14207)}},
     "Sam Furr": {'Location': (35.440250, -80.843520)},
@@ -10940,7 +10949,7 @@ Segments = {
     },
     "-Intercity HS (Baltimore - Newark)": {
         "F": ['Washington Regional Rail (Union - Newark)'],
-        "Keep": ['Baltimore Penn Station'],
+        "Keep": ['Baltimore Penn Station {Main}'],
     },
     "-Intercity HS (Boston - Providence)": {
         "F": ['-Intercity LS (Boston - Providence)'],
@@ -11002,7 +11011,7 @@ Segments = {
         "F": ['-Intercity LS (Detroit - Windsor)'],
     },
     "-Intercity HS (Fort Worth - San Antonio)": {
-        "F": ['Fort Worth Approach (Central - South)', 'Burleson', 'Waco', 'Austin-Bergstrom International Airport', 'San Marcos', 'New Braunfels [TX]', 'San Antonio Approach (Downtown - North N)'],
+        "F": ['Fort Worth Approach (Central - South)', 'Burleson', 'Waco', 'Austin-Bergstrom International Airport', 'San Marcos', 'New Braunfels [TX]', '[R] San Antonio Approach (Downtown - North N)'],
     },
     "-Intercity HS (Indianapolis - Cincinnati)": {
         "F": ['Indianapolis Approach (Union - East)', '[R] Cincinnati Approach (Union - North)'],
@@ -11160,7 +11169,7 @@ Segments = {
     },
     "-Intercity HS (Washington - Baltimore)": {
         "F": ['-Intercity LS (Washington - Baltimore)'],
-        "Keep": ['Washington Union Station {Main}', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station'],
+        "Keep": ['Washington Union Station {Main}', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station {Main}'],
     },
     "-Intercity HS (Washington - Boston)": {
         "F": ['[R] -Intercity HS (New York - Washington)', '-Intercity HS (New York - Boston)'],
@@ -11455,7 +11464,7 @@ Segments = {
     "-Intercity LS (Chicago - Emeryville)": {
         "Drop": ['Oakland Jack London Station'],
         "F": ['-Intercity LS (Chicago - Oakland)'],
-        "Swap": [('Salt Lake Rio Grande Depot', 'Salt Lake Central Station {Main}')],
+        "Swap": [('Salt Lake City Approach (Rio Grande - North)', 'Salt Lake City Approach (Central - North)'), ('Salt Lake City Approach (Rio Grande - South)', 'Salt Lake City Approach (Central - South)')],
     },
     "-Intercity LS (Chicago - Fort Wayne)": {
         "F": ['-Intercity LS (Chicago - Valparaiso)', 'Plymouth [IN]', 'Warsaw', 'Columbia City [IN]', 'Fort Wayne'],
@@ -11543,7 +11552,7 @@ Segments = {
         "Swap": [('Buffalo Central Terminal', 'Depew-Buffalo')],
     },
     "-Intercity LS (Chicago - Oakland)": {
-        "F": ['-Intercity LS (Chicago - Denver)', '-Intercity LS (Denver Main - Salt Lake City)', 'Wendover', 'Elko', 'Winnemucca', 'Reno', 'Truckee', 'Colfax', '[R] -Intercity LS (Oakland - Auburn)'],
+        "F": ['-Intercity LS (Chicago - Denver)', '-Intercity LS (Denver Main - Salt Lake City)', 'Salt Lake City Approach (Rio Grande - North)', '[X] SLC Salt Lake Bend', 'Wendover', 'Elko', 'Winnemucca', 'Reno', 'Truckee', 'Colfax', '[R] -Intercity LS (Oakland - Auburn)'],
         "Skip": ['Richmond [CA]', 'Suisun-Fairfield', 'Fairfield-Vacaville'],
     },
     "-Intercity LS (Chicago - Omaha via Des Moines)": {
@@ -11858,7 +11867,7 @@ Segments = {
         "F": ['-Intercity LS (Denver Main - Westridge)', 'Castle Rock', 'Monument', 'USAF Academy', 'Colorado Springs', 'Pueblo Union Depot'],
     },
     "-Intercity LS (Denver Main - Salt Lake City)": {
-        "F": ['-Intercity LS (Denver Main - Kremmling)', 'Glenwood Springs ', 'Grand Junction', 'Green River', 'Helper', '[R] -Intercity LS (Salt Lake City - Provo)'],
+        "F": ['-Intercity LS (Denver Main - Kremmling)', 'Glenwood Springs ', 'Grand Junction', '[R] -Intercity LS (Salt Lake City - Green River)'],
         "Skip": ['Winter Park Resort', 'Kremmling'],
     },
     "-Intercity LS (Denver Main - Shelby)": {
@@ -12812,13 +12821,19 @@ Segments = {
     "-Intercity LS (Salt Lake City - Cheyenne)": {
         "F": ['-Intercity LS (Salt Lake City - Ogden)', 'Evanston [UT]', 'Rock Springs', 'Rawlins', 'Laramie [WY]', 'Cheyenne [WY]'],
     },
+    "-Intercity LS (Salt Lake City - Green River)": {
+        "F": ['-Intercity LS (Salt Lake City - Provo)', 'Helper', 'Green River'],
+    },
+    "-Intercity LS (Salt Lake City - Moab)": {
+        "F": ['-Intercity LS (Salt Lake City - Green River)', 'Moab'],
+    },
     "-Intercity LS (Salt Lake City - Ogden)": {
         "F": ['Salt Lake City FrontRunner (Rio Grande - Ogden)'],
-        "Keep": ['Salt Lake Rio Grande Depot', 'Ogden'],
+        "Keep": ['Rio Grande Depot {Main}', 'Ogden'],
     },
     "-Intercity LS (Salt Lake City - Provo)": {
         "F": ['Salt Lake City FrontRunner (Rio Grande - Provo)'],
-        "Keep": ['Salt Lake Rio Grande Depot', 'Provo Central Station'],
+        "Keep": ['Rio Grande Depot {Main}', 'Provo Central Station'],
     },
     "-Intercity LS (Salt Lake City - Seattle)": {
         "F": ['-Intercity LS (Seattle - Portland)', '-Intercity LS (Portland - Salt Lake City)'],
@@ -13055,11 +13070,11 @@ Segments = {
     },
     "-Intercity LS (Washington - Baltimore)": {
         "F": ['Washington Regional Rail (Union - Baltimore)'],
-        "Keep": ['Washington Union Station {Main}', 'New Carrollton', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station'],
+        "Keep": ['Washington Union Station {Main}', 'New Carrollton', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station {Main}'],
     },
     "-Intercity LS (Washington - Boston Express)": {
         "F": ['-Intercity LS (Washington - Boston)'],
-        "Keep": ['Washington Union Station {Main}', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station', 'Wilmington [DE]', 'Philadelphia 30th Street Station', 'Trenton Transit Center', 'Metropark', 'Newark Penn Station {Main}', 'New York Penn Station', 'Stamford', 'New Haven Union Station', 'New London', 'Providence', 'Route 128', 'Boston South Station'],
+        "Keep": ['Washington Union Station {Main}', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station {Main}', 'Wilmington [DE]', 'Philadelphia 30th Street Station', 'Trenton Transit Center', 'Metropark', 'Newark Penn Station {Main}', 'New York Penn Station', 'Stamford', 'New Haven Union Station', 'New London', 'Providence', 'Route 128', 'Boston South Station'],
     },
     "-Intercity LS (Washington - Boston)": {
         "F": ['[R] -Intercity LS (New York - Washington)', '-Intercity LS (New York - Boston)'],
@@ -13089,7 +13104,7 @@ Segments = {
     },
     "-Intercity LS (Washington - Newark)": {
         "F": ['Washington Regional Rail (Union - Newark)'],
-        "Keep": ['Washington Union Station {Main}', 'New Carrollton', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station', 'Aberdeen [MD]', 'Newark [DE]'],
+        "Keep": ['Washington Union Station {Main}', 'New Carrollton', 'BWI Thurgood Marshall Airport', 'Baltimore Penn Station {Main}', 'Aberdeen [MD]', 'Newark [DE]'],
     },
     "-Intercity LS (Washington - Newport News)": {
         "F": ['-Intercity LS (Washington - Richmond)', 'Richmond-Main St', 'Williamsburg Transportation Center', 'Newport News'],
@@ -13389,7 +13404,7 @@ Segments = {
         "F": ['Baltimore Light Rail (Midtown - Camden)', 'Hamburg St', 'Westport [MD]', 'Cherry Hill [MD]', 'Patapsco', 'Baltimore Highlands', 'Nursery Road', 'North Linthicum', 'Linthicum'],
     },
     "Baltimore Light Rail (Penn - Camden)": {
-        "F": ['Baltimore Penn Station', 'Baltimore Light Rail (Midtown - Camden)'],
+        "F": ['Baltimore Penn Station {LRT}', 'Baltimore Light Rail (Midtown - Camden)'],
     },
     "Baltimore Subway (Johns Hopkins - Owings Mills)": {
         "F": ['Johns Hopkins', 'Shot Tower', 'Charles Center', 'Lexington Market {Subway}', 'State Center', 'Upton', 'Penn-North', 'Mondawmin', 'West Cold Spring', 'Rogers Ave', 'Reisterstown Plaza', 'Milford Mill', 'Old Court', 'Owings Mills'],
@@ -13589,7 +13604,7 @@ Segments = {
         "F": ['Boston T Subway (Alewife - Savin Hill)', 'North Quincy', 'Wollaston', 'Quincy Center', 'Quincy Adams'],
     },
     "Boston T Subway (Alewife - Savin Hill)": {
-        "F": ['Alewife', 'Davis [Boston]', 'Porter', 'Harvard [University]', 'Central [Cambridge]', 'Kendall/MIT', 'Charles/MGH', 'Park Street', 'Downtown Crossing', 'Boston South Station', 'Broadway [Boston]', 'Andrew', 'JFK/UMass', 'Savin Hill'],
+        "F": ['Alewife', 'Davis [Boston]', 'Porter', 'Harvard [Boston]', 'Central [Cambridge]', 'Kendall/MIT', 'Charles/MGH', 'Park Street', 'Downtown Crossing', 'Boston South Station', 'Broadway [Boston]', 'Andrew', 'JFK/UMass', 'Savin Hill'],
     },
     "Boston T Subway (Bowdoin - Wonderland)": {
         "F": ['Bowdoin', 'Government Center [Boston]', 'State [Boston]', 'Aquarium [Boston]', 'Maverick', 'Airport [BOS] {T}', 'Wood Island', 'Orient Heights', 'Suffolk Downs', 'Beachmont', 'Revere Beach', 'Wonderland'],
@@ -14402,7 +14417,7 @@ Segments = {
     "Denver Commuter Rail (Union North - Westridge)": {
         "Drop": ['Empower Field at Mile High', 'Denver Auraria Junction'],
         "F": ['Denver Light Rail (Union - Littleton)', 'Westridge'],
-        "Swap": [('Auraria West {Old-Light}', 'Auraria West {New-Heavy}'), ('Lincoln Park [Denver] {Old}', 'Lincoln Park [Denver] {New}')],
+        "Swap": [('Auraria West [Old-Light]', 'Auraria West [New-Heavy]'), ('Lincoln Park [Denver] {Old}', 'Lincoln Park [Denver] {New}')],
     },
     "Denver Commuter Rail (Union North - Wheat Ridge)": {
         "F": ['Denver Commuter Rail (Union North - Pecos Junction)', 'Clear Creek & Federal', '60th & Sheridan', 'Olde Town Arvada', 'Arvada Ridge', 'Wheat Ridge & Ward'],
@@ -14455,7 +14470,7 @@ Segments = {
         "F": ['Denver Light Rail (I-25 - Belleview)', 'Denver Light Rail (Belleview - Ridgegate)'],
     },
     "Denver Light Rail (Jefferson County - Loop)": {
-        "F": ['[R] Denver Light Rail (Decatur - Jefferson County)', 'Auraria West {New-Light}', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
+        "F": ['[R] Denver Light Rail (Decatur - Jefferson County)', 'Auraria West [New-Light]', '[X] Denver Auraria Junction', 'Colfax at Auraria', 'Theatre District/Convention Center'],
         "L": ['Denver Light Rail (Loop Approach West)'],
     },
     "Denver Light Rail (Littleton - Loop)": {
@@ -14475,7 +14490,7 @@ Segments = {
         "Swap": [('Lincoln Park [Denver] {Old}', 'Lincoln Park [Denver] {New}')],
     },
     "Denver Light Rail (Union - Auraria)": {
-        "F": ['Denver Union Station {North}', 'Ball Arena/Elitch Gardens', 'Empower Field at Mile High', 'Auraria West {Old-Light}'],
+        "F": ['Denver Union Station {North}', 'Ball Arena/Elitch Gardens', 'Empower Field at Mile High', 'Auraria West [Old-Light]'],
     },
     "Denver Light Rail (Union - I-25)": {
         "F": ['Denver Light Rail (Union - Auraria)', '[X] Denver Auraria Junction', 'Lincoln Park [Denver] {Old}', 'Alameda [Denver-LRT]', 'I-25 & Broadway'],
@@ -14673,7 +14688,7 @@ Segments = {
         "F": ['100 y Boyeros', 'Reloj Club', 'CUJAE', 'Fontanar', 'Mazorra', 'Abel Santamaría', 'Wajay', 'Murgas', 'Rincón'],
     },
     "Habana Suburban Rail (Casablanca - Matanzas)": {
-        "F": ['Habana Casablanca Station', 'Guiteras', 'Guanabacoa', 'Barreras', 'Las Playas', 'Guanabo Viejo', 'Hershey', 'Canasí', 'Mantazas'],
+        "F": ['Habana Estación Casablanca', 'Guiteras', 'Guanabacoa', 'Barreras', 'Las Playas', 'Guanabo Viejo', 'Hershey', 'Canasí', 'Mantazas'],
     },
     "Habana Suburban Rail (Central - Bejucal)": {
         "F": ['Habana Suburban Rail (Central - El Galapago)', 'Calabazar', 'Berenguer', 'General Peraza', 'Aeropuerto Terminal 1', 'Santiago de las Vegas', 'Rincón', 'Bejucal'],
@@ -15769,7 +15784,7 @@ Segments = {
         "F": ['[R] Nashville Light Rail (Central - West Nashville)', 'Nashville Light Rail (Central - Dickerson)'],
     },
     "Nashville Regional Rail (Riverfront - Lebanon)": {
-        "F": ['Riverfront', '[X] Riverfront Bend', 'Donelson [Regional]', 'Hermitage', 'Mt. Juliet', 'Martha', 'Hamilton Springs', 'Lebanon [TN]'],
+        "F": ['Riverfront', '[X] Nashville Riverfront Bend', 'Donelson [Regional]', 'Hermitage', 'Mt. Juliet', 'Martha', 'Hamilton Springs', 'Lebanon [TN]'],
     },
     "Nashville Regional Rail (Union - Amqui)": {
         "F": ['Nashville Approach (Union - North)', 'East Bank [Nashville]', 'Greenwood [TN]', 'Briley Pkwy', 'Madison [TN]', 'Amqui [TN]'],
@@ -17066,21 +17081,36 @@ Segments = {
     "Sacramento Regional Rail (Valley - Stockton)": {
         "F": ['Sacramento Regional Rail (Valley - Galt)', 'Lodi', 'Stockton-Cabral'],
     },
+    "Salt Lake City Approach (Central - North)": {
+        "F": ['Salt Lake Central Station {Main}', '[X] SLC North Junction (Old)'],
+    },
+    "Salt Lake City Approach (Central - South)": {
+        "F": ['Salt Lake Central Station {Main}', '[X] SLC South Junction'],
+    },
+    "Salt Lake City Approach (Rio Grande - North)": {
+        "F": ['Rio Grande Depot {Main}', '[X] SLC North Bend', '[X] SLC North Junction (New)'],
+    },
+    "Salt Lake City Approach (Rio Grande - South)": {
+        "F": ['Rio Grande Depot {Main}', '[X] SLC South Bend', '[X] SLC South Junction'],
+    },
     "Salt Lake City FrontRunner (Provo - Ogden)": {
         "F": ['[R] Salt Lake City FrontRunner (Rio Grande - Provo)', 'Salt Lake City FrontRunner (Rio Grande - Ogden)'],
     },
     "Salt Lake City FrontRunner (Provo - Ogden) [Old]": {
         "F": ['Salt Lake City FrontRunner (Provo - Ogden)'],
-        "Swap": [('Salt Lake Rio Grande Depot', 'Salt Lake Central Station {Main}')],
+        "Swap": [('Salt Lake City Approach (Rio Grande - North)', 'Salt Lake City Approach (Central - North)'), ('Salt Lake City Approach (Rio Grande - South)', 'Salt Lake City Approach (Central - South)')],
     },
     "Salt Lake City FrontRunner (Rio Grande - Ogden)": {
-        "F": ['Salt Lake Rio Grande Depot', 'North Temple', 'Woods Cross', 'Farmington', 'Layton', 'Clearfield', 'Roy', 'Ogden'],
+        "F": ['Salt Lake City Approach (Rio Grande - North)', 'North Temple', 'Woods Cross', 'Farmington', 'Layton', 'Clearfield', 'Roy', 'Ogden'],
     },
     "Salt Lake City FrontRunner (Rio Grande - Provo)": {
-        "F": ['Salt Lake Rio Grande Depot', 'Murray Central {Main}', 'South Jordan', 'Draper', 'Lehi', 'American Fork', 'Vineyard', 'Orem Central', 'Provo Central Station'],
+        "F": ['Salt Lake City Approach (Rio Grande - South)', 'Murray Central {Main}', 'South Jordan', 'Draper', 'Lehi', 'American Fork', 'Vineyard', 'Orem Central', 'Provo Central Station'],
     },
     "Salt Lake City Streetcar (Central Pointe - Fairmont)": {
         "F": ['Central Pointe', '[X] SLC Central Pointe Junction', 'South Salt Lake City', '300 East', '500 East', '700 East', 'Sugarmont', 'Fairmont'],
+    },
+    "Salt Lake City Streetcar (Central Pointe - Highland)": {
+        "F": ['Salt Lake City Streetcar (Central Pointe - Fairmont)', 'Highland [Salt Lake City]'],
     },
     "Salt Lake City TRAX (Airport - Arapeen)": {
         "F": ['Salt Lake City TRAX (Airport - North Temple)', 'Salt Lake City TRAX (Temple - Rio Grande)', 'Pioneer Park', '[R] Salt Lake City TRAX (South Campus - Rio Grande)', 'Mario Capecchi', 'Arapeen'],
@@ -17106,13 +17136,13 @@ Segments = {
         "Swap": [('Salt Lake City TRAX (Airport - North Temple)', 'Salt Lake City TRAX (Central - North Temple)')],
     },
     "Salt Lake City TRAX (Central - North Temple)": {
-        "F": ['Salt Lake Central Station {TRAX}', '[X] SLC Central Bend', 'Old GreekTown', '[X] SLC Rio Grande Junction N', '[X] SLC Planetarium Bend', 'Planetarium', '[X] SLC Delta Junction'],
+        "F": ['Salt Lake Central Station {TRAX}', '[X] SLC Central Bend', 'Old GreekTown', '[X] SLC Rio Grande Junction', '[X] SLC Planetarium Bend', 'Planetarium', '[X] SLC Delta Junction'],
     },
     "Salt Lake City TRAX (Courthouse - Ballpark)": {
         "F": ['[X] SLC Courthouse Junction', 'Courthouse [Salt Lake]', '600 South [East]', 'SLC 700 S Bend E', 'SLC 700 S Bend W', '900 South', 'Ballpark'],
     },
     "Salt Lake City TRAX (Courthouse - Rio Grande)": {
-        "F": ['[X] SLC Courthouse Junction', 'West Temple', 'Pioneer Park', '[X] SLC Rio Grande Junction S'],
+        "F": ['[X] SLC Courthouse Junction', 'West Temple', 'Pioneer Park', '[X] SLC Rio Grande Bend'],
     },
     "Salt Lake City TRAX (South Campus - Courthouse)": {
         "F": ['[X] SLC University Junction', 'University South Campus', 'Stadium [Houston]', '900 East', 'Trolley', 'Library [Salt Lake City]', '[X] SLC Courthouse Junction'],
@@ -17127,7 +17157,7 @@ Segments = {
         "F": ['Salt Lake City TRAX (Temple - Rio Grande)', '[X] SLC 600 S Bend W', '[X] SLC 600 S Bend E', '600 South [West]', '800 South', '300 West', 'Ballpark'],
     },
     "Salt Lake City TRAX (Temple - Rio Grande)": {
-        "F": ['[X] SLC Delta Junction', 'Planetarium', '[X] SLC Planetarium Bend', '[X] SLC Rio Grande Junction N', 'Rio Grande Depot', '[X] SLC Rio Grande Junction S'],
+        "F": ['[X] SLC Delta Junction', 'Planetarium', '[X] SLC Planetarium Bend', '[X] SLC Rio Grande Junction', 'Rio Grande Depot {LRT}', '[X] SLC Rio Grande Bend'],
     },
     "Salt Lake City TRAX (University - Ballpark) [New]": {
         "F": ['Salt Lake City TRAX (University - Rio Grande)', '[X] SLC 600 S Bend W', '[X] SLC 600 S Bend E', '600 South [West]', '800 South', '300 West', 'Ballpark'],
@@ -17949,11 +17979,14 @@ Segments = {
     "Washington Regional Rail (Alexandria - Newark)": {
         "F": ['[R] Washington Regional Rail (Union - Alexandria)', 'Washington Regional Rail (Union - Newark)'],
     },
+    "Washington Regional Rail (Baltimore - Perryville)": {
+        "F": ['Baltimore Penn Station {Main}', 'Martin State Airport', 'Edgewood [MD]', 'Aberdeen [MD]', 'Perryville'],
+    },
     "Washington Regional Rail (Union - Alexandria)": {
         "F": ['Washington Union Station {Main}', '[X] Washington South Bend', "L'Enfant {Mainline}", "[X] Washington L'Enfant Bend", '[X] Washington Potomac Junction N', '[X] Washington Potomac Junction S', 'Crystal City {VRE}', '[X] Potomac Yard', '[X] Braddock Road', 'Alexandria [VA] {Metro}'],
     },
     "Washington Regional Rail (Union - Baltimore)": {
-        "F": ['Washington Union Station {Main}', '[X] NoMa-Gallaudet U', '[X] Cheverly', '[X] Landover', 'New Carrollton', 'Seabrook', 'Bowie State', 'Odenton', 'BWI Thurgood Marshall Airport', 'Halethorpe', 'West Baltimore', '[X] Baltimore West Bend', 'Baltimore Penn Station'],
+        "F": ['Washington Union Station {Main}', '[X] NoMa-Gallaudet U', '[X] Cheverly', '[X] Landover', 'New Carrollton', 'Seabrook', 'Bowie State', 'Odenton', 'BWI Thurgood Marshall Airport', 'Halethorpe', 'West Baltimore', '[X] Baltimore West Bend', 'Baltimore Penn Station {Main}'],
     },
     "Washington Regional Rail (Union - Camden)": {
         "F": ['Washington Union Station {Main}', '[X] NoMa-Gallaudet U', 'Riverdale [Washington]', 'College Park [Washington]', 'Greenbelt', 'Muirkirk', 'Laurel [MD]', 'Laurel Racetrack', 'Savage', 'Jessup [MD]', 'Dorsey', 'St. Denis', '[X] Hamburg St', '[X] Camden Yards', 'Camden [Baltimore]'],
@@ -17972,9 +18005,6 @@ Segments = {
     },
     "Washington Regional Rail (Union - Perryville)": {
         "F": ['Washington Regional Rail (Union - Baltimore)', 'Washington Regional Rail (Baltimore - Perryville)'],
-    },
-    "Washington Regional Rail (Baltimore - Perryville)": {
-        "F": ['Baltimore Penn Station', 'Martin State Airport', 'Edgewood [MD]', 'Aberdeen [MD]', 'Perryville'],
     },
     "Washington Regional Rail (Union - Point of Rocks)": {
         "F": ['Washington Union Station {Main}', '[X] NoMa-Gallaudet U', '[X] Rhode Island Ave-Brentwood', '[X] Brookland-CUA', '[X] Fort Totten', '[X] Takoma', 'Silver Spring', '[X] Woodside/16th St', 'Kensington [MD]', 'Garrett Park', '[X] Twinbrook', 'Rockville', '[X] Shady Grove', 'Washington Grove', 'Gaithersburg', 'Metropolitan Grove', 'Germantown [MD]', 'Boyds', 'Barnesville', 'Dickerson', '[X] Point of Rocks Junction'],
@@ -18570,6 +18600,11 @@ Lines = {
             },
             "Present": {
                 "St. Louis - Kansas City": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (St. Louis - Kansas City)', 'File': '[Amtrak] Missouri River Runner', 'Link': 'https://brouter.damsy.net/latest/#map=9/38.9884/-92.3978/standard&lonlats=-90.203657,38.623152;-90.269133,38.622898;-90.323426,38.597453;-92.170733,38.579473;-94.429979,39.08692;-94.587532,39.085835;-94.429207,39.086578;-92.169762,38.578848;-90.499964,38.539469;-90.267738,38.622754;-90.203647,38.623178&profile=rail'},
+            },
+        },
+        "Moab Service": {
+            "Fantasy": {
+                "Salt Lake City - Moab": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Salt Lake City - Moab)'},
             },
         },
         "Mockingbird": {
@@ -23277,7 +23312,7 @@ Lines = {
         },
         "TRAX S-Line": {
             "Fantasy": {
-                "Central Pointe - Fairmont": {'Mode': 'Streetcar', 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)'},
+                "Central Pointe - Highland": {'Mode': 'Streetcar', 'Stations': 'Salt Lake City Streetcar (Central Pointe - Highland)'},
             },
             "Present": {
                 "Central Pointe - Fairmont": {'Mode': 'Streetcar', 'Stations': 'Salt Lake City Streetcar (Central Pointe - Fairmont)', 'File': '[UTA] TRAX S-Line', 'Link': 'https://brouter.damsy.net/latest/#map=18/40.72286/-111.89538/standard&lonlats=-111.896742,40.723586;-111.861562,40.722776;-111.878114,40.722192;-111.896695,40.723586&profile=rail'},
@@ -23726,7 +23761,7 @@ Destinations = {
         "Georgia Institute of Technology": {"Location": (33.777970, -84.397960), "Stations": ['Midtown [Atlanta]', 'North Ave [Atlanta-MARTA]'], 'Exists': ['Present', 'Fantasy']},
         "Glendale Community College": {"Location": (34.166350, -118.228120), "Stations": ['Glendale Community College'], 'Exists': ['Present', 'Fantasy']},
         "Hartnell College": {"Location": (36.674420, -121.666040), "Stations": ['Salinas'], 'Exists': ['Present', 'Fantasy']},
-        "Harvard University": {"Location": (42.374430, -71.118240), "Stations": ['Harvard [University]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Harvard University.jpg', 'Crimson Education']},
+        "Harvard University": {"Location": (42.374430, -71.118240), "Stations": ['Harvard [Boston]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Harvard University.jpg', 'Crimson Education']},
         "Howard University": {"Location": (38.922680, -77.019430), "Stations": ['Shaw-Howard U'], 'Exists': ['Present', 'Fantasy']},
         "Illinois Instutite of Technology": {"Location": (41.836700, -87.625960), "Stations": ['35th-Bronzeville-IIT'], 'Exists': ['Present', 'Fantasy']},
         "Iowa State University": {"Location": (42.026650, -93.646450), "Stations": ['Iowa State University'], 'Exists': ['Present', 'Fantasy']},
