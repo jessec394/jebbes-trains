@@ -881,7 +881,7 @@ Stations = {
     "12th St [Houston]": {'Location': (29.791170, -95.446000)},
     "12th St/Jefferson": {'Location': (33.447200, -112.055670)},
     "12th St/Washington": {'Location': (33.448250, -112.057190)},
-    "12th Street": {'Location': (33.015330, -96.698590)},
+    "12th Street": {'Light': {'Location': (33.01436, -96.70107)}, 'Heavy': {'Location': (33.01533, -96.69859)}},
     "130th St [Chicago]": {'Location': (41.660370, -87.594800)},
     "130th St [Des Moines]": {'Location': (41.589260, -93.558020)},
     "135 St [Malcolm X]": {'Location': (40.814120, -73.940880)},
@@ -1622,6 +1622,7 @@ Stations = {
     "Allen Rd": {'Location': (42.281340, -83.188060)},
     "Allen Toussaint Blvd": {'Location': (30.022640, -90.061140)},
     "Allen [Los Angeles]": {'Location': (34.152430, -118.113940)},
+    "Allen [TX]": {'Location': (33.102460, -96.669780)},
     "Allen [Waterloo]": {'Location': (43.459830, -80.518390)},
     "Allen/Medical Campus": {'Location': (42.899620, -78.869700)},
     "Allendale": {'Location': (41.030870, -74.131150)},
@@ -2915,9 +2916,8 @@ Stations = {
     "Central St [Chicago]": {'Location': (42.064050, -87.698090)},
     "Central St [Detroit]": {'Location': (42.331110, -83.137600)},
     "Central Station": {'Location': (43.453080, -80.499170), 'Major': True},
-    "Central Station Capitol": {'Location': (29.758360, -95.361940)},
+    "Central Station Houston": {'Capitol': {'Location': (29.75836, -95.36194), 'Label': 'Central Station Capitol'}, 'Rusk': {'Location': (29.75769, -95.3626), 'Label': 'Central Station Rusk'}},
     "Central Station Main": {'Location': (29.758880, -95.363410)},
-    "Central Station Rusk": {'Location': (29.757690, -95.362600)},
     "Central West End": {'Location': (38.635990, -90.262440)},
     "Central [Cambridge]": {'Location': (42.365240, -71.103630)},
     "Central [Chicago Blue]": {'Location': (41.870894, -87.776812)},
@@ -3144,7 +3144,6 @@ Stations = {
     "City South/TAMU": {'Location': (29.304950, -98.516350)},
     "City West": {'Location': (44.890513, -93.410989)},
     "CityLine/Bush": {'Location': (33.002130, -96.703190)},
-    "CityLine/Bush (Silver Line)": {'Location': (33.003640, -96.704250)},
     "Cityplace/Uptown": {'Location': (32.805510, -96.793880)},
     "Ciudad Azteca": {'Location': (19.534800, -99.027690)},
     "Ciudad Deportiva [CDMX]": {'Location': (19.408420, -99.091270)},
@@ -3854,6 +3853,7 @@ Stations = {
     "Downtown Lemoore": {'Location': (36.302690, -119.789210)},
     "Downtown Long Beach": {'Location': (33.768050, -118.193130)},
     "Downtown Louisville": {'Location': (39.980578, -105.130698)},
+    "Downtown McKinney": {'Location': (33.196720, -96.610730)},
     "Downtown Plano": {'Location': (33.020930, -96.700820)},
     "Downtown Redmond": {'Location': (47.671650, -122.118480)},
     "Downtown Redondo Beach": {'Location': (33.838070, -118.386110)},
@@ -4358,6 +4358,7 @@ Stations = {
     "Fairview Heights [St. Louis]": {'Location': (38.593610, -90.047800)},
     "Fairview [Nashville]": {'Location': (36.210560, -86.839080)},
     "Fairview [Santa Ana]": {'Location': (33.759850, -117.903770)},
+    "Fairview [TX]": {'Location': (33.159560, -96.631360)},
     "Fairview [Toronto]": {'Location': (43.587520, -79.626740)},
     "Fairview-Pointe-Claire": {'Location': (45.460030, -73.835240)},
     "Fairview/Burlington": {'Location': (41.795410, -87.993990)},
@@ -9467,6 +9468,7 @@ Stations = {
     "Spotsylvania": {'Location': (38.220430, -77.440340)},
     "Spriggsdale": {'Location': (29.419740, -98.440560)},
     "Spring": {'Location': (30.080200, -95.417340)},
+    "Spring Creek Pkwy": {'Location': (33.056340, -96.693150)},
     "Spring District": {'Location': (47.623770, -122.178570)},
     "Spring Forest Rd": {'Location': (35.859110, -78.597800)},
     "Spring Garden": {'Location': (39.960500, -75.140410)},
@@ -9559,6 +9561,7 @@ Stations = {
     "St. Petersburg": {'Location': (27.771410, -82.653340), 'Major': True},
     "St. Vincents Hospital": {'Location': (41.668730, -83.541930)},
     "St. Vital Centre": {'Location': (49.827130, -97.114620)},
+    "Stacy Rd": {'Location': (33.128870, -96.659620)},
     "Stadacona": {'Location': (47.441400, -72.249140)},
     "Stadium District [Cincinnati]": {'Location': (39.096940, -84.511930)},
     "Stadium District [Tacoma]": {'Location': (47.263870, -122.449000)},
@@ -14443,16 +14446,16 @@ Segments = {
     "Dallas Light Rail (Carrollton - Buckner) [Old]": {
         "F": ['[R] Dallas Light Rail (Union - Carrollton)', 'Dallas Light Rail (Union - Buckner)'],
     },
+    "Dallas Light Rail (McKinney - DFW)": {
+        "F": ['[R] Dallas Light Rail (Victory - DFW)', 'Dallas Light Rail (Victory - Plano)', 'Spring Creek Pkwy', 'Allen [TX]', 'Stacy Rd', 'Fairview [TX]', 'Downtown McKinney'],
+    },
     "Dallas Light Rail (Mockingbird - Plano)": {
-        "F": ['SMU/Mockingbird', 'Lovers Lane', 'Park Lane', 'Walnut Hill', 'Forest Lane', 'LBJ/Central', 'Spring Valley [TX]', 'Arapaho Center', 'Galatyn Park', 'CityLine/Bush', 'Downtown Plano', 'Parker Road'],
+        "F": ['SMU/Mockingbird', 'Lovers Lane', 'Park Lane', 'Walnut Hill', 'Forest Lane', 'LBJ/Central', 'Spring Valley [TX]', 'Arapaho Center', 'Galatyn Park', 'CityLine/Bush', '12th Street {Light}', 'Downtown Plano', 'Parker Road'],
     },
     "Dallas Light Rail (Mockingbird - Rowlett)": {
         "F": ['SMU/Mockingbird', 'White Rock [TX]', 'Lake Highlands', 'LBJ/Skillman', 'Forest/Jupiter', 'Downtown Garland [DART]', 'Downtown Rowlett'],
     },
-    "Dallas Light Rail (Plano - DFW) [New]": {
-        "F": ['[R] Dallas Light Rail (Victory - DFW)', 'Dallas Light Rail (Victory - Plano)'],
-    },
-    "Dallas Light Rail (Plano - DFW) [Old]": {
+    "Dallas Light Rail (Plano - DFW)": {
         "F": ['[R] Dallas Light Rail (Union - DFW)', 'Dallas Light Rail (Union - Plano)'],
     },
     "Dallas Light Rail (Plano - Westmoreland)": {
@@ -14525,7 +14528,7 @@ Segments = {
         "F": ['Downtown Carrollton {S}', 'Dallas Regional Rail (Trinity Mills - Denton)'],
     },
     "Dallas Regional Rail (DFW - Plano)": {
-        "F": ['DFW Terminal B', '[X] DFW North Bend', 'Airport North', 'Cypress Waters', 'Downtown Carrollton {N}', 'Addison [TX]', 'Knoll Trail', 'UT Dallas', 'CityLine/Bush (Silver Line)', '12th Street', 'Shiloh Road'],
+        "F": ['DFW Terminal B', '[X] DFW North Bend', 'Airport North', 'Cypress Waters', 'Downtown Carrollton {N}', 'Addison [TX]', 'Knoll Trail', 'UT Dallas', 'CityLine/Bush', '[X] 12th Street {Light}', '12th Street {Heavy}', 'Shiloh Road'],
     },
     "Dallas Regional Rail (DFW - Wylie)": {
         "F": ['Dallas Regional Rail (DFW - Plano)', 'Murphy', 'Woodbridge Pkwy', 'Wylie'],
@@ -14973,12 +14976,12 @@ Segments = {
         "R": ['[R] Houston Light Rail (EaDo - Palm Center)', 'Houston Light Rail (Downtown WB)'],
     },
     "Houston Light Rail (Downtown EB)": {
-        "F": ['[X] Houston Line End', 'Theater District {EB}', 'Central Station Rusk', 'Convention District [LRT] {EB}', '[X] Houston Loop Bend', '[X] Houston Loop Junction', '[X] Houston Loop Approach'],
+        "F": ['[X] Houston Line End', 'Theater District {EB}', 'Central Station Houston {Rusk}', 'Convention District [LRT] {EB}', '[X] Houston Loop Bend', '[X] Houston Loop Junction', '[X] Houston Loop Approach'],
     },
     "Houston Light Rail (Downtown WB)": {
         "Drop": ['Houston Loop Bend'],
         "F": ['[R] Houston Light Rail (Downtown EB)'],
-        "Swap": [('Convention District [LRT] {EB}', 'Convention District [LRT] {WB}'), ('Central Station Rusk', 'Central Station Capitol'), ('Theater District {EB}', 'Theater District {WB}')],
+        "Swap": [('Convention District [LRT] {EB}', 'Convention District [LRT] {WB}'), ('Central Station Houston {Rusk}', 'Central Station Houston {Capitol}'), ('Theater District {EB}', 'Theater District {WB}')],
     },
     "Houston Light Rail (EaDo - Hobby Airport)": {
         "F": ['Houston Light Rail (EaDo - Palm Center)', 'Cullinan Park', 'Golfcrest', 'Park-Broadway', '[X] Houston Hobby Bend', 'Bellfort Ave [LRT]', 'Hobby Airport'],
@@ -19748,10 +19751,10 @@ Lines = {
         },
         "Orange Line": {
             "Fantasy": {
-                "Plano - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - DFW) [New]'},
+                "McKinney - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (McKinney - DFW)'},
             },
             "Present": {
-                "Plano - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - DFW) [Old]', 'File': '[DART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.7916/-96.7593/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.810161,32.782751;-96.815686,32.798288;-96.915143,32.849209;-96.937418,32.876382;-96.95308,32.882245;-96.9854,32.887149;-97.039651,32.912243;-97.039543,32.906456;-97.03523,32.924221;-97.00211,32.900236;-96.985489,32.88709;-96.969194,32.874963;-96.953155,32.882028;-96.937526,32.876323;-96.936139,32.873397;-96.915389,32.849;-96.894672,32.847405;-96.852491,32.838599;-96.80949,32.780513;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
+                "Plano - DFW Airport": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Plano - DFW)', 'File': '[DART] Orange Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.7916/-96.7593/standard&lonlats=-96.700813,33.034427;-96.701295,33.015969;-96.715484,32.97567;-96.737591,32.941151;-96.746485,32.926977;-96.757386,32.913674;-96.766055,32.873469;-96.768125,32.864826;-96.793231,32.807886;-96.810161,32.782751;-96.815686,32.798288;-96.915143,32.849209;-96.937418,32.876382;-96.95308,32.882245;-96.9854,32.887149;-97.039651,32.912243;-97.039543,32.906456;-97.03523,32.924221;-97.00211,32.900236;-96.985489,32.88709;-96.969194,32.874963;-96.953155,32.882028;-96.937526,32.876323;-96.936139,32.873397;-96.915389,32.849;-96.894672,32.847405;-96.852491,32.838599;-96.80949,32.780513;-96.798939,32.782394;-96.79329,32.787175;-96.792727,32.789205;-96.793027,32.806894;-96.772546,32.843912;-96.765025,32.872973;-96.764692,32.886885;-96.747526,32.924464;-96.736963,32.941259;-96.714894,32.976142;-96.702577,33.003022;-96.700609,33.029263;-96.700886,33.034428&profile=rail'},
             },
         },
         "Red Line": {
