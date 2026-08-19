@@ -6802,6 +6802,7 @@ Stations = {
     "Mazatlán": {'Location': (23.246910, -106.408930), 'Major': True},
     "Mazorra": {'Location': (23.012130, -82.401750)},
     "McAdam": {'Location': (45.596550, -67.325650)},
+    "McAlester": {'Location': (34.932520, -95.770240)},
     "McAndrews Rd": {'Location': (44.759770, -93.217740)},
     "McBride": {'Location': (53.300550, -120.170300)},
     "McCarthy": {'Location': (47.860130, -74.348000)},
@@ -9252,6 +9253,7 @@ Stations = {
     "Sherman [Hamilton]": {'Location': (43.251330, -79.838890)},
     "Sherman [Los Angeles-G]": {'Location': (34.201200, -118.448780)},
     "Sherman [Los Angeles-R]": {'Location': (34.201570, -118.536060)},
+    "Sherman [TX]": {'Location': (33.638390, -96.603050)},
     "Shields Ave": {'Location': (36.779080, -119.781570)},
     "Shiloh": {'Location': (39.812330, -84.227110)},
     "Shiloh Road": {'Location': (33.012530, -96.665350)},
@@ -11992,6 +11994,10 @@ Segments = {
     "-Intercity LS (Dallas - New Orleans)": {
         "F": ['-Intercity LS (Dallas - Shreveport)', '[R] -Intercity LS (New Orleans - Alexandria)'],
     },
+    "-Intercity LS (Dallas - Prosper)": {
+        "F": ['Dallas Regional Rail (Union - Prosper)'],
+        "Keep": ['Dallas EBJ Union Station {Main}', 'Frisco'],
+    },
     "-Intercity LS (Dallas - San Antonio)": {
         "F": ['-Intercity LS (Dallas - Fort Worth)', '-Intercity LS (Fort Worth - San Antonio)'],
     },
@@ -12004,6 +12010,9 @@ Segments = {
     "-Intercity LS (Dallas - Terrell)": {
         "F": ['Dallas Regional Rail (Union - Terrell)'],
         "Keep": ['Dallas EBJ Union Station {Main}'],
+    },
+    "-Intercity LS (Dallas - Tulsa)": {
+        "F": ['-Intercity LS (Dallas - Prosper)', 'Sherman [TX]', 'McAlester', 'Muskogee', 'Tulsa'],
     },
     "-Intercity LS (Denver Main - Albuquerque)": {
         "F": ['-Intercity LS (Denver Main - Pueblo)', 'Trinidad', 'Raton', 'Las Vegas', 'Lamy', '[R] -Intercity LS (Albuquerque - Kewa)'],
@@ -18737,6 +18746,11 @@ Lines = {
             },
             "Present": {
                 "Fort Worth - Oklahoma City": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Fort Worth - Oklahoma City)', 'File': '[Amtrak] Heartland Flyer', 'Link': 'https://brouter.damsy.net/latest/#map=10/33.1692/-97.2015/standard&lonlats=-97.32367,32.749479;-97.33744,32.785604;-97.509702,35.437282;-97.512484,35.467536;-97.507449,35.432682;-97.357356,32.830037;-97.342705,32.793033;-97.323683,32.749473&profile=rail'},
+            },
+        },
+        "Heartland Twin": {
+            "Fantasy": {
+                "Dallas - Tulsa": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Dallas - Tulsa)'},
             },
         },
         "Hiawatha": {
