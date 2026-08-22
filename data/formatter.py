@@ -10,9 +10,9 @@ def formatCoordinates(tuple):
 output = ""
 
 output += "Modes = {\n"
-for key in sorted(Modes.keys()):
+for key in (Modes.keys()):
     content = Modes[key]
-    inner_parts = [f"{repr(k)}: {repr(content[k])}" for k in sorted(content.keys())]
+    inner_parts = [f"{repr(k)}: {repr(content[k])}" for k in (content.keys())]
     output += f'    "{key}": {{{", ".join(inner_parts)}}},\n'
 output += "}\n\n"
 
