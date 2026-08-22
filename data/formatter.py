@@ -7,17 +7,14 @@ file_path = os.path.join(directory, 'map_data.py')
 def formatCoordinates(tuple):
     return f"({tuple[0]:.6f}, {tuple[1]:.6f})"
 
-RadiusNames = {
-    RadiusX: "RadiusX",
-    RadiusL: "RadiusL",
-    RadiusM: "RadiusM",
-    RadiusS: "RadiusS",
-}
+output = ""
 
-output = "RadiusX = 10.0\n"
-output += "RadiusL = 5.0\n"
-output += "RadiusM = 1.0\n"
-output += "RadiusS = 0.2\n\n"
+output += "Modes = {\n"
+for key in sorted(Modes.keys()):
+    content = Modes[key]
+    inner_parts = [f"{repr(k)}: {repr(content[k])}" for k in sorted(content.keys())]
+    output += f'    "{key}": {{{", ".join(inner_parts)}}},\n'
+output += "}\n\n"
 
 output += "Nodes = {\n"
 for key in sorted(Nodes.keys()):
@@ -95,10 +92,9 @@ output += "Projects = {\n"
 for key in sorted(Projects.keys()):
     content = Projects[key]
     loc_str = formatCoordinates(content['Location'])
-    radius_str = RadiusNames.get(content.get('Radius'), repr(content.get('Radius')))
     inner = f'"Source": {repr(content["Source"])}'
     inner += f', "Location": {loc_str}'
-    inner += f', "Radius": {radius_str}'
+    inner += f', "Radius": {repr(content["Radius"])}'
     for k in sorted(v for v in content.keys() if v not in ('Source', 'Location', 'Radius')):
         inner += f', {repr(k)}: {repr(content[k])}'
     output += f'    "{key}": {{{inner}}},\n'
