@@ -1830,7 +1830,6 @@ Stations = {
     "Arlington [Nashville]": {'Location': (36.138850, -86.732330)},
     "Arlington [PA]": {'Location': (40.369880, -80.033310)},
     "Arlington [TN]": {'Location': (35.296850, -89.662210)},
-    "Arlington [TX]": {'Location': (32.737260, -97.104680)},
     "Arlington [Winnipeg]": {'Location': (49.885400, -97.170200)},
     "Armenia Ave": {'Location': (27.944760, -82.485060)},
     "Armitage [CTA Red Purple Brown]": {'Location': (41.918320, -87.652740)},
@@ -3956,6 +3955,7 @@ Stations = {
     "Downtown Anaheim": {'Location': (33.833500, -117.919310)},
     "Downtown Annapolis [MTA]": {'Location': (38.979910, -76.492690), 'Major': True},
     "Downtown Annapolis [WMATA]": {'Location': (38.978210, -76.491810), 'Major': True},
+    "Downtown Arlington": {'Location': (32.737590, -97.112300)},
     "Downtown Austin": {'Location': (30.264860, -97.738460), 'Major': True},
     "Downtown Bernalillo": {'Location': (35.303620, -106.546980)},
     "Downtown Boulder": {'Location': (40.016530, -105.276120)},
@@ -5459,6 +5459,7 @@ Stations = {
     "Hawthorne/Lennox": {'Location': (33.933440, -118.351730)},
     "Hayden Ferry/Rio Salado Pkwy": {'Location': (33.430120, -111.938170)},
     "Haymarket": {'Location': (42.362860, -71.058270)},
+    "Haymarket Rd": {'Location': (32.692020, -96.639720)},
     "Hays": {'Location': (38.873230, -99.335080)},
     "Hayward Park": {'Location': (37.553190, -122.309440)},
     "Hayward [Amtrak]": {'Location': (37.665960, -122.099340)},
@@ -6151,6 +6152,7 @@ Stations = {
     "Kittson Pkwy": {'Location': (49.119550, -122.923830)},
     "Kitwanga": {'Location': (55.099370, -128.051490)},
     "Klamath Falls": {'Location': (42.225510, -121.771840)},
+    "Kleberg": {'Location': (32.670530, -96.615210)},
     "Kleinburg": {'Location': (43.842750, -79.657910)},
     "Knickerbocker Av": {'Location': (40.698730, -73.919710)},
     "Knight Center": {'Location': (25.771870, -80.191690)},
@@ -6174,6 +6176,7 @@ Stations = {
     "LATTC/Ortho Institute": {'Location': (34.029140, -118.273590)},
     "LAX/Metro Transit Center": {'APM': {'Location': (33.94969, -118.37766), 'Label': 'MTC', 'Major': True}, 'Main': {'Location': (33.95007, -118.37866), 'Major': True, 'Type': 'Airport'}},
     "LBJ/Central": {'Location': (32.918370, -96.752020)},
+    "LBJ/Mustang": {'Location': (32.907720, -96.908760)},
     "LBJ/Skillman": {'Location': (32.897940, -96.711900)},
     "LCSP Medical Center": {'Location': (33.739370, -118.304810)},
     "LMU": {'Location': (33.967430, -118.417910)},
@@ -9096,7 +9099,6 @@ Stations = {
     "Roxboro-Pierrefonds": {'Location': (45.509190, -73.809220)},
     "Roxbury Crossing": {'Location': (42.331370, -71.095480)},
     "Roy": {'Location': (41.188750, -112.039370)},
-    "Royal": {'Location': (32.895040, -96.911720)},
     "Royal Oak [BC]": {'Location': (49.220070, -122.988470)},
     "Royal Oak [MI]": {'Location': (42.489270, -83.147610)},
     "Royal Oaks": {'Location': (38.605940, -121.447400)},
@@ -9472,6 +9474,7 @@ Stations = {
     "Seabrook": {'Location': (38.973210, -76.843390)},
     "Seaford [DE]": {'Location': (38.642390, -75.616780)},
     "Seaford [NY]": {'Location': (40.675730, -73.486510)},
+    "Seagoville": {'Location': (32.640170, -96.541280)},
     "Seaport": {'Location': (40.707620, -74.003880)},
     "Seaport Village": {'LRT': {'Location': (32.71202, -117.16862)}, 'Metro': {'Location': (32.71148, -117.16711)}},
     "Searchmont": {'Location': (46.777950, -84.051380)},
@@ -9856,6 +9859,7 @@ Stations = {
     "St. Anthony & Canal": {'Location': (29.980000, -90.108640)},
     "St. Anthony Pkwy": {'Location': (45.025690, -93.247360)},
     "St. Augustine": {'Location': (29.894410, -81.322140)},
+    "St. Augustine Dr": {'Location': (32.698900, -96.658340)},
     "St. Bernard": {'Mainline': {'Location': (39.17229, -84.49614)}, 'Subway': {'Location': (39.17189, -84.49684)}},
     "St. Catherines": {'Location': (43.147760, -79.256210)},
     "St. Charles/Royal & Canal": {'Location': (29.953000, -90.068920)},
@@ -11469,7 +11473,7 @@ Stations = {
     "Youngstown": {'Location': (41.099600, -80.656520)},
     "Ypsilanti": {'Location': (42.242104, -83.600447)},
     "Yuma": {'Location': (32.722980, -114.615560)},
-    "Zacha Junction": {'Location': (32.862950, -96.669770)},
+    "Zacha Junction": {'Location': (32.868010, -96.667640)},
     "Zaferia": {'Location': (33.782600, -118.156190)},
     "Zapata": {'Location': (19.370690, -99.165050)},
     "Zapopan": {'Location': (20.681800, -103.418850)},
@@ -14995,11 +14999,11 @@ Segments = {
     "Dallas Light Rail (Arts District - Mockingbird)": {
         "F": ['[X] Dallas Arts District Junction', 'Cityplace/Uptown', 'SMU/Mockingbird'],
     },
-    "Dallas Light Rail (Carrollton - Buckner) [New]": {
-        "F": ['[R] Dallas Light Rail (Victory - Carrollton)', 'Dallas Light Rail (Victory - Buckner)'],
-    },
     "Dallas Light Rail (Carrollton - Buckner) [Old]": {
         "F": ['[R] Dallas Light Rail (Union - Carrollton)', 'Dallas Light Rail (Union - Buckner)'],
+    },
+    "Dallas Light Rail (Carrollton - Seagoville) [New]": {
+        "F": ['[R] Dallas Light Rail (Victory - Carrollton)', 'Dallas Light Rail (Victory - Seagoville)'],
     },
     "Dallas Light Rail (McKinney - DFW)": {
         "F": ['[R] Dallas Light Rail (Victory - DFW)', 'Dallas Light Rail (Victory - Plano)', 'Spring Creek Pkwy', 'Allen [TX]', 'Stacy Rd', 'Fairview [TX]', 'Downtown McKinney'],
@@ -15076,6 +15080,9 @@ Segments = {
     "Dallas Light Rail (Victory - Plano)": {
         "F": ['Dallas Light Rail (Victory - Mockingbird)', 'Dallas Light Rail (Mockingbird - Plano)'],
     },
+    "Dallas Light Rail (Victory - Seagoville)": {
+        "F": ['Dallas Light Rail (Victory - Buckner)', 'St. Augustine Dr', 'Haymarket Rd', 'Kleberg', 'Seagoville'],
+    },
     "Dallas Peoplemover (Love Field)": {
         "F": ['Inwood/Love Field {APM}', 'Terminal [Love Field]'],
     },
@@ -15122,7 +15129,7 @@ Segments = {
         "F": ['Dallas Approach (Union - Northeast)', 'Forest Hills [Dallas]', 'Reinhardt', 'Zacha Junction', 'Miller Rd', 'Downtown Garland [Trinity Metro]', 'Naaman School', 'Sachse', 'Wylie', 'Lavonia Park', 'Copeville', 'Farmersville [TX]'],
     },
     "Dallas Regional Rail (Union - Fort Worth Central via Arlington)": {
-        "F": ['Dallas Approach (Union - West)', 'Trinity Grove', 'West Dallas', 'Grand Prairie', 'Stadium Drive', 'Arlington [TX]', 'Handley', 'Texas Wesleyan University', '[R] Fort Worth Approach (Central - East)'],
+        "F": ['Dallas Approach (Union - West)', 'Trinity Grove', 'West Dallas', 'Grand Prairie', 'Stadium Drive', 'Downtown Arlington', 'Handley', 'Texas Wesleyan University', '[R] Fort Worth Approach (Central - East)'],
     },
     "Dallas Regional Rail (Union - Fort Worth Central)": {
         "F": ['Dallas Regional Rail (Union - Irving)', 'Downtown Irving/Heritage Crossing', 'West Irving', 'CentrePort/DFW Airport', 'Bell [Dallas]', 'Trinity Lakes', '[R] Fort Worth Approach (Central - East)'],
@@ -15141,7 +15148,7 @@ Segments = {
         "F": ['Dallas Regional Rail (Union - Westmoreland)', 'Ledbetter [Trinity Metro]', 'Duncanville', 'Cedar Hill', 'Midlothian [TX]'],
     },
     "Dallas Regional Rail (Union - Prosper)": {
-        "F": ['Dallas Regional Rail (Union - Irving)', '[X] Dallas Irving Bend', 'University Hills', 'Royal', '[X] Dallas Carrollton Bend', 'Downtown Carrollton {N}', 'Frankford', 'Hebron [East]', 'Kings Ridge', 'Starwood', 'Frisco', 'University Drive', 'Prosper'],
+        "F": ['Dallas Regional Rail (Union - Irving)', '[X] Dallas Irving Bend', 'University Hills', 'LBJ/Mustang', '[X] Dallas Carrollton Bend', 'Downtown Carrollton {N}', 'Frankford', 'Hebron [East]', 'Kings Ridge', 'Starwood', 'Frisco', 'University Drive', 'Prosper'],
     },
     "Dallas Regional Rail (Union - Terrell)": {
         "F": ['Dallas Approach (Union - Northeast)', 'East Dallas', 'Mesquite', 'Forney', 'Terrell'],
@@ -20515,7 +20522,7 @@ Lines = {
         },
         "Green Line": {
             "Fantasy": {
-                "Carrollton - Buckner": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Carrollton - Buckner) [New]'},
+                "Carrollton - Seagoville": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Carrollton - Seagoville) [New]'},
             },
             "Present": {
                 "Carrollton - Buckner": {'Mode': 'Light Rail', 'Stations': 'Dallas Light Rail (Carrollton - Buckner) [Old]', 'File': '[DART] Green Line', 'Link': 'https://brouter.damsy.net/latest/#map=11/32.9168/-96.7573/standard&lonlats=-96.684574,32.718291;-96.689955,32.72166;-96.706381,32.74288;-96.734936,32.766247;-96.747065,32.767571;-96.765926,32.7841;-96.785431,32.787059;-96.812451,32.790016;-96.832638,32.823624;-96.835304,32.824874;-96.880011,32.86961;-96.896238,32.923726;-96.935855,32.990708;-96.937373,32.992224;-96.933644,32.988255;-96.927164,32.981537;-96.921435,32.975669;-96.911036,32.958274;-96.900836,32.936945;-96.881156,32.872989;-96.880282,32.870144;-96.878892,32.8646;-96.839923,32.828349;-96.833292,32.82179;-96.812226,32.788699;-96.809506,32.780481;-96.800194,32.781754;-96.79359,32.787085;-96.788467,32.785361;-96.767567,32.784153;-96.766098,32.774762;-96.747204,32.766283;-96.734115,32.76613;-96.711906,32.762881;-96.710404,32.739547;-96.70681,32.730161;-96.690792,32.721686;-96.684534,32.718331&profile=rail'},
@@ -25107,7 +25114,7 @@ Destinations = {
         "The University of North Carolina Pembroke": {"Location": (34.689210, -79.201570), "Stations": ['Pembroke'], 'Exists': ['Present', 'Fantasy']},
         "The University of Oklahoma": {"Location": (35.198710, -97.444890), "Stations": ['University of Oklahoma'], 'Exists': ['Present', 'Fantasy']},
         "The University of Scranton": {"Location": (41.406560, -75.657780), "Stations": ['Scranton'], 'Exists': ['Present', 'Fantasy']},
-        "The University of Texas at Arlington": {"Location": (32.729210, -97.115190), "Stations": ['Arlington [TX]'], 'Exists': ['Present', 'Fantasy']},
+        "The University of Texas at Arlington": {"Location": (32.729210, -97.115190), "Stations": ['Downtown Arlington'], 'Exists': ['Present', 'Fantasy']},
         "The University of Texas at Austin": {"Location": (30.289470, -97.736790), "Stations": ['University of Texas'], 'Exists': ['Present', 'Fantasy']},
         "The University of Utah": {"Location": (40.764930, -111.842100), "Stations": ['Fort Douglas', 'University Medical Center [Salt Lake City]', 'University South Campus'], 'Exists': ['Present', 'Fantasy']},
         "The University of Winnipeg": {"Location": (49.891490, -97.153520), "Stations": ['Colony'], 'Exists': ['Present', 'Fantasy']},
