@@ -5,7 +5,7 @@ directory = os.path.abspath(os.path.dirname(__file__))
 file_path = os.path.join(directory, 'map_data.py')
 
 def formatCoordinates(tuple):
-    return f"({tuple[0]:.6f}, {tuple[1]:.6f})"
+    return f"({tuple[0]:.5f}, {tuple[1]:.5f})"
 
 output = ""
 
