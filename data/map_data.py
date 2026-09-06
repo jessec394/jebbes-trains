@@ -1635,7 +1635,7 @@ Stations = {
     "Agua Caliente": {'Location': (33.81813, -116.40939)},
     "Aguacate": {'Location': (22.98987, -81.82242)},
     "Aguada": {'Location': (22.38226, -80.84755)},
-    "Aguascalientes": {'Location': (21.88540, -102.28075)},
+    "Aguascalientes": {'Location': (21.88443, -102.28027)},
     "Ahuntsic": {'Location': (45.53533, -73.66229)},
     "Airdrie": {'Location': (51.28836, -114.01929)},
     "Airline Dr": {'Location': (29.97616, -90.15631)},
@@ -10923,6 +10923,7 @@ Stations = {
     "Vancouver": {'Location': (45.62876, -122.68661)},
     "Vancouver City Centre": {'Location': (49.28233, -123.11838)},
     "Vancouver Pacific Central Station": {'Location': (49.27369, -123.09789), 'Major': True},
+    "Vancouver Waterfront Station": {'Main': {'Location': (49.28598, -123.11158), 'Major': True}, 'SkyTrain': {'Location': (49.28566, -123.11333), 'Major': True, 'Label': 'Waterfront'}},
     "Vanderhoof": {'Location': (54.01459, -124.01201)},
     "Vandry": {'Location': (47.85947, -73.55831)},
     "Vanowen": {'Location': (34.19393, -118.44875)},
@@ -11173,12 +11174,11 @@ Stations = {
     "Watchung Ave": {'Location': (40.82966, -74.20704)},
     "Water Square": {'Location': (42.32523, -83.05267)},
     "Water Street": {'Location': (27.94344, -82.44853)},
-    "Waterbury": {'Location': (41.55446, -73.04705)},
+    "Waterbury [CT]": {'Location': (41.55446, -73.04705)},
     "Waterbury [Des Moines]": {'Location': (41.58200, -93.70059)},
     "Waterford": {'Location': (42.68880, -83.39558)},
     "Waterfront Entertainment Center": {'Location': (39.94092, -75.12844)},
     "Waterfront [Austin]": {'Location': (30.25407, -97.74318)},
-    "Waterfront [Vancouver]": {'Main': {'Location': (49.28598, -123.11158), 'Major': True}, 'SkyTrain': {'Location': (49.28566, -123.11333), 'Major': True}},
     "Waterfront [Washington]": {'Location': (38.87697, -77.01756)},
     "Waterloo": {'Location': (42.50047, -92.32098)},
     "Waterloo Public Square": {'Location': (43.46414, -80.52300)},
@@ -11995,7 +11995,8 @@ Segments = {
         "F": ['Seattle King Street Station', '[X] Seattle Spokane Viaduct Bend', '[X] Tukwila', '[X] Seattle Sumner Bend', '[X] Lakewood', '[X] Olympia-Lacey', '[X] Centralia [WA]', '[X] Portland Vancouver HSR Bend', '[X] Portland NW Bend 1', 'Portland Union Station'],
     },
     "-Intercity HS (Seattle - Vancouver)": {
-        "F": ['Seattle King Street Station', '[X] Seattle Lynnwood Bend', '[X] Lynnwood City Center', '[X] West Alderwood', '[X] Ash Way', '[X] Mariner', '[X] Everett HSR Bend', '[X] Mt. Vernon [Seattle]', '[X] Vancouver Abbotsford Bend', '[X] Vancouver TCH Bend E', '[X] Vancouver TCH Bend W', 'Waterfront [Vancouver] {Main}'],
+        "F": ['Seattle King Street Station', '[X] Seattle Lynnwood Bend', '[X] Lynnwood City Center', '[X] West Alderwood', '[X] Ash Way', '[X] Mariner', '[X] Everett HSR Bend', '[X] Mt. Vernon [Seattle]', '[X] Vancouver Abbotsford Bend', '[X] Vancouver TCH Bend E', '[X] Vancouver TCH Bend W', '[R] Vancouver Commuter Rail (Waterfront - Willingdon Junction)'],
+        "Skip": ['Commercial-Broadway'],
     },
     "-Intercity HS (St. Louis - Kansas City)": {
         "F": ['St. Louis Approach (Gateway - Bridge West)', '[X] STL I-70 Bend', '[X] STL 270 Bend', 'Columbia [MO]', '[X] KC I-70 Bend', '[R] Kansas City Approach (Union - I-70)'],
@@ -14061,7 +14062,7 @@ Segments = {
     },
     "-Intercity LS (Toronto - Vancouver) [Old]": {
         "F": ['-Intercity LS (Toronto - Vancouver) [Via EDM]'],
-        "Swap": [('Waterfront [Vancouver] {Main}', 'Vancouver Pacific Central Station')],
+        "Swap": [('Vancouver Commuter Rail (Waterfront - Port Coquitlam)', '-Intercity LS (Vancouver - Braid) [Old]')],
     },
     "-Intercity LS (Toronto - Vancouver) [Via CGY]": {
         "F": ['-Intercity LS (Toronto - Winnipeg)', '[R] -Intercity LS (Calgary - Winnipeg)', '[R] -Intercity LS (Vancouver - Calgary)'],
@@ -14079,6 +14080,15 @@ Segments = {
         "F": ['-Intercity LS (Toronto - Washago)', 'Parry Sound', 'Sudbury Junction', 'Capreol', 'Laforest', "McKee's Camp", 'Felix', 'Ruel', 'Westree', 'Gogama', 'Foleyet', 'Elsas', 'Oba', 'Hornepayne', 'Hillsport', 'Caramat', 'Longlac', 'Nakina', 'Auden', 'Ferland', 'Mud River', 'Armstrong', 'Collins', 'Allanwater Bridge', 'Flindt Landing', 'Savant Lake', 'Sioux Lookout', 'Winnipeg Union Station {Main}'],
         "Skip": ['Langstaff [GO]'],
     },
+    "-Intercity LS (Vancouver - Braid)": {
+        "F": ['Vancouver Commuter Rail (Waterfront - Braid)'],
+        "Keep": ['Vancouver Waterfront Station {Main}'],
+    },
+    "-Intercity LS (Vancouver - Braid) [Old]": {
+        "F": ['-Intercity LS (Vancouver - Braid)'],
+        "Keep": ['Vancouver Pacific Central Station'],
+        "Swap": [('Vancouver Approach (Waterfront - East)', 'Vancouver Pacific Central Station')],
+    },
     "-Intercity LS (Vancouver - Calgary)": {
         "F": ['-Intercity LS (Vancouver - Kamloops)', 'Kamloops', 'Revelstoke', '[R] -Intercity LS (Calgary - Banff)'],
     },
@@ -14090,26 +14100,27 @@ Segments = {
     },
     "-Intercity LS (Vancouver - Eugene) [Old]": {
         "F": ['-Intercity LS (Vancouver - Eugene)'],
+        "Keep": ['Vancouver Pacific Central Station'],
         "Skip": ['White Rock [BC]', 'Woodburn'],
-        "Swap": [('Waterfront [Vancouver] {Main}', 'Vancouver Pacific Central Station')],
+        "Swap": [('Vancouver Approach (Waterfront - East)', 'Vancouver Pacific Central Station')],
     },
     "-Intercity LS (Vancouver - Horseshoe Bay)": {
         "F": ['Vancouver Commuter Rail (Waterfront - Horseshoe Bay)'],
-        "Keep": ['Waterfront [Vancouver] {Main}', 'North Vancouver/Lonsdale', 'Horseshoe Bay'],
+        "Keep": ['Vancouver Waterfront Station {Main}', 'North Vancouver/Lonsdale', 'Horseshoe Bay'],
     },
     "-Intercity LS (Vancouver - Kamloops)": {
         "F": ['-Intercity LS (Vancouver - Mission Harbour)', 'Abbotsford', 'Chilliwack', 'Boston Bar', 'Ashcroft', 'Kamloops North'],
     },
     "-Intercity LS (Vancouver - Mission Harbour)": {
         "F": ['Vancouver Commuter Rail (Waterfront - Mission Harbour)'],
-        "Keep": ['Waterfront [Vancouver] {Main}', 'Mission Harbour'],
+        "Keep": ['Vancouver Waterfront Station {Main}', 'Mission Harbour'],
     },
     "-Intercity LS (Vancouver - Prince George)": {
         "F": ['-Intercity LS (Vancouver - Horseshoe Bay)', 'Lions Bay', 'Squamish', 'Whistler', 'Pemberton', 'Mt. Curie', 'Lillooet', 'Clinton [BC]', '70 Mile House', '100 Mile House', 'Enterprise', 'Williams Lake', 'Alexandria [BC]', 'Quesnel', 'Woodpecker', 'Prince George'],
     },
     "-Intercity LS (Vancouver - White Rock)": {
         "F": ['Vancouver Commuter Rail (Waterfront - White Rock)'],
-        "Keep": ['Waterfront [Vancouver] {Main}', 'White Rock [BC]'],
+        "Keep": ['Vancouver Waterfront Station {Main}', 'White Rock [BC]'],
     },
     "-Intercity LS (Victoria - Courtenay)": {
         "F": ['-Intercity LS (Victoria - Parksville)', 'Qualicum Beach', 'Courtenay'],
@@ -17178,7 +17189,7 @@ Segments = {
         "F": ['[R] New York Regional Rail (Jamaica - Atlantic Terminal)', 'New York Regional Rail (Jamaica - West Hempstead)'],
     },
     "New York Regional Rail (Bridgeport - Waterbury)": {
-        "F": ['Bridgeport [CT]', 'Stratford [CT]', 'Derby/Shelton', 'Seymour', 'Beacon Falls', 'Naugatuck', 'Waterbury'],
+        "F": ['Bridgeport [CT]', 'Stratford [CT]', 'Derby/Shelton', 'Seymour', 'Beacon Falls', 'Naugatuck', 'Waterbury [CT]'],
     },
     "New York Regional Rail (Grand Central - Babylon)": {
         "F": ['New York Regional Rail (Grand Central - Jamaica)', 'New York Regional Rail (Jamaica - Babylon)'],
@@ -19297,7 +19308,13 @@ Segments = {
         "F": ['[X] Tucson Downtown Junction E', '4th Ave & 9th St', '4th Ave & 6th/7th St', '4th Ave & 4th/5th St', 'University Blvd & 3rd Ave', 'University Blvd & Tyndall Ave', '2nd St & Olive Rd', '2nd St & Highland Ave', '2nd St & Cherry Ave', 'Warren Ave & Helen St'],
     },
     "Vancouver Approach (Waterfront - East)": {
-        "F": ['Waterfront [Vancouver] {Main}', '[X] Vancouver Waterfront Bend (Mainline)'],
+        "F": ['Vancouver Waterfront Station {Main}', '[X] Vancouver Waterfront Bend (Mainline)'],
+    },
+    "Vancouver Commuter Rail (Port Coquitlam - Mission City)": {
+        "F": ['Port Coquitlam', 'Pitt Meadows', 'Maple Meadows', 'Port Haney', '[X] Vancouver Glen Valley Bend', '[X] Vancouver Mission Harbour Junction', 'Mission City'],
+    },
+    "Vancouver Commuter Rail (Waterfront - Braid)": {
+        "F": ['Vancouver Commuter Rail (Waterfront - Willingdon Junction)', 'Burnaby Lake', '[X] Vancouver Burnaby Bend', 'Gaglardi Way', '[X] Braid'],
     },
     "Vancouver Commuter Rail (Waterfront - Horseshoe Bay)": {
         "F": ['Vancouver Commuter Rail (Waterfront - Willingdon Junction)', 'Lougheed', 'Hastings St', '[X] Vancouver North Bend', 'North Vancouver/Lonsdale', 'West Vancouver', 'Dundarave', 'West Bay Park', 'Eagle Harbour', 'Horseshoe Bay'],
@@ -19305,19 +19322,22 @@ Segments = {
     "Vancouver Commuter Rail (Waterfront - Huntingdon)": {
         "F": ['Vancouver Commuter Rail (Waterfront - Mission Harbour)', 'Abbottsford', 'Huntingdon [BC]'],
     },
-    "Vancouver Commuter Rail (Waterfront - Mission City) [New]": {
-        "F": ['Vancouver Approach (Waterfront - East)', 'Hastings Park [WCE]', 'Moody Centre', '[X] Inlet Centre', 'Coquitlam Central', 'Port Coquitlam', 'Pitt Meadows', 'Maple Meadows', 'Port Haney', '[X] Vancouver Glen Valley Bend', '[X] Vancouver Mission Harbour Junction', 'Mission City'],
+    "Vancouver Commuter Rail (Waterfront - Mission City)": {
+        "F": ['Vancouver Commuter Rail (Waterfront - Port Coquitlam)', 'Vancouver Commuter Rail (Port Coquitlam - Mission City)'],
     },
     "Vancouver Commuter Rail (Waterfront - Mission City) [Old]": {
-        "Drop": ['Hastings Park [WCE]'],
-        "F": ['Vancouver Commuter Rail (Waterfront - Mission City) [New]'],
+        "F": ['Vancouver Commuter Rail (Waterfront - Mission City)'],
+        "Skip": ['Hastings Park [WCE]'],
     },
     "Vancouver Commuter Rail (Waterfront - Mission Harbour)": {
-        "F": ['Vancouver Commuter Rail (Waterfront - Mission City) [New]'],
+        "F": ['Vancouver Commuter Rail (Waterfront - Mission City)'],
         "Swap": [('Mission City', 'Mission Harbour')],
     },
+    "Vancouver Commuter Rail (Waterfront - Port Coquitlam)": {
+        "F": ['Vancouver Approach (Waterfront - East)', 'Hastings Park [WCE]', 'Moody Centre', '[X] Inlet Centre', 'Coquitlam Central', 'Port Coquitlam'],
+    },
     "Vancouver Commuter Rail (Waterfront - White Rock)": {
-        "F": ['Vancouver Commuter Rail (Waterfront - Willingdon Junction)', 'Burnaby Lake', '[X] Vancouver Burnaby Bend', 'Gaglardi Way', '[X] Braid', 'Sapperton', '[X] Vancouver Riverview Bend N', '[X] Vancouver Riverview Bend S', 'South Westminster', 'Fraser Bridge', 'Kittson Pkwy', 'Hwy 10', 'Crescent Beach', 'White Rock [BC]'],
+        "F": ['Vancouver Commuter Rail (Waterfront - Braid)', 'Sapperton', '[X] Vancouver Riverview Bend N', '[X] Vancouver Riverview Bend S', 'South Westminster', 'Fraser Bridge', 'Kittson Pkwy', 'Hwy 10', 'Crescent Beach', 'White Rock [BC]'],
     },
     "Vancouver Commuter Rail (Waterfront - Willingdon Junction)": {
         "F": ['Vancouver Approach (Waterfront - East)', '[X] Vancouver Pacific Central Junction', 'Commercial-Broadway', '[X] Renfrew', '[X] Rupert', '[X] Vancouver Willingdon Junction'],
@@ -19341,10 +19361,10 @@ Segments = {
         "F": ['Vancouver SkyTrain (Waterfront - Bridgeport)', 'Templeton [Vancouver]', 'Sea Island Centre', 'YVR-Airport'],
     },
     "Vancouver SkyTrain (Waterfront - Bridgeport)": {
-        "F": ['Waterfront [Vancouver] {SkyTrain}', 'Vancouver City Centre', '[X] Nelson', '[X] Vancouver Davies Junction', 'Yaletown-Roundhouse', 'Olympic Village', 'Broadway-City Hall', 'King Edward', 'Oakridge-41st Ave', 'Langara-49th Ave', 'Marine Drive', 'Bridgeport [BC]'],
+        "F": ['Vancouver Waterfront Station {SkyTrain}', 'Vancouver City Centre', '[X] Nelson', '[X] Vancouver Davies Junction', 'Yaletown-Roundhouse', 'Olympic Village', 'Broadway-City Hall', 'King Edward', 'Oakridge-41st Ave', 'Langara-49th Ave', 'Marine Drive', 'Bridgeport [BC]'],
     },
     "Vancouver SkyTrain (Waterfront - Broadway)": {
-        "F": ['Waterfront [Vancouver] {Main}', '[X] Vancouver Waterfront Bend (SkyTrain)', 'Burrard', 'Granville [Chicago]', 'Stadium-Chinatown', 'Main St-Science World', '[X] VCC-Clark', 'Commercial-Broadway'],
+        "F": ['Vancouver Waterfront Station {Main}', '[X] Vancouver Waterfront Bend (SkyTrain)', 'Burrard', 'Granville [Chicago]', 'Stadium-Chinatown', 'Main St-Science World', '[X] VCC-Clark', 'Commercial-Broadway'],
     },
     "Vancouver SkyTrain (Waterfront - Columbia)": {
         "F": ['Vancouver SkyTrain (Waterfront - Broadway)', 'Nanaimo [Vancouver]', '29th Ave [Vancouver]', 'Joyce-Collingwood', 'Patterson [BC]', 'Royal Oak [BC]', 'Edmonds [BC]', '22nd St [Vancouver]', 'New Westminster', 'Columbia [BC]'],
@@ -19356,7 +19376,7 @@ Segments = {
         "F": ['Vancouver SkyTrain (Waterfront - King George)', 'Green Timbers', '152 St', 'Fleetwood [BC]', 'Bakerview-166 St', 'Hillcrest-184 St', 'Clayton [BC]', 'Willowbrook [BC]', 'Langley City Centre'],
     },
     "Vancouver SkyTrain (Waterfront - Lonsdale)": {
-        "F": ['Waterfront [Vancouver] {SkyTrain}', 'Lonsdale Quay', '[X] Vancouver Lonsdale Bend S', '[X] Vancouver Lonsdale Bend N', 'North Vancouver', 'Central Lonsdale', 'Upper Lonsdale'],
+        "F": ['Vancouver Waterfront Station {SkyTrain}', 'Lonsdale Quay', '[X] Vancouver Lonsdale Bend S', '[X] Vancouver Lonsdale Bend N', 'North Vancouver', 'Central Lonsdale', 'Upper Lonsdale'],
     },
     "Vancouver SkyTrain (Waterfront - Lougheed)": {
         "F": ['Vancouver SkyTrain (Waterfront - Columbia)', '[X] Vancouver Riverview Bend N', 'Sapperton', 'Braid', 'Lougheed Town Centre'],
@@ -20593,7 +20613,7 @@ Lines = {
         "West Coast Express": {
             "Fantasy": {
                 "Vancouver - Huntingdon": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Huntingdon)'},
-                "Vancouver - Mission Harbour": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [New]'},
+                "Vancouver - Mission Harbour": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City)'},
             },
             "Present": {
                 "Vancouver - Mission Harbour": {'Mode': 'Heavy Rail', 'Stations': 'Vancouver Commuter Rail (Waterfront - Mission City) [Old]', 'File': '[BCRTC] West Coast Express'},
@@ -25935,8 +25955,13 @@ Destinations = {
         "Energizer Park": {"Location": (38.63065, -90.21060), "Stations": ['Union Station [St. Louis]'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Energizer Park', 'HOK'], 'Teams': ['St. Louis City SC']},
         "Enterprise Center": {"Location": (38.62684, -90.20267), "Stations": ['Civic Center [St. Louis]', 'St. Louis Gateway Station'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Enterprise Center', 'Enterprise Center'], 'Teams': ['St. Louis Blues']},
         "Estadio Alfredo Harp Helú": {"Location": (19.40335, -99.08434), "Stations": ['Puebla'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Alfredo Harp Helú', 'ArchDaily']},
-        "Estadio Azteca": {"Location": (19.30286, -99.15052), "Stations": ['Estadio Azteca'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Azteca', 'ESPN']},
-        "Estadio Jalisco": {"Location": (20.70499, -103.32817), "Stations": ['Monumental'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Jalisco', 'Wikipedia/Alejan98']},
+        "Estadio Azteca": {"Location": (19.30286, -99.15052), "Stations": ['Estadio Azteca'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Azteca', 'ESPN'], 'Teams': ['Atlante FC', 'Club América', 'Cruz Azul']},
+        "Estadio BBVA": {"Location": (25.66915, -100.24444), "Stations": ['Exposición'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio BBVA', 'Populous'], 'Teams': ['CF Monterrey']},
+        "Estadio Hidalgo": {"Location": (20.10514, -98.75605), "Stations": ['Pachuca'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Hidalgo', 'Tripadvisor'], 'Teams': ['CF Pachuca']},
+        "Estadio Jalisco": {"Location": (20.70499, -103.32817), "Stations": ['Monumental'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Jalisco', 'Wikipedia/Alejan98'], 'Teams': ['Atlas FC']},
+        "Estadio Olímpico Universitario": {"Location": (19.33190, -99.19217), "Stations": ['Copilco'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Olímpico Universitario', 'TV Azteca'], 'Teams': ['Pumas UNAM']},
+        "Estadio Universitario": {"Location": (25.72252, -100.31197), "Stations": ['Monumental'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Universitario', "The Women's Cup"], 'Teams': ['Tigres UANL']},
+        "Estadio Victoria Aguascalientes": {"Location": (21.88091, -102.27573), "Stations": ['Aguascalientes'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Estadio Victoria Aguascalientes', 'Club Necaxa'], 'Teams': ['Club Necaxa']},
         "Ethiad Park (Under Construction)": {"Location": (40.75829, -73.84339), "Stations": ['Mets-Willets Point'], 'Exists': ['Fantasy'], 'Image': ['Ethiad Park', 'HOK'], 'Teams': ['Gotham FC', 'New York City FC']},
         "Expo Guadalajara": {"Location": (20.65291, -103.39176), "Stations": ['Las Rosas'], 'Exists': ['Present', 'Fantasy'], 'Image': ['Expo Guadalajara', 'Holiday Inn']},
         "ExtraMile Arena": {"Location": (43.60358, -116.19894), "Stations": ['Boise'], 'Exists': ['Present', 'Fantasy'], 'Image': ['ExtraMile Arena', 'ExtraMile Arena']},
