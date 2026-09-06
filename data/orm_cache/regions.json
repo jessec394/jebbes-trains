@@ -1,0 +1,14 @@
+{
+  "c3fc8fd687ca": {
+    "name": "Albuquerque Test",
+    "bbox": [
+      -106.7,
+      35.0,
+      -106.5,
+      35.2
+    ],
+    "imported_at": "2026-08-16T19:57:34.139421Z",
+    "source_file": "nm-latest.osm.pbf",
+    "way_count": 31
+  }
+}

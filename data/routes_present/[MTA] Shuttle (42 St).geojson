@@ -1,0 +1,127 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "creator": "BRouter-1.7.9",
+        "name": "[MTA] Shuttle (42 St)",
+        "track-length": "777",
+        "filtered ascend": "0",
+        "plain-ascend": "0",
+        "total-time": "62",
+        "total-energy": "34176",
+        "cost": "1554",
+        "messages": [
+          [
+            "Longitude",
+            "Latitude",
+            "Elevation",
+            "Distance",
+            "CostPerKm",
+            "ElevCost",
+            "TurnCost",
+            "NodeCost",
+            "InitialCost",
+            "WayTags",
+            "NodeTags",
+            "Time",
+            "Energy"
+          ],
+          [
+            "-73985908",
+            "40755696",
+            "-8192",
+            "41",
+            "2000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "railway=subway",
+            "wheelchair=yes railway=halt",
+            "3",
+            "1803"
+          ],
+          [
+            "-73978291",
+            "40752489",
+            "-8192",
+            "736",
+            "2000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "railway=subway",
+            "",
+            "62",
+            "34176"
+          ]
+        ],
+        "times": [
+          0,
+          0.16,
+          1.2,
+          2.24,
+          3.28,
+          4.32,
+          5.36,
+          30.88,
+          42.32,
+          46.96,
+          62.16
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.986213,
+            40.755987
+          ],
+          [
+            -73.986201,
+            40.75597
+          ],
+          [
+            -73.986117,
+            40.755871
+          ],
+          [
+            -73.986019,
+            40.755779
+          ],
+          [
+            -73.985908,
+            40.755696
+          ],
+          [
+            -73.985786,
+            40.755623
+          ],
+          [
+            -73.985654,
+            40.75556
+          ],
+          [
+            -73.982354,
+            40.754166
+          ],
+          [
+            -73.980877,
+            40.753542
+          ],
+          [
+            -73.980252,
+            40.75332
+          ],
+          [
+            -73.978291,
+            40.752489
+          ]
+        ]
+      }
+    }
+  ]
+}

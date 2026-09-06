@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Route Tracer</title>
+<link rel="stylesheet" href="/tracer.css">
+</head>
+<body>
+
+<div id="MainContainer">
+
+  <!-- Canvas / tracing area -->
+  <div id="LeftPanel">
+    <div id="TopBar">
+      <div id="Title">Route Tracer</div>
+      <div id="ButtonBar">
+        <button class="TopButton" onclick="App.LoadFile()">📂 Load JSON</button>
+        <button class="TopButton" onclick="App.ResetView()">⌘ Reset</button>
+        <button class="TopButton" onclick="App.StartRegionSelect()">🔍 Focus</button>
+        <button class="TopButton" onclick="App.TracePath()">🧭 Trace</button>
+        <button class="TopButton" onclick="App.ExportPath()">💾 Export Path</button>
+        <button class="TopButton" onclick="App.ClearWaypoints()">🗑️ Clear</button>
+      </div>
+    </div>
+    <div id="StatusBar">Ready</div>
+    <div id="CanvasContainer">
+      <canvas id="MapCanvas"></canvas>
+      <div id="ControlBar">
+        <label>Quality:</label>
+        <input type="range" id="QualitySlider" min="0.1" max="2.0" step="0.1" value="1.0"
+               onchange="App.OnQualityChange()">
+        <input type="checkbox" id="StationsCheckbox" onchange="App.OnStationsToggle()">
+        <label for="StationsCheckbox">Show Stations</label>
+        <input type="checkbox" id="MapStationsCheckbox" onchange="App.OnMapStationsToggle()">
+        <label for="MapStationsCheckbox">Show Map Stations</label>
+      </div>
+      <div id="Placeholder">
+        <div class="PlaceholderIcon">🗺️</div>
+        <div class="PlaceholderTitle">Route</div>
+        <div class="PlaceholderSubtitle">Tracer</div>
+        <div class="PlaceholderLine">
+          <div class="PlaceholderLineSeg" style="background:#34495e;"></div>
+          <div class="PlaceholderLineSeg" style="background:#3498db;"></div>
+          <div class="PlaceholderLineSeg" style="background:#34495e;"></div>
+        </div>
+        <button id="LoadButton" onclick="App.LoadFile()">📂 Load JSON File</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Waypoint list -->
+  <div id="WaypointPanel">
+    <div id="WaypointTitle">Waypoints</div>
+    <div id="WaypointListContainer">
+      <ul id="WaypointList"></ul>
+    </div>
+    <div id="WaypointButtons">
+      <button class="WaypointButton" onclick="App.MoveWaypointUp()">↑ Move Up</button>
+      <button class="WaypointButton" onclick="App.MoveWaypointDown()">↓ Move Down</button>
+      <button class="WaypointButton" onclick="App.RemoveWaypoint()">⌫ Remove</button>
+    </div>
+  </div>
+
+  <!-- Route browser -->
+  <div id="RoutePanel">
+    <div id="RoutePanelTitle">Fantasy Routes</div>
+    <input id="RouteSearch" type="text" placeholder="Search routes…" oninput="FilterRoutes()">
+    <div id="RouteList"></div>
+    <div id="ActiveRouteBanner"></div>
+    <button id="SaveRouteBtn" onclick="App.SaveRoute()">💾 Save GeoJSON + Waypoints</button>
+  </div>
+
+  <!-- map_data station overwrite panel -->
+  <div id="StationPanel">
+    <div id="StationPanelTitle">Map Data Stations</div>
+    <input id="StationSearch" type="text" placeholder="Search stations…" oninput="FilterStations()">
+    <div id="StationList"></div>
+    <div id="SelectedStationBanner">No station selected</div>
+    <div id="SelectedSourceBanner">No NIMBY station picked — enable "Show Stations" and click one on the map</div>
+    <button id="UpdateStationBtn" onclick="App.UpdateStationLocation()" disabled>📍 Set to Selected NIMBY Station</button>
+  </div>
+
+</div>
+
+<!-- Modals -->
+<div id="EditModal" class="Modal">
+  <div class="ModalContent">
+    <div class="ModalTitle">Edit Waypoint</div>
+    <input type="text" id="EditInput" class="ModalInput" placeholder="lat, lon">
+    <button class="ModalButton" onclick="App.SaveEditedWaypoint()">Save</button>
+  </div>
+</div>
+
+<div id="RegionPromptDialog" class="Modal">
+  <div class="ModalContent">
+    <div class="ModalTitle">Load Options</div>
+    <div class="ModalText">Load a specific region, or the entire network?</div>
+    <div class="ModalText" style="font-size:12px;color:#95a5a6;">
+      Selecting a region improves performance for large networks.
+    </div>
+    <button class="ModalButton" onclick="App.FileMgr.LoadWithRegionSelect()">Select Region</button>
+    <button class="ModalButton Secondary" onclick="App.FileMgr.LoadEntireNetwork()">Load Entire Network</button>
+  </div>
+</div>
+
+<div id="ConfirmRegionDialog" class="Modal">
+  <div class="ModalContent">
+    <div class="ModalTitle">Confirm Region</div>
+    <div class="ModalText">Load tracks within the selected region?</div>
+    <button class="ModalButton" onclick="App.ConfirmRegion()">✓ Load</button>
+    <button class="ModalButton Secondary" onclick="App.CancelRegion()">✗ Cancel</button>
+  </div>
+</div>
+
+<!-- Stubs so existing JS doesn't break -->
+<div id="SavePathDialog"      class="Modal"></div>
+<div id="SaveWaypointsDialog" class="Modal"></div>
+<input type="file" id="FileInput" accept=".json,.geojson">
+
+<script>const BORDERS_DATA = __BORDERS_DATA__;</script>
+<script src="/js/graph.js"></script>
+<script src="/js/canvas.js"></script>
+<script src="/js/waypoints.js"></script>
+<script src="/js/filemanager.js"></script>
+<script src="/js/core.js"></script>
+<script src="/js/ui.js"></script>
+
+</body>
+</html>
