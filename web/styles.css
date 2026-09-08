@@ -2238,48 +2238,79 @@ button:focus-visible,
     margin-bottom: 4px;
 }
 
-.SidebarToggleRow {
-    display: flex;
+.LayerCard {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 34px 34px;
     align-items: center;
-    gap: 10px;
+    column-gap: 12px;
+    padding: 13px 14px 13px 20px;
+    border-radius: 14px;
+    background: #f8fafc;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.SidebarToggleIconWrap {
-    flex-shrink: 0;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+.LayerCard::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
 }
 
-.SidebarToggleIconWrap.project-accent { background: #3b82f6; }
-.SidebarToggleIconWrap.poi-accent      { background: #f59e0b; }
-.SidebarToggleIconWrap.station-accent  { background: #52525b; }
-.SidebarToggleIconWrap.sports-accent   { background: #16a34a; }
+.LayerCard.station-line::before { background: #52525b; }
+.LayerCard.project-line::before { background: #3b82f6; }
+.LayerCard.poi-line::before     { background: #f59e0b; }
+.LayerCard.route-line::before   { background: #6366f1; }
+.LayerCard.sports-line::before  { background: #16a34a; }
 
-.SidebarToggleLabel {
-    flex: 1;
-    font-size: 13px;
-    font-weight: 700;
-    color: #334155;
+.LayerCard:hover {
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(15,23,42,0.08);
 }
 
-.SidebarToggleBadge {
+.LayerCard.mode-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.LayerCard.mode-disabled:hover {
+    background: #f8fafc;
+    box-shadow: none;
+}
+
+.LayerTitle {
+    min-width: 0;
+    font-size: 14px;
+    font-weight: 800;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.LayerCount {
+    justify-self: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 18px;
-    height: 18px;
-    padding: 0 5px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
     border-radius: 999px;
     background: rgba(0,0,0,0.06);
     color: #64748b;
     font-size: 10px;
     font-weight: 800;
     line-height: 1;
+}
+
+.LayerArrow {
+    justify-self: center;
+    color: #94a3b8;
+    font-size: 15px;
 }
 
 .InlineToggleSwitch {
@@ -2747,23 +2778,49 @@ button:focus-visible,
     font-size: 13px;
 }
 
-.StationBrowseFilterRow {
+.BrowseFilterRow {
     padding: 14px 20px 0 20px;
     flex-shrink: 0;
 }
 
-#StationBrowseFilterInput {
+.BrowseFilterInputWrap {
+    position: relative;
+}
+
+.BrowseFilterIcon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none;
+    transition: color 0.15s ease;
+}
+
+.BrowseFilterInput {
     width: 100%;
-    padding: 9px 13px;
-    border-radius: 12px;
+    padding: 11px 14px 11px 40px;
+    border-radius: 999px;
     border: 1.5px solid #e2e8f0;
     background: #f8fafc;
     font-size: 13px;
+    font-weight: 600;
+    color: #1e293b;
     outline: none;
-    transition: border-color 0.15s ease;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
-#StationBrowseFilterInput:focus { border-color: #94a3b8; }
+.BrowseFilterInput::placeholder { color: #94a3b8; font-weight: 500; }
+
+.BrowseFilterInput:focus {
+    border-color: #6366f1;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(99,102,241,0.14);
+}
+
+.BrowseFilterInputWrap:focus-within .BrowseFilterIcon {
+    color: #6366f1;
+}
 
 .StationBrowseList {
     padding: 8px 12px 16px 20px;

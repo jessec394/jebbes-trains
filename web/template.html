@@ -108,8 +108,47 @@
         </div>
         <button class="DestBrowseClose" onclick="CloseDestBrowseModal()">×</button>
     </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="DestBrowseFilterInput" placeholder="Filter destinations...">
+        </div>
+    </div>
     <div class="DestBrowseTabs" id="DestBrowseTabs"></div>
     <div class="DestBrowseGrid" id="DestBrowseGrid"></div>
+</div>
+<div id="ProjectBrowseBackdrop" class="BrowseBackdrop" onclick="CloseProjectBrowseModal()"></div>
+<div id="ProjectBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon">📌</span>
+            <div class="DestBrowseTitle">Projects</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseProjectBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="ProjectBrowseFilterInput" placeholder="Filter projects...">
+        </div>
+    </div>
+    <div class="DestBrowseGrid" id="ProjectBrowseGrid"></div>
+</div>
+<div id="RouteBrowseBackdrop" class="BrowseBackdrop" onclick="CloseRouteBrowseModal()"></div>
+<div id="RouteBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <div class="DestBrowseTitle">Transit Routes</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseRouteBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="RouteBrowseFilterInput" placeholder="Filter routes...">
+        </div>
+    </div>
+    <div class="StationBrowseList" id="RouteBrowseList"></div>
 </div>
 <div id="SportsBrowseBackdrop" class="BrowseBackdrop" onclick="CloseSportsBrowseModal()"></div>
 <div id="SportsBrowseModal" class="BrowseModal">
@@ -132,8 +171,11 @@
         </div>
         <button class="DestBrowseClose" onclick="CloseStationBrowseModal()">×</button>
     </div>
-    <div class="StationBrowseFilterRow">
-        <input type="text" id="StationBrowseFilterInput" placeholder="Filter stations...">
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="StationBrowseFilterInput" placeholder="Filter stations...">
+        </div>
     </div>
     <div class="StationBrowseList" id="StationBrowseList"></div>
 </div>
@@ -153,47 +195,40 @@
         <div id="SidebarTitle">Passenger Rail Map</div>
     </div>
     <div class="SidebarSectionLabel">Filters</div>
-    <div id="SidebarToggles">
-        <div class="SidebarToggleRow">
-            <span class="SidebarToggleIconWrap station-accent">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="white"><circle cx="12" cy="12" r="7"/></svg>
-            </span>
-            <span class="SidebarToggleLabel">Stations</span>
-            <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="ToggleStationDots()" title="Hide stations">
+    <div id="SidebarToggles" class="LayerShowcase">
+        <div class="LayerCard station-line" onclick="OpenStationBrowseModal()">
+            <div class="LayerTitle">Stations</div>
+            <span class="LayerCount" style="visibility:hidden;"></span>
+            <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.stopPropagation(); ToggleStationDots()" title="Hide stations">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="SidebarToggleRow">
-            <span class="SidebarToggleIconWrap project-accent">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-            </span>
-            <span class="SidebarToggleLabel">Projects</span>
-            <span class="SidebarToggleBadge" id="ProjectCountBadge"></span>
-            <button id="ProjectToggleButton" class="InlineToggleSwitch accent-blue" onclick="ToggleAllProjects()" title="Show projects">
+        <div class="LayerCard project-line" id="ProjectLayerCard" onclick="OpenProjectBrowseModal()">
+            <div class="LayerTitle">Projects</div>
+            <span class="LayerCount" id="ProjectCountBadge"></span>
+            <button id="ProjectToggleButton" class="InlineToggleSwitch accent-blue" onclick="event.stopPropagation(); ToggleAllProjects()" title="Show projects">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="SidebarToggleRow">
-            <span class="SidebarToggleIconWrap poi-accent">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="white"><path d="M12 1.5l2.6 6.4 6.9.55-5.27 4.5 1.66 6.75L12 15.9l-5.89 3.8 1.66-6.75-5.27-4.5 6.9-.55z"/></svg>
-            </span>
-            <span class="SidebarToggleLabel">Points of Interest</span>
-            <span class="SidebarToggleBadge" id="DestinationCountBadge"></span>
-            <button id="POIToggleButton" class="InlineToggleSwitch accent-amber" onclick="ToggleAllDestinations()" title="Show points of interest">
+        <div class="LayerCard poi-line" onclick="OpenDestBrowseModal()">
+            <div class="LayerTitle">Points of Interest</div>
+            <span class="LayerCount" id="DestinationCountBadge"></span>
+            <button id="POIToggleButton" class="InlineToggleSwitch accent-amber" onclick="event.stopPropagation(); ToggleAllDestinations()" title="Show points of interest">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="SidebarToggleRow" onclick="OpenSportsBrowseModal()" style="cursor:pointer;">
-            <span class="SidebarToggleIconWrap sports-accent">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="white"><circle cx="12" cy="12" r="8.5"/><path d="M12 8l3.2 2.3-1.2 3.7h-4l-1.2-3.7z" fill="#052e1a"/></svg>
-            </span>
-            <span class="SidebarToggleLabel">Sports Teams</span>
-            <span class="SidebarToggleBadge" id="SportsTeamCountBadge"></span>
-            <span style="color:#94a3b8;font-size:13px;">›</span>
+        <div class="LayerCard route-line" onclick="OpenRouteSearch()">
+            <div class="LayerTitle">Transit Routes</div>
+            <span class="LayerCount" id="RouteCountBadge"></span>
+            <span class="LayerArrow">›</span>
+        </div>
+        <div class="LayerCard sports-line" onclick="OpenSportsBrowseModal()">
+            <div class="LayerTitle">Sports Teams</div>
+            <span class="LayerCount" id="SportsTeamCountBadge"></span>
+            <span class="LayerArrow">›</span>
         </div>
     </div>
     <div id="LinesView">
-        <div class="SidebarSectionLabel" id="SearchSectionLabel">Search</div>
         <div id="SearchRow">
             <input type="text" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
             <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">⊟</button>

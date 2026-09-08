@@ -212,6 +212,7 @@ function SwitchMapMode(Mode) {
     UpdateProjectMarkersVisibility();
     UpdateDestinationMarkersVisibility();
     BuildByMode();
+    if (Mode !== 'Fantasy') CloseProjectBrowseModal(); // projects don't exist outside the Future map
     if (TeamMapLeague) ShowTeamMarkersForLeague(TeamMapLeague);
 }
 
@@ -820,6 +821,79 @@ function BuildByMode() {
 
     document.getElementById('ListContainer').innerHTML = H;
     BuildModeToggles();
+    var routeBadge = document.getElementById('RouteCountBadge');
+    if (routeBadge) routeBadge.textContent = Registry.length;
+}
+
+// Entry point for the "Transit Routes" showcase card: a proper browse modal
+// (filter input + full alphabetical list) for consistency with the other
+// four cards, rather than just scrolling to the always-visible Transit Lines
+// tree -- clicking a route selects it exactly like SelectLine already does
+// from the sidebar list or a station/destination popup.
+function InitRouteBrowseModal() {
+    var filterInput = document.getElementById('RouteBrowseFilterInput');
+    if (filterInput) {
+        var debouncedRender = Debounce(function() { RenderRouteBrowseModal(filterInput.value); }, 80);
+        filterInput.addEventListener('input', debouncedRender);
+    }
+}
+
+function OpenRouteSearch() {
+    var backdrop = document.getElementById('RouteBrowseBackdrop');
+    var modal = document.getElementById('RouteBrowseModal');
+    var filterInput = document.getElementById('RouteBrowseFilterInput');
+    if (backdrop) backdrop.classList.add('show');
+    if (modal) modal.classList.add('show');
+    if (filterInput) { filterInput.value = ''; setTimeout(function() { filterInput.focus(); }, 50); }
+    RenderRouteBrowseModal('');
+}
+
+function CloseRouteBrowseModal() {
+    var backdrop = document.getElementById('RouteBrowseBackdrop');
+    var modal = document.getElementById('RouteBrowseModal');
+    if (backdrop) backdrop.classList.remove('show');
+    if (modal) modal.classList.remove('show');
+}
+
+function RenderRouteBrowseModal(filterQuery) {
+    var listEl = document.getElementById('RouteBrowseList');
+    if (!listEl) return;
+
+    var qn = filterQuery ? NormalizeSearchText(filterQuery) : '';
+    var lines = Registry.filter(function(L) {
+        return !qn || NormalizeSearchText(L.Name).indexOf(qn) !== -1 || NormalizeSearchText(L.Operator).indexOf(qn) !== -1;
+    });
+
+    if (!lines.length) {
+        listEl.innerHTML = '<div class="DestBrowseEmpty">No routes found.</div>';
+        return;
+    }
+
+    var byOperator = {};
+    lines.forEach(function(L) {
+        var op = L.Operator || 'Other';
+        (byOperator[op] = byOperator[op] || []).push(L);
+    });
+    var operators = Object.keys(byOperator).sort();
+
+    var html = '';
+    operators.forEach(function(op) {
+        var opLines = byOperator[op].slice().sort(function(a, b) { return a.Name.localeCompare(b.Name); });
+        html += '<div class="StationBrowseLetterHeader">' + op + '<span class="DestBrowseCategoryCount">' + opLines.length + '</span></div>';
+        opLines.forEach(function(L) {
+            var escId = L.Id.replace(/'/g, "\\'");
+            html += '<div class="StationBrowseRow" onclick="CommitRouteBrowseSelection(\'' + escId + '\')">' +
+                '<div class="StationBrowseRowName"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + L.Color + ';margin-right:8px;vertical-align:middle;"></span>' + L.Name + '</div>' +
+                '<div class="StationSearchLines"><span class="StationSearchPill" style="background:' + L.Color + '">' + L.ModeName + '</span></div>' +
+                '</div>';
+        });
+    });
+    listEl.innerHTML = html;
+}
+
+function CommitRouteBrowseSelection(id) {
+    CloseRouteBrowseModal();
+    SelectLine(id);
 }
 
 function SetLayerStyle(Ly, StyleObj) {
@@ -1927,6 +2001,11 @@ function UpdateProjectMarkersVisibility() {
             ? 'Projects are only shown in the Future view'
             : (ProjectsHidden ? 'Show projects' : 'Hide projects');
     }
+    var card = document.getElementById('ProjectLayerCard');
+    if (card) {
+        card.classList.toggle('mode-disabled', !isApplicable);
+        card.title = isApplicable ? '' : 'Projects are only shown in the Future view';
+    }
 }
 
 function ToggleAllDestinations() {
@@ -2178,124 +2257,22 @@ function CloseDestinationPopup() {
     RefreshStationDots();
 }
 
-function InitDestinationSearch() {
-    var anchor = document.getElementById('StationSearchRow') || document.getElementById('SearchRow');
-    if (!anchor) return;
-
-    var Wrapper = document.createElement('div');
-    Wrapper.id = 'DestSearchRow';
-
-    var InputRow = document.createElement('div');
-    InputRow.style.cssText = 'display:flex;gap:6px;align-items:center;';
-
-    var Input = document.createElement('input');
-    Input.type = 'text';
-    Input.id = 'DestSearchInput';
-    Input.placeholder = 'Search destinations...';
-    Input.autocomplete = 'off';
-    Input.style.flex = '1';
-
-    var BrowseBtn = document.createElement('button');
-    BrowseBtn.id = 'DestBrowseBtn';
-    BrowseBtn.title = 'Browse all destinations';
-    BrowseBtn.innerHTML = '⊞';
-
-    InputRow.appendChild(Input);
-    InputRow.appendChild(BrowseBtn);
-
-    var Dropdown = document.createElement('div');
-    Dropdown.id = 'DestSearchDropdown';
-    Wrapper.appendChild(InputRow);
-    Wrapper.appendChild(Dropdown);
-    anchor.parentNode.insertBefore(Wrapper, anchor.nextSibling);
-
-    var ActiveIdx = -1;
-    var FlatResults = [];
-
-    function BuildSections(query) {
-        var isPresent = (CurrentMapMode === 'Present');
-        var sections = [];
-        Object.keys(Destinations).forEach(function(cat) {
-            var matches = [];
-            Object.keys(Destinations[cat]).forEach(function(name) {
-                var dest = Destinations[cat][name];
-                if (!DestExists(dest, isPresent ? 'Present' : 'Fantasy')) return;
-                var s = ScoreMatch(name, query);
-                if (s > 0) matches.push({name: name, dest: dest, category: cat, score: s});
-            });
-            matches.sort(function(a, b) { return b.score - a.score || a.name.localeCompare(b.name); });
-            if (matches.length) sections.push({cat: cat, matches: matches});
-        });
-        return sections;
+function InitDestBrowseModal() {
+    var filterInput = document.getElementById('DestBrowseFilterInput');
+    if (filterInput) {
+        filterInput.addEventListener('input', function() { RenderDestBrowseModal(DestBrowseActiveCat); });
     }
-
-    function Render(query) {
-        Dropdown.innerHTML = ''; ActiveIdx = -1; FlatResults = [];
-        var sections = BuildSections(query);
-        if (!sections.length) { Dropdown.classList.remove('show'); return; }
-
-        sections.forEach(function(section) {
-            var cfg = GetDestCategoryConfig(section.cat);
-            var header = document.createElement('div');
-            header.className = 'DestSearchCategoryHeader';
-            header.innerHTML = '<span style="margin-right:5px;">' + cfg.icon + '</span>' + section.cat;
-            Dropdown.appendChild(header);
-            section.matches.slice(0, 5).forEach(function(r) {
-                var item = document.createElement('div');
-                item.className = 'StationSearchItem';
-                var nameEl = document.createElement('div');
-                nameEl.className = 'StationSearchName';
-                nameEl.textContent = r.name;
-                item.appendChild(nameEl);
-                var fi = FlatResults.length;
-                FlatResults.push(r);
-                item.addEventListener('mouseenter', function() { SetActive(fi); });
-                item.addEventListener('click', function() { Commit(r.category, r.name); });
-                Dropdown.appendChild(item);
-            });
-        });
-        Dropdown.classList.add('show');
-    }
-
-    function SetActive(idx) {
-        Dropdown.querySelectorAll('.StationSearchItem').forEach(function(el, i) { el.classList.toggle('active', i === idx); });
-        ActiveIdx = idx;
-    }
-
-    function Commit(cat, name) {
-        Input.value = ''; Dropdown.classList.remove('show');
-        if (DestinationsHidden) ToggleAllDestinations();
-        ShowDestinationPopup(cat, name, true);
-    }
-
-    BrowseBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        Dropdown.classList.remove('show');
-        OpenDestBrowseModal();
-    });
-
-    var DebouncedRender = Debounce(Render, 100);
-    Input.addEventListener('input', function() {
-        if (!Input.value.trim()) { Dropdown.classList.remove('show'); return; }
-        DebouncedRender(Input.value);
-    });
-    Input.addEventListener('keydown', function(e) {
-        var items = Dropdown.querySelectorAll('.StationSearchItem');
-        if (e.key === 'ArrowDown') { e.preventDefault(); SetActive(Math.min(ActiveIdx+1, items.length-1)); }
-        else if (e.key === 'ArrowUp') { e.preventDefault(); SetActive(Math.max(ActiveIdx-1, 0)); }
-        else if (e.key === 'Enter' && ActiveIdx >= 0 && FlatResults[ActiveIdx]) { Commit(FlatResults[ActiveIdx].category, FlatResults[ActiveIdx].name); }
-        else if (e.key === 'Escape') { Dropdown.classList.remove('show'); Input.blur(); }
-    });
-    document.addEventListener('click', function(e) {
-        if (!Wrapper.contains(e.target)) Dropdown.classList.remove('show');
-    });
 }
+
+var DestBrowseActiveCat = 'All';
 
 function OpenDestBrowseModal() {
     var backdrop = document.getElementById('DestBrowseBackdrop');
     var modal = document.getElementById('DestBrowseModal');
+    var filterInput = document.getElementById('DestBrowseFilterInput');
     if (backdrop) backdrop.classList.add('show');
     if (modal) modal.classList.add('show');
+    if (filterInput) { filterInput.value = ''; setTimeout(function() { filterInput.focus(); }, 50); }
     RenderDestBrowseModal('All');
 }
 
@@ -2307,10 +2284,13 @@ function CloseDestBrowseModal() {
 }
 
 function RenderDestBrowseModal(activeCat) {
+    DestBrowseActiveCat = activeCat;
     var tabsEl = document.getElementById('DestBrowseTabs');
     var gridEl = document.getElementById('DestBrowseGrid');
     if (!tabsEl || !gridEl) return;
 
+    var filterInput = document.getElementById('DestBrowseFilterInput');
+    var query = filterInput ? filterInput.value.trim().toLowerCase() : '';
     var isPresent = (CurrentMapMode === 'Present');
     var cats = Object.keys(Destinations).sort();
 
@@ -2327,7 +2307,9 @@ function RenderDestBrowseModal(activeCat) {
         if (activeCat !== 'All' && activeCat !== cat) return;
         var cfg = GetDestCategoryConfig(cat);
         var names = Object.keys(Destinations[cat]).filter(function(name) {
-            return DestExists(Destinations[cat][name], isPresent ? 'Present' : 'Fantasy');
+            if (!DestExists(Destinations[cat][name], isPresent ? 'Present' : 'Fantasy')) return false;
+            if (query && name.toLowerCase().indexOf(query) === -1) return false;
+            return true;
         }).sort();
         if (!names.length) return;
 
@@ -2352,13 +2334,76 @@ function RenderDestBrowseModal(activeCat) {
         gridHtml += '</div>';
     });
 
-    gridEl.innerHTML = gridHtml || '<div class="DestBrowseEmpty">No destinations in this view.</div>';
+    gridEl.innerHTML = gridHtml || '<div class="DestBrowseEmpty">No destinations found.</div>';
 }
 
 function CommitBrowseSelection(cat, name) {
     CloseDestBrowseModal();
     if (DestinationsHidden) ToggleAllDestinations();
     ShowDestinationPopup(cat, name, true);
+}
+
+function InitProjectBrowseModal() {
+    var filterInput = document.getElementById('ProjectBrowseFilterInput');
+    if (filterInput) {
+        filterInput.addEventListener('input', function() { RenderProjectBrowseModal(filterInput.value); });
+    }
+}
+
+function OpenProjectBrowseModal() {
+    if (CurrentMapMode !== 'Fantasy') return; // projects only exist on the Future map
+    var backdrop = document.getElementById('ProjectBrowseBackdrop');
+    var modal = document.getElementById('ProjectBrowseModal');
+    var filterInput = document.getElementById('ProjectBrowseFilterInput');
+    if (backdrop) backdrop.classList.add('show');
+    if (modal) modal.classList.add('show');
+    if (filterInput) { filterInput.value = ''; setTimeout(function() { filterInput.focus(); }, 50); }
+    RenderProjectBrowseModal('');
+}
+
+function CloseProjectBrowseModal() {
+    var backdrop = document.getElementById('ProjectBrowseBackdrop');
+    var modal = document.getElementById('ProjectBrowseModal');
+    if (backdrop) backdrop.classList.remove('show');
+    if (modal) modal.classList.remove('show');
+}
+
+function RenderProjectBrowseModal(filterQuery) {
+    var gridEl = document.getElementById('ProjectBrowseGrid');
+    if (!gridEl) return;
+
+    var query = (filterQuery || '').trim().toLowerCase();
+    var names = Object.keys(InfoPoints).filter(function(name) {
+        return !query || name.toLowerCase().indexOf(query) !== -1;
+    }).sort();
+
+    if (!names.length) {
+        gridEl.innerHTML = '<div class="DestBrowseEmpty">No projects found.</div>';
+        return;
+    }
+
+    var html = '<div class="DestBrowseCards">';
+    names.forEach(function(name) {
+        var info = InfoPoints[name];
+        var escName = name.replace(/'/g, "\\'");
+        var hasImage = !!info.Image;
+        var imgTag = hasImage
+            ? (function() { var a = ImageAttrs(PROJECT_IMAGE_BASE, info.Image); return '<img class="DestBrowseCardImage" src="' + a.src + '" ' + a.extra + ' alt="" loading="lazy" decoding="async">'; })()
+            : '';
+        html += '<div class="DestBrowseCard' + (hasImage ? ' has-image' : '') + '" onclick="CommitProjectBrowseSelection(\'' + escName + '\')">' +
+            imgTag +
+            '<div class="DestBrowseCardIcon" style="background:#3b82f6">📌</div>' +
+            '<div class="DestBrowseCardCaption"><span class="DestBrowseCardName">' + name + '</span></div>' +
+            '</div>';
+    });
+    html += '</div>';
+    gridEl.innerHTML = html;
+}
+
+function CommitProjectBrowseSelection(name) {
+    CloseProjectBrowseModal();
+    if (ProjectsHidden) ToggleAllProjects();
+    ShowInfoPopup(name, true);
 }
 
 // Maps each team name to every venue (across all destination categories) whose
@@ -2538,46 +2583,78 @@ function SelectSportsTeam(league, team) {
     ShowDestinationPopup(match.cat, match.name, true);
 }
 
-function MakeTeamMarkerIcon(logoSrc, logoExtra) {
+function MakeTeamMarkerIcon(logoSrc, logoExtra, available) {
     var S = 44;
-    var html = '<div style="width:' + S + 'px;height:' + S + 'px;border-radius:50%;background:#fff;border:2.5px solid #1e293b;box-shadow:0 2px 6px rgba(0,0,0,0.35);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:pointer;">' +
-        '<img src="' + logoSrc + '" ' + logoExtra + ' style="width:82%;height:82%;object-fit:contain;" alt="">' +
+    var faded = available ? '' : 'filter:grayscale(1);opacity:0.5;';
+    var badge = available ? '' :
+        '<div style="position:absolute;bottom:-3px;right:-3px;width:17px;height:17px;border-radius:50%;background:#ef4444;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;">🚫</div>';
+    var html = '<div style="position:relative;width:' + S + 'px;height:' + S + 'px;">' +
+        '<div style="width:100%;height:100%;border-radius:50%;background:#fff;border:2.5px solid #1e293b;box-shadow:0 2px 6px rgba(0,0,0,0.35);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:' + (available ? 'pointer' : 'default') + ';' + faded + '">' +
+            '<img src="' + logoSrc + '" ' + logoExtra + ' style="width:82%;height:82%;object-fit:contain;" alt="">' +
+        '</div>' + badge +
         '</div>';
     return L.divIcon({html: html, className: 'TeamMarkerIcon', iconSize: [S, S], iconAnchor: [S / 2, S / 2]});
 }
 
-// Drops every team in `league` that resolves to a valid venue in the current
-// mode onto the map at that venue's location -- clicking one selects it
-// exactly like picking it from the menu (TeamVenueForMode/SelectSportsTeam are
-// the same functions the picker itself uses, so results always match).
+// When a team has no venue valid for the current mode (TeamVenueForMode
+// returns null), it should still appear on the map -- just greyed out -- at
+// whichever of its venues is the most relevant, rather than silently
+// disappearing. Prefers a venue that at least Exists in this mode (it's just
+// unreachable by rail) over one that doesn't exist here at all, and otherwise
+// mirrors TeamVenueForMode's specificity tie-break.
+function TeamVenueFallback(team, mode) {
+    var all = TeamVenueIndex[team] || [];
+    if (!all.length) return null;
+    var existsHere = all.filter(function(m) { return DestExists(m.dest, mode); });
+    var pool = (existsHere.length ? existsHere : all).slice();
+    pool.sort(function(a, b) { return (a.dest.Exists || []).length - (b.dest.Exists || []).length; });
+    return pool[0];
+}
+
+// Drops every team in `league` onto the map at its venue's location -- lit up
+// and clickable (same TeamVenueForMode/SelectSportsTeam the menu itself uses)
+// when it's actually reachable in the current mode, greyed out and inert
+// otherwise. Markers are registered with the same collision-avoidance sim
+// destinations/projects already use, so teams sharing a stadium or just
+// sitting close together spread apart automatically instead of stacking.
 function ShowTeamMarkersForLeague(league) {
     ClearTeamMapMarkers();
     TeamMapLeague = league;
     var mode = (CurrentMapMode === 'Present') ? 'Present' : 'Fantasy';
     var visibleKeys = ComputeVisibleStationKeys();
-    var placed = 0;
+    var placedAvailable = 0, placedTotal = 0;
+
     (Leagues[league] || []).forEach(function(team) {
         var match = TeamVenueForMode(team, mode, visibleKeys);
+        var available = !!match;
+        if (!match) match = TeamVenueFallback(team, mode);
         if (!match) return;
+
         var a = ImageAttrs(SPORTS_IMAGE_BASE + '/' + encodeURIComponent(league), team);
-        var marker = L.marker(match.dest.Location, {icon: MakeTeamMarkerIcon(a.src, a.extra), zIndexOffset: 650, pane: 'destMarkerPane'});
-        marker.bindTooltip(team, {direction: 'top', offset: [0, -24], className: 'ProjectTooltip', sticky: false, pane: 'hoverTooltipPane'});
-        marker.on('click', function(e) { L.DomEvent.stopPropagation(e); SelectSportsTeam(league, team); });
-        marker.addTo(window[MAP_NAME]);
-        TeamMapMarkers.push(marker);
-        placed++;
+        var icon = MakeTeamMarkerIcon(a.src, a.extra, available);
+        var tooltip = team + (available ? '' : ' · Not accessible by rail');
+        var onClick = available ? function() { SelectSportsTeam(league, team); } : function() {};
+        var layers = BuildPinMarker('team:' + league + '|' + team, match.dest.Location, icon, tooltip, available ? '#1e293b' : '#94a3b8', onClick, 44);
+        AddMarkerLayers(layers);
+        TeamMapMarkers.push(layers);
+        placedTotal++;
+        if (available) placedAvailable++;
     });
+    ResolveMarkerCollisions();
 
     var badge = document.getElementById('SportsOverlayBadge');
     var badgeText = document.getElementById('SportsOverlayBadgeText');
     if (badge && badgeText) {
-        badgeText.textContent = league + ' — ' + placed + (placed === 1 ? ' team' : ' teams') + ' on map';
-        badge.style.display = placed ? 'flex' : 'none';
+        badgeText.textContent = league + ' — ' + placedAvailable + '/' + placedTotal + ' teams accessible';
+        badge.style.display = placedTotal ? 'flex' : 'none';
     }
 }
 
 function ClearTeamMapMarkers() {
-    TeamMapMarkers.forEach(function(m) { if (window[MAP_NAME].hasLayer(m)) window[MAP_NAME].removeLayer(m); });
+    TeamMapMarkers.forEach(function(layers) {
+        RemoveMarkerLayers(layers);
+        delete MarkerSim[layers.simId];
+    });
     TeamMapMarkers = [];
     TeamMapLeague = null;
     var badge = document.getElementById('SportsOverlayBadge');
@@ -2589,17 +2666,27 @@ function ViewLeagueTeamsOnMap(league) {
     ShowTeamMarkersForLeague(league);
 }
 
+
 function BuildAllStationGroups(filterQuery) {
-    var VisibleStationKeys = new Set(Object.keys(GetLinesByStation()));
+    // Was calling LinesServingKeys (a full Registry scan) once per station
+    // group -- O(groups x registry size) and the actual source of the lag
+    // when this modal opens. GetLinesByStation() already builds a cached
+    // station -> line-id index in one pass; reuse that instead so each group
+    // just unions a handful of Set lookups.
+    var linesByStation = GetLinesByStation();
+    var lineById = {};
+    Registry.forEach(function(L) { lineById[L.Id] = L; });
 
     var Groups = {};
     Object.keys(StationSearchIndex).forEach(function(Key) {
-        if (!VisibleStationKeys.has(Key)) return;
+        var served = linesByStation[Key];
+        if (!served) return;
         var Base = StationGroupBase(Key);
-        if (!Groups[Base]) Groups[Base] = {Keys: [], Labels: []};
+        if (!Groups[Base]) Groups[Base] = {Keys: [], Labels: [], LineIds: new Set()};
         Groups[Base].Keys.push(Key);
         var memberLabel = CleanStationName(StationSearchIndex[Key].Label || Key);
         if (!Groups[Base].Labels.includes(memberLabel)) Groups[Base].Labels.push(memberLabel);
+        served.lines.forEach(function(id) { Groups[Base].LineIds.add(id); });
     });
 
     var qn = filterQuery ? NormalizeSearchText(filterQuery) : '';
@@ -2611,7 +2698,8 @@ function BuildAllStationGroups(filterQuery) {
         })
         .filter(function(G) { return !qn || NormalizeSearchText(G.Label).includes(qn); })
         .map(function(G) {
-            return {Label: G.Label, Key: G.Keys[0], Lines: LinesServingKeys(G.Keys)};
+            var lines = Array.from(G.LineIds).map(function(id) { return lineById[id]; }).filter(Boolean);
+            return {Label: G.Label, Key: G.Keys[0], Lines: lines};
         })
         .sort(function(a, b) { return a.Label.localeCompare(b.Label); });
 }
@@ -2619,7 +2707,8 @@ function BuildAllStationGroups(filterQuery) {
 function InitStationBrowseModal() {
     var filterInput = document.getElementById('StationBrowseFilterInput');
     if (filterInput) {
-        filterInput.addEventListener('input', function() { RenderStationBrowseModal(filterInput.value); });
+        var debouncedRender = Debounce(function() { RenderStationBrowseModal(filterInput.value); }, 80);
+        filterInput.addEventListener('input', debouncedRender);
     }
 }
 
@@ -2980,12 +3069,18 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
             var destBrowseModal = document.getElementById('DestBrowseModal');
             var stationBrowseModal = document.getElementById('StationBrowseModal');
             var sportsBrowseModal = document.getElementById('SportsBrowseModal');
+            var projectBrowseModal = document.getElementById('ProjectBrowseModal');
+            var routeBrowseModal = document.getElementById('RouteBrowseModal');
             if (stationBrowseModal && stationBrowseModal.classList.contains('show')) {
                 CloseStationBrowseModal();
             } else if (destBrowseModal && destBrowseModal.classList.contains('show')) {
                 CloseDestBrowseModal();
             } else if (sportsBrowseModal && sportsBrowseModal.classList.contains('show')) {
                 CloseSportsBrowseModal();
+            } else if (projectBrowseModal && projectBrowseModal.classList.contains('show')) {
+                CloseProjectBrowseModal();
+            } else if (routeBrowseModal && routeBrowseModal.classList.contains('show')) {
+                CloseRouteBrowseModal();
             } else if (CurrentStationPopup) {
                 CloseStationPopup();
             } else if (SelectedId) {
@@ -3009,21 +3104,11 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
     Leagues = leagues || {};
     BuildTeamVenueIndex();
     MarkDataLoaded();
-    InitStationSearch();
-    InitDestinationSearch();
     InitStationBrowseModal();
+    InitDestBrowseModal();
+    InitProjectBrowseModal();
+    InitRouteBrowseModal();
     SyncDestinationToggleUI();
-
-    (function ReorderSearchRows() {
-        var linesView = document.getElementById('LinesView');
-        var searchLabel = document.getElementById('SearchSectionLabel');
-        var routeRow = document.getElementById('SearchRow');
-        var stationRow = document.getElementById('StationSearchRow');
-        var destRow = document.getElementById('DestSearchRow');
-        if (!linesView || !searchLabel || !routeRow || !stationRow || !destRow) return;
-        linesView.insertBefore(destRow, searchLabel.nextSibling);
-        linesView.insertBefore(stationRow, routeRow);
-    })();
 
     RenderDestinationMarkers();
     var destBadge = document.getElementById('DestinationCountBadge');
@@ -3081,133 +3166,6 @@ function ShowStationPopupFromSearch(StationKey) {
     ShowStationPopup(StationKey, true);
 }
 
-function InitStationSearch() {
-    var SearchRow = document.getElementById('SearchRow');
-    if (!SearchRow) return;
-
-    var Wrapper = document.createElement('div');
-    Wrapper.id = 'StationSearchRow';
-
-    var InputRow = document.createElement('div');
-    InputRow.style.cssText = 'display:flex;gap:6px;align-items:center;';
-
-    var Input = document.createElement('input');
-    Input.type = 'text';
-    Input.id = 'StationSearchInput';
-    Input.placeholder = 'Search stations...';
-    Input.autocomplete = 'off';
-    Input.style.flex = '1';
-
-    var BrowseBtn = document.createElement('button');
-    BrowseBtn.id = 'StationBrowseBtn';
-    BrowseBtn.title = 'Browse all stations';
-    BrowseBtn.innerHTML = '⊞';
-
-    InputRow.appendChild(Input);
-    InputRow.appendChild(BrowseBtn);
-
-    var Dropdown = document.createElement('div');
-    Dropdown.id = 'StationSearchDropdown';
-
-    Wrapper.appendChild(InputRow);
-    Wrapper.appendChild(Dropdown);
-    SearchRow.parentNode.insertBefore(Wrapper, SearchRow.nextSibling);
-
-    BrowseBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        Dropdown.classList.remove('show');
-        OpenStationBrowseModal();
-    });
-
-    var ActiveIdx = -1;
-
-    function Render(Query) {
-        Dropdown.innerHTML = '';
-        ActiveIdx = -1;
-        if (!Query.trim()) { Dropdown.classList.remove('show'); return; }
-
-        var VisibleStationKeys = new Set(Object.keys(GetLinesByStation()));
-
-        var Groups = {};
-        Object.keys(StationSearchIndex).forEach(function(Key) {
-            if (!VisibleStationKeys.has(Key)) return;
-            var Base = StationGroupBase(Key);
-            var CleanBase = CleanStationName(Base);
-            if (!Groups[Base]) Groups[Base] = {Label: CleanBase, Keys: [], Labels: new Set([CleanBase])};
-            Groups[Base].Keys.push(Key);
-            var MemberLabel = StationSearchIndex[Key].Label;
-            if (MemberLabel) Groups[Base].Labels.add(MemberLabel);
-        });
-
-        var Results = Object.values(Groups)
-            .map(function(G) {
-                var BestScore = 0;
-                G.Labels.forEach(function(Lbl) { BestScore = Math.max(BestScore, ScoreMatch(Lbl, Query)); });
-                return {Label: G.Label, Keys: G.Keys, S: BestScore};
-            })
-            .filter(function(R) { return R.S > 0; })
-            .sort(function(A, B) { return B.S - A.S || A.Label.localeCompare(B.Label); })
-            .slice(0, 8);
-
-        if (!Results.length) { Dropdown.classList.remove('show'); return; }
-
-        Results.forEach(function(R, Idx) {
-            var Item = document.createElement('div');
-            Item.className = 'StationSearchItem';
-            Item.dataset.key = R.Keys[0];
-
-            var Name = document.createElement('div');
-            Name.className = 'StationSearchName';
-            Name.textContent = R.Label;
-
-            var Pills = document.createElement('div');
-            Pills.className = 'StationSearchLines';
-            var CurrentLines = LinesServingKeys(R.Keys);
-            CurrentLines.forEach(function(Line) {
-                var P = document.createElement('span');
-                P.className = 'StationSearchPill';
-                P.style.background = Line.Color;
-                P.textContent = Line.Name;
-                Pills.appendChild(P);
-            });
-
-            Item.appendChild(Name);
-            if (CurrentLines.length) Item.appendChild(Pills);
-
-            Item.addEventListener('mouseenter', function() { SetActive(Idx); });
-            Item.addEventListener('click', function() { Commit(R.Keys[0], R.Label); });
-            Dropdown.appendChild(Item);
-        });
-
-        Dropdown.classList.add('show');
-    }
-
-    function SetActive(Idx) {
-        var Items = Dropdown.querySelectorAll('.StationSearchItem');
-        Items.forEach(function(El, I) { El.classList.toggle('active', I === Idx); });
-        ActiveIdx = Idx;
-    }
-
-    function Commit(Key, Label) {
-        Input.value = '';
-        Dropdown.classList.remove('show');
-        ShowStationPopupFromSearch(Key);
-    }
-
-    var DebouncedRender = Debounce(Render, 100);
-    Input.addEventListener('input', function() { DebouncedRender(Input.value); });
-    Input.addEventListener('keydown', function(E) {
-        var Items = Dropdown.querySelectorAll('.StationSearchItem');
-        if (E.key === 'ArrowDown') { E.preventDefault(); SetActive(Math.min(ActiveIdx + 1, Items.length - 1)); }
-        else if (E.key === 'ArrowUp') { E.preventDefault(); SetActive(Math.max(ActiveIdx - 1, 0)); }
-        else if (E.key === 'Enter' && ActiveIdx >= 0) { Commit(Items[ActiveIdx].dataset.key, Items[ActiveIdx].querySelector('.StationSearchName').textContent); }
-        else if (E.key === 'Escape') { Dropdown.classList.remove('show'); Input.blur(); }
-    });
-    document.addEventListener('click', function(E) {
-        if (!Wrapper.contains(E.target)) Dropdown.classList.remove('show');
-    });
-}
-
 function CollapseAll() {
     document.querySelectorAll('.GroupBox').forEach(G => {
         G.open = false;
@@ -3217,7 +3175,9 @@ function CollapseAll() {
     });
 }
 
-function ShowInfoPopup(InfoKey) {
+var PROJECT_FOCUS_ZOOM = 14;
+
+function ShowInfoPopup(InfoKey, zoomIn) {
     var Info = InfoPoints[InfoKey];
     if (!Info) return;
 
@@ -3237,6 +3197,12 @@ function ShowInfoPopup(InfoKey) {
     document.getElementById('InfoPopupContent').innerHTML = Content;
     document.getElementById('InfoPopupOverlay').style.display = 'flex';
     document.getElementById('InfoPopupBackdrop').style.display = 'block';
+
+    // Same convention as ShowDestinationPopup: only reposition the map when
+    // opened from a menu, never when the marker itself was clicked directly.
+    if (zoomIn && Info.Location) {
+        window[MAP_NAME].flyTo(Info.Location, PROJECT_FOCUS_ZOOM, {animate: true, duration: 0.7});
+    }
 }
 
 function CloseInfoPopup() {
