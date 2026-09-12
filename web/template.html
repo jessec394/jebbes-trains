@@ -79,7 +79,7 @@
 </div>
 <div id="MapBlur"></div>
 <div id="HeaderInfo"></div>
-<div id="SportsOverlayBadge" onclick="ClearTeamMapMarkers()" title="Clear teams from map">
+<div id="SportsOverlayBadge" onclick="ClearAllLeagueMarkers()" title="Clear teams from map">
     <span id="SportsOverlayBadgeText"></span>
     <span class="SportsOverlayBadgeClose">×</span>
 </div>
@@ -106,6 +106,7 @@
             <span class="DestBrowseTitleIcon">📍</span>
             <div class="DestBrowseTitle">Points of Interest</div>
         </div>
+        <div id="DestModeToggle" class="SportsModeToggle"></div>
         <button class="DestBrowseClose" onclick="CloseDestBrowseModal()">×</button>
     </div>
     <div class="BrowseFilterRow">
@@ -198,7 +199,7 @@
     <div id="SidebarToggles" class="LayerShowcase">
         <div class="LayerCard station-line" onclick="OpenStationBrowseModal()">
             <div class="LayerTitle">Stations</div>
-            <span class="LayerCount" style="visibility:hidden;"></span>
+            <span class="LayerCount" id="StationCountBadge"></span>
             <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.stopPropagation(); ToggleStationDots()" title="Hide stations">
                 <span class="InlineToggleKnob"></span>
             </button>
@@ -220,17 +221,25 @@
         <div class="LayerCard route-line" onclick="OpenRouteSearch()">
             <div class="LayerTitle">Transit Routes</div>
             <span class="LayerCount" id="RouteCountBadge"></span>
-            <span class="LayerArrow">›</span>
+            <button id="RouteModeSwitchBtn" class="InlineToggleSwitch accent-indigo active" onclick="event.stopPropagation(); ToggleModeFilterPanel(event)" title="Filter by transit mode">
+                <span class="InlineToggleKnob"></span>
+            </button>
         </div>
         <div class="LayerCard sports-line" onclick="OpenSportsBrowseModal()">
             <div class="LayerTitle">Sports Teams</div>
             <span class="LayerCount" id="SportsTeamCountBadge"></span>
-            <span class="LayerArrow">›</span>
+            <button id="SportsLeagueSwitchBtn" class="InlineToggleSwitch accent-green" onclick="event.stopPropagation(); ToggleSportsFilterPanel(event)" title="Show teams on map by league">
+                <span class="InlineToggleKnob"></span>
+            </button>
         </div>
     </div>
+    <div id="SportsFilterPanel" class="InlineFilterPanel"></div>
     <div id="LinesView">
         <div id="SearchRow">
-            <input type="text" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+            <div class="BrowseFilterInputWrap" style="flex:1;">
+                <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+                <input type="text" class="BrowseFilterInput" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+            </div>
             <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">⊟</button>
         </div>
         <div class="SidebarSectionLabel">Transit Lines</div>

@@ -533,19 +533,6 @@ button:focus-visible,
     align-items: center;
 }
 
-#SearchInput {
-    flex: 1;
-    border: none;
-    padding: 15px 20px 15px 42px;
-    background:
-        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><line x1='4' y1='12' x2='20' y2='12' stroke='%2394a3b8' stroke-width='2'/><circle cx='6' cy='12' r='2.5' fill='%2394a3b8'/><circle cx='18' cy='12' r='2.5' fill='%2394a3b8'/></svg>") no-repeat 14px center / 16px 16px,
-        rgba(0, 0, 0, 0.05);
-    border-radius: 18px;
-    font-size: 14px;
-    outline: none;
-    font-weight: 500;
-}
-
 #ModeFilterRow {
     display: none;
     position: fixed;
@@ -2307,10 +2294,41 @@ button:focus-visible,
     line-height: 1;
 }
 
-.LayerArrow {
-    justify-self: center;
-    color: #94a3b8;
-    font-size: 15px;
+.InlineFilterPanel {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 22px;
+    transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease;
+}
+
+.InlineFilterPanel.open {
+    max-height: 400px;
+    overflow-y: auto;
+    opacity: 1;
+    padding: 4px 22px 12px 22px;
+}
+
+.InlineFilterRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 14px 9px 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.InlineFilterRow:last-child { margin-bottom: 0; }
+
+.InlineFilterLabel {
+    flex: 1;
+    min-width: 0;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #334155;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .InlineToggleSwitch {
@@ -2341,6 +2359,8 @@ button:focus-visible,
 .InlineToggleSwitch.active.accent-blue  { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
 .InlineToggleSwitch.active.accent-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
 .InlineToggleSwitch.active.accent-slate { background: linear-gradient(135deg, #52525b, #27272a); }
+.InlineToggleSwitch.active.accent-indigo { background: linear-gradient(135deg, #6366f1, #4338ca); }
+.InlineToggleSwitch.active.accent-green  { background: linear-gradient(135deg, #16a34a, #15803d); }
 
 .InlineToggleSwitch.active .InlineToggleKnob {
     left: 17px;
@@ -2504,8 +2524,8 @@ button:focus-visible,
 
 .DestBrowseTabs {
     display: flex;
-    gap: 6px;
-    padding: 14px 20px 0 20px;
+    gap: 8px;
+    padding: 16px 20px 4px 20px;
     overflow-x: auto;
     flex-shrink: 0;
 }
@@ -2513,28 +2533,29 @@ button:focus-visible,
 .DestBrowseTab {
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding: 7px 13px;
+    gap: 7px;
+    padding: 9px 16px;
     border-radius: 999px;
-    border: 1.5px solid #e2e8f0;
+    border: 2px solid #e2e8f0;
     background: #fff;
-    color: #64748b;
-    font-size: 12px;
-    font-weight: 700;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 800;
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.15s ease;
 }
 
-.DestBrowseTab:hover { background: #f8fafc; }
+.DestBrowseTab:hover { background: #f8fafc; border-color: #cbd5e1; transform: translateY(-1px); }
 
 .DestBrowseTab.active {
     background: #1e293b;
     border-color: #1e293b;
     color: #fff;
+    box-shadow: 0 3px 10px rgba(15,23,42,0.25);
 }
 
-.DestBrowseTabIcon { font-size: 12px; }
+.DestBrowseTabIcon { font-size: 15px; line-height: 1; }
 
 .DestBrowseGrid {
     padding: 16px 20px 20px 20px;
@@ -2735,22 +2756,22 @@ button:focus-visible,
     color: #fff;
 }
 
-.DestBrowseCard.sports-unavailable {
+.DestBrowseCard.rail-unavailable {
     cursor: default;
     opacity: 0.45;
 }
 
-.DestBrowseCard.sports-unavailable:hover {
+.DestBrowseCard.rail-unavailable:hover {
     border-color: transparent;
     box-shadow: none;
     transform: none;
 }
 
-.DestBrowseCard.sports-unavailable .DestBrowseCardImage {
+.DestBrowseCard.rail-unavailable .DestBrowseCardImage {
     filter: grayscale(1);
 }
 
-.SportsNoRailBadge {
+.NoRailBadge {
     display: block;
     margin-top: 2px;
     font-size: 10px;

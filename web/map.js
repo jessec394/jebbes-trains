@@ -22,8 +22,8 @@ var Destinations = {};
 var Leagues = {};
 var TeamVenueIndex = {};
 var TeamLeagueIndex = {};
-var TeamMapMarkers = [];
-var TeamMapLeague = null;
+var TeamMapMarkersByLeague = {}; // league -> array of BuildPinMarker layer objects
+var ActiveSportsLeagues = new Set();
 var DestinationMarkers = {};
 var SelectedDestination = null;
 
@@ -213,7 +213,7 @@ function SwitchMapMode(Mode) {
     UpdateDestinationMarkersVisibility();
     BuildByMode();
     if (Mode !== 'Fantasy') CloseProjectBrowseModal(); // projects don't exist outside the Future map
-    if (TeamMapLeague) ShowTeamMarkersForLeague(TeamMapLeague);
+    ActiveSportsLeagues.forEach(function(lg) { AddLeagueMarkers(lg); });
 }
 
 function SwitchTab(Tab) {
@@ -823,6 +823,8 @@ function BuildByMode() {
     BuildModeToggles();
     var routeBadge = document.getElementById('RouteCountBadge');
     if (routeBadge) routeBadge.textContent = Registry.length;
+    var stationBadge = document.getElementById('StationCountBadge');
+    if (stationBadge) stationBadge.textContent = BuildAllStationGroups('').length;
 }
 
 // Entry point for the "Transit Routes" showcase card: a proper browse modal
@@ -1527,10 +1529,13 @@ function CloseModeFilterPanel() {
 
 function UpdateModeFilterBadge() {
     var badge = document.getElementById('ModeFilterBadge');
-    if (!badge) return;
-    var hiddenCount = DisabledModes.size;
-    badge.textContent = hiddenCount;
-    badge.style.display = hiddenCount > 0 ? 'flex' : 'none';
+    if (badge) {
+        var hiddenCount = DisabledModes.size;
+        badge.textContent = hiddenCount;
+        badge.style.display = hiddenCount > 0 ? 'flex' : 'none';
+    }
+    var routeSwitch = document.getElementById('RouteModeSwitchBtn');
+    if (routeSwitch) routeSwitch.classList.toggle('active', DisabledModes.size === 0);
 }
 
 function BuildModeToggles() {
@@ -1570,6 +1575,15 @@ function BuildModeToggles() {
 document.addEventListener('click', function(e) {
     var row = document.getElementById('ModeFilterRow');
     if (ModeFilterPanelOpen && row && !row.contains(e.target)) CloseModeFilterPanel();
+});
+
+document.addEventListener('click', function(e) {
+    var panel = document.getElementById('SportsFilterPanel');
+    var btn = document.getElementById('SportsLeagueSwitchBtn');
+    if (!SportsFilterPanelOpen) return;
+    var inPanel = panel && panel.contains(e.target);
+    var onBtn = btn && btn.contains(e.target);
+    if (!inPanel && !onBtn) CloseSportsFilterPanel();
 });
 
 function Reset() {
@@ -2264,6 +2278,20 @@ function InitDestBrowseModal() {
     }
 }
 
+function RenderDestModeToggle() {
+    var el = document.getElementById('DestModeToggle');
+    if (!el) return;
+    el.innerHTML =
+        '<button class="SportsModeBtn' + (CurrentMapMode === 'Present' ? ' active' : '') + '" onclick="SetDestBrowseMode(\'Present\')">Present Day</button>' +
+        '<button class="SportsModeBtn' + (CurrentMapMode === 'Fantasy' ? ' active' : '') + '" onclick="SetDestBrowseMode(\'Fantasy\')">Future Vision</button>';
+}
+
+function SetDestBrowseMode(mode) {
+    if (CurrentMapMode !== mode) SwitchMapMode(mode);
+    RenderDestModeToggle();
+    RenderDestBrowseModal(DestBrowseActiveCat);
+}
+
 var DestBrowseActiveCat = 'All';
 
 function OpenDestBrowseModal() {
@@ -2273,6 +2301,7 @@ function OpenDestBrowseModal() {
     if (backdrop) backdrop.classList.add('show');
     if (modal) modal.classList.add('show');
     if (filterInput) { filterInput.value = ''; setTimeout(function() { filterInput.focus(); }, 50); }
+    RenderDestModeToggle();
     RenderDestBrowseModal('All');
 }
 
@@ -2293,11 +2322,14 @@ function RenderDestBrowseModal(activeCat) {
     var query = filterInput ? filterInput.value.trim().toLowerCase() : '';
     var isPresent = (CurrentMapMode === 'Present');
     var cats = Object.keys(Destinations).sort();
+    var visibleKeys = ComputeVisibleStationKeys();
 
     var tabsHtml = '<button class="DestBrowseTab' + (activeCat === 'All' ? ' active' : '') + '" onclick="RenderDestBrowseModal(\'All\')">All</button>';
     cats.forEach(function(cat) {
         var cfg = GetDestCategoryConfig(cat);
-        tabsHtml += '<button class="DestBrowseTab' + (activeCat === cat ? ' active' : '') + '" onclick="RenderDestBrowseModal(\'' + cat.replace(/'/g, "\\'") + '\')">' +
+        var isActive = (activeCat === cat);
+        var activeStyle = isActive ? (' style="background:' + cfg.bg + ';border-color:' + cfg.bg + ';box-shadow:0 3px 10px ' + cfg.bg + '55;"') : '';
+        tabsHtml += '<button class="DestBrowseTab' + (isActive ? ' active' : '') + '"' + activeStyle + ' onclick="RenderDestBrowseModal(\'' + cat.replace(/'/g, "\\'") + '\')">' +
             '<span class="DestBrowseTabIcon">' + cfg.icon + '</span>' + cat + '</button>';
     });
     tabsEl.innerHTML = tabsHtml;
@@ -2318,6 +2350,7 @@ function RenderDestBrowseModal(activeCat) {
         gridHtml += '<div class="DestBrowseCards">';
         names.forEach(function(name) {
             var dest = Destinations[cat][name];
+            var connected = DestHasVisibleService(dest, visibleKeys);
             var imgFile = DestImageFile(dest);
             var hasImage = !!imgFile;
             var escName = name.replace(/'/g, "\\'");
@@ -2325,11 +2358,14 @@ function RenderDestBrowseModal(activeCat) {
             var imgTag = hasImage
                 ? (function() { var a = ImageAttrs(DEST_IMAGE_BASE, imgFile); return '<img class="DestBrowseCardImage" src="' + a.src + '" ' + a.extra + ' alt="" loading="lazy" decoding="async">'; })()
                 : '';
-            gridHtml += '<div class="DestBrowseCard' + (hasImage ? ' has-image' : '') + '" onclick="CommitBrowseSelection(\'' + escCat + '\',\'' + escName + '\')">' +
+            var cardClass = 'DestBrowseCard' + (hasImage ? ' has-image' : '') + (connected ? '' : ' rail-unavailable');
+            var onclickAttr = connected ? (' onclick="CommitBrowseSelection(\'' + escCat + '\',\'' + escName + '\')"') : '';
+            gridHtml += '<div class="' + cardClass + '"' + onclickAttr + '>' +
                 imgTag +
                 '<div class="DestBrowseCardIcon" style="background:' + cfg.bg + '">' + cfg.icon + '</div>' +
-                '<div class="DestBrowseCardCaption"><span class="DestBrowseCardName">' + name + '</span></div>' +
-                '</div>';
+                '<div class="DestBrowseCardCaption"><span class="DestBrowseCardName">' + name + '</span>' +
+                (connected ? '' : '<span class="NoRailBadge">No rail connection</span>') +
+                '</div></div>';
         });
         gridHtml += '</div>';
     });
@@ -2485,7 +2521,6 @@ function OpenSportsBrowseModal() {
     var modal = document.getElementById('SportsBrowseModal');
     if (backdrop) backdrop.classList.add('show');
     if (modal) modal.classList.add('show');
-    ClearTeamMapMarkers();
     SportsBrowseCurrentLeague = null;
     RenderSportsModeToggle();
     RenderSportsLeagueGrid();
@@ -2560,12 +2595,12 @@ function RenderSportsTeamGrid(league) {
         var a = ImageAttrs(SPORTS_IMAGE_BASE + '/' + encodeURIComponent(league), team);
         var escTeam = team.replace(/'/g, "\\'");
         var available = TeamAvailableInMode(team, mode, visibleKeys);
-        var cardClass = 'DestBrowseCard logo-card' + (available ? '' : ' sports-unavailable');
+        var cardClass = 'DestBrowseCard logo-card' + (available ? '' : ' rail-unavailable');
         var onclickAttr = available ? (' onclick="SelectSportsTeam(\'' + escLg + '\',\'' + escTeam + '\')"') : '';
         gridHtml += '<div class="' + cardClass + '"' + onclickAttr + '>' +
             '<img class="DestBrowseCardImage" src="' + a.src + '" ' + a.extra + ' alt="" loading="lazy" decoding="async">' +
             '<div class="DestBrowseCardCaption"><span class="DestBrowseCardName">' + team + '</span>' +
-            (available ? '' : '<span class="SportsNoRailBadge">Not accessible by rail</span>') +
+            (available ? '' : '<span class="NoRailBadge">Not accessible by rail</span>') +
             '</div></div>';
     });
     gridHtml += '</div>';
@@ -2617,11 +2652,14 @@ function TeamVenueFallback(team, mode) {
 // otherwise. Markers are registered with the same collision-avoidance sim
 // destinations/projects already use, so teams sharing a stadium or just
 // sitting close together spread apart automatically instead of stacking.
-function ShowTeamMarkersForLeague(league) {
-    ClearTeamMapMarkers();
-    TeamMapLeague = league;
+// Adds/refreshes just `league`'s markers without disturbing any other
+// league's -- multiple leagues can be shown on the map at once now, each
+// independently toggled via the Sports Teams switch panel.
+function AddLeagueMarkers(league) {
+    RemoveLeagueMarkers(league);
     var mode = (CurrentMapMode === 'Present') ? 'Present' : 'Fantasy';
     var visibleKeys = ComputeVisibleStationKeys();
+    var markers = [];
     var placedAvailable = 0, placedTotal = 0;
 
     (Leagues[league] || []).forEach(function(team) {
@@ -2636,34 +2674,120 @@ function ShowTeamMarkersForLeague(league) {
         var onClick = available ? function() { SelectSportsTeam(league, team); } : function() {};
         var layers = BuildPinMarker('team:' + league + '|' + team, match.dest.Location, icon, tooltip, available ? '#1e293b' : '#94a3b8', onClick, 44);
         AddMarkerLayers(layers);
-        TeamMapMarkers.push(layers);
+        markers.push(layers);
         placedTotal++;
         if (available) placedAvailable++;
     });
-    ResolveMarkerCollisions();
 
-    var badge = document.getElementById('SportsOverlayBadge');
-    var badgeText = document.getElementById('SportsOverlayBadgeText');
-    if (badge && badgeText) {
-        badgeText.textContent = league + ' — ' + placedAvailable + '/' + placedTotal + ' teams accessible';
-        badge.style.display = placedTotal ? 'flex' : 'none';
-    }
+    TeamMapMarkersByLeague[league] = markers;
+    ResolveMarkerCollisions();
+    return {available: placedAvailable, total: placedTotal};
 }
 
-function ClearTeamMapMarkers() {
-    TeamMapMarkers.forEach(function(layers) {
+function RemoveLeagueMarkers(league) {
+    var markers = TeamMapMarkersByLeague[league];
+    if (!markers) return;
+    markers.forEach(function(layers) {
         RemoveMarkerLayers(layers);
         delete MarkerSim[layers.simId];
     });
-    TeamMapMarkers = [];
-    TeamMapLeague = null;
+    delete TeamMapMarkersByLeague[league];
+}
+
+function SetLeagueMarkersVisible(league, visible) {
+    if (visible) {
+        ActiveSportsLeagues.add(league);
+        AddLeagueMarkers(league);
+    } else {
+        ActiveSportsLeagues.delete(league);
+        RemoveLeagueMarkers(league);
+    }
+    UpdateSportsSwitchUI();
+    UpdateSportsOverlayBadge();
+    var panel = document.getElementById('SportsFilterPanel');
+    if (panel && panel.classList.contains('open')) BuildSportsFilterPanel();
+}
+
+function ToggleLeagueMarkers(league) {
+    SetLeagueMarkersVisible(league, !ActiveSportsLeagues.has(league));
+}
+
+function ClearAllLeagueMarkers() {
+    Array.from(ActiveSportsLeagues).forEach(function(lg) { RemoveLeagueMarkers(lg); });
+    ActiveSportsLeagues.clear();
+    UpdateSportsSwitchUI();
+    UpdateSportsOverlayBadge();
+    var panel = document.getElementById('SportsFilterPanel');
+    if (panel && panel.classList.contains('open')) BuildSportsFilterPanel();
+}
+
+function UpdateSportsSwitchUI() {
+    var btn = document.getElementById('SportsLeagueSwitchBtn');
+    if (btn) btn.classList.toggle('active', ActiveSportsLeagues.size > 0);
+}
+
+function UpdateSportsOverlayBadge() {
     var badge = document.getElementById('SportsOverlayBadge');
-    if (badge) badge.style.display = 'none';
+    var badgeText = document.getElementById('SportsOverlayBadgeText');
+    if (!badge || !badgeText) return;
+    var leagues = Array.from(ActiveSportsLeagues);
+    if (!leagues.length) { badge.style.display = 'none'; return; }
+
+    var totalTeams = 0;
+    leagues.forEach(function(lg) { totalTeams += (TeamMapMarkersByLeague[lg] || []).length; });
+    badgeText.textContent = leagues.length === 1
+        ? (leagues[0] + ' — ' + totalTeams + (totalTeams === 1 ? ' team' : ' teams') + ' on map')
+        : (leagues.length + ' leagues — ' + totalTeams + ' teams on map');
+    badge.style.display = 'flex';
+}
+
+// The Sports Teams card's switch opens this inline panel (a checklist of
+// every league) rather than flipping a single boolean, since "on" here means
+// a set of independently-toggleable leagues, not one shared state.
+var SportsFilterPanelOpen = false;
+
+function ToggleSportsFilterPanel(e) {
+    if (e) e.stopPropagation();
+    SportsFilterPanelOpen = !SportsFilterPanelOpen;
+    var panel = document.getElementById('SportsFilterPanel');
+    if (panel) {
+        panel.classList.toggle('open', SportsFilterPanelOpen);
+        if (SportsFilterPanelOpen) BuildSportsFilterPanel();
+    }
+}
+
+function CloseSportsFilterPanel() {
+    if (!SportsFilterPanelOpen) return;
+    SportsFilterPanelOpen = false;
+    var panel = document.getElementById('SportsFilterPanel');
+    if (panel) panel.classList.remove('open');
+}
+
+function BuildSportsFilterPanel() {
+    var panel = document.getElementById('SportsFilterPanel');
+    if (!panel) return;
+    var leagues = Object.keys(Leagues).sort();
+    if (!leagues.length) {
+        panel.innerHTML = '<div class="InlineFilterRow"><span class="InlineFilterLabel" style="color:#94a3b8;">No leagues found.</span></div>';
+        return;
+    }
+    var html = '';
+    leagues.forEach(function(lg) {
+        var isOn = ActiveSportsLeagues.has(lg);
+        var escLg = lg.replace(/'/g, "\\'");
+        html += '<div class="InlineFilterRow">' +
+            '<span class="InlineFilterLabel">' + lg + '</span>' +
+            '<button class="InlineToggleSwitch accent-green' + (isOn ? ' active' : '') + '" onclick="event.stopPropagation(); ToggleLeagueMarkers(\'' + escLg + '\')">' +
+                '<span class="InlineToggleKnob"></span>' +
+            '</button>' +
+        '</div>';
+    });
+    panel.innerHTML = html;
 }
 
 function ViewLeagueTeamsOnMap(league) {
     CloseSportsBrowseModal();
-    ShowTeamMarkersForLeague(league);
+    SetLeagueMarkersVisible(league, true);
 }
 
 
@@ -3081,6 +3205,10 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
                 CloseProjectBrowseModal();
             } else if (routeBrowseModal && routeBrowseModal.classList.contains('show')) {
                 CloseRouteBrowseModal();
+            } else if (SportsFilterPanelOpen) {
+                CloseSportsFilterPanel();
+            } else if (ModeFilterPanelOpen) {
+                CloseModeFilterPanel();
             } else if (CurrentStationPopup) {
                 CloseStationPopup();
             } else if (SelectedId) {
