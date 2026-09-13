@@ -1602,6 +1602,7 @@ Stations = {
     "Abel Santamaría": {'Location': (23.00092, -82.40933)},
     "Aberdeen [BC]": {'Location': (49.18396, -123.13643)},
     "Aberdeen [MD]": {'Location': (39.50843, -76.16319)},
+    "Aberdeen [SD]": {'Location': (45.46556, -98.48951)},
     "Aberdeen-Matawan": {'Location': (40.41974, -74.22201)},
     "Abilene": {'Location': (32.44892, -99.73429)},
     "Abington": {'Location': (42.10703, -70.93442)},
@@ -2075,6 +2076,7 @@ Stations = {
     "Baden": {'Location': (40.63815, -80.23168)},
     "Baie-D'Urfé": {'Location': (45.41969, -73.91588)},
     "Bailey": {'Location': (42.99087, -78.81361)},
+    "Baker": {'Location': (46.36897, -104.27402)},
     "Baker City": {'Location': (44.77558, -117.84011)},
     "Bakersfield [Amtrak]": {'Location': (35.37219, -119.00769), 'Major': True},
     "Bakersfield [CAHSR]": {'Location': (35.39065, -119.02232), 'Major': True},
@@ -2547,6 +2549,7 @@ Stations = {
     "Bowling Green [NY]": {'Location': (40.70451, -74.01426)},
     "Bowling Green [OH]": {'Location': (41.37436, -83.64459)},
     "Bowling Green [VA]": {'Location': (38.03396, -77.37586)},
+    "Bowman": {'Location': (46.18470, -103.39814)},
     "Bowmore & Gerrard": {'Location': (43.67786, -79.31508)},
     "Bowness": {'Location': (51.08800, -114.18814)},
     "Boyde Rd": {'Location': (40.43058, -80.13547)},
@@ -3482,6 +3485,7 @@ Stations = {
     "Cochrane [ON]": {'Location': (49.06028, -81.02365)},
     "Cocoa": {'Location': (28.39891, -80.75311)},
     "Coconut Grove": {'Location': (25.73981, -80.23885)},
+    "Cody": {'Location': (44.54031, -109.06379)},
     "Coffee Plant/Second Ward": {'Location': (29.74754, -95.34013)},
     "Cohasset": {'Location': (42.24421, -70.83753)},
     "Coker Ave": {'Location': (35.99380, -83.92076)},
@@ -6699,6 +6703,7 @@ Stations = {
     "Leimert Park": {'Location': (34.00462, -118.33265)},
     "Leisure World": {'Location': (33.77417, -118.08914)},
     "Leitrim": {'Location': (45.31366, -75.63195)},
+    "Lemmon": {'Location': (45.94439, -102.15873)},
     "Lemon Grove Depot": {'Location': (32.74342, -117.03065)},
     "Lemont [IL]": {'Location': (41.67373, -88.00246)},
     "Lemont [PA]": {'Location': (40.81068, -77.81707)},
@@ -6930,6 +6935,7 @@ Stations = {
     "Lovejoy": {'Location': (33.44912, -84.32350)},
     "Loveland [CO]": {'Location': (40.39605, -105.07624)},
     "Loveland [OH]": {'Location': (39.26734, -84.25822)},
+    "Lovell": {'Location': (44.84198, -108.39217)},
     "Lovers Lane": {'Location': (32.84900, -96.77156)},
     "Lowe Ave": {'Location': (34.72503, -86.58182)},
     "Lowell Ave": {'Location': (37.92065, -121.27945)},
@@ -7581,6 +7587,7 @@ Stations = {
     "Moana Ln": {'Location': (39.49261, -119.79685)},
     "Moapa": {'Location': (36.68406, -114.62123)},
     "Mobile": {'Location': (30.69085, -88.03829)},
+    "Mobridge": {'Location': (45.53340, -100.43578)},
     "Moctezuma": {'Location': (19.42685, -99.10980)},
     "Modelo": {'Location': (23.03270, -82.25289)},
     "Moderna": {'Location': (25.70027, -100.29286)},
@@ -8405,6 +8412,7 @@ Stations = {
     "Orlando Health": {'Location': (28.52566, -81.37646)},
     "Orleans & N. Carrollton": {'Location': (29.97911, -90.09568)},
     "Ortega Forest": {'Location': (30.26633, -81.70885)},
+    "Ortonville": {'Location': (45.29724, -96.43943)},
     "Osborn/Central Ave": {'Location': (33.48684, -112.07380)},
     "Osborne": {'Location': (49.87379, -97.14077)},
     "Osborne Ave": {'Location': (27.98879, -82.45114)},
@@ -8886,7 +8894,6 @@ Stations = {
     "Poughkeepsie": {'Location': (41.70710, -73.93766)},
     "Powder Springs": {'Location': (33.85764, -84.68466)},
     "Powder Springs P&R": {'Location': (33.86672, -84.70165)},
-    "Powell": {'Location': (40.15853, -83.07857)},
     "Powell & Bush": {'Location': (37.79004, -122.40870)},
     "Powell & California": {'Location': (37.79221, -122.40919)},
     "Powell & Clay": {'Location': (37.79373, -122.40946)},
@@ -8898,6 +8905,8 @@ Stations = {
     "Powell & Sacramento": {'Location': (37.79290, -122.40926)},
     "Powell & Sutter": {'Location': (37.78906, -122.40851)},
     "Powell St": {'Location': (37.78436, -122.40799)},
+    "Powell [Columbus]": {'Location': (40.15853, -83.07857)},
+    "Powell [WY]": {'Location': (44.75030, -108.75909)},
     "Power": {'Location': (40.77151, -111.93422)},
     "Power & Light (14th & Main)": {'Location': (39.09690, -94.58333)},
     "Power Inn": {'Location': (38.54748, -121.40810)},
@@ -10611,6 +10620,7 @@ Stations = {
     "Theater District [Tacoma]": {'Location': (47.25253, -122.43924)},
     "Theater Row": {'Location': (34.09073, -118.32574)},
     "Theatre District/Convention Center": {'Location': (39.74391, -104.99611)},
+    "Thermopolis": {'Location': (43.64654, -108.20585)},
     "Thessalon": {'Location': (46.27144, -83.52840)},
     "Thicket Portage": {'Location': (55.31900, -97.68806)},
     "Thierer-Portage": {'Location': (43.12410, -89.31390)},
@@ -11766,6 +11776,7 @@ Stations = {
     "Woodyard": {'Location': (38.76819, -76.88488)},
     "Woolridge Square": {'Location': (30.27229, -97.74507)},
     "Worcester": {'Location': (42.26123, -71.79496)},
+    "Worland": {'Location': (44.01594, -107.96320)},
     "World Trade Center": {'Location': (42.34991, -71.04149)},
     "World Trade Center [Church]": {'Location': (40.71209, -74.01013), 'Major': True},
     "World Trade Center [PATH]": {'Location': (40.71270, -74.01194), 'Major': True},
@@ -12417,6 +12428,15 @@ Segments = {
     "-Intercity LS (Cheyenne - Alamosa)": {
         "F": ['[R] -Intercity LS (Denver North - Cheyenne)', '-Intercity LS (Denver North - Alamosa)'],
     },
+    "-Intercity LS (Cheyenne - Billings)": {
+        "F": ['-Intercity LS (Cheyenne - Lovell)', 'Billings'],
+    },
+    "-Intercity LS (Cheyenne - Cody)": {
+        "F": ['-Intercity LS (Cheyenne - Lovell)', 'Powell [WY]', 'Cody'],
+    },
+    "-Intercity LS (Cheyenne - Lovell)": {
+        "F": ['Cheyenne [WY]', 'Wheatland', 'Douglas [WY]', 'Casper', 'Shoshoni', 'Thermopolis', 'Worland', 'Greybull', 'Lovell'],
+    },
     "-Intercity LS (Chicago - Airline Bridge)": {
         "F": ['Chicago Union Station', '[X] Chicago Airline Bridge West', '[X] Chicago Airline Bridge East'],
     },
@@ -12862,7 +12882,7 @@ Segments = {
         "F": ['-Intercity LS (Denver Main - Glenwood Springs)', 'Carbondale [CO]', 'Aspen'],
     },
     "-Intercity LS (Denver Main - Billings)": {
-        "F": ['-Intercity LS (Denver Main - Fort Collins) [LD]', 'Fort Collins Approach (University - North)', 'Cheyenne [WY]', 'Wheatland', 'Douglas [WY]', 'Casper', 'Shoshoni', 'Greybull', 'Billings'],
+        "F": ['-Intercity LS (Denver Main - Fort Collins) [LD]', 'Fort Collins Approach (University - North)', '-Intercity LS (Cheyenne - Billings)'],
     },
     "-Intercity LS (Denver Main - Brighton Junction)": {
         "F": ['Denver Approach (Union Main - East)', '[X] 48th & Brighton', '[X] Denver Brighton Junction'],
@@ -13404,6 +13424,9 @@ Segments = {
     "-Intercity LS (Milwaukee - Watertown)": {
         "F": ['-Intercity LS (Milwaukee - Oconomowoc)', 'Watertown'],
     },
+    "-Intercity LS (Minneapolis - Billings)": {
+        "F": ['-Intercity LS (Minneapolis - Willmar)', 'Ortonville', 'Aberdeen [SD]', 'Mobridge', 'Lemmon', 'Bowman', 'Baker', 'Miles City', 'Billings'],
+    },
     "-Intercity LS (Minneapolis - Des Moines)": {
         "F": ['-Intercity LS (Minneapolis - Northfield)', 'Faribault', 'Owatonna', 'Albert Lea', 'Mason City', 'Hampton [IA]', 'Iowa Falls', 'Nevada', '[R] -Intercity LS (Des Moines - Stanwood)'],
     },
@@ -13425,7 +13448,7 @@ Segments = {
         "Keep": ['Minneapolis Target Field {Main}', 'Northfield [MN]'],
     },
     "-Intercity LS (Minneapolis - Sioux Falls)": {
-        "F": ['-Intercity LS (Minneapolis - Wayzata)', 'Litchfield', 'Willmar', 'Granite Falls', 'Marshall [MN]', 'Pipestone', 'Sioux Falls'],
+        "F": ['-Intercity LS (Minneapolis - Willmar)', 'Granite Falls', 'Marshall [MN]', 'Pipestone', 'Sioux Falls'],
     },
     "-Intercity LS (Minneapolis - St. Cloud)": {
         "F": ['Minneapolis Regional Rail (Target Field - St. Cloud)'],
@@ -13438,6 +13461,9 @@ Segments = {
     "-Intercity LS (Minneapolis - Wayzata)": {
         "F": ['Minneapolis Approach (Target Field - St. Louis Park)', 'Wayzata'],
         "Keep": ['Minneapolis Target Field {Main}', 'Wayzata'],
+    },
+    "-Intercity LS (Minneapolis - Willmar)": {
+        "F": ['-Intercity LS (Minneapolis - Wayzata)', 'Litchfield', 'Willmar'],
     },
     "-Intercity LS (Minneapolis - Winnipeg)": {
         "F": ['-Intercity LS (Minneapolis - Fargo)', 'Grand Forks', 'Crookston', 'Dominion City', '[R] Winnipeg Approach (Union - South)'],
@@ -15449,7 +15475,7 @@ Segments = {
         "F": ['Columbus Approach (Columbus - Southeast)', '[X] Columbus Franklinton Junction', 'Franklinton', '[X] Columbus Franklinton Bend', 'South Hilltop', 'Eakin Rd', 'Urbancrest', 'Grove City', 'Autumn Grove', 'Pleasant Corners', 'Timberlake'],
     },
     "Columbus Regional (Central - West Delaware)": {
-        "F": ['Columbus Approach (Columbus - West)', 'Arena District', '[X] Columbus Arena Bend', 'King Ave', 'Campus West {Mainline}', 'Ackerman Rd', 'Riverside Hospital', 'Kendale/Henderson Rd', 'Olentangy', 'Linworth', 'Far Northwest', 'Powell', 'Hyatts', 'West Delaware'],
+        "F": ['Columbus Approach (Columbus - West)', 'Arena District', '[X] Columbus Arena Bend', 'King Ave', 'Campus West {Mainline}', 'Ackerman Rd', 'Riverside Hospital', 'Kendale/Henderson Rd', 'Olentangy', 'Linworth', 'Far Northwest', 'Powell [Columbus]', 'Hyatts', 'West Delaware'],
     },
     "Columbus Regional (Central - West Jefferson)": {
         "F": ['Columbus Approach (Columbus - Southeast)', '[X] Columbus Franklinton Junction', 'Franklinton', 'Valleyview', 'Garden Heights', 'Galloway Ridge', 'Lake Darby', 'West Jefferson'],
@@ -20060,6 +20086,11 @@ Lines = {
                 "Chicago - Omaha": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Chicago - Omaha via Des Moines)'},
             },
         },
+        "Cowboy": {
+            "Fantasy": {
+                "Cheyenne - Cody": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Cheyenne - Cody)'},
+            },
+        },
         "Crescent": {
             "Fantasy": {
                 "New York - Dallas": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (New York - Dallas)'},
@@ -20785,6 +20816,11 @@ Lines = {
         "Yellowhammer": {
             "Fantasy": {
                 "Atlanta - Mobile": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Atlanta - Mobile)'},
+            },
+        },
+        "Yellowstone Valley": {
+            "Fantasy": {
+                "Minneapolis - Billings": {'Mode': 'Intercity Rail', 'Stations': '-Intercity LS (Minneapolis - Billings)'},
             },
         },
         "Yooper": {
