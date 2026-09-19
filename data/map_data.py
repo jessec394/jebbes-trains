@@ -19377,7 +19377,7 @@ Segments = {
         "F": ['St. Louis Regional Rail (Gateway - Madison)', 'Hwy 162', 'Pontoon Beach', 'Glen Carbon', 'Edwardsville'],
     },
     "St. Louis Regional Rail (Gateway - Festus)": {
-        "F": ['St. Louis Approach (Gateway - Wesr)', 'Southwest Garden', 'Bevo', 'Holly Hills', 'Patch', 'VA Medical Center [St. Louis]', 'White House [MO]', 'Kimmswick', 'Pevely', 'West Festus'],
+        "F": ['St. Louis Approach (Gateway - West)', 'Southwest Garden', 'Bevo', 'Holly Hills', 'Patch', 'VA Medical Center [St. Louis]', 'White House [MO]', 'Kimmswick', 'Pevely', 'West Festus'],
     },
     "St. Louis Regional Rail (Gateway - Highland)": {
         "F": ['St. Louis Regional Rail (Gateway - Caseyville)', 'Caseyville [North]', 'Collinsville', 'South Troy', 'St. Jacob', 'Highland [IL]'],
