@@ -4,8 +4,17 @@ import os
 directory = os.path.abspath(os.path.dirname(__file__))
 file_path = os.path.join(directory, 'map_data.py')
 
-def formatCoordinates(tuple):
-    return f"({tuple[0]:.5f}, {tuple[1]:.5f})"
+def formatCoordinates(tuple_val):
+    return f"({tuple_val[0]:.5f}, {tuple_val[1]:.5f})"
+
+def formatDict(d):
+    """Formats a station/substation dict, applying formatCoordinates to 'Location'."""
+    inner_parts = []
+    if 'Location' in d:
+        inner_parts.append(f"'Location': {formatCoordinates(d['Location'])}")
+    for k in sorted(v for v in d.keys() if v != 'Location'):
+        inner_parts.append(f"{repr(k)}: {repr(d[k])}")
+    return "{" + ", ".join(inner_parts) + "}"
 
 output = ""
 
@@ -30,12 +39,18 @@ output += "Stations = {\n"
 for key in sorted(Stations.keys()):
     content = Stations[key]
     if isinstance(content, dict) and 'Location' in content:
-        location_string = formatCoordinates(content['Location'])
-        inner_parts = [f"'Location': {location_string}"]
-        for k in sorted(v for v in content.keys() if v != 'Location'):
-            inner_parts.append(f"{repr(k)}: {repr(content[k])}")
-        station_content = "{" + ", ".join(inner_parts) + "}"
-        output += f'    "{key}": {station_content},\n'
+        # Standard single-location station
+        output += f'    "{key}": {formatDict(content)},\n'
+    elif isinstance(content, dict):
+        # Station with multiple substations
+        output += f'    "{key}": {{\n'
+        for sub_key in sorted(content.keys()):
+            sub_content = content[sub_key]
+            if isinstance(sub_content, dict):
+                output += f'        "{sub_key}": {formatDict(sub_content)},\n'
+            else:
+                output += f'        "{sub_key}": {repr(sub_content)},\n'
+        output += "    },\n"
     else:
         output += f'    "{key}": {repr(content)},\n'
 output += "}\n\n"
@@ -57,7 +72,7 @@ for operator_key in sorted(Lines.keys()):
     if isinstance(operator_dict, dict):
         for line_key in sorted(operator_dict.keys()):
             line_dict = operator_dict[line_key]
-            output += f'        "{line_key}": {{\n'
+            output += f'    "{line_key}": {{\n'
             if isinstance(line_dict, dict):
                 for category in ["Fantasy", "Present"]:
                     if category not in line_dict: continue
