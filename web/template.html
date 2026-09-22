@@ -1,0 +1,278 @@
+<div id="LoadingBackground"></div>
+<div id="MapSkeleton">
+    <div class="skeleton-line sl-1"></div>
+    <div class="skeleton-line sl-2"></div>
+    <div class="skeleton-line sl-3"></div>
+    <div class="skeleton-line sl-4"></div>
+    <div class="skeleton-line sl-5"></div>
+    <div class="skeleton-line sl-6"></div>
+    <div class="skeleton-line sl-7"></div>
+    <div class="skeleton-line sl-8"></div>
+
+    <div class="skeleton-node sn-1"></div>
+    <div class="skeleton-node sn-2"></div>
+    <div class="skeleton-node sn-3"></div>
+    <div class="skeleton-node sn-4"></div>
+    <div class="skeleton-node sn-5"></div>
+    <div class="skeleton-node sn-6"></div>
+    <div class="skeleton-node sn-7"></div>
+    <div class="skeleton-node sn-8"></div>
+    <div class="skeleton-node sn-9"></div>
+    <div class="skeleton-node sn-10"></div>
+</div>
+<div id="SplashScreen">
+    <div id="SplashContent">
+        <div id="SplashTitle">jebbe's trains</div>
+        <div id="SplashSubtitle">An optimistic future for North American rail transit</div>
+        <div id="MapStats"></div>
+
+        <div id="ViewSelector">
+            <div id="ViewOptions">
+
+                <div class="ViewOption selected" data-view="fantasy-full" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Future — Full Plan</div>
+                        <div class="ViewOptionDesc">The entire fantasy map, simplified</div>
+                    </div>
+                </div>
+
+                <div class="ViewOption" data-view="fantasy-detailed" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Future — Detailed</div>
+                        <div class="ViewOptionDesc">WIP fantasy map made in NIMBY Rails</div>
+                    </div>
+                </div>
+
+                <div class="ViewOptionDivider">
+                    <span>or</span>
+                </div>
+
+                <div class="ViewOption" data-view="present-full" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Present Day — Full Plan</div>
+                        <div class="ViewOptionDesc">The current network, simplified</div>
+                    </div>
+                </div>
+
+                <div class="ViewOption" data-view="present-detailed" onclick="SelectSplashView(this)">
+                    <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Present Day — Detailed</div>
+                        <div class="ViewOptionDesc">Existing network courtesy of BRouter</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="LoadingIndicator">
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+            <div class="loading-dot"></div>
+        </div>
+        <div id="LoadingText">Loading map data...</div>
+        <button id="SplashButton" onclick="CloseSplash()">View Map</button>
+    </div>
+</div>
+<div id="MapBlur"></div>
+<div id="HeaderInfo"></div>
+<div id="SportsOverlayBadge" onclick="ClearAllLeagueMarkers()" title="Clear teams from map">
+    <span id="SportsOverlayBadgeText"></span>
+    <span class="SportsOverlayBadgeClose">×</span>
+</div>
+<div id="InfoPopupBackdrop" onclick="CloseInfoPopup()"></div>
+<div id="InfoPopupOverlay">
+    <div class="InfoPopupHeader">
+        <button class="InfoPopupClose" onclick="CloseInfoPopup()">×</button>
+        <div class="InfoPopupTitle" id="InfoPopupTitle"></div>
+        <div class="InfoPopupSource" id="InfoPopupSource"></div>
+    </div>
+    <div class="InfoPopupContent" id="InfoPopupContent"></div>
+</div>
+<div id="BasemapSwitcher">
+    <div id="LightButton" class="BasemapButton active" onclick="SwitchBasemap('Light')" title="Light Map"></div>
+    <div id="DarkButton" class="BasemapButton" onclick="SwitchBasemap('Dark')" title="Dark Map"></div>
+    <div id="SatelliteButton" class="BasemapButton" onclick="SwitchBasemap('Satellite')" title="Satellite"></div>
+</div>
+
+<div id="DestPopupBackdrop" onclick="CloseDestinationPopup()"></div>
+<div id="DestBrowseBackdrop" class="BrowseBackdrop" onclick="CloseDestBrowseModal()"></div>
+<div id="DestBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon">📍</span>
+            <div class="DestBrowseTitle">Points of Interest</div>
+        </div>
+        <div id="DestModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseDestBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="DestBrowseFilterInput" placeholder="Filter destinations...">
+        </div>
+    </div>
+    <div class="DestBrowseTabs" id="DestBrowseTabs"></div>
+    <div class="DestBrowseGrid" id="DestBrowseGrid"></div>
+</div>
+<div id="ProjectBrowseBackdrop" class="BrowseBackdrop" onclick="CloseProjectBrowseModal()"></div>
+<div id="ProjectBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon">📌</span>
+            <div class="DestBrowseTitle">Projects</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseProjectBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="ProjectBrowseFilterInput" placeholder="Filter projects...">
+        </div>
+    </div>
+    <div class="DestBrowseGrid" id="ProjectBrowseGrid"></div>
+</div>
+<div id="RouteBrowseBackdrop" class="BrowseBackdrop" onclick="CloseRouteBrowseModal()"></div>
+<div id="RouteBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <div class="DestBrowseTitle">Transit Routes</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseRouteBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="RouteBrowseFilterInput" placeholder="Filter routes...">
+        </div>
+    </div>
+    <div class="StationBrowseList" id="RouteBrowseList"></div>
+</div>
+<div id="SportsBrowseBackdrop" class="BrowseBackdrop" onclick="CloseSportsBrowseModal()"></div>
+<div id="SportsBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <div class="DestBrowseTitle">Sports Teams</div>
+        </div>
+        <div id="SportsModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseSportsBrowseModal()">×</button>
+    </div>
+    <div class="DestBrowseTabs" id="SportsBrowseTabs"></div>
+    <div class="DestBrowseGrid" id="SportsBrowseGrid"></div>
+</div>
+<div id="StationBrowseBackdrop" class="BrowseBackdrop" onclick="CloseStationBrowseModal()"></div>
+<div id="StationBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <div class="DestBrowseTitle">Stations</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseStationBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="StationBrowseFilterInput" placeholder="Filter stations...">
+        </div>
+    </div>
+    <div class="StationBrowseList" id="StationBrowseList"></div>
+</div>
+<div id="StationPopupOverlay">
+    <div class="PopupHeader">
+        <button class="PopupClose" onclick="CloseStationPopup()">×</button>
+        <button class="PopupMinimize DestOnly" id="PopupMinimizeBtn" onclick="ToggleDestPopupMinimize()" title="Minimize">−</button>
+        <div class="PopupStationName" id="PopupStationName"></div>
+        <div class="PopupStationType" id="PopupStationType"></div>
+    </div>
+    <div class="PopupContent" id="PopupContent"></div>
+</div>
+<div id="Sidebar" class="splash-hidden">
+    <div id="Handle" onclick="ToggleSidebar()">◀</div>
+    <div id="SidebarHeader">
+        <div id="SidebarBrand">NIMBY Rails</div>
+        <div id="SidebarTitle">Passenger Rail Map</div>
+    </div>
+    <div class="SidebarSectionLabel">Filters</div>
+    <div id="SidebarToggles" class="LayerShowcase">
+        <div class="LayerCard station-line" onclick="OpenStationBrowseModal()">
+            <div class="LayerTitle">Stations</div>
+            <span class="LayerCount" id="StationCountBadge"></span>
+            <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.stopPropagation(); ToggleStationDots()" title="Hide stations">
+                <span class="InlineToggleKnob"></span>
+            </button>
+        </div>
+        <div class="LayerCard project-line" id="ProjectLayerCard" onclick="OpenProjectBrowseModal()">
+            <div class="LayerTitle">Projects</div>
+            <span class="LayerCount" id="ProjectCountBadge"></span>
+            <button id="ProjectToggleButton" class="InlineToggleSwitch accent-blue" onclick="event.stopPropagation(); ToggleAllProjects()" title="Show projects">
+                <span class="InlineToggleKnob"></span>
+            </button>
+        </div>
+        <div class="LayerCard poi-line" onclick="OpenDestBrowseModal()">
+            <div class="LayerTitle">Points of Interest</div>
+            <span class="LayerCount" id="DestinationCountBadge"></span>
+            <button id="POIToggleButton" class="InlineToggleSwitch accent-amber" onclick="event.stopPropagation(); ToggleAllDestinations()" title="Show points of interest">
+                <span class="InlineToggleKnob"></span>
+            </button>
+        </div>
+        <div class="LayerCard route-line" onclick="OpenRouteSearch()">
+            <div class="LayerTitle">Transit Routes</div>
+            <span class="LayerCount" id="RouteCountBadge"></span>
+            <button id="RouteModeSwitchBtn" class="InlineToggleSwitch accent-indigo active" onclick="event.stopPropagation(); ToggleModeFilterPanel(event)" title="Filter by transit mode">
+                <span class="InlineToggleKnob"></span>
+            </button>
+        </div>
+        <div class="LayerCard sports-line" onclick="OpenSportsBrowseModal()">
+            <div class="LayerTitle">Sports Teams</div>
+            <span class="LayerCount" id="SportsTeamCountBadge"></span>
+            <button id="SportsLeagueSwitchBtn" class="InlineToggleSwitch accent-green" onclick="event.stopPropagation(); ToggleSportsFilterPanel(event)" title="Show teams on map by league">
+                <span class="InlineToggleKnob"></span>
+            </button>
+        </div>
+    </div>
+    <div id="SportsFilterPanel" class="InlineFilterPanel"></div>
+    <div id="LinesView">
+        <div id="SearchRow">
+            <div class="BrowseFilterInputWrap" style="flex:1;">
+                <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+                <input type="text" class="BrowseFilterInput" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+            </div>
+            <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">⊟</button>
+        </div>
+        <div class="SidebarSectionLabel">Transit Lines</div>
+        <div id="ListContainer"></div>
+    </div>
+</div>
+<div id="MapViewControl">
+    <div id="MapViewInner">
+        <div id="MapViewFutureCol" class="MapViewCol active-col" onclick="SwitchMapMode('Fantasy')" title="Future vision for North American rail">
+            <div class="MapViewColContent">
+                <div class="MapViewColLabel">Future Vision</div>
+                <div class="MapViewColSub">Fictional expansion</div>
+            </div>
+        </div>
+        <div id="MapViewDivider"></div>
+        <div id="MapViewPresentCol" class="MapViewCol" onclick="SwitchMapMode('Present')" title="Existing routes operating today">
+            <div class="MapViewColContent">
+                <div class="MapViewColLabel">Present Day</div>
+                <div class="MapViewColSub">Existing routes</div>
+            </div>
+        </div>
+    </div>
+    <div id="DetailSubToggle">
+        <button id="BtnFullPlan" class="SubToggleBtn active" onclick="SetDetailLevel('Full')">Full Plan</button>
+        <button id="BtnDetailed" class="SubToggleBtn" onclick="SetDetailLevel('Detailed')">Detailed</button>
+    </div>
+    <div id="ModeFilterRow">
+        <button id="ModeFilterToggleBtn" onclick="ToggleModeFilterPanel(event)" title="Toggle transit types">
+            <span id="ModeFilterToggleLabel">Transit Types</span>
+            <span id="ModeFilterBadge"></span>
+            <span id="ModeFilterChevron">
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+        </button>
+        <div id="ModeFilterPanel"></div>
+    </div>
+</div>
