@@ -29,19 +29,11 @@
         <div id="ViewSelector">
             <div id="ViewOptions">
 
-                <div class="ViewOption selected" data-view="fantasy-full" onclick="SelectSplashView(this)">
+                <div class="ViewOption selected" data-view="fantasy" onclick="SelectSplashView(this)">
                     <div class="ViewOptionCheck"></div>
                     <div class="ViewOptionText">
-                        <div class="ViewOptionName">Future — Full Plan</div>
-                        <div class="ViewOptionDesc">The entire fantasy map, simplified</div>
-                    </div>
-                </div>
-
-                <div class="ViewOption" data-view="fantasy-detailed" onclick="SelectSplashView(this)">
-                    <div class="ViewOptionCheck"></div>
-                    <div class="ViewOptionText">
-                        <div class="ViewOptionName">Future — Detailed</div>
-                        <div class="ViewOptionDesc">WIP fantasy map made in NIMBY Rails</div>
+                        <div class="ViewOptionName">Future</div>
+                        <div class="ViewOptionDesc">An optimistic future for North American rail</div>
                     </div>
                 </div>
 
@@ -49,19 +41,11 @@
                     <span>or</span>
                 </div>
 
-                <div class="ViewOption" data-view="present-full" onclick="SelectSplashView(this)">
+                <div class="ViewOption" data-view="present" onclick="SelectSplashView(this)">
                     <div class="ViewOptionCheck"></div>
                     <div class="ViewOptionText">
-                        <div class="ViewOptionName">Present Day — Full Plan</div>
-                        <div class="ViewOptionDesc">The current network, simplified</div>
-                    </div>
-                </div>
-
-                <div class="ViewOption" data-view="present-detailed" onclick="SelectSplashView(this)">
-                    <div class="ViewOptionCheck"></div>
-                    <div class="ViewOptionText">
-                        <div class="ViewOptionName">Present Day — Detailed</div>
-                        <div class="ViewOptionDesc">Existing network courtesy of BRouter</div>
+                        <div class="ViewOptionName">Present Day</div>
+                        <div class="ViewOptionDesc">The current network</div>
                     </div>
                 </div>
 
@@ -260,10 +244,6 @@
                 <div class="MapViewColSub">Existing routes</div>
             </div>
         </div>
-    </div>
-    <div id="DetailSubToggle">
-        <button id="BtnFullPlan" class="SubToggleBtn active" onclick="SetDetailLevel('Full')">Full Plan</button>
-        <button id="BtnDetailed" class="SubToggleBtn" onclick="SetDetailLevel('Detailed')">Detailed</button>
     </div>
     <div id="ModeFilterRow">
         <button id="ModeFilterToggleBtn" onclick="ToggleModeFilterPanel(event)" title="Toggle transit types">

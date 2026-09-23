@@ -1,22 +1,20 @@
 """
-Converts raw Lines/Stations/Nodes/Segments data into registry entries and JS
-wiring strings the frontend needs.  Geometry is NO LONGER embedded into the
-HTML — instead, file paths (for GeoJSON) and coordinate arrays (for Full
-polylines) are stored in the registry and the browser fetches/renders them.
+Converts raw Lines/Stations/Nodes/Segments data into registry entries the
+frontend needs. Geometry is always an inline coordinate array built straight
+from segment/station/node coordinates -- there's no separate GeoJSON-traced
+("Detailed") layer anymore, so every line gets exactly one polyline.
 """
 
 from __future__ import annotations
 
-import os
-import json
 from typing import Any
 
 from core.station_resolver import build_station_sequence, build_coordinate_sequence
 from core.route_analyzer   import analyze_route_structure, generate_route_diagram
 from builder.types import (
     LinesDict, StationDict, SegmentDict, ModeDict, ModeSettings,
-    Registry, RegistryEntry, LineMappingJs, PatternPayload,
-    LineId, ModeId, Operator, LineName, StationKey, FilePath,
+    Registry, RegistryEntry, PatternPayload,
+    LineId, ModeId, Operator, LineName, StationKey,
 )
 
 
@@ -58,7 +56,7 @@ def _registry_entry(
     z_index:           int,
     patterns:          list[PatternPayload],
     all_line_stations: list[StationKey],
-    geometry:          dict[str, Any],       # {"Type": "geojson", "Files": [...]} or {"Type": "polyline", "Coords": [...]}
+    geometry:          dict[str, Any],       # {"Type": "polyline", "Coords": [...]}
 ) -> RegistryEntry:
     return {
         'Id':              line_id,
@@ -81,23 +79,18 @@ def _safe_line_id(prefix: str, operator: Operator, line_name: LineName) -> LineI
 
 # ── Shared pipeline ───────────────────────────────────────────────────────────
 #
-# process_detailed/process_full/process_present/process_present_full were
-# previously four ~50-line copies of the same operator→line→pattern walk,
-# differing only in which category dict they read from, how they build
-# geometry (GeoJSON file paths vs. inline coordinate arrays), and the line-id
-# prefix. That duplication meant a fix to the grouping/sorting logic had to be
-# applied in four places by hand. _collect_line_entries does the shared walk
-# once; each public function only supplies the pieces that actually differ.
+# process_fantasy and process_present are the same operator→line→pattern walk,
+# differing only in which category dict they read from and the line-id prefix.
+# _collect_line_entries does that walk once; each public function only
+# supplies the category.
 
 def _collect_line_entries(
-    lines:          LinesDict,
-    stations:       StationDict,
-    nodes:          StationDict,
-    segments:       SegmentDict,
-    modes:          ModeDict,
-    category:       str,   # "Fantasy" | "Present"
-    require_file:   bool,  # only keep patterns that have a File entry
-    build_geometry, # (patterns: dict) -> dict | None; None => drop this line
+    lines:    LinesDict,
+    stations: StationDict,
+    nodes:    StationDict,
+    segments: SegmentDict,
+    modes:    ModeDict,
+    category: str,   # "Fantasy" | "Present"
 ) -> list[dict[str, Any]]:
     z_order: dict[ModeId, int] = _mode_z_order(modes)
     entries: list[dict[str, Any]] = []
@@ -105,8 +98,6 @@ def _collect_line_entries(
     for operator, op_lines in lines.items():
         for line_name, categories in op_lines.items():
             patterns = categories.get(category, {})
-            if require_file:
-                patterns = {k: v for k, v in patterns.items() if v.get("File")}
             if not patterns:
                 continue
 
@@ -114,7 +105,7 @@ def _collect_line_entries(
             mode_id:       ModeId       = first["Mode"]
             mode_settings: ModeSettings = modes.get(mode_id)
 
-            geometry = build_geometry(patterns)
+            geometry = _inline_coords(patterns, segments, nodes, stations)
             if not geometry:
                 continue
 
@@ -147,12 +138,6 @@ def _build_registry(entries: list[dict[str, Any]], id_prefix: str) -> Registry:
     return registry
 
 
-def _geojson_files(patterns: dict[str, Any], folder: str) -> dict[str, Any] | None:
-    # Collect relative file paths (served as static assets alongside index.html)
-    files = [f"data/{folder}/{p['File']}.geojson" for p in patterns.values() if p.get('File')]
-    return {"Type": "geojson", "Files": files} if files else None
-
-
 def _inline_coords(
     patterns: dict[str, Any], segments: SegmentDict, nodes: StationDict, stations: StationDict
 ) -> dict[str, Any] | None:
@@ -164,77 +149,29 @@ def _inline_coords(
     return {"Type": "polyline", "Coords": multi_coords} if multi_coords else None
 
 
-# ── Fantasy — Detailed (GeoJSON file references) ──────────────────────────────
+# ── Fantasy ───────────────────────────────────────────────────────────────────
 
-def process_detailed(
-    lines:       LinesDict,
-    stations:    StationDict,
-    nodes:       StationDict,
-    segments:    SegmentDict,
-    modes:       ModeDict,
-    routes_path: FilePath,
-) -> tuple[Registry, LineMappingJs]:
-    """Fantasy patterns with a File entry → registry with GeoJSON file paths."""
-    entries = _collect_line_entries(
-        lines, stations, nodes, segments, modes, "Fantasy", require_file=True,
-        build_geometry=lambda patterns: _geojson_files(patterns, "routes_fantasy"),
-    )
-    return _build_registry(entries, "LineDetailed"), ""
-
-
-# ── Fantasy — Full (coordinate arrays) ───────────────────────────────────────
-
-def process_full(
+def process_fantasy(
     lines:    LinesDict,
     stations: StationDict,
     nodes:    StationDict,
     segments: SegmentDict,
     modes:    ModeDict,
-) -> tuple[Registry, LineMappingJs]:
+) -> Registry:
     """Fantasy patterns → registry with inline coordinate arrays."""
-    entries = _collect_line_entries(
-        lines, stations, nodes, segments, modes, "Fantasy", require_file=False,
-        build_geometry=lambda patterns: _inline_coords(patterns, segments, nodes, stations),
-    )
-    return _build_registry(entries, "LineFull"), ""
+    entries = _collect_line_entries(lines, stations, nodes, segments, modes, "Fantasy")
+    return _build_registry(entries, "LineFantasy")
 
 
-# ── Present (GeoJSON file references) ────────────────────────────────────────
+# ── Present ───────────────────────────────────────────────────────────────────
 
 def process_present(
-    lines:       LinesDict,
-    stations:    StationDict,
-    nodes:       StationDict,
-    segments:    SegmentDict,
-    modes:       ModeDict,
-    routes_path: FilePath,
-) -> tuple[Registry, LineMappingJs]:
-    """Present-day patterns → registry with GeoJSON file paths."""
-    entries = _collect_line_entries(
-        lines, stations, nodes, segments, modes, "Present", require_file=False,
-        build_geometry=lambda patterns: _geojson_files(patterns, "routes_present"),
-    )
-    return _build_registry(entries, "LinePresent"), ""
-
-
-# ── Present — Full (coordinate arrays, no GeoJSON files) ─────────────────────
-
-def process_present_full(
     lines:    LinesDict,
     stations: StationDict,
     nodes:    StationDict,
     segments: SegmentDict,
     modes:    ModeDict,
-) -> tuple[Registry, LineMappingJs]:
-    """Present-day patterns → registry with inline coordinate arrays.
-
-    The low-detail analog of process_present, exactly mirroring process_full:
-    builds lines straight from segment/station coordinates instead of reading
-    GeoJSON files, so present-day routes can be viewed schematically without
-    requiring a traced .geojson for every line.
-    """
-    entries = _collect_line_entries(
-        lines, stations, nodes, segments, modes, "Present", require_file=False,
-        build_geometry=lambda patterns: _inline_coords(patterns, segments, nodes, stations),
-    )
-    return _build_registry(entries, "LinePresentFull"), ""
+) -> Registry:
+    """Present-day patterns → registry with inline coordinate arrays."""
+    entries = _collect_line_entries(lines, stations, nodes, segments, modes, "Present")
+    return _build_registry(entries, "LinePresent")

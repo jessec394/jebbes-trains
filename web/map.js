@@ -1,7 +1,6 @@
-var RegistryDetailed, RegistryFull, RegistryPresent, RegistryPresentFull, Registry;
-var StationsDetailed, AllNodes, Stations;
+var RegistryFantasy, RegistryPresent, Registry;
+var NamedStations, AllNodes, Stations;
 var Modes, ModesOrder;
-var CurrentDetail = 'Full';
 var CurrentMapMode = 'Fantasy';
 var SelectedId = null;
 var StationMarkers = {};
@@ -38,11 +37,6 @@ const NEUTRAL_DOT_COLOR = '#52525b';
 const DOT_SIZE = 6;
 const FOCUS_SCALE = 1.6;
 
-const CORRIDOR_OFFSET_MIN_ZOOM = 13;
-const CORRIDOR_SAMPLE_STEP_M = 8;
-const CORRIDOR_GRID_CELL_M = 5;
-const CORRIDOR_LANE_SPACING_PX = 4;
-const CORRIDOR_MAX_SAMPLE_POINTS = 60000;
 const DOT_HIT_PADDING = 6;
 
 var MapLoadingState = {
@@ -80,8 +74,8 @@ function MarkDataLoaded() {
     MapLoadingState.dataLoaded = true;
     UpdateLoadingProgress();
 
-    var totalRoutes = RegistryFull.length + RegistryPresentFull.length;
-    var totalStations = Object.keys(StationsDetailed).length;
+    var totalRoutes = RegistryFantasy.length + RegistryPresent.length;
+    var totalStations = Object.keys(NamedStations).length;
 
     var statsElement = document.getElementById('MapStats');
     if (statsElement) {
@@ -128,18 +122,14 @@ function CloseSplash() {
     var selected = document.querySelector('.ViewOption.selected');
     if (selected) {
         var view = selected.getAttribute('data-view');
-        var parts = view.split('-');
-        var mode = parts[0] === 'present' ? 'Present' : 'Fantasy';
-        var detail = parts[1] === 'detailed' ? 'Detailed' : 'Full';
+        var mode = view === 'present' ? 'Present' : 'Fantasy';
         if (CurrentMapMode !== mode) SwitchMapMode(mode);
-        if (CurrentDetail !== detail) SetDetailLevel(detail);
     }
 
     splash.classList.add('hidden');
     mapBlur.classList.add('hidden');
     if (skeleton) skeleton.classList.add('hidden');
     if (background) background.classList.add('hidden');
-    ScheduleCorridorOffsets();
 
     if (sidebar) {
         sidebar.classList.remove('splash-hidden');
@@ -159,33 +149,11 @@ function CalculateDistance(lat1, lon1, lat2, lon2) {
 }
 
 function GetActiveRegistry() {
-    if (CurrentMapMode === 'Fantasy') {
-        return CurrentDetail === 'Detailed' ? RegistryDetailed : RegistryFull;
-    }
-    return CurrentDetail === 'Detailed' ? RegistryPresent : RegistryPresentFull;
+    return CurrentMapMode === 'Fantasy' ? RegistryFantasy : RegistryPresent;
 }
 
 function GetHiddenRegistries() {
-    var active = GetActiveRegistry();
-    return [RegistryDetailed, RegistryFull, RegistryPresent, RegistryPresentFull].filter(function(r) { return r !== active; });
-}
-
-function SetDetailLevel(Level) {
-    if (CurrentDetail === Level) return;
-    CurrentDetail = Level;
-    DisabledModes.clear();
-    ApplySwitchedRegistry();
-    Stations = (Level === 'Detailed') ? StationsDetailed : AllNodes;
-
-    var btnFull = document.getElementById('BtnFullPlan');
-    var btnDetailed = document.getElementById('BtnDetailed');
-    if (btnFull && btnDetailed) {
-        btnFull.classList.toggle('active', Level === 'Full');
-        btnDetailed.classList.toggle('active', Level === 'Detailed');
-    }
-
-    Reset();
-    BuildByMode();
+    return [CurrentMapMode === 'Fantasy' ? RegistryPresent : RegistryFantasy];
 }
 
 function SwitchMapMode(Mode) {
@@ -193,7 +161,6 @@ function SwitchMapMode(Mode) {
     CurrentMapMode = Mode;
     DisabledModes.clear();
     ApplySwitchedRegistry();
-    Stations = (CurrentDetail === 'Detailed') ? StationsDetailed : AllNodes;
     Reset();
 
     var control = document.getElementById('MapViewControl');
@@ -967,12 +934,6 @@ function HideLayer(Ly) {
 }
 
 function ShowLayer(Ly, Color, Weight) {
-    if (Ly._geojsonFiles && !Ly._geojsonLoaded) {
-        EnsureLayerLoaded(Ly, function() {
-            Ly.setStyle({color: Color, weight: Weight, opacity: 1.0, fillOpacity: 0.2});
-        });
-        return;
-    }
     Ly.setStyle({color: Color, weight: Weight, opacity: 1.0, fillOpacity: 0.2});
 }
 
@@ -1049,54 +1010,6 @@ function BuildStationTooltip(SN, SL) {
     });
 
     return H + `</div>`;
-}
-
-function SnapToGeometry(LatLon, LGeo) {
-    var Segs = GetLineSegments(LGeo);
-    if (Segs.length === 0) return LatLon;
-
-    var PLat = LatLon[0], PLon = LatLon[1];
-    var BestLat = PLat, BestLon = PLon, BestDist = Infinity;
-    var M_PER_DEG_LAT = 111320.0;
-
-    Segs.forEach(function(Coords) {
-        for (var I = 0; I < Coords.length - 1; I++) {
-            var ALon = Coords[I][0],   ALat = Coords[I][1];
-            var BLon = Coords[I+1][0], BLat = Coords[I+1][1];
-            var CosLat = Math.cos((ALat + BLat) / 2 * Math.PI / 180);
-            var M_PER_DEG_LON = M_PER_DEG_LAT * CosLat;
-
-            var Px = (PLon - ALon) * M_PER_DEG_LON;
-            var Py = (PLat - ALat) * M_PER_DEG_LAT;
-            var Dx = (BLon - ALon) * M_PER_DEG_LON;
-            var Dy = (BLat - ALat) * M_PER_DEG_LAT;
-            var LenSq = Dx * Dx + Dy * Dy;
-
-            var T = LenSq > 0 ? Math.max(0, Math.min(1, (Px * Dx + Py * Dy) / LenSq)) : 0;
-            var ClosestLat = ALat + T * (BLat - ALat);
-            var ClosestLon = ALon + T * (BLon - ALon);
-
-            var Rx = (PLon - ClosestLon) * M_PER_DEG_LON;
-            var Ry = (PLat - ClosestLat) * M_PER_DEG_LAT;
-            var Dist = Math.sqrt(Rx * Rx + Ry * Ry);
-
-            if (Dist < BestDist) {
-                BestDist = Dist;
-                BestLat = ClosestLat;
-                BestLon = ClosestLon;
-            }
-        }
-    });
-
-    return [BestLat, BestLon];
-}
-
-function GetLineGeoJson(I) {
-    var Ly = window[I];
-    if (!Ly || typeof Ly.toGeoJSON !== 'function') return null;
-    var LGJ = Ly.toGeoJSON();
-    if (LGJ.type === 'FeatureCollection') return LGJ;
-    return LGJ.geometry || null;
 }
 
 function ClearStationMarkers() {
@@ -1377,12 +1290,11 @@ function RefreshStationDots() {
             };
         });
     } else if (Focus) {
-        var LGeo = (CurrentDetail === 'Detailed') ? GetLineGeoJson(Focus.Id) : null;
         var focusModes = new Set([Focus.ModeId]);
         Focus.AllLineStations.forEach(function(sn) {
             var s = Stations[sn];
             if (s) wanted[sn] = {
-                location: LGeo ? SnapToGeometry(s.Location, LGeo) : s.Location,
+                location: s.Location,
                 color: Focus.Color,
                 size: Math.round(GetStationVisual(focusModes, !!s.Major, 1).px * FOCUS_SCALE),
                 major: !!s.Major,
@@ -1608,7 +1520,6 @@ function Reset() {
     }));
 
     RefreshStationDots();
-    ScheduleCorridorOffsets();
 }
 
 function SwitchBasemap(Name) {
@@ -2922,249 +2833,18 @@ function EnsureRegistryLayersCreated(registryArray) {
 
 function CreateLeafletLayer(entry) {
     var geo = entry.Geometry;
-    if (!geo) return null;
+    if (!geo || geo.Type !== 'polyline') return null;
     var style = {
         color: entry.Color, weight: entry.Weight, opacity: 1.0,
         lineJoin: 'round', lineCap: 'round', smoothFactor: 1.5
     };
-    var layer;
-    if (geo.Type === 'polyline') {
-        layer = L.polyline(geo.Coords, Object.assign({}, style, {interactive: false}));
-    } else if (geo.Type === 'geojson') {
-        layer = L.layerGroup();
-        layer._geojsonFiles = geo.Files;
-        layer._geojsonStyle = Object.assign({}, style);
-        layer._geojsonLoaded = false;
-        layer._geojsonLoading = false;
-        layer.setStyle = function(s) {
-            Object.assign(layer._geojsonStyle, s);
-            layer.eachLayer(function(fl) { if (fl.setStyle) fl.setStyle(s); });
-        };
-        layer.getBounds = function() {
-            var bounds = L.latLngBounds([]);
-            layer.eachLayer(function(fl) { if (fl.getBounds) bounds.extend(fl.getBounds()); });
-            return bounds;
-        };
-    }
-    if (layer) {
-        layer.addTo(window[MAP_NAME]);
-        if (layer.setZIndex) layer.setZIndex(entry.ZIndex);
-    }
+    var layer = L.polyline(geo.Coords, Object.assign({}, style, {interactive: false}));
+    layer.addTo(window[MAP_NAME]);
+    if (layer.setZIndex) layer.setZIndex(entry.ZIndex);
     return layer;
 }
 
-function EnsureLayerLoaded(layer, callback) {
-    if (!layer._geojsonFiles) { if (callback) callback(); return; }
-    if (layer._geojsonLoaded) { if (callback) callback(); return; }
-    if (layer._geojsonLoading) {
-        if (!layer._loadCallbacks) layer._loadCallbacks = [];
-        if (callback) layer._loadCallbacks.push(callback);
-        return;
-    }
-    layer._geojsonLoading = true;
-    if (!layer._loadCallbacks) layer._loadCallbacks = [];
-    if (callback) layer._loadCallbacks.push(callback);
-    var files = layer._geojsonFiles;
-    var remaining = files.length;
-    function finishLoad() {
-        layer._geojsonLoaded = true; layer._geojsonLoading = false;
-        layer._loadCallbacks.forEach(function(cb) { cb(); }); layer._loadCallbacks = [];
-        ScheduleCorridorOffsets();
-    }
-    if (remaining === 0) { finishLoad(); return; }
-    files.forEach(function(path) {
-        fetch(path)
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                L.geoJson(data, {
-                    style: layer._geojsonStyle, smoothFactor: 1.5,
-                    interactive: false
-                }).addTo(layer);
-                remaining--;
-                if (remaining === 0) { layer.setStyle(layer._geojsonStyle); finishLoad(); }
-            })
-            .catch(function(err) {
-                console.warn('Failed to load GeoJSON:', path, err);
-                remaining--;
-                if (remaining === 0) finishLoad();
-            });
-    });
-}
-
-var CorridorTouchedLayers = new Set();
-
-function HaversineMeters(a, b) {
-    var R = 6371000;
-    var lat1 = a[0] * Math.PI / 180, lat2 = b[0] * Math.PI / 180;
-    var dLat = (b[0] - a[0]) * Math.PI / 180, dLng = (b[1] - a[1]) * Math.PI / 180;
-    var s = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
-    return 2 * R * Math.asin(Math.min(1, Math.sqrt(s)));
-}
-
-function ResamplePath(path, stepMeters) {
-    if (path.length < 2) return path.slice();
-    var out = [path[0]];
-    var covered = 0, nextTarget = stepMeters;
-    for (var i = 1; i < path.length; i++) {
-        var a = path[i - 1], b = path[i];
-        var segLen = HaversineMeters(a, b);
-        if (segLen === 0) continue;
-        while (covered + segLen >= nextTarget) {
-            var t = (nextTarget - covered) / segLen;
-            out.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]);
-            nextTarget += stepMeters;
-        }
-        covered += segLen;
-    }
-    var last = path[path.length - 1];
-    var lastOut = out[out.length - 1];
-    if (lastOut[0] !== last[0] || lastOut[1] !== last[1]) out.push(last);
-    return out;
-}
-
-function CorridorGridKey(latlng, cellMeters) {
-    var mPerDegLat = 110574;
-    var mPerDegLng = 111320 * Math.cos(latlng[0] * Math.PI / 180);
-    var gx = Math.round((latlng[1] * mPerDegLng) / cellMeters);
-    var gy = Math.round((latlng[0] * mPerDegLat) / cellMeters);
-    return gx + '_' + gy;
-}
-
-function CollectCorridorPathEntries(layer, lineId, entries) {
-    if (!layer) return;
-    if (layer.eachLayer) { layer.eachLayer(function(sub) { CollectCorridorPathEntries(sub, lineId, entries); }); return; }
-    if (!layer.getLatLngs || !layer.setLatLngs) return;
-    if (!layer._corridorOriginalLatLngs) layer._corridorOriginalLatLngs = layer.getLatLngs();
-    var ll = layer._corridorOriginalLatLngs;
-    if (!ll.length) return;
-    if (Array.isArray(ll[0])) {
-        ll.forEach(function(sub, idx) {
-            entries.push({lineId: lineId, layer: layer, subIndex: idx, subCount: ll.length, path: sub.map(function(p) { return [p.lat, p.lng]; })});
-        });
-    } else {
-        entries.push({lineId: lineId, layer: layer, subIndex: null, subCount: null, path: ll.map(function(p) { return [p.lat, p.lng]; })});
-    }
-}
-
-function CorridorMetersPerLane() {
-    var zoom = window[MAP_NAME].getZoom();
-    var lat = window[MAP_NAME].getCenter().lat;
-    var metersPerPixel = 156543.03392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, zoom);
-    return CORRIDOR_LANE_SPACING_PX * metersPerPixel;
-}
-
-function ComputeOffsetCellPath(cells, lineId, edgeLines, metersPerLane) {
-    if (cells.length < 2) return cells.map(function(c) { return c.pt; });
-    var n = cells.length;
-    var edgeInfo = [];
-    for (var i = 0; i < n - 1; i++) {
-        var a = cells[i], b = cells[i + 1];
-        var ek = a.key < b.key ? (a.key + '|' + b.key) : (b.key + '|' + a.key);
-        var sharing = edgeLines[ek] || [lineId];
-        var laneCount = sharing.length;
-        var laneIndex = sharing.indexOf(lineId);
-        if (laneIndex < 0) laneIndex = 0;
-        var laneOffset = laneIndex - (laneCount - 1) / 2;
-
-        var midLat = (a.pt[0] + b.pt[0]) / 2;
-        var mPerDegLat = 110574, mPerDegLng = 111320 * Math.cos(midLat * Math.PI / 180);
-        var dx = (b.pt[1] - a.pt[1]) * mPerDegLng, dy = (b.pt[0] - a.pt[0]) * mPerDegLat;
-        var len = Math.hypot(dx, dy) || 1;
-        edgeInfo.push({px: -dy / len, py: dx / len, laneOffset: laneOffset});
-    }
-
-    var out = [];
-    for (var i = 0; i < n; i++) {
-        var incoming = i > 0 ? edgeInfo[i - 1] : null;
-        var outgoing = i < n - 1 ? edgeInfo[i] : null;
-        var vecs = incoming && outgoing ? [incoming, outgoing] : [incoming || outgoing];
-        var avgPx = 0, avgPy = 0, avgLane = 0;
-        vecs.forEach(function(v) { avgPx += v.px; avgPy += v.py; avgLane += v.laneOffset; });
-        avgPx /= vecs.length; avgPy /= vecs.length; avgLane /= vecs.length;
-        var norm = Math.hypot(avgPx, avgPy) || 1;
-        avgPx /= norm; avgPy /= norm;
-
-        var offsetMeters = avgLane * metersPerLane;
-        var pt = cells[i].pt;
-        var mPerDegLat = 110574, mPerDegLng = 111320 * Math.cos(pt[0] * Math.PI / 180);
-        out.push([pt[0] + (avgPy * offsetMeters) / mPerDegLat, pt[1] + (avgPx * offsetMeters) / mPerDegLng]);
-    }
-    return out;
-}
-
-function RestoreCorridorLayers() {
-    if (!CorridorTouchedLayers.size) return;
-    CorridorTouchedLayers.forEach(function(layer) {
-        if (layer._corridorOriginalLatLngs) layer.setLatLngs(layer._corridorOriginalLatLngs);
-    });
-    CorridorTouchedLayers.clear();
-}
-
-function RefreshCorridorOffsets() {
-    if (!window[MAP_NAME]) return;
-    var active = (CurrentDetail === 'Detailed') && window[MAP_NAME].getZoom() >= CORRIDOR_OFFSET_MIN_ZOOM;
-    if (!active) { RestoreCorridorLayers(); return; }
-
-    var activeRegistry = GetActiveRegistry();
-    var entries = [];
-    activeRegistry.forEach(function(entry) {
-        if (DisabledModes.has(entry.ModeId)) return;
-        CollectCorridorPathEntries(window[entry.Id], entry.Id, entries);
-    });
-    if (!entries.length) return;
-
-    var totalPoints = 0;
-    entries.forEach(function(e) {
-        var resampled = ResamplePath(e.path, CORRIDOR_SAMPLE_STEP_M);
-        var cells = [];
-        var lastKey = null;
-        resampled.forEach(function(pt) {
-            var k = CorridorGridKey(pt, CORRIDOR_GRID_CELL_M);
-            if (k !== lastKey) { cells.push({key: k, pt: pt}); lastKey = k; }
-        });
-        e.cells = cells;
-        totalPoints += cells.length;
-    });
-    if (totalPoints > CORRIDOR_MAX_SAMPLE_POINTS) {
-        console.warn('Skipping corridor offsetting — currently visible network (' + totalPoints + ' sample points) exceeds CORRIDOR_MAX_SAMPLE_POINTS');
-        RestoreCorridorLayers();
-        return;
-    }
-
-    var edgeLines = {};
-    entries.forEach(function(e) {
-        var cells = e.cells;
-        for (var i = 0; i < cells.length - 1; i++) {
-            var a = cells[i].key, b = cells[i + 1].key;
-            var ek = a < b ? (a + '|' + b) : (b + '|' + a);
-            (edgeLines[ek] || (edgeLines[ek] = new Set())).add(e.lineId);
-        }
-    });
-    var edgeLineArrays = {};
-    Object.keys(edgeLines).forEach(function(ek) { edgeLineArrays[ek] = Array.from(edgeLines[ek]).sort(); });
-
-    var metersPerLane = CorridorMetersPerLane();
-
-    var byLayer = new Map();
-    entries.forEach(function(e) {
-        var offsetPath = ComputeOffsetCellPath(e.cells, e.lineId, edgeLineArrays, metersPerLane);
-        if (e.subIndex === null) {
-            e.layer.setLatLngs(offsetPath);
-            CorridorTouchedLayers.add(e.layer);
-        } else {
-            var bucket = byLayer.get(e.layer) || byLayer.set(e.layer, new Array(e.subCount)).get(e.layer);
-            bucket[e.subIndex] = offsetPath;
-        }
-    });
-    byLayer.forEach(function(subPaths, layer) {
-        layer.setLatLngs(subPaths);
-        CorridorTouchedLayers.add(layer);
-    });
-}
-
-var ScheduleCorridorOffsets = Debounce(RefreshCorridorOffsets, 150);
-
-function initializeMap(mapName, registryDetailed, registryFull, registryPresent, registryPresentFull, stationsDetailed, allNodes, modes, basemapLayerNames, infoPoints, stationSearchIndex, destinations, leagues) {
+function initializeMap(mapName, registryFantasy, registryPresent, namedStations, allNodes, modes, basemapLayerNames, infoPoints, stationSearchIndex, destinations, leagues) {
     MAP_NAME = mapName;
     window[MAP_NAME].createPane('stationDotPane');
     window[MAP_NAME].getPane('stationDotPane').style.zIndex = 650;
@@ -3176,12 +2856,10 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
     window[MAP_NAME].getPane('hoverTooltipPane').style.zIndex = 1000;
     var popupContentEl = document.getElementById('PopupContent');
     if (popupContentEl) popupContentEl.addEventListener('wheel', function(e) { e.stopPropagation(); }, {passive: true});
-    RegistryDetailed = registryDetailed;
-    RegistryFull = registryFull;
+    RegistryFantasy = registryFantasy;
     RegistryPresent = registryPresent;
-    RegistryPresentFull = registryPresentFull;
-    Registry = RegistryFull;
-    StationsDetailed = stationsDetailed;
+    Registry = RegistryFantasy;
+    NamedStations = namedStations;
     AllNodes = allNodes;
     Stations = AllNodes;
     Modes = modes;
@@ -3207,7 +2885,6 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
     SyncStationDotsToggleUI();
     BuildByMode();
     RefreshStationDots();
-    ScheduleCorridorOffsets();
     window[MAP_NAME].on('click', HandleMapClick);
     window[MAP_NAME].on('moveend zoomend', ScheduleStationDots);
 
@@ -3270,7 +2947,7 @@ function initializeMap(mapName, registryDetailed, registryFull, registryPresent,
     }
     var sportsBadge = document.getElementById('SportsTeamCountBadge');
     if (sportsBadge) sportsBadge.textContent = Object.keys(TeamVenueIndex).length;
-    window[MAP_NAME].on('zoomend', function() { UpdateDestinationMarkersVisibility(); UpdateProjectMarkersVisibility(); RefreshAllMarkerSizes(); ScheduleCorridorOffsets(); });
+    window[MAP_NAME].on('zoomend', function() { UpdateDestinationMarkersVisibility(); UpdateProjectMarkersVisibility(); RefreshAllMarkerSizes(); });
     window[MAP_NAME].on('moveend zoomend', function() { ResolveMarkerCollisions(); });
 
     window.addEventListener('resize', Debounce(RefreshAllMarkerSizes, 200));

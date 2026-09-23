@@ -15,31 +15,27 @@ from builder.types import (
 class JsBridge:
     def __init__(
         self,
-        registry_detailed:     Registry,
-        registry_full:         Registry,
-        registry_present:      Registry,
-        registry_present_full: Registry,
-        stations_detailed:     StationDict,
-        all_nodes:             StationDict,
-        modes:                 ModeDict,
-        map_name:              str,
-        basemap_layer_names:   BasemapNames,
-        info_points:           ProjectsDict,
-        destinations:          dict,
-        leagues:               dict,
+        registry_fantasy:    Registry,
+        registry_present:    Registry,
+        named_stations:      StationDict,
+        all_nodes:           StationDict,
+        modes:               ModeDict,
+        map_name:            str,
+        basemap_layer_names: BasemapNames,
+        info_points:         ProjectsDict,
+        destinations:        dict,
+        leagues:             dict,
     ) -> None:
-        self.registry_detailed:     Registry      = registry_detailed
-        self.registry_full:         Registry      = registry_full
-        self.registry_present:      Registry      = registry_present
-        self.registry_present_full: Registry      = registry_present_full
-        self.stations_detailed:     StationDict   = stations_detailed
-        self.all_nodes:             StationDict   = all_nodes
-        self.modes:                 ModeDict      = modes
-        self.map_name:              str           = map_name
-        self.basemap_layer_names:   BasemapNames  = basemap_layer_names
-        self.info_points:           ProjectsDict = info_points
-        self.destinations:          dict          = destinations
-        self.leagues:               dict          = leagues
+        self.registry_fantasy:    Registry      = registry_fantasy
+        self.registry_present:    Registry      = registry_present
+        self.named_stations:      StationDict   = named_stations
+        self.all_nodes:           StationDict   = all_nodes
+        self.modes:               ModeDict      = modes
+        self.map_name:            str           = map_name
+        self.basemap_layer_names: BasemapNames  = basemap_layer_names
+        self.info_points:         ProjectsDict  = info_points
+        self.destinations:        dict          = destinations
+        self.leagues:             dict          = leagues
 
     @staticmethod
     def _clean_station_name(key: str) -> str:
@@ -68,13 +64,9 @@ class JsBridge:
                 # data/images/flags/ (e.g. 'CAN' -> CAN.webp).
                 **({'Region': list(data['Region'])} if data.get('Region') else {}),
             }
-            for key, data in self.stations_detailed.items()
+            for key, data in self.named_stations.items()
         }
-        all_registries = (
-            self.registry_detailed, self.registry_full,
-            self.registry_present, self.registry_present_full,
-        )
-        for registry in all_registries:
+        for registry in (self.registry_fantasy, self.registry_present):
             for entry in registry:
                 name:     str = entry.get('Name', '')
                 operator: str = entry.get('Operator', '')
@@ -95,11 +87,9 @@ class JsBridge:
 window.addEventListener('load', function() {{
     initializeMap(
         {json.dumps(self.map_name)},
-        {json.dumps(self.registry_detailed)},
-        {json.dumps(self.registry_full)},
+        {json.dumps(self.registry_fantasy)},
         {json.dumps(self.registry_present)},
-        {json.dumps(self.registry_present_full)},
-        {json.dumps(self.stations_detailed)},
+        {json.dumps(self.named_stations)},
         {json.dumps(self.all_nodes)},
         {json.dumps(self.modes)},
         {{

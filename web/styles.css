@@ -1593,40 +1593,6 @@ button:focus-visible,
     margin: 10px 0;
 }
 
-#DetailSubToggle {
-    display: flex;
-    justify-content: center;
-    background: rgba(0,0,0,0.15);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 8px;
-    gap: 4px;
-}
-
-.SubToggleBtn {
-    background: transparent;
-    border: none;
-    color: rgba(255,255,255,0.4);
-    font-size: 11px;
-    font-weight: 700;
-    padding: 6px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.18s ease;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
-}
-
-.SubToggleBtn:hover {
-    color: rgba(255,255,255,0.8);
-    background: rgba(255,255,255,0.08);
-}
-
-.SubToggleBtn.active {
-    background: rgba(167, 139, 250, 0.25);
-    color: #c4b5fd;
-}
-
 #MapViewControl.present-mode #MapViewFutureCol {
     opacity: 0.5;
 }
@@ -1856,11 +1822,6 @@ button:focus-visible,
 
     .MapViewColLabel {
         font-size: 9px;
-    }
-
-    .SubToggleBtn {
-        font-size: 9px;
-        padding: 3px 8px;
     }
 
     .ViewOption {

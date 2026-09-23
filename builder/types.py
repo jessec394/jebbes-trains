@@ -12,7 +12,7 @@ from typing import Any, Literal, TypeAlias
 
 # ── Primitive aliases ─────────────────────────────────────────────────────────
 
-LineId:     TypeAlias = str   # e.g. "LineDetailed_Amtrak_Acela"
+LineId:     TypeAlias = str   # e.g. "LineFantasy_Amtrak_Acela"
 ModeId:     TypeAlias = str   # e.g. "HSR", "HeavyRail"
 Operator:   TypeAlias = str   # e.g. "Amtrak"
 LineName:   TypeAlias = str   # e.g. "Acela"
@@ -115,7 +115,6 @@ RegistryEntry: TypeAlias = dict[str, Any]
 # }
 
 Registry:        TypeAlias = list[RegistryEntry]
-LineMappingJs:   TypeAlias = str    # raw JS fragment wiring folium layer names → window globals
 BasemapNames:    TypeAlias = dict[str, Any]   # {"Light": folium_layer, "Dark": ..., "Satellite": ...}
 
 # ── Route structure (output of route_analyzer) ────────────────────────────────

@@ -15,13 +15,9 @@ map_data = _load('data/map_data.py')
 from builder.map_builder import MapBuilder
 
 DATA           = os.path.join(ROOT, 'data')
-ROUTES_FANTASY = os.path.join(DATA, 'routes_fantasy')
-ROUTES_PRESENT = os.path.join(DATA, 'routes_present')
 OUTPUT_HTML    = os.path.join(ROOT, 'index.html')
 
 builder = MapBuilder(
-    routes_path_fantasy = ROUTES_FANTASY,
-    routes_path_present = ROUTES_PRESENT,
     lines        = map_data.Lines,
     stations     = map_data.Stations,
     nodes        = map_data.Nodes,

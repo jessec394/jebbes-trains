@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import folium
 
-from builder.layer_processor import process_detailed, process_full, process_present, process_present_full
+from builder.layer_processor import process_fantasy, process_present
 from builder.js_bridge       import JsBridge
 from builder.audit           import report_unused
 from core.station_resolver   import normalize_stations
@@ -92,8 +92,6 @@ def _scan_leagues(sports_images_path: FilePath) -> dict[str, list[str]]:
 class MapBuilder:
     def __init__(
         self,
-        routes_path_fantasy: FilePath,
-        routes_path_present: FilePath,
         lines:        LinesDict,
         stations:     StationDict,
         nodes:        StationDict,
@@ -112,15 +110,11 @@ class MapBuilder:
         self.destinations: dict           = destinations
         self.sports_images_path: FilePath = sports_images_path
         self.leagues:      dict           = {}
-        self.routes_fantasy: FilePath     = routes_path_fantasy
-        self.routes_present: FilePath     = routes_path_present
 
-        self._map:                   folium.Map | None = None
-        self._registry_detailed:     Registry          = []
-        self._registry_full:         Registry          = []
-        self._registry_present:      Registry          = []
-        self._registry_present_full: Registry          = []
-        self._basemap_names:         BasemapNames       = {}
+        self._map:                folium.Map | None = None
+        self._registry_fantasy:   Registry          = []
+        self._registry_present:   Registry          = []
+        self._basemap_names:      BasemapNames       = {}
 
     def build(self) -> None:
         self._map = folium.Map(
@@ -150,10 +144,8 @@ class MapBuilder:
 
     def _process_layers(self) -> None:
         shared = (self.lines, self.stations, self.nodes, self.segments, self.modes)
-        self._registry_detailed,     _ = process_detailed(*shared, self.routes_fantasy)
-        self._registry_full,         _ = process_full(*shared)
-        self._registry_present,      _ = process_present(*shared, self.routes_present)
-        self._registry_present_full, _ = process_present_full(*shared)
+        self._registry_fantasy = process_fantasy(*shared)
+        self._registry_present = process_present(*shared)
 
     def _inject_frontend(self) -> None:
         all_nodes: StationDict = {**self.stations, **self.nodes}
@@ -164,17 +156,15 @@ class MapBuilder:
         )
 
         init_script: str = JsBridge(
-            registry_detailed     = self._registry_detailed,
-            registry_full         = self._registry_full,
-            registry_present      = self._registry_present,
-            registry_present_full = self._registry_present_full,
-            stations_detailed     = self.stations,
-            all_nodes             = all_nodes,
-            modes                 = self.modes,
-            map_name              = self._map.get_name(),  # type: ignore[union-attr]
-            basemap_layer_names   = self._basemap_names,
-            info_points           = self.projects,
-            destinations          = self.destinations,
-            leagues               = self.leagues,
+            registry_fantasy    = self._registry_fantasy,
+            registry_present    = self._registry_present,
+            named_stations      = self.stations,
+            all_nodes           = all_nodes,
+            modes               = self.modes,
+            map_name            = self._map.get_name(),  # type: ignore[union-attr]
+            basemap_layer_names = self._basemap_names,
+            info_points         = self.projects,
+            destinations        = self.destinations,
+            leagues             = self.leagues,
         ).generate()
         self._map.get_root().html.add_child(folium.Element(sidebar_html + init_script))  # type: ignore[union-attr]
