@@ -19,9 +19,9 @@ def formatDict(d):
 output = ""
 
 output += "Modes = {\n"
-for key in (Modes.keys()):
+for key in Modes.keys():
     content = Modes[key]
-    inner_parts = [f"{repr(k)}: {repr(content[k])}" for k in (content.keys())]
+    inner_parts = [f"{repr(k)}: {repr(content[k])}" for k in content.keys()]
     output += f'    "{key}": {{{", ".join(inner_parts)}}},\n'
 output += "}\n\n"
 
@@ -30,9 +30,9 @@ for key in sorted(Nodes.keys()):
     content = Nodes[key]
     if isinstance(content, dict) and 'Location' in content:
         location_string = formatCoordinates(content['Location'])
-        output += f'\t"{key}": {{\'Location\': {location_string}}},\n'
+        output += f'    "{key}": {{\'Location\': {location_string}}},\n'
     else:
-        output += f'\t"{key}": {repr(content)},\n'
+        output += f'    "{key}": {repr(content)},\n'
 output += "}\n\n"
 
 output += "Stations = {\n"
@@ -72,7 +72,7 @@ for operator_key in sorted(Lines.keys()):
     if isinstance(operator_dict, dict):
         for line_key in sorted(operator_dict.keys()):
             line_dict = operator_dict[line_key]
-            output += f'    "{line_key}": {{\n'
+            output += f'        "{line_key}": {{\n'
             if isinstance(line_dict, dict):
                 for category in ["Fantasy", "Present"]:
                     if category not in line_dict: continue
