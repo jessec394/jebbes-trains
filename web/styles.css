@@ -493,20 +493,6 @@ button:focus-visible,
 
 #SidebarHeader {
     padding: 22px 22px 16px 22px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-#SidebarMark {
-    flex-shrink: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 11px;
-    background: var(--accent-soft);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #SidebarTitle {
@@ -631,6 +617,10 @@ button:focus-visible,
 .GroupBox.mode-group-off {
     opacity: 0.35;
     pointer-events: none;
+}
+
+.GroupBox.mode-group-off .ModeRowSwitch {
+    pointer-events: auto;
 }
 
 #StationSearchRow {
@@ -1051,6 +1041,47 @@ button:focus-visible,
     margin-right: 12px;
     flex-shrink: 0;
     box-shadow: inset 0 1px 1px rgba(255,255,255,0.5), 0 1px 2px rgba(15,23,42,0.18);
+}
+
+.GroupTitleLabel {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.ModeRowSwitch {
+    flex-shrink: 0;
+    width: 28px;
+    height: 16px;
+    border-radius: 99px;
+    background: rgba(0,0,0,0.15);
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.ModeRowSwitch.active {
+    background: var(--accent);
+}
+
+.ModeRowSwitchKnob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    transition: left 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.ModeRowSwitch.active .ModeRowSwitchKnob {
+    left: 14px;
 }
 
 .PatternBox {
@@ -1659,10 +1690,6 @@ button:focus-visible,
         padding: 12px 14px;
     }
 
-    #ModeFilterPanel {
-        max-width: calc(90vw - 60px);
-    }
-
     .ViewOptionDesc {
         display: none;
     }
@@ -2015,12 +2042,6 @@ button:focus-visible,
     background: rgba(0,0,0,0.02);
 }
 
-.StationsRowIcon {
-    display: flex;
-    color: #52525b;
-    flex-shrink: 0;
-}
-
 .InlineCount {
     font-weight: 800;
     color: #0f172a;
@@ -2059,9 +2080,6 @@ button:focus-visible,
 }
 
 .LinesViewHeaderTitle {
-    display: flex;
-    align-items: center;
-    gap: 7px;
     font-size: 10.5px;
     font-weight: 800;
     text-transform: uppercase;
@@ -2079,143 +2097,6 @@ button:focus-visible,
     font-size: 12px;
     color: #475569;
     margin-right: 2px;
-}
-
-/* Transit-type filter: a small popover living right next to the list it
-   filters, instead of a whole separate toolbar elsewhere on the map. */
-#ModeFilterRow {
-    display: none;
-    position: relative;
-}
-
-#ModeFilterToggleBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(0,0,0,0.05);
-    color: #64748b;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.15s ease;
-}
-
-#ModeFilterToggleBtn:hover,
-#ModeFilterToggleBtn.open {
-    background: rgba(0,0,0,0.1);
-    color: #0f172a;
-}
-
-#ModeFilterBadge {
-    position: absolute;
-    top: -4px;
-    right: -4px;
-    min-width: 14px;
-    height: 14px;
-    padding: 0 3px;
-    border-radius: 99px;
-    background: var(--accent);
-    color: #fff;
-    font-size: 9px;
-    font-weight: 800;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-#ModeFilterPanel {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 32px;
-    right: 0;
-    min-width: 180px;
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.16);
-    border: 1px solid rgba(0,0,0,0.06);
-    padding: 6px;
-    z-index: 20;
-}
-
-#ModeFilterPanel.open {
-    display: flex;
-}
-
-.ModeFilterItem {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    padding: 8px 9px;
-    border: none;
-    background: transparent;
-    border-radius: 9px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: #334155;
-    transition: background 0.15s ease;
-    white-space: nowrap;
-}
-
-.ModeFilterItem:hover {
-    background: rgba(0,0,0,0.05);
-}
-
-.ModeFilterItem.mode-off {
-    color: #94a3b8;
-}
-
-.ModeToggleDot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
-}
-
-.ModeFilterItem.mode-off .ModeToggleDot {
-    opacity: 0.3;
-}
-
-.ModeFilterItemLabel {
-    flex: 1;
-}
-
-.ModeFilterSwitch {
-    width: 26px;
-    height: 15px;
-    border-radius: 99px;
-    background: rgba(0,0,0,0.15);
-    position: relative;
-    flex-shrink: 0;
-    transition: background 0.2s ease;
-}
-
-.ModeFilterItem:not(.mode-off) .ModeFilterSwitch {
-    background: var(--accent);
-}
-
-.ModeFilterSwitchKnob {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: #fff;
-    transition: left 0.2s ease;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
-}
-
-.ModeFilterItem:not(.mode-off) .ModeFilterSwitchKnob {
-    left: 13px;
 }
 
 /* --- Explore tab: Projects / Points of Interest / Sports Teams. Each is an

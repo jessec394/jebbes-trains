@@ -770,7 +770,7 @@ function BuildByMode() {
     Object.keys(ModesOrder).forEach(MI => {
         var LIM = MG[MI] || [], MD = ModesOrder[MI];
         var IsOff = DisabledModes.has(MI);
-        H += `<details class='GroupBox${IsOff ? ' mode-group-off' : ''}' ${IsOff ? '' : ''}><summary class='GroupTitle'><span class='Indicator'>▶</span><span class='ModeDot' style='background:${MD.Color}'></span>${MD.Name}</summary><div style='padding:0 10px 10px 15px;'>`;
+        H += `<details class='GroupBox${IsOff ? ' mode-group-off' : ''}' data-mode-group='${MI}'><summary class='GroupTitle'><span class='Indicator'>▶</span><span class='ModeDot' style='background:${MD.Color}'></span><span class='GroupTitleLabel'>${MD.Name}</span><button class='ModeRowSwitch${IsOff ? '' : ' active'}' onclick="event.preventDefault(); event.stopPropagation(); ToggleMode('${MI}')" title="${IsOff ? 'Show' : 'Hide'} ${MD.Name}"><span class='ModeRowSwitchKnob'></span></button></summary><div style='padding:0 10px 10px 15px;'>`;
 
         if (LIM.length === 0) H += `<div style='padding:15px;text-align:center;color:#94a3b8;font-size:12px;'>No services</div>`;
         else {
@@ -793,7 +793,6 @@ function BuildByMode() {
     });
 
     document.getElementById('ListContainer').innerHTML = H;
-    BuildModeToggles();
     var routeBadge = document.getElementById('RouteCountBadge');
     if (routeBadge) routeBadge.textContent = Registry.length.toLocaleString();
     var stationBadge = document.getElementById('StationCountBadge');
@@ -1343,84 +1342,19 @@ function ToggleMode(ModeId) {
         }
     }
 
-    var Btn = document.querySelector(`.ModeFilterItem[data-mode="${ModeId}"]`);
-    if (Btn) {
-        var IsNowOn = !DisabledModes.has(ModeId);
-        Btn.classList.toggle('mode-off', !IsNowOn);
-        Btn.title = (IsNowOn ? 'Hide ' : 'Show ') + Modes[ModeId].Name;
+    var groupBox = document.querySelector('.GroupBox[data-mode-group="' + ModeId + '"]');
+    if (groupBox) {
+        var IsNowOff = DisabledModes.has(ModeId);
+        groupBox.classList.toggle('mode-group-off', IsNowOff);
+        var sw = groupBox.querySelector('.ModeRowSwitch');
+        if (sw) {
+            sw.classList.toggle('active', !IsNowOff);
+            sw.title = (IsNowOff ? 'Show ' : 'Hide ') + Modes[ModeId].Name;
+        }
     }
-    UpdateModeFilterBadge();
 
     Reset();
 }
-
-var ModeFilterPanelOpen = false;
-
-function ToggleModeFilterPanel(e) {
-    if (e) e.stopPropagation();
-    ModeFilterPanelOpen = !ModeFilterPanelOpen;
-    var panel = document.getElementById('ModeFilterPanel');
-    var btn = document.getElementById('ModeFilterToggleBtn');
-    if (panel) panel.classList.toggle('open', ModeFilterPanelOpen);
-    if (btn) btn.classList.toggle('open', ModeFilterPanelOpen);
-}
-
-function CloseModeFilterPanel() {
-    if (!ModeFilterPanelOpen) return;
-    ModeFilterPanelOpen = false;
-    var panel = document.getElementById('ModeFilterPanel');
-    var btn = document.getElementById('ModeFilterToggleBtn');
-    if (panel) panel.classList.remove('open');
-    if (btn) btn.classList.remove('open');
-}
-
-function UpdateModeFilterBadge() {
-    var badge = document.getElementById('ModeFilterBadge');
-    if (badge) {
-        var hiddenCount = DisabledModes.size;
-        badge.textContent = hiddenCount;
-        badge.style.display = hiddenCount > 0 ? 'flex' : 'none';
-    }
-}
-
-function BuildModeToggles() {
-    var Row = document.getElementById('ModeFilterRow');
-    var Panel = document.getElementById('ModeFilterPanel');
-    if (!Row || !Panel) return;
-
-    var ActiveModeIds = [];
-    Object.keys(Modes).forEach(function(ModeId) {
-        if (Registry.some(function(L) { return L.ModeId === ModeId; })) ActiveModeIds.push(ModeId);
-    });
-
-    if (ActiveModeIds.length <= 1) {
-        Row.style.display = 'none';
-        return;
-    }
-    Row.style.display = 'flex';
-    Panel.innerHTML = '';
-
-    ActiveModeIds.forEach(function(ModeId) {
-        var MD = Modes[ModeId];
-        var IsOn = !DisabledModes.has(ModeId);
-        var Item = document.createElement('button');
-        Item.className = 'ModeFilterItem' + (IsOn ? '' : ' mode-off');
-        Item.dataset.mode = ModeId;
-        Item.title = (IsOn ? 'Hide ' : 'Show ') + MD.Name;
-        Item.innerHTML = `<span class="ModeToggleDot" style="background:${MD.Color}"></span>` +
-            `<span class="ModeFilterItemLabel">${MD.Name}</span>` +
-            `<span class="ModeFilterSwitch"><span class="ModeFilterSwitchKnob"></span></span>`;
-        Item.addEventListener('click', function(e) { e.stopPropagation(); ToggleMode(ModeId); });
-        Panel.appendChild(Item);
-    });
-
-    UpdateModeFilterBadge();
-}
-
-document.addEventListener('click', function(e) {
-    var row = document.getElementById('ModeFilterRow');
-    if (ModeFilterPanelOpen && row && !row.contains(e.target)) CloseModeFilterPanel();
-});
 
 document.addEventListener('click', function(e) {
     var panel = document.getElementById('SportsFilterPanel');
@@ -2858,8 +2792,6 @@ function initializeMap(mapName, registryFantasy, registryPresent, namedStations,
                 CloseProjectBrowseModal();
             } else if (SportsFilterPanelOpen) {
                 CloseSportsFilterPanel();
-            } else if (ModeFilterPanelOpen) {
-                CloseModeFilterPanel();
             } else if (CurrentStationPopup) {
                 CloseStationPopup();
             } else if (SelectedId) {
