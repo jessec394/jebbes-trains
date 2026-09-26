@@ -364,9 +364,17 @@ function StationGroupBase(SN) {
     return I === -1 ? SN : SN.substring(0, I);
 }
 
+var _StationGroupIndex = null;
+
 function StationGroupMembers(SN) {
-    var Base = StationGroupBase(SN);
-    return Object.keys(Stations).filter(K => StationGroupBase(K) === Base);
+    if (!_StationGroupIndex) {
+        _StationGroupIndex = {};
+        Object.keys(Stations).forEach(function(K) {
+            var base = StationGroupBase(K);
+            (_StationGroupIndex[base] || (_StationGroupIndex[base] = [])).push(K);
+        });
+    }
+    return _StationGroupIndex[StationGroupBase(SN)] || [];
 }
 
 function CleanStationName(SN) {
