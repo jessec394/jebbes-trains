@@ -7,6 +7,12 @@
 
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Signature accent for the sidebar's own chrome (mark, focus states) --
+       kept separate from the five fixed category colors below, which encode
+       data (station/project/poi/route/sports) and must stay meaningful. */
+    --accent: #7c3aed;
+    --accent-soft: rgba(124, 58, 237, 0.1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -152,7 +158,7 @@ button:focus-visible,
 
 #SplashContent {
     text-align: center;
-    padding: 52px 56px;
+    padding: 48px 48px 52px 48px;
     background: rgba(255, 255, 255, 0.98);
     border-radius: 32px;
     box-shadow:
@@ -163,7 +169,7 @@ button:focus-visible,
     animation: slideUp 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    width: 440px;
+    width: 600px;
     max-width: calc(100vw - 40px);
 }
 
@@ -264,22 +270,23 @@ button:focus-visible,
 }
 
 #ViewOptions {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
     text-align: left;
 }
 
 .ViewOption {
+    position: relative;
     display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 14px 18px;
-    border-radius: 14px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 18px;
     border: 1.5px solid rgba(0,0,0,0.07);
     background: rgba(248, 250, 252, 0.6);
     cursor: pointer;
-    transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -287,7 +294,8 @@ button:focus-visible,
 .ViewOption:hover {
     background: #fff;
     border-color: rgba(0,0,0,0.14);
-    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+    transform: translateY(-2px);
 }
 
 .ViewOption.selected {
@@ -296,15 +304,28 @@ button:focus-visible,
     box-shadow: 0 0 0 3px rgba(15,23,42,0.06);
 }
 
+.ViewOptionArt {
+    width: 100%;
+    height: 54px;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.035);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+}
+
 .ViewOptionCheck {
+    position: absolute;
+    top: 14px;
+    right: 14px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     border: 2px solid rgba(0,0,0,0.15);
     flex-shrink: 0;
-    position: relative;
     transition: border-color 0.15s ease, background 0.15s ease;
-    background: transparent;
+    background: #fff;
 }
 
 .ViewOption.selected .ViewOptionCheck {
@@ -327,7 +348,7 @@ button:focus-visible,
 .ViewOptionText {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
     min-width: 0;
 }
 
@@ -344,32 +365,11 @@ button:focus-visible,
 }
 
 .ViewOptionDesc {
-    font-size: 12px;
+    font-size: 11.5px;
     font-weight: 400;
     color: #64748b;
     line-height: 1.4;
     font-family: 'Inter', sans-serif;
-}
-
-.ViewOptionDivider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 4px 2px;
-    color: #cbd5e1;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-}
-
-.ViewOptionDivider::before,
-.ViewOptionDivider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #e2e8f0;
 }
 
 #Sidebar.splash-hidden {
@@ -492,208 +492,140 @@ button:focus-visible,
 }
 
 #SidebarHeader {
-    padding: 40px 30px 10px 30px;
+    padding: 22px 22px 16px 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-#SidebarBrand {
-    font-size: 10px;
-    font-weight: 900;
-    color: #475569;
-    letter-spacing: 4px;
-    margin-bottom: 4px;
+#SidebarMark {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #SidebarTitle {
-    font-size: 28px;
-    font-weight: 900;
+    min-width: 0;
+    font-size: 19px;
+    font-weight: 800;
     color: #0f172a;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-#LinesView {
+/* Future/Present fundamentally changes what network data is shown, not
+   just how the map is styled -- so it lives with the content it drives,
+   as a segmented control, rather than as a separate floating widget. */
+#ModeSwitch {
+    margin: 0 22px 14px 22px;
     display: flex;
+    padding: 3px;
+    background: rgba(15, 23, 42, 0.05);
+    border-radius: 12px;
+    gap: 2px;
+}
+
+.ModeSwitchBtn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 8px 0;
+    border-radius: 9px;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s var(--ease);
+}
+
+.ModeSwitchBtn:hover {
+    color: #0f172a;
+}
+
+.ModeSwitchBtn.active {
+    background: #fff;
+    color: #0f172a;
+    box-shadow: 0 2px 8px rgba(15,23,42,0.12);
+}
+
+/* Network (the map's actual subject) vs Explore (optional context layers
+   on top of it). Two tabs today; SIDEBAR_TABS in map.js plus a new button
+   and panel pair is all a third tab needs later. */
+#SidebarTabs {
+    display: flex;
+    padding: 0 22px;
+    gap: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.SidebarTabBtn {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 10px 2px 12px 2px;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #94a3b8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.15s ease;
+}
+
+.SidebarTabBtn:hover {
+    color: #475569;
+}
+
+.SidebarTabBtn.active {
+    color: #0f172a;
+}
+
+.SidebarTabBtn.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px 2px 0 0;
+}
+
+.TabBtnBadge {
+    display: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.SidebarTabPanel {
+    display: none;
     flex-direction: column;
     flex-grow: 1;
     overflow: hidden;
 }
 
-.SidebarSectionLabel {
-    padding: 14px 25px 4px 25px;
-    font-size: 10.5px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #94a3b8;
+.SidebarTabPanel.active {
+    display: flex;
 }
 
 #SearchRow {
-    padding: 4px 25px 16px 25px;
+    padding: 8px 14px 12px 14px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
-}
-
-#ModeFilterRow {
-    display: none;
-    flex-shrink: 0;
-    flex-direction: column;
-}
-
-#ModeFilterToggleBtn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 13px 16px;
-    border: none;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    border-radius: 0;
-    background: rgba(0,0,0,0.15);
-    cursor: pointer;
-    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    color: rgba(255,255,255,0.7);
-    letter-spacing: 0.4px;
-    white-space: nowrap;
-    transition: all 0.2s var(--ease);
-}
-
-#ModeFilterToggleBtn:hover {
-    background: rgba(0,0,0,0.28);
-    color: #fff;
-}
-
-#ModeFilterToggleBtn.open {
-    background: rgba(0,0,0,0.32);
-    color: #fff;
-}
-
-#ModeFilterToggleIcon {
-    display: flex;
-    flex-shrink: 0;
-    opacity: 0.85;
-}
-
-#ModeFilterToggleLabel {
-    flex: 1;
-    text-align: left;
-    font-weight: 600;
-}
-
-#ModeFilterBadge {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    min-width: 16px;
-    height: 16px;
-    padding: 0 4px;
-    border-radius: 99px;
-    background: #f59e0b;
-    color: #1e1208;
-    font-size: 10px;
-    font-weight: 800;
-}
-
-#ModeFilterChevron {
-    display: flex;
-    flex-shrink: 0;
-    color: rgba(255,255,255,0.45);
-    transition: transform 0.2s ease;
-}
-
-#ModeFilterToggleBtn.open #ModeFilterChevron {
-    transform: rotate(180deg);
-}
-
-#ModeFilterPanel {
-    display: flex;
-    flex-direction: column;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    background: rgba(0,0,0,0.28);
-    transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease;
-    padding: 0;
-}
-
-#ModeFilterPanel.open {
-    max-height: 60vh;
-    overflow-y: auto;
-    opacity: 1;
-    padding: 6px;
-}
-
-.ModeFilterItem {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 10px;
-    border: none;
-    background: transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgba(255,255,255,0.85);
-    transition: background 0.15s ease;
-}
-
-.ModeFilterItem:hover {
-    background: rgba(255,255,255,0.08);
-}
-
-.ModeFilterItem.mode-off {
-    color: rgba(255,255,255,0.35);
-}
-
-.ModeFilterItem.mode-off .ModeToggleDot {
-    opacity: 0.25;
-    filter: grayscale(1);
-}
-
-.ModeToggleDot {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    transition: opacity 0.18s ease, filter 0.18s ease;
-}
-
-.ModeFilterItemLabel {
-    flex: 1;
-}
-
-.ModeFilterSwitch {
-    width: 28px;
-    height: 16px;
-    border-radius: 99px;
-    background: rgba(255,255,255,0.15);
-    position: relative;
-    flex-shrink: 0;
-    transition: background 0.2s ease;
-}
-
-.ModeFilterItem:not(.mode-off) .ModeFilterSwitch {
-    background: #2ecc71;
-}
-
-.ModeFilterSwitchKnob {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #fff;
-    transition: left 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
-
-.ModeFilterItem:not(.mode-off) .ModeFilterSwitchKnob {
-    left: 14px;
 }
 
 .GroupBox.mode-group-off {
@@ -791,22 +723,22 @@ button:focus-visible,
 }
 
 #CollapseAllButton {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border: none;
     background: rgba(0, 0, 0, 0.05);
-    border-radius: 14px;
+    color: #64748b;
+    border-radius: 12px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
     transition: all 0.2s var(--ease);
     flex-shrink: 0;
 }
 
 #ListContainer {
-    padding: 0 18px 20px 18px;
+    padding: 0 10px 14px 14px;
     overflow-y: auto;
     flex-grow: 1;
 }
@@ -1056,14 +988,21 @@ button:focus-visible,
 
 .GroupTitle {
     padding: 12px 15px;
+    border-radius: 14px;
     font-weight: 800;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #64748b;
+    color: #475569;
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.GroupTitle:hover {
+    background: rgba(15, 23, 42, 0.04);
+    color: #0f172a;
 }
 
 .OpGroupBox {
@@ -1075,6 +1014,7 @@ button:focus-visible,
 
 .OpGroupTitle {
     padding: 8px 12px;
+    border-radius: 10px;
     font-weight: 700;
     font-size: 10px;
     text-transform: uppercase;
@@ -1082,21 +1022,35 @@ button:focus-visible,
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.OpGroupTitle:hover {
+    background: rgba(15, 23, 42, 0.03);
+    color: #475569;
 }
 
 .Indicator {
+    display: inline-block;
     margin-right: 10px;
     font-size: 10px;
-    transition: transform 0.3s var(--ease);
+    transition: transform 0.25s var(--ease);
     opacity: 0.5;
 }
 
+.GroupBox[open] > .GroupTitle .Indicator,
+.OpGroupBox[open] > .OpGroupTitle .Indicator,
+.PatternBox[open] > .PatternTitle .Indicator {
+    transform: rotate(90deg);
+}
+
 .ModeDot {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     margin-right: 12px;
     flex-shrink: 0;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.5), 0 1px 2px rgba(15,23,42,0.18);
 }
 
 .PatternBox {
@@ -1502,105 +1456,6 @@ button:focus-visible,
     margin-bottom: 6px;
 }
 
-#MapViewControl {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: rgba(15, 15, 20, 0.92);
-    -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
-    border-radius: 16px;
-    box-shadow: 0 8px 28px rgba(0,0,0,0.35);
-    z-index: 9500;
-    border: 1px solid rgba(255,255,255,0.1);
-    overflow: hidden;
-}
-
-#MapViewInner {
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
-    border-radius: 16px 16px 0 0;
-}
-
-.MapViewCol {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 18px;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    position: relative;
-}
-
-.MapViewCol:hover {
-    background: rgba(255,255,255,0.06);
-}
-
-.MapViewCol.active-col {
-    background: rgba(255,255,255,0.08);
-}
-
-.MapViewCol.active-col::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 18px;
-    right: 18px;
-    height: 2px;
-    border-radius: 2px 2px 0 0;
-    background: rgba(255,255,255,0.5);
-}
-
-.MapViewColContent {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.MapViewColLabel {
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-    line-height: 1;
-    transition: color 0.2s;
-}
-
-.MapViewCol.active-col .MapViewColLabel {
-    color: rgba(255,255,255,0.9);
-}
-
-.MapViewColSub {
-    font-size: 11px;
-    font-weight: 500;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 0.2px;
-    line-height: 1;
-    transition: color 0.2s;
-}
-
-.MapViewCol.active-col .MapViewColSub {
-    color: rgba(255,255,255,0.55);
-}
-
-#MapViewDivider {
-    width: 1px;
-    background: rgba(255,255,255,0.08);
-    flex-shrink: 0;
-    align-self: stretch;
-    margin: 10px 0;
-}
-
-#MapViewControl.present-mode #MapViewFutureCol {
-    opacity: 0.5;
-}
-
-#MapViewControl.present-mode #MapViewFutureCol:hover {
-    opacity: 0.8;
-}
-
 #BasemapSwitcher {
     position: fixed;
     top: 20px;
@@ -1678,12 +1533,12 @@ button:focus-visible,
 }
 
 #CollapseAllButton:hover {
-    background: rgba(0,0,0,0.1);
-    transform: scale(1.05);
+    background: rgba(15, 23, 42, 0.1);
+    color: #0f172a;
 }
 
 #CollapseAllButton:active {
-    transform: scale(0.95);
+    transform: scale(0.94);
 }
 
 .DestMarkerIcon, .ProjectMarkerIcon {
@@ -1800,32 +1655,12 @@ button:focus-visible,
         border-radius: 10px;
     }
 
-    #MapViewControl {
-        bottom: 16px;
-        right: 16px;
-        border-radius: 14px;
-        max-width: calc(100vw - 32px);
-    }
-
-    #ModeFilterPanel.open {
-        max-width: 100%;
-    }
-
-    .MapViewCol {
-        padding: 11px 14px;
-        gap: 9px;
-    }
-
-    .MapViewColIcon {
-        font-size: 15px;
-    }
-
-    .MapViewColLabel {
-        font-size: 9px;
-    }
-
     .ViewOption {
         padding: 12px 14px;
+    }
+
+    #ModeFilterPanel {
+        max-width: calc(90vw - 60px);
     }
 
     .ViewOptionDesc {
@@ -2115,7 +1950,8 @@ button:focus-visible,
 }
 
 .PlaneIcon {
-    font-size: 13px;
+    display: inline-flex;
+    vertical-align: middle;
     margin-left: 4px;
     opacity: 0.7;
 }
@@ -2165,82 +2001,423 @@ button:focus-visible,
     margin: 0 1px;
 }
 
-#SidebarToggles {
+.StationsRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.StationsRow:hover {
+    background: rgba(0,0,0,0.02);
+}
+
+.StationsRowIcon {
+    display: flex;
+    color: #52525b;
+    flex-shrink: 0;
+}
+
+.InlineCount {
+    font-weight: 800;
+    color: #0f172a;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+    white-space: nowrap;
+}
+
+.StationsRow .InlineCount {
+    font-size: 15px;
+}
+
+.StationsRowLabel {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #64748b;
+    flex: 1;
+    min-width: 0;
+}
+
+#LinesView {
+    margin: 10px 14px 14px 14px;
+    background: #f8fafc;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 6px 22px 12px 22px;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-    margin-bottom: 4px;
-}
-
-.LayerCard {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 34px 34px;
-    align-items: center;
-    column-gap: 12px;
-    padding: 13px 14px 13px 20px;
-    border-radius: 14px;
-    background: #f8fafc;
+    flex-grow: 1;
     overflow: hidden;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.LayerCard::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
+#LinesViewHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 8px 8px 14px;
 }
 
-.LayerCard.station-line::before { background: #52525b; }
-.LayerCard.project-line::before { background: #3b82f6; }
-.LayerCard.poi-line::before     { background: #f59e0b; }
-.LayerCard.route-line::before   { background: #6366f1; }
-.LayerCard.sports-line::before  { background: #16a34a; }
-
-.LayerCard:hover {
-    background: #fff;
-    box-shadow: 0 4px 14px rgba(15,23,42,0.08);
-}
-
-.LayerCard.mode-disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-.LayerCard.mode-disabled:hover {
-    background: #f8fafc;
-    box-shadow: none;
-}
-
-.LayerTitle {
-    min-width: 0;
-    font-size: 14px;
+.LinesViewHeaderTitle {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10.5px;
     font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.LinesViewHeaderRight {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.LinesViewHeaderRight .InlineCount {
+    font-size: 12px;
+    color: #475569;
+    margin-right: 2px;
+}
+
+/* Transit-type filter: a small popover living right next to the list it
+   filters, instead of a whole separate toolbar elsewhere on the map. */
+#ModeFilterRow {
+    display: none;
+    position: relative;
+}
+
+#ModeFilterToggleBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.05);
+    color: #64748b;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.15s ease;
+}
+
+#ModeFilterToggleBtn:hover,
+#ModeFilterToggleBtn.open {
+    background: rgba(0,0,0,0.1);
+    color: #0f172a;
+}
+
+#ModeFilterBadge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    min-width: 14px;
+    height: 14px;
+    padding: 0 3px;
+    border-radius: 99px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#ModeFilterPanel {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    min-width: 180px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.16);
+    border: 1px solid rgba(0,0,0,0.06);
+    padding: 6px;
+    z-index: 20;
+}
+
+#ModeFilterPanel.open {
+    display: flex;
+}
+
+.ModeFilterItem {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 9px;
+    border: none;
+    background: transparent;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    transition: background 0.15s ease;
+    white-space: nowrap;
+}
+
+.ModeFilterItem:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.ModeFilterItem.mode-off {
+    color: #94a3b8;
+}
+
+.ModeToggleDot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.ModeFilterItem.mode-off .ModeToggleDot {
+    opacity: 0.3;
+}
+
+.ModeFilterItemLabel {
+    flex: 1;
+}
+
+.ModeFilterSwitch {
+    width: 26px;
+    height: 15px;
+    border-radius: 99px;
+    background: rgba(0,0,0,0.15);
+    position: relative;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.ModeFilterItem:not(.mode-off) .ModeFilterSwitch {
+    background: var(--accent);
+}
+
+.ModeFilterSwitchKnob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    transition: left 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.ModeFilterItem:not(.mode-off) .ModeFilterSwitchKnob {
+    left: 13px;
+}
+
+/* --- Explore tab: Projects / Points of Interest / Sports Teams. Each is an
+   optional overlay on top of the network, so they share a common row
+   pattern (icon, name, count, toggle) -- but the icon color and, for
+   Sports, the interaction (expands in place instead of opening a modal
+   straight away) keep them from reading as interchangeable. */
+
+.ExploreRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.ExploreRow:hover {
+    background: rgba(0,0,0,0.02);
+}
+
+.ExploreRow.mode-disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+.ExploreRow.mode-disabled:hover {
+    background: transparent;
+}
+
+.ExploreRow.expandable {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    cursor: default;
+}
+.ExploreRow.expandable:hover {
+    background: transparent;
+}
+
+.ExploreRowMain {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.ExploreRowMain:hover {
+    background: rgba(0,0,0,0.02);
+}
+
+.ExploreRowIcon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-projects { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
+.explore-poi       { background: rgba(245, 158, 11, 0.12); color: #d97706; }
+.explore-sports    { background: rgba(22, 163, 74, 0.12);  color: #16a34a; }
+
+.ExploreRowText {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.ExploreRowName {
+    font-size: 13px;
+    font-weight: 700;
     color: #1e293b;
+}
+
+.ExploreRowDesc {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.LayerCount {
-    justify-self: center;
-    display: inline-flex;
+.ExploreRow .InlineCount {
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.ExploreRowChevron {
+    display: flex;
+    flex-shrink: 0;
+    color: #cbd5e1;
+    transition: transform 0.2s ease;
+}
+
+#SportsLeagueSwitchBtn.open .ExploreRowChevron {
+    transform: rotate(180deg);
+}
+
+#SportsFilterPanel.InlineFilterPanel {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease;
+    padding: 0 14px;
+    background: rgba(15, 23, 42, 0.015);
+}
+
+#SportsFilterPanel.InlineFilterPanel.open {
+    max-height: 50vh;
+    overflow-y: auto;
+    opacity: 1;
+    padding: 4px 14px 14px 14px;
+}
+
+.LeagueBrowseLink {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 20px;
-    height: 20px;
-    padding: 0 6px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.06);
-    color: #64748b;
-    font-size: 10px;
-    font-weight: 800;
-    line-height: 1;
+    gap: 8px;
+    padding: 8px 10px;
+    border: none;
+    background: transparent;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #16a34a;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    margin-bottom: 4px;
+    transition: background 0.15s ease;
+}
+
+.LeagueBrowseLink:hover {
+    background: rgba(0,0,0,0.04);
+}
+
+.LeagueFilterItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: none;
+    background: transparent;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-family: 'Bahnschrift', 'DIN Alternate', 'Arial Narrow', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    transition: background 0.15s ease;
+}
+
+.LeagueFilterItem:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.LeagueFilterItemLabel {
+    flex: 1;
+}
+
+.LeagueFilterSwitch {
+    width: 26px;
+    height: 15px;
+    border-radius: 99px;
+    background: rgba(0,0,0,0.12);
+    position: relative;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.LeagueFilterItem.league-on .LeagueFilterSwitch {
+    background: #16a34a;
+}
+
+.LeagueFilterSwitchKnob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    transition: left 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.LeagueFilterItem.league-on .LeagueFilterSwitchKnob {
+    left: 13px;
 }
 
 .InlineFilterPanel {
@@ -2256,28 +2433,6 @@ button:focus-visible,
     overflow-y: auto;
     opacity: 1;
     padding: 4px 22px 12px 22px;
-}
-
-.InlineFilterRow {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 14px 9px 20px;
-    background: #f8fafc;
-    border-radius: 10px;
-    margin-bottom: 4px;
-}
-.InlineFilterRow:last-child { margin-bottom: 0; }
-
-.InlineFilterLabel {
-    flex: 1;
-    min-width: 0;
-    font-size: 12.5px;
-    font-weight: 700;
-    color: #334155;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .InlineToggleSwitch {
@@ -2444,7 +2599,8 @@ button:focus-visible,
 }
 
 .DestBrowseTitleIcon {
-    font-size: 18px;
+    display: flex;
+    color: #64748b;
 }
 
 .DestBrowseTitle {
@@ -2589,7 +2745,6 @@ button:focus-visible,
     z-index: 2;
     width: 30px;
     height: 30px;
-    font-size: 14px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.35);
     color: #fff;
 }
@@ -2628,7 +2783,6 @@ button:focus-visible,
 .DestBrowseCard:not(.has-image) .DestBrowseCardIcon {
     width: 42px;
     height: 42px;
-    font-size: 19px;
 }
 
 .DestBrowseCard:not(.has-image) .DestBrowseCardCaption {

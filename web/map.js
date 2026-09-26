@@ -163,24 +163,30 @@ function SwitchMapMode(Mode) {
     ApplySwitchedRegistry();
     Reset();
 
-    var control = document.getElementById('MapViewControl');
-    var colFuture = document.getElementById('MapViewFutureCol');
-    var colPresent = document.getElementById('MapViewPresentCol');
+    var btnFantasy = document.getElementById('ModeSwitchFantasy');
+    var btnPresent = document.getElementById('ModeSwitchPresent');
+    if (btnFantasy) btnFantasy.classList.toggle('active', Mode === 'Fantasy');
+    if (btnPresent) btnPresent.classList.toggle('active', Mode === 'Present');
 
-    if (Mode === 'Fantasy') {
-        control.classList.remove('present-mode');
-        if (colFuture) colFuture.classList.add('active-col');
-        if (colPresent) colPresent.classList.remove('active-col');
-    } else {
-        control.classList.add('present-mode');
-        if (colFuture) colFuture.classList.remove('active-col');
-        if (colPresent) colPresent.classList.add('active-col');
-    }
     UpdateProjectMarkersVisibility();
     UpdateDestinationMarkersVisibility();
     BuildByMode();
     if (Mode !== 'Fantasy') CloseProjectBrowseModal(); // projects don't exist outside the Future map
     ActiveSportsLeagues.forEach(function(lg) { AddLeagueMarkers(lg); });
+}
+
+// Network / Explore sidebar tabs. Kept deliberately simple (two panels, one
+// active at a time) so a third tab is a one-line addition later: add a
+// button + panel pair and extend the id map below.
+var SIDEBAR_TABS = { Network: 'NetworkTab', Explore: 'ExploreTab' };
+
+function SwitchSidebarTab(tab) {
+    Object.keys(SIDEBAR_TABS).forEach(function(t) {
+        var btn = document.getElementById('TabBtn' + t);
+        var panel = document.getElementById(SIDEBAR_TABS[t]);
+        if (btn) btn.classList.toggle('active', t === tab);
+        if (panel) panel.classList.toggle('active', t === tab);
+    });
 }
 
 function SwitchTab(Tab) {
@@ -789,80 +795,9 @@ function BuildByMode() {
     document.getElementById('ListContainer').innerHTML = H;
     BuildModeToggles();
     var routeBadge = document.getElementById('RouteCountBadge');
-    if (routeBadge) routeBadge.textContent = Registry.length;
+    if (routeBadge) routeBadge.textContent = Registry.length.toLocaleString();
     var stationBadge = document.getElementById('StationCountBadge');
-    if (stationBadge) stationBadge.textContent = BuildAllStationGroups('').length;
-}
-
-// Entry point for the "Transit Routes" showcase card: a proper browse modal
-// (filter input + full alphabetical list) for consistency with the other
-// four cards, rather than just scrolling to the always-visible Transit Lines
-// tree -- clicking a route selects it exactly like SelectLine already does
-// from the sidebar list or a station/destination popup.
-function InitRouteBrowseModal() {
-    var filterInput = document.getElementById('RouteBrowseFilterInput');
-    if (filterInput) {
-        var debouncedRender = Debounce(function() { RenderRouteBrowseModal(filterInput.value); }, 80);
-        filterInput.addEventListener('input', debouncedRender);
-    }
-}
-
-function OpenRouteSearch() {
-    var backdrop = document.getElementById('RouteBrowseBackdrop');
-    var modal = document.getElementById('RouteBrowseModal');
-    var filterInput = document.getElementById('RouteBrowseFilterInput');
-    if (backdrop) backdrop.classList.add('show');
-    if (modal) modal.classList.add('show');
-    if (filterInput) { filterInput.value = ''; setTimeout(function() { filterInput.focus(); }, 50); }
-    RenderRouteBrowseModal('');
-}
-
-function CloseRouteBrowseModal() {
-    var backdrop = document.getElementById('RouteBrowseBackdrop');
-    var modal = document.getElementById('RouteBrowseModal');
-    if (backdrop) backdrop.classList.remove('show');
-    if (modal) modal.classList.remove('show');
-}
-
-function RenderRouteBrowseModal(filterQuery) {
-    var listEl = document.getElementById('RouteBrowseList');
-    if (!listEl) return;
-
-    var qn = filterQuery ? NormalizeSearchText(filterQuery) : '';
-    var lines = Registry.filter(function(L) {
-        return !qn || NormalizeSearchText(L.Name).indexOf(qn) !== -1 || NormalizeSearchText(L.Operator).indexOf(qn) !== -1;
-    });
-
-    if (!lines.length) {
-        listEl.innerHTML = '<div class="DestBrowseEmpty">No routes found.</div>';
-        return;
-    }
-
-    var byOperator = {};
-    lines.forEach(function(L) {
-        var op = L.Operator || 'Other';
-        (byOperator[op] = byOperator[op] || []).push(L);
-    });
-    var operators = Object.keys(byOperator).sort();
-
-    var html = '';
-    operators.forEach(function(op) {
-        var opLines = byOperator[op].slice().sort(function(a, b) { return a.Name.localeCompare(b.Name); });
-        html += '<div class="StationBrowseLetterHeader">' + op + '<span class="DestBrowseCategoryCount">' + opLines.length + '</span></div>';
-        opLines.forEach(function(L) {
-            var escId = L.Id.replace(/'/g, "\\'");
-            html += '<div class="StationBrowseRow" onclick="CommitRouteBrowseSelection(\'' + escId + '\')">' +
-                '<div class="StationBrowseRowName"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + L.Color + ';margin-right:8px;vertical-align:middle;"></span>' + L.Name + '</div>' +
-                '<div class="StationSearchLines"><span class="StationSearchPill" style="background:' + L.Color + '">' + L.ModeName + '</span></div>' +
-                '</div>';
-        });
-    });
-    listEl.innerHTML = html;
-}
-
-function CommitRouteBrowseSelection(id) {
-    CloseRouteBrowseModal();
-    SelectLine(id);
+    if (stationBadge) stationBadge.textContent = BuildAllStationGroups('').length.toLocaleString();
 }
 
 function SetLayerStyle(Ly, StyleObj) {
@@ -999,7 +934,7 @@ function BuildStationTooltip(SN, SL) {
         MM[L.ModeId].push(L);
     });
 
-    var PM = S && S.Type === "Airport" ? ` <span class="PlaneIcon">✈</span>` : '';
+    var PM = S && S.Type === "Airport" ? ` <span class="PlaneIcon"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>` : '';
     var H = `<div class='StationPopup'><b>${CleanStationName(SL || SN)}${PM}</b>`;
 
     Object.keys(Modes).forEach(ModeId => {
@@ -1446,8 +1381,6 @@ function UpdateModeFilterBadge() {
         badge.textContent = hiddenCount;
         badge.style.display = hiddenCount > 0 ? 'flex' : 'none';
     }
-    var routeSwitch = document.getElementById('RouteModeSwitchBtn');
-    if (routeSwitch) routeSwitch.classList.toggle('active', DisabledModes.size === 0);
 }
 
 function BuildModeToggles() {
@@ -1564,6 +1497,18 @@ function GetDestCategoryConfig(cat) {
 var DestinationsHidden = true;
 var ProjectsHidden = true;
 var StationDotsHidden = false;
+
+// A small live dot on the "Explore" tab button, so switching away from it
+// doesn't make it look like nothing is happening back there. Called from
+// each layer's own UI-sync function whenever its state changes.
+function UpdateExploreTabBadge() {
+    var badge = document.getElementById('ExploreTabBadge');
+    if (!badge) return;
+    var projectsOn = (CurrentMapMode === 'Fantasy') && !ProjectsHidden;
+    var poiOn = !DestinationsHidden;
+    var sportsOn = ActiveSportsLeagues.size > 0;
+    badge.style.display = (projectsOn || poiOn || sportsOn) ? 'block' : 'none';
+}
 
 var MARKER_SIZE_PERCENT = 9;
 var MARKER_SIZE_MIN_PX = 28;
@@ -1932,6 +1877,7 @@ function UpdateProjectMarkersVisibility() {
         card.classList.toggle('mode-disabled', !isApplicable);
         card.title = isApplicable ? '' : 'Projects are only shown in the Future view';
     }
+    UpdateExploreTabBadge();
 }
 
 function ToggleAllDestinations() {
@@ -1947,6 +1893,7 @@ function SyncDestinationToggleUI() {
         btn.classList.toggle('active', isOn);
         btn.title = isOn ? 'Hide points of interest' : 'Show points of interest';
     }
+    UpdateExploreTabBadge();
 }
 
 function ToggleStationDots() {
@@ -2062,7 +2009,7 @@ function ShowDestinationPopup(cat, name, zoomIn) {
         var imgSource = DestImageSource(dest);
         var imgAttrs = ImageAttrs(DEST_IMAGE_BASE, imgFile);
         imgContainer.innerHTML = '<img src="' + imgAttrs.src + '" ' + imgAttrs.extra + ' class="DestPopupImage" alt="' + name + '">' +
-            (imgSource ? '<div class="DestPopupSource">📷 ' + imgSource + '</div>' : '');
+            (imgSource ? '<div class="DestPopupSource">' + imgSource + '</div>' : '');
         imgContainer.style.display = 'block';
     } else {
         imgContainer.innerHTML = '';
@@ -2340,7 +2287,7 @@ function RenderProjectBrowseModal(filterQuery) {
             : '';
         html += '<div class="DestBrowseCard' + (hasImage ? ' has-image' : '') + '" onclick="CommitProjectBrowseSelection(\'' + escName + '\')">' +
             imgTag +
-            '<div class="DestBrowseCardIcon" style="background:#3b82f6">📌</div>' +
+            '<div class="DestBrowseCardIcon" style="background:#3b82f6"><svg viewBox="0 0 18 18" width="55%" height="55%" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S3.8 10.6 3.8 6.9a5.2 5.2 0 0 1 10.4 0C14.2 10.6 9 15.5 9 15.5Z"/><circle cx="9" cy="6.9" r="1.7"/></svg></div>' +
             '<div class="DestBrowseCardCaption"><span class="DestBrowseCardName">' + name + '</span></div>' +
             '</div>';
     });
@@ -2497,7 +2444,7 @@ function RenderSportsTeamGrid(league) {
     var escLg = league.replace(/'/g, "\\'");
     tabsEl.innerHTML = '<button class="DestBrowseTab" onclick="BackToSportsLeagues()">‹ All Leagues</button>' +
         '<button class="DestBrowseTab active">' + league + '</button>' +
-        '<button class="DestBrowseTab" style="margin-left:auto;" onclick="ViewLeagueTeamsOnMap(\'' + escLg + '\')">📍 View All on Map</button>';
+        '<button class="DestBrowseTab" style="margin-left:auto;" onclick="ViewLeagueTeamsOnMap(\'' + escLg + '\')"><svg viewBox="0 0 18 18" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S3.8 10.6 3.8 6.9a5.2 5.2 0 0 1 10.4 0C14.2 10.6 9 15.5 9 15.5Z"/><circle cx="9" cy="6.9" r="1.6"/></svg> View All on Map</button>';
 
     var mode = (CurrentMapMode === 'Present') ? 'Present' : 'Fantasy';
     var visibleKeys = ComputeVisibleStationKeys();
@@ -2534,7 +2481,8 @@ function MakeTeamMarkerIcon(logoSrc, logoExtra, available) {
     var S = 44;
     var faded = available ? '' : 'filter:grayscale(1);opacity:0.5;';
     var badge = available ? '' :
-        '<div style="position:absolute;bottom:-3px;right:-3px;width:17px;height:17px;border-radius:50%;background:#ef4444;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;">🚫</div>';
+        '<div style="position:absolute;bottom:-3px;right:-3px;width:17px;height:17px;border-radius:50%;background:#ef4444;border:2px solid #fff;display:flex;align-items:center;justify-content:center;">' +
+        '<svg viewBox="0 0 18 18" width="9" height="9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4.5 4.5L13.5 13.5M13.5 4.5L4.5 13.5"/></svg></div>';
     var html = '<div style="position:relative;width:' + S + 'px;height:' + S + 'px;">' +
         '<div style="width:100%;height:100%;border-radius:50%;background:#fff;border:2.5px solid #1e293b;box-shadow:0 2px 6px rgba(0,0,0,0.35);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:' + (available ? 'pointer' : 'default') + ';' + faded + '">' +
             '<img src="' + logoSrc + '" ' + logoExtra + ' style="width:82%;height:82%;object-fit:contain;" alt="">' +
@@ -2636,6 +2584,7 @@ function ClearAllLeagueMarkers() {
 function UpdateSportsSwitchUI() {
     var btn = document.getElementById('SportsLeagueSwitchBtn');
     if (btn) btn.classList.toggle('active', ActiveSportsLeagues.size > 0);
+    UpdateExploreTabBadge();
 }
 
 function UpdateSportsOverlayBadge() {
@@ -2662,37 +2611,42 @@ function ToggleSportsFilterPanel(e) {
     if (e) e.stopPropagation();
     SportsFilterPanelOpen = !SportsFilterPanelOpen;
     var panel = document.getElementById('SportsFilterPanel');
+    var btn = document.getElementById('SportsLeagueSwitchBtn');
     if (panel) {
         panel.classList.toggle('open', SportsFilterPanelOpen);
         if (SportsFilterPanelOpen) BuildSportsFilterPanel();
     }
+    if (btn) btn.classList.toggle('open', SportsFilterPanelOpen);
 }
 
 function CloseSportsFilterPanel() {
     if (!SportsFilterPanelOpen) return;
     SportsFilterPanelOpen = false;
     var panel = document.getElementById('SportsFilterPanel');
+    var btn = document.getElementById('SportsLeagueSwitchBtn');
     if (panel) panel.classList.remove('open');
+    if (btn) btn.classList.remove('open');
 }
 
 function BuildSportsFilterPanel() {
     var panel = document.getElementById('SportsFilterPanel');
     if (!panel) return;
     var leagues = Object.keys(Leagues).sort();
+    var html = '<button class="LeagueBrowseLink" onclick="event.stopPropagation(); CloseSportsFilterPanel(); OpenSportsBrowseModal();">' +
+        '<svg viewBox="0 0 18 18" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5.5"/><line x1="12" y1="12" x2="15.5" y2="15.5"/></svg>' +
+        'Browse all teams</button>';
     if (!leagues.length) {
-        panel.innerHTML = '<div class="InlineFilterRow"><span class="InlineFilterLabel" style="color:#94a3b8;">No leagues found.</span></div>';
+        html += '<div class="LeagueFilterItem" style="color:rgba(255,255,255,0.35); cursor:default;">No leagues found.</div>';
+        panel.innerHTML = html;
         return;
     }
-    var html = '';
     leagues.forEach(function(lg) {
         var isOn = ActiveSportsLeagues.has(lg);
         var escLg = lg.replace(/'/g, "\\'");
-        html += '<div class="InlineFilterRow">' +
-            '<span class="InlineFilterLabel">' + lg + '</span>' +
-            '<button class="InlineToggleSwitch accent-green' + (isOn ? ' active' : '') + '" onclick="event.stopPropagation(); ToggleLeagueMarkers(\'' + escLg + '\')">' +
-                '<span class="InlineToggleKnob"></span>' +
-            '</button>' +
-        '</div>';
+        html += '<button class="LeagueFilterItem' + (isOn ? ' league-on' : '') + '" onclick="event.stopPropagation(); ToggleLeagueMarkers(\'' + escLg + '\')">' +
+            '<span class="LeagueFilterItemLabel">' + lg + '</span>' +
+            '<span class="LeagueFilterSwitch"><span class="LeagueFilterSwitchKnob"></span></span>' +
+        '</button>';
     });
     panel.innerHTML = html;
 }
@@ -2881,7 +2835,7 @@ function initializeMap(mapName, registryFantasy, registryPresent, namedStations,
     RenderInfoMarkers();
     UpdateProjectMarkersVisibility();
     var projectBadge = document.getElementById('ProjectCountBadge');
-    if (projectBadge) projectBadge.textContent = Object.keys(InfoPoints).length;
+    if (projectBadge) projectBadge.textContent = Object.keys(InfoPoints).length.toLocaleString();
     SyncStationDotsToggleUI();
     BuildByMode();
     RefreshStationDots();
@@ -2894,7 +2848,6 @@ function initializeMap(mapName, registryFantasy, registryPresent, namedStations,
             var stationBrowseModal = document.getElementById('StationBrowseModal');
             var sportsBrowseModal = document.getElementById('SportsBrowseModal');
             var projectBrowseModal = document.getElementById('ProjectBrowseModal');
-            var routeBrowseModal = document.getElementById('RouteBrowseModal');
             if (stationBrowseModal && stationBrowseModal.classList.contains('show')) {
                 CloseStationBrowseModal();
             } else if (destBrowseModal && destBrowseModal.classList.contains('show')) {
@@ -2903,8 +2856,6 @@ function initializeMap(mapName, registryFantasy, registryPresent, namedStations,
                 CloseSportsBrowseModal();
             } else if (projectBrowseModal && projectBrowseModal.classList.contains('show')) {
                 CloseProjectBrowseModal();
-            } else if (routeBrowseModal && routeBrowseModal.classList.contains('show')) {
-                CloseRouteBrowseModal();
             } else if (SportsFilterPanelOpen) {
                 CloseSportsFilterPanel();
             } else if (ModeFilterPanelOpen) {
@@ -2935,18 +2886,19 @@ function initializeMap(mapName, registryFantasy, registryPresent, namedStations,
     InitStationBrowseModal();
     InitDestBrowseModal();
     InitProjectBrowseModal();
-    InitRouteBrowseModal();
     SyncDestinationToggleUI();
 
     RenderDestinationMarkers();
     var destBadge = document.getElementById('DestinationCountBadge');
-    if (destBadge) {
-        var destTotal = 0;
-        Object.keys(Destinations).forEach(function(cat) { destTotal += Object.keys(Destinations[cat]).length; });
-        destBadge.textContent = destTotal;
-    }
+    var destTotal = 0;
+    Object.keys(Destinations).forEach(function(cat) { destTotal += Object.keys(Destinations[cat]).length; });
+    if (destBadge) destBadge.textContent = destTotal.toLocaleString();
+
     var sportsBadge = document.getElementById('SportsTeamCountBadge');
-    if (sportsBadge) sportsBadge.textContent = Object.keys(TeamVenueIndex).length;
+    if (sportsBadge) sportsBadge.textContent = Object.keys(TeamVenueIndex).length.toLocaleString();
+    var leagueRow = document.getElementById('SportsExploreRow');
+    if (leagueRow) leagueRow.style.display = Object.keys(Leagues).length ? 'flex' : 'none';
+
     window[MAP_NAME].on('zoomend', function() { UpdateDestinationMarkersVisibility(); UpdateProjectMarkersVisibility(); RefreshAllMarkerSizes(); });
     window[MAP_NAME].on('moveend zoomend', function() { ResolveMarkerCollisions(); });
 

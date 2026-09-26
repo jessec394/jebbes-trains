@@ -31,21 +31,33 @@
 
                 <div class="ViewOption selected" data-view="fantasy" onclick="SelectSplashView(this)">
                     <div class="ViewOptionCheck"></div>
-                    <div class="ViewOptionText">
-                        <div class="ViewOptionName">Future</div>
-                        <div class="ViewOptionDesc">An optimistic future for North American rail</div>
+                    <div class="ViewOptionArt">
+                        <svg viewBox="0 0 64 38" width="100%" height="100%" fill="none">
+                            <path d="M3 30L17 17L27 23L41 7" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 19L16 29L32 13L50 21" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+                            <path d="M8 9L24 25L44 18L57 28" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+                            <circle cx="3" cy="30" r="2.2" fill="#7c3aed"/>
+                            <circle cx="41" cy="7" r="2.2" fill="#7c3aed"/>
+                        </svg>
                     </div>
-                </div>
-
-                <div class="ViewOptionDivider">
-                    <span>or</span>
+                    <div class="ViewOptionText">
+                        <div class="ViewOptionName">Future Vision</div>
+                        <div class="ViewOptionDesc">An optimistic expansion of rail across North America</div>
+                    </div>
                 </div>
 
                 <div class="ViewOption" data-view="present" onclick="SelectSplashView(this)">
                     <div class="ViewOptionCheck"></div>
+                    <div class="ViewOptionArt">
+                        <svg viewBox="0 0 64 38" width="100%" height="100%" fill="none">
+                            <path d="M3 28L21 20L33 24L58 11" stroke="#64748b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="3" cy="28" r="2.2" fill="#64748b"/>
+                            <circle cx="58" cy="11" r="2.2" fill="#64748b"/>
+                        </svg>
+                    </div>
                     <div class="ViewOptionText">
                         <div class="ViewOptionName">Present Day</div>
-                        <div class="ViewOptionDesc">The current network</div>
+                        <div class="ViewOptionDesc">The existing network, as it operates today</div>
                     </div>
                 </div>
 
@@ -87,7 +99,7 @@
 <div id="DestBrowseModal" class="BrowseModal">
     <div class="DestBrowseHeader">
         <div class="DestBrowseTitleGroup">
-            <span class="DestBrowseTitleIcon">📍</span>
+            <span class="DestBrowseTitleIcon"><svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S3.8 10.6 3.8 6.9a5.2 5.2 0 0 1 10.4 0C14.2 10.6 9 15.5 9 15.5Z"/><circle cx="9" cy="6.9" r="1.7"/></svg></span>
             <div class="DestBrowseTitle">Points of Interest</div>
         </div>
         <div id="DestModeToggle" class="SportsModeToggle"></div>
@@ -106,7 +118,7 @@
 <div id="ProjectBrowseModal" class="BrowseModal">
     <div class="DestBrowseHeader">
         <div class="DestBrowseTitleGroup">
-            <span class="DestBrowseTitleIcon">📌</span>
+            <span class="DestBrowseTitleIcon"><svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="3" width="12" height="12" rx="3"/><path d="M9 6.2V11.8M6.2 9H11.8"/></svg></span>
             <div class="DestBrowseTitle">Projects</div>
         </div>
         <button class="DestBrowseClose" onclick="CloseProjectBrowseModal()">×</button>
@@ -118,22 +130,6 @@
         </div>
     </div>
     <div class="DestBrowseGrid" id="ProjectBrowseGrid"></div>
-</div>
-<div id="RouteBrowseBackdrop" class="BrowseBackdrop" onclick="CloseRouteBrowseModal()"></div>
-<div id="RouteBrowseModal" class="BrowseModal">
-    <div class="DestBrowseHeader">
-        <div class="DestBrowseTitleGroup">
-            <div class="DestBrowseTitle">Transit Routes</div>
-        </div>
-        <button class="DestBrowseClose" onclick="CloseRouteBrowseModal()">×</button>
-    </div>
-    <div class="BrowseFilterRow">
-        <div class="BrowseFilterInputWrap">
-            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
-            <input type="text" class="BrowseFilterInput" id="RouteBrowseFilterInput" placeholder="Filter routes...">
-        </div>
-    </div>
-    <div class="StationBrowseList" id="RouteBrowseList"></div>
 </div>
 <div id="SportsBrowseBackdrop" class="BrowseBackdrop" onclick="CloseSportsBrowseModal()"></div>
 <div id="SportsBrowseModal" class="BrowseModal">
@@ -175,84 +171,111 @@
 <div id="Sidebar" class="splash-hidden">
     <div id="Handle" onclick="ToggleSidebar()">◀</div>
     <div id="SidebarHeader">
-        <div id="SidebarBrand">NIMBY Rails</div>
+        <div id="SidebarMark" aria-hidden="true">
+            <svg viewBox="0 0 30 30" width="22" height="22" fill="none">
+                <path d="M6 23L13 15L19 20L25 8" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="6" cy="23" r="2.3" fill="#7c3aed"/>
+                <circle cx="13" cy="15" r="2.3" fill="#7c3aed"/>
+                <circle cx="19" cy="20" r="2.3" fill="#7c3aed"/>
+                <circle cx="25" cy="8" r="2.3" fill="#7c3aed"/>
+            </svg>
+        </div>
         <div id="SidebarTitle">Passenger Rail Map</div>
     </div>
-    <div class="SidebarSectionLabel">Filters</div>
-    <div id="SidebarToggles" class="LayerShowcase">
-        <div class="LayerCard station-line" onclick="OpenStationBrowseModal()">
-            <div class="LayerTitle">Stations</div>
-            <span class="LayerCount" id="StationCountBadge"></span>
+
+    <div id="ModeSwitch">
+        <button class="ModeSwitchBtn active" id="ModeSwitchFantasy" onclick="SwitchMapMode('Fantasy')">Future Vision</button>
+        <button class="ModeSwitchBtn" id="ModeSwitchPresent" onclick="SwitchMapMode('Present')">Present Day</button>
+    </div>
+
+    <div id="SidebarTabs">
+        <button class="SidebarTabBtn active" id="TabBtnNetwork" onclick="SwitchSidebarTab('Network')">Network</button>
+        <button class="SidebarTabBtn" id="TabBtnExplore" onclick="SwitchSidebarTab('Explore')">Explore<span class="TabBtnBadge" id="ExploreTabBadge"></span></button>
+    </div>
+
+    <div id="NetworkTab" class="SidebarTabPanel active">
+        <div class="StationsRow" onclick="OpenStationBrowseModal()">
+            <span class="StationsRowIcon">
+                <svg viewBox="0 0 18 18" width="15" height="15" fill="none"><circle cx="9" cy="9" r="6.6" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="9" r="2.6" fill="currentColor"/></svg>
+            </span>
+            <span class="InlineCount" id="StationCountBadge"></span>
+            <span class="StationsRowLabel">Stations</span>
             <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.stopPropagation(); ToggleStationDots()" title="Hide stations">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="LayerCard project-line" id="ProjectLayerCard" onclick="OpenProjectBrowseModal()">
-            <div class="LayerTitle">Projects</div>
-            <span class="LayerCount" id="ProjectCountBadge"></span>
+        <div id="LinesView">
+            <div id="LinesViewHeader">
+                <span class="LinesViewHeaderTitle">
+                    <svg viewBox="0 0 18 18" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="5.5" x2="16" y2="5.5"/><line x1="2" y1="12.5" x2="16" y2="12.5"/><line x1="4.5" y1="3.8" x2="4.5" y2="14.2"/><line x1="9" y1="3.8" x2="9" y2="14.2"/><line x1="13.5" y1="3.8" x2="13.5" y2="14.2"/></svg>
+                    Transit Lines
+                </span>
+                <span class="LinesViewHeaderRight">
+                    <span class="InlineCount" id="RouteCountBadge"></span>
+                    <div id="ModeFilterRow">
+                        <button id="ModeFilterToggleBtn" onclick="ToggleModeFilterPanel(event)" title="Filter by transit type">
+                            <svg viewBox="0 0 18 18" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="5" x2="15" y2="5"/><line x1="5" y1="9" x2="13" y2="9"/><line x1="7" y1="13" x2="11" y2="13"/></svg>
+                            <span id="ModeFilterBadge"></span>
+                        </button>
+                        <div id="ModeFilterPanel"></div>
+                    </div>
+                </span>
+            </div>
+            <div id="SearchRow">
+                <div class="BrowseFilterInputWrap" style="flex:1;">
+                    <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+                    <input type="text" class="BrowseFilterInput" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+                </div>
+                <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">
+                    <svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.4" width="12" height="3.4" rx="1"/><rect x="3" y="11.2" width="12" height="3.4" rx="1"/></svg>
+                </button>
+            </div>
+            <div id="ListContainer"></div>
+        </div>
+    </div>
+
+    <div id="ExploreTab" class="SidebarTabPanel">
+        <div class="ExploreRow" id="ProjectLayerCard" onclick="OpenProjectBrowseModal()">
+            <span class="ExploreRowIcon explore-projects">
+                <svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="16" x2="4" y2="3"/><line x1="4" y1="3" x2="15" y2="3"/><line x1="4.5" y1="6.5" x2="9" y2="3"/><line x1="15" y1="3" x2="15" y2="7.5"/><line x1="2" y1="16" x2="7" y2="16"/></svg>
+            </span>
+            <span class="ExploreRowText">
+                <span class="ExploreRowName">Projects</span>
+                <span class="ExploreRowDesc">Future infrastructure</span>
+            </span>
+            <span class="InlineCount" id="ProjectCountBadge"></span>
             <button id="ProjectToggleButton" class="InlineToggleSwitch accent-blue" onclick="event.stopPropagation(); ToggleAllProjects()" title="Show projects">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="LayerCard poi-line" onclick="OpenDestBrowseModal()">
-            <div class="LayerTitle">Points of Interest</div>
-            <span class="LayerCount" id="DestinationCountBadge"></span>
+        <div class="ExploreRow" onclick="OpenDestBrowseModal()">
+            <span class="ExploreRowIcon explore-poi">
+                <svg viewBox="0 0 18 18" width="16" height="16" fill="currentColor"><path d="M9 1.5l2.1 4.6 5 .6-3.7 3.4.9 4.9L9 12.6l-4.3 2.4.9-4.9-3.7-3.4 5-.6z"/></svg>
+            </span>
+            <span class="ExploreRowText">
+                <span class="ExploreRowName">Points of Interest</span>
+                <span class="ExploreRowDesc">Landmarks &amp; destinations</span>
+            </span>
+            <span class="InlineCount" id="DestinationCountBadge"></span>
             <button id="POIToggleButton" class="InlineToggleSwitch accent-amber" onclick="event.stopPropagation(); ToggleAllDestinations()" title="Show points of interest">
                 <span class="InlineToggleKnob"></span>
             </button>
         </div>
-        <div class="LayerCard route-line" onclick="OpenRouteSearch()">
-            <div class="LayerTitle">Transit Routes</div>
-            <span class="LayerCount" id="RouteCountBadge"></span>
-            <button id="RouteModeSwitchBtn" class="InlineToggleSwitch accent-indigo active" onclick="event.stopPropagation(); ToggleModeFilterPanel(event)" title="Filter by transit mode">
-                <span class="InlineToggleKnob"></span>
-            </button>
-        </div>
-        <div class="LayerCard sports-line" onclick="OpenSportsBrowseModal()">
-            <div class="LayerTitle">Sports Teams</div>
-            <span class="LayerCount" id="SportsTeamCountBadge"></span>
-            <button id="SportsLeagueSwitchBtn" class="InlineToggleSwitch accent-green" onclick="event.stopPropagation(); ToggleSportsFilterPanel(event)" title="Show teams on map by league">
-                <span class="InlineToggleKnob"></span>
-            </button>
-        </div>
-    </div>
-    <div id="SportsFilterPanel" class="InlineFilterPanel"></div>
-    <div id="LinesView">
-        <div id="SearchRow">
-            <div class="BrowseFilterInputWrap" style="flex:1;">
-                <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
-                <input type="text" class="BrowseFilterInput" id="SearchInput" placeholder="Search transit routes..." onkeyup="FilterList()">
+        <div class="ExploreRow expandable" id="SportsExploreRow">
+            <div class="ExploreRowMain" id="SportsLeagueSwitchBtn" onclick="ToggleSportsFilterPanel(event)">
+                <span class="ExploreRowIcon explore-sports">
+                    <svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="9" cy="9" rx="7.4" ry="5.2"/><rect x="4.2" y="7" width="9.6" height="4" rx="1"/></svg>
+                </span>
+                <span class="ExploreRowText">
+                    <span class="ExploreRowName">Sports Teams</span>
+                    <span class="ExploreRowDesc">By league</span>
+                </span>
+                <span class="InlineCount" id="SportsTeamCountBadge"></span>
+                <span class="ExploreRowChevron" id="LeagueFilterChevron">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </span>
             </div>
-            <button id="CollapseAllButton" onclick="CollapseAll()" title="Collapse All">⊟</button>
+            <div id="SportsFilterPanel" class="InlineFilterPanel"></div>
         </div>
-        <div class="SidebarSectionLabel">Transit Lines</div>
-        <div id="ListContainer"></div>
-    </div>
-</div>
-<div id="MapViewControl">
-    <div id="MapViewInner">
-        <div id="MapViewFutureCol" class="MapViewCol active-col" onclick="SwitchMapMode('Fantasy')" title="Future vision for North American rail">
-            <div class="MapViewColContent">
-                <div class="MapViewColLabel">Future Vision</div>
-                <div class="MapViewColSub">Fictional expansion</div>
-            </div>
-        </div>
-        <div id="MapViewDivider"></div>
-        <div id="MapViewPresentCol" class="MapViewCol" onclick="SwitchMapMode('Present')" title="Existing routes operating today">
-            <div class="MapViewColContent">
-                <div class="MapViewColLabel">Present Day</div>
-                <div class="MapViewColSub">Existing routes</div>
-            </div>
-        </div>
-    </div>
-    <div id="ModeFilterRow">
-        <button id="ModeFilterToggleBtn" onclick="ToggleModeFilterPanel(event)" title="Toggle transit types">
-            <span id="ModeFilterToggleLabel">Transit Types</span>
-            <span id="ModeFilterBadge"></span>
-            <span id="ModeFilterChevron">
-                <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
-            </span>
-        </button>
-        <div id="ModeFilterPanel"></div>
     </div>
 </div>
