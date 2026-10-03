@@ -1,0 +1,342 @@
+<div id="LoadingBackground"></div>
+<div id="MapSkeleton">
+    <div class="skeleton-line sl-1"></div>
+    <div class="skeleton-line sl-2"></div>
+    <div class="skeleton-line sl-3"></div>
+    <div class="skeleton-line sl-4"></div>
+    <div class="skeleton-line sl-5"></div>
+    <div class="skeleton-line sl-6"></div>
+    <div class="skeleton-line sl-7"></div>
+    <div class="skeleton-line sl-8"></div>
+
+    <div class="skeleton-node sn-1"></div>
+    <div class="skeleton-node sn-2"></div>
+    <div class="skeleton-node sn-3"></div>
+    <div class="skeleton-node sn-4"></div>
+    <div class="skeleton-node sn-5"></div>
+    <div class="skeleton-node sn-6"></div>
+    <div class="skeleton-node sn-7"></div>
+    <div class="skeleton-node sn-8"></div>
+    <div class="skeleton-node sn-9"></div>
+    <div class="skeleton-node sn-10"></div>
+</div>
+<div id="SplashScreen">
+    <div id="SplashLayout">
+        <header id="SplashIntro">
+            <h1 id="SplashTitle">jebbe's trains</h1>
+            <p id="SplashSubtitle">An optimistic future for North American rail transit</p>
+        </header>
+
+        <div id="SplashPatch">
+            <div id="SplashContent"></div>
+            <div id="FlagRing"></div>
+            <button id="SplashBack" title="Back" aria-label="Back">
+                <svg class="SplashBackChevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                <span class="SplashViewText">
+                    <span class="SplashViewTitle"><img class="SplashViewFlag" id="SplashViewTitleFlag" alt=""><span id="SplashViewTitleText"></span></span>
+                    <span class="SplashViewSubtitle" id="SplashViewSubtitle"><img class="SplashViewFlag" id="SplashViewSubtitleFlag" alt=""><span id="SplashViewSubtitleText"></span></span>
+                </span>
+            </button>
+            <div id="SplashLabel" aria-live="polite"></div>
+            <button id="SplashCollapse" title="Back to the map" aria-label="Back to the map">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <div id="SplashActions">
+            <button id="SplashEnter" onclick="CloseSplash()" disabled>
+                <span class="SplashEnterSpinner" aria-hidden="true"></span>
+                <span id="SplashEnterText">Loading map&hellip;</span>
+                <svg class="SplashEnterArrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div id="MapBlur"></div>
+<!-- After the splash closes, the flag-ring patch moves in here: a small globe
+     in the bottom-right corner that expands back to full size on click. The
+     Future / Present switch only shows while it's expanded. -->
+<div id="GlobeDockBackdrop"></div>
+<div id="GlobeDock" aria-label="Explore North America">
+    <div id="GlobeModeSwitch" role="group" aria-label="Network shown">
+        <button id="GlobeModeFantasy" class="active" onclick="event.stopPropagation(); SwitchMapMode('Fantasy')">Future Vision</button>
+        <button id="GlobeModePresent" onclick="event.stopPropagation(); SwitchMapMode('Present')">Present Day</button>
+    </div>
+</div>
+<div id="HeaderInfo"></div>
+<div id="SportsOverlayBadge" onclick="ClearAllLeagueMarkers()" title="Clear teams from map">
+    <span id="SportsOverlayBadgeText"></span>
+    <span class="SportsOverlayBadgeClose">×</span>
+</div>
+<div id="InfoPopupBackdrop" onclick="CloseInfoPopup()"></div>
+<div id="InfoPopupOverlay">
+    <div class="InfoPopupHeader">
+        <button class="InfoPopupClose" onclick="CloseInfoPopup()">×</button>
+        <div class="InfoPopupTitle" id="InfoPopupTitle"></div>
+        <div class="InfoPopupSource" id="InfoPopupSource"></div>
+    </div>
+    <div class="InfoPopupContent" id="InfoPopupContent"></div>
+</div>
+<!-- Map toolbar (top-right): Map style. Its thumbnails open to the left. -->
+<div id="MapToolbar">
+<div id="LayersControl">
+    <button id="LayersToggle" onclick="ToggleLayersPanel(event)" title="Map style" aria-expanded="false" aria-controls="LayersPanel">
+        <svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M10 2.8 17.5 7 10 11.2 2.5 7Z"/><path d="m2.5 10.2 7.5 4.2 7.5-4.2"/><path d="m2.5 13.4 7.5 4.2 7.5-4.2"/></svg>
+        <span class="LayersToggleLabel">Map style</span>
+    </button>
+    <div id="LayersPanel" onclick="event.stopPropagation()">
+        <div id="BasemapSwitcher">
+            <button id="LightButton" class="BasemapButton active" onclick="SwitchBasemap('Light')"><span class="BasemapThumb"></span><span class="BasemapName">Light</span></button>
+            <button id="DarkButton" class="BasemapButton" onclick="SwitchBasemap('Dark')"><span class="BasemapThumb"></span><span class="BasemapName">Dark</span></button>
+            <button id="SatelliteButton" class="BasemapButton" onclick="SwitchBasemap('Satellite')"><span class="BasemapThumb"></span><span class="BasemapName">Satellite</span></button>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<!-- Bottom of the map, centred: Places (category chips). Built by map.js. -->
+<div id="MapDock">
+    <div id="PlacesChips" aria-label="Places"></div>
+</div>
+
+<!-- Projects (Future view only), bottom-left of the map: a photo banner that
+     opens a large window with search and source filters. It lives on the map,
+     not the sidebar, so the sidebar looks the same in both views. -->
+<div id="ProjectsDock">
+    <button id="ProjectsCard" onclick="event.stopPropagation(); OpenProjectsWindow()" title="Browse future projects">
+        <span class="ProjectsBannerPhotos" id="ProjectsMosaic"></span>
+        <span class="ProjectsBannerText">
+            <span class="ProjectsBannerTitle">Future projects</span>
+            <span class="ProjectsBannerMeta"><span id="ProjectsCardCount"></span> future projects and proposals</span>
+        </span>
+        <span class="ProjectsBannerArrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+    </button>
+<div id="ProjectsDrawer">
+    <div id="ProjectsBackdrop" onclick="ToggleProjectsDrawer(false)"></div>
+    <div id="ProjectsGallery" onclick="event.stopPropagation()">
+        <div class="ProjectsGalleryHeader">
+            <span class="ProjectsGalleryTitle">Future projects <span class="InlineCount" id="ProjectCountBadge"></span></span>
+            <span class="ProjectsGalleryActions">
+                <span class="ProjectsGalleryToggleLabel">Pins on map</span>
+                <button id="ProjectToggleButton" class="InlineToggleSwitch accent-blue" onclick="ToggleAllProjects()" title="Show projects"><span class="InlineToggleKnob"></span></button>
+                <button class="ProjectsGalleryIconBtn" id="ProjectsExpandBtn" onclick="ToggleProjectsExpanded()" title="Expand" aria-label="Expand">
+                    <svg class="icon-expand" viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3h4v4M7 15H3v-4M15 3l-5 5M3 15l5-5"/></svg>
+                    <svg class="icon-collapse" viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8h-4V4M4 10h4v4M10 8l5-5M8 10l-5 5"/></svg>
+                </button>
+                <button class="ProjectsGalleryIconBtn" onclick="ToggleProjectsDrawer(false)" title="Close" aria-label="Close">×</button>
+            </span>
+        </div>
+        <div class="ProjectsGalleryTools">
+            <div class="BrowseFilterInputWrap">
+                <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+                <input type="text" class="BrowseFilterInput" id="ProjectsSearch" placeholder="Search projects…" oninput="FilterProjects()" autocomplete="off">
+            </div>
+            <div id="ProjectsSourceChips"></div>
+        </div>
+        <div id="ProjectsStrip"></div>
+        <div id="ProjectsEmpty">No projects match</div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div id="DestPopupBackdrop" onclick="CloseDestinationPopup()"></div>
+<div id="DestBrowseBackdrop" class="BrowseBackdrop" onclick="CloseDestBrowseModal()"></div>
+<div id="DestBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon" id="DestBrowseTitleIcon"><svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15.5S3.8 10.6 3.8 6.9a5.2 5.2 0 0 1 10.4 0C14.2 10.6 9 15.5 9 15.5Z"/><circle cx="9" cy="6.9" r="1.7"/></svg></span>
+            <div class="DestBrowseTitle" id="DestBrowseTitle">Points of Interest</div>
+        </div>
+        <div id="DestModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseDestBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="DestBrowseFilterInput" placeholder="Filter destinations...">
+        </div>
+    </div>
+    <div class="DestBrowseTabs" id="DestBrowseTabs"></div>
+    <div class="DestBrowseGrid" id="DestBrowseGrid"></div>
+</div>
+<div id="ProjectBrowseBackdrop" class="BrowseBackdrop" onclick="CloseProjectBrowseModal()"></div>
+<div id="ProjectBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon"><svg viewBox="0 0 18 18" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3" y="3" width="12" height="12" rx="3"/><path d="M9 6.2V11.8M6.2 9H11.8"/></svg></span>
+            <div class="DestBrowseTitle">Projects</div>
+        </div>
+        <button class="DestBrowseClose" onclick="CloseProjectBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="ProjectBrowseFilterInput" placeholder="Filter projects...">
+        </div>
+    </div>
+    <div class="DestBrowseGrid" id="ProjectBrowseGrid"></div>
+</div>
+<div id="SportsBrowseBackdrop" class="BrowseBackdrop" onclick="CloseSportsBrowseModal()"></div>
+<div id="SportsBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <div class="DestBrowseTitle">Sports Teams</div>
+        </div>
+        <div id="SportsModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseSportsBrowseModal()">×</button>
+    </div>
+    <div class="DestBrowseTabs" id="SportsBrowseTabs"></div>
+    <div class="DestBrowseGrid" id="SportsBrowseGrid"></div>
+</div>
+<div id="StationBrowseBackdrop" class="BrowseBackdrop" onclick="CloseStationBrowseModal()"></div>
+<div id="StationBrowseModal" class="BrowseModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon StationBrowseTitleIcon" aria-hidden="true"></span>
+            <div class="DestBrowseTitle">Stations</div>
+            <span class="StationBrowseCount" id="StationBrowseCount"></span>
+        </div>
+        <div id="StationBrowseModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseStationBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="StationBrowseFilterInput" placeholder="Filter stations…" autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+    <!-- Sort (A-Z or by city) and the same mode switches as the sidebar. -->
+    <div class="StationBrowseToolbar">
+        <div class="StationSortSwitch" role="group" aria-label="Sort stations">
+            <button data-sort="name" class="active" onclick="SetStationBrowseSort('name')">A–Z</button>
+            <button data-sort="city" onclick="SetStationBrowseSort('city')">By city</button>
+        </div>
+        <div class="StationModeChips" id="StationModeChips"></div>
+        <button class="BrowseCollapseAll" id="StationCollapseAll" onclick="ToggleBrowseGroups('StationBrowseList', StationBrowseCollapsed[StationBrowseSort], 'StationCollapseAll')">Collapse all</button>
+    </div>
+    <div class="StationBrowseList" id="StationBrowseList"></div>
+</div>
+<div id="RouteBrowseBackdrop" class="BrowseBackdrop" onclick="CloseRouteBrowseModal()"></div>
+<div id="RouteBrowseModal" class="BrowseModal StationLikeModal">
+    <div class="DestBrowseHeader">
+        <div class="DestBrowseTitleGroup">
+            <span class="DestBrowseTitleIcon RouteBrowseTitleIcon" aria-hidden="true"></span>
+            <div class="DestBrowseTitle">Lines</div>
+            <span class="StationBrowseCount" id="RouteBrowseCount"></span>
+        </div>
+        <div id="RouteBrowseModeToggle" class="SportsModeToggle"></div>
+        <button class="DestBrowseClose" onclick="CloseRouteBrowseModal()">×</button>
+    </div>
+    <div class="BrowseFilterRow">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="RouteBrowseFilterInput" placeholder="Filter lines or agencies…" autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+    <div class="StationBrowseToolbar">
+        <div class="StationSortSwitch" id="RouteSortSwitch" role="group" aria-label="Group lines">
+            <button data-sort="mode" class="active" onclick="SetRouteBrowseSort('mode')">By mode</button>
+            <button data-sort="agency" onclick="SetRouteBrowseSort('agency')">By agency</button>
+        </div>
+        <div class="StationModeChips" id="RouteModeChips"></div>
+        <button class="BrowseCollapseAll" id="RouteCollapseAll" onclick="ToggleBrowseGroups('RouteBrowseList', RouteBrowseCollapsed[RouteBrowseSort], 'RouteCollapseAll')">Collapse all</button>
+    </div>
+    <div class="StationBrowseList" id="RouteBrowseList"></div>
+</div>
+<div id="StationPopupOverlay">
+    <div class="PopupHeader">
+        <button class="PopupClose" onclick="CloseStationPopup()">×</button>
+        <button class="PopupMinimize DestOnly" id="PopupMinimizeBtn" onclick="ToggleDestPopupMinimize()" title="Minimize">−</button>
+        <div class="PopupStationName" id="PopupStationName"></div>
+        <div class="PopupStationType" id="PopupStationType"></div>
+    </div>
+    <div class="PopupContent" id="PopupContent"></div>
+</div>
+<div id="Sidebar" class="splash-hidden">
+    <div id="Handle" onclick="ToggleSidebar()">◀</div>
+
+    <div id="SidebarHeader">
+        <div id="SidebarTitle">jebbe's trains</div>
+        <div id="ModeSwitch">
+            <button class="ModeSwitchBtn active" id="ModeSwitchFantasy" onclick="SwitchMapMode('Fantasy')">Future Vision</button>
+            <button class="ModeSwitchBtn" id="ModeSwitchPresent" onclick="SwitchMapMode('Present')">Present Day</button>
+        </div>
+    </div>
+
+    <!-- One search for everything: lines (filtered in the list below) plus
+         stations, places, teams and projects (grouped results above it). -->
+    <div id="OmniSearch">
+        <div class="BrowseFilterInputWrap">
+            <svg class="BrowseFilterIcon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="20" y1="20" x2="15.3" y2="15.3"/></svg>
+            <input type="text" class="BrowseFilterInput" id="SearchInput" placeholder="Search lines, stations, places, teams…" autocomplete="off" spellcheck="false" oninput="OnOmniSearch()" onkeydown="OnOmniSearchKey(event)">
+            <button id="OmniClear" onclick="ClearOmniSearch()" title="Clear search" aria-label="Clear search">×</button>
+        </div>
+    </div>
+
+    <div id="SidebarScroll">
+        <div id="OmniResults"></div>
+
+        <!-- Sports: a shelf of league logos (each opens Sports Teams there). -->
+        <div id="ExploreCards">
+            <div id="SportsCard">
+                <div class="ShelfHeader">
+                    <span class="ShelfTitle">Sports teams <span id="SportsTabDot" title="Leagues shown on the map"></span></span>
+                    <span class="ShelfMeta"><span id="SportsCardCount"></span> leagues</span>
+                    <button class="ShelfBrowse" onclick="ToggleSportsRack(true, event)">Browse</button>
+                </div>
+                <div class="SportsCardLogos" id="SportsCardLogos"></div>
+            </div>
+        </div>
+
+        <!-- Stations: count, map dots, a preview of the busiest stations, and an
+             expand button for the full list. -->
+        <details id="StationsSection" class="SideSection" open>
+            <summary class="SideSectionHeader">
+                <span class="SideSectionChevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </span>
+                <span class="SideSectionTitle">Stations</span>
+                <span class="SideSectionCount" id="StationCountBadge"></span>
+                <span class="SideSectionTools">
+                    <span class="NetworkDotsToggle" title="Station markers on the map" onclick="event.preventDefault()">
+                        <button id="StationDotsToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.preventDefault(); ToggleStationDots()" title="Hide stations"><span class="InlineToggleKnob"></span></button>
+                    </span>
+                    <button class="SideSectionExpand" onclick="event.preventDefault(); OpenStationBrowseModal()" title="All stations" aria-label="All stations">
+                        <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3h4v4M7 15H3v-4M15 3l-5 5M3 15l5-5"/></svg>
+                    </button>
+                </span>
+            </summary>
+            <div id="StationsPreview"></div>
+            <button class="SideSectionMore" onclick="OpenStationBrowseModal()">All stations</button>
+        </details>
+
+        <!-- Lines: every mode, in one collapsible section. -->
+        <details id="LinesSection" class="SideSection" open>
+            <summary class="SideSectionHeader">
+                <span class="SideSectionChevron" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                </span>
+                <span class="SideSectionTitle">Lines</span>
+                <span class="SideSectionCount" id="RouteCountBadge"></span>
+                <span class="SideSectionTools">
+                    <span class="NetworkDotsToggle" title="All lines on the map" onclick="event.preventDefault()">
+                        <button id="LinesToggleButton" class="InlineToggleSwitch accent-slate active" onclick="event.preventDefault(); ToggleAllLines()" title="Hide all lines"><span class="InlineToggleKnob"></span></button>
+                    </span>
+                    <button class="SideSectionExpand" onclick="event.preventDefault(); OpenRouteBrowseModal()" title="All lines" aria-label="All lines">
+                        <svg viewBox="0 0 18 18" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3h4v4M7 15H3v-4M15 3l-5 5M3 15l5-5"/></svg>
+                    </button>
+                </span>
+            </summary>
+            <div id="LinesView">
+                <div id="ListContainer"></div>
+            </div>
+        </details>
+    </div>
+</div>
