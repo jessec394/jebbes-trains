@@ -504,7 +504,17 @@ function ShowStationPopup(SN, FromMarker = false) {
 
     var StationLabel = CleanStationName(S.Label || SN);
     document.getElementById('PopupStationName').innerText = StationLabel;
-    document.getElementById('PopupStationType').innerText = S.Type || '';
+    // Flag to the left of the name; city, subdivision (and type) underneath.
+    var Region = null;
+    GroupKeys.concat([SN]).some(function(K) {
+        var E = StationSearchIndex[K];
+        if (E && E.Region && E.Region.length) { Region = E.Region; return true; }
+        return false;
+    });
+    SetPopupFlag(Region && Region[2]);
+    var Place = Region ? [Region[0], Region[1]].filter(Boolean).join(', ') : '';
+    document.getElementById('PopupStationType').innerText = [Place, S.Type].filter(Boolean).join(' · ');
+    Overlay.classList.add('StationMode');
 
     var ModeGroups = {};
     ConnectedLines.forEach(L => {
@@ -512,65 +522,53 @@ function ShowStationPopup(SN, FromMarker = false) {
         ModeGroups[L.ModeId].push(L);
     });
 
-    var Html = '';
-    Object.keys(Modes).forEach(ModeId => {
+    // (Plain string concatenation, not template literals: the build's
+    // minifier strips spaces inside nested template strings.)
+    var ModeCount = Object.keys(ModeGroups).length;
+    var Chevron = '<span class="PopupModeChevron" aria-hidden="true"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>';
+    var Html = '<div class="PopupSummary">' + ConnectedLines.length + (ConnectedLines.length === 1 ? ' line' : ' lines') +
+        (ModeCount > 1 ? ' · ' + ModeCount + ' modes' : '') + '</div>';
+    Object.keys(Modes).forEach(function(ModeId) {
         if (!ModeGroups[ModeId]) return;
         var ModeData = Modes[ModeId];
         var Lines = ModeGroups[ModeId];
 
-        Html += `<details class='PopupModeGroup' open>
-            <summary class='PopupModeHeader'>
-                <span class='PopupModeIndicator'>▶</span>
-                <span class='ModeDot' style='background:${ModeData.Color}'></span>
-                ${ModeData.Name}
-            </summary>
-            <div class='PopupModeContent'>`;
+        Html += '<details class="PopupMode" open><summary class="PopupModeTitle">' + Chevron +
+            '<span class="PopupModeDot" style="background:' + ModeData.Color + '"></span>' +
+            '<span class="PopupModeName">' + EscapeHtml(ModeData.Name) + '</span>' +
+            '<span class="PopupModeCount">' + Lines.length + '</span></summary>';
 
         var OperatorGroups = {};
-        Lines.forEach(L => {
+        Lines.forEach(function(L) {
             if (!OperatorGroups[L.Operator]) OperatorGroups[L.Operator] = [];
             OperatorGroups[L.Operator].push(L);
         });
 
-        Object.keys(OperatorGroups).sort().forEach(Op => {
-            Html += `<details class='PopupOperatorGroup' open>
-                <summary class='PopupOperatorHeader'>
-                    <span class='PopupOperatorIndicator'>▶</span>${Op}
-                </summary>
-                <div class='PopupOperatorContent'>`;
-
-            OperatorGroups[Op].forEach(L => {
-                Html += `<div class='PopupLineItem' onclick='SelectLine("${L.Id}")'>
-                    <span class='PopupLineDot' style='background:${L.Color}'></span>
-                    <div class='PopupLineText'>
-                        <div class='PopupLineName'>${L.Name}</div>
-                    </div>
-                </div>`;
-            });
-
-            Html += '</div></details>';
-        });
-
-        Html += '</div></details>';
-    });
-
-    if (NearbyGroups.length) {
-        Html += `<details class='PopupNearbySection' open>
-            <summary class='PopupNearbyHeader'>
-                <span class='PopupModeIndicator'>▶</span>
-                Nearby Stations
-            </summary>
-            <div class='PopupNearbyContent'>`;
-        NearbyGroups.forEach(G => {
-            Html += `<div class='PopupNearbyItem' onclick='ShowStationPopupFromSearch("${G.Keys[0].replace(/"/g, '&quot;')}")'>
-                <div class='StationSearchName'>${G.Label}</div>
-                <div class='StationSearchLines'>`;
-            G.Lines.forEach(L => {
-                Html += `<span class='StationSearchPill' style='background:${L.Color}'>${L.Name}</span>`;
+        Object.keys(OperatorGroups).sort().forEach(function(Op) {
+            Html += '<div class="PopupAgency"><div class="PopupAgencyName">' + EscapeHtml(Op) + '</div><div class="PopupLineChips">';
+            OperatorGroups[Op].slice().sort(function(A, B) { return A.Name.localeCompare(B.Name); }).forEach(function(L) {
+                Html += '<button class="PopupLineChip" onclick="SelectLine(' + EscapeHtml(OmniJs(L.Id)) + ')" title="' + EscapeHtml(L.Name + ' · ' + Op) + '">' +
+                    '<span class="PopupLineChipDot" style="background:' + L.Color + '"></span>' + EscapeHtml(L.Name) + '</button>';
             });
             Html += '</div></div>';
         });
-        Html += '</div></details>';
+
+        Html += '</details>';
+    });
+
+    if (NearbyGroups.length) {
+        Html += '<details class="PopupMode PopupNearby" open><summary class="PopupModeTitle">' + Chevron +
+            '<span class="PopupModeName">Nearby stations</span>' +
+            '<span class="PopupModeCount">' + NearbyGroups.length + '</span></summary>';
+        NearbyGroups.forEach(function(G) {
+            var Shown = G.Lines.slice(0, 4), More = G.Lines.length - Shown.length;
+            Html += '<div class="PopupNearbyRow" onclick="ShowStationPopupFromSearch(' + EscapeHtml(OmniJs(G.Keys[0])) + ')">' +
+                '<span class="PopupNearbyName">' + EscapeHtml(G.Label) + '</span><span class="StationSearchLines">' +
+                Shown.map(function(L) { return '<span class="StationSearchPill" style="background:' + L.Color + '">' + EscapeHtml(L.Name) + '</span>'; }).join('') +
+                (More > 0 ? '<span class="StationSearchPill more">+' + More + '</span>' : '') +
+                '</span></div>';
+        });
+        Html += '</details>';
     }
 
     document.getElementById('PopupContent').innerHTML = Html;
@@ -581,6 +579,22 @@ function ShowStationPopup(SN, FromMarker = false) {
 
     var ConnectedLineIds = ConnectedLines.map(L => L.Id);
     ApplyLineEmphasis(L => ConnectedLineIds.includes(L.Id), 1);
+}
+
+// The flag beside a station's name in its panel (hidden for places, or when
+// the station has no country).
+function SetPopupFlag(country) {
+    var img = document.getElementById('PopupStationFlag');
+    if (!img) return;
+    if (country) {
+        img.src = FLAG_IMAGE_BASE + '/' + encodeURIComponent(country) + '.webp';
+        img.title = country;
+        img.hidden = false;
+        img.onerror = function() { img.hidden = true; };
+    } else {
+        img.hidden = true;
+        img.removeAttribute('src');
+    }
 }
 
 function CloseStationPopup() {
@@ -3245,6 +3259,8 @@ function ShowDestinationPopup(cat, name, zoomIn) {
 
     document.getElementById('PopupStationName').innerText = name;
     document.getElementById('PopupStationType').innerText = cfg.label;
+    SetPopupFlag(null);
+    document.getElementById('StationPopupOverlay').classList.remove('StationMode');
 
     var imgContainer = document.getElementById('DestPopupImageContainer');
     if (!imgContainer) {

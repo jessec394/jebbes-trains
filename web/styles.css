@@ -5241,3 +5241,222 @@ body.globe-docked #InfoPopupOverlay {
         align-items: center;
     }
 }
+
+/* ── Station panel: flag + name, place underneath; light sections; chips ── */
+#StationPopupOverlay.StationMode .PopupHeader {
+    padding: 22px 100px 16px 22px;
+}
+
+.PopupTitleRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.PopupFlag {
+    flex: none;
+    height: 18px;
+    width: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.14);
+}
+
+#StationPopupOverlay.StationMode .PopupStationName {
+    margin-bottom: 2px;
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+/* The place, in normal case (place panels keep their uppercase category). */
+#StationPopupOverlay.StationMode .PopupStationType {
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #64748b;
+}
+
+#StationPopupOverlay.StationMode .PopupFlag:not([hidden]) ~ * {
+    min-width: 0;
+}
+
+/* Zoom to station: a round icon button beside the close button. */
+#StationPopupOverlay.StationMode .StationZoomButton {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.05);
+    color: #475569;
+}
+
+#StationPopupOverlay.StationMode .StationZoomButton span {
+    display: none;
+}
+
+#StationPopupOverlay.StationMode .StationZoomButton:hover {
+    background: #0f172a;
+    color: #fff;
+    transform: none;
+}
+
+#StationPopupOverlay.StationMode .PopupContent {
+    padding: 12px 18px 18px;
+}
+
+.PopupSummary {
+    padding: 0 4px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+}
+
+.PopupMode {
+    padding: 4px 0 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.PopupMode:last-child {
+    border-bottom: none;
+}
+
+.PopupModeTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 4px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.PopupModeTitle::-webkit-details-marker {
+    display: none;
+}
+
+.PopupModeChevron {
+    display: flex;
+    color: #94a3b8;
+    transform: rotate(-90deg);
+    transition: transform 0.15s ease;
+}
+
+.PopupMode[open] > .PopupModeTitle .PopupModeChevron {
+    transform: none;
+}
+
+.PopupModeDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex: none;
+}
+
+.PopupModeName {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.PopupModeCount {
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.06);
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.PopupAgency {
+    padding: 2px 4px 6px 23px;
+}
+
+.PopupAgencyName {
+    margin-bottom: 6px;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #94a3b8;
+}
+
+.PopupLineChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.PopupLineChip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 100%;
+    padding: 5px 11px 5px 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    background: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: border-color 0.12s ease, background 0.12s ease, transform 0.12s ease;
+}
+
+.PopupLineChip:hover {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    transform: translateY(-1px);
+}
+
+.PopupLineChipDot {
+    flex: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.PopupNearbyRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 19px;
+    padding: 7px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.12s ease;
+}
+
+.PopupNearbyRow:hover {
+    background: #f1f5f9;
+}
+
+.PopupNearbyName {
+    min-width: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.PopupNearbyRow .StationSearchLines {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 4px;
+    max-width: 60%;
+}

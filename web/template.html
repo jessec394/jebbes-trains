@@ -254,7 +254,10 @@
     <div class="PopupHeader">
         <button class="PopupClose" onclick="CloseStationPopup()">×</button>
         <button class="PopupMinimize DestOnly" id="PopupMinimizeBtn" onclick="ToggleDestPopupMinimize()" title="Minimize">−</button>
-        <div class="PopupStationName" id="PopupStationName"></div>
+        <div class="PopupTitleRow">
+            <img class="PopupFlag" id="PopupStationFlag" alt="" hidden>
+            <div class="PopupStationName" id="PopupStationName"></div>
+        </div>
         <div class="PopupStationType" id="PopupStationType"></div>
     </div>
     <div class="PopupContent" id="PopupContent"></div>
