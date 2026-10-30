@@ -20164,8 +20164,11 @@ Segments = {
     "San Francisco Caltrain (Diridon - Gilroy)": {
         "F": ['San Jose Diridon Station {Main}', '[X] San Jose Diridon South Junction', 'Tamien {Caltrain}', 'Capitol [San Jose-Caltrain]', 'Blossom Hill [Caltrain]', 'Morgan Hill', 'Gilroy'],
     },
+    "San Francisco Caltrain (Salesforce TC - Gilroy)": {
+        "F": ['San Francisco Salesforce TC', '[X] San Francisco Salesforce Bend W', '[X] San Francisco Salesforce Bend E', 'San Francisco Caltrain (4th & King - Gilroy)'],
+    },
     "San Francisco Caltrain (Salesforce TC - Salinas)": {
-        "F": ['San Francisco Salesforce TC', '[X] San Francisco Salesforce Bend W', '[X] San Francisco Salesforce Bend E', 'San Francisco Caltrain (4th & King - Gilroy)', 'Watsonville', 'Salinas'],
+        "F": ['San Francisco Caltrain (Salesforce TC - Gilroy)', 'Watsonville', 'Salinas'],
     },
     "San Francisco MUNI (Chinatown - Sunnydale)": {
         "F": ['Chinatown-Rose Pak', 'Union Square/Market St', '[X] San Francisco Union Square Bend', 'Yerba Buena/Moscone', '4th & Brannan', 'King & 4th St', 'Mission Rock', 'UCSF/Chase Center', 'UCSF Medical Center', '20th St [San Francisco]', '23rd St [San Francisco]', '3rd & Marin St', 'Evans [San Francisco]', 'Kirkwood/La Salle', 'Oakdale/Palou', '3rd & Williams Ave', 'Carroll', '3rd & Gilman/Paul', 'Le Conte', 'Arleta', 'Sunnydale'],
