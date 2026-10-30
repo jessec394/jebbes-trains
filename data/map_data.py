@@ -7117,6 +7117,7 @@ Stations = {
     "Lancaster & Thompson": {'Location': (39.97381, -75.21987)},
     "Lancaster Rd": {'Location': (28.46590, -81.39676)},
     "Lancaster [CA]": {'Location': (34.69658, -118.13624)},
+    "Lancaster [OH]": {'Location': (39.70867, -82.60344)},
     "Lancaster [PA]": {'Location': (40.05431, -76.30774), 'Major': True},
     "Lancaster [TX]": {'Location': (32.59281, -96.75296)},
     "Landis": {'Location': (35.54725, -80.60942)},
@@ -7445,12 +7446,13 @@ Stations = {
     "Locust St": {'Location': (39.50306, -119.80194)},
     "Locust Valley": {'Location': (40.87455, -73.59838)},
     "Lodi": {'Location': (38.13320, -121.27181)},
-    "Logan": {'Location': (40.02998, -75.14666)},
     "Logan & Gerrard": {'Location': (43.66698, -79.34531)},
     "Logan & Queen": {'Location': (43.66042, -79.34266)},
     "Logan Ave": {'Location': (32.69686, -117.08512)},
     "Logan Road": {'Location': (40.31172, -80.03314)},
     "Logan Square": {'Location': (41.93019, -87.70922)},
+    "Logan [OH]": {'Location': (39.53588, -82.40892)},
+    "Logan [Philadelphia]": {'Location': (40.02998, -75.14666)},
     "Lois Ave": {'Location': (27.97407, -82.51291)},
     "Loma Heights": {'Location': (32.74271, -117.23262)},
     "Loma Linda [Ontario]": {'Location': (34.05621, -117.26313)},
@@ -8663,7 +8665,6 @@ Stations = {
         "N": {'Location': (41.51444, -87.96527)},
         "S": {'Location': (41.49275, -87.96066)},
     },
-    "New Lexington": {'Location': (39.70936, -82.20832)},
     "New London": {'Location': (41.35420, -72.09314)},
     "New Lots Av [Livonia]": {'Location': (40.66559, -73.88850)},
     "New Lots Av [Van Sinderen]": {'Location': (40.65892, -73.89922)},
@@ -13839,8 +13840,7 @@ Segments = {
         "Keep": ['Columbus Union Station {Main}'],
     },
     "-Intercity LS (Columbus - Charleston)": {
-        "F": ['Columbus Regional (Central - Pickerington)', 'New Lexington', 'Athens [OH]', 'Point Pleasant', 'Charleston [Downtown]'],
-        "Keep": ['Columbus Union Station {Main}', 'Pickerington', 'New Lexington', 'Athens [OH]', 'Point Pleasant', 'Charleston [Downtown]'],
+        "F": ['-Intercity LS (Columbus - Winchester)', 'Lancaster [OH]', 'Logan [OH]', 'Athens [OH]', 'Point Pleasant', 'Charleston [Downtown]'],
     },
     "-Intercity LS (Columbus - Cincinnati via Dayton)": {
         "F": ['-Intercity LS (Columbus - West Jefferson)', 'Springfield [OH]', '[X] Dayton East Junction', '[R] -Intercity LS (Cincinnati - Dayton)'],
@@ -13868,6 +13868,10 @@ Segments = {
     },
     "-Intercity LS (Columbus - West Jefferson)": {
         "F": ['Columbus Regional (Central - West Jefferson)'],
+        "Keep": ['Columbus Union Station {Main}'],
+    },
+    "-Intercity LS (Columbus - Winchester)": {
+        "F": ['Columbus Regional (Central - Winchester)'],
         "Keep": ['Columbus Union Station {Main}'],
     },
     "-Intercity LS (Corozal - Colón)": {
@@ -19409,7 +19413,7 @@ Segments = {
         "Keep": ['Fern Rock Transit Center', 'Olney Transit Center', 'Erie [Philadelphia]', 'Broad-North Philadelphia', 'Girard', 'Fairmount [Philadelphia]'],
     },
     "Philadelphia Subway (Broad Line North Local)": {
-        "F": ['Fern Rock Transit Center', 'Olney Transit Center', 'Logan', 'Wyoming [Philadelphia]', 'Hunting Park', 'Erie [Philadelphia]', 'Broad-Allegheny', 'Broad-North Philadelphia', 'Susquehanna-Dauphin', 'Cecil B. Moore', 'Girard', 'Fairmount [Philadelphia]'],
+        "F": ['Fern Rock Transit Center', 'Olney Transit Center', 'Logan [Philadelphia]', 'Wyoming [Philadelphia]', 'Hunting Park', 'Erie [Philadelphia]', 'Broad-Allegheny', 'Broad-North Philadelphia', 'Susquehanna-Dauphin', 'Cecil B. Moore', 'Girard', 'Fairmount [Philadelphia]'],
     },
     "Philadelphia Subway (Frankford Line)": {
         "F": ['2nd St', 'Spring Garden', 'Front-Girard', 'Berks', 'York-Dauphi', 'Huntingdon [Philadelphia]', 'Somerset [Philadelphia]', 'Allegheny Ave', 'Tioga', 'Erie-Torresdale', 'Church Ruan', 'Arrott Transit Center', 'Frankford Transit Center', 'Bustleton'],
