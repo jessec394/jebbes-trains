@@ -1944,7 +1944,7 @@ Stations = {
     "Anniston": {'Location': (33.64911, -85.83214), 'Region': ['Anniston', 'Alabama', 'USA']},
     "Anoka Main St": {'Location': (45.19828, -93.39305), 'Region': ['Anoka', 'Minnesota', 'USA']},
     "Anoka Transit Center": {
-        "LRT": {'Location': (45.20689, -93.38338), 'Region': ['Anoka', 'Minnesota', 'USA']},
+        "LRT": {'Location': (45.20772, -93.38533), 'Region': ['Anoka', 'Minnesota', 'USA']},
         "Main": {'Location': (45.20775, -93.38408), 'Label': 'Anoka', 'Region': ['Anoka', 'Minnesota', 'USA']},
     },
     "Anthony Wayne": {'Location': (41.61231, -83.59209), 'Region': ['Toledo', 'Ohio', 'USA']},
@@ -11315,7 +11315,7 @@ Stations = {
     "Sunset [Las Vegas]": {'Location': (36.07002, -115.17241)},
     "Sunset/Airport Transfer": {'Location': (36.06884, -115.14720), 'Type': 'Airport'},
     "Superior [OH]": {'Location': (41.52307, -81.59212)},
-    "Superior [WI]": {'Location': (46.72824, -92.09988)},
+    "Superior [WI]": {'Location': (46.72821, -92.11808)},
     "Surgeon": {'Location': (49.87928, -97.27826)},
     "Surratts": {'Location': (38.75047, -76.87961)},
     "Surrey Central": {'Location': (49.18956, -122.84795)},
