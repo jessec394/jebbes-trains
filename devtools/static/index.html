@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Track tracer — dev only</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/static/tracer.css">
+</head>
+<body>
+<aside id="left">
+  <header><b>Track tracer</b> <span class="tag">dev only</span></header>
+  <input id="filter" placeholder="Filter operator / line / pattern…" autocomplete="off">
+  <div id="tree"></div>
+  <footer id="graphinfo"></footer>
+</aside>
+<div id="map"><div id="bpbar" hidden><span id="bpcount"></span><button id="bpbuild" class="primary" title="Make all blueprints real (B)">Build</button><button id="bpclear" title="Discard all blueprints">Clear</button></div><div id="modebar" hidden><span class="seg"><button data-tool="draw" title="Draw new track">Free</button><button data-tool="parallel" title="Parallel to existing track (P)">Parallel</button><button data-tool="erase" title="Click a little segment (between crossings) · drag a box · Shift+drag to sweep over segments">Erase</button><button data-tool="restore" title="Same as Erase, for erased track">Restore</button><button data-tool="edit" title="Edit drawn tracks">Edit</button></span> <button id="showErased" title="Show erased track as dashed red">Show erased</button></div><div id="zoomhint">Zoom in to see track (zoom 9+)</div>
+  <div id="parhud" hidden>
+        <div class="hg"><span>Distance</span><input id="pardist" type="number" min="2" max="60" step="0.5" value="4.5"> m</div>
+    <div class="hg"><span>Side</span><button id="parflip" title="Flip to the other side (F)">&#8644; Left</button></div>
+    <div class="hg"><span>Tracks</span><span class="seg" id="partracks"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4">4</button></span></div>
+    <div class="hg"><button id="paradd" class="primary" disabled>Add parallel</button></div>
+    <div class="hg hint" id="parhint">Click a track to select it</div>
+  </div>
+  <div id="hud" hidden>
+    <div class="hg"><span>Tracks</span><span class="seg" id="hudtracks"><button data-n="1" title="1 track (key 1)">1</button><button data-n="2" title="2 tracks (key 2)">2</button><button data-n="3" title="3 tracks (key 3)">3</button><button data-n="4" title="4 tracks (key 4)">4</button><button data-n="5" title="5 tracks (key 5)">5</button><button data-n="6" title="6 tracks (key 6)">6</button></span></div>
+    <div class="hg"><span>Drawing</span><span class="seg" id="hudanchor"><button data-a="left" title="The line you draw is the left-most track">&#9680; left</button><button data-a="center" title="The line you draw is the middle">&#9635; middle</button><button data-a="right" title="The line you draw is the right-most track">&#9681; right</button></span></div>
+    <div class="hg"><span>Spacing</span><input id="hudspace" type="number" min="2" max="60" step="0.5" value="4.5"> m</div>
+    <div class="hg" id="hudread"></div>
+  </div></div>
+<aside id="right">
+  <section id="routebox">
+    <button id="deselect" class="ghost" hidden title="Deselect this route (Esc) so map clicks do not edit it" style="float:right">✕ Deselect</button>
+    <h3 id="routetitle">No route selected</h3>
+    <div id="routemeta" class="muted"></div>
+    <div id="inheritRow" hidden>
+      <div id="inheritText"></div>
+      <select id="inheritSel" hidden></select>
+    </div>
+    <div id="depRow" hidden>
+      <div id="depText"></div>
+      <div id="depList"></div>
+    </div>
+    <div class="btns">
+      <button id="inheritUse" class="primary" hidden>Follow Present</button><button id="inheritGo" hidden>Open Present</button><button id="inheritCopy" hidden title="Stop following; keep these waypoints as this route's own">Copy to edit</button>
+      <button id="undo">Undo</button>
+      <button id="clear">Clear</button>
+      <button id="save" class="primary" title="Ctrl+S">Save</button>
+    </div>
+    <div id="routeinfo"></div>
+  </section>
+  <section id="edpanel" hidden>
+    <h3 id="edtitle">Editing custom track</h3>
+    <input id="edname" placeholder="Name (optional)" autocomplete="off">
+    <div id="edscope" class="muted"></div>
+    <div id="edsegrow">Segment <b id="edsegn"></b> <span class="seg" id="edsegmode"><button data-s="0">Straight</button><button data-s="1">Curved</button></span>
+      <div><button id="edsegdel" title="Delete the highlighted stretch (Delete key): drag along the track, click a segment, or click two nodes to highlight it. At an end it shortens the track, in the middle it splits it">Delete selection</button></div>
+      <div>All segments <button id="edallstr">Straight</button> <button id="edallcur">Curved</button></div></div>
+    <div id="edtracksrow">
+      <div>Parallel tracks <span class="seg" id="edtracks"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4">4</button><button data-n="5">5</button><button data-n="6">6</button></span></div>
+      <div>Drawn line is <span class="seg" id="edanchor"><button data-a="left">left</button><button data-a="center">middle</button><button data-a="right">right</button></span></div>
+      <div>Spacing <input id="edspace" type="number" min="2" max="60" step="0.5" value="4.5"> m</div>
+    </div>
+    <div class="btns"><button id="eddone" class="primary">Done</button><button id="eddelete">Delete track</button></div>
+    <div id="edstatus" class="muted"></div>
+  </section>
+  <section id="wpbox">
+    <h3>Waypoints <span id="wpcount" class="tag"></span></h3>
+    <div id="wplist" class="muted">Select a route, then click the map.</div>
+  </section>
+  <section>
+    <h3>Map &amp; tools</h3>
+    <div class="seg" id="mapsw"><button data-m="present">Present map</button><button data-m="future">Future map</button></div>
+    <div class="seg" id="toolsw">
+      <button data-t="trace" title="Trace a route with waypoints">Trace</button>
+      <button data-t="draw" title="Draw new track" >Draw</button>
+    </div>
+
+    <div id="changedlist" hidden></div><div id="editsbox"><button id="refreshAffected" class="primary" disabled title="No track changed since the last refresh.">Refresh affected lines</button> <button id="undoEdit" title="Remove the most recent draw / erase edit">Undo last track edit</button></div>
+  </section>
+  <section>
+    <h3>OSM update report</h3>
+    <div id="report" class="muted">none</div>
+    <div class="btns"><button id="recompile">Re-route everything</button></div>
+  </section>
+</aside>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/static/tracer.js"></script>
+</body>
+</html>
