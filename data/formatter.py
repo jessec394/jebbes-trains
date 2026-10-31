@@ -16,7 +16,10 @@ def formatItems(d):
     if 'Location' in d:
         inner_parts.append(f"'Location': {formatCoordinates(d['Location'])}")
     for k in sorted(v for v in d.keys() if v not in ('Location', 'Platforms')):
-        inner_parts.append(f"{repr(k)}: {repr(d[k])}")
+        if k == 'Span':
+            inner_parts.append("'Span': [" + ", ".join(formatCoordinates(c) for c in d[k]) + "]")
+        else:
+            inner_parts.append(f"{repr(k)}: {repr(d[k])}")
     return ", ".join(inner_parts)
 
 def formatStation(key, d):
