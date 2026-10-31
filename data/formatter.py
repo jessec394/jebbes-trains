@@ -8,13 +8,27 @@ def formatCoordinates(tuple_val):
     return f"({tuple_val[0]:.5f}, {tuple_val[1]:.5f})"
 
 def formatDict(d):
-    """Formats a station/substation dict, applying formatCoordinates to 'Location'."""
+    """Formats a station dict on one line, applying formatCoordinates to 'Location'."""
+    return "{" + formatItems(d) + "}"
+
+def formatItems(d):
     inner_parts = []
     if 'Location' in d:
         inner_parts.append(f"'Location': {formatCoordinates(d['Location'])}")
-    for k in sorted(v for v in d.keys() if v != 'Location'):
+    for k in sorted(v for v in d.keys() if v not in ('Location', 'Platforms')):
         inner_parts.append(f"{repr(k)}: {repr(d[k])}")
-    return "{" + ", ".join(inner_parts) + "}"
+    return ", ".join(inner_parts)
+
+def formatStation(key, d):
+    """One line, or for a station with platforms a block with one line per platform (a platform is always a dict with its Location)."""
+    if not d.get('Platforms'):
+        return f'    "{key}": {formatDict(d)},\n'
+    out = f'    "{key}": {{\n        {formatItems(d)},\n        \'Platforms\': {{\n'
+    for name in sorted(d['Platforms']):
+        p = d['Platforms'][name]
+        p = {k: v for k, v in p.items() if k != 'Label'} if isinstance(p, dict) else {'Location': p}      # a platform uses its station's label
+        out += f"            {repr(name)}: {formatDict(p)},\n"
+    return out + "        },\n    },\n"
 
 output = ""
 
@@ -39,18 +53,7 @@ output += "Stations = {\n"
 for key in sorted(Stations.keys()):
     content = Stations[key]
     if isinstance(content, dict) and 'Location' in content:
-        # Standard single-location station
-        output += f'    "{key}": {formatDict(content)},\n'
-    elif isinstance(content, dict):
-        # Station with multiple substations
-        output += f'    "{key}": {{\n'
-        for sub_key in sorted(content.keys()):
-            sub_content = content[sub_key]
-            if isinstance(sub_content, dict):
-                output += f'        "{sub_key}": {formatDict(sub_content)},\n'
-            else:
-                output += f'        "{sub_key}": {repr(sub_content)},\n'
-        output += "    },\n"
+        output += formatStation(key, content)
     else:
         output += f'    "{key}": {repr(content)},\n'
 output += "}\n\n"
