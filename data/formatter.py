@@ -26,10 +26,11 @@ def formatStation(key, d):
     """One line, or for a station with platforms a block with one line per platform (a platform is always a dict with its Location)."""
     if not d.get('Platforms'):
         return f'    "{key}": {formatDict(d)},\n'
-    out = f'    "{key}": {{\n        {formatItems(d)},\n        \'Platforms\': {{\n'
+    head = formatItems(d)
+    out = f'    "{key}": {{\n' + (f'        {head},\n' if head else '') + "        'Platforms': {\n"
     for name in sorted(d['Platforms']):
         p = d['Platforms'][name]
-        p = {k: v for k, v in p.items() if k != 'Label'} if isinstance(p, dict) else {'Location': p}      # a platform uses its station's label
+        p = p if isinstance(p, dict) else {'Location': p}
         out += f"            {repr(name)}: {formatDict(p)},\n"
     return out + "        },\n    },\n"
 
@@ -55,7 +56,7 @@ output += "}\n\n"
 output += "Stations = {\n"
 for key in sorted(Stations.keys()):
     content = Stations[key]
-    if isinstance(content, dict) and 'Location' in content:
+    if isinstance(content, dict) and ('Location' in content or content.get('Platforms')):
         output += formatStation(key, content)
     else:
         output += f'    "{key}": {repr(content)},\n'
