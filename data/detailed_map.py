@@ -44,6 +44,13 @@ Stations = {
     },
     "12th & Main": {'Location': (39.10838, -84.51147), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10847, -84.51149), (39.10829, -84.51145)]},
     "12th & Vine": {'Location': (39.10836, -84.51453), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10834, -84.51465), (39.10837, -84.51442)]},
+    "13th Ave": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73499, -104.82355), 'Span': [(39.73453, -104.82355), (39.73545, -104.82355)]},
+            'Track 2': {'Location': (39.73522, -104.82360), 'Span': [(39.73545, -104.82360), (39.73499, -104.82360)]},
+        },
+    },
     "140th St": {
         'Region': ['Apple Valley', 'Minnesota', 'USA'],
         'Platforms': {
@@ -59,11 +66,64 @@ Stations = {
         },
     },
     "14th & Elm": {'Location': (39.10983, -84.51848), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10992, -84.51850), (39.10974, -84.51846)]},
+    "16th & California": {'Location': (39.74473, -104.99270), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74440, -104.99312), (39.74506, -104.99227)]},
+    "16th & Stout": {'Location': (39.74633, -104.99252), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74666, -104.99210), (39.74600, -104.99294)]},
+    "18th & California": {'Location': (39.74659, -104.99030), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74627, -104.99071), (39.74691, -104.98989)]},
+    "18th & Stout": {'Location': (39.74819, -104.99013), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74789, -104.99053), (39.74850, -104.98973)]},
+    "20th & Welton": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74789, -104.98688), 'Span': [(39.74759, -104.98719), (39.74819, -104.98657)]},
+            'Track 2': {'Location': (39.74793, -104.98694), 'Span': [(39.74763, -104.98725), (39.74822, -104.98662)]},
+        },
+    },
+    "25th & Welton": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.75335, -104.97979), 'Span': [(39.75311, -104.98010), (39.75359, -104.97948)]},
+            'Track 2': {'Location': (39.75339, -104.97985), 'Span': [(39.75315, -104.98016), (39.75363, -104.97954)]},
+        },
+    },
+    "27th & Welton": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.75510, -104.97752), 'Span': [(39.75483, -104.97788), (39.75537, -104.97717)]},
+            'Track 2': {'Location': (39.75514, -104.97759), 'Span': [(39.75487, -104.97794), (39.75541, -104.97724)]},
+        },
+    },
+    "2nd Ave & Abilene": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.71941, -104.82566), 'Span': [(39.71896, -104.82579), (39.71985, -104.82553)]},
+            'Track 2': {'Location': (39.71941, -104.82571), 'Span': [(39.71897, -104.82584), (39.71986, -104.82558)]},
+        },
+    },
+    "30th & Downing": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.75894, -104.97350), 'Span': [(39.75864, -104.97350), (39.75924, -104.97350)]},
+            'Track 2': {'Location': (39.75894, -104.97355), 'Span': [(39.75864, -104.97355), (39.75924, -104.97354)]},
+        },
+    },
     "30th Ave": {
         'Region': ['Bloomington', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.85574, -93.23164), 'Span': [(44.85548, -93.23201), (44.85600, -93.23127)]},
             'Track 2': {'Location': (44.85580, -93.23172), 'Span': [(44.85605, -93.23135), (44.85554, -93.23209)]},
+        },
+    },
+    "33rd & Downing": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.76387, -104.97333), 'Span': [(39.76353, -104.97333), (39.76420, -104.97333)]},
+            'Track 2': {'Location': (39.76386, -104.97337), 'Span': [(39.76353, -104.97337), (39.76420, -104.97337)]},
+        },
+    },
+    "35th & Downing": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.76613, -104.97333), 'Span': [(39.76579, -104.97333), (39.76646, -104.97333)]},
+            'Track 2': {'Location': (39.76612, -104.97337), 'Span': [(39.76579, -104.97337), (39.76646, -104.97337)]},
         },
     },
     "38th & Blake": {
@@ -200,6 +260,13 @@ Stations = {
         },
     },
     "Apple Valley Transit Center": {'Location': (44.72564, -93.21773), 'Region': ['Apple Valley', 'Minnesota', 'USA'], 'Span': [(44.72528, -93.21773), (44.72600, -93.21772)]},
+    "Arapahoe at Village Center": {
+        'Region': ['Greenwood Village', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.60024, -104.88855), 'Span': [(39.59973, -104.88826), (39.60074, -104.88884)]},
+            'Track 2': {'Location': (39.60028, -104.88842), 'Span': [(39.59977, -104.88813), (39.60078, -104.88871)]},
+        },
+    },
     "Arvada Ridge": {
         'Region': ['Arvada', 'Colorado', 'USA'],
         'Platforms': {
@@ -219,6 +286,20 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (39.74167, -105.01284), 'Span': [(39.74190, -105.01303), (39.74144, -105.01266)]},
             'Track 2': {'Location': (39.74169, -105.01280), 'Span': [(39.74146, -105.01262), (39.74192, -105.01298)]},
+        },
+    },
+    "Auraria West [3]": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74047, -105.00847), 'Span': [(39.74049, -105.00888), (39.74045, -105.00806)]},
+            'Track 2': {'Location': (39.74051, -105.00847), 'Span': [(39.74053, -105.00888), (39.74049, -105.00806)]},
+        },
+    },
+    "Aurora Metro Center": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.70853, -104.81906), 'Span': [(39.70803, -104.81905), (39.70904, -104.81906)]},
+            'Track 2': {'Location': (39.70853, -104.81911), 'Span': [(39.70803, -104.81910), (39.70904, -104.81911)]},
         },
     },
     "Ball Arena/Elitch Gardens": {
@@ -247,6 +328,13 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (45.38766, -93.86970), 'Span': [(45.38805, -93.87032), (45.38727, -93.86908)]},
             'Track 2': {'Location': (45.38762, -93.86976), 'Span': [(45.38802, -93.87038), (45.38723, -93.86914)]},
+        },
+    },
+    "Belleview": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.62754, -104.90445), 'Span': [(39.62705, -104.90417), (39.62803, -104.90474)]},
+            'Track 2': {'Location': (39.62757, -104.90435), 'Span': [(39.62708, -104.90407), (39.62806, -104.90463)]},
         },
     },
     "Beltline Blvd": {
@@ -316,7 +404,8 @@ Stations = {
     "Castle Rock": {
         'Region': ['Castle Rock', 'Colorado', 'USA'],
         'Platforms': {
-            'Main': {'Location': (39.37314, -104.85776), 'Span': [(39.37255, -104.85771), (39.37372, -104.85782)]},
+            'Track 1': {'Location': (39.37314, -104.85776), 'Span': [(39.37255, -104.85771), (39.37372, -104.85782)]},
+            'Track 2': {'Location': (39.37314, -104.85771), 'Span': [(39.37255, -104.85766), (39.37373, -104.85776)]},
         },
     },
     "Cedar Grove": {
@@ -383,6 +472,27 @@ Stations = {
             'Track 2': {'Location': (44.79008, -93.22137), 'Span': [(44.79043, -93.22147), (44.78973, -93.22126)]},
         },
     },
+    "Colfax": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74022, -104.82693), 'Span': [(39.73967, -104.82686), (39.74078, -104.82701)]},
+            'Track 2': {'Location': (39.74021, -104.82707), 'Span': [(39.73966, -104.82699), (39.74077, -104.82714)]},
+        },
+    },
+    "Colfax at Auraria": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74033, -105.00210), 'Span': [(39.74030, -105.00268), (39.74036, -105.00151)]},
+            'Track 2': {'Location': (39.74029, -105.00207), 'Span': [(39.74033, -105.00149), (39.74026, -105.00266)]},
+        },
+    },
+    "Colorado": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.67961, -104.93779), 'Span': [(39.67953, -104.93718), (39.67969, -104.93840)]},
+            'Track 2': {'Location': (39.67965, -104.93778), 'Span': [(39.67957, -104.93717), (39.67973, -104.93839)]},
+        },
+    },
     "Colorado Springs": {'Location': (38.83407, -104.82907), 'Region': ['Colorado Springs', 'Colorado', 'USA'], 'Span': [(38.83350, -104.82923), (38.83464, -104.82891)]},
     "Commerce City & 72nd": {
         'Region': ['Commerce City', 'Colorado', 'USA'],
@@ -398,6 +508,13 @@ Stations = {
             'Track 2': {'Location': (45.19101, -93.35153), 'Span': [(45.19139, -93.35215), (45.19063, -93.35091)]},
         },
     },
+    "County Line": {
+        'Region': ['Lone Tree', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.56172, -104.87235), 'Span': [(39.56119, -104.87235), (39.56225, -104.87236)]},
+            'Track 2': {'Location': (39.56172, -104.87221), 'Span': [(39.56119, -104.87220), (39.56225, -104.87223)]},
+        },
+    },
     "Court & Main": {'Location': (39.10704, -84.51114), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10694, -84.51112), (39.10713, -84.51116)]},
     "Craig": {'Location': (40.51052, -107.56041), 'Region': ['Craig', 'Colorado', 'USA'], 'Span': [(40.51051, -107.56159), (40.51053, -107.55922)]},
     "Dale St": {
@@ -407,8 +524,22 @@ Stations = {
             'Track 2': {'Location': (44.95571, -93.12540), 'Span': [(44.95571, -93.12488), (44.95571, -93.12591)]},
         },
     },
-    "Denver Airport": {
+    "Dayton": {
+        'Region': ['Greenwood Village', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.64294, -104.87791), 'Span': [(39.64268, -104.87843), (39.64320, -104.87739)]},
+            'Track 2': {'Location': (39.64304, -104.87798), 'Span': [(39.64278, -104.87851), (39.64329, -104.87746)]},
+        },
+    },
+    "Decatur-Federal": {
         'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73730, -105.02401), 'Span': [(39.73713, -105.02439), (39.73747, -105.02363)]},
+            'Track 2': {'Location': (39.73727, -105.02399), 'Span': [(39.73710, -105.02437), (39.73744, -105.02361)]},
+        },
+    },
+    "Denver Airport": {
+        'Airport': 'True', 'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.84614, -104.67391), 'Span': [(39.84521, -104.67393), (39.84707, -104.67390)]},
             'Track 2': {'Location': (39.84614, -104.67409), 'Span': [(39.84708, -104.67408), (39.84521, -104.67411)]},
@@ -418,7 +549,7 @@ Stations = {
         'Major': True, 'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.75395, -104.99996), 'Span': [(39.75480, -104.99886), (39.75309, -105.00106)]},
-            'Track 10': {'Location': (39.75545, -105.00308), 'Span': [(39.75589, -105.00272), (39.75501, -105.00344)]},
+            'Track 10': {'Location': (39.75541, -105.00311), 'Span': [(39.75589, -105.00272), (39.75494, -105.00350)]},
             'Track 2': {'Location': (39.75359, -105.00051), 'Span': [(39.75405, -104.99990), (39.75312, -105.00111)]},
             'Track 3': {'Location': (39.75452, -104.99937), 'Span': [(39.75499, -104.99876), (39.75405, -104.99997)]},
             'Track 4': {'Location': (39.75416, -105.00001), 'Span': [(39.75518, -104.99869), (39.75314, -105.00132)]},
@@ -426,7 +557,7 @@ Stations = {
             'Track 6': {'Location': (39.75469, -104.99960), 'Span': [(39.75422, -105.00021), (39.75517, -104.99899)]},
             'Track 7': {'Location': (39.75418, -105.00032), 'Span': [(39.75503, -104.99924), (39.75334, -105.00140)]},
             'Track 8': {'Location': (39.75458, -104.99989), 'Span': [(39.75522, -104.99906), (39.75394, -105.00072)]},
-            'Track 9': {'Location': (39.75529, -105.00309), 'Span': [(39.75497, -105.00336), (39.75562, -105.00282)]},
+            'Track 9': {'Location': (39.75537, -105.00303), 'Span': [(39.75490, -105.00342), (39.75584, -105.00263)]},
         },
     },
     "Downtown Anoka": {
@@ -456,6 +587,13 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (39.85564, -105.06216), 'Span': [(39.85600, -105.06311), (39.85529, -105.06121)]},
             'Track 2': {'Location': (39.85561, -105.06218), 'Span': [(39.85525, -105.06124), (39.85596, -105.06313)]},
+        },
+    },
+    "Dry Creek": {
+        'Region': ['Centennial', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.57885, -104.87665), 'Span': [(39.57829, -104.87620), (39.57941, -104.87710)]},
+            'Track 2': {'Location': (39.57889, -104.87656), 'Span': [(39.57833, -104.87611), (39.57945, -104.87701)]},
         },
     },
     "East Bank": {
@@ -514,13 +652,35 @@ Stations = {
             'Track 2': {'Location': (44.95640, -93.17876), 'Span': [(44.95658, -93.17921), (44.95622, -93.17831)]},
         },
     },
+    "Federal Center": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.72007, -105.12901), 'Span': [(39.72007, -105.12831), (39.72007, -105.12971)]},
+            'Track 2': {'Location': (39.72000, -105.12895), 'Span': [(39.72000, -105.12831), (39.72000, -105.12958)]},
+            'Track 3': {'Location': (39.71993, -105.12895), 'Span': [(39.71993, -105.12831), (39.71993, -105.12958)]},
+        },
+    },
     "Findlay Market-Elm": {'Location': (39.11490, -84.51977), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11499, -84.51979), (39.11481, -84.51975)]},
     "Findlay Market-Race": {'Location': (39.11573, -84.51838), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11582, -84.51840), (39.11564, -84.51835)]},
+    "Fitzsimons": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.75497, -104.84051), 'Span': [(39.75497, -104.83990), (39.75497, -104.84112)]},
+            'Track 2': {'Location': (39.75493, -104.84051), 'Span': [(39.75493, -104.83990), (39.75493, -104.84112)]},
+        },
+    },
     "Flatiron": {
         'Region': ['Broomfield', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.93439, -105.12180), 'Span': [(39.93422, -105.12154), (39.93457, -105.12205)]},
             'Track 2': {'Location': (39.93436, -105.12183), 'Span': [(39.93418, -105.12157), (39.93454, -105.12209)]},
+        },
+    },
+    "Florida": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.68997, -104.82843), 'Span': [(39.68950, -104.82843), (39.69044, -104.82843)]},
+            'Track 2': {'Location': (39.68997, -104.82856), 'Span': [(39.68950, -104.82855), (39.69044, -104.82856)]},
         },
     },
     "Foley Blvd": {
@@ -555,6 +715,13 @@ Stations = {
     },
     "Fraser-Winter Park": {'Location': (39.94843, -105.81797), 'Region': ['Fraser', 'Colorado', 'USA'], 'Span': [(39.94674, -105.81740), (39.95012, -105.81855)]},
     "Fridley": {'Location': (45.07888, -93.27092), 'Region': ['Fridley', 'Minnesota', 'USA'], 'Span': [(45.07830, -93.27097), (45.07946, -93.27088)]},
+    "Garrison": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73659, -105.09948), 'Span': [(39.73658, -105.09984), (39.73659, -105.09911)]},
+            'Track 2': {'Location': (39.73655, -105.09948), 'Span': [(39.73655, -105.09984), (39.73655, -105.09911)]},
+        },
+    },
     "Golden Triangle": {
         'Region': ['Eden Prairie', 'Minnesota', 'USA'],
         'Platforms': {
@@ -589,12 +756,48 @@ Stations = {
             'Track 3': {'Location': (39.70180, -104.99022), 'Span': [(39.70132, -104.99015), (39.70228, -104.99029)]},
         },
     },
+    "Iliff": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.67332, -104.82686), 'Span': [(39.67286, -104.82725), (39.67378, -104.82647)]},
+            'Track 2': {'Location': (39.67337, -104.82695), 'Span': [(39.67291, -104.82734), (39.67383, -104.82656)]},
+        },
+    },
+    "Jefferson County Government Center": {
+        'Region': ['Golden', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.72653, -105.20134), 'Span': [(39.72627, -105.20078), (39.72680, -105.20189)]},
+            'Track 2': {'Location': (39.72650, -105.20136), 'Span': [(39.72623, -105.20081), (39.72677, -105.20192)]},
+            'Track 3': {'Location': (39.72644, -105.20141), 'Span': [(39.72618, -105.20085), (39.72671, -105.20198)]},
+        },
+    },
+    "Knox": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73571, -105.03286), 'Span': [(39.73571, -105.03330), (39.73571, -105.03242)]},
+            'Track 2': {'Location': (39.73564, -105.03286), 'Span': [(39.73564, -105.03242), (39.73564, -105.03330)]},
+        },
+    },
     "Kremmling": {'Location': (40.05456, -106.39209), 'Region': ['Kremmling', 'Colorado', 'USA'], 'Span': [(40.05415, -106.39132), (40.05497, -106.39287)]},
     "Lake St/Midtown": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.94838, -93.23881), 'Span': [(44.94797, -93.23854), (44.94879, -93.23908)]},
             'Track 2': {'Location': (44.94834, -93.23894), 'Span': [(44.94875, -93.23921), (44.94792, -93.23867)]},
+        },
+    },
+    "Lakewood-Wadsworth": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73669, -105.08143), 'Span': [(39.73669, -105.08216), (39.73669, -105.08070)]},
+            'Track 2': {'Location': (39.73659, -105.08143), 'Span': [(39.73659, -105.08216), (39.73660, -105.08070)]},
+        },
+    },
+    "Lamar": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73665, -105.06641), 'Span': [(39.73664, -105.06692), (39.73665, -105.06589)]},
+            'Track 2': {'Location': (39.73671, -105.06640), 'Span': [(39.73671, -105.06692), (39.73672, -105.06589)]},
         },
     },
     "Lexington Pkwy": {
@@ -606,6 +809,13 @@ Stations = {
     },
     "Liberty & Elm": {'Location': (39.11278, -84.51923), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11269, -84.51921), (39.11287, -84.51926)]},
     "Liberty & Race": {'Location': (39.11269, -84.51753), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11278, -84.51755), (39.11260, -84.51751)]},
+    "Lincoln": {
+        'Region': ['Lone Tree', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.54588, -104.86966), 'Span': [(39.54536, -104.86962), (39.54641, -104.86970)]},
+            'Track 2': {'Location': (39.54590, -104.86956), 'Span': [(39.54537, -104.86951), (39.54642, -104.86960)]},
+        },
+    },
     "Lincoln Park": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
@@ -627,12 +837,26 @@ Stations = {
             'Track 2': {'Location': (39.58021, -105.02496), 'Span': [(39.57977, -105.02519), (39.58066, -105.02474)]},
         },
     },
+    "Lone Tree City Center": {
+        'Region': ['Lone Tree', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.52767, -104.86324), 'Span': [(39.52712, -104.86324), (39.52821, -104.86325)]},
+            'Track 2': {'Location': (39.52767, -104.86319), 'Span': [(39.52712, -104.86319), (39.52821, -104.86320)]},
+        },
+    },
     "Longmont": {'Location': (40.16037, -105.10116), 'Region': ['Longmont', 'Colorado', 'USA'], 'Span': [(40.16038, -105.09999), (40.16034, -105.10234)]},
     "Louisiana Ave": {
         'Region': ['St. Louis Park', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.93491, -93.36503), 'Span': [(44.93507, -93.36457), (44.93475, -93.36550)]},
             'Track 2': {'Location': (44.93483, -93.36498), 'Span': [(44.93468, -93.36545), (44.93499, -93.36451)]},
+        },
+    },
+    "Louisiana-Pearl": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.69297, -104.97848), 'Span': [(39.69266, -104.97813), (39.69327, -104.97882)]},
+            'Track 2': {'Location': (39.69304, -104.97837), 'Span': [(39.69273, -104.97803), (39.69335, -104.97871)]},
         },
     },
     "Louisville": {
@@ -684,12 +908,19 @@ Stations = {
             'Track 2': {'Location': (44.75967, -93.21777), 'Span': [(44.75931, -93.21778), (44.76003, -93.21776)]},
         },
     },
-    "Minneapolis Target Field": {'Location': (44.98345, -93.27706), 'Region': ['Minneapolis', 'Minnesota', 'USA'], 'Span': [(44.98315, -93.27755), (44.98376, -93.27661)]},
+    "Minneapolis Target Field": {'Location': (44.98345, -93.27706), 'Major': True, 'Region': ['Minneapolis', 'Minnesota', 'USA'], 'Span': [(44.98315, -93.27755), (44.98376, -93.27661)]},
     "Nicollet Mall": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.97860, -93.26988), 'Span': [(44.97841, -93.26943), (44.97879, -93.27033)]},
             'Track 2': {'Location': (44.97854, -93.26994), 'Span': [(44.97873, -93.27039), (44.97834, -93.26949)]},
+        },
+    },
+    "Nine Mile": {
+        'Region': ['Aurora', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.65751, -104.84505), 'Span': [(39.65725, -104.84556), (39.65778, -104.84453)]},
+            'Track 2': {'Location': (39.65761, -104.84513), 'Span': [(39.65735, -104.84564), (39.65787, -104.84461)]},
         },
     },
     "North Colorado Springs": {
@@ -708,6 +939,13 @@ Stations = {
         },
     },
     "Northglenn & 112th": {'Location': (39.90276, -104.96016), 'Region': ['Northglenn', 'Colorado', 'USA'], 'Span': [(39.90230, -104.96024), (39.90323, -104.96008)]},
+    "Oak": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73730, -105.11990), 'Span': [(39.73723, -105.11938), (39.73738, -105.12042)]},
+            'Track 2': {'Location': (39.73726, -105.11991), 'Span': [(39.73719, -105.11939), (39.73734, -105.12043)]},
+        },
+    },
     "Oak Creek": {'Location': (40.27538, -106.96105), 'Region': ['Oak Creek', 'Colorado', 'USA'], 'Span': [(40.27536, -106.96028), (40.27537, -106.96181)]},
     "Oak Grove Pkwy": {
         'Region': ['Brooklyn Park', 'Minnesota', 'USA'],
@@ -729,6 +967,13 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (44.89777, -93.41401), 'Span': [(44.89814, -93.41401), (44.89740, -93.41401)]},
             'Track 2': {'Location': (44.89777, -93.41389), 'Span': [(44.89740, -93.41390), (44.89814, -93.41389)]},
+        },
+    },
+    "Orchard": {
+        'Region': ['Greenwood Village', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.61351, -104.89624), 'Span': [(39.61313, -104.89603), (39.61390, -104.89645)]},
+            'Track 2': {'Location': (39.61355, -104.89614), 'Span': [(39.61316, -104.89593), (39.61393, -104.89635)]},
         },
     },
     "Original Thornton & 88th": {'Location': (39.85883, -104.95312), 'Region': ['Thornton', 'Colorado', 'USA'], 'Span': [(39.85842, -104.95340), (39.85924, -104.95284)]},
@@ -760,6 +1005,13 @@ Stations = {
             'LRT WB': {'Location': (39.76739, -104.85041), 'Span': [(39.76733, -104.84961), (39.76745, -104.85121)]},
             'Track 1': {'Location': (39.76754, -104.85043), 'Span': [(39.76759, -104.85125), (39.76747, -104.84961)]},
             'Track 2': {'Location': (39.76758, -104.85042), 'Span': [(39.76751, -104.84960), (39.76764, -104.85124)]},
+        },
+    },
+    "Perry": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73476, -105.03999), 'Span': [(39.73476, -105.03960), (39.73477, -105.04038)]},
+            'Track 2': {'Location': (39.73473, -105.03999), 'Span': [(39.73472, -105.03960), (39.73473, -105.04038)]},
         },
     },
     "Plymouth Ave": {
@@ -794,6 +1046,20 @@ Stations = {
             'Track 2': {'Location': (44.96306, -93.19546), 'Span': [(44.96288, -93.19501), (44.96324, -93.19591)]},
         },
     },
+    "Red Rocks College": {
+        'Region': ['Lakewood', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.72511, -105.15221), 'Span': [(39.72511, -105.15286), (39.72512, -105.15157)]},
+            'Track 2': {'Location': (39.72505, -105.15221), 'Span': [(39.72505, -105.15286), (39.72505, -105.15157)]},
+        },
+    },
+    "RidgeGate": {
+        'Region': ['Lone Tree', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.52052, -104.86552), 'Span': [(39.52003, -104.86584), (39.52100, -104.86521)]},
+            'Track 2': {'Location': (39.52050, -104.86548), 'Span': [(39.52001, -104.86579), (39.52098, -104.86516)]},
+        },
+    },
     "Robert St": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
@@ -815,6 +1081,20 @@ Stations = {
             'Track 2': {'Location': (44.91773, -93.42098), 'Span': [(44.91760, -93.42147), (44.91785, -93.42050)]},
         },
     },
+    "Sheridan": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.73517, -105.05322), 'Span': [(39.73517, -105.05276), (39.73518, -105.05367)]},
+            'Track 2': {'Location': (39.73510, -105.05322), 'Span': [(39.73510, -105.05276), (39.73511, -105.05367)]},
+        },
+    },
+    "Sky Ridge": {
+        'Region': ['Lone Tree', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.53220, -104.87031), 'Span': [(39.53176, -104.86990), (39.53265, -104.87072)]},
+            'Track 2': {'Location': (39.53223, -104.87027), 'Span': [(39.53178, -104.86986), (39.53267, -104.87068)]},
+        },
+    },
     "Snelling Ave": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
@@ -831,6 +1111,13 @@ Stations = {
             'Track 2': {'Location': (44.85992, -93.44428), 'Span': [(44.85969, -93.44485), (44.86015, -93.44373)]},
         },
     },
+    "Southmoor": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.64855, -104.91632), 'Span': [(39.64812, -104.91607), (39.64898, -104.91657)]},
+            'Track 2': {'Location': (39.64860, -104.91620), 'Span': [(39.64816, -104.91595), (39.64903, -104.91645)]},
+        },
+    },
     "St. Cloud": {
         'Region': ['St. Cloud', 'Minnesota', 'USA'],
         'Platforms': {
@@ -842,9 +1129,9 @@ Stations = {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.97478, -93.22287), 'Span': [(44.97510, -93.22262), (44.97446, -93.22312)]},
-            'Track 1 [2]': {'Location': (44.97363, -93.22463), 'Span': [(44.97363, -93.22411), (44.97363, -93.22515)]},
+            'Track 1 [2]': {'Location': (44.97363, -93.22470), 'Span': [(44.97363, -93.22418), (44.97363, -93.22522)]},
             'Track 2': {'Location': (44.97476, -93.22282), 'Span': [(44.97444, -93.22307), (44.97508, -93.22257)]},
-            'Track 2 [2]': {'Location': (44.97359, -93.22463), 'Span': [(44.97359, -93.22411), (44.97360, -93.22515)]},
+            'Track 2 [2]': {'Location': (44.97359, -93.22470), 'Span': [(44.97359, -93.22418), (44.97360, -93.22522)]},
         },
     },
     "Steamboat Springs Downtown": {'Location': (40.48359, -106.83408), 'Region': ['Steamboat Springs', 'Colorado', 'USA'], 'Span': [(40.48310, -106.83309), (40.48408, -106.83507)]},
@@ -878,6 +1165,13 @@ Stations = {
         },
     },
     "The Banks": {'Location': (39.09823, -84.50985), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.09821, -84.50997), (39.09825, -84.50974)]},
+    "Theatre District/Convention Center": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74394, -104.99612), 'Span': [(39.74388, -104.99650), (39.74401, -104.99574)]},
+            'Track 2': {'Location': (39.74388, -104.99610), 'Span': [(39.74382, -104.99649), (39.74395, -104.99572)]},
+        },
+    },
     "Thornton Crossroads & 104th": {
         'Region': ['Thornton', 'Colorado', 'USA'],
         'Platforms': {
@@ -904,6 +1198,13 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (44.94821, -93.08679), 'Span': [(44.94841, -93.08636), (44.94800, -93.08722)]},
             'Track 2': {'Location': (44.94818, -93.08677), 'Span': [(44.94797, -93.08720), (44.94839, -93.08634)]},
+        },
+    },
+    "University of Denver": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.68524, -104.96480), 'Span': [(39.68506, -104.96431), (39.68542, -104.96529)]},
+            'Track 2': {'Location': (39.68531, -104.96475), 'Span': [(39.68513, -104.96426), (39.68549, -104.96524)]},
         },
     },
     "VA Medical Center": {
@@ -970,7 +1271,7 @@ Stations = {
             'Track 2': {'Location': (44.96716, -93.20571), 'Span': [(44.96734, -93.20616), (44.96698, -93.20526)]},
         },
     },
-    "Westminster-72nd": {'Location': (39.82279, -105.02916), 'Region': ['Westminster', 'Colorado', 'USA'], 'Span': [(39.82261, -105.02881), (39.82296, -105.02952)]},
+    "Westminster": {'Location': (39.82279, -105.02916), 'Region': ['Westminster', 'Colorado', 'USA'], 'Span': [(39.82261, -105.02881), (39.82296, -105.02952)]},
     "Wheat Ridge & Ward": {
         'Region': ['Wheat Ridge', 'Colorado', 'USA'],
         'Platforms': {
@@ -986,11 +1287,18 @@ Stations = {
             'Track 2': {'Location': (44.93854, -93.35476), 'Span': [(44.93838, -93.35522), (44.93870, -93.35430)]},
         },
     },
+    "Yale": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.66862, -104.92713), 'Span': [(39.66812, -104.92687), (39.66912, -104.92740)]},
+            'Track 2': {'Location': (39.66865, -104.92703), 'Span': [(39.66816, -104.92677), (39.66915, -104.92730)]},
+        },
+    },
 }
 
 Segments = {
     "Amtrak / Columbine / Fort Collins - Pueblo": {
-        "F": ['Fort Collins {Track 2}', 'Loveland {Track 2}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Denver Union Station {Track 10}', 'Lincoln Park {Track 1}', 'I-25 & Broadway {Track 1 Heavy}', 'Littleton-Downtown {Track 1}', 'Sterling Ranch {Track 1}', 'Castle Rock {Main}', 'North Colorado Springs {Track 2}', 'Colorado Springs', 'Fountain', 'Pueblo', 'Fountain', 'Colorado Springs', 'North Colorado Springs {Track 1}', 'Castle Rock {Main}', 'Sterling Ranch {Track 2}', 'Littleton-Downtown {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Denver Union Station {Track 9}', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Loveland {Track 1}'],
+        "F": ['Fort Collins {Track 2}', 'Loveland {Track 2}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Denver Union Station {Track 10}', 'Lincoln Park {Track 1}', 'I-25 & Broadway {Track 1 Heavy}', 'Littleton-Downtown {Track 1}', 'Sterling Ranch {Track 1}', 'Castle Rock {Track 1}', 'North Colorado Springs {Track 2}', 'Colorado Springs', 'Fountain', 'Pueblo', 'Fountain', 'Colorado Springs', 'North Colorado Springs {Track 1}', 'Castle Rock {Track 2}', 'Sterling Ranch {Track 2}', 'Littleton-Downtown {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Denver Union Station {Track 9}', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Loveland {Track 1}'],
     },
     "Amtrak / Mountaineer / Denver - Craig": {
         "F": ['Denver Union Station {Track 5}', 'Winter Park Resort', 'Fraser-Winter Park', 'Granby', 'Hot Sulphur Springs', 'Kremmling', 'Oak Creek', 'Steamboat Springs Resort', 'Steamboat Springs Downtown', 'Hayden', 'Craig', 'Hayden', 'Steamboat Springs Downtown', 'Steamboat Springs Resort', 'Oak Creek', 'Kremmling', 'Hot Sulphur Springs', 'Granby', 'Fraser-Winter Park', 'Winter Park Resort'],
@@ -1023,19 +1331,49 @@ Segments = {
         "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}'],
     },
     "RTD / B Line / Union Station - Westminster": {
-        "F": ['Denver Union Station {Track 7}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster-72nd', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
+        "F": ['Denver Union Station {Track 7}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
     },
     "RTD / C Line / Sterling Ranch - Golden": {
         "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [2] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Wheat Ridge & Ward {Track 1}', '44th & McIntyre {Track 1}', 'Downtown Golden', '44th & McIntyre {Track 2}', 'Wheat Ridge & Ward {Track 2}', 'Arvada Ridge {Track 2}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [2] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 1}'],
     },
+    "RTD / C Line / Union Station - Littleton": {
+        "F": ['Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 1}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
+    },
+    "RTD / D Line / Littleton - Loop": {
+        "F": ['Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 1}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}'],
+    },
+    "RTD / E Line / Union Station - RidgeGate": {
+        "F": ['Denver Union Station {Track 9}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 3}', 'Louisiana-Pearl {Track 1}', 'University of Denver {Track 1}', 'Colorado {Track 1}', 'Yale {Track 1}', 'Southmoor {Track 1}', 'Belleview {Track 1}', 'Orchard {Track 1}', 'Arapahoe at Village Center {Track 1}', 'Dry Creek {Track 1}', 'County Line {Track 1}', 'Lincoln {Track 1}', 'Sky Ridge {Track 1}', 'Lone Tree City Center {Track 1}', 'RidgeGate {Track 2}', 'Lone Tree City Center {Track 2}', 'Sky Ridge {Track 2}', 'Lincoln {Track 2}', 'County Line {Track 2}', 'Dry Creek {Track 2}', 'Arapahoe at Village Center {Track 2}', 'Orchard {Track 2}', 'Belleview {Track 2}', 'Southmoor {Track 2}', 'Yale {Track 2}', 'Colorado {Track 2}', 'University of Denver {Track 2}', 'Louisiana-Pearl {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
+    },
+    "RTD / F Line / RidgeGate - Loop": {
+        "F": ['RidgeGate {Track 2}', 'Lone Tree City Center {Track 2}', 'Sky Ridge {Track 2}', 'Lincoln {Track 2}', 'County Line {Track 2}', 'Dry Creek {Track 2}', 'Arapahoe at Village Center {Track 2}', 'Orchard {Track 2}', 'Belleview {Track 2}', 'Southmoor {Track 2}', 'Yale {Track 2}', 'Colorado {Track 2}', 'University of Denver {Track 2}', 'Louisiana-Pearl {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 3}', 'Louisiana-Pearl {Track 1}', 'University of Denver {Track 1}', 'Colorado {Track 1}', 'Yale {Track 1}', 'Southmoor {Track 1}', 'Belleview {Track 1}', 'Orchard {Track 1}', 'Arapahoe at Village Center {Track 1}', 'Dry Creek {Track 1}', 'County Line {Track 1}', 'Lincoln {Track 1}', 'Sky Ridge {Track 1}', 'Lone Tree City Center {Track 1}'],
+    },
     "RTD / G Line / Union Station - Wheat Ridge": {
         "F": ['Denver Union Station {Track 6}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
+    },
+    "RTD / H Line / Florida - Loop": {
+        "F": ['Florida {Track 2}'],
+    },
+    "RTD / L Line / 30th & Downing - Loop": {
+        "F": ['30th & Downing {Track 2}', '27th & Welton {Track 1}', '25th & Welton {Track 1}', '20th & Welton {Track 2}', '18th & Stout', '16th & Stout', '16th & California', '18th & California', '20th & Welton {Track 1}', '25th & Welton {Track 1}', '27th & Welton {Track 1}'],
+    },
+    "RTD / L Line / 38th & Blake - Loop": {
+        "F": ['38th & Blake {LRT}', '35th & Downing {Track 2}', '33rd & Downing {Track 2}', '30th & Downing {Track 2}', '27th & Welton {Track 2}', '25th & Welton {Track 2}', '20th & Welton {Track 2}', '18th & Stout', '16th & Stout', '16th & California', '18th & California', '20th & Welton {Track 1}', '25th & Welton {Track 1}', '27th & Welton {Track 1}', '30th & Downing {Track 1}', '33rd & Downing {Track 1}', '35th & Downing {Track 1}'],
     },
     "RTD / N Line / Union Station - Eastlake": {
         "F": ['Denver Union Station {Track 3}', '48th & Brighton {Track 1}', 'Commerce City & 72nd {Track 1}', 'Original Thornton & 88th', 'Thornton Crossroads & 104th {Track 1}', 'Northglenn & 112th', 'Eastlake & 124th {Track 1}', 'Northglenn & 112th', 'Thornton Crossroads & 104th {Track 2}', 'Original Thornton & 88th', 'Commerce City & 72nd {Track 2}', '48th & Brighton {Track 2}'],
     },
     "RTD / N Line / Union Station - North Thornton": {
         "F": ['Denver Union Station {Track 3}', '48th & Brighton {Track 1}', 'Commerce City & 72nd {Track 1}', 'Original Thornton & 88th', 'Thornton Crossroads & 104th {Track 1}', 'Northglenn & 112th', 'Eastlake & 124th {Track 1}', 'North Thornton & Hwy 7', 'Eastlake & 124th {Track 2}', 'Northglenn & 112th', 'Thornton Crossroads & 104th {Track 2}', 'Original Thornton & 88th', 'Commerce City & 72nd {Track 2}', '48th & Brighton {Track 2}'],
+    },
+    "RTD / R Line / RidgeGate - Peoria": {
+        "F": ['RidgeGate {Track 2}'],
+    },
+    "RTD / W Line / Jefferson County - Loop": {
+        "F": ['Jefferson County Government Center {Track 2}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West [3] {Track 1}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', 'Auraria West [3] {Track 2}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}'],
+    },
+    "RTD / W Line / Union Station - Jefferson County": {
+        "F": ['Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}', 'Jefferson County Government Center {Track 3}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
     },
     "~ Metro Transit / Green Line / SouthWest Station - Union Depot / Fantasy": {
         "F": ['SouthWest Station {Track 2}', 'Town Center {Track 2}', 'Golden Triangle {Track 2}', 'City West {Track 2}', 'Opus {Track 2}', 'Shady Oak {Track 2}', 'Downtown Hopkins {Track 2}', 'Blake Rd {Track 2}', 'Louisiana Ave {Track 2}', 'Wooddale Ave {Track 2}', 'Beltline Blvd {Track 2}', 'West Lake St {Track 2}', 'West 21st St {Track 2}', 'Bryn Mawr {Track 2}', 'Bassett Creek Valley {Track 2}', 'Royalston Ave {Track 2}', 'Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'West Bank {Track 2}', 'East Bank {Track 2}', 'Stadium Village {Track 2 [2]}', 'Prospect Park {Track 2 [2]}', 'Westgate {Track 2}', 'Raymond Ave {Track 2}', 'Fairview Ave {Track 2}', 'Snelling Ave {Track 2 [2]}', 'Hamline Ave {Track 2}', 'Lexington Pkwy {Track 2}', 'Victoria St {Track 2}', 'Dale St {Track 2}', 'Western Ave {Track 2}', 'Capitol/Rice St {Track 2}', 'Robert St {Track 2}', '10th St {Track 2}', 'Central Station {Track 2}', 'Union Depot {Track 2}', 'Central Station {Track 1}', '10th St {Track 1}', 'Robert St {Track 1}', 'Capitol/Rice St {Track 1}', 'Western Ave {Track 1}', 'Dale St {Track 1}', 'Victoria St {Track 1}', 'Lexington Pkwy {Track 1}', 'Hamline Ave {Track 1}'],
@@ -1132,7 +1470,7 @@ Segments = {
         "F": ['Denver Union Station {Track 1}', '38th & Blake {Track 1}', '40th & Colorado {Track 1}', 'Central Park {Track 1}', 'Peoria {Track 1}', '40th & Airport {Track 1}', '61st & Peña {Track 1}', 'Denver Airport {Track 1}', '61st & Peña {Track 2}', '40th & Airport {Track 2}', 'Peoria {Track 2}', 'Central Park {Track 2}', '40th & Colorado {Track 2}', '38th & Blake {Track 2}'],
     },
     "~ RTD / B Line / Sterling Ranch - Longmont / Fantasy": {
-        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [2] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster-72nd', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Flatiron {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Flatiron {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Westminster-72nd', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [2] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}'],
+        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [2] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Flatiron {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Flatiron {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Westminster', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [2] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}'],
         "Swap": [('Evans {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +1'), ('Englewood {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +2'), ('Oxford-City of Sheridan {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +3'), ('Littleton-Downtown {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +4')],
     },
     "~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +1": {
@@ -1146,6 +1484,268 @@ Segments = {
     },
     "~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +4": {
         "F": ['Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy": {
+        "F": ['Florida {Track 1}', 'Iliff {Track 2}', 'Nine Mile {Track 2}', 'Dayton {Track 2}', 'Southmoor {Track 2}', 'Yale {Track 2}', 'Colorado {Track 2}', 'University of Denver {Track 2}', 'Louisiana-Pearl {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 3}', 'Louisiana-Pearl {Track 1}'],
+        "Swap": [('Louisiana-Pearl {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +1'), ('Colorado {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +2'), ('Yale {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +3'), ('Southmoor {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +4'), ('Dayton {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +5'), ('Nine Mile {Track 1}', '~ RTD / H Line / Florida - Loop / Fantasy +6')],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +1": {
+        "F": ['Louisiana-Pearl {Track 1}', 'Colorado {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +2": {
+        "F": ['Colorado {Track 1}', 'Yale {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +3": {
+        "F": ['Yale {Track 1}', 'Southmoor {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +4": {
+        "F": ['Southmoor {Track 1}', 'Dayton {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +5": {
+        "F": ['Dayton {Track 1}', 'Nine Mile {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Fantasy +6": {
+        "F": ['Nine Mile {Track 1}', 'Iliff {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present": {
+        "F": ['Florida {Track 1}', 'Iliff {Track 2}', 'Nine Mile {Track 2}', 'Dayton {Track 2}', 'Southmoor {Track 2}', 'Yale {Track 2}', 'Colorado {Track 2}', 'University of Denver {Track 2}', 'Louisiana-Pearl {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 3}', 'Louisiana-Pearl {Track 1}'],
+        "Swap": [('Louisiana-Pearl {Track 1}', '~ RTD / H Line / Florida - Loop / Present +1'), ('Colorado {Track 1}', '~ RTD / H Line / Florida - Loop / Present +2'), ('Yale {Track 1}', '~ RTD / H Line / Florida - Loop / Present +3'), ('Southmoor {Track 1}', '~ RTD / H Line / Florida - Loop / Present +4'), ('Dayton {Track 1}', '~ RTD / H Line / Florida - Loop / Present +5'), ('Nine Mile {Track 1}', '~ RTD / H Line / Florida - Loop / Present +6')],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +1": {
+        "F": ['Louisiana-Pearl {Track 1}', 'Colorado {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +2": {
+        "F": ['Colorado {Track 1}', 'Yale {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +3": {
+        "F": ['Yale {Track 1}', 'Southmoor {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +4": {
+        "F": ['Southmoor {Track 1}', 'Dayton {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +5": {
+        "F": ['Dayton {Track 1}', 'Nine Mile {Track 1}'],
+    },
+    "~ RTD / H Line / Florida - Loop / Present +6": {
+        "F": ['Nine Mile {Track 1}', 'Iliff {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy": {
+        "F": ['RTD / R Line / RidgeGate - Peoria'],
+        "Swap": [('RidgeGate {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +1'), ('Lone Tree City Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +2'), ('Sky Ridge {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +3'), ('Lincoln {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +4'), ('County Line {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +5'), ('Dry Creek {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +6'), ('Arapahoe at Village Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +7'), ('Orchard {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +8'), ('Belleview {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +9'), ('Dayton {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +10'), ('Nine Mile {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +11'), ('Iliff {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +12'), ('Florida {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +13'), ('Aurora Metro Center {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +14'), ('2nd Ave & Abilene {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +15'), ('13th Ave {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +16'), ('Colfax {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +17'), ('Fitzsimons {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +18'), ('Peoria {LRT EB}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +19'), ('Fitzsimons {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +20'), ('Colfax {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +21'), ('13th Ave {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +22'), ('2nd Ave & Abilene {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +23'), ('Aurora Metro Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +24'), ('Florida {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +25'), ('Iliff {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +26'), ('Nine Mile {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +27'), ('Dayton {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +28'), ('Belleview {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +29'), ('Orchard {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +30'), ('Arapahoe at Village Center {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +31'), ('Dry Creek {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +32'), ('County Line {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +33'), ('Lincoln {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +34'), ('Sky Ridge {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Fantasy +35')],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +1": {
+        "F": ['RidgeGate {Track 2}', 'Lone Tree City Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +10": {
+        "F": ['Dayton {Track 1}', 'Nine Mile {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +11": {
+        "F": ['Nine Mile {Track 1}', 'Iliff {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +12": {
+        "F": ['Iliff {Track 1}', 'Florida {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +13": {
+        "F": ['Florida {Track 1}', 'Aurora Metro Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +14": {
+        "F": ['Aurora Metro Center {Track 1}', '2nd Ave & Abilene {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +15": {
+        "F": ['2nd Ave & Abilene {Track 1}', '13th Ave {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +16": {
+        "F": ['13th Ave {Track 1}', 'Colfax {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +17": {
+        "F": ['Colfax {Track 1}', 'Fitzsimons {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +18": {
+        "F": ['Fitzsimons {Track 1}', 'Peoria {LRT EB}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +19": {
+        "F": ['Peoria {LRT EB}', 'Fitzsimons {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +2": {
+        "F": ['Lone Tree City Center {Track 2}', 'Sky Ridge {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +20": {
+        "F": ['Fitzsimons {Track 2}', 'Colfax {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +21": {
+        "F": ['Colfax {Track 2}', '13th Ave {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +22": {
+        "F": ['13th Ave {Track 2}', '2nd Ave & Abilene {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +23": {
+        "F": ['2nd Ave & Abilene {Track 2}', 'Aurora Metro Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +24": {
+        "F": ['Aurora Metro Center {Track 2}', 'Florida {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +25": {
+        "F": ['Florida {Track 2}', 'Iliff {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +26": {
+        "F": ['Iliff {Track 2}', 'Nine Mile {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +27": {
+        "F": ['Nine Mile {Track 2}', 'Dayton {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +28": {
+        "F": ['Dayton {Track 2}', 'Belleview {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +29": {
+        "F": ['Belleview {Track 1}', 'Orchard {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +3": {
+        "F": ['Sky Ridge {Track 2}', 'Lincoln {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +30": {
+        "F": ['Orchard {Track 1}', 'Arapahoe at Village Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +31": {
+        "F": ['Arapahoe at Village Center {Track 1}', 'Dry Creek {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +32": {
+        "F": ['Dry Creek {Track 1}', 'County Line {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +33": {
+        "F": ['County Line {Track 1}', 'Lincoln {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +34": {
+        "F": ['Lincoln {Track 1}', 'Sky Ridge {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +35": {
+        "F": ['Sky Ridge {Track 1}', 'Lone Tree City Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +4": {
+        "F": ['Lincoln {Track 2}', 'County Line {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +5": {
+        "F": ['County Line {Track 2}', 'Dry Creek {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +6": {
+        "F": ['Dry Creek {Track 2}', 'Arapahoe at Village Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +7": {
+        "F": ['Arapahoe at Village Center {Track 2}', 'Orchard {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +8": {
+        "F": ['Orchard {Track 2}', 'Belleview {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Fantasy +9": {
+        "F": ['Belleview {Track 2}', 'Dayton {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present": {
+        "F": ['RTD / R Line / RidgeGate - Peoria'],
+        "Swap": [('RidgeGate {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +1'), ('Lone Tree City Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +2'), ('Sky Ridge {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +3'), ('Lincoln {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +4'), ('County Line {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +5'), ('Dry Creek {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +6'), ('Arapahoe at Village Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +7'), ('Orchard {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +8'), ('Belleview {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +9'), ('Dayton {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +10'), ('Nine Mile {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +11'), ('Iliff {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +12'), ('Florida {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +13'), ('Aurora Metro Center {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +14'), ('2nd Ave & Abilene {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +15'), ('13th Ave {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +16'), ('Colfax {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +17'), ('Fitzsimons {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +18'), ('Peoria {LRT EB}', '~ RTD / R Line / RidgeGate - Peoria / Present +19'), ('Fitzsimons {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +20'), ('Colfax {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +21'), ('13th Ave {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +22'), ('2nd Ave & Abilene {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +23'), ('Aurora Metro Center {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +24'), ('Florida {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +25'), ('Iliff {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +26'), ('Nine Mile {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +27'), ('Dayton {Track 2}', '~ RTD / R Line / RidgeGate - Peoria / Present +28'), ('Belleview {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +29'), ('Orchard {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +30'), ('Arapahoe at Village Center {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +31'), ('Dry Creek {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +32'), ('County Line {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +33'), ('Lincoln {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +34'), ('Sky Ridge {Track 1}', '~ RTD / R Line / RidgeGate - Peoria / Present +35')],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +1": {
+        "F": ['RidgeGate {Track 2}', 'Lone Tree City Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +10": {
+        "F": ['Dayton {Track 1}', 'Nine Mile {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +11": {
+        "F": ['Nine Mile {Track 1}', 'Iliff {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +12": {
+        "F": ['Iliff {Track 1}', 'Florida {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +13": {
+        "F": ['Florida {Track 1}', 'Aurora Metro Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +14": {
+        "F": ['Aurora Metro Center {Track 1}', '2nd Ave & Abilene {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +15": {
+        "F": ['2nd Ave & Abilene {Track 1}', '13th Ave {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +16": {
+        "F": ['13th Ave {Track 1}', 'Colfax {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +17": {
+        "F": ['Colfax {Track 1}', 'Fitzsimons {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +18": {
+        "F": ['Fitzsimons {Track 1}', 'Peoria {LRT EB}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +19": {
+        "F": ['Peoria {LRT EB}', 'Fitzsimons {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +2": {
+        "F": ['Lone Tree City Center {Track 2}', 'Sky Ridge {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +20": {
+        "F": ['Fitzsimons {Track 2}', 'Colfax {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +21": {
+        "F": ['Colfax {Track 2}', '13th Ave {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +22": {
+        "F": ['13th Ave {Track 2}', '2nd Ave & Abilene {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +23": {
+        "F": ['2nd Ave & Abilene {Track 2}', 'Aurora Metro Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +24": {
+        "F": ['Aurora Metro Center {Track 2}', 'Florida {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +25": {
+        "F": ['Florida {Track 2}', 'Iliff {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +26": {
+        "F": ['Iliff {Track 2}', 'Nine Mile {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +27": {
+        "F": ['Nine Mile {Track 2}', 'Dayton {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +28": {
+        "F": ['Dayton {Track 2}', 'Belleview {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +29": {
+        "F": ['Belleview {Track 1}', 'Orchard {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +3": {
+        "F": ['Sky Ridge {Track 2}', 'Lincoln {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +30": {
+        "F": ['Orchard {Track 1}', 'Arapahoe at Village Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +31": {
+        "F": ['Arapahoe at Village Center {Track 1}', 'Dry Creek {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +32": {
+        "F": ['Dry Creek {Track 1}', 'County Line {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +33": {
+        "F": ['County Line {Track 1}', 'Lincoln {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +34": {
+        "F": ['Lincoln {Track 1}', 'Sky Ridge {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +35": {
+        "F": ['Sky Ridge {Track 1}', 'Lone Tree City Center {Track 1}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +4": {
+        "F": ['Lincoln {Track 2}', 'County Line {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +5": {
+        "F": ['County Line {Track 2}', 'Dry Creek {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +6": {
+        "F": ['Dry Creek {Track 2}', 'Arapahoe at Village Center {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +7": {
+        "F": ['Arapahoe at Village Center {Track 2}', 'Orchard {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +8": {
+        "F": ['Orchard {Track 2}', 'Belleview {Track 2}'],
+    },
+    "~ RTD / R Line / RidgeGate - Peoria / Present +9": {
+        "F": ['Belleview {Track 2}', 'Dayton {Track 1}'],
     },
 }
 
@@ -1221,10 +1821,44 @@ Lines = {
             "Fantasy": {
                 "Sterling Ranch - Golden": {'Mode': 'Heavy Rail', 'Stations': 'RTD / C Line / Sterling Ranch - Golden'},
             },
+            "Present": {
+                "Union Station - Littleton": {'Mode': 'Light Rail', 'Stations': 'RTD / C Line / Union Station - Littleton', 'Alt': [['Denver Union Station {Track 10}', 'Denver Union Station {Track 9}']]},
+            },
+        },
+        "D Line": {
+            "Present": {
+                "Littleton - Loop": {'Mode': 'Light Rail', 'Stations': 'RTD / D Line / Littleton - Loop', 'Alt': [['I-25 & Broadway {Track 2}', 'I-25 & Broadway {Track 3}']]},
+            },
+        },
+        "E Line": {
+            "Present": {
+                "Union Station - RidgeGate": {'Mode': 'Light Rail', 'Stations': 'RTD / E Line / Union Station - RidgeGate', 'Alt': [['Denver Union Station {Track 9}', 'Denver Union Station {Track 10}']]},
+            },
+        },
+        "F Line": {
+            "Fantasy": {
+                "RidgeGate - Loop": {'Mode': 'Light Rail', 'Stations': 'RTD / F Line / RidgeGate - Loop'},
+            },
         },
         "G Line": {
             "Present": {
                 "Union Station - Wheat Ridge": {'Mode': 'Heavy Rail', 'Stations': 'RTD / G Line / Union Station - Wheat Ridge', 'Alt': [['Arvada Ridge {Track 1}', 'Arvada Ridge {Track 2}']]},
+            },
+        },
+        "H Line": {
+            "Fantasy": {
+                "Florida - Loop": {'Mode': 'Light Rail', 'Stations': '~ RTD / H Line / Florida - Loop / Fantasy', 'Alt': [['Florida {Track 1}', 'Florida {Track 2}']]},
+            },
+            "Present": {
+                "Florida - Loop": {'Mode': 'Light Rail', 'Stations': '~ RTD / H Line / Florida - Loop / Present', 'Alt': [['Florida {Track 1}', 'Florida {Track 2}']]},
+            },
+        },
+        "L Line": {
+            "Fantasy": {
+                "38th & Blake - Loop": {'Mode': 'Streetcar', 'Stations': 'RTD / L Line / 38th & Blake - Loop'},
+            },
+            "Present": {
+                "30th & Downing - Loop": {'Mode': 'Streetcar', 'Stations': 'RTD / L Line / 30th & Downing - Loop', 'Alt': [['30th & Downing {Track 2}', '30th & Downing {Track 1}']]},
             },
         },
         "N Line": {
@@ -1235,10 +1869,54 @@ Lines = {
                 "Union Station - Eastlake": {'Mode': 'Heavy Rail', 'Stations': 'RTD / N Line / Union Station - Eastlake', 'Alt': [['Eastlake & 124th {Track 1}', 'Eastlake & 124th {Track 2}']]},
             },
         },
+        "R Line": {
+            "Fantasy": {
+                "RidgeGate - Peoria": {'Mode': 'Light Rail', 'Stations': '~ RTD / R Line / RidgeGate - Peoria / Fantasy'},
+            },
+            "Present": {
+                "RidgeGate - Peoria": {'Mode': 'Light Rail', 'Stations': '~ RTD / R Line / RidgeGate - Peoria / Present'},
+            },
+        },
+        "W Line": {
+            "Fantasy": {
+                "Jefferson County - Loop": {'Mode': 'Light Rail', 'Stations': 'RTD / W Line / Jefferson County - Loop', 'Alt': [['Jefferson County Government Center {Track 2}', 'Jefferson County Government Center {Track 3}']]},
+            },
+            "Present": {
+                "Union Station - Jefferson County": {'Mode': 'Light Rail', 'Stations': 'RTD / W Line / Union Station - Jefferson County', 'Alt': [['Denver Union Station {Track 10}', 'Denver Union Station {Track 9}'], ['Federal Center {Track 2}', 'Federal Center {Track 1}'], ['Jefferson County Government Center {Track 3}', 'Jefferson County Government Center {Track 2}'], ['Federal Center {Track 3}', 'Federal Center {Track 2}']]},
+            },
+        },
     },
 }
 
 Destinations = {
+    'Airports': {
+        '(DEN) Denver International Airport': {"Stations": ['Denver Airport'], "FutureStations": ['Denver Airport'], "Exists": ['Present', 'Fantasy']},
+        '(MSP) Minneapolis-St. Paul International Airport': {"Stations": ['Terminal 1', 'Terminal 2'], "FutureStations": ['Terminal 1', 'Terminal 2']},
+    },
+    'Campuses': {
+        'Augsburg University': {"Stations": ['Cedar-Riverside', 'Franklin Ave', 'West Bank'], "FutureStations": ['Cedar-Riverside', 'Franklin Ave', 'West Bank']},
+        'Metropolitan State University of Denver': {"Stations": ['Auraria West', 'Colfax at Auraria'], "FutureStations": ['Auraria West [3]', 'Colfax at Auraria']},
+        'University of Denver': {"Stations": ['University of Denver'], "FutureStations": ['University of Denver']},
+        'University of Minnesota Twin Cities': {"Stations": ['East Bank', 'West Bank'], "FutureStations": ['East Bank', 'West Bank']},
+    },
+    'Venues': {
+        'Allianz Field': {"Stations": ['Snelling Ave'], "FutureStations": ['Snelling Ave']},
+        'Ball Arena': {"Stations": ['Ball Arena/Elitch Gardens'], "FutureStations": ['Ball Arena/Elitch Gardens']},
+        'CHS Field': {"Stations": ['Union Depot'], "FutureStations": ['Union Depot']},
+        'Coors Field': {"Stations": ['Denver Union Station'], "FutureStations": ['Denver Union Station']},
+        'Empower Field at Mile High': {"Stations": ['Empower Field at Mile High']},
+        'Future Denver Football Stadium': {"FutureStations": ['10th & Osage', 'Lincoln Park']},
+        'Future Denver Soccer Stadium': {"FutureStations": ['I-25 & Broadway']},
+        'Future Minneapolis Arena': {"FutureStations": ['Royalston Ave']},
+        'Grand Casino Arena': {"Stations": ['Central Station'], "FutureStations": ['Central Station']},
+        'Huntington Bank Stadium': {"Stations": ['Stadium Village'], "FutureStations": ['Stadium Village']},
+        'Long Beach Convention and Entertainment Center': {"Stations": ['East Bank', 'Stadium Village'], "FutureStations": ['East Bank', 'Stadium Village']},
+        'Minneapolis Convention Center': {"Stations": ['Government Plaza', 'Nicollet Mall'], "FutureStations": ['Government Plaza', 'Nicollet Mall']},
+        'Target Center': {"Stations": ['Warehouse District/Hennepin Ave']},
+        'Target Field': {"Stations": ['Target Field'], "FutureStations": ['Minneapolis Target Field', 'Target Field']},
+        'US Bank Stadium': {"Stations": ['US Bank Stadium'], "FutureStations": ['US Bank Stadium']},
+        'Williams Arena': {"Stations": ['East Bank', 'Stadium Village'], "FutureStations": ['East Bank', 'Stadium Village']},
+    },
 }
 
 Projects = {
