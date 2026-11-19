@@ -352,6 +352,7 @@ Stations = {
             'Track 2': {'Location': (45.32985, -93.72997), 'Span': [(45.32977, -93.72914), (45.32993, -93.73079)]},
         },
     },
+    "Black River Falls": {'Location': (44.30484, -90.81024), 'Region': ['Black River Falls', 'Wisconsin', 'USA'], 'Span': [(44.30553, -90.81052), (44.30415, -90.80997)]},
     "Blake Rd": {
         'Region': ['Hopkins', 'Minnesota', 'USA'],
         'Platforms': {
@@ -449,14 +450,27 @@ Stations = {
         'Major': True, 'Region': ['Chicago', 'Illinois', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (41.88010, -87.63961), 'Span': [(41.88107, -87.63963), (41.87914, -87.63960)]},
+            'Track 10': {'Location': (41.87756, -87.63918), 'Span': [(41.87682, -87.63916), (41.87831, -87.63920)]},
             'Track 11': {'Location': (41.88034, -87.63918), 'Span': [(41.87906, -87.63914), (41.88162, -87.63922)]},
+            'Track 12': {'Location': (41.87756, -87.63910), 'Span': [(41.87682, -87.63908), (41.87831, -87.63912)]},
             'Track 13': {'Location': (41.88034, -87.63911), 'Span': [(41.88163, -87.63914), (41.87906, -87.63907)]},
+            'Track 14': {'Location': (41.87757, -87.63902), 'Span': [(41.87831, -87.63904), (41.87682, -87.63900)]},
             'Track 15': {'Location': (41.88034, -87.63902), 'Span': [(41.87906, -87.63897), (41.88163, -87.63905)]},
+            'Track 16': {'Location': (41.87757, -87.63893), 'Span': [(41.87682, -87.63891), (41.87832, -87.63896)]},
             'Track 17': {'Location': (41.88035, -87.63894), 'Span': [(41.87906, -87.63890), (41.88163, -87.63897)]},
+            'Track 18': {'Location': (41.87757, -87.63886), 'Span': [(41.87832, -87.63888), (41.87682, -87.63883)]},
             'Track 19': {'Location': (41.88054, -87.63885), 'Span': [(41.88163, -87.63889), (41.87945, -87.63882)]},
+            'Track 2': {'Location': (41.87738, -87.63950), 'Span': [(41.87682, -87.63948), (41.87794, -87.63951)]},
+            'Track 20': {'Location': (41.87757, -87.63878), 'Span': [(41.87832, -87.63880), (41.87682, -87.63875)]},
+            'Track 22': {'Location': (41.87757, -87.63870), 'Span': [(41.87832, -87.63872), (41.87682, -87.63867)]},
+            'Track 24': {'Location': (41.87757, -87.63861), 'Span': [(41.87832, -87.63864), (41.87682, -87.63859)]},
+            'Track 26': {'Location': (41.87756, -87.63854), 'Span': [(41.87830, -87.63856), (41.87682, -87.63852)]},
             'Track 3': {'Location': (41.88020, -87.63952), 'Span': [(41.87914, -87.63950), (41.88126, -87.63954)]},
+            'Track 4': {'Location': (41.87738, -87.63942), 'Span': [(41.87682, -87.63940), (41.87795, -87.63944)]},
             'Track 5': {'Location': (41.88034, -87.63943), 'Span': [(41.88162, -87.63946), (41.87906, -87.63940)]},
+            'Track 6': {'Location': (41.87754, -87.63935), 'Span': [(41.87826, -87.63936), (41.87682, -87.63932)]},
             'Track 7': {'Location': (41.88034, -87.63934), 'Span': [(41.87906, -87.63930), (41.88162, -87.63937)]},
+            'Track 8': {'Location': (41.87757, -87.63926), 'Span': [(41.87682, -87.63924), (41.87831, -87.63928)]},
             'Track 9': {'Location': (41.88034, -87.63927), 'Span': [(41.88162, -87.63931), (41.87906, -87.63923)]},
         },
     },
@@ -626,6 +640,13 @@ Stations = {
             'Track 2': {'Location': (44.97363, -93.23108), 'Span': [(44.97363, -93.23160), (44.97363, -93.23055)]},
         },
     },
+    "East St. Paul": {
+        'Region': ['St. Paul', 'Minnesota', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (44.97402, -93.02403), 'Span': [(44.97366, -93.02484), (44.97436, -93.02321)]},
+            'Track 2': {'Location': (44.97397, -93.02399), 'Span': [(44.97361, -93.02480), (44.97432, -93.02318)]},
+        },
+    },
     "Eastlake & 124th": {
         'Region': ['Thornton', 'Colorado', 'USA'],
         'Platforms': {
@@ -633,6 +654,7 @@ Stations = {
             'Track 2': {'Location': (39.92287, -104.96208), 'Span': [(39.92330, -104.96232), (39.92245, -104.96184)]},
         },
     },
+    "Eau Claire": {'Location': (44.81694, -91.49658), 'Region': ['Eau Claire', 'Wisconsin', 'USA'], 'Span': [(44.81695, -91.49579), (44.81694, -91.49738)]},
     "Elk River": {
         'Region': ['Elk River', 'Minnesota', 'USA'],
         'Platforms': {
@@ -779,6 +801,13 @@ Stations = {
     },
     "Hayden": {'Location': (40.49701, -107.25649), 'Region': ['Hayden', 'Colorado', 'USA'], 'Span': [(40.49681, -107.25806), (40.49722, -107.25491)]},
     "Hot Sulphur Springs": {'Location': (40.07573, -106.10910), 'Region': ['Hot Sulphur Springs', 'Colorado', 'USA'], 'Span': [(40.07517, -106.10978), (40.07629, -106.10842)]},
+    "Hudson": {
+        'Region': ['Hudson', 'Wisconsin', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (44.98652, -92.75601), 'Span': [(44.98642, -92.75526), (44.98657, -92.75676)]},
+            'Track 2': {'Location': (44.98656, -92.75600), 'Span': [(44.98646, -92.75525), (44.98661, -92.75676)]},
+        },
+    },
     "I-25 & Broadway": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
@@ -949,6 +978,7 @@ Stations = {
             'Track 2': {'Location': (44.75967, -93.21777), 'Span': [(44.75931, -93.21778), (44.76003, -93.21776)]},
         },
     },
+    "Menomonie": {'Location': (44.91464, -91.92649), 'Region': ['Menomonie', 'Wisconsin', 'USA'], 'Span': [(44.91439, -91.92560), (44.91489, -91.92737)]},
     "Milwaukee Airport": {
         'Airport': 'True', 'Region': ['Milwaukee', 'Wisconsin', 'USA'],
         'Platforms': {
@@ -966,7 +996,7 @@ Stations = {
             'Track 5': {'Location': (43.03408, -87.91768), 'Span': [(43.03408, -87.91663), (43.03408, -87.91873)]},
         },
     },
-    "Minneapolis Target Field": {'Location': (44.98345, -93.27706), 'Major': True, 'Region': ['Minneapolis', 'Minnesota', 'USA'], 'Span': [(44.98315, -93.27755), (44.98376, -93.27661)]},
+    "Minneapolis Target Field": {'Location': (44.98334, -93.27723), 'Major': True, 'Region': ['Minneapolis', 'Minnesota', 'USA'], 'Span': [(44.98293, -93.27786), (44.98376, -93.27661)]},
     "Nicollet Mall": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
@@ -1397,6 +1427,9 @@ Stations = {
 }
 
 Segments = {
+    "Amtrak / Borealis / Chicago - Minneapolis": {
+        "F": ['Chicago Union Station {Track 19}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 4}', 'Columbus {Track 2}', 'Portage {Track 1}', 'Wisconsin Dells', 'Tomah', 'La Crosse {Track 1}', 'Winona {Track 2}', 'Red Wing {Track 1}', 'St. Paul Union Depot {Track 1}', 'Red Wing {Track 2}', 'Winona {Track 1}', 'La Crosse {Track 2}', 'Tomah', 'Wisconsin Dells', 'Portage {Track 2}', 'Columbus {Track 1}', 'Milwaukee Intermodal Station {Track 3}', 'Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}', 'Glenview {Track 1}'],
+    },
     "Amtrak / Columbine / Fort Collins - Pueblo": {
         "F": ['Fort Collins {Track 2}', 'Loveland {Track 2}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Denver Union Station {Track 10}', 'Lincoln Park {Track 1}', 'I-25 & Broadway {Track 1 Heavy}', 'Littleton-Downtown {Track 1}', 'Sterling Ranch {Track 1}', 'Castle Rock {Track 1}', 'North Colorado Springs {Track 2}', 'Colorado Springs', 'Fountain', 'Pueblo', 'Fountain', 'Colorado Springs', 'North Colorado Springs {Track 1}', 'Castle Rock {Track 2}', 'Sterling Ranch {Track 2}', 'Littleton-Downtown {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Denver Union Station {Track 9}', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Loveland {Track 1}'],
     },
@@ -1483,6 +1516,35 @@ Segments = {
     },
     "RTD / W Line / Union Station - Jefferson County": {
         "F": ['Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}', 'Jefferson County Government Center {Track 3}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy": {
+        "F": ['Chicago Union Station {Track 19}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 4}', 'Pewaukee', 'Oconomowoc', 'Watertown', 'Madison', 'Portage {Track 1}', 'Wisconsin Dells', 'Black River Falls', 'Eau Claire', 'Menomonie', 'Hudson {Track 2}', 'East St. Paul {Track 1}', 'St. Paul Union Depot {Track 1}', 'East St. Paul {Track 2}', 'Hudson {Track 1}', 'Menomonie', 'Eau Claire', 'Black River Falls', 'Wisconsin Dells', 'Portage {Track 2}', 'Madison', 'Watertown', 'Oconomowoc', 'Pewaukee', 'Milwaukee Intermodal Station {Track 3}'],
+        "Swap": [('Milwaukee Intermodal Station {Track 3}', '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +1'), ('Milwaukee Airport {Track 1}', '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +2'), ('Sturtevant {Track 1}', '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +3'), ('St. Paul Union Depot {Track 1}', '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +4'), ('Minneapolis Target Field', '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +5')],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +1": {
+        "F": ['Milwaukee Intermodal Station {Track 3}', 'Milwaukee Airport {Track 1}'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +2": {
+        "F": ['Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +3": {
+        "F": ['Sturtevant {Track 1}', 'Glenview {Track 1}'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +4": {
+        "F": ['St. Paul Union Depot {Track 1}', 'Minneapolis Target Field'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy +5": {
+        "F": ['Minneapolis Target Field', 'St. Paul Union Depot {Track 2}'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy": {
+        "F": ['Chicago Union Station {Track 19}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 4}', 'Pewaukee', 'Oconomowoc', 'Watertown', 'Columbus {Track 2}', 'Portage {Track 1}', 'Wisconsin Dells', 'Tomah', 'La Crosse {Track 1}', 'Winona {Track 2}', 'Red Wing {Track 1}', 'St. Paul Union Depot {Track 1}', 'Red Wing {Track 2}', 'Winona {Track 1}', 'La Crosse {Track 2}', 'Tomah', 'Wisconsin Dells', 'Portage {Track 2}', 'Columbus {Track 1}', 'Watertown', 'Oconomowoc', 'Pewaukee', 'Milwaukee Intermodal Station {Track 3}', 'Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}', 'Glenview {Track 1}'],
+        "Swap": [('St. Paul Union Depot {Track 1}', '~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy +1'), ('Minneapolis Target Field', '~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy +2')],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy +1": {
+        "F": ['St. Paul Union Depot {Track 1}', 'Minneapolis Target Field'],
+    },
+    "~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy +2": {
+        "F": ['Minneapolis Target Field', 'St. Paul Union Depot {Track 2}'],
     },
     "~ Metro Transit / Green Line / SouthWest Station - Union Depot / Fantasy": {
         "F": ['SouthWest Station {Track 2}', 'Town Center {Track 2}', 'Golden Triangle {Track 2}', 'City West {Track 2}', 'Opus {Track 2}', 'Shady Oak {Track 2}', 'Downtown Hopkins {Track 2}', 'Blake Rd {Track 2}', 'Louisiana Ave {Track 2}', 'Wooddale Ave {Track 2}', 'Beltline Blvd {Track 2}', 'West Lake St {Track 2}', 'West 21st St {Track 2}', 'Bryn Mawr {Track 2}', 'Bassett Creek Valley {Track 2}', 'Royalston Ave {Track 2}', 'Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'West Bank {Track 2}', 'East Bank {Track 2}', 'Stadium Village {Track 2 [2]}', 'Prospect Park {Track 2 [2]}', 'Westgate {Track 2}', 'Raymond Ave {Track 2}', 'Fairview Ave {Track 2}', 'Snelling Ave {Track 2 [2]}', 'Hamline Ave {Track 2}', 'Lexington Pkwy {Track 2}', 'Victoria St {Track 2}', 'Dale St {Track 2}', 'Western Ave {Track 2}', 'Capitol/Rice St {Track 2}', 'Robert St {Track 2}', '10th St {Track 2}', 'Central Station {Track 2}', 'Union Depot {Track 2}', 'Central Station {Track 1}', '10th St {Track 1}', 'Robert St {Track 1}', 'Capitol/Rice St {Track 1}', 'Western Ave {Track 1}', 'Dale St {Track 1}', 'Victoria St {Track 1}', 'Lexington Pkwy {Track 1}', 'Hamline Ave {Track 1}'],
@@ -1860,6 +1922,15 @@ Segments = {
 
 Lines = {
     "Amtrak": {
+        "Borealis": {
+            "Fantasy": {
+                "Chicago - Minneapolis": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy'},
+                "Chicago - Minneapolis (via Madison)": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Borealis / Chicago - Minneapolis (via Madison) / Fantasy'},
+            },
+            "Present": {
+                "Chicago - Minneapolis": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Borealis / Chicago - Minneapolis'},
+            },
+        },
         "Columbine": {
             "Fantasy": {
                 "Fort Collins - Pueblo": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Columbine / Fort Collins - Pueblo'},
