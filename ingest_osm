@@ -1,0 +1,30 @@
+"""Rebuild the tracer's rail graph. Open this file in VS Code and press Run (F5 / the play button).
+
+Set the options below, or leave them as they are:
+  PBF    path to an .osm.pbf you already have; None = use the extract downloaded earlier (or download one)
+  FRESH  True = download a new copy from Geofabrik first (use this to pick up new OSM mapping)
+"""
+PBF = None
+REGION = 'north-america'
+FRESH = False
+
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from devtools import config
+from devtools.fetch import download
+
+
+def main():
+    pbf = PBF or download(REGION, force=FRESH)
+    if os.path.exists(config.GRAPH_DB):             # a graph exists: rebuild it and re-apply your Future edits to the new data
+        from devtools.updater import update
+        update(pbf)
+    else:
+        from devtools.ingest import ingest
+        ingest(pbf)
+    print('\nDone. Start the tracer (python -m devtools serve --open, or the Tracer: Serve task).')
+
+
+if __name__ == '__main__':
+    main()

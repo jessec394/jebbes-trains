@@ -1,0 +1,7 @@
+cache/
+*.osm.pbf
+*.sqlite
+*.sqlite-journal
+*.building
+__pycache__/
+*.pyc

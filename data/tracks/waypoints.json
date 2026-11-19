@@ -1,0 +1,31 @@
+{
+ "routes": {
+  "Amtrak": {
+   "Columbine": {
+    "Fort Collins - Pueblo": {
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Fort Collins {Track 2}"
+       },
+       {
+        "stop": "Fountain"
+       },
+       [
+        38.327652,
+        -104.654388
+       ],
+       {
+        "stop": "Pueblo"
+       },
+       [
+        38.333847,
+        -104.64735
+       ]
+      ]
+     }
+    }
+   }
+  }
+ }
+}
