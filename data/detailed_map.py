@@ -1349,7 +1349,7 @@ Segments = {
         "F": ['RidgeGate {Track 2}', 'Lone Tree City Center {Track 2}', 'Sky Ridge {Track 2}', 'Lincoln {Track 2}', 'County Line {Track 2}', 'Dry Creek {Track 2}', 'Arapahoe at Village Center {Track 2}', 'Orchard {Track 2}', 'Belleview {Track 2}', 'Southmoor {Track 2}', 'Yale {Track 2}', 'Colorado {Track 2}', 'University of Denver {Track 2}', 'Louisiana-Pearl {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 3}', 'Louisiana-Pearl {Track 1}', 'University of Denver {Track 1}', 'Colorado {Track 1}', 'Yale {Track 1}', 'Southmoor {Track 1}', 'Belleview {Track 1}', 'Orchard {Track 1}', 'Arapahoe at Village Center {Track 1}', 'Dry Creek {Track 1}', 'County Line {Track 1}', 'Lincoln {Track 1}', 'Sky Ridge {Track 1}', 'Lone Tree City Center {Track 1}'],
     },
     "RTD / G Line / Union Station - Wheat Ridge": {
-        "F": ['Denver Union Station {Track 6}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
+        "F": ['Denver Union Station {Track 6}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Wheat Ridge & Ward {Track 1}', 'Arvada Ridge {Track 2}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
     },
     "RTD / H Line / Florida - Loop": {
         "F": ['Florida {Track 2}'],
@@ -1842,7 +1842,7 @@ Lines = {
         },
         "G Line": {
             "Present": {
-                "Union Station - Wheat Ridge": {'Mode': 'Heavy Rail', 'Stations': 'RTD / G Line / Union Station - Wheat Ridge', 'Alt': [['Arvada Ridge {Track 1}', 'Arvada Ridge {Track 2}']]},
+                "Union Station - Wheat Ridge": {'Mode': 'Heavy Rail', 'Stations': 'RTD / G Line / Union Station - Wheat Ridge', 'Alt': [['Wheat Ridge & Ward {Track 1}', 'Wheat Ridge & Ward {Track 2}']]},
             },
         },
         "H Line": {
