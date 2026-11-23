@@ -68,6 +68,13 @@ Stations = {
     "14th & Elm": {'Location': (39.10983, -84.51848), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10992, -84.51850), (39.10974, -84.51846)]},
     "16th & California": {'Location': (39.74473, -104.99270), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74440, -104.99312), (39.74506, -104.99227)]},
     "16th & Stout": {'Location': (39.74633, -104.99252), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74666, -104.99210), (39.74600, -104.99294)]},
+    "18th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85791, -87.66922), 'Span': [(41.85733, -87.66920), (41.85849, -87.66923)]},
+            'Track 2': {'Location': (41.85791, -87.66917), 'Span': [(41.85733, -87.66916), (41.85849, -87.66919)]},
+        },
+    },
     "18th & California": {'Location': (39.74659, -104.99030), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74627, -104.99071), (39.74691, -104.98989)]},
     "18th & Stout": {'Location': (39.74819, -104.99013), 'Region': ['Denver', 'Colorado', 'USA'], 'Span': [(39.74789, -104.99053), (39.74850, -104.98973)]},
     "20th & Welton": {
@@ -126,6 +133,20 @@ Stations = {
             'Track 2': {'Location': (39.76612, -104.97337), 'Span': [(39.76579, -104.97337), (39.76646, -104.97337)]},
         },
     },
+    "35th-Bronzeville-IIT": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.83220, -87.62593), 'Span': [(41.83140, -87.62591), (41.83301, -87.62595)]},
+            'Track 2': {'Location': (41.83221, -87.62584), 'Span': [(41.83140, -87.62582), (41.83302, -87.62586)]},
+        },
+    },
+    "35th/Archer": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.82946, -87.68079), 'Span': [(41.82910, -87.68139), (41.82983, -87.68019)]},
+            'Track 2': {'Location': (41.82940, -87.68072), 'Span': [(41.82903, -87.68132), (41.82977, -87.68012)]},
+        },
+    },
     "38th & Blake": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
@@ -162,6 +183,13 @@ Stations = {
             'Track 2': {'Location': (39.77322, -104.99699), 'Span': [(39.77349, -104.99699), (39.77294, -104.99699)]},
         },
     },
+    "43rd": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.81623, -87.61907), 'Span': [(41.81564, -87.61906), (41.81681, -87.61909)]},
+            'Track 2': {'Location': (41.81623, -87.61903), 'Span': [(41.81564, -87.61901), (41.81681, -87.61904)]},
+        },
+    },
     "44th & McIntyre": {
         'Region': ['Golden', 'Colorado', 'USA'],
         'Platforms': {
@@ -174,6 +202,20 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (44.92083, -93.21991), 'Span': [(44.92050, -93.21968), (44.92116, -93.22014)]},
             'Track 2': {'Location': (44.92081, -93.21995), 'Span': [(44.92114, -93.22019), (44.92048, -93.21973)]},
+        },
+    },
+    "47th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.80893, -87.61887), 'Span': [(41.80828, -87.61885), (41.80958, -87.61889)]},
+            'Track 2': {'Location': (41.80893, -87.61883), 'Span': [(41.80828, -87.61881), (41.80958, -87.61885)]},
+        },
+    },
+    "47th [m6rhkf]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.81042, -87.63105), 'Span': [(41.80989, -87.63138), (41.81094, -87.63071)]},
+            'Track 2': {'Location': (41.81039, -87.63097), 'Span': [(41.80986, -87.63130), (41.81091, -87.63063)]},
         },
     },
     "48th & Brighton": {
@@ -191,6 +233,14 @@ Stations = {
             'Track 2': {'Location': (44.91227, -93.21001), 'Span': [(44.91255, -93.21034), (44.91199, -93.20969)]},
         },
     },
+    "51st": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.80250, -87.61856), 'Span': [(41.80187, -87.61854), (41.80312, -87.61858)]},
+            'Track 2': {'Location': (41.80250, -87.61851), 'Span': [(41.80187, -87.61850), (41.80312, -87.61853)]},
+        },
+    },
+    "54th/Cermak": {'Location': (41.85181, -87.75780), 'Region': ['Cicero', 'Illinois', 'USA'], 'Span': [(41.85182, -87.75692), (41.85179, -87.75868)]},
     "60th & Sheridan-Arvada Gold Strike": {
         'Region': ['Arvada', 'Colorado', 'USA'],
         'Platforms': {
@@ -205,6 +255,13 @@ Stations = {
             'Track 2': {'Location': (39.80690, -104.78405), 'Span': [(39.80741, -104.78406), (39.80640, -104.78403)]},
         },
     },
+    "63rd": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.78093, -87.63108), 'Span': [(41.78035, -87.63106), (41.78150, -87.63110)]},
+            'Track 2': {'Location': (41.78093, -87.63096), 'Span': [(41.78035, -87.63094), (41.78150, -87.63098)]},
+        },
+    },
     "63rd Ave": {
         'Region': ['Brooklyn Park', 'Minnesota', 'USA'],
         'Platforms': {
@@ -212,7 +269,21 @@ Stations = {
             'Track 2': {'Location': (45.07007, -93.36847), 'Span': [(45.06974, -93.36826), (45.07039, -93.36869)]},
         },
     },
+    "69th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.76808, -87.62585), 'Span': [(41.76750, -87.62583), (41.76865, -87.62587)]},
+            'Track 2': {'Location': (41.76808, -87.62576), 'Span': [(41.76750, -87.62574), (41.76865, -87.62578)]},
+        },
+    },
     "6th & Main": {'Location': (39.10319, -84.51018), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10328, -84.51020), (39.10310, -84.51016)]},
+    "79th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.74976, -87.62520), 'Span': [(41.74924, -87.62518), (41.75027, -87.62521)]},
+            'Track 2': {'Location': (41.74976, -87.62511), 'Span': [(41.74924, -87.62510), (41.75027, -87.62511)]},
+        },
+    },
     "85th Ave": {
         'Region': ['Brooklyn Park', 'Minnesota', 'USA'],
         'Platforms': {
@@ -227,12 +298,64 @@ Stations = {
             'Track 2': {'Location': (44.84809, -93.24751), 'Span': [(44.84773, -93.24752), (44.84845, -93.24750)]},
         },
     },
+    "87th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.73528, -87.62480), 'Span': [(41.73465, -87.62478), (41.73591, -87.62481)]},
+            'Track 2': {'Location': (41.73529, -87.62471), 'Span': [(41.73465, -87.62470), (41.73592, -87.62473)]},
+        },
+    },
     "8th & Main": {'Location': (39.10524, -84.51069), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10515, -84.51067), (39.10533, -84.51071)]},
     "93rd Ave": {
         'Region': ['Brooklyn Park', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.12279, -93.37662), 'Span': [(45.12243, -93.37663), (45.12315, -93.37661)]},
             'Track 2': {'Location': (45.12279, -93.37667), 'Span': [(45.12315, -93.37667), (45.12243, -93.37668)]},
+        },
+    },
+    "95th/Dan Ryan": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.72243, -87.62447), 'Span': [(41.72188, -87.62446), (41.72297, -87.62448)]},
+            'Track 2': {'Location': (41.72243, -87.62434), 'Span': [(41.72188, -87.62433), (41.72298, -87.62436)]},
+        },
+    },
+    "Adams/Wabash": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87952, -87.62615), 'Span': [(41.87889, -87.62614), (41.88016, -87.62617)]},
+            'Track 2': {'Location': (41.87961, -87.62611), 'Span': [(41.87904, -87.62610), (41.88018, -87.62613)]},
+        },
+    },
+    "Addison": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.94705, -87.67475), 'Span': [(41.94647, -87.67474), (41.94763, -87.67477)]},
+            'Track 2': {'Location': (41.94744, -87.67472), 'Span': [(41.94686, -87.67470), (41.94801, -87.67474)]},
+        },
+    },
+    "Addison [2z5zne]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.94750, -87.65372), 'Span': [(41.94691, -87.65370), (41.94809, -87.65373)]},
+            'Track 2': {'Location': (41.94750, -87.65368), 'Span': [(41.94691, -87.65366), (41.94809, -87.65369)]},
+            'Track 3': {'Location': (41.94750, -87.65358), 'Span': [(41.94691, -87.65356), (41.94809, -87.65359)]},
+            'Track 4': {'Location': (41.94750, -87.65353), 'Span': [(41.94691, -87.65352), (41.94809, -87.65355)]},
+        },
+    },
+    "Addison [wytkfd]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.94741, -87.71919), 'Span': [(41.94694, -87.71873), (41.94782, -87.71975)]},
+            'Track 2': {'Location': (41.94745, -87.71914), 'Span': [(41.94697, -87.71867), (41.94787, -87.71970)]},
+        },
+    },
+    "Adelaide Street": {'Location': (42.34111, -83.05351), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.34103, -83.05345), (42.34120, -83.05357)]},
+    "Airport": {
+        'Airport': 'True', 'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.41091, -81.83768), 'Span': [(41.41072, -81.83721), (41.41110, -81.83814)]},
+            'Track 2': {'Location': (41.41095, -81.83765), 'Span': [(41.41076, -81.83719), (41.41114, -81.83812)]},
         },
     },
     "Alameda": {
@@ -244,6 +367,8 @@ Stations = {
             'Track 2 Heavy': {'Location': (39.70826, -104.99297), 'Span': [(39.70863, -104.99330), (39.70789, -104.99264)]},
         },
     },
+    "Albion": {'Location': (42.24734, -84.75563), 'Region': ['Albion', 'Michigan', 'USA'], 'Span': [(42.24743, -84.75591), (42.24725, -84.75536)]},
+    "Alton": {'Location': (38.92135, -90.15719), 'Region': ['Alton', 'Illinois', 'USA'], 'Span': [(38.92177, -90.15789), (38.92093, -90.15649)]},
     "American Blvd": {
         'Region': ['Bloomington', 'Minnesota', 'USA'],
         'Platforms': {
@@ -251,6 +376,14 @@ Stations = {
             'Track 2': {'Location': (44.85805, -93.22320), 'Span': [(44.85842, -93.22320), (44.85768, -93.22320)]},
         },
     },
+    "Amsterdam Street": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.36622, -83.07072), 'Span': [(42.36613, -83.07066), (42.36630, -83.07077)]},
+            'Track 2': {'Location': (42.36624, -83.07064), 'Span': [(42.36616, -83.07058), (42.36633, -83.07070)]},
+        },
+    },
+    "Ann Arbor": {'Location': (42.28789, -83.74302), 'Region': ['Ann Arbor', 'Michigan', 'USA'], 'Span': [(42.28823, -83.74390), (42.28755, -83.74214)]},
     "Anoka": {
         'Region': ['Anoka', 'Minnesota', 'USA'],
         'Platforms': {
@@ -268,11 +401,60 @@ Stations = {
             'Track 2': {'Location': (39.60028, -104.88842), 'Span': [(39.59977, -104.88813), (39.60078, -104.88871)]},
         },
     },
+    "Argyle": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.97339, -87.65861), 'Span': [(41.97272, -87.65859), (41.97407, -87.65863)]},
+            'Track 2': {'Location': (41.97340, -87.65850), 'Span': [(41.97272, -87.65848), (41.97407, -87.65852)]},
+        },
+    },
+    "Armitage": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.91796, -87.65270), 'Span': [(41.91738, -87.65268), (41.91854, -87.65271)]},
+            'Track 2': {'Location': (41.91795, -87.65257), 'Span': [(41.91738, -87.65255), (41.91853, -87.65259)]},
+        },
+    },
     "Arvada Ridge": {
         'Region': ['Arvada', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.79260, -105.11147), 'Span': [(39.79267, -105.11113), (39.79253, -105.11181)]},
             'Track 2': {'Location': (39.79250, -105.11143), 'Span': [(39.79243, -105.11177), (39.79257, -105.11109)]},
+        },
+    },
+    "Ashby": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46882, -81.57300), 'Span': [(41.46857, -81.57271), (41.46907, -81.57329)]},
+            'Track 2': {'Location': (41.46818, -81.57216), 'Span': [(41.46796, -81.57185), (41.46842, -81.57246)]},
+        },
+    },
+    "Ashland": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.83942, -87.66528), 'Span': [(41.83911, -87.66593), (41.83974, -87.66463)]},
+            'Track 2': {'Location': (41.83935, -87.66522), 'Span': [(41.83903, -87.66586), (41.83966, -87.66457)]},
+        },
+    },
+    "Ashland [5u3kwf]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88536, -87.66645), 'Span': [(41.88534, -87.66739), (41.88538, -87.66552)]},
+            'Track 2': {'Location': (41.88533, -87.66654), 'Span': [(41.88531, -87.66739), (41.88534, -87.66570)]},
+        },
+    },
+    "Ashland/63rd": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.77900, -87.66406), 'Span': [(41.77898, -87.66501), (41.77901, -87.66310)]},
+            'Track 2': {'Location': (41.77890, -87.66405), 'Span': [(41.77889, -87.66501), (41.77892, -87.66310)]},
+        },
+    },
+    "Attleboro": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47915, -81.55909), 'Span': [(41.47898, -81.55870), (41.47934, -81.55947)]},
+            'Track 2': {'Location': (41.47871, -81.55773), 'Span': [(41.47862, -81.55728), (41.47883, -81.55817)]},
         },
     },
     "Auraria West": {
@@ -282,18 +464,18 @@ Stations = {
             'Track 2': {'Location': (39.74168, -105.01078), 'Span': [(39.74117, -105.01049), (39.74219, -105.01106)]},
         },
     },
-    "Auraria West [2]": {
-        'Region': ['Denver', 'Colorado', 'USA'],
-        'Platforms': {
-            'Track 1': {'Location': (39.74167, -105.01284), 'Span': [(39.74190, -105.01303), (39.74144, -105.01266)]},
-            'Track 2': {'Location': (39.74169, -105.01280), 'Span': [(39.74146, -105.01262), (39.74192, -105.01298)]},
-        },
-    },
-    "Auraria West [3]": {
+    "Auraria West [2x8ua3]": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.74047, -105.00847), 'Span': [(39.74049, -105.00888), (39.74045, -105.00806)]},
             'Track 2': {'Location': (39.74051, -105.00847), 'Span': [(39.74053, -105.00888), (39.74049, -105.00806)]},
+        },
+    },
+    "Auraria West [a64js4]": {
+        'Region': ['Denver', 'Colorado', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.74167, -105.01284), 'Span': [(39.74190, -105.01303), (39.74144, -105.01266)]},
+            'Track 2': {'Location': (39.74169, -105.01280), 'Span': [(39.74146, -105.01262), (39.74192, -105.01298)]},
         },
     },
     "Aurora Metro Center": {
@@ -303,11 +485,39 @@ Stations = {
             'Track 2': {'Location': (39.70853, -104.81911), 'Span': [(39.70803, -104.81910), (39.70904, -104.81911)]},
         },
     },
+    "Austin": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88735, -87.77429), 'Span': [(41.88734, -87.77506), (41.88736, -87.77352)]},
+            'Track 2': {'Location': (41.88727, -87.77429), 'Span': [(41.88727, -87.77506), (41.88729, -87.77352)]},
+        },
+    },
+    "Austin [acx38y]": {
+        'Region': ['Oak Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87086, -87.77680), 'Span': [(41.87080, -87.77570), (41.87093, -87.77790)]},
+            'Track 2': {'Location': (41.87093, -87.77679), 'Span': [(41.87086, -87.77570), (41.87099, -87.77789)]},
+        },
+    },
+    "Avalon": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46661, -81.55839), 'Span': [(41.46661, -81.55880), (41.46661, -81.55797)]},
+            'Track 2': {'Location': (41.46657, -81.55967), 'Span': [(41.46657, -81.56011), (41.46657, -81.55924)]},
+        },
+    },
     "Ball Arena/Elitch Gardens": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.74861, -105.00984), 'Span': [(39.74880, -105.00942), (39.74842, -105.01026)]},
             'Track 2': {'Location': (39.74855, -105.00980), 'Span': [(39.74836, -105.01022), (39.74874, -105.00938)]},
+        },
+    },
+    "Baltimore Street": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.36871, -83.07235), 'Span': [(42.36862, -83.07229), (42.36880, -83.07241)]},
+            'Track 2': {'Location': (42.36874, -83.07227), 'Span': [(42.36865, -83.07221), (42.36883, -83.07233)]},
         },
     },
     "Bass Lake Rd": {
@@ -324,6 +534,13 @@ Stations = {
             'Track 2': {'Location': (44.97431, -93.29565), 'Span': [(44.97406, -93.29603), (44.97456, -93.29527)]},
         },
     },
+    "Battle Creek": {
+        'Region': ['Battle Creek', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.31802, -85.18787), 'Span': [(42.31777, -85.18754), (42.31828, -85.18820)]},
+            'Track 2': {'Location': (42.31805, -85.18783), 'Span': [(42.31780, -85.18750), (42.31830, -85.18816)]},
+        },
+    },
     "Becker": {
         'Region': ['Becker', 'Minnesota', 'USA'],
         'Platforms': {
@@ -338,11 +555,41 @@ Stations = {
             'Track 2': {'Location': (39.62757, -104.90435), 'Span': [(39.62708, -104.90407), (39.62806, -104.90463)]},
         },
     },
+    "Belmont": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.93968, -87.65348), 'Span': [(41.93906, -87.65346), (41.94031, -87.65350)]},
+            'Track 2': {'Location': (41.93969, -87.65336), 'Span': [(41.93906, -87.65334), (41.94031, -87.65338)]},
+            'Track 3': {'Location': (41.93968, -87.65331), 'Span': [(41.93906, -87.65329), (41.94031, -87.65333)]},
+            'Track 4': {'Location': (41.93969, -87.65319), 'Span': [(41.93906, -87.65317), (41.94032, -87.65321)]},
+        },
+    },
+    "Belmont [whds32]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.93825, -87.71252), 'Span': [(41.93751, -87.71249), (41.93898, -87.71253)]},
+            'Track 2': {'Location': (41.93824, -87.71242), 'Span': [(41.93751, -87.71241), (41.93898, -87.71243)]},
+        },
+    },
     "Beltline Blvd": {
         'Region': ['St. Louis Park', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.94383, -93.33945), 'Span': [(44.94399, -93.33898), (44.94367, -93.33992)]},
             'Track 2': {'Location': (44.94376, -93.33940), 'Span': [(44.94360, -93.33987), (44.94392, -93.33893)]},
+        },
+    },
+    "Belvoir": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47856, -81.52697), 'Span': [(41.47856, -81.52740), (41.47856, -81.52654)]},
+            'Track 2': {'Location': (41.47851, -81.52738), 'Span': [(41.47851, -81.52781), (41.47851, -81.52694)]},
+        },
+    },
+    "Berwyn": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.97822, -87.65874), 'Span': [(41.97750, -87.65872), (41.97893, -87.65876)]},
+            'Track 2': {'Location': (41.97822, -87.65863), 'Span': [(41.97750, -87.65861), (41.97893, -87.65865)]},
         },
     },
     "Big Lake": {
@@ -367,6 +614,13 @@ Stations = {
             'Track 2': {'Location': (44.85642, -93.22642), 'Span': [(44.85642, -93.22590), (44.85642, -93.22695)]},
         },
     },
+    "Bloomington-Normal": {
+        'Region': ['Normal', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.50835, -88.98471), 'Span': [(40.50800, -88.98539), (40.50871, -88.98402)]},
+            'Track 2': {'Location': (40.50831, -88.98467), 'Span': [(40.50796, -88.98536), (40.50867, -88.98398)]},
+        },
+    },
     "Boulder": {
         'Region': ['Boulder', 'Colorado', 'USA'],
         'Platforms': {
@@ -375,11 +629,20 @@ Stations = {
         },
     },
     "Brewery District": {'Location': (39.11714, -84.52034), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11723, -84.52036), (39.11705, -84.52032)]},
+    "Bricktown": {'Location': (42.33329, -83.04122), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33340, -83.04130), (42.33317, -83.04115)]},
+    "Broadway": {'Location': (42.33544, -83.04824), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33557, -83.04831), (42.33532, -83.04818)]},
     "Brooklyn Blvd": {
         'Region': ['Brooklyn Park', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.09394, -93.37671), 'Span': [(45.09358, -93.37671), (45.09430, -93.37672)]},
             'Track 2': {'Location': (45.09394, -93.37677), 'Span': [(45.09430, -93.37677), (45.09358, -93.37677)]},
+        },
+    },
+    "Brookpark": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.41989, -81.82358), 'Span': [(41.41931, -81.82406), (41.42048, -81.82310)]},
+            'Track 2': {'Location': (41.41986, -81.82351), 'Span': [(41.41928, -81.82399), (41.42045, -81.82303)]},
         },
     },
     "Broomfield-116th": {
@@ -389,6 +652,7 @@ Stations = {
             'Track 2': {'Location': (39.90824, -105.07942), 'Span': [(39.90753, -105.07922), (39.90894, -105.07962)]},
         },
     },
+    "Bryan": {'Location': (41.48027, -84.55179), 'Region': ['Bryan', 'Ohio', 'USA'], 'Span': [(41.48018, -84.55230), (41.48035, -84.55127)]},
     "Bryn Mawr": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
@@ -396,11 +660,70 @@ Stations = {
             'Track 2': {'Location': (44.96803, -93.30909), 'Span': [(44.96782, -93.30952), (44.96824, -93.30867)]},
         },
     },
+    "Bryn Mawr [kc5yq8]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.98435, -87.65891), 'Span': [(41.98354, -87.65889), (41.98516, -87.65893)]},
+            'Track 2': {'Location': (41.98435, -87.65880), 'Span': [(41.98354, -87.65878), (41.98517, -87.65882)]},
+        },
+    },
+    "Buckeye-Woodhill": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48271, -81.61887), 'Span': [(41.48271, -81.61923), (41.48273, -81.61851)]},
+            'Track 2': {'Location': (41.48268, -81.61865), 'Span': [(41.48267, -81.61923), (41.48274, -81.61807)]},
+        },
+    },
+    "Cadillac Center": {'Location': (42.33376, -83.04619), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33370, -83.04633), (42.33382, -83.04606)]},
+    "California": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85435, -87.69447), 'Span': [(41.85434, -87.69531), (41.85436, -87.69363)]},
+            'Track 2': {'Location': (41.85426, -87.69447), 'Span': [(41.85424, -87.69530), (41.85427, -87.69363)]},
+        },
+    },
+    "California [7u7wsc]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.92191, -87.69678), 'Span': [(41.92155, -87.69617), (41.92228, -87.69738)]},
+            'Track 2': {'Location': (41.92208, -87.69699), 'Span': [(41.92172, -87.69640), (41.92243, -87.69758)]},
+        },
+    },
+    "California [ut28tk]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88427, -87.69691), 'Span': [(41.88424, -87.69777), (41.88430, -87.69606)]},
+            'Track 2': {'Location': (41.88421, -87.69691), 'Span': [(41.88418, -87.69776), (41.88424, -87.69605)]},
+        },
+    },
+    "Cambridge": {'Location': (45.57117, -93.22116), 'Region': ['Cambridge', 'Minnesota', 'USA'], 'Span': [(45.57052, -93.22142), (45.57181, -93.22089)]},
+    "Campus Martius": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.33220, -83.04733), 'Span': [(42.33211, -83.04726), (42.33228, -83.04740)]},
+            'Track 2': {'Location': (42.33253, -83.04744), 'Span': [(42.33242, -83.04735), (42.33264, -83.04753)]},
+        },
+    },
+    "Canfield Street": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.35245, -83.06143), 'Span': [(42.35237, -83.06138), (42.35253, -83.06149)]},
+            'Track 2': {'Location': (42.35253, -83.06120), 'Span': [(42.35241, -83.06112), (42.35266, -83.06128)]},
+        },
+    },
     "Capitol/Rice St": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.95573, -93.10515), 'Span': [(44.95573, -93.10567), (44.95574, -93.10463)]},
             'Track 2': {'Location': (44.95570, -93.10515), 'Span': [(44.95570, -93.10463), (44.95569, -93.10567)]},
+        },
+    },
+    "Carbondale": {'Location': (37.72360, -89.21576), 'Region': ['Carbondale', 'Illinois', 'USA'], 'Span': [(37.72200, -89.21556), (37.72521, -89.21596)]},
+    "Carlinville": {
+        'Region': ['Carlinville', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.27909, -89.88955), 'Span': [(39.27865, -89.88984), (39.27952, -89.88926)]},
+            'Track 2': {'Location': (39.27912, -89.88945), 'Span': [(39.27869, -89.88974), (39.27955, -89.88916)]},
         },
     },
     "Castle Rock": {
@@ -424,11 +747,32 @@ Stations = {
             'Track 2': {'Location': (44.96829, -93.25104), 'Span': [(44.96862, -93.25127), (44.96797, -93.25080)]},
         },
     },
+    "Cedar-University": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.49999, -81.60537), 'Span': [(41.49961, -81.60565), (41.50038, -81.60509)]},
+            'Track 2': {'Location': (41.49996, -81.60529), 'Span': [(41.49957, -81.60556), (41.50034, -81.60501)]},
+        },
+    },
+    "Central": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88746, -87.76564), 'Span': [(41.88745, -87.76641), (41.88746, -87.76487)]},
+            'Track 2': {'Location': (41.88739, -87.76564), 'Span': [(41.88739, -87.76641), (41.88741, -87.76487)]},
+        },
+    },
     "Central Park": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.77062, -104.89166), 'Span': [(39.77069, -104.89253), (39.77056, -104.89079)]},
             'Track 2': {'Location': (39.77066, -104.89165), 'Span': [(39.77060, -104.89078), (39.77073, -104.89252)]},
+        },
+    },
+    "Central Park [p3u4fq]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85406, -87.71497), 'Span': [(41.85404, -87.71575), (41.85407, -87.71419)]},
+            'Track 2': {'Location': (41.85397, -87.71496), 'Span': [(41.85395, -87.71575), (41.85398, -87.71418)]},
         },
     },
     "Central Parkway": {'Location': (39.10714, -84.51417), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10712, -84.51429), (39.10716, -84.51406)]},
@@ -439,11 +783,47 @@ Stations = {
             'Track 2': {'Location': (44.94617, -93.09230), 'Span': [(44.94625, -93.09281), (44.94609, -93.09179)]},
         },
     },
+    "Central [zv8yw8]": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.06389, -87.68572), 'Span': [(42.06334, -87.68541), (42.06445, -87.68603)]},
+            'Track 2': {'Location': (42.06392, -87.68563), 'Span': [(42.06337, -87.68532), (42.06448, -87.68594)]},
+        },
+    },
+    "Centralia": {
+        'Region': ['Centralia', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.52724, -89.13641), 'Span': [(38.52657, -89.13662), (38.52791, -89.13621)]},
+            'Track 2': {'Location': (38.52723, -89.13636), 'Span': [(38.52656, -89.13657), (38.52790, -89.13616)]},
+        },
+    },
+    "Cermak-Chinatown": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85369, -87.63118), 'Span': [(41.85283, -87.63096), (41.85456, -87.63136)]},
+            'Track 2': {'Location': (41.85370, -87.63109), 'Span': [(41.85283, -87.63087), (41.85457, -87.63128)]},
+        },
+    },
+    "Cermak-McCormick Place": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85258, -87.62646), 'Span': [(41.85173, -87.62644), (41.85344, -87.62648)]},
+            'Track 2': {'Location': (41.85258, -87.62637), 'Span': [(41.85173, -87.62636), (41.85344, -87.62639)]},
+        },
+    },
+    "Champaign-Urbana": {'Location': (40.11572, -88.24077), 'Region': ['Champaign', 'Illinois', 'USA'], 'Span': [(40.11665, -88.24038), (40.11480, -88.24113)]},
     "Champlin": {
         'Region': ['Champlin', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.18692, -93.39461), 'Span': [(45.18712, -93.39504), (45.18673, -93.39418)]},
             'Track 2': {'Location': (45.18688, -93.39464), 'Span': [(45.18669, -93.39421), (45.18708, -93.39507)]},
+        },
+    },
+    "Chicago": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.89588, -87.63571), 'Span': [(41.89524, -87.63570), (41.89651, -87.63576)]},
+            'Track 2': {'Location': (41.89586, -87.63567), 'Span': [(41.89522, -87.63565), (41.89650, -87.63572)]},
         },
     },
     "Chicago Union Station": {
@@ -474,6 +854,41 @@ Stations = {
             'Track 9': {'Location': (41.88034, -87.63927), 'Span': [(41.88162, -87.63931), (41.87906, -87.63923)]},
         },
     },
+    "Chicago [24eusx]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.89619, -87.65536), 'Span': [(41.89588, -87.65489), (41.89649, -87.65584)]},
+            'Track 2': {'Location': (41.89623, -87.65532), 'Span': [(41.89592, -87.65484), (41.89653, -87.65579)]},
+        },
+    },
+    "Chicago [yxgj2r]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.89663, -87.62824), 'Span': [(41.89617, -87.62823), (41.89709, -87.62825)]},
+            'Track 2': {'Location': (41.89663, -87.62818), 'Span': [(41.89617, -87.62816), (41.89709, -87.62819)]},
+        },
+    },
+    "Cicero": {
+        'Region': ['Cicero', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85196, -87.74558), 'Span': [(41.85195, -87.74636), (41.85197, -87.74481)]},
+            'Track 2': {'Location': (41.85187, -87.74558), 'Span': [(41.85187, -87.74636), (41.85189, -87.74481)]},
+        },
+    },
+    "Cicero [fgsf9t]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87163, -87.74709), 'Span': [(41.87161, -87.74818), (41.87164, -87.74599)]},
+            'Track 2': {'Location': (41.87157, -87.74708), 'Span': [(41.87156, -87.74818), (41.87158, -87.74598)]},
+        },
+    },
+    "Cicero [jhvg38]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88650, -87.74429), 'Span': [(41.88645, -87.74348), (41.88654, -87.74511)]},
+            'Track 2': {'Location': (41.88656, -87.74429), 'Span': [(41.88651, -87.74347), (41.88661, -87.74510)]},
+        },
+    },
     "Cincinnati Union Terminal": {
         'Major': True, 'Region': ['Cincinnati', 'Ohio', 'USA'],
         'Platforms': {
@@ -488,6 +903,22 @@ Stations = {
             'Track 2': {'Location': (44.89056, -93.41094), 'Span': [(44.89032, -93.41055), (44.89080, -93.41134)]},
         },
     },
+    "Clark/Division": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.90393, -87.63216), 'Span': [(41.90393, -87.63270), (41.90394, -87.63161)]},
+            'Track 2': {'Location': (41.90386, -87.63215), 'Span': [(41.90385, -87.63270), (41.90387, -87.63161)]},
+        },
+    },
+    "Clark/Lake": {
+        'Major': True, 'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88576, -87.63135), 'Span': [(41.88576, -87.63218), (41.88577, -87.63053)]},
+            'Track 2': {'Location': (41.88573, -87.63136), 'Span': [(41.88573, -87.63218), (41.88573, -87.63053)]},
+            'Track 3': {'Location': (41.88577, -87.63272), 'Span': [(41.88577, -87.63372), (41.88577, -87.63173)]},
+            'Track 4': {'Location': (41.88571, -87.63272), 'Span': [(41.88570, -87.63372), (41.88571, -87.63173)]},
+        },
+    },
     "Clear Creek & Federal": {
         'Region': ['Berkley', 'Colorado', 'USA'],
         'Platforms': {
@@ -495,11 +926,41 @@ Stations = {
             'Track 2': {'Location': (39.80392, -105.02345), 'Span': [(39.80395, -105.02380), (39.80389, -105.02310)]},
         },
     },
+    "Cleveland": {
+        'Major': True, 'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.50548, -81.69600), 'Span': [(41.50462, -81.69787), (41.50633, -81.69414)]},
+            'Track 2': {'Location': (41.50542, -81.69596), 'Span': [(41.50456, -81.69782), (41.50627, -81.69409)]},
+        },
+    },
+    "Cleveland Airport": {
+        'Airport': 'True', 'Region': ['Brook Park', 'Ohio', 'USA'],
+        'Platforms': {
+            'LRT 1': {'Location': (41.41346, -81.82892), 'Airport': None, 'Label': 'Airport Transfer', 'Span': [(41.41316, -81.82918), (41.41376, -81.82866)]},
+            'LRT 2': {'Location': (41.41343, -81.82887), 'Airport': None, 'Label': 'Airport Transfer', 'Span': [(41.41313, -81.82913), (41.41374, -81.82861)]},
+            'Track 1': {'Location': (41.41361, -81.82865), 'Span': [(41.41303, -81.82913), (41.41418, -81.82818)]},
+            'Track 2': {'Location': (41.41359, -81.82861), 'Span': [(41.41302, -81.82909), (41.41416, -81.82813)]},
+        },
+    },
     "Cliff Rd": {
         'Region': ['Eagan', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.79009, -93.22131), 'Span': [(44.78974, -93.22120), (44.79044, -93.22141)]},
             'Track 2': {'Location': (44.79008, -93.22137), 'Span': [(44.79043, -93.22147), (44.78973, -93.22126)]},
+        },
+    },
+    "Clinton": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88573, -87.64187), 'Span': [(41.88573, -87.64267), (41.88574, -87.64107)]},
+            'Track 2': {'Location': (41.88570, -87.64187), 'Span': [(41.88570, -87.64267), (41.88570, -87.64107)]},
+        },
+    },
+    "Clinton [fnghd3]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87561, -87.64127), 'Span': [(41.87560, -87.64226), (41.87563, -87.64028)]},
+            'Track 2': {'Location': (41.87555, -87.64127), 'Span': [(41.87554, -87.64226), (41.87557, -87.64028)]},
         },
     },
     "Colfax": {
@@ -531,6 +992,13 @@ Stations = {
             'Track 2': {'Location': (43.34088, -89.01257), 'Span': [(43.34064, -89.01190), (43.34113, -89.01325)]},
         },
     },
+    "Columbus Union Station": {
+        'Major': True, 'Region': ['Columbus', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.97106, -83.00039), 'Span': [(39.97067, -83.00110), (39.97144, -82.99967)]},
+            'Track 2': {'Location': (39.97100, -83.00034), 'Span': [(39.97062, -83.00105), (39.97139, -82.99962)]},
+        },
+    },
     "Commerce City & 72nd": {
         'Region': ['Commerce City', 'Colorado', 'USA'],
         'Platforms': {
@@ -538,11 +1006,28 @@ Stations = {
             'Track 2': {'Location': (39.82630, -104.94309), 'Span': [(39.82675, -104.94323), (39.82585, -104.94294)]},
         },
     },
+    "Congress Street": {'Location': (42.32982, -83.04556), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.32990, -83.04563), (42.32974, -83.04550)]},
+    "Connersville": {'Location': (39.64589, -85.13326), 'Region': ['Connersville', 'Indiana', 'USA'], 'Span': [(39.64607, -85.13385), (39.64570, -85.13267)]},
+    "Conservatory-Central Park Dr": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88491, -87.71627), 'Span': [(41.88486, -87.71546), (41.88495, -87.71708)]},
+            'Track 2': {'Location': (41.88497, -87.71627), 'Span': [(41.88493, -87.71546), (41.88502, -87.71707)]},
+        },
+    },
     "Coon Rapids-Riverdale": {
         'Region': ['Coon Rapids', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.19105, -93.35148), 'Span': [(45.19067, -93.35087), (45.19143, -93.35210)]},
             'Track 2': {'Location': (45.19101, -93.35153), 'Span': [(45.19139, -93.35215), (45.19063, -93.35091)]},
+        },
+    },
+    "Coshocton": {'Location': (40.27288, -81.86350), 'Region': ['Coshocton', 'Ohio', 'USA'], 'Span': [(40.27344, -81.86346), (40.27232, -81.86353)]},
+    "Cottage Grove": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.78045, -87.60600), 'Span': [(41.78044, -87.60676), (41.78046, -87.60525)]},
+            'Track 2': {'Location': (41.78038, -87.60600), 'Span': [(41.78037, -87.60676), (41.78040, -87.60525)]},
         },
     },
     "County Line": {
@@ -553,12 +1038,70 @@ Stations = {
         },
     },
     "Court & Main": {'Location': (39.10704, -84.51114), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10694, -84.51112), (39.10713, -84.51116)]},
+    "Courtland": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47848, -81.54388), 'Span': [(41.47848, -81.54336), (41.47848, -81.54440)]},
+            'Track 2': {'Location': (41.47852, -81.54254), 'Span': [(41.47852, -81.54300), (41.47852, -81.54208)]},
+        },
+    },
+    "Coventry": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48329, -81.58469), 'Span': [(41.48324, -81.58426), (41.48334, -81.58513)]},
+            'Track 2': {'Location': (41.48333, -81.58468), 'Span': [(41.48328, -81.58425), (41.48339, -81.58512)]},
+        },
+    },
     "Craig": {'Location': (40.51052, -107.56041), 'Region': ['Craig', 'Colorado', 'USA'], 'Span': [(40.51051, -107.56159), (40.51053, -107.55922)]},
+    "Crawfordsville": {'Location': (40.04463, -86.89911), 'Region': ['Crawfordsville', 'Indiana', 'USA'], 'Span': [(40.04496, -86.89919), (40.04431, -86.89897)]},
+    "Crestline": {
+        'Region': ['Crestline', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.78502, -82.73603), 'Span': [(40.78443, -82.73646), (40.78561, -82.73559)]},
+            'Track 2': {'Location': (40.78500, -82.73598), 'Span': [(40.78441, -82.73641), (40.78559, -82.73555)]},
+        },
+    },
+    "Crookston": {'Location': (47.80033, -96.60213), 'Region': ['Crookston', 'Minnesota', 'USA'], 'Span': [(47.80104, -96.60226), (47.79961, -96.60201)]},
+    "Cumberland": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.98435, -87.83786), 'Span': [(41.98430, -87.83885), (41.98439, -87.83686)]},
+            'Track 2': {'Location': (41.98427, -87.83785), 'Span': [(41.98423, -87.83885), (41.98432, -87.83686)]},
+        },
+    },
     "Dale St": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.95575, -93.12721), 'Span': [(44.95575, -93.12773), (44.95575, -93.12669)]},
             'Track 2': {'Location': (44.95571, -93.12540), 'Span': [(44.95571, -93.12488), (44.95571, -93.12591)]},
+        },
+    },
+    "Damen": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85454, -87.67709), 'Span': [(41.85453, -87.67807), (41.85455, -87.67612)]},
+            'Track 2': {'Location': (41.85446, -87.67709), 'Span': [(41.85445, -87.67806), (41.85448, -87.67612)]},
+        },
+    },
+    "Damen [32has7]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88499, -87.67714), 'Span': [(41.88496, -87.67793), (41.88502, -87.67635)]},
+            'Track 2': {'Location': (41.88495, -87.67714), 'Span': [(41.88493, -87.67793), (41.88499, -87.67635)]},
+        },
+    },
+    "Damen [q6k733]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96642, -87.67918), 'Span': [(41.96641, -87.67996), (41.96643, -87.67840)]},
+            'Track 2': {'Location': (41.96639, -87.67918), 'Span': [(41.96637, -87.67996), (41.96640, -87.67840)]},
+        },
+    },
+    "Damen [qscker]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.90972, -87.67746), 'Span': [(41.90942, -87.67699), (41.91002, -87.67793)]},
+            'Track 2': {'Location': (41.90975, -87.67743), 'Span': [(41.90945, -87.67696), (41.91005, -87.67790)]},
         },
     },
     "Dayton": {
@@ -568,11 +1111,34 @@ Stations = {
             'Track 2': {'Location': (39.64304, -104.87798), 'Span': [(39.64278, -104.87851), (39.64329, -104.87746)]},
         },
     },
+    "Dayton Union Station": {'Location': (39.75482, -84.19510), 'Region': ['Dayton', 'Ohio', 'USA'], 'Span': [(39.75463, -84.19624), (39.75500, -84.19395)]},
+    "Dearborn": {
+        'Region': ['Dearborn', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.30678, -83.23519), 'Span': [(42.30663, -83.23609), (42.30691, -83.23429)]},
+            'Track 2': {'Location': (42.30673, -83.23530), 'Span': [(42.30657, -83.23620), (42.30687, -83.23440)]},
+        },
+    },
     "Decatur-Federal": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.73730, -105.02401), 'Span': [(39.73713, -105.02439), (39.73747, -105.02363)]},
             'Track 2': {'Location': (39.73727, -105.02399), 'Span': [(39.73710, -105.02437), (39.73744, -105.02361)]},
+        },
+    },
+    "Delaware": {'Location': (40.29902, -83.05823), 'Region': ['Delaware', 'Ohio', 'USA'], 'Span': [(40.29953, -83.05834), (40.29851, -83.05809)]},
+    "Dempster": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.04181, -87.68180), 'Span': [(42.04138, -87.68170), (42.04225, -87.68190)]},
+            'Track 2': {'Location': (42.04180, -87.68175), 'Span': [(42.04136, -87.68165), (42.04224, -87.68186)]},
+        },
+    },
+    "Dempster-Skokie": {
+        'Region': ['Skokie', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.03904, -87.75208), 'Span': [(42.03885, -87.75202), (42.03923, -87.75214)]},
+            'Track 2': {'Location': (42.03905, -87.75203), 'Span': [(42.03886, -87.75195), (42.03924, -87.75210)]},
         },
     },
     "Denver Airport": {
@@ -595,6 +1161,48 @@ Stations = {
             'Track 7': {'Location': (39.75418, -105.00032), 'Span': [(39.75503, -104.99924), (39.75334, -105.00140)]},
             'Track 8': {'Location': (39.75458, -104.99989), 'Span': [(39.75522, -104.99906), (39.75394, -105.00072)]},
             'Track 9': {'Location': (39.75537, -105.00303), 'Span': [(39.75490, -105.00342), (39.75584, -105.00263)]},
+        },
+    },
+    "Detroit": {
+        'Major': True, 'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.36773, -83.07253), 'Span': [(42.36753, -83.07305), (42.36793, -83.07201)]},
+            'Track 2': {'Location': (42.36769, -83.07250), 'Span': [(42.36750, -83.07303), (42.36789, -83.07198)]},
+        },
+    },
+    "Detroit Airport": {
+        'Airport': 'True', 'Region': ['Romulus', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.23762, -83.33794), 'Span': [(42.23741, -83.33880), (42.23783, -83.33707)]},
+            'Track 2': {'Location': (42.23758, -83.33792), 'Span': [(42.23736, -83.33878), (42.23779, -83.33706)]},
+        },
+    },
+    "Detroit Lakes": {
+        'Region': ['Detroit Lakes', 'Minnesota', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (46.81996, -95.84590), 'Span': [(46.81983, -95.84560), (46.82010, -95.84620)]},
+            'Track 2': {'Location': (46.81999, -95.84587), 'Span': [(46.81986, -95.84557), (46.82013, -95.84617)]},
+        },
+    },
+    "Diversey": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.93250, -87.65319), 'Span': [(41.93192, -87.65318), (41.93308, -87.65321)]},
+            'Track 2': {'Location': (41.93250, -87.65306), 'Span': [(41.93192, -87.65304), (41.93308, -87.65308)]},
+        },
+    },
+    "Division": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.90378, -87.66768), 'Span': [(41.90329, -87.66650), (41.90427, -87.66886)]},
+            'Track 2': {'Location': (41.90383, -87.66765), 'Span': [(41.90334, -87.66647), (41.90432, -87.66883)]},
+        },
+    },
+    "Dowagiac": {
+        'Region': ['Dowagiac', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.98079, -86.10886), 'Span': [(41.98059, -86.10905), (41.98098, -86.10867)]},
+            'Track 2': {'Location': (41.98076, -86.10881), 'Span': [(41.98057, -86.10900), (41.98096, -86.10862)]},
         },
     },
     "Downtown Anoka": {
@@ -626,11 +1234,75 @@ Stations = {
             'Track 2': {'Location': (39.85561, -105.06218), 'Span': [(39.85525, -105.06124), (39.85596, -105.06313)]},
         },
     },
+    "Drexmore": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48275, -81.58844), 'Span': [(41.48240, -81.58836), (41.48312, -81.58843)]},
+            'Track 2': {'Location': (41.48184, -81.58792), 'Span': [(41.48154, -81.58758), (41.48217, -81.58819)]},
+        },
+    },
     "Dry Creek": {
         'Region': ['Centennial', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.57885, -104.87665), 'Span': [(39.57829, -104.87620), (39.57941, -104.87710)]},
             'Track 2': {'Location': (39.57889, -104.87656), 'Span': [(39.57833, -104.87611), (39.57945, -104.87701)]},
+        },
+    },
+    "Du Quoin": {
+        'Region': ['Du Quoin', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.01228, -89.23994), 'Span': [(38.01208, -89.23993), (38.01249, -89.23995)]},
+            'Track 2': {'Location': (38.01229, -89.23988), 'Span': [(38.01208, -89.23987), (38.01249, -89.23989)]},
+        },
+    },
+    "Duluth Union Depot": {
+        'Region': ['Superior', 'Wisconsin', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (46.78032, -92.10447), 'Span': [(46.77930, -92.10573), (46.78133, -92.10321)]},
+        },
+    },
+    "Dwight": {'Location': (41.09021, -88.43083), 'Region': ['Dwight', 'Illinois', 'USA'], 'Span': [(41.09070, -88.43021), (41.08972, -88.43144)]},
+    "Dyer": {'Location': (41.51565, -87.51805), 'Region': ['Dyer', 'Indiana', 'USA'], 'Span': [(41.51639, -87.51805), (41.51490, -87.51805)]},
+    "East 105th-Quincy": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.49386, -81.61558), 'Span': [(41.49356, -81.61616), (41.49417, -81.61499)]},
+            'Track 2': {'Location': (41.49383, -81.61546), 'Span': [(41.49356, -81.61599), (41.49410, -81.61493)]},
+        },
+    },
+    "East 116th-St. Luke's": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48405, -81.60346), 'Span': [(41.48405, -81.60303), (41.48406, -81.60390)]},
+            'Track 2': {'Location': (41.48410, -81.60346), 'Span': [(41.48409, -81.60303), (41.48410, -81.60390)]},
+        },
+    },
+    "East 55th": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48060, -81.65154), 'Span': [(41.48038, -81.65263), (41.48078, -81.65044)]},
+            'Track 2': {'Location': (41.48052, -81.65151), 'Span': [(41.48032, -81.65261), (41.48066, -81.65040)]},
+        },
+    },
+    "East 79th": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48589, -81.63402), 'Span': [(41.48585, -81.63440), (41.48592, -81.63363)]},
+            'Track 2': {'Location': (41.48583, -81.63401), 'Span': [(41.48579, -81.63439), (41.48586, -81.63362)]},
+        },
+    },
+    "East 79th [sdw37t]": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48065, -81.63347), 'Span': [(41.48060, -81.63391), (41.48072, -81.63304)]},
+            'Track 2': {'Location': (41.48061, -81.63347), 'Span': [(41.48056, -81.63390), (41.48068, -81.63303)]},
+        },
+    },
+    "East 9th-North Coast": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.50638, -81.69438), 'Span': [(41.50617, -81.69483), (41.50658, -81.69393)]},
+            'Track 2': {'Location': (41.50641, -81.69422), 'Span': [(41.50626, -81.69454), (41.50655, -81.69390)]},
         },
     },
     "East Bank": {
@@ -654,12 +1326,35 @@ Stations = {
             'Track 2': {'Location': (39.92287, -104.96208), 'Span': [(39.92330, -104.96232), (39.92245, -104.96184)]},
         },
     },
+    "Eaton": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47848, -81.55049), 'Span': [(41.47848, -81.55001), (41.47848, -81.55097)]},
+            'Track 2': {'Location': (41.47852, -81.54919), 'Span': [(41.47852, -81.54873), (41.47852, -81.54965)]},
+        },
+    },
     "Eau Claire": {'Location': (44.81694, -91.49658), 'Region': ['Eau Claire', 'Wisconsin', 'USA'], 'Span': [(44.81695, -91.49579), (44.81694, -91.49738)]},
+    "Effingham": {'Location': (39.11755, -88.54719), 'Region': ['Effingham', 'Illinois', 'USA'], 'Span': [(39.11655, -88.54765), (39.11855, -88.54673)]},
     "Elk River": {
         'Region': ['Elk River', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.28263, -93.54225), 'Span': [(45.28219, -93.54174), (45.28308, -93.54276)]},
             'Track 2': {'Location': (45.28260, -93.54231), 'Span': [(45.28305, -93.54282), (45.28215, -93.54180)]},
+        },
+    },
+    "Elkhart": {'Location': (41.67974, -85.97309), 'Region': ['Elkhart', 'Indiana', 'USA'], 'Span': [(41.67905, -85.97483), (41.68045, -85.97135)]},
+    "Elyria": {
+        'Region': ['Elyria', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.37017, -82.09669), 'Span': [(41.37036, -82.09581), (41.36999, -82.09756)]},
+            'Track 2': {'Location': (41.37022, -82.09670), 'Span': [(41.37040, -82.09582), (41.37003, -82.09758)]},
+        },
+    },
+    "Elyria [f2wy6f]": {
+        'Region': ['Elyria', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.36885, -82.10325), 'Span': [(41.36868, -82.10412), (41.36903, -82.10238)]},
+            'Track 2': {'Location': (41.36882, -82.10323), 'Span': [(41.36865, -82.10410), (41.36900, -82.10237)]},
         },
     },
     "Emerson-Fremont": {
@@ -690,11 +1385,37 @@ Stations = {
             'Track 2': {'Location': (39.67770, -104.99281), 'Span': [(39.67722, -104.99294), (39.67818, -104.99269)]},
         },
     },
+    "Evanston Davis St": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.04779, -87.68471), 'Span': [(42.04719, -87.68429), (42.04839, -87.68513)]},
+            'Track 2': {'Location': (42.04775, -87.68463), 'Span': [(42.04716, -87.68421), (42.04835, -87.68505)]},
+            'Track 3': {'Location': (42.04788, -87.68373), 'Label': 'Davis', 'Span': [(42.04743, -87.68375), (42.04834, -87.68372)]},
+            'Track 4': {'Location': (42.04789, -87.68368), 'Label': 'Davis', 'Span': [(42.04743, -87.68369), (42.04834, -87.68367)]},
+        },
+    },
+    "Evanston Main St": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.03336, -87.68011), 'Span': [(42.03286, -87.68000), (42.03386, -87.68023)]},
+            'Track 2': {'Location': (42.03336, -87.68006), 'Span': [(42.03287, -87.67995), (42.03386, -87.68018)]},
+            'Track 3': {'Location': (42.03331, -87.67970), 'Label': 'Main', 'Span': [(42.03287, -87.67960), (42.03374, -87.67983)]},
+            'Track 4': {'Location': (42.03308, -87.67960), 'Label': 'Main', 'Span': [(42.03264, -87.67949), (42.03352, -87.67970)]},
+        },
+    },
     "Fairview Ave": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.95643, -93.17874), 'Span': [(44.95625, -93.17829), (44.95661, -93.17919)]},
             'Track 2': {'Location': (44.95640, -93.17876), 'Span': [(44.95658, -93.17921), (44.95622, -93.17831)]},
+        },
+    },
+    "Fargo": {'Location': (46.88119, -96.78620), 'Region': ['Fargo', 'North Dakota', 'USA'], 'Span': [(46.88119, -96.78485), (46.88118, -96.78755)]},
+    "Farnsleigh": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46663, -81.53972), 'Span': [(41.46660, -81.53931), (41.46663, -81.54013)]},
+            'Track 2': {'Location': (41.46659, -81.53972), 'Span': [(41.46659, -81.54013), (41.46656, -81.53932)]},
         },
     },
     "Federal Center": {
@@ -705,6 +1426,14 @@ Stations = {
             'Track 3': {'Location': (39.71993, -105.12895), 'Span': [(39.71993, -105.12831), (39.71993, -105.12958)]},
         },
     },
+    "Ferry Street": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.36123, -83.06738), 'Span': [(42.36113, -83.06731), (42.36134, -83.06744)]},
+            'Track 2': {'Location': (42.36086, -83.06686), 'Span': [(42.36073, -83.06677), (42.36098, -83.06694)]},
+        },
+    },
+    "Financial District": {'Location': (42.32869, -83.04668), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.32862, -83.04687), (42.32877, -83.04650)]},
     "Findlay Market-Elm": {'Location': (39.11490, -84.51977), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11499, -84.51979), (39.11481, -84.51975)]},
     "Findlay Market-Race": {'Location': (39.11573, -84.51838), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11582, -84.51840), (39.11564, -84.51835)]},
     "Fitzsimons": {
@@ -721,6 +1450,13 @@ Stations = {
             'Track 2': {'Location': (39.93436, -105.12183), 'Span': [(39.93418, -105.12157), (39.93454, -105.12209)]},
         },
     },
+    "Flats East Bank": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.49945, -81.70360), 'Span': [(41.49914, -81.70332), (41.49977, -81.70388)]},
+            'Track 2': {'Location': (41.49947, -81.70356), 'Span': [(41.49916, -81.70328), (41.49979, -81.70384)]},
+        },
+    },
     "Florida": {
         'Region': ['Aurora', 'Colorado', 'USA'],
         'Platforms': {
@@ -731,11 +1467,18 @@ Stations = {
     "Foley Blvd": {
         'Region': ['Coon Rapids', 'Minnesota', 'USA'],
         'Platforms': {
-            'Track 1': {'Location': (45.14755, -93.29160), 'Span': [(45.14806, -93.29184), (45.14704, -93.29135)]},
-            'Track 2': {'Location': (45.14754, -93.29166), 'Span': [(45.14805, -93.29190), (45.14703, -93.29141)]},
+            'Track 1': {'Location': (45.14055, -93.28825), 'Span': [(45.14107, -93.28849), (45.14004, -93.28800)]},
+            'Track 2': {'Location': (45.14055, -93.28830), 'Span': [(45.14106, -93.28854), (45.14003, -93.28806)]},
         },
     },
     "Fond du Lac": {'Location': (43.78731, -88.45617), 'Region': ['Fond du Lac', 'Wisconsin', 'USA'], 'Span': [(43.78664, -88.45618), (43.78799, -88.45616)]},
+    "Forest Park": {
+        'Region': ['Forest Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87422, -87.81676), 'Span': [(41.87416, -87.81598), (41.87429, -87.81754)]},
+            'Track 2': {'Location': (41.87432, -87.81675), 'Span': [(41.87425, -87.81597), (41.87439, -87.81752)]},
+        },
+    },
     "Fort Collins": {
         'Region': ['Fort Collins', 'Colorado', 'USA'],
         'Platforms': {
@@ -750,8 +1493,24 @@ Stations = {
             'Track 2': {'Location': (44.89327, -93.19813), 'Span': [(44.89363, -93.19799), (44.89292, -93.19827)]},
         },
     },
+    "Fort Wayne": {'Location': (41.07161, -85.14119), 'Region': ['Fort Wayne', 'Indiana', 'USA'], 'Span': [(41.07162, -85.14000), (41.07160, -85.14239)]},
+    "Fort/Cass": {'Location': (42.32955, -83.05108), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.32964, -83.05116), (42.32945, -83.05101)]},
+    "Foster": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.05419, -87.68372), 'Span': [(42.05377, -87.68372), (42.05462, -87.68371)]},
+            'Track 2': {'Location': (42.05420, -87.68363), 'Span': [(42.05377, -87.68364), (42.05462, -87.68362)]},
+        },
+    },
     "Fountain": {'Location': (38.68466, -104.70375), 'Region': ['Fountain', 'Colorado', 'USA'], 'Span': [(38.68407, -104.70369), (38.68524, -104.70381)]},
     "Fountain Square": {'Location': (39.10100, -84.51131), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10109, -84.51134), (39.10091, -84.51129)]},
+    "Francisco": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96619, -87.70243), 'Span': [(41.96618, -87.70321), (41.96619, -87.70164)]},
+            'Track 2': {'Location': (41.96612, -87.70243), 'Span': [(41.96612, -87.70321), (41.96613, -87.70164)]},
+        },
+    },
     "Franklin Ave": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
@@ -760,7 +1519,36 @@ Stations = {
         },
     },
     "Fraser-Winter Park": {'Location': (39.94843, -105.81797), 'Region': ['Fraser', 'Colorado', 'USA'], 'Span': [(39.94674, -105.81740), (39.95012, -105.81855)]},
-    "Fridley": {'Location': (45.07888, -93.27092), 'Region': ['Fridley', 'Minnesota', 'USA'], 'Span': [(45.07830, -93.27097), (45.07946, -93.27088)]},
+    "Fridley": {
+        'Region': ['Fridley', 'Minnesota', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (45.07888, -93.27092), 'Span': [(45.07830, -93.27097), (45.07946, -93.27088)]},
+            'Track 2': {'Location': (45.07888, -93.27086), 'Span': [(45.07946, -93.27080), (45.07830, -93.27090)]},
+        },
+    },
+    "Fullerton": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.92510, -87.65295), 'Span': [(41.92450, -87.65292), (41.92570, -87.65296)]},
+            'Track 2': {'Location': (41.92510, -87.65283), 'Span': [(41.92450, -87.65281), (41.92570, -87.65285)]},
+            'Track 3': {'Location': (41.92510, -87.65279), 'Span': [(41.92450, -87.65277), (41.92570, -87.65281)]},
+            'Track 4': {'Location': (41.92510, -87.65268), 'Span': [(41.92450, -87.65266), (41.92570, -87.65270)]},
+        },
+    },
+    "Garfield": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.79544, -87.61838), 'Span': [(41.79485, -87.61836), (41.79603, -87.61839)]},
+            'Track 2': {'Location': (41.79544, -87.61833), 'Span': [(41.79485, -87.61832), (41.79603, -87.61835)]},
+        },
+    },
+    "Garfield [p3x42y]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.79574, -87.63125), 'Span': [(41.79516, -87.63124), (41.79633, -87.63126)]},
+            'Track 2': {'Location': (41.79574, -87.63117), 'Span': [(41.79516, -87.63114), (41.79633, -87.63119)]},
+        },
+    },
     "Garrison": {
         'Region': ['Lakewood', 'Colorado', 'USA'],
         'Platforms': {
@@ -769,6 +1557,13 @@ Stations = {
         },
     },
     "Germantown": {'Location': (43.22579, -88.10459), 'Region': ['Germantown', 'Wisconsin', 'USA'], 'Span': [(43.22552, -88.10391), (43.22605, -88.10527)]},
+    "Gilman": {
+        'Region': ['Gilman', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.75262, -87.99788), 'Span': [(40.75238, -87.99794), (40.75286, -87.99783)]},
+            'Track 2': {'Location': (40.75261, -87.99783), 'Span': [(40.75237, -87.99789), (40.75285, -87.99778)]},
+        },
+    },
     "Glenview": {
         'Region': ['Glenview', 'Illinois', 'USA'],
         'Platforms': {
@@ -791,7 +1586,75 @@ Stations = {
         },
     },
     "Granby": {'Location': (40.08407, -105.93583), 'Region': ['Granby', 'Colorado', 'USA'], 'Span': [(40.08386, -105.93389), (40.08428, -105.93777)]},
+    "Grand": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.89169, -87.62810), 'Span': [(41.89127, -87.62808), (41.89211, -87.62811)]},
+            'Track 2': {'Location': (41.89169, -87.62805), 'Span': [(41.89127, -87.62804), (41.89211, -87.62806)]},
+        },
+    },
+    "Grand Boulevard": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.37060, -83.07357), 'Span': [(42.37051, -83.07352), (42.37069, -83.07363)]},
+            'Track 2': {'Location': (42.37063, -83.07350), 'Span': [(42.37054, -83.07344), (42.37071, -83.07356)]},
+        },
+    },
+    "Grand Circus Park": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.33636, -83.05054), 'Span': [(42.33623, -83.05046), (42.33648, -83.05062)]},
+            'Track 2': {'Location': (42.33630, -83.05030), 'Span': [(42.33619, -83.05023), (42.33641, -83.05036)]},
+        },
+    },
+    "Grand Circus Park [9qvqfz]": {'Location': (42.33583, -83.05054), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33586, -83.05040), (42.33580, -83.05069)]},
+    "Grand Forks": {'Location': (47.91681, -97.11058), 'Region': ['Grand Forks', 'North Dakota', 'USA'], 'Span': [(47.91797, -97.11214), (47.91531, -97.10994)]},
+    "Grand Forks Downtown": {'Location': (47.92232, -97.03266), 'Region': ['Grand Forks', 'North Dakota', 'USA'], 'Span': [(47.92276, -97.03165), (47.92190, -97.03369)]},
+    "Grand [x6wwpd]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.89144, -87.64807), 'Span': [(41.89103, -87.64743), (41.89185, -87.64870)]},
+            'Track 2': {'Location': (41.89149, -87.64799), 'Span': [(41.89109, -87.64735), (41.89190, -87.64864)]},
+        },
+    },
+    "Granville": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.99357, -87.65921), 'Span': [(41.99299, -87.65919), (41.99416, -87.65922)]},
+            'Track 2': {'Location': (41.99357, -87.65912), 'Span': [(41.99299, -87.65910), (41.99416, -87.65914)]},
+        },
+    },
+    "Greektown": {'Location': (42.33460, -83.04246), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33470, -83.04252), (42.33449, -83.04239)]},
     "Green Bay": {'Location': (44.51680, -88.02023), 'Region': ['Green Bay', 'Wisconsin', 'USA'], 'Span': [(44.51627, -88.02057), (44.51733, -88.01989)]},
+    "Green Road": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47858, -81.51787), 'Span': [(41.47858, -81.51832), (41.47858, -81.51741)]},
+            'Track 2': {'Location': (41.47854, -81.51786), 'Span': [(41.47854, -81.51832), (41.47854, -81.51741)]},
+        },
+    },
+    "Halsted": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.84697, -87.64812), 'Span': [(41.84665, -87.64876), (41.84729, -87.64748)]},
+            'Track 2': {'Location': (41.84690, -87.64805), 'Span': [(41.84657, -87.64869), (41.84722, -87.64741)]},
+        },
+    },
+    "Halsted [m7p536]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.77906, -87.64375), 'Span': [(41.77906, -87.64453), (41.77907, -87.64298)]},
+            'Track 2': {'Location': (41.77903, -87.64375), 'Span': [(41.77902, -87.64453), (41.77903, -87.64298)]},
+        },
+    },
+    "Hamilton": {
+        'Region': ['Hamilton', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.40149, -84.55590), 'Span': [(39.40107, -84.55611), (39.40191, -84.55570)]},
+            'Track 2': {'Location': (39.40148, -84.55586), 'Span': [(39.40106, -84.55607), (39.40190, -84.55565)]},
+        },
+    },
+    "Hamilton [3uttug]": {'Location': (39.39677, -84.56431), 'Region': ['Hamilton', 'Ohio', 'USA'], 'Span': [(39.39693, -84.56485), (39.39660, -84.56377)]},
     "Hamline Ave": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
@@ -799,8 +1662,70 @@ Stations = {
             'Track 2': {'Location': (44.95569, -93.15595), 'Span': [(44.95569, -93.15647), (44.95570, -93.15543)]},
         },
     },
+    "Hammond-Whiting": {'Location': (41.69104, -87.50695), 'Region': ['Hammond', 'Indiana', 'USA'], 'Span': [(41.69174, -87.50807), (41.69034, -87.50584)]},
+    "Harlem": {
+        'Region': ['Forest Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87351, -87.80685), 'Span': [(41.87341, -87.80580), (41.87361, -87.80789)]},
+            'Track 2': {'Location': (41.87357, -87.80683), 'Span': [(41.87347, -87.80579), (41.87367, -87.80788)]},
+        },
+    },
+    "Harlem [9yurht]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.98237, -87.80847), 'Span': [(41.98236, -87.80978), (41.98238, -87.80715)]},
+            'Track 2': {'Location': (41.98230, -87.80846), 'Span': [(41.98228, -87.80978), (41.98231, -87.80715)]},
+        },
+    },
+    "Harlem/Lake": {
+        'Region': ['Oak Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88690, -87.80410), 'Span': [(41.88689, -87.80509), (41.88692, -87.80311)]},
+            'Track 2': {'Location': (41.88683, -87.80410), 'Span': [(41.88683, -87.80509), (41.88685, -87.80311)]},
+        },
+    },
+    "Harold Washington Library-State/Van Buren": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87692, -87.62896), 'Span': [(41.87691, -87.62979), (41.87693, -87.62813)]},
+            'Track 2': {'Location': (41.87689, -87.62896), 'Span': [(41.87688, -87.62979), (41.87690, -87.62813)]},
+        },
+    },
+    "Harrison": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87316, -87.62761), 'Span': [(41.87238, -87.62760), (41.87394, -87.62763)]},
+            'Track 2': {'Location': (41.87316, -87.62752), 'Span': [(41.87238, -87.62751), (41.87394, -87.62755)]},
+        },
+    },
     "Hayden": {'Location': (40.49701, -107.25649), 'Region': ['Hayden', 'Colorado', 'USA'], 'Span': [(40.49681, -107.25806), (40.49722, -107.25491)]},
+    "Hermann": {
+        'Region': ['Hermann', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.70740, -91.43260), 'Span': [(38.70734, -91.43209), (38.70746, -91.43312)]},
+            'Track 2': {'Location': (38.70744, -91.43260), 'Span': [(38.70738, -91.43208), (38.70750, -91.43311)]},
+        },
+    },
+    "Hinckley": {'Location': (46.01467, -92.93903), 'Region': ['Hinckley', 'Minnesota', 'USA'], 'Span': [(46.01408, -92.93950), (46.01526, -92.93856)]},
+    "Homewood": {
+        'Region': ['Homewood', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.56363, -87.66751), 'Span': [(41.56221, -87.66827), (41.56506, -87.66675)]},
+            'Track 2': {'Location': (41.56361, -87.66742), 'Span': [(41.56218, -87.66818), (41.56504, -87.66667)]},
+            'Track 3': {'Location': (41.56317, -87.66793), 'Span': [(41.56243, -87.66833), (41.56391, -87.66752)]},
+            'Track 4': {'Location': (41.56314, -87.66783), 'Span': [(41.56240, -87.66823), (41.56388, -87.66743)]},
+        },
+    },
     "Hot Sulphur Springs": {'Location': (40.07573, -106.10910), 'Region': ['Hot Sulphur Springs', 'Colorado', 'USA'], 'Span': [(40.07517, -106.10978), (40.07629, -106.10842)]},
+    "Howard": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.01908, -87.67310), 'Span': [(42.01857, -87.67249), (42.01959, -87.67371)]},
+            'Track 2': {'Location': (42.01914, -87.67305), 'Span': [(42.01862, -87.67243), (42.01966, -87.67368)]},
+            'Track 3': {'Location': (42.01917, -87.67302), 'Span': [(42.01864, -87.67239), (42.01969, -87.67365)]},
+            'Track 4': {'Location': (42.01921, -87.67296), 'Span': [(42.01868, -87.67233), (42.01973, -87.67359)]},
+        },
+    },
     "Hudson": {
         'Region': ['Hudson', 'Wisconsin', 'USA'],
         'Platforms': {
@@ -808,6 +1733,7 @@ Stations = {
             'Track 2': {'Location': (44.98656, -92.75600), 'Span': [(44.98646, -92.75525), (44.98661, -92.75676)]},
         },
     },
+    "Huntington Place": {'Location': (42.32813, -83.04988), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.32823, -83.04995), (42.32803, -83.04980)]},
     "I-25 & Broadway": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
@@ -825,12 +1751,186 @@ Stations = {
             'Track 2': {'Location': (39.67337, -104.82695), 'Span': [(39.67291, -104.82734), (39.67383, -104.82656)]},
         },
     },
+    "Illinois Medical District": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87570, -87.67316), 'Span': [(41.87568, -87.67426), (41.87572, -87.67205)]},
+            'Track 2': {'Location': (41.87563, -87.67315), 'Span': [(41.87562, -87.67425), (41.87565, -87.67205)]},
+        },
+    },
+    "Independence": {
+        'Region': ['Independence', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.08672, -94.42981), 'Span': [(39.08656, -94.42933), (39.08688, -94.43029)]},
+            'Track 2': {'Location': (39.08675, -94.42979), 'Span': [(39.08659, -94.42931), (39.08691, -94.43027)]},
+        },
+    },
+    "Indiana": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.82184, -87.62197), 'Span': [(41.82183, -87.62275), (41.82185, -87.62119)]},
+            'Track 2': {'Location': (41.82180, -87.62197), 'Span': [(41.82179, -87.62275), (41.82181, -87.62119)]},
+        },
+    },
+    "Indianapolis Union Station": {
+        'Major': True, 'Region': ['Indianapolis', 'Indiana', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.76228, -86.16015), 'Span': [(39.76224, -86.15853), (39.76232, -86.16177)]},
+            'Track 2': {'Location': (39.76235, -86.16014), 'Span': [(39.76232, -86.15853), (39.76239, -86.16176)]},
+        },
+    },
+    "Irving Park": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.95411, -87.67497), 'Span': [(41.95353, -87.67495), (41.95469, -87.67498)]},
+            'Track 2': {'Location': (41.95411, -87.67492), 'Span': [(41.95353, -87.67490), (41.95469, -87.67494)]},
+        },
+    },
+    "Irving Park [c5c56s]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.95280, -87.72898), 'Span': [(41.95235, -87.72819), (41.95325, -87.72978)]},
+            'Track 2': {'Location': (41.95285, -87.72894), 'Span': [(41.95239, -87.72814), (41.95330, -87.72973)]},
+        },
+    },
+    "Jackson": {
+        'Region': ['Jackson', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.24766, -84.39932), 'Span': [(42.24739, -84.39834), (42.24793, -84.40030)]},
+            'Track 2': {'Location': (42.24774, -84.39948), 'Span': [(42.24748, -84.39853), (42.24801, -84.40043)]},
+        },
+    },
+    "Jackson [6s7rw2]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87823, -87.62773), 'Span': [(41.87728, -87.62771), (41.87917, -87.62776)]},
+            'Track 2': {'Location': (41.87823, -87.62765), 'Span': [(41.87729, -87.62762), (41.87917, -87.62767)]},
+        },
+    },
+    "Jackson [95u38p]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87819, -87.62934), 'Span': [(41.87724, -87.62930), (41.87913, -87.62936)]},
+            'Track 2': {'Location': (41.87819, -87.62926), 'Span': [(41.87724, -87.62924), (41.87913, -87.62929)]},
+        },
+    },
+    "Jarvis": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.01576, -87.66905), 'Span': [(42.01533, -87.66853), (42.01620, -87.66957)]},
+            'Track 2': {'Location': (42.01581, -87.66899), 'Span': [(42.01537, -87.66847), (42.01624, -87.66951)]},
+        },
+    },
+    "Jefferson City": {
+        'Region': ['Jefferson City', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.57732, -92.16706), 'Span': [(38.57698, -92.16630), (38.57771, -92.16777)]},
+            'Track 2': {'Location': (38.57739, -92.16700), 'Span': [(38.57704, -92.16626), (38.57776, -92.16773)]},
+        },
+    },
     "Jefferson County Government Center": {
         'Region': ['Golden', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.72653, -105.20134), 'Span': [(39.72627, -105.20078), (39.72680, -105.20189)]},
             'Track 2': {'Location': (39.72650, -105.20136), 'Span': [(39.72623, -105.20081), (39.72677, -105.20192)]},
             'Track 3': {'Location': (39.72644, -105.20141), 'Span': [(39.72618, -105.20085), (39.72671, -105.20198)]},
+        },
+    },
+    "Jefferson Park": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.97094, -87.76259), 'Span': [(41.97047, -87.76176), (41.97142, -87.76341)]},
+            'Track 2': {'Location': (41.97100, -87.76253), 'Span': [(41.97053, -87.76171), (41.97147, -87.76336)]},
+            'Track 3': {'Location': (41.97106, -87.76255), 'Span': [(41.97056, -87.76168), (41.97155, -87.76342)]},
+            'Track 4': {'Location': (41.97062, -87.76092), 'Span': [(41.97031, -87.76023), (41.97089, -87.76164)]},
+            'Track 5': {'Location': (41.97070, -87.76086), 'Span': [(41.97038, -87.76017), (41.97096, -87.76159)]},
+        },
+    },
+    "Joliet": {
+        'Region': ['Joliet', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.52552, -88.07906), 'Span': [(41.52458, -88.07918), (41.52646, -88.07895)]},
+            'Track 2': {'Location': (41.52551, -88.07896), 'Span': [(41.52457, -88.07908), (41.52645, -88.07885)]},
+        },
+    },
+    "Kalamazoo": {
+        'Region': ['Kalamazoo', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.29565, -85.58410), 'Span': [(42.29564, -85.58471), (42.29566, -85.58348)]},
+            'Track 2': {'Location': (42.29560, -85.58409), 'Span': [(42.29559, -85.58471), (42.29561, -85.58348)]},
+        },
+    },
+    "Kankakee": {'Location': (41.11892, -87.86605), 'Region': ['Kankakee', 'Illinois', 'USA'], 'Span': [(41.11980, -87.86588), (41.11803, -87.86622)]},
+    "Kansas City Union Station": {
+        'Major': True, 'Region': ['Kansas City', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.08624, -94.58555), 'Span': [(39.08564, -94.58791), (39.08685, -94.58319)]},
+            'Track 2': {'Location': (39.08633, -94.58558), 'Span': [(39.08571, -94.58793), (39.08691, -94.58321)]},
+            'Track 3': {'Location': (39.08631, -94.58600), 'Span': [(39.08671, -94.58445), (39.08590, -94.58755)]},
+        },
+    },
+    "Kedzie": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.80440, -87.70435), 'Span': [(41.80439, -87.70512), (41.80441, -87.70358)]},
+            'Track 2': {'Location': (41.80431, -87.70435), 'Span': [(41.80430, -87.70512), (41.80432, -87.70357)]},
+        },
+    },
+    "Kedzie [3hw7gb]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96613, -87.70977), 'Span': [(41.96612, -87.71058), (41.96614, -87.70896)]},
+            'Track 2': {'Location': (41.96606, -87.70977), 'Span': [(41.96605, -87.71058), (41.96607, -87.70896)]},
+        },
+    },
+    "Kedzie [789nuy]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85420, -87.70561), 'Span': [(41.85419, -87.70642), (41.85421, -87.70481)]},
+            'Track 2': {'Location': (41.85411, -87.70561), 'Span': [(41.85409, -87.70642), (41.85412, -87.70480)]},
+        },
+    },
+    "Kedzie [8n2f66]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88433, -87.70621), 'Span': [(41.88428, -87.70543), (41.88437, -87.70700)]},
+            'Track 2': {'Location': (41.88439, -87.70620), 'Span': [(41.88435, -87.70542), (41.88444, -87.70699)]},
+        },
+    },
+    "Kedzie-Homan": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87418, -87.70838), 'Span': [(41.87414, -87.70947), (41.87428, -87.70729)]},
+            'Track 2': {'Location': (41.87412, -87.70837), 'Span': [(41.87408, -87.70947), (41.87423, -87.70728)]},
+        },
+    },
+    "Kenmore": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46662, -81.55275), 'Span': [(41.46662, -81.55319), (41.46662, -81.55231)]},
+            'Track 2': {'Location': (41.46658, -81.55406), 'Span': [(41.46658, -81.55449), (41.46658, -81.55362)]},
+        },
+    },
+    "Kenton": {'Location': (40.64470, -83.61272), 'Region': ['Kenton', 'Ohio', 'USA'], 'Span': [(40.64472, -83.61332), (40.64468, -83.61213)]},
+    "Kimball": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96758, -87.71319), 'Span': [(41.96699, -87.71318), (41.96816, -87.71321)]},
+            'Track 2': {'Location': (41.96758, -87.71311), 'Span': [(41.96699, -87.71309), (41.96816, -87.71313)]},
+        },
+    },
+    "King Dr": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.78027, -87.61568), 'Span': [(41.78026, -87.61649), (41.78029, -87.61486)]},
+            'Track 2': {'Location': (41.78021, -87.61567), 'Span': [(41.78020, -87.61649), (41.78023, -87.61486)]},
+        },
+    },
+    "Kirkwood": {
+        'Region': ['Kirkwood', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.58082, -90.40730), 'Span': [(38.58073, -90.40811), (38.58083, -90.40649)]},
+            'Track 2': {'Location': (38.58075, -90.40730), 'Span': [(38.58066, -90.40810), (38.58076, -90.40650)]},
         },
     },
     "Knox": {
@@ -840,12 +1940,48 @@ Stations = {
             'Track 2': {'Location': (39.73564, -105.03286), 'Span': [(39.73564, -105.03242), (39.73564, -105.03330)]},
         },
     },
+    "Kostner": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85379, -87.73330), 'Span': [(41.85378, -87.73421), (41.85381, -87.73239)]},
+            'Track 2': {'Location': (41.85372, -87.73330), 'Span': [(41.85371, -87.73421), (41.85374, -87.73239)]},
+        },
+    },
     "Kremmling": {'Location': (40.05456, -106.39209), 'Region': ['Kremmling', 'Colorado', 'USA'], 'Span': [(40.05415, -106.39132), (40.05497, -106.39287)]},
     "La Crosse": {
         'Region': ['La Crosse', 'Wisconsin', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (43.83366, -91.24710), 'Span': [(43.83278, -91.24844), (43.83454, -91.24575)]},
             'Track 2': {'Location': (43.83363, -91.24705), 'Span': [(43.83275, -91.24840), (43.83451, -91.24571)]},
+        },
+    },
+    "La Porte": {
+        'Region': ['La Porte', 'Indiana', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.61310, -86.72364), 'Span': [(41.61271, -86.72437), (41.61348, -86.72290)]},
+            'Track 2': {'Location': (41.61307, -86.72361), 'Span': [(41.61268, -86.72435), (41.61345, -86.72287)]},
+        },
+    },
+    "LaSalle": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87564, -87.63209), 'Span': [(41.87563, -87.63294), (41.87565, -87.63124)]},
+            'Track 2': {'Location': (41.87557, -87.63209), 'Span': [(41.87557, -87.63294), (41.87558, -87.63124)]},
+        },
+    },
+    "LaSalle/Van Buren": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87689, -87.63143), 'Span': [(41.87689, -87.63220), (41.87690, -87.63066)]},
+            'Track 2': {'Location': (41.87686, -87.63141), 'Span': [(41.87685, -87.63216), (41.87687, -87.63066)]},
+        },
+    },
+    "Lafayette": {'Location': (40.41971, -86.89627), 'Region': ['Lafayette', 'Indiana', 'USA'], 'Span': [(40.42045, -86.89587), (40.41896, -86.89662)]},
+    "Lake": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88453, -87.62794), 'Span': [(41.88358, -87.62792), (41.88547, -87.62797)]},
+            'Track 2': {'Location': (41.88453, -87.62785), 'Span': [(41.88358, -87.62783), (41.88547, -87.62789)]},
         },
     },
     "Lake St/Midtown": {
@@ -869,6 +2005,35 @@ Stations = {
             'Track 2': {'Location': (39.73671, -105.06640), 'Span': [(39.73671, -105.06692), (39.73672, -105.06589)]},
         },
     },
+    "Laramie": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88712, -87.75462), 'Span': [(41.88708, -87.75378), (41.88718, -87.75545)]},
+            'Track 2': {'Location': (41.88719, -87.75461), 'Span': [(41.88714, -87.75377), (41.88724, -87.75544)]},
+        },
+    },
+    "Lawrence": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96936, -87.65851), 'Span': [(41.96858, -87.65850), (41.97013, -87.65853)]},
+            'Track 2': {'Location': (41.96936, -87.65841), 'Span': [(41.96858, -87.65839), (41.97013, -87.65843)]},
+        },
+    },
+    "Lee's Summit": {'Location': (38.91273, -94.37828), 'Region': ["Lee's Summit", 'Missouri', 'USA'], 'Span': [(38.91309, -94.37853), (38.91236, -94.37803)]},
+    "Lee-Shaker": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48075, -81.56444), 'Span': [(41.48069, -81.56401), (41.48080, -81.56487)]},
+            'Track 2': {'Location': (41.48095, -81.56571), 'Span': [(41.48089, -81.56528), (41.48100, -81.56615)]},
+        },
+    },
+    "Lee-Van Aken": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46661, -81.56564), 'Span': [(41.46661, -81.56609), (41.46661, -81.56518)]},
+            'Track 2': {'Location': (41.46656, -81.56564), 'Span': [(41.46656, -81.56609), (41.46656, -81.56518)]},
+        },
+    },
     "Lexington Pkwy": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
@@ -878,6 +2043,7 @@ Stations = {
     },
     "Liberty & Elm": {'Location': (39.11278, -84.51923), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11269, -84.51921), (39.11287, -84.51926)]},
     "Liberty & Race": {'Location': (39.11269, -84.51753), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.11278, -84.51755), (39.11260, -84.51751)]},
+    "Lima": {'Location': (40.74493, -84.10236), 'Region': ['Lima', 'Ohio', 'USA'], 'Span': [(40.74493, -84.10307), (40.74494, -84.10164)]},
     "Lincoln": {
         'Region': ['Lone Tree', 'Colorado', 'USA'],
         'Platforms': {
@@ -892,6 +2058,22 @@ Stations = {
             'Track 2': {'Location': (39.73112, -105.00804), 'Span': [(39.73067, -105.00804), (39.73157, -105.00804)]},
         },
     },
+    "Lincoln [3jbkdb]": {'Location': (40.14818, -89.36342), 'Region': ['Lincoln', 'Illinois', 'USA'], 'Span': [(40.14847, -89.36309), (40.14789, -89.36375)]},
+    "Linden": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.07277, -87.69058), 'Span': [(42.07227, -87.69031), (42.07326, -87.69085)]},
+            'Track 2': {'Location': (42.07279, -87.69049), 'Span': [(42.07230, -87.69022), (42.07329, -87.69076)]},
+        },
+    },
+    "Little Falls": {'Location': (45.97877, -94.36975), 'Region': ['Little Falls', 'Minnesota', 'USA'], 'Span': [(45.97796, -94.36972), (45.97958, -94.36979)]},
+    "Little Italy-University Circle": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.50923, -81.60054), 'Span': [(41.50874, -81.60052), (41.50972, -81.60055)]},
+            'Track 2': {'Location': (41.50923, -81.60044), 'Span': [(41.50874, -81.60043), (41.50972, -81.60045)]},
+        },
+    },
     "Littleton-Downtown": {
         'Region': ['Littleton', 'Colorado', 'USA'],
         'Platforms': {
@@ -904,6 +2086,13 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (39.58022, -105.02501), 'Span': [(39.57978, -105.02523), (39.58067, -105.02479)]},
             'Track 2': {'Location': (39.58021, -105.02496), 'Span': [(39.57977, -105.02519), (39.58066, -105.02474)]},
+        },
+    },
+    "Logan": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.93016, -87.70924), 'Span': [(41.92941, -87.70798), (41.93092, -87.71049)]},
+            'Track 2': {'Location': (41.93021, -87.70919), 'Span': [(41.92945, -87.70794), (41.93096, -87.71043)]},
         },
     },
     "Lone Tree City Center": {
@@ -949,6 +2138,13 @@ Stations = {
             'Track 2': {'Location': (45.01303, -93.31854), 'Span': [(45.01273, -93.31826), (45.01335, -93.31879)]},
         },
     },
+    "Loyola": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.00119, -87.66117), 'Span': [(42.00002, -87.66008), (42.00212, -87.66262)]},
+            'Track 2': {'Location': (42.00123, -87.66111), 'Span': [(42.00005, -87.66001), (42.00216, -87.66258)]},
+        },
+    },
     "Lyndale Ave": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
@@ -956,7 +2152,28 @@ Stations = {
             'Track 2': {'Location': (45.00023, -93.28877), 'Span': [(45.00023, -93.28928), (45.00023, -93.28826)]},
         },
     },
+    "Lynnfield": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46662, -81.54622), 'Span': [(41.46662, -81.54665), (41.46662, -81.54578)]},
+            'Track 2': {'Location': (41.46659, -81.54622), 'Span': [(41.46659, -81.54665), (41.46659, -81.54578)]},
+        },
+    },
+    "MLK Boulevard/Mack Avenue": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.34710, -83.05783), 'Span': [(42.34701, -83.05777), (42.34719, -83.05789)]},
+            'Track 2': {'Location': (42.34720, -83.05761), 'Span': [(42.34707, -83.05753), (42.34732, -83.05770)]},
+        },
+    },
     "Madison": {'Location': (43.07194, -89.38072), 'Region': ['Madison', 'Wisconsin', 'USA'], 'Span': [(43.07111, -89.38179), (43.07278, -89.37964)]},
+    "Madison [jgy5t6]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88106, -87.67014), 'Span': [(41.88037, -87.67012), (41.88176, -87.67016)]},
+            'Track 2': {'Location': (41.88106, -87.67010), 'Span': [(41.88037, -87.67008), (41.88176, -87.67012)]},
+        },
+    },
     "Mall of America": {
         'Region': ['Bloomington', 'Minnesota', 'USA'],
         'Platforms': {
@@ -964,11 +2181,19 @@ Stations = {
             'Track 2': {'Location': (44.85695, -93.24185), 'Span': [(44.85695, -93.24139), (44.85695, -93.24232)]},
         },
     },
-    "Mall of America [2]": {
+    "Mall of America [yhfqaj]": {
         'Region': ['Bloomington', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.85412, -93.23882), 'Span': [(44.85446, -93.23882), (44.85378, -93.23883)]},
             'Track 2': {'Location': (44.85412, -93.23873), 'Span': [(44.85378, -93.23874), (44.85446, -93.23873)]},
+        },
+    },
+    "Marysville": {'Location': (40.23961, -83.36785), 'Region': ['Marysville', 'Ohio', 'USA'], 'Span': [(40.23936, -83.36736), (40.23985, -83.36835)]},
+    "Mattoon": {
+        'Region': ['Mattoon', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.48311, -88.37610), 'Span': [(39.48250, -88.37638), (39.48371, -88.37582)]},
+            'Track 2': {'Location': (39.48309, -88.37602), 'Span': [(39.48249, -88.37631), (39.48370, -88.37575)]},
         },
     },
     "McAndrews Rd": {
@@ -979,6 +2204,30 @@ Stations = {
         },
     },
     "Menomonie": {'Location': (44.91464, -91.92649), 'Region': ['Menomonie', 'Wisconsin', 'USA'], 'Span': [(44.91439, -91.92560), (44.91489, -91.92737)]},
+    "Merchandise Mart": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88877, -87.63404), 'Span': [(41.88817, -87.63404), (41.88938, -87.63405)]},
+            'Track 2': {'Location': (41.88877, -87.63399), 'Span': [(41.88817, -87.63396), (41.88938, -87.63401)]},
+        },
+    },
+    "Michigan": {'Location': (42.33135, -83.05215), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33146, -83.05218), (42.33124, -83.05212)]},
+    "Michigan Central Station": {
+        'Major': True, 'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.32748, -83.07810), 'Span': [(42.32728, -83.07723), (42.32767, -83.07897)]},
+            'Track 2': {'Location': (42.32751, -83.07808), 'Span': [(42.32731, -83.07721), (42.32771, -83.07895)]},
+        },
+    },
+    "Midway": {
+        'Airport': 'True', 'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.78671, -87.73810), 'Span': [(41.78615, -87.73808), (41.78727, -87.73811)]},
+            'Track 2': {'Location': (41.78671, -87.73805), 'Span': [(41.78615, -87.73803), (41.78727, -87.73807)]},
+            'Track 3': {'Location': (41.78671, -87.73793), 'Span': [(41.78615, -87.73791), (41.78727, -87.73794)]},
+        },
+    },
+    "Millender Center": {'Location': (42.33024, -83.04192), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33028, -83.04209), (42.33021, -83.04174)]},
     "Milwaukee Airport": {
         'Airport': 'True', 'Region': ['Milwaukee', 'Wisconsin', 'USA'],
         'Platforms': {
@@ -997,11 +2246,82 @@ Stations = {
         },
     },
     "Minneapolis Target Field": {'Location': (44.98334, -93.27723), 'Major': True, 'Region': ['Minneapolis', 'Minnesota', 'USA'], 'Span': [(44.98293, -93.27786), (44.98376, -93.27661)]},
+    "Monroe": {
+        'Region': ['Monroe', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.91806, -83.41280), 'Span': [(41.91744, -83.41314), (41.91869, -83.41245)]},
+            'Track 2': {'Location': (41.91805, -83.41275), 'Span': [(41.91742, -83.41309), (41.91867, -83.41241)]},
+        },
+    },
+    "Monroe [dc3u7j]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88075, -87.62780), 'Span': [(41.87981, -87.62778), (41.88170, -87.62782)]},
+            'Track 2': {'Location': (41.88075, -87.62771), 'Span': [(41.87981, -87.62769), (41.88170, -87.62774)]},
+        },
+    },
+    "Monroe [eapcnj]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88073, -87.62941), 'Span': [(41.87979, -87.62937), (41.88167, -87.62944)]},
+            'Track 2': {'Location': (41.88073, -87.62934), 'Span': [(41.87979, -87.62931), (41.88168, -87.62937)]},
+        },
+    },
+    "Montcalm Street": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.33909, -83.05243), 'Span': [(42.33898, -83.05235), (42.33921, -83.05251)]},
+            'Track 2': {'Location': (42.33918, -83.05220), 'Span': [(42.33907, -83.05212), (42.33930, -83.05228)]},
+        },
+    },
+    "Montrose": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96154, -87.67518), 'Span': [(41.96096, -87.67516), (41.96212, -87.67519)]},
+            'Track 2': {'Location': (41.96154, -87.67513), 'Span': [(41.96096, -87.67512), (41.96212, -87.67515)]},
+        },
+    },
+    "Montrose [x39n44]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96149, -87.74370), 'Span': [(41.96102, -87.74313), (41.96194, -87.74431)]},
+            'Track 2': {'Location': (41.96153, -87.74363), 'Span': [(41.96106, -87.74306), (41.96198, -87.74425)]},
+        },
+    },
+    "Morgan": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88562, -87.65153), 'Span': [(41.88561, -87.65230), (41.88563, -87.65075)]},
+            'Track 2': {'Location': (41.88559, -87.65153), 'Span': [(41.88557, -87.65230), (41.88560, -87.65075)]},
+        },
+    },
+    "Morse": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.00825, -87.66602), 'Span': [(42.00767, -87.66600), (42.00883, -87.66604)]},
+            'Track 2': {'Location': (42.00825, -87.66593), 'Span': [(42.00767, -87.66591), (42.00883, -87.66595)]},
+        },
+    },
+    "New Buffalo": {'Location': (41.79642, -86.74611), 'Region': ['New Buffalo', 'Michigan', 'USA'], 'Span': [(41.79628, -86.74642), (41.79656, -86.74579)]},
+    "Newark": {
+        'Region': ['Newark', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.05278, -82.40987), 'Span': [(40.05266, -82.41044), (40.05291, -82.40931)]},
+            'Track 2': {'Location': (40.05274, -82.40986), 'Span': [(40.05262, -82.41042), (40.05287, -82.40929)]},
+        },
+    },
     "Nicollet Mall": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.97860, -93.26988), 'Span': [(44.97841, -93.26943), (44.97879, -93.27033)]},
             'Track 2': {'Location': (44.97854, -93.26994), 'Span': [(44.97873, -93.27039), (44.97834, -93.26949)]},
+        },
+    },
+    "Niles": {
+        'Region': ['Niles', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.83706, -86.25244), 'Span': [(41.83675, -86.25345), (41.83739, -86.25144)]},
+            'Track 2': {'Location': (41.83700, -86.25240), 'Span': [(41.83670, -86.25342), (41.83734, -86.25141)]},
         },
     },
     "Nine Mile": {
@@ -1019,6 +2339,13 @@ Stations = {
         },
     },
     "North Thornton & Hwy 7": {'Location': (39.98737, -104.94055), 'Region': ['Thornton', 'Colorado', 'USA'], 'Span': [(39.98783, -104.94049), (39.98690, -104.94060)]},
+    "North/Clybourn": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.91060, -87.64916), 'Span': [(41.91012, -87.64849), (41.91108, -87.64984)]},
+            'Track 2': {'Location': (41.91066, -87.64910), 'Span': [(41.91019, -87.64845), (41.91112, -87.64974)]},
+        },
+    },
     "Northeast Minneapolis": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
@@ -1027,6 +2354,21 @@ Stations = {
         },
     },
     "Northglenn & 112th": {'Location': (39.90276, -104.96016), 'Region': ['Northglenn', 'Colorado', 'USA'], 'Span': [(39.90230, -104.96024), (39.90323, -104.96008)]},
+    "Noyes": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.05816, -87.68352), 'Span': [(42.05775, -87.68353), (42.05857, -87.68351)]},
+            'Track 2': {'Location': (42.05816, -87.68343), 'Span': [(42.05775, -87.68344), (42.05857, -87.68343)]},
+        },
+    },
+    "O'Hare": {
+        'Airport': 'True', 'Region': ['Rosemont', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.97861, -87.90248), 'Span': [(41.97794, -87.90328), (41.97927, -87.90167)]},
+            'Track 2': {'Location': (41.97858, -87.90235), 'Span': [(41.97794, -87.90310), (41.97922, -87.90160)]},
+            'Track 3': {'Location': (41.97849, -87.90230), 'Span': [(41.97781, -87.90309), (41.97917, -87.90151)]},
+        },
+    },
     "Oak": {
         'Region': ['Lakewood', 'Colorado', 'USA'],
         'Platforms': {
@@ -1042,6 +2384,27 @@ Stations = {
             'Track 2': {'Location': (45.13516, -93.37768), 'Span': [(45.13480, -93.37768), (45.13552, -93.37767)]},
         },
     },
+    "Oak Park": {
+        'Region': ['Oak Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88708, -87.79390), 'Span': [(41.88706, -87.79467), (41.88709, -87.79313)]},
+            'Track 2': {'Location': (41.88701, -87.79390), 'Span': [(41.88700, -87.79467), (41.88703, -87.79313)]},
+        },
+    },
+    "Oak Park [t8cyz7]": {
+        'Region': ['Oak Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87206, -87.79156), 'Span': [(41.87197, -87.79046), (41.87215, -87.79265)]},
+            'Track 2': {'Location': (41.87212, -87.79155), 'Span': [(41.87203, -87.79045), (41.87221, -87.79264)]},
+        },
+    },
+    "Oakton-Skokie": {
+        'Region': ['Skokie', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.02710, -87.74764), 'Span': [(42.02674, -87.74753), (42.02746, -87.74775)]},
+            'Track 2': {'Location': (42.02712, -87.74751), 'Span': [(42.02676, -87.74739), (42.02748, -87.74762)]},
+        },
+    },
     "Oconomowoc": {'Location': (43.10928, -88.49861), 'Region': ['Oconomowoc', 'Wisconsin', 'USA'], 'Span': [(43.10939, -88.49917), (43.10916, -88.49805)]},
     "Old North": {'Location': (43.11265, -87.96189), 'Region': ['Milwaukee', 'Wisconsin', 'USA'], 'Span': [(43.11223, -87.96143), (43.11307, -87.96236)]},
     "Old Shakopee Rd": {
@@ -1052,6 +2415,13 @@ Stations = {
         },
     },
     "Olde Town Arvada": {'Location': (39.79900, -105.08026), 'Region': ['Arvada', 'Colorado', 'USA'], 'Span': [(39.79910, -105.07993), (39.79889, -105.08060)]},
+    "Onaway": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47251, -81.57724), 'Span': [(41.47225, -81.57695), (41.47276, -81.57753)]},
+            'Track 2': {'Location': (41.47166, -81.57620), 'Span': [(41.47141, -81.57592), (41.47191, -81.57649)]},
+        },
+    },
     "Opus": {
         'Region': ['Minnetonka', 'Minnesota', 'USA'],
         'Platforms': {
@@ -1068,11 +2438,19 @@ Stations = {
     },
     "Original Thornton & 88th": {'Location': (39.85883, -104.95312), 'Region': ['Thornton', 'Colorado', 'USA'], 'Span': [(39.85842, -104.95340), (39.85924, -104.95284)]},
     "Oshkosh": {'Location': (44.01882, -88.53153), 'Region': ['Oshkosh', 'Wisconsin', 'USA'], 'Span': [(44.01934, -88.53153), (44.01831, -88.53151)]},
+    "Oxford": {'Location': (39.49995, -84.74152), 'Region': ['Oxford', 'Ohio', 'USA'], 'Span': [(39.50034, -84.74182), (39.49957, -84.74122)]},
     "Oxford-City of Sheridan": {
         'Region': ['Sheridan', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.64296, -105.00486), 'Span': [(39.64250, -105.00504), (39.64343, -105.00469)]},
             'Track 2': {'Location': (39.64294, -105.00478), 'Span': [(39.64248, -105.00496), (39.64341, -105.00460)]},
+        },
+    },
+    "Paulina": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.94374, -87.67084), 'Span': [(41.94373, -87.67166), (41.94375, -87.67002)]},
+            'Track 2': {'Location': (41.94370, -87.67084), 'Span': [(41.94369, -87.67166), (41.94371, -87.67002)]},
         },
     },
     "Pecos Junction": {
@@ -1098,6 +2476,13 @@ Stations = {
             'Track 2': {'Location': (39.76758, -104.85042), 'Span': [(39.76751, -104.84960), (39.76764, -104.85124)]},
         },
     },
+    "Perham": {
+        'Region': ['Perham', 'Minnesota', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (46.59437, -95.57176), 'Span': [(46.59414, -95.57136), (46.59460, -95.57216)]},
+            'Track 2': {'Location': (46.59441, -95.57172), 'Span': [(46.59417, -95.57132), (46.59464, -95.57212)]},
+        },
+    },
     "Perry": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
@@ -1106,11 +2491,34 @@ Stations = {
         },
     },
     "Pewaukee": {'Location': (43.08378, -88.25920), 'Region': ['Village of Pewaukee', 'Wisconsin', 'USA'], 'Span': [(43.08356, -88.25846), (43.08400, -88.25994)]},
+    "Pittsburgh Union Station": {
+        'Major': True, 'Region': ['Pittsburgh', 'Pennsylvania', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.44623, -79.98995), 'Span': [(40.44525, -79.99157), (40.44722, -79.98833)]},
+            'Track 2': {'Location': (40.44585, -79.99002), 'Span': [(40.44482, -79.99201), (40.44703, -79.98813)]},
+            'Track 3': {'Location': (40.44618, -79.98933), 'Span': [(40.44490, -79.99139), (40.44747, -79.98727)]},
+        },
+    },
+    "Plymouth": {'Location': (41.33909, -86.31343), 'Region': ['Plymouth', 'Indiana', 'USA'], 'Span': [(41.33924, -86.31431), (41.33895, -86.31256)]},
     "Plymouth Ave": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.99142, -93.28119), 'Span': [(44.99109, -93.28101), (44.99176, -93.28137)]},
             'Track 2': {'Location': (44.99141, -93.28125), 'Span': [(44.99175, -93.28142), (44.99107, -93.28107)]},
+        },
+    },
+    "Polk": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87159, -87.66960), 'Span': [(41.87099, -87.66958), (41.87218, -87.66962)]},
+            'Track 2': {'Location': (41.87159, -87.66956), 'Span': [(41.87099, -87.66954), (41.87218, -87.66957)]},
+        },
+    },
+    "Pontiac": {'Location': (42.63300, -83.29267), 'Region': ['Pontiac', 'Michigan', 'USA'], 'Span': [(42.63364, -83.29320), (42.63235, -83.29216)]},
+    "Pontiac [gezf6y]": {
+        'Region': ['Pontiac', 'Illinois', 'USA'],
+        'Platforms': {
+            'St. Louis Gateway Station': {'Location': (40.87887, -88.63738), 'Span': [(40.87922, -88.63716), (40.87853, -88.63760)]},
         },
     },
     "Portage": {
@@ -1131,11 +2539,60 @@ Stations = {
     },
     "Public Library": {'Location': (39.10541, -84.51240), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10550, -84.51242), (39.10532, -84.51238)]},
     "Pueblo": {'Location': (38.26227, -104.61745), 'Region': ['Pueblo', 'Colorado', 'USA'], 'Span': [(38.26186, -104.61692), (38.26268, -104.61798)]},
+    "Pulaski": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85392, -87.72394), 'Span': [(41.85391, -87.72471), (41.85393, -87.72316)]},
+            'Track 2': {'Location': (41.85383, -87.72393), 'Span': [(41.85382, -87.72470), (41.85384, -87.72315)]},
+        },
+    },
+    "Pulaski [4tvvb6]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87391, -87.72790), 'Span': [(41.87390, -87.72900), (41.87392, -87.72680)]},
+            'Track 2': {'Location': (41.87385, -87.72790), 'Span': [(41.87384, -87.72900), (41.87386, -87.72680)]},
+        },
+    },
+    "Pulaski [9bkvbx]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88551, -87.72713), 'Span': [(41.88546, -87.72622), (41.88556, -87.72803)]},
+            'Track 2': {'Location': (41.88557, -87.72712), 'Span': [(41.88552, -87.72621), (41.88562, -87.72802)]},
+        },
+    },
+    "Puritas": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.44140, -81.80565), 'Span': [(41.44112, -81.80589), (41.44169, -81.80540)]},
+            'Track 2': {'Location': (41.44136, -81.80556), 'Span': [(41.44108, -81.80580), (41.44165, -81.80533)]},
+        },
+    },
+    "Quincy": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87877, -87.63379), 'Span': [(41.87819, -87.63377), (41.87934, -87.63380)]},
+            'Track 2': {'Location': (41.87877, -87.63374), 'Span': [(41.87819, -87.63372), (41.87934, -87.63376)]},
+        },
+    },
+    "Racine": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87593, -87.65942), 'Span': [(41.87591, -87.66052), (41.87595, -87.65832)]},
+            'Track 2': {'Location': (41.87586, -87.65942), 'Span': [(41.87584, -87.66052), (41.87588, -87.65832)]},
+        },
+    },
     "Ramsey": {
         'Region': ['Ramsey', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.23185, -93.46150), 'Span': [(45.23162, -93.46075), (45.23208, -93.46225)]},
             'Track 2': {'Location': (45.23181, -93.46153), 'Span': [(45.23204, -93.46228), (45.23158, -93.46078)]},
+        },
+    },
+    "Rantoul": {
+        'Region': ['Rantoul', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.31155, -88.15906), 'Span': [(40.31128, -88.15917), (40.31183, -88.15894)]},
+            'Track 2': {'Location': (40.31154, -88.15900), 'Span': [(40.31127, -88.15912), (40.31182, -88.15889)]},
         },
     },
     "Raymond Ave": {
@@ -1159,11 +2616,20 @@ Stations = {
             'Track 2': {'Location': (44.56658, -92.53698), 'Span': [(44.56631, -92.53750), (44.56687, -92.53648)]},
         },
     },
+    "Renaissance Center": {'Location': (42.33024, -83.03999), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33015, -83.04018), (42.33032, -83.03980)]},
+    "Rensselaer": {'Location': (40.94327, -87.15494), 'Region': ['Rensselaer', 'Indiana', 'USA'], 'Span': [(40.94340, -87.15543), (40.94319, -87.15444)]},
     "RidgeGate": {
         'Region': ['Lone Tree', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.52052, -104.86552), 'Span': [(39.52003, -104.86584), (39.52100, -104.86521)]},
             'Track 2': {'Location': (39.52050, -104.86548), 'Span': [(39.52001, -104.86579), (39.52098, -104.86516)]},
+        },
+    },
+    "Ridgeland": {
+        'Region': ['Oak Park', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88722, -87.78348), 'Span': [(41.88721, -87.78426), (41.88723, -87.78271)]},
+            'Track 2': {'Location': (41.88716, -87.78348), 'Span': [(41.88715, -87.78425), (41.88717, -87.78271)]},
         },
     },
     "Robert St": {
@@ -1173,11 +2639,63 @@ Stations = {
             'Track 2': {'Location': (44.95401, -93.09751), 'Span': [(44.95429, -93.09783), (44.95372, -93.09718)]},
         },
     },
+    "Rockwell": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96625, -87.69504), 'Span': [(41.96624, -87.69582), (41.96625, -87.69425)]},
+            'Track 2': {'Location': (41.96618, -87.69504), 'Span': [(41.96618, -87.69582), (41.96619, -87.69425)]},
+        },
+    },
+    "Roosevelt": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.86735, -87.62672), 'Span': [(41.86668, -87.62669), (41.86803, -87.62674)]},
+            'Track 2': {'Location': (41.86736, -87.62660), 'Span': [(41.86668, -87.62657), (41.86803, -87.62665)]},
+            'Track 3': {'Location': (41.86832, -87.62751), 'Span': [(41.86742, -87.62748), (41.86921, -87.62753)]},
+            'Track 4': {'Location': (41.86832, -87.62743), 'Span': [(41.86742, -87.62741), (41.86921, -87.62744)]},
+        },
+    },
+    "Rosemont": {
+        'Region': ['Rosemont', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.98362, -87.85945), 'Span': [(41.98361, -87.85849), (41.98365, -87.86040)]},
+            'Track 2': {'Location': (41.98351, -87.85944), 'Span': [(41.98349, -87.86039), (41.98355, -87.85848)]},
+        },
+    },
+    "Royal Oak": {
+        'Region': ['Royal Oak', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.48919, -83.14748), 'Span': [(42.48896, -83.14729), (42.48941, -83.14766)]},
+            'Track 2': {'Location': (42.48920, -83.14743), 'Span': [(42.48898, -83.14725), (42.48943, -83.14761)]},
+        },
+    },
     "Royalston Ave": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.98136, -93.28305), 'Span': [(44.98181, -93.28304), (44.98091, -93.28304)]},
             'Track 2': {'Location': (44.98136, -93.28299), 'Span': [(44.98091, -93.28299), (44.98181, -93.28298)]},
+        },
+    },
+    "Sandusky": {
+        'Region': ['Sanducky', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.44045, -82.71832), 'Span': [(41.44038, -82.71754), (41.44052, -82.71910)]},
+            'Track 2': {'Location': (41.44048, -82.71831), 'Span': [(41.44040, -82.71753), (41.44055, -82.71909)]},
+        },
+    },
+    "Sedalia": {'Location': (38.71134, -93.22818), 'Region': ['Sedalia', 'Missouri', 'USA'], 'Span': [(38.71144, -93.22878), (38.71124, -93.22759)]},
+    "Sedgwick": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.91042, -87.63894), 'Span': [(41.91043, -87.63972), (41.91043, -87.63816)]},
+            'Track 2': {'Location': (41.91039, -87.63894), 'Span': [(41.91040, -87.63972), (41.91040, -87.63816)]},
+        },
+    },
+    "Settlers Landing": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.49640, -81.70048), 'Span': [(41.49614, -81.70026), (41.49666, -81.70070)]},
+            'Track 2': {'Location': (41.49642, -81.70044), 'Span': [(41.49616, -81.70022), (41.49668, -81.70066)]},
         },
     },
     "Shady Oak": {
@@ -1187,11 +2705,27 @@ Stations = {
             'Track 2': {'Location': (44.91773, -93.42098), 'Span': [(44.91760, -93.42147), (44.91785, -93.42050)]},
         },
     },
+    "Shaker Square": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48393, -81.59191), 'Span': [(41.48390, -81.59125), (41.48395, -81.59257)]},
+            'Track 2': {'Location': (41.48398, -81.59190), 'Span': [(41.48394, -81.59124), (41.48400, -81.59256)]},
+        },
+    },
     "Sheridan": {
         'Region': ['Denver', 'Colorado', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (39.73517, -105.05322), 'Span': [(39.73517, -105.05276), (39.73518, -105.05367)]},
             'Track 2': {'Location': (39.73510, -105.05322), 'Span': [(39.73510, -105.05276), (39.73511, -105.05367)]},
+        },
+    },
+    "Sheridan [kknb88]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.95397, -87.65526), 'Span': [(41.95396, -87.65607), (41.95395, -87.65446)]},
+            'Track 2': {'Location': (41.95391, -87.65528), 'Span': [(41.95391, -87.65608), (41.95391, -87.65447)]},
+            'Track 3': {'Location': (41.95388, -87.65517), 'Span': [(41.95387, -87.65598), (41.95387, -87.65437)]},
+            'Track 4': {'Location': (41.95382, -87.65519), 'Span': [(41.95381, -87.65599), (41.95383, -87.65438)]},
         },
     },
     "Sky Ridge": {
@@ -1211,11 +2745,67 @@ Stations = {
             'Track 2 [2]': {'Location': (44.95567, -93.16701), 'Span': [(44.95567, -93.16753), (44.95567, -93.16648)]},
         },
     },
+    "South Bend": {
+        'Region': ['South Bend', 'Indiana', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.67825, -86.28844), 'Span': [(41.67758, -86.28647), (41.67891, -86.29042)]},
+            'Track 2': {'Location': (41.67822, -86.28825), 'Span': [(41.67761, -86.28645), (41.67883, -86.29004)]},
+        },
+    },
+    "South Bend [49w9e2]": {
+        'Region': ['South Bend', 'Indiana', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.66905, -86.25526), 'Span': [(41.66901, -86.25406), (41.66910, -86.25647)]},
+            'Track 2': {'Location': (41.66909, -86.25526), 'Span': [(41.66904, -86.25406), (41.66913, -86.25646)]},
+        },
+    },
+    "South Blvd": {
+        'Region': ['Evanston', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.02761, -87.67851), 'Span': [(42.02717, -87.67841), (42.02805, -87.67858)]},
+            'Track 2': {'Location': (42.02762, -87.67843), 'Span': [(42.02718, -87.67835), (42.02806, -87.67851)]},
+        },
+    },
+    "South Harbor": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.50928, -81.68828), 'Span': [(41.50907, -81.68869), (41.50949, -81.68786)]},
+            'Track 2': {'Location': (41.50925, -81.68825), 'Span': [(41.50904, -81.68866), (41.50946, -81.68784)]},
+        },
+    },
+    "South Park": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48175, -81.57237), 'Span': [(41.48169, -81.57193), (41.48181, -81.57280)]},
+            'Track 2': {'Location': (41.48163, -81.57114), 'Span': [(41.48157, -81.57070), (41.48168, -81.57158)]},
+        },
+    },
+    "South Woodland": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47949, -81.58529), 'Span': [(41.47921, -81.58497), (41.47977, -81.58561)]},
+            'Track 2': {'Location': (41.47864, -81.58425), 'Span': [(41.47839, -81.58397), (41.47889, -81.58453)]},
+        },
+    },
     "SouthWest Station": {
         'Region': ['Eden Prairie', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.85996, -93.44432), 'Span': [(44.85973, -93.44488), (44.86019, -93.44376)]},
             'Track 2': {'Location': (44.85992, -93.44428), 'Span': [(44.85969, -93.44485), (44.86015, -93.44373)]},
+        },
+    },
+    "Southington": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48247, -81.57810), 'Span': [(41.48242, -81.57767), (41.48252, -81.57852)]},
+            'Track 2': {'Location': (41.48236, -81.57693), 'Span': [(41.48230, -81.57649), (41.48241, -81.57737)]},
+        },
+    },
+    "Southington [kt3y2z]": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47605, -81.58132), 'Span': [(41.47580, -81.58103), (41.47630, -81.58161)]},
+            'Track 2': {'Location': (41.47532, -81.58041), 'Span': [(41.47507, -81.58013), (41.47556, -81.58069)]},
         },
     },
     "Southmoor": {
@@ -1225,11 +2815,44 @@ Stations = {
             'Track 2': {'Location': (39.64860, -104.91620), 'Span': [(39.64816, -104.91595), (39.64903, -104.91645)]},
         },
     },
+    "Southport": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.94384, -87.66364), 'Span': [(41.94383, -87.66445), (41.94386, -87.66283)]},
+            'Track 2': {'Location': (41.94381, -87.66366), 'Span': [(41.94380, -87.66445), (41.94382, -87.66286)]},
+        },
+    },
+    "Sox-35th": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.83235, -87.63075), 'Span': [(41.83154, -87.63073), (41.83316, -87.63076)]},
+            'Track 2': {'Location': (41.83235, -87.63065), 'Span': [(41.83154, -87.63063), (41.83316, -87.63068)]},
+        },
+    },
+    "Springfield": {
+        'Region': ['Springfield', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (39.80086, -89.64220), 'Span': [(39.80016, -89.64221), (39.80156, -89.64218)]},
+            'Track 2': {'Location': (39.80086, -89.64213), 'Span': [(39.80016, -89.64215), (39.80156, -89.64212)]},
+        },
+    },
+    "Springfield [ndhk4j]": {'Location': (39.92228, -83.81147), 'Region': ['Springfield', 'Ohio', 'USA'], 'Span': [(39.92233, -83.81229), (39.92223, -83.81065)]},
+    "Springfield [pexsjx]": {'Location': (39.80233, -89.65182), 'Region': ['Springfield', 'Illinois', 'USA'], 'Span': [(39.80274, -89.65181), (39.80191, -89.65183)]},
+    "Sproat Street": {'Location': (42.34202, -83.05443), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.34211, -83.05449), (42.34193, -83.05437)]},
     "St. Cloud": {
         'Region': ['St. Cloud', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (45.56806, -94.14880), 'Span': [(45.56739, -94.14833), (45.56872, -94.14926)]},
             'Track 2': {'Location': (45.56808, -94.14874), 'Span': [(45.56741, -94.14828), (45.56874, -94.14920)]},
+        },
+    },
+    "St. Louis Gateway Station": {
+        'Major': True, 'Region': ['St. Louis', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.62359, -90.20446), 'Span': [(38.62345, -90.20388), (38.62374, -90.20504)]},
+            'Track 2': {'Location': (38.62350, -90.20450), 'Span': [(38.62336, -90.20391), (38.62365, -90.20508)]},
+            'Track 3': {'Location': (38.62362, -90.20512), 'Span': [(38.62325, -90.20362), (38.62399, -90.20662)]},
+            'Track 4': {'Location': (38.62353, -90.20515), 'Span': [(38.62316, -90.20365), (38.62390, -90.20666)]},
         },
     },
     "St. Paul Union Depot": {
@@ -1248,6 +2871,7 @@ Stations = {
             'Track 2 [2]': {'Location': (44.97359, -93.22470), 'Span': [(44.97359, -93.22418), (44.97360, -93.22522)]},
         },
     },
+    "Staples": {'Location': (46.35434, -94.79538), 'Region': ['Staples', 'Minnesota', 'USA'], 'Span': [(46.35440, -94.79587), (46.35427, -94.79490)]},
     "Steamboat Springs Downtown": {'Location': (40.48359, -106.83408), 'Region': ['Steamboat Springs', 'Colorado', 'USA'], 'Span': [(40.48310, -106.83309), (40.48408, -106.83507)]},
     "Steamboat Springs Resort": {'Location': (40.46445, -106.82800), 'Region': ['Steamboat Springs', 'Colorado', 'USA'], 'Span': [(40.46508, -106.82800), (40.46382, -106.82800)]},
     "Sterling Ranch": {
@@ -1257,6 +2881,20 @@ Stations = {
             'Track 2': {'Location': (39.51067, -105.01895), 'Span': [(39.51006, -105.01846), (39.51129, -105.01944)]},
         },
     },
+    "Steubenville": {
+        'Region': ['Steubenville', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (40.35974, -80.61091), 'Span': [(40.35911, -80.61121), (40.36037, -80.61061)]},
+            'Track 2': {'Location': (40.35972, -80.61086), 'Span': [(40.35909, -80.61116), (40.36036, -80.61056)]},
+        },
+    },
+    "Stokes-Windermere": {
+        'Region': ['East Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.53052, -81.58518), 'Span': [(41.53013, -81.58557), (41.53091, -81.58479)]},
+            'Track 2': {'Location': (41.53049, -81.58513), 'Span': [(41.53010, -81.58552), (41.53088, -81.58475)]},
+        },
+    },
     "Sturtevant": {
         'Region': ['Sturtevant', 'Wisconsin', 'USA'],
         'Platforms': {
@@ -1264,8 +2902,23 @@ Stations = {
             'Track 2': {'Location': (42.71844, -87.90586), 'Span': [(42.71803, -87.90584), (42.71886, -87.90588)]},
         },
     },
+    "Summit": {
+        'Region': ['Summit', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.79540, -87.80905), 'Span': [(41.79512, -87.80957), (41.79566, -87.80852)]},
+            'Track 2': {'Location': (41.79512, -87.80949), 'Span': [(41.79479, -87.81008), (41.79543, -87.80889)]},
+        },
+    },
+    "Superior": {'Location': (46.71951, -92.11008), 'Region': ['Superior', 'Wisconsin', 'USA'], 'Span': [(46.71884, -92.10994), (46.72017, -92.11021)]},
+    "Superior [3k6kyx]": {
+        'Region': ['East Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.52305, -81.59225), 'Span': [(41.52259, -81.59270), (41.52351, -81.59179)]},
+            'Track 2': {'Location': (41.52302, -81.59218), 'Span': [(41.52255, -81.59262), (41.52348, -81.59173)]},
+        },
+    },
     "Target Field": {
-        'Region': ['Minneapolis', 'Minnesota', 'USA'],
+        'Major': True, 'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.98345, -93.27847), 'Span': [(44.98328, -93.27795), (44.98363, -93.27900)]},
             'Track 2': {'Location': (44.98342, -93.27849), 'Span': [(44.98359, -93.27902), (44.98324, -93.27797)]},
@@ -1293,6 +2946,13 @@ Stations = {
             'Track 2': {'Location': (39.74388, -104.99610), 'Span': [(39.74382, -104.99649), (39.74395, -104.99572)]},
         },
     },
+    "Thorndale": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.99018, -87.65909), 'Span': [(41.98959, -87.65908), (41.99076, -87.65911)]},
+            'Track 2': {'Location': (41.99018, -87.65902), 'Span': [(41.98959, -87.65900), (41.99076, -87.65903)]},
+        },
+    },
     "Thornton Crossroads & 104th": {
         'Region': ['Thornton', 'Colorado', 'USA'],
         'Platforms': {
@@ -1300,12 +2960,53 @@ Stations = {
             'Track 2': {'Location': (39.88209, -104.94245), 'Span': [(39.88243, -104.94288), (39.88176, -104.94203)]},
         },
     },
+    "Times Square": {'Location': (42.33362, -83.05217), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.33373, -83.05215), (42.33351, -83.05218)]},
+    "Toledo": {'Location': (41.63799, -83.54130), 'Region': ['Toledo', 'Ohio', 'USA'], 'Span': [(41.63775, -83.53906), (41.63804, -83.54359)]},
     "Tomah": {'Location': (43.98614, -90.50538), 'Region': ['Tomah', 'Wisconsin', 'USA'], 'Span': [(43.98629, -90.50597), (43.98599, -90.50480)]},
+    "Tower City": {
+        'Major': True, 'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.49762, -81.69426), 'Span': [(41.49756, -81.69336), (41.49768, -81.69516)]},
+            'Track 2': {'Location': (41.49774, -81.69424), 'Span': [(41.49768, -81.69335), (41.49780, -81.69514)]},
+            'Track 3': {'Location': (41.49783, -81.69423), 'Span': [(41.49777, -81.69334), (41.49790, -81.69513)]},
+            'Track 4': {'Location': (41.49793, -81.69422), 'Span': [(41.49786, -81.69332), (41.49800, -81.69511)]},
+        },
+    },
     "Town Center": {
         'Region': ['Eden Prairie', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.85915, -93.43130), 'Span': [(44.85910, -93.43181), (44.85920, -93.43078)]},
             'Track 2': {'Location': (44.85907, -93.43128), 'Span': [(44.85912, -93.43077), (44.85902, -93.43180)]},
+        },
+    },
+    "Tri-C-Campus District": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48663, -81.66623), 'Span': [(41.48645, -81.66586), (41.48682, -81.66660)]},
+            'Track 2': {'Location': (41.48669, -81.66618), 'Span': [(41.48650, -81.66582), (41.48687, -81.66655)]},
+            'Track 3': {'Location': (41.48616, -81.66530), 'Span': [(41.48597, -81.66492), (41.48635, -81.66567)]},
+            'Track 4': {'Location': (41.48621, -81.66525), 'Span': [(41.48602, -81.66488), (41.48640, -81.66562)]},
+        },
+    },
+    "Triskett": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.46642, -81.78475), 'Span': [(41.46610, -81.78501), (41.46674, -81.78448)]},
+            'Track 2': {'Location': (41.46639, -81.78467), 'Span': [(41.46607, -81.78494), (41.46671, -81.78441)]},
+        },
+    },
+    "Troy": {
+        'Region': ['Birmingham', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.54274, -83.19155), 'Span': [(42.54250, -83.19134), (42.54299, -83.19176)]},
+            'Track 2': {'Location': (42.54277, -83.19147), 'Span': [(42.54253, -83.19125), (42.54302, -83.19169)]},
+        },
+    },
+    "UIC-Halsted": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87552, -87.64965), 'Span': [(41.87550, -87.65072), (41.87554, -87.64857)]},
+            'Track 2': {'Location': (41.87546, -87.64965), 'Span': [(41.87544, -87.65072), (41.87547, -87.64857)]},
         },
     },
     "US Bank Stadium": {
@@ -1315,6 +3016,7 @@ Stations = {
             'Track 2': {'Location': (44.97499, -93.25982), 'Span': [(44.97486, -93.26032), (44.97511, -93.25932)]},
         },
     },
+    "Uhrichsville": {'Location': (40.39252, -81.34450), 'Region': ['Uhrichsville', 'Ohio', 'USA'], 'Span': [(40.39254, -81.34506), (40.39249, -81.34394)]},
     "Union Depot": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
@@ -1336,11 +3038,19 @@ Stations = {
             'Track 2': {'Location': (44.90296, -93.20240), 'Span': [(44.90331, -93.20255), (44.90261, -93.20226)]},
         },
     },
+    "Valparaiso": {'Location': (41.46717, -87.06711), 'Region': ['Valparaiso', 'Indiana', 'USA'], 'Span': [(41.46756, -87.06795), (41.46679, -87.06626)]},
     "Victoria St": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.95575, -93.13739), 'Span': [(44.95575, -93.13791), (44.95575, -93.13687)]},
             'Track 2': {'Location': (44.95571, -93.13560), 'Span': [(44.95571, -93.13508), (44.95571, -93.13612)]},
+        },
+    },
+    "Wadena": {
+        'Region': ['Wadena', 'Minnesota', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (46.44219, -95.13794), 'Span': [(46.44194, -95.13725), (46.44244, -95.13863)]},
+            'Track 2': {'Location': (46.44223, -95.13792), 'Span': [(46.44198, -95.13722), (46.44248, -95.13861)]},
         },
     },
     "Warehouse District/Hennepin Ave": {
@@ -1350,13 +3060,101 @@ Stations = {
             'Track 2': {'Location': (44.98002, -93.27317), 'Span': [(44.98027, -93.27352), (44.97977, -93.27281)]},
         },
     },
+    "Warren Avenue": {
+        'Region': ['Detroit', 'Michigan', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (42.35652, -83.06428), 'Span': [(42.35641, -83.06422), (42.35662, -83.06433)]},
+            'Track 2': {'Location': (42.35773, -83.06471), 'Span': [(42.35761, -83.06463), (42.35786, -83.06480)]},
+        },
+    },
+    "Warrensburg": {'Location': (38.76291, -93.74153), 'Region': ['Warrensburg', 'Missouri', 'USA'], 'Span': [(38.76290, -93.74053), (38.76292, -93.74253)]},
+    "Warrensville-Shaker": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47852, -81.53688), 'Span': [(41.47852, -81.53733), (41.47852, -81.53643)]},
+            'Track 2': {'Location': (41.47848, -81.53688), 'Span': [(41.47848, -81.53733), (41.47849, -81.53643)]},
+        },
+    },
+    "Warrensville-Van Aken": {'Location': (41.46590, -81.53783), 'Region': ['Shaker Heights', 'Ohio', 'USA'], 'Span': [(41.46574, -81.53753), (41.46605, -81.53814)]},
+    "Warsaw": {'Location': (41.23611, -85.85600), 'Region': ['Warsaw', 'Indiana', 'USA'], 'Span': [(41.23611, -85.85651), (41.23611, -85.85549)]},
+    "Washington": {
+        'Region': ['Washington', 'Missouri', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (38.56165, -91.01242), 'Span': [(38.56152, -91.01218), (38.56179, -91.01265)]},
+            'Track 2': {'Location': (38.56172, -91.01236), 'Span': [(38.56158, -91.01213), (38.56185, -91.01259)]},
+        },
+    },
     "Washington Park": {'Location': (39.10855, -84.51649), 'Region': ['Cincinnati', 'Ohio', 'USA'], 'Span': [(39.10864, -84.51651), (39.10846, -84.51647)]},
+    "Washington [zsk695]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88325, -87.62949), 'Span': [(41.88231, -87.62946), (41.88419, -87.62951)]},
+            'Track 2': {'Location': (41.88325, -87.62941), 'Span': [(41.88231, -87.62938), (41.88420, -87.62943)]},
+        },
+    },
+    "Washington/Wabash": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88247, -87.62623), 'Span': [(41.88188, -87.62621), (41.88305, -87.62624)]},
+            'Track 2': {'Location': (41.88247, -87.62619), 'Span': [(41.88188, -87.62617), (41.88305, -87.62620)]},
+        },
+    },
+    "Washington/Wells": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88238, -87.63388), 'Span': [(41.88176, -87.63387), (41.88300, -87.63390)]},
+            'Track 2': {'Location': (41.88238, -87.63384), 'Span': [(41.88176, -87.63382), (41.88300, -87.63385)]},
+        },
+    },
+    "Water Square": {'Location': (42.32527, -83.05258), 'Region': ['Detroit', 'Michigan', 'USA'], 'Span': [(42.32542, -83.05266), (42.32513, -83.05250)]},
+    "Waterloo": {
+        'Region': ['Waterloo', 'Indiana', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.43155, -85.02570), 'Span': [(41.43152, -85.02481), (41.43158, -85.02660)]},
+            'Track 2': {'Location': (41.43159, -85.02569), 'Span': [(41.43156, -85.02480), (41.43162, -85.02659)]},
+        },
+    },
     "Watertown": {'Location': (43.18593, -88.72273), 'Region': ['Watertown', 'Wisconsin', 'USA'], 'Span': [(43.18622, -88.72349), (43.18564, -88.72196)]},
+    "Wellington": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.93644, -87.65334), 'Span': [(41.93586, -87.65332), (41.93701, -87.65336)]},
+            'Track 2': {'Location': (41.93644, -87.65321), 'Span': [(41.93586, -87.65319), (41.93701, -87.65323)]},
+        },
+    },
+    "West 117th-Madison": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47564, -81.76895), 'Span': [(41.47542, -81.76955), (41.47586, -81.76836)]},
+            'Track 2': {'Location': (41.47557, -81.76891), 'Span': [(41.47535, -81.76951), (41.47580, -81.76832)]},
+        },
+    },
     "West 21st St": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.96067, -93.31472), 'Span': [(44.96030, -93.31469), (44.96104, -93.31474)]},
             'Track 2': {'Location': (44.96068, -93.31460), 'Span': [(44.96031, -93.31457), (44.96104, -93.31462)]},
+        },
+    },
+    "West 25th-Ohio City": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48444, -81.70126), 'Span': [(41.48400, -81.70123), (41.48488, -81.70128)]},
+            'Track 2': {'Location': (41.48444, -81.70117), 'Span': [(41.48400, -81.70115), (41.48488, -81.70119)]},
+        },
+    },
+    "West 3rd": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.50417, -81.69916), 'Span': [(41.50396, -81.69963), (41.50439, -81.69869)]},
+            'Track 2': {'Location': (41.50415, -81.69914), 'Span': [(41.50393, -81.69961), (41.50436, -81.69867)]},
+        },
+    },
+    "West 65th-Lorain": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47674, -81.72855), 'Span': [(41.47648, -81.72800), (41.47702, -81.72910)]},
+            'Track 2': {'Location': (41.47679, -81.72851), 'Span': [(41.47653, -81.72795), (41.47706, -81.72906)]},
         },
     },
     "West Bank": {
@@ -1366,11 +3164,25 @@ Stations = {
             'Track 2': {'Location': (44.97192, -93.24615), 'Span': [(44.97183, -93.24667), (44.97201, -93.24563)]},
         },
     },
+    "West Boulevard-Cudell": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.48016, -81.75277), 'Span': [(41.47998, -81.75214), (41.48035, -81.75340)]},
+            'Track 2': {'Location': (41.48022, -81.75273), 'Span': [(41.48004, -81.75210), (41.48040, -81.75337)]},
+        },
+    },
     "West Broadway": {
         'Region': ['Minneapolis', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.99840, -93.28174), 'Span': [(44.99804, -93.28168), (44.99876, -93.28179)]},
             'Track 2': {'Location': (44.99839, -93.28180), 'Span': [(44.99875, -93.28185), (44.99803, -93.28174)]},
+        },
+    },
+    "West Green": {
+        'Region': ['Shaker Heights', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.47857, -81.52063), 'Span': [(41.47857, -81.52113), (41.47857, -81.52012)]},
+            'Track 2': {'Location': (41.47853, -81.52063), 'Span': [(41.47853, -81.52113), (41.47853, -81.52012)]},
         },
     },
     "West Lake St": {
@@ -1380,11 +3192,60 @@ Stations = {
             'Track 2': {'Location': (44.94769, -93.32433), 'Span': [(44.94743, -93.32469), (44.94796, -93.32396)]},
         },
     },
+    "West Park": {
+        'Region': ['Cleveland', 'Ohio', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.45695, -81.79270), 'Span': [(41.45665, -81.79295), (41.45725, -81.79245)]},
+            'Track 2': {'Location': (41.45690, -81.79259), 'Span': [(41.45660, -81.79284), (41.45720, -81.79234)]},
+        },
+    },
+    "Western": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.80473, -87.68436), 'Span': [(41.80472, -87.68513), (41.80474, -87.68359)]},
+            'Track 2': {'Location': (41.80463, -87.68436), 'Span': [(41.80463, -87.68513), (41.80465, -87.68359)]},
+        },
+    },
     "Western Ave": {
         'Region': ['St. Paul', 'Minnesota', 'USA'],
         'Platforms': {
             'Track 1': {'Location': (44.95579, -93.11706), 'Span': [(44.95578, -93.11757), (44.95579, -93.11654)]},
             'Track 2': {'Location': (44.95575, -93.11524), 'Span': [(44.95575, -93.11575), (44.95576, -93.11472)]},
+        },
+    },
+    "Western [592dck]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.91590, -87.68691), 'Span': [(41.91551, -87.68632), (41.91629, -87.68751)]},
+            'Track 2': {'Location': (41.91593, -87.68688), 'Span': [(41.91554, -87.68629), (41.91631, -87.68748)]},
+        },
+    },
+    "Western [bkjgpp]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.87556, -87.68864), 'Span': [(41.87555, -87.68974), (41.87557, -87.68754)]},
+            'Track 2': {'Location': (41.87549, -87.68864), 'Span': [(41.87548, -87.68974), (41.87551, -87.68754)]},
+        },
+    },
+    "Western [dz7shp]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.85443, -87.68457), 'Span': [(41.85442, -87.68542), (41.85444, -87.68373)]},
+            'Track 2': {'Location': (41.85434, -87.68457), 'Span': [(41.85433, -87.68542), (41.85435, -87.68373)]},
+        },
+    },
+    "Western [hvhahm]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.88466, -87.68622), 'Span': [(41.88462, -87.68715), (41.88469, -87.68528)]},
+            'Track 2': {'Location': (41.88463, -87.68622), 'Span': [(41.88459, -87.68715), (41.88466, -87.68528)]},
+        },
+    },
+    "Western [xawzqy]": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96630, -87.68850), 'Span': [(41.96629, -87.68931), (41.96631, -87.68768)]},
+            'Track 2': {'Location': (41.96624, -87.68819), 'Span': [(41.96623, -87.68897), (41.96625, -87.68741)]},
         },
     },
     "Westgate": {
@@ -1400,6 +3261,27 @@ Stations = {
         'Platforms': {
             'Track 1': {'Location': (39.78806, -105.13302), 'Span': [(39.78814, -105.13268), (39.78798, -105.13336)]},
             'Track 2': {'Location': (39.78796, -105.13298), 'Span': [(39.78789, -105.13332), (39.78804, -105.13264)]},
+        },
+    },
+    "Wilson": {
+        'Region': ['Chicago', 'Illinois', 'USA'],
+        'Platforms': {
+            'Track 1': {'Location': (41.96476, -87.65806), 'Span': [(41.96407, -87.65784), (41.96545, -87.65829)]},
+            'Track 2': {'Location': (41.96478, -87.65794), 'Span': [(41.96409, -87.65771), (41.96547, -87.65816)]},
+            'Track 3': {'Location': (41.96479, -87.65788), 'Span': [(41.96410, -87.65766), (41.96548, -87.65811)]},
+            'Track 4': {'Location': (41.96481, -87.65776), 'Span': [(41.96412, -87.65755), (41.96550, -87.65798)]},
+        },
+    },
+    "Windsor": {'Location': (42.32494, -83.00728), 'Region': ['Windsor', 'Ontario', 'CAN'], 'Span': [(42.32510, -83.00880), (42.32479, -83.00575)]},
+    "Winnipeg Union Station": {
+        'Region': ['Winnipeg', 'Manitoba', 'CAN'],
+        'Platforms': {
+            'Track 1': {'Location': (49.88871, -97.13347), 'Span': [(49.88779, -97.13298), (49.88962, -97.13397)]},
+            'Track 2': {'Location': (49.88872, -97.13342), 'Span': [(49.88780, -97.13292), (49.88963, -97.13392)]},
+            'Track 3': {'Location': (49.88875, -97.13330), 'Span': [(49.88783, -97.13280), (49.88966, -97.13379)]},
+            'Track 4': {'Location': (49.88876, -97.13325), 'Span': [(49.88784, -97.13275), (49.88967, -97.13374)]},
+            'Track 5': {'Location': (49.88878, -97.13312), 'Span': [(49.88787, -97.13262), (49.88970, -97.13362)]},
+            'Track 6': {'Location': (49.88880, -97.13307), 'Span': [(49.88788, -97.13257), (49.88971, -97.13357)]},
         },
     },
     "Winona": {
@@ -1427,11 +3309,23 @@ Stations = {
 }
 
 Segments = {
+    "Amtrak / Alexandrian / Minneapolis - Fargo": {
+        "F": ['Minneapolis Target Field', 'Anoka {Track 1}', 'St. Cloud {Track 2}', 'Little Falls', 'Staples', 'Wadena {Track 2}', 'Perham {Track 2}', 'Detroit Lakes {Track 2}', 'Fargo', 'Detroit Lakes {Track 1}', 'Perham {Track 1}', 'Wadena {Track 1}', 'Staples', 'Little Falls', 'St. Cloud {Track 1}', 'Anoka {Track 2}'],
+    },
     "Amtrak / Borealis / Chicago - Minneapolis": {
         "F": ['Chicago Union Station {Track 19}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 4}', 'Columbus {Track 2}', 'Portage {Track 1}', 'Wisconsin Dells', 'Tomah', 'La Crosse {Track 1}', 'Winona {Track 2}', 'Red Wing {Track 1}', 'St. Paul Union Depot {Track 1}', 'Red Wing {Track 2}', 'Winona {Track 1}', 'La Crosse {Track 2}', 'Tomah', 'Wisconsin Dells', 'Portage {Track 2}', 'Columbus {Track 1}', 'Milwaukee Intermodal Station {Track 3}', 'Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}', 'Glenview {Track 1}'],
     },
+    "Amtrak / Buckeye / Chicago - Pittsburgh": {
+        "F": ['Chicago Union Station {Track 22}', 'Hammond-Whiting', 'Valparaiso', 'Plymouth', 'Warsaw', 'Fort Wayne', 'Lima', 'Kenton', 'Marysville', 'Columbus Union Station {Track 2}', 'Newark {Track 2}', 'Coshocton', 'Uhrichsville', 'Steubenville {Track 2}', 'Pittsburgh Union Station {Track 2}', 'Steubenville {Track 2}', 'Uhrichsville', 'Coshocton', 'Newark {Track 1}', 'Columbus Union Station {Track 1}', 'Marysville', 'Kenton', 'Lima', 'Fort Wayne', 'Warsaw', 'Plymouth', 'Valparaiso', 'Hammond-Whiting'],
+    },
+    "Amtrak / Carnation / Cincinnati - Cleveland": {
+        "F": ['Cincinnati Union Terminal {Track 1}', 'Hamilton {Track 2}', 'Dayton Union Station', 'Springfield [ndhk4j]', 'Columbus Union Station {Track 2}', 'Delaware', 'Crestline {Track 2}', 'Cleveland Airport {Track 2}', 'Cleveland {Track 2}', 'Cleveland Airport {Track 1}', 'Crestline {Track 1}', 'Delaware', 'Columbus Union Station {Track 1}', 'Springfield [ndhk4j]', 'Dayton Union Station', 'Hamilton {Track 1}'],
+    },
     "Amtrak / Columbine / Fort Collins - Pueblo": {
         "F": ['Fort Collins {Track 2}', 'Loveland {Track 2}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Denver Union Station {Track 10}', 'Lincoln Park {Track 1}', 'I-25 & Broadway {Track 1 Heavy}', 'Littleton-Downtown {Track 1}', 'Sterling Ranch {Track 1}', 'Castle Rock {Track 1}', 'North Colorado Springs {Track 2}', 'Colorado Springs', 'Fountain', 'Pueblo', 'Fountain', 'Colorado Springs', 'North Colorado Springs {Track 1}', 'Castle Rock {Track 2}', 'Sterling Ranch {Track 2}', 'Littleton-Downtown {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Denver Union Station {Track 9}', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Loveland {Track 1}'],
+    },
+    "Amtrak / Erie / Chicago - Cleveland": {
+        "F": ['Chicago Union Station {Track 20}', 'Hammond-Whiting', 'La Porte {Track 2}', 'South Bend [49w9e2] {Track 1}', 'Elkhart', 'Waterloo {Track 1}', 'Bryan', 'Toledo', 'Sandusky {Track 1}', 'Elyria [f2wy6f] {Track 2}', 'Cleveland Airport {Track 2}', 'Cleveland {Track 1}', 'Cleveland Airport {Track 1}', 'Elyria [f2wy6f] {Track 1}', 'Sandusky {Track 2}', 'Toledo', 'Bryan', 'Waterloo {Track 2}', 'Elkhart', 'South Bend [49w9e2] {Track 2}', 'La Porte {Track 1}', 'Hammond-Whiting'],
     },
     "Amtrak / Hiawatha / Chicago - Green Bay": {
         "F": ['Chicago Union Station {Track 17}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 4}', 'Old North', 'Germantown', 'Slinger', 'Fond du Lac', 'Oshkosh', 'Appleton', 'Green Bay', 'Appleton', 'Oshkosh', 'Fond du Lac', 'Slinger', 'Germantown', 'Old North', 'Milwaukee Intermodal Station {Track 3}', 'Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}', 'Glenview {Track 1}'],
@@ -1442,20 +3336,71 @@ Segments = {
     "Amtrak / Hiawatha / Chicago - Milwaukee": {
         "F": ['Chicago Union Station {Track 17}', 'Glenview {Track 2}', 'Sturtevant {Track 2}', 'Milwaukee Airport {Track 2}', 'Milwaukee Intermodal Station {Track 5}', 'Milwaukee Airport {Track 1}', 'Sturtevant {Track 1}', 'Glenview {Track 1}'],
     },
+    "Amtrak / Hoosier / Chicago - Cincinnati": {
+        "F": ['Chicago Union Station {Track 26}', 'Dyer', 'Rensselaer', 'Lafayette', 'Crawfordsville', 'Indianapolis Union Station {Track 1}', 'Connersville', 'Oxford', 'Hamilton [3uttug]', 'Cincinnati Union Terminal {Track 1}', 'Hamilton [3uttug]', 'Oxford', 'Connersville', 'Indianapolis Union Station {Track 2}', 'Crawfordsville', 'Lafayette', 'Rensselaer', 'Dyer'],
+    },
+    "Amtrak / Illini/Saluki / Chicago - Carbondale": {
+        "F": ['Chicago Union Station {Track 18}'],
+    },
+    "Amtrak / Lincoln Service / Chicago - St. Louis": {
+        "F": ['Chicago Union Station {Track 22}'],
+    },
+    "Amtrak / Mercury / Cleveland - Detroit": {
+        "F": ['Cleveland {Track 1}', 'Cleveland Airport {Track 1}', 'Elyria [f2wy6f] {Track 1}', 'Sandusky {Track 2}', 'Toledo', 'Monroe {Track 2}', 'Detroit Airport {Track 2}', 'Michigan Central Station {Track 1}', 'Detroit Airport {Track 1}', 'Monroe {Track 1}', 'Toledo', 'Sandusky {Track 1}', 'Elyria [f2wy6f] {Track 2}', 'Cleveland Airport {Track 2}'],
+    },
+    "Amtrak / Missouri River Runner / St. Louis - Kansas City": {
+        "F": ['St. Louis Gateway Station {Track 3}'],
+    },
     "Amtrak / Mountaineer / Denver - Craig": {
         "F": ['Denver Union Station {Track 5}', 'Winter Park Resort', 'Fraser-Winter Park', 'Granby', 'Hot Sulphur Springs', 'Kremmling', 'Oak Creek', 'Steamboat Springs Resort', 'Steamboat Springs Downtown', 'Hayden', 'Craig', 'Hayden', 'Steamboat Springs Downtown', 'Steamboat Springs Resort', 'Oak Creek', 'Kremmling', 'Hot Sulphur Springs', 'Granby', 'Fraser-Winter Park', 'Winter Park Resort'],
+    },
+    "Amtrak / Northern Lights Express / Minneapolis - Duluth": {
+        "F": ['Minneapolis Target Field', 'Foley Blvd {Track 1}', 'Cambridge', 'Hinckley', 'Superior', 'Duluth Union Depot {Track 1}', 'Superior', 'Hinckley', 'Cambridge', 'Foley Blvd {Track 2}'],
+    },
+    "Amtrak / Winnipegger / Minneapolis - Winnipeg": {
+        "F": ['Minneapolis Target Field', 'Anoka {Track 1}', 'St. Cloud {Track 2}', 'Little Falls', 'Staples', 'Wadena {Track 2}', 'Perham {Track 2}', 'Detroit Lakes {Track 2}', 'Fargo', 'Grand Forks Downtown', 'Crookston', 'Winnipeg Union Station {Track 1}', 'Crookston', 'Grand Forks Downtown', 'Fargo', 'Detroit Lakes {Track 1}', 'Perham {Track 1}', 'Wadena {Track 1}', 'Staples', 'Little Falls', 'St. Cloud {Track 1}', 'Anoka {Track 2}'],
     },
     "Amtrak / Winter Park Express / Denver - Winter Park": {
         "F": ['Denver Union Station {Track 5}', 'Winter Park Resort', 'Fraser-Winter Park', 'Winter Park Resort'],
     },
+    "Amtrak / Wolverine / Chicago - Pontiac": {
+        "F": ['Chicago Union Station {Track 24}', 'Hammond-Whiting', 'New Buffalo', 'Niles {Track 2}', 'Dowagiac {Track 2}', 'Kalamazoo {Track 2}', 'Battle Creek {Track 1}', 'Albion', 'Jackson {Track 1}', 'Ann Arbor', 'Dearborn {Track 2}', 'Detroit {Track 1}', 'Royal Oak {Track 2}', 'Troy {Track 2}', 'Pontiac', 'Troy {Track 1}', 'Royal Oak {Track 1}', 'Detroit {Track 1}', 'Dearborn {Track 1}', 'Ann Arbor', 'Jackson {Track 2}', 'Albion', 'Battle Creek {Track 2}', 'Kalamazoo {Track 1}', 'Dowagiac {Track 1}', 'Niles {Track 1}', 'New Buffalo', 'Hammond-Whiting'],
+    },
+    "CTA / Blue Line / O'Hare - Forest Park": {
+        "F": ["O'Hare {Track 3}"],
+    },
+    "CTA / Brown Line / Kimball - Loop": {
+        "F": ['Kimball {Track 1}'],
+    },
+    "CTA / Green Line / Harlem/Lake - Cottage Grove": {
+        "F": ['Harlem/Lake {Track 1}'],
+    },
+    "CTA / Orange Line / Midway - Loop": {
+        "F": ['Midway {Track 3}'],
+    },
+    "CTA / Pink Line / 54th/Cermak - Loop": {
+        "F": ['54th/Cermak'],
+    },
+    "CTA / Purple Line / Linden - Loop": {
+        "F": ['Linden {Track 1}', 'Linden {Track 2}'],
+    },
+    "CTA / Red Line / Howard - 95th/Dan Ryan": {
+        "F": ['Howard {Track 3}'],
+    },
+    "CTA / Yellow Line / Howard - Dempster-Skokie": {
+        "F": ['Howard {Track 2}'],
+    },
     "Cincinnati Streetcar / Connector / Downtown Circulator": {
         "F": ['The Banks', '4th & Main', '6th & Main', '8th & Main', 'Court & Main', '12th & Main', '12th & Vine', '14th & Elm', 'Liberty & Elm', 'Findlay Market-Elm', 'Brewery District', 'Findlay Market-Race', 'Liberty & Race', 'Washington Park', 'Central Parkway', 'Public Library', 'Fountain Square'],
+    },
+    "DTC / Detroit Peoplemover / Downtown Loop": {
+        "F": ['Grand Circus Park [9qvqfz]', 'Times Square', 'Michigan', 'Fort/Cass', 'Huntington Place', 'Water Square', 'Financial District', 'Millender Center', 'Renaissance Center', 'Bricktown', 'Greektown', 'Cadillac Center', 'Broadway'],
     },
     "Metro Transit / Blue Line / Anoka Station - Apple Valley": {
         "F": ['Anoka {LRT}', 'Downtown Anoka {Track 2}', 'Champlin {Track 2}', '117th Ave {Track 2}', '109th Ave {Track 2}', 'Oak Grove Pkwy {Track 2}', '93rd Ave {Track 2}', '85th Ave {Track 2}', 'Brooklyn Blvd {Track 2}', '63rd Ave {Track 2}', 'Bass Lake Rd {Track 2}', 'Downtown Robbinsdale {Track 2}', 'Lowry Ave {Track 2}', 'Penn Ave {Track 2}', 'Emerson-Fremont {Track 2}', 'Lyndale Ave {Track 2}', 'West Broadway {Track 2}', 'Plymouth Ave {Track 2}', 'Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'Cedar-Riverside {Track 2}', 'Franklin Ave {Track 2}', 'Lake St/Midtown {Track 2}', '38th St {Track 2}', '46th St {Track 2}', '50th St/Minnehaha {Track 2}', 'VA Medical Center {Track 2}', 'Fort Snelling {Track 2}', 'Terminal 1 {Track 2}', 'Terminal 2 {Track 2}', 'American Blvd {Track 2}', 'Bloomington Central {Track 2}', 'Mall of America {Track 2}', '86th St {Track 2}', 'Old Shakopee Rd {Track 2}', 'Cedar Grove {Track 2}', 'Cliff Rd {Track 2}', 'McAndrews Rd {Track 2}', '140th St {Track 2}', '147th St {Track 2}', 'Apple Valley Transit Center', '147th St {Track 1}', '140th St {Track 1}', 'McAndrews Rd {Track 1}', 'Cliff Rd {Track 1}', 'Cedar Grove {Track 1}', 'Old Shakopee Rd {Track 1}', '86th St {Track 1}', 'Mall of America {Track 1}', 'Bloomington Central {Track 1}', 'American Blvd {Track 1}', 'Terminal 2 {Track 1}', 'Terminal 1 {Track 1}', 'Fort Snelling {Track 1}', 'VA Medical Center {Track 1}', '50th St/Minnehaha {Track 1}', '38th St {Track 1}', 'Lake St/Midtown {Track 1}', 'Franklin Ave {Track 1}', 'Cedar-Riverside {Track 1}', 'US Bank Stadium {Track 1}', 'Government Plaza {Track 1}', 'Nicollet Mall {Track 1}', 'Warehouse District/Hennepin Ave {Track 1}', 'Target Field {Track 1}', 'Plymouth Ave {Track 1}', 'West Broadway {Track 1}', 'Lyndale Ave {Track 1}', 'Emerson-Fremont {Track 1}', 'Penn Ave {Track 1}', 'Lowry Ave {Track 1}', 'Downtown Robbinsdale {Track 1}', 'Bass Lake Rd {Track 1}', '63rd Ave {Track 1}', 'Brooklyn Blvd {Track 1}', '85th Ave {Track 1}', '93rd Ave {Track 1}', 'Oak Grove Pkwy {Track 1}', '109th Ave {Track 1}', 'Champlin {Track 1}', 'Downtown Anoka {Track 1}'],
     },
     "Metro Transit / Blue Line / Target Field - Mall of America": {
-        "F": ['Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'Cedar-Riverside {Track 2}', 'Franklin Ave {Track 2}', 'Lake St/Midtown {Track 2}', '38th St {Track 2}', '46th St {Track 2}', '50th St/Minnehaha {Track 2}', 'VA Medical Center {Track 2}', 'Fort Snelling {Track 2}', 'Terminal 1 {Track 2}', 'Terminal 2 {Track 2}', 'American Blvd {Track 2}', 'Bloomington Central {Track 2}', '30th Ave {Track 2}', 'Mall of America [2] {Track 2}', '30th Ave {Track 1}', 'Bloomington Central {Track 1}', 'American Blvd {Track 1}', 'Terminal 2 {Track 1}', 'Terminal 1 {Track 1}', 'Fort Snelling {Track 1}', 'VA Medical Center {Track 1}', '50th St/Minnehaha {Track 1}', '46th St {Track 1}', '38th St {Track 1}', 'Lake St/Midtown {Track 1}', 'Franklin Ave {Track 1}', 'Cedar-Riverside {Track 1}', 'US Bank Stadium {Track 1}', 'Government Plaza {Track 1}', 'Nicollet Mall {Track 1}', 'Warehouse District/Hennepin Ave {Track 1}'],
+        "F": ['Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'Cedar-Riverside {Track 2}', 'Franklin Ave {Track 2}', 'Lake St/Midtown {Track 2}', '38th St {Track 2}', '46th St {Track 2}', '50th St/Minnehaha {Track 2}', 'VA Medical Center {Track 2}', 'Fort Snelling {Track 2}', 'Terminal 1 {Track 2}', 'Terminal 2 {Track 2}', 'American Blvd {Track 2}', 'Bloomington Central {Track 2}', '30th Ave {Track 2}', 'Mall of America [yhfqaj] {Track 2}', '30th Ave {Track 1}', 'Bloomington Central {Track 1}', 'American Blvd {Track 1}', 'Terminal 2 {Track 1}', 'Terminal 1 {Track 1}', 'Fort Snelling {Track 1}', 'VA Medical Center {Track 1}', '50th St/Minnehaha {Track 1}', '46th St {Track 1}', '38th St {Track 1}', 'Lake St/Midtown {Track 1}', 'Franklin Ave {Track 1}', 'Cedar-Riverside {Track 1}', 'US Bank Stadium {Track 1}', 'Government Plaza {Track 1}', 'Nicollet Mall {Track 1}', 'Warehouse District/Hennepin Ave {Track 1}'],
     },
     "Metro Transit / Green Line / SouthWest Station - Union Depot": {
         "F": ['SouthWest Station {Track 2}', 'Town Center {Track 2}', 'Golden Triangle {Track 2}', 'City West {Track 2}', 'Opus {Track 2}', 'Shady Oak {Track 2}', 'Downtown Hopkins {Track 2}', 'Blake Rd {Track 2}', 'Louisiana Ave {Track 2}', 'Wooddale Ave {Track 2}', 'Beltline Blvd {Track 2}', 'West Lake St {Track 2}', 'West 21st St {Track 2}', 'Bryn Mawr {Track 2}', 'Bassett Creek Valley {Track 2}', 'Royalston Ave {Track 2}', 'Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'US Bank Stadium {Track 2}', 'Government Plaza {Track 2}', 'Nicollet Mall {Track 2}'],
@@ -1464,7 +3409,19 @@ Segments = {
         "F": ['Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'West Bank {Track 2}', 'East Bank {Track 2}', 'Stadium Village {Track 2}', 'Prospect Park {Track 2}', 'Westgate {Track 2}', 'Raymond Ave {Track 2}', 'Fairview Ave {Track 2}', 'Snelling Ave {Track 2}', 'Hamline Ave {Track 2}', 'Lexington Pkwy {Track 2}', 'Victoria St {Track 2}', 'Dale St {Track 2}', 'Western Ave {Track 2}', 'Capitol/Rice St {Track 2}', 'Robert St {Track 2}', '10th St {Track 2}', 'Central Station {Track 2}', 'Union Depot {Track 2}', 'Central Station {Track 1}', '10th St {Track 1}', 'Robert St {Track 1}', 'Capitol/Rice St {Track 1}', 'Western Ave {Track 1}', 'Dale St {Track 1}', 'Victoria St {Track 1}', 'Lexington Pkwy {Track 1}', 'Hamline Ave {Track 1}', 'Snelling Ave {Track 1}', 'Fairview Ave {Track 1}', 'Raymond Ave {Track 1}', 'Westgate {Track 1}', 'Prospect Park {Track 1}', 'Stadium Village {Track 1}', 'East Bank {Track 1}', 'West Bank {Track 1}', 'US Bank Stadium {Track 1}', 'Government Plaza {Track 1}', 'Nicollet Mall {Track 1}', 'Warehouse District/Hennepin Ave {Track 1}'],
     },
     "Metro Transit / Northstar / Minneapolis - St. Cloud": {
-        "F": ['Minneapolis Target Field', 'Northeast Minneapolis {Track 1}', 'Fridley', 'Foley Blvd {Track 1}', 'Coon Rapids-Riverdale {Track 1}', 'Anoka {Track 1}', 'Ramsey {Track 1}', 'Elk River {Track 1}', 'Big Lake {Track 1}', 'Becker {Track 1}', 'St. Cloud {Track 1}', 'Becker {Track 2}', 'Big Lake {Track 2}', 'Elk River {Track 2}', 'Ramsey {Track 2}', 'Anoka {Track 2}', 'Coon Rapids-Riverdale {Track 2}', 'Foley Blvd {Track 2}', 'Fridley', 'Northeast Minneapolis {Track 2}'],
+        "F": ['Minneapolis Target Field', 'Northeast Minneapolis {Track 1}', 'Fridley {Track 2}', 'Foley Blvd {Track 1}', 'Coon Rapids-Riverdale {Track 1}', 'Anoka {Track 1}', 'Ramsey {Track 1}', 'Elk River {Track 1}', 'Big Lake {Track 1}', 'Becker {Track 1}', 'St. Cloud {Track 1}', 'Becker {Track 2}', 'Big Lake {Track 2}', 'Elk River {Track 2}', 'Ramsey {Track 2}', 'Anoka {Track 2}', 'Coon Rapids-Riverdale {Track 2}', 'Foley Blvd {Track 2}', 'Fridley {Track 1}', 'Northeast Minneapolis {Track 2}'],
+    },
+    "RTA / Blue Line / South Harbor - Van Aken": {
+        "F": ['South Harbor {Track 1}'],
+    },
+    "RTA / Green Line / South Harbor - Green Road": {
+        "F": ['South Harbor {Track 1}'],
+    },
+    "RTA / Red Line / Airport - Stokes-Windermere": {
+        "F": ['Airport {Track 1}', 'Cleveland Airport {LRT 2}', 'Brookpark {Track 2}', 'Puritas {Track 2}', 'West Park {Track 2}', 'Triskett {Track 2}', 'West 117th-Madison {Track 2}', 'West Boulevard-Cudell {Track 1}', 'West 65th-Lorain {Track 1}', 'West 25th-Ohio City {Track 2}', 'Tower City {Track 2}', 'Tri-C-Campus District {Track 1}', 'East 55th {Track 2}', 'East 79th {Track 2}', 'East 105th-Quincy {Track 2}', 'Cedar-University {Track 2}', 'Little Italy-University Circle {Track 2}', 'Superior [3k6kyx] {Track 2}', 'Stokes-Windermere {Track 2}', 'Superior [3k6kyx] {Track 1}', 'Little Italy-University Circle {Track 1}', 'Cedar-University {Track 1}', 'East 105th-Quincy {Track 1}', 'East 79th {Track 1}', 'East 55th {Track 1}', 'Tri-C-Campus District {Track 2}', 'Tower City {Track 3}', 'West 25th-Ohio City {Track 1}', 'West 65th-Lorain {Track 2}', 'West Boulevard-Cudell {Track 2}', 'West 117th-Madison {Track 1}', 'Triskett {Track 1}', 'West Park {Track 1}', 'Puritas {Track 1}', 'Brookpark {Track 1}', 'Cleveland Airport {LRT 1}'],
+    },
+    "RTASM / QLINE / Downtown Detroit": {
+        "F": ['Congress Street', 'Campus Martius {Track 2}', 'Grand Circus Park {Track 2}', 'Montcalm Street {Track 2}', 'Adelaide Street', 'MLK Boulevard/Mack Avenue {Track 2}', 'Canfield Street {Track 2}', 'Warren Avenue {Track 2}', 'Ferry Street {Track 2}', 'Amsterdam Street {Track 2}', 'Baltimore Street {Track 2}', 'Grand Boulevard {Track 2}', 'Grand Boulevard {Track 1}', 'Baltimore Street {Track 1}', 'Amsterdam Street {Track 1}', 'Ferry Street {Track 1}', 'Warren Avenue {Track 1}', 'Canfield Street {Track 1}', 'MLK Boulevard/Mack Avenue {Track 1}', 'Sproat Street', 'Montcalm Street {Track 1}', 'Grand Circus Park {Track 1}', 'Campus Martius {Track 1}'],
     },
     "RTD / A Line / Union Station - Airport": {
         "F": ['38th & Blake {Track 2}', '40th & Colorado {Track 2}', 'Central Park {Track 2}', 'Peoria {Track 2}', '40th & Airport {Track 2}', '61st & Peña {Track 2}', 'Denver Airport {Track 1}', '61st & Peña {Track 1}', '40th & Airport {Track 1}', 'Peoria {Track 1}', 'Central Park {Track 1}', '40th & Colorado {Track 1}', '38th & Blake {Track 1}', 'Denver Union Station {Track 1}'],
@@ -1476,7 +3433,7 @@ Segments = {
         "F": ['Denver Union Station {Track 7}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}'],
     },
     "RTD / C Line / Sterling Ranch - Golden": {
-        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [2] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Wheat Ridge & Ward {Track 1}', '44th & McIntyre {Track 1}', 'Downtown Golden', '44th & McIntyre {Track 2}', 'Wheat Ridge & Ward {Track 2}', 'Arvada Ridge {Track 2}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [2] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 1}'],
+        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [a64js4] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Clear Creek & Federal {Track 1}', '60th & Sheridan-Arvada Gold Strike {Track 1}', 'Olde Town Arvada', 'Arvada Ridge {Track 1}', 'Wheat Ridge & Ward {Track 1}', '44th & McIntyre {Track 1}', 'Downtown Golden', '44th & McIntyre {Track 2}', 'Wheat Ridge & Ward {Track 2}', 'Arvada Ridge {Track 2}', 'Olde Town Arvada', '60th & Sheridan-Arvada Gold Strike {Track 2}', 'Clear Creek & Federal {Track 2}', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [a64js4] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 1}'],
     },
     "RTD / C Line / Union Station - Littleton": {
         "F": ['Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', '10th & Osage {Track 1}', 'Alameda {Track 1}', 'I-25 & Broadway {Track 1}', 'Evans {Track 1}', 'Englewood {Track 1}', 'Oxford-City of Sheridan {Track 1}', 'Littleton-Downtown {Track 1}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2}', 'Alameda {Track 2}', '10th & Osage {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
@@ -1512,7 +3469,7 @@ Segments = {
         "F": ['RidgeGate {Track 2}'],
     },
     "RTD / W Line / Jefferson County - Loop": {
-        "F": ['Jefferson County Government Center {Track 2}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West [3] {Track 1}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', 'Auraria West [3] {Track 2}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}'],
+        "F": ['Jefferson County Government Center {Track 2}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West [2x8ua3] {Track 1}', 'Colfax at Auraria {Track 2}', 'Theatre District/Convention Center {Track 2}', '16th & California', '18th & California', '18th & Stout', '16th & Stout', 'Theatre District/Convention Center {Track 1}', 'Colfax at Auraria {Track 1}', 'Auraria West [2x8ua3] {Track 2}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}'],
     },
     "RTD / W Line / Union Station - Jefferson County": {
         "F": ['Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Empower Field at Mile High {Track 1}', 'Auraria West {Track 1}', 'Decatur-Federal {Track 1}', 'Knox {Track 1}', 'Perry {Track 1}', 'Sheridan {Track 1}', 'Lamar {Track 2}', 'Lakewood-Wadsworth {Track 1}', 'Garrison {Track 1}', 'Oak {Track 1}', 'Federal Center {Track 2}', 'Red Rocks College {Track 1}', 'Jefferson County Government Center {Track 3}', 'Red Rocks College {Track 2}', 'Federal Center {Track 3}', 'Oak {Track 2}', 'Garrison {Track 2}', 'Lakewood-Wadsworth {Track 2}', 'Lamar {Track 1}', 'Sheridan {Track 2}', 'Perry {Track 2}', 'Knox {Track 2}', 'Decatur-Federal {Track 2}', 'Auraria West {Track 2}', 'Empower Field at Mile High {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}'],
@@ -1545,6 +3502,1798 @@ Segments = {
     },
     "~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy +2": {
         "F": ['Minneapolis Target Field', 'St. Paul Union Depot {Track 2}'],
+    },
+    "~ Amtrak / Illini/Saluki / Chicago - Carbondale / Fantasy": {
+        "F": ['Chicago Union Station {Track 18}', 'Homewood {Track 1}', 'Kankakee', 'Gilman {Track 1}', 'Rantoul {Track 1}', 'Champaign-Urbana', 'Mattoon {Track 1}', 'Effingham', 'Centralia {Track 1}', 'Du Quoin {Track 1}', 'Carbondale', 'Du Quoin {Track 2}', 'Centralia {Track 2}', 'Effingham', 'Mattoon {Track 2}', 'Champaign-Urbana', 'Rantoul {Track 2}', 'Gilman {Track 2}', 'Kankakee', 'Homewood {Track 2}'],
+    },
+    "~ Amtrak / Illini/Saluki / Chicago - Carbondale / Present": {
+        "F": ['Chicago Union Station {Track 18}', 'Homewood {Track 1}', 'Kankakee', 'Gilman {Track 1}', 'Rantoul {Track 1}', 'Champaign-Urbana', 'Mattoon {Track 1}', 'Effingham', 'Centralia {Track 1}', 'Du Quoin {Track 1}', 'Carbondale', 'Du Quoin {Track 2}', 'Centralia {Track 2}', 'Effingham', 'Mattoon {Track 2}', 'Champaign-Urbana', 'Rantoul {Track 2}', 'Gilman {Track 2}', 'Kankakee', 'Homewood {Track 2}'],
+    },
+    "~ Amtrak / Lincoln Service / Chicago - St. Louis / Fantasy": {
+        "F": ['Chicago Union Station {Track 22}', 'Summit {Track 1}', 'Joliet {Track 1}', 'Dwight', 'Pontiac [gezf6y] {St. Louis Gateway Station}', 'Bloomington-Normal {Track 1}', 'Lincoln [3jbkdb]', 'Springfield {Track 1}', 'Carlinville {Track 1}', 'Alton', 'St. Louis Gateway Station {Track 3}', 'Alton', 'Carlinville {Track 2}', 'Lincoln [3jbkdb]', 'Bloomington-Normal {Track 2}', 'Pontiac [gezf6y] {St. Louis Gateway Station}', 'Dwight', 'Joliet {Track 2}', 'Summit {Track 2}'],
+        "Swap": [('Carlinville {Track 2}', '~ Amtrak / Lincoln Service / Chicago - St. Louis / Fantasy +1')],
+    },
+    "~ Amtrak / Lincoln Service / Chicago - St. Louis / Fantasy +1": {
+        "F": ['Carlinville {Track 2}', 'Springfield {Track 2}'],
+    },
+    "~ Amtrak / Lincoln Service / Chicago - St. Louis / Present": {
+        "F": ['Chicago Union Station {Track 22}', 'Summit {Track 1}', 'Joliet {Track 1}', 'Dwight', 'Pontiac [gezf6y] {St. Louis Gateway Station}', 'Bloomington-Normal {Track 1}', 'Lincoln [3jbkdb]', 'Springfield [pexsjx]', 'Carlinville {Track 1}', 'Alton', 'St. Louis Gateway Station {Track 3}', 'Alton', 'Carlinville {Track 2}', 'Springfield [pexsjx]', 'Lincoln [3jbkdb]', 'Bloomington-Normal {Track 2}', 'Pontiac [gezf6y] {St. Louis Gateway Station}', 'Dwight', 'Joliet {Track 2}'],
+        "Swap": [('Joliet {Track 2}', '~ Amtrak / Lincoln Service / Chicago - St. Louis / Present +1')],
+    },
+    "~ Amtrak / Lincoln Service / Chicago - St. Louis / Present +1": {
+        "F": ['Joliet {Track 2}', 'Summit {Track 2}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy": {
+        "F": ['St. Louis Gateway Station {Track 3}', 'Kirkwood {Track 1}', 'Washington {Track 2}', 'Hermann {Track 2}', 'Jefferson City {Track 2}', 'Sedalia', 'Warrensburg', "Lee's Summit", 'Independence {Track 2}', 'Kansas City Union Station {Track 3}', 'Independence {Track 1}', "Lee's Summit", 'Warrensburg', 'Sedalia', 'Jefferson City {Track 1}'],
+        "Swap": [('Jefferson City {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +1'), ('Hermann {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +2'), ('Washington {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +3')],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +1": {
+        "F": ['Jefferson City {Track 1}', 'Hermann {Track 1}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +2": {
+        "F": ['Hermann {Track 1}', 'Washington {Track 1}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy +3": {
+        "F": ['Washington {Track 1}', 'Kirkwood {Track 2}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present": {
+        "F": ['St. Louis Gateway Station {Track 3}', 'Kirkwood {Track 1}', 'Washington {Track 2}', 'Hermann {Track 2}', 'Jefferson City {Track 2}', 'Sedalia', 'Warrensburg', "Lee's Summit", 'Independence {Track 2}', 'Kansas City Union Station {Track 3}', 'Independence {Track 1}', "Lee's Summit", 'Warrensburg', 'Sedalia', 'Jefferson City {Track 1}'],
+        "Swap": [('Jefferson City {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +1'), ('Hermann {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +2'), ('Washington {Track 1}', '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +3')],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +1": {
+        "F": ['Jefferson City {Track 1}', 'Hermann {Track 1}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +2": {
+        "F": ['Hermann {Track 1}', 'Washington {Track 1}'],
+    },
+    "~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present +3": {
+        "F": ['Washington {Track 1}', 'Kirkwood {Track 2}'],
+    },
+    "~ Amtrak / Wolverine / Chicago - Windsor / Fantasy": {
+        "F": ['Chicago Union Station {Track 24}', 'Hammond-Whiting', 'New Buffalo', 'Niles {Track 2}', 'Dowagiac {Track 2}', 'Kalamazoo {Track 2}', 'Battle Creek {Track 1}', 'Albion', 'Jackson {Track 1}', 'Ann Arbor', 'Dearborn {Track 2}', 'Detroit {Track 1}', 'Royal Oak {Track 2}', 'Troy {Track 2}', 'Pontiac', 'Troy {Track 1}', 'Royal Oak {Track 1}', 'Dearborn {Track 1}', 'Ann Arbor', 'Jackson {Track 2}', 'Albion', 'Battle Creek {Track 2}', 'Kalamazoo {Track 1}', 'Dowagiac {Track 1}', 'Niles {Track 1}', 'New Buffalo', 'Hammond-Whiting'],
+        "Skip": ['Detroit {Track 1}', 'Pontiac', 'Royal Oak {Track 1}', 'Royal Oak {Track 2}', 'Troy {Track 1}', 'Troy {Track 2}'],
+        "Swap": [('Dearborn {Track 2}', '~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +1'), ('Michigan Central Station {Track 1}', '~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +2'), ('Windsor', '~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +3')],
+    },
+    "~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +1": {
+        "F": ['Dearborn {Track 2}', 'Michigan Central Station {Track 1}'],
+    },
+    "~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +2": {
+        "F": ['Michigan Central Station {Track 1}', 'Windsor'],
+    },
+    "~ Amtrak / Wolverine / Chicago - Windsor / Fantasy +3": {
+        "F": ['Windsor', 'Michigan Central Station {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy": {
+        "F": ["CTA / Blue Line / O'Hare - Forest Park"],
+        "Swap": [("O'Hare {Track 3}", "O'Hare {Track 1}"), ("O'Hare {Track 3}", "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +1"), ('Rosemont {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +2"), ('Cumberland {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +3"), ('Harlem [9yurht] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +4"), ('Jefferson Park {Track 4}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +5"), ('Montrose [x39n44] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +6"), ('Irving Park [c5c56s] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +7"), ('Addison [wytkfd] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +8"), ('Belmont [whds32] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +9"), ('Logan {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +10"), ('California [7u7wsc] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +11"), ('Western [592dck] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +12"), ('Damen [qscker] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +13"), ('Division {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +14"), ('Chicago [24eusx] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +15"), ('Grand [x6wwpd] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +16"), ('Clark/Lake {Track 4}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +17"), ('Washington [zsk695] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +18"), ('Monroe [eapcnj] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +19"), ('Jackson [95u38p] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +20"), ('LaSalle {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +21"), ('Clinton [fnghd3] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +22"), ('UIC-Halsted {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +23"), ('Racine {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +24"), ('Illinois Medical District {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +25"), ('Western [bkjgpp] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +26"), ('Kedzie-Homan {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +27"), ('Pulaski [4tvvb6] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +28"), ('Cicero [fgsf9t] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +29"), ('Austin [acx38y] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +30"), ('Oak Park [t8cyz7] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +31"), ('Harlem {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +32"), ('Forest Park {Track 2}', 'Forest Park {Track 1}'), ('Forest Park {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +33"), ('Harlem {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +34"), ('Oak Park [t8cyz7] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +35"), ('Austin [acx38y] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +36"), ('Cicero [fgsf9t] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +37"), ('Pulaski [4tvvb6] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +38"), ('Kedzie-Homan {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +39"), ('Western [bkjgpp] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +40"), ('Illinois Medical District {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +41"), ('Racine {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +42"), ('UIC-Halsted {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +43"), ('Clinton [fnghd3] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +44"), ('LaSalle {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +45"), ('Jackson [95u38p] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +46"), ('Monroe [eapcnj] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +47"), ('Washington [zsk695] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +48"), ('Clark/Lake {Track 3}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +49"), ('Grand [x6wwpd] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +50"), ('Chicago [24eusx] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +51"), ('Division {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +52"), ('Damen [qscker] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +53"), ('Western [592dck] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +54"), ('California [7u7wsc] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +55"), ('Logan {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +56"), ('Belmont [whds32] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +57"), ('Addison [wytkfd] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +58"), ('Irving Park [c5c56s] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +59"), ('Montrose [x39n44] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +60"), ('Jefferson Park {Track 5}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +61"), ('Harlem [9yurht] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +62"), ('Cumberland {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +63")],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +1": {
+        "F": ["O'Hare {Track 3}", 'Rosemont {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +10": {
+        "F": ['Logan {Track 1}', 'California [7u7wsc] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +11": {
+        "F": ['California [7u7wsc] {Track 1}', 'Western [592dck] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +12": {
+        "F": ['Western [592dck] {Track 1}', 'Damen [qscker] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +13": {
+        "F": ['Damen [qscker] {Track 1}', 'Division {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +14": {
+        "F": ['Division {Track 1}', 'Chicago [24eusx] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +15": {
+        "F": ['Chicago [24eusx] {Track 1}', 'Grand [x6wwpd] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +16": {
+        "F": ['Grand [x6wwpd] {Track 1}', 'Clark/Lake {Track 4}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +17": {
+        "F": ['Clark/Lake {Track 4}', 'Washington [zsk695] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +18": {
+        "F": ['Washington [zsk695] {Track 1}', 'Monroe [eapcnj] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +19": {
+        "F": ['Monroe [eapcnj] {Track 1}', 'Jackson [95u38p] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +2": {
+        "F": ['Rosemont {Track 2}', 'Cumberland {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +20": {
+        "F": ['Jackson [95u38p] {Track 1}', 'LaSalle {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +21": {
+        "F": ['LaSalle {Track 1}', 'Clinton [fnghd3] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +22": {
+        "F": ['Clinton [fnghd3] {Track 1}', 'UIC-Halsted {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +23": {
+        "F": ['UIC-Halsted {Track 1}', 'Racine {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +24": {
+        "F": ['Racine {Track 1}', 'Illinois Medical District {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +25": {
+        "F": ['Illinois Medical District {Track 1}', 'Western [bkjgpp] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +26": {
+        "F": ['Western [bkjgpp] {Track 1}', 'Kedzie-Homan {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +27": {
+        "F": ['Kedzie-Homan {Track 1}', 'Pulaski [4tvvb6] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +28": {
+        "F": ['Pulaski [4tvvb6] {Track 1}', 'Cicero [fgsf9t] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +29": {
+        "F": ['Cicero [fgsf9t] {Track 1}', 'Austin [acx38y] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +3": {
+        "F": ['Cumberland {Track 2}', 'Harlem [9yurht] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +30": {
+        "F": ['Austin [acx38y] {Track 2}', 'Oak Park [t8cyz7] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +31": {
+        "F": ['Oak Park [t8cyz7] {Track 2}', 'Harlem {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +32": {
+        "F": ['Harlem {Track 2}', 'Forest Park {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +33": {
+        "F": ['Forest Park {Track 2}', 'Harlem {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +34": {
+        "F": ['Harlem {Track 1}', 'Oak Park [t8cyz7] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +35": {
+        "F": ['Oak Park [t8cyz7] {Track 1}', 'Austin [acx38y] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +36": {
+        "F": ['Austin [acx38y] {Track 1}', 'Cicero [fgsf9t] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +37": {
+        "F": ['Cicero [fgsf9t] {Track 2}', 'Pulaski [4tvvb6] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +38": {
+        "F": ['Pulaski [4tvvb6] {Track 2}', 'Kedzie-Homan {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +39": {
+        "F": ['Kedzie-Homan {Track 2}', 'Western [bkjgpp] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +4": {
+        "F": ['Harlem [9yurht] {Track 2}', 'Jefferson Park {Track 4}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +40": {
+        "F": ['Western [bkjgpp] {Track 2}', 'Illinois Medical District {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +41": {
+        "F": ['Illinois Medical District {Track 2}', 'Racine {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +42": {
+        "F": ['Racine {Track 2}', 'UIC-Halsted {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +43": {
+        "F": ['UIC-Halsted {Track 2}', 'Clinton [fnghd3] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +44": {
+        "F": ['Clinton [fnghd3] {Track 2}', 'LaSalle {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +45": {
+        "F": ['LaSalle {Track 2}', 'Jackson [95u38p] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +46": {
+        "F": ['Jackson [95u38p] {Track 2}', 'Monroe [eapcnj] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +47": {
+        "F": ['Monroe [eapcnj] {Track 2}', 'Washington [zsk695] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +48": {
+        "F": ['Washington [zsk695] {Track 2}', 'Clark/Lake {Track 3}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +49": {
+        "F": ['Clark/Lake {Track 3}', 'Grand [x6wwpd] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +5": {
+        "F": ['Jefferson Park {Track 4}', 'Montrose [x39n44] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +50": {
+        "F": ['Grand [x6wwpd] {Track 2}', 'Chicago [24eusx] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +51": {
+        "F": ['Chicago [24eusx] {Track 2}', 'Division {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +52": {
+        "F": ['Division {Track 2}', 'Damen [qscker] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +53": {
+        "F": ['Damen [qscker] {Track 2}', 'Western [592dck] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +54": {
+        "F": ['Western [592dck] {Track 2}', 'California [7u7wsc] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +55": {
+        "F": ['California [7u7wsc] {Track 2}', 'Logan {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +56": {
+        "F": ['Logan {Track 2}', 'Belmont [whds32] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +57": {
+        "F": ['Belmont [whds32] {Track 2}', 'Addison [wytkfd] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +58": {
+        "F": ['Addison [wytkfd] {Track 2}', 'Irving Park [c5c56s] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +59": {
+        "F": ['Irving Park [c5c56s] {Track 2}', 'Montrose [x39n44] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +6": {
+        "F": ['Montrose [x39n44] {Track 1}', 'Irving Park [c5c56s] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +60": {
+        "F": ['Montrose [x39n44] {Track 2}', 'Jefferson Park {Track 5}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +61": {
+        "F": ['Jefferson Park {Track 5}', 'Harlem [9yurht] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +62": {
+        "F": ['Harlem [9yurht] {Track 1}', 'Cumberland {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +63": {
+        "F": ['Cumberland {Track 1}', 'Rosemont {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +7": {
+        "F": ['Irving Park [c5c56s] {Track 1}', 'Addison [wytkfd] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +8": {
+        "F": ['Addison [wytkfd] {Track 1}', 'Belmont [whds32] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy +9": {
+        "F": ['Belmont [whds32] {Track 1}', 'Logan {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present": {
+        "F": ["CTA / Blue Line / O'Hare - Forest Park"],
+        "Swap": [("O'Hare {Track 3}", "O'Hare {Track 1}"), ("O'Hare {Track 3}", "~ CTA / Blue Line / O'Hare - Forest Park / Present +1"), ('Rosemont {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +2"), ('Cumberland {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +3"), ('Harlem [9yurht] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +4"), ('Jefferson Park {Track 4}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +5"), ('Montrose [x39n44] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +6"), ('Irving Park [c5c56s] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +7"), ('Addison [wytkfd] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +8"), ('Belmont [whds32] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +9"), ('Logan {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +10"), ('California [7u7wsc] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +11"), ('Western [592dck] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +12"), ('Damen [qscker] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +13"), ('Division {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +14"), ('Chicago [24eusx] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +15"), ('Grand [x6wwpd] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +16"), ('Clark/Lake {Track 4}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +17"), ('Washington [zsk695] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +18"), ('Monroe [eapcnj] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +19"), ('Jackson [95u38p] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +20"), ('LaSalle {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +21"), ('Clinton [fnghd3] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +22"), ('UIC-Halsted {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +23"), ('Racine {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +24"), ('Illinois Medical District {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +25"), ('Western [bkjgpp] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +26"), ('Kedzie-Homan {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +27"), ('Pulaski [4tvvb6] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +28"), ('Cicero [fgsf9t] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +29"), ('Austin [acx38y] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +30"), ('Oak Park [t8cyz7] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +31"), ('Harlem {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +32"), ('Forest Park {Track 2}', 'Forest Park {Track 1}'), ('Forest Park {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +33"), ('Harlem {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +34"), ('Oak Park [t8cyz7] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +35"), ('Austin [acx38y] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +36"), ('Cicero [fgsf9t] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +37"), ('Pulaski [4tvvb6] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +38"), ('Kedzie-Homan {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +39"), ('Western [bkjgpp] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +40"), ('Illinois Medical District {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +41"), ('Racine {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +42"), ('UIC-Halsted {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +43"), ('Clinton [fnghd3] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +44"), ('LaSalle {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +45"), ('Jackson [95u38p] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +46"), ('Monroe [eapcnj] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +47"), ('Washington [zsk695] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +48"), ('Clark/Lake {Track 3}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +49"), ('Grand [x6wwpd] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +50"), ('Chicago [24eusx] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +51"), ('Division {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +52"), ('Damen [qscker] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +53"), ('Western [592dck] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +54"), ('California [7u7wsc] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +55"), ('Logan {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +56"), ('Belmont [whds32] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +57"), ('Addison [wytkfd] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +58"), ('Irving Park [c5c56s] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +59"), ('Montrose [x39n44] {Track 2}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +60"), ('Jefferson Park {Track 5}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +61"), ('Harlem [9yurht] {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +62"), ('Cumberland {Track 1}', "~ CTA / Blue Line / O'Hare - Forest Park / Present +63")],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +1": {
+        "F": ["O'Hare {Track 3}", 'Rosemont {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +10": {
+        "F": ['Logan {Track 1}', 'California [7u7wsc] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +11": {
+        "F": ['California [7u7wsc] {Track 1}', 'Western [592dck] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +12": {
+        "F": ['Western [592dck] {Track 1}', 'Damen [qscker] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +13": {
+        "F": ['Damen [qscker] {Track 1}', 'Division {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +14": {
+        "F": ['Division {Track 1}', 'Chicago [24eusx] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +15": {
+        "F": ['Chicago [24eusx] {Track 1}', 'Grand [x6wwpd] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +16": {
+        "F": ['Grand [x6wwpd] {Track 1}', 'Clark/Lake {Track 4}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +17": {
+        "F": ['Clark/Lake {Track 4}', 'Washington [zsk695] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +18": {
+        "F": ['Washington [zsk695] {Track 1}', 'Monroe [eapcnj] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +19": {
+        "F": ['Monroe [eapcnj] {Track 1}', 'Jackson [95u38p] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +2": {
+        "F": ['Rosemont {Track 2}', 'Cumberland {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +20": {
+        "F": ['Jackson [95u38p] {Track 1}', 'LaSalle {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +21": {
+        "F": ['LaSalle {Track 1}', 'Clinton [fnghd3] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +22": {
+        "F": ['Clinton [fnghd3] {Track 1}', 'UIC-Halsted {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +23": {
+        "F": ['UIC-Halsted {Track 1}', 'Racine {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +24": {
+        "F": ['Racine {Track 1}', 'Illinois Medical District {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +25": {
+        "F": ['Illinois Medical District {Track 1}', 'Western [bkjgpp] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +26": {
+        "F": ['Western [bkjgpp] {Track 1}', 'Kedzie-Homan {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +27": {
+        "F": ['Kedzie-Homan {Track 1}', 'Pulaski [4tvvb6] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +28": {
+        "F": ['Pulaski [4tvvb6] {Track 1}', 'Cicero [fgsf9t] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +29": {
+        "F": ['Cicero [fgsf9t] {Track 1}', 'Austin [acx38y] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +3": {
+        "F": ['Cumberland {Track 2}', 'Harlem [9yurht] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +30": {
+        "F": ['Austin [acx38y] {Track 2}', 'Oak Park [t8cyz7] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +31": {
+        "F": ['Oak Park [t8cyz7] {Track 2}', 'Harlem {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +32": {
+        "F": ['Harlem {Track 2}', 'Forest Park {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +33": {
+        "F": ['Forest Park {Track 2}', 'Harlem {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +34": {
+        "F": ['Harlem {Track 1}', 'Oak Park [t8cyz7] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +35": {
+        "F": ['Oak Park [t8cyz7] {Track 1}', 'Austin [acx38y] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +36": {
+        "F": ['Austin [acx38y] {Track 1}', 'Cicero [fgsf9t] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +37": {
+        "F": ['Cicero [fgsf9t] {Track 2}', 'Pulaski [4tvvb6] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +38": {
+        "F": ['Pulaski [4tvvb6] {Track 2}', 'Kedzie-Homan {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +39": {
+        "F": ['Kedzie-Homan {Track 2}', 'Western [bkjgpp] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +4": {
+        "F": ['Harlem [9yurht] {Track 2}', 'Jefferson Park {Track 4}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +40": {
+        "F": ['Western [bkjgpp] {Track 2}', 'Illinois Medical District {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +41": {
+        "F": ['Illinois Medical District {Track 2}', 'Racine {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +42": {
+        "F": ['Racine {Track 2}', 'UIC-Halsted {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +43": {
+        "F": ['UIC-Halsted {Track 2}', 'Clinton [fnghd3] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +44": {
+        "F": ['Clinton [fnghd3] {Track 2}', 'LaSalle {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +45": {
+        "F": ['LaSalle {Track 2}', 'Jackson [95u38p] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +46": {
+        "F": ['Jackson [95u38p] {Track 2}', 'Monroe [eapcnj] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +47": {
+        "F": ['Monroe [eapcnj] {Track 2}', 'Washington [zsk695] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +48": {
+        "F": ['Washington [zsk695] {Track 2}', 'Clark/Lake {Track 3}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +49": {
+        "F": ['Clark/Lake {Track 3}', 'Grand [x6wwpd] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +5": {
+        "F": ['Jefferson Park {Track 4}', 'Montrose [x39n44] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +50": {
+        "F": ['Grand [x6wwpd] {Track 2}', 'Chicago [24eusx] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +51": {
+        "F": ['Chicago [24eusx] {Track 2}', 'Division {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +52": {
+        "F": ['Division {Track 2}', 'Damen [qscker] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +53": {
+        "F": ['Damen [qscker] {Track 2}', 'Western [592dck] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +54": {
+        "F": ['Western [592dck] {Track 2}', 'California [7u7wsc] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +55": {
+        "F": ['California [7u7wsc] {Track 2}', 'Logan {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +56": {
+        "F": ['Logan {Track 2}', 'Belmont [whds32] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +57": {
+        "F": ['Belmont [whds32] {Track 2}', 'Addison [wytkfd] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +58": {
+        "F": ['Addison [wytkfd] {Track 2}', 'Irving Park [c5c56s] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +59": {
+        "F": ['Irving Park [c5c56s] {Track 2}', 'Montrose [x39n44] {Track 2}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +6": {
+        "F": ['Montrose [x39n44] {Track 1}', 'Irving Park [c5c56s] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +60": {
+        "F": ['Montrose [x39n44] {Track 2}', 'Jefferson Park {Track 5}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +61": {
+        "F": ['Jefferson Park {Track 5}', 'Harlem [9yurht] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +62": {
+        "F": ['Harlem [9yurht] {Track 1}', 'Cumberland {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +63": {
+        "F": ['Cumberland {Track 1}', 'Rosemont {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +7": {
+        "F": ['Irving Park [c5c56s] {Track 1}', 'Addison [wytkfd] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +8": {
+        "F": ['Addison [wytkfd] {Track 1}', 'Belmont [whds32] {Track 1}'],
+    },
+    "~ CTA / Blue Line / O'Hare - Forest Park / Present +9": {
+        "F": ['Belmont [whds32] {Track 1}', 'Logan {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy": {
+        "F": ['CTA / Brown Line / Kimball - Loop'],
+        "Swap": [('Kimball {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +1'), ('Kedzie [3hw7gb] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +2'), ('Francisco {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +3'), ('Rockwell {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +4'), ('Western [xawzqy] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +5'), ('Damen [q6k733] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +6'), ('Montrose {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +7'), ('Irving Park {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +8'), ('Addison {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +9'), ('Paulina {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +10'), ('Southport {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +11'), ('Belmont {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +12'), ('Wellington {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +13'), ('Diversey {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +14'), ('Fullerton {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +15'), ('Armitage {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +16'), ('Sedgwick {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +17'), ('Chicago {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +18'), ('Merchandise Mart {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +19'), ('Washington/Wells {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +20'), ('Quincy {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +21'), ('LaSalle/Van Buren {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +22'), ('Harold Washington Library-State/Van Buren {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +23'), ('Adams/Wabash {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +24'), ('Washington/Wabash {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +25'), ('Clark/Lake {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +26'), ('Merchandise Mart {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +27'), ('Chicago {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +28'), ('Sedgwick {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +29'), ('Armitage {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +30'), ('Fullerton {Track 4}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +31'), ('Diversey {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +32'), ('Wellington {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +33'), ('Belmont {Track 4}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +34'), ('Southport {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +35'), ('Paulina {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +36'), ('Addison {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +37'), ('Irving Park {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +38'), ('Montrose {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +39'), ('Damen [q6k733] {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +40'), ('Western [xawzqy] {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +41'), ('Rockwell {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +42'), ('Francisco {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Fantasy +43')],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +1": {
+        "F": ['Kimball {Track 1}', 'Kedzie [3hw7gb] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +10": {
+        "F": ['Paulina {Track 2}', 'Southport {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +11": {
+        "F": ['Southport {Track 2}', 'Belmont {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +12": {
+        "F": ['Belmont {Track 1}', 'Wellington {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +13": {
+        "F": ['Wellington {Track 1}', 'Diversey {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +14": {
+        "F": ['Diversey {Track 1}', 'Fullerton {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +15": {
+        "F": ['Fullerton {Track 1}', 'Armitage {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +16": {
+        "F": ['Armitage {Track 1}', 'Sedgwick {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +17": {
+        "F": ['Sedgwick {Track 2}', 'Chicago {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +18": {
+        "F": ['Chicago {Track 1}', 'Merchandise Mart {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +19": {
+        "F": ['Merchandise Mart {Track 1}', 'Washington/Wells {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +2": {
+        "F": ['Kedzie [3hw7gb] {Track 2}', 'Francisco {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +20": {
+        "F": ['Washington/Wells {Track 1}', 'Quincy {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +21": {
+        "F": ['Quincy {Track 1}', 'LaSalle/Van Buren {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +22": {
+        "F": ['LaSalle/Van Buren {Track 2}', 'Harold Washington Library-State/Van Buren {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +23": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 2}', 'Adams/Wabash {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +24": {
+        "F": ['Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +25": {
+        "F": ['Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +26": {
+        "F": ['Clark/Lake {Track 1}', 'Merchandise Mart {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +27": {
+        "F": ['Merchandise Mart {Track 2}', 'Chicago {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +28": {
+        "F": ['Chicago {Track 2}', 'Sedgwick {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +29": {
+        "F": ['Sedgwick {Track 1}', 'Armitage {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +3": {
+        "F": ['Francisco {Track 2}', 'Rockwell {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +30": {
+        "F": ['Armitage {Track 2}', 'Fullerton {Track 4}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +31": {
+        "F": ['Fullerton {Track 4}', 'Diversey {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +32": {
+        "F": ['Diversey {Track 2}', 'Wellington {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +33": {
+        "F": ['Wellington {Track 2}', 'Belmont {Track 4}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +34": {
+        "F": ['Belmont {Track 4}', 'Southport {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +35": {
+        "F": ['Southport {Track 1}', 'Paulina {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +36": {
+        "F": ['Paulina {Track 1}', 'Addison {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +37": {
+        "F": ['Addison {Track 2}', 'Irving Park {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +38": {
+        "F": ['Irving Park {Track 2}', 'Montrose {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +39": {
+        "F": ['Montrose {Track 2}', 'Damen [q6k733] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +4": {
+        "F": ['Rockwell {Track 2}', 'Western [xawzqy] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +40": {
+        "F": ['Damen [q6k733] {Track 1}', 'Western [xawzqy] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +41": {
+        "F": ['Western [xawzqy] {Track 1}', 'Rockwell {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +42": {
+        "F": ['Rockwell {Track 1}', 'Francisco {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +43": {
+        "F": ['Francisco {Track 1}', 'Kedzie [3hw7gb] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +5": {
+        "F": ['Western [xawzqy] {Track 2}', 'Damen [q6k733] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +6": {
+        "F": ['Damen [q6k733] {Track 2}', 'Montrose {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +7": {
+        "F": ['Montrose {Track 1}', 'Irving Park {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +8": {
+        "F": ['Irving Park {Track 1}', 'Addison {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Fantasy +9": {
+        "F": ['Addison {Track 1}', 'Paulina {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present": {
+        "F": ['CTA / Brown Line / Kimball - Loop'],
+        "Swap": [('Kimball {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +1'), ('Kedzie [3hw7gb] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +2'), ('Francisco {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +3'), ('Rockwell {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +4'), ('Western [xawzqy] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +5'), ('Damen [q6k733] {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +6'), ('Montrose {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +7'), ('Irving Park {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +8'), ('Addison {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +9'), ('Paulina {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +10'), ('Southport {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +11'), ('Belmont {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +12'), ('Wellington {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +13'), ('Diversey {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +14'), ('Fullerton {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +15'), ('Armitage {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +16'), ('Sedgwick {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +17'), ('Chicago {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +18'), ('Merchandise Mart {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +19'), ('Washington/Wells {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +20'), ('Quincy {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +21'), ('LaSalle/Van Buren {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +22'), ('Harold Washington Library-State/Van Buren {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +23'), ('Adams/Wabash {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +24'), ('Washington/Wabash {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +25'), ('Clark/Lake {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +26'), ('Merchandise Mart {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +27'), ('Chicago {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +28'), ('Sedgwick {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +29'), ('Armitage {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +30'), ('Fullerton {Track 4}', '~ CTA / Brown Line / Kimball - Loop / Present +31'), ('Diversey {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +32'), ('Wellington {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +33'), ('Belmont {Track 4}', '~ CTA / Brown Line / Kimball - Loop / Present +34'), ('Southport {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +35'), ('Paulina {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +36'), ('Addison {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +37'), ('Irving Park {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +38'), ('Montrose {Track 2}', '~ CTA / Brown Line / Kimball - Loop / Present +39'), ('Damen [q6k733] {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +40'), ('Western [xawzqy] {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +41'), ('Rockwell {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +42'), ('Francisco {Track 1}', '~ CTA / Brown Line / Kimball - Loop / Present +43')],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +1": {
+        "F": ['Kimball {Track 1}', 'Kedzie [3hw7gb] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +10": {
+        "F": ['Paulina {Track 2}', 'Southport {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +11": {
+        "F": ['Southport {Track 2}', 'Belmont {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +12": {
+        "F": ['Belmont {Track 1}', 'Wellington {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +13": {
+        "F": ['Wellington {Track 1}', 'Diversey {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +14": {
+        "F": ['Diversey {Track 1}', 'Fullerton {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +15": {
+        "F": ['Fullerton {Track 1}', 'Armitage {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +16": {
+        "F": ['Armitage {Track 1}', 'Sedgwick {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +17": {
+        "F": ['Sedgwick {Track 2}', 'Chicago {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +18": {
+        "F": ['Chicago {Track 1}', 'Merchandise Mart {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +19": {
+        "F": ['Merchandise Mart {Track 1}', 'Washington/Wells {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +2": {
+        "F": ['Kedzie [3hw7gb] {Track 2}', 'Francisco {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +20": {
+        "F": ['Washington/Wells {Track 1}', 'Quincy {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +21": {
+        "F": ['Quincy {Track 1}', 'LaSalle/Van Buren {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +22": {
+        "F": ['LaSalle/Van Buren {Track 2}', 'Harold Washington Library-State/Van Buren {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +23": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 2}', 'Adams/Wabash {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +24": {
+        "F": ['Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +25": {
+        "F": ['Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +26": {
+        "F": ['Clark/Lake {Track 1}', 'Merchandise Mart {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +27": {
+        "F": ['Merchandise Mart {Track 2}', 'Chicago {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +28": {
+        "F": ['Chicago {Track 2}', 'Sedgwick {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +29": {
+        "F": ['Sedgwick {Track 1}', 'Armitage {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +3": {
+        "F": ['Francisco {Track 2}', 'Rockwell {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +30": {
+        "F": ['Armitage {Track 2}', 'Fullerton {Track 4}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +31": {
+        "F": ['Fullerton {Track 4}', 'Diversey {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +32": {
+        "F": ['Diversey {Track 2}', 'Wellington {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +33": {
+        "F": ['Wellington {Track 2}', 'Belmont {Track 4}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +34": {
+        "F": ['Belmont {Track 4}', 'Southport {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +35": {
+        "F": ['Southport {Track 1}', 'Paulina {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +36": {
+        "F": ['Paulina {Track 1}', 'Addison {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +37": {
+        "F": ['Addison {Track 2}', 'Irving Park {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +38": {
+        "F": ['Irving Park {Track 2}', 'Montrose {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +39": {
+        "F": ['Montrose {Track 2}', 'Damen [q6k733] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +4": {
+        "F": ['Rockwell {Track 2}', 'Western [xawzqy] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +40": {
+        "F": ['Damen [q6k733] {Track 1}', 'Western [xawzqy] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +41": {
+        "F": ['Western [xawzqy] {Track 1}', 'Rockwell {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +42": {
+        "F": ['Rockwell {Track 1}', 'Francisco {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +43": {
+        "F": ['Francisco {Track 1}', 'Kedzie [3hw7gb] {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +5": {
+        "F": ['Western [xawzqy] {Track 2}', 'Damen [q6k733] {Track 2}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +6": {
+        "F": ['Damen [q6k733] {Track 2}', 'Montrose {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +7": {
+        "F": ['Montrose {Track 1}', 'Irving Park {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +8": {
+        "F": ['Irving Park {Track 1}', 'Addison {Track 1}'],
+    },
+    "~ CTA / Brown Line / Kimball - Loop / Present +9": {
+        "F": ['Addison {Track 1}', 'Paulina {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy": {
+        "F": ['Harlem/Lake {Track 1}', 'Oak Park {Track 2}', 'Ridgeland {Track 2}', 'Austin {Track 2}', 'Central {Track 2}', 'Laramie {Track 1}', 'Cicero [jhvg38] {Track 1}', 'Pulaski [9bkvbx] {Track 1}', 'Conservatory-Central Park Dr {Track 1}', 'Kedzie [8n2f66] {Track 1}', 'California [ut28tk] {Track 2}', 'Western [hvhahm] {Track 2}', 'Damen [32has7] {Track 2}', 'Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}', 'Clinton {Track 2}', 'Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}', 'Roosevelt {Track 1}', 'Cermak-McCormick Place {Track 1}', '35th-Bronzeville-IIT {Track 1}', 'Indiana {Track 2}', '43rd {Track 1}', '47th {Track 1}', '51st {Track 1}', 'Garfield {Track 1}', 'King Dr {Track 2}', 'Cottage Grove {Track 1}', 'Garfield {Track 2}', '51st {Track 2}', '47th {Track 2}', '43rd {Track 2}', 'Indiana {Track 1}', '35th-Bronzeville-IIT {Track 2}', 'Cermak-McCormick Place {Track 2}', 'Roosevelt {Track 2}', 'Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}', 'Clinton {Track 1}', 'Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}', 'Damen [32has7] {Track 1}', 'Western [hvhahm] {Track 1}', 'California [ut28tk] {Track 1}', 'Kedzie [8n2f66] {Track 2}', 'Conservatory-Central Park Dr {Track 2}', 'Pulaski [9bkvbx] {Track 2}', 'Cicero [jhvg38] {Track 2}', 'Laramie {Track 2}', 'Central {Track 1}', 'Austin {Track 1}', 'Ridgeland {Track 1}', 'Oak Park {Track 1}'],
+        "Skip": ['Cottage Grove {Track 1}', 'King Dr {Track 2}'],
+        "Swap": [('Garfield {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +1'), ('Halsted [m7p536] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +2'), ('Ashland/63rd {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +3')],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +1": {
+        "F": ['Garfield {Track 1}', 'Halsted [m7p536] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +2": {
+        "F": ['Halsted [m7p536] {Track 1}', 'Ashland/63rd {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy +3": {
+        "F": ['Ashland/63rd {Track 1}', 'Halsted [m7p536] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present": {
+        "F": ['Harlem/Lake {Track 1}', 'Oak Park {Track 2}', 'Ridgeland {Track 2}', 'Austin {Track 2}', 'Central {Track 2}', 'Laramie {Track 1}', 'Cicero [jhvg38] {Track 1}', 'Pulaski [9bkvbx] {Track 1}', 'Conservatory-Central Park Dr {Track 1}', 'Kedzie [8n2f66] {Track 1}', 'California [ut28tk] {Track 2}', 'Western [hvhahm] {Track 2}', 'Damen [32has7] {Track 2}', 'Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}', 'Clinton {Track 2}', 'Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}', 'Roosevelt {Track 1}', 'Cermak-McCormick Place {Track 1}', '35th-Bronzeville-IIT {Track 1}', 'Indiana {Track 2}', '43rd {Track 1}', '47th {Track 1}', '51st {Track 1}', 'Garfield {Track 1}', 'King Dr {Track 2}', 'Cottage Grove {Track 1}', 'Garfield {Track 2}', '51st {Track 2}', '47th {Track 2}', '43rd {Track 2}', 'Indiana {Track 1}', '35th-Bronzeville-IIT {Track 2}', 'Cermak-McCormick Place {Track 2}', 'Roosevelt {Track 2}', 'Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}', 'Clinton {Track 1}', 'Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}', 'Damen [32has7] {Track 1}', 'Western [hvhahm] {Track 1}', 'California [ut28tk] {Track 1}', 'Kedzie [8n2f66] {Track 2}', 'Conservatory-Central Park Dr {Track 2}', 'Pulaski [9bkvbx] {Track 2}', 'Cicero [jhvg38] {Track 2}', 'Laramie {Track 2}', 'Central {Track 1}', 'Austin {Track 1}', 'Ridgeland {Track 1}', 'Oak Park {Track 1}'],
+        "Skip": ['Cottage Grove {Track 1}', 'King Dr {Track 2}', 'Western [hvhahm] {Track 1}', 'Western [hvhahm] {Track 2}'],
+        "Swap": [('Garfield {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +1'), ('Halsted [m7p536] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +2'), ('Ashland/63rd {Track 1}', '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +3')],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +1": {
+        "F": ['Garfield {Track 1}', 'Halsted [m7p536] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +2": {
+        "F": ['Halsted [m7p536] {Track 1}', 'Ashland/63rd {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present +3": {
+        "F": ['Ashland/63rd {Track 1}', 'Halsted [m7p536] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy": {
+        "F": ['CTA / Green Line / Harlem/Lake - Cottage Grove'],
+        "Swap": [('Harlem/Lake {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +1'), ('Oak Park {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +2'), ('Ridgeland {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +3'), ('Austin {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +4'), ('Central {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +5'), ('Laramie {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +6'), ('Cicero [jhvg38] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +7'), ('Pulaski [9bkvbx] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +8'), ('Conservatory-Central Park Dr {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +9'), ('Kedzie [8n2f66] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +10'), ('California [ut28tk] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +11'), ('Western [hvhahm] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +12'), ('Damen [32has7] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +13'), ('Ashland [5u3kwf] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +14'), ('Morgan {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +15'), ('Clinton {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +16'), ('Clark/Lake {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +17'), ('Washington/Wabash {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +18'), ('Adams/Wabash {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +19'), ('Roosevelt {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +20'), ('Cermak-McCormick Place {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +21'), ('35th-Bronzeville-IIT {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +22'), ('Indiana {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +23'), ('43rd {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +24'), ('47th {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +25'), ('51st {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +26'), ('Garfield {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +27'), ('King Dr {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +28'), ('Cottage Grove {Track 2}', 'Cottage Grove {Track 1}'), ('Cottage Grove {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +29'), ('King Dr {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +30'), ('Garfield {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +31'), ('51st {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +32'), ('47th {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +33'), ('43rd {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +34'), ('Indiana {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +35'), ('35th-Bronzeville-IIT {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +36'), ('Cermak-McCormick Place {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +37'), ('Roosevelt {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +38'), ('Adams/Wabash {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +39'), ('Washington/Wabash {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +40'), ('Clark/Lake {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +41'), ('Clinton {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +42'), ('Morgan {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +43'), ('Ashland [5u3kwf] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +44'), ('Damen [32has7] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +45'), ('Western [hvhahm] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +46'), ('California [ut28tk] {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +47'), ('Kedzie [8n2f66] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +48'), ('Conservatory-Central Park Dr {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +49'), ('Pulaski [9bkvbx] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +50'), ('Cicero [jhvg38] {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +51'), ('Laramie {Track 2}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +52'), ('Central {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +53'), ('Austin {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +54'), ('Ridgeland {Track 1}', '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +55')],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +1": {
+        "F": ['Harlem/Lake {Track 1}', 'Oak Park {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +10": {
+        "F": ['Kedzie [8n2f66] {Track 1}', 'California [ut28tk] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +11": {
+        "F": ['California [ut28tk] {Track 2}', 'Western [hvhahm] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +12": {
+        "F": ['Western [hvhahm] {Track 2}', 'Damen [32has7] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +13": {
+        "F": ['Damen [32has7] {Track 2}', 'Ashland [5u3kwf] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +14": {
+        "F": ['Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +15": {
+        "F": ['Morgan {Track 2}', 'Clinton {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +16": {
+        "F": ['Clinton {Track 2}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +17": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +18": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +19": {
+        "F": ['Adams/Wabash {Track 1}', 'Roosevelt {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +2": {
+        "F": ['Oak Park {Track 2}', 'Ridgeland {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +20": {
+        "F": ['Roosevelt {Track 1}', 'Cermak-McCormick Place {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +21": {
+        "F": ['Cermak-McCormick Place {Track 1}', '35th-Bronzeville-IIT {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +22": {
+        "F": ['35th-Bronzeville-IIT {Track 1}', 'Indiana {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +23": {
+        "F": ['Indiana {Track 2}', '43rd {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +24": {
+        "F": ['43rd {Track 1}', '47th {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +25": {
+        "F": ['47th {Track 1}', '51st {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +26": {
+        "F": ['51st {Track 1}', 'Garfield {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +27": {
+        "F": ['Garfield {Track 1}', 'King Dr {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +28": {
+        "F": ['King Dr {Track 2}', 'Cottage Grove {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +29": {
+        "F": ['Cottage Grove {Track 2}', 'King Dr {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +3": {
+        "F": ['Ridgeland {Track 2}', 'Austin {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +30": {
+        "F": ['King Dr {Track 1}', 'Garfield {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +31": {
+        "F": ['Garfield {Track 2}', '51st {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +32": {
+        "F": ['51st {Track 2}', '47th {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +33": {
+        "F": ['47th {Track 2}', '43rd {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +34": {
+        "F": ['43rd {Track 2}', 'Indiana {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +35": {
+        "F": ['Indiana {Track 1}', '35th-Bronzeville-IIT {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +36": {
+        "F": ['35th-Bronzeville-IIT {Track 2}', 'Cermak-McCormick Place {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +37": {
+        "F": ['Cermak-McCormick Place {Track 2}', 'Roosevelt {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +38": {
+        "F": ['Roosevelt {Track 2}', 'Adams/Wabash {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +39": {
+        "F": ['Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +4": {
+        "F": ['Austin {Track 2}', 'Central {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +40": {
+        "F": ['Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +41": {
+        "F": ['Clark/Lake {Track 1}', 'Clinton {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +42": {
+        "F": ['Clinton {Track 1}', 'Morgan {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +43": {
+        "F": ['Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +44": {
+        "F": ['Ashland [5u3kwf] {Track 1}', 'Damen [32has7] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +45": {
+        "F": ['Damen [32has7] {Track 1}', 'Western [hvhahm] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +46": {
+        "F": ['Western [hvhahm] {Track 1}', 'California [ut28tk] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +47": {
+        "F": ['California [ut28tk] {Track 1}', 'Kedzie [8n2f66] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +48": {
+        "F": ['Kedzie [8n2f66] {Track 2}', 'Conservatory-Central Park Dr {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +49": {
+        "F": ['Conservatory-Central Park Dr {Track 2}', 'Pulaski [9bkvbx] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +5": {
+        "F": ['Central {Track 2}', 'Laramie {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +50": {
+        "F": ['Pulaski [9bkvbx] {Track 2}', 'Cicero [jhvg38] {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +51": {
+        "F": ['Cicero [jhvg38] {Track 2}', 'Laramie {Track 2}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +52": {
+        "F": ['Laramie {Track 2}', 'Central {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +53": {
+        "F": ['Central {Track 1}', 'Austin {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +54": {
+        "F": ['Austin {Track 1}', 'Ridgeland {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +55": {
+        "F": ['Ridgeland {Track 1}', 'Oak Park {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +6": {
+        "F": ['Laramie {Track 1}', 'Cicero [jhvg38] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +7": {
+        "F": ['Cicero [jhvg38] {Track 1}', 'Pulaski [9bkvbx] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +8": {
+        "F": ['Pulaski [9bkvbx] {Track 1}', 'Conservatory-Central Park Dr {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy +9": {
+        "F": ['Conservatory-Central Park Dr {Track 1}', 'Kedzie [8n2f66] {Track 1}'],
+    },
+    "~ CTA / Green Line / Harlem/Lake - Cottage Grove / Present": {
+        "F": ['Harlem/Lake {Track 1}', 'Oak Park {Track 2}', 'Ridgeland {Track 2}', 'Austin {Track 2}', 'Central {Track 2}', 'Laramie {Track 1}', 'Cicero [jhvg38] {Track 1}', 'Pulaski [9bkvbx] {Track 1}', 'Conservatory-Central Park Dr {Track 1}', 'Kedzie [8n2f66] {Track 1}', 'California [ut28tk] {Track 2}', 'Western [hvhahm] {Track 2}', 'Damen [32has7] {Track 2}', 'Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}', 'Clinton {Track 2}', 'Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}', 'Roosevelt {Track 1}', 'Cermak-McCormick Place {Track 1}', '35th-Bronzeville-IIT {Track 1}', 'Indiana {Track 2}', '43rd {Track 1}', '47th {Track 1}', '51st {Track 1}', 'Garfield {Track 1}', 'King Dr {Track 2}', 'Cottage Grove {Track 1}', 'King Dr {Track 1}', 'Garfield {Track 2}', '51st {Track 2}', '47th {Track 2}', '43rd {Track 2}', 'Indiana {Track 1}', '35th-Bronzeville-IIT {Track 2}', 'Cermak-McCormick Place {Track 2}', 'Roosevelt {Track 2}', 'Adams/Wabash {Track 2}', 'Washington/Wabash {Track 2}', 'Clark/Lake {Track 1}', 'Clinton {Track 1}', 'Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}', 'Damen [32has7] {Track 1}', 'California [ut28tk] {Track 1}', 'Kedzie [8n2f66] {Track 2}', 'Conservatory-Central Park Dr {Track 2}', 'Pulaski [9bkvbx] {Track 2}', 'Cicero [jhvg38] {Track 2}', 'Laramie {Track 2}', 'Central {Track 1}', 'Austin {Track 1}', 'Ridgeland {Track 1}', 'Oak Park {Track 1}'],
+        "Skip": ['Western [hvhahm] {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy": {
+        "F": ['CTA / Orange Line / Midway - Loop'],
+        "Swap": [('Midway {Track 3}', 'Midway {Track 1}'), ('Midway {Track 3}', '~ CTA / Orange Line / Midway - Loop / Fantasy +1'), ('Kedzie {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +2'), ('Western {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +3'), ('35th/Archer {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +4'), ('Ashland {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +5'), ('Halsted {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +6'), ('Roosevelt {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +7'), ('Harold Washington Library-State/Van Buren {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +8'), ('LaSalle/Van Buren {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +9'), ('Quincy {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +10'), ('Washington/Wells {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +11'), ('Clark/Lake {Track 2}', '~ CTA / Orange Line / Midway - Loop / Fantasy +12'), ('Washington/Wabash {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +13'), ('Adams/Wabash {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +14'), ('Roosevelt {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +15'), ('Halsted {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +16'), ('Ashland {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +17'), ('35th/Archer {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +18'), ('Western {Track 1}', '~ CTA / Orange Line / Midway - Loop / Fantasy +19')],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +1": {
+        "F": ['Midway {Track 3}', 'Kedzie {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +10": {
+        "F": ['Quincy {Track 2}', 'Washington/Wells {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +11": {
+        "F": ['Washington/Wells {Track 2}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +12": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +13": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +14": {
+        "F": ['Adams/Wabash {Track 1}', 'Roosevelt {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +15": {
+        "F": ['Roosevelt {Track 1}', 'Halsted {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +16": {
+        "F": ['Halsted {Track 1}', 'Ashland {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +17": {
+        "F": ['Ashland {Track 1}', '35th/Archer {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +18": {
+        "F": ['35th/Archer {Track 1}', 'Western {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +19": {
+        "F": ['Western {Track 1}', 'Kedzie {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +2": {
+        "F": ['Kedzie {Track 2}', 'Western {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +3": {
+        "F": ['Western {Track 2}', '35th/Archer {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +4": {
+        "F": ['35th/Archer {Track 2}', 'Ashland {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +5": {
+        "F": ['Ashland {Track 2}', 'Halsted {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +6": {
+        "F": ['Halsted {Track 2}', 'Roosevelt {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +7": {
+        "F": ['Roosevelt {Track 2}', 'Harold Washington Library-State/Van Buren {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +8": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Fantasy +9": {
+        "F": ['LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present": {
+        "F": ['CTA / Orange Line / Midway - Loop'],
+        "Swap": [('Midway {Track 3}', 'Midway {Track 1}'), ('Midway {Track 3}', '~ CTA / Orange Line / Midway - Loop / Present +1'), ('Kedzie {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +2'), ('Western {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +3'), ('35th/Archer {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +4'), ('Ashland {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +5'), ('Halsted {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +6'), ('Roosevelt {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +7'), ('Harold Washington Library-State/Van Buren {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +8'), ('LaSalle/Van Buren {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +9'), ('Quincy {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +10'), ('Washington/Wells {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +11'), ('Clark/Lake {Track 2}', '~ CTA / Orange Line / Midway - Loop / Present +12'), ('Washington/Wabash {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +13'), ('Adams/Wabash {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +14'), ('Roosevelt {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +15'), ('Halsted {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +16'), ('Ashland {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +17'), ('35th/Archer {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +18'), ('Western {Track 1}', '~ CTA / Orange Line / Midway - Loop / Present +19')],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +1": {
+        "F": ['Midway {Track 3}', 'Kedzie {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +10": {
+        "F": ['Quincy {Track 2}', 'Washington/Wells {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +11": {
+        "F": ['Washington/Wells {Track 2}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +12": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +13": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +14": {
+        "F": ['Adams/Wabash {Track 1}', 'Roosevelt {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +15": {
+        "F": ['Roosevelt {Track 1}', 'Halsted {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +16": {
+        "F": ['Halsted {Track 1}', 'Ashland {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +17": {
+        "F": ['Ashland {Track 1}', '35th/Archer {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +18": {
+        "F": ['35th/Archer {Track 1}', 'Western {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +19": {
+        "F": ['Western {Track 1}', 'Kedzie {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +2": {
+        "F": ['Kedzie {Track 2}', 'Western {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +3": {
+        "F": ['Western {Track 2}', '35th/Archer {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +4": {
+        "F": ['35th/Archer {Track 2}', 'Ashland {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +5": {
+        "F": ['Ashland {Track 2}', 'Halsted {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +6": {
+        "F": ['Halsted {Track 2}', 'Roosevelt {Track 2}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +7": {
+        "F": ['Roosevelt {Track 2}', 'Harold Washington Library-State/Van Buren {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +8": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}'],
+    },
+    "~ CTA / Orange Line / Midway - Loop / Present +9": {
+        "F": ['LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy": {
+        "F": ['CTA / Pink Line / 54th/Cermak - Loop'],
+        "Swap": [('54th/Cermak', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +1'), ('Cicero {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +2'), ('Kostner {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +3'), ('Pulaski {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +4'), ('Central Park [p3u4fq] {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +5'), ('Kedzie [789nuy] {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +6'), ('California {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +7'), ('Western [dz7shp] {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +8'), ('Damen {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +9'), ('18th {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +10'), ('Polk {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +11'), ('Madison [jgy5t6] {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +12'), ('Ashland [5u3kwf] {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +13'), ('Morgan {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +14'), ('Clinton {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +15'), ('Clark/Lake {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +16'), ('Washington/Wabash {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +17'), ('Adams/Wabash {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +18'), ('Harold Washington Library-State/Van Buren {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +19'), ('LaSalle/Van Buren {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +20'), ('Quincy {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +21'), ('Washington/Wells {Track 2}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +22'), ('Clinton {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +23'), ('Morgan {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +24'), ('Ashland [5u3kwf] {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +25'), ('Madison [jgy5t6] {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +26'), ('Polk {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +27'), ('18th {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +28'), ('Damen {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +29'), ('Western [dz7shp] {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +30'), ('California {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +31'), ('Kedzie [789nuy] {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +32'), ('Central Park [p3u4fq] {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +33'), ('Pulaski {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +34'), ('Kostner {Track 1}', '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +35')],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +1": {
+        "F": ['54th/Cermak', 'Cicero {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +10": {
+        "F": ['18th {Track 2}', 'Polk {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +11": {
+        "F": ['Polk {Track 2}', 'Madison [jgy5t6] {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +12": {
+        "F": ['Madison [jgy5t6] {Track 2}', 'Ashland [5u3kwf] {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +13": {
+        "F": ['Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +14": {
+        "F": ['Morgan {Track 2}', 'Clinton {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +15": {
+        "F": ['Clinton {Track 2}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +16": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +17": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +18": {
+        "F": ['Adams/Wabash {Track 1}', 'Harold Washington Library-State/Van Buren {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +19": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +2": {
+        "F": ['Cicero {Track 2}', 'Kostner {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +20": {
+        "F": ['LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +21": {
+        "F": ['Quincy {Track 2}', 'Washington/Wells {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +22": {
+        "F": ['Washington/Wells {Track 2}', 'Clinton {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +23": {
+        "F": ['Clinton {Track 1}', 'Morgan {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +24": {
+        "F": ['Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +25": {
+        "F": ['Ashland [5u3kwf] {Track 1}', 'Madison [jgy5t6] {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +26": {
+        "F": ['Madison [jgy5t6] {Track 1}', 'Polk {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +27": {
+        "F": ['Polk {Track 1}', '18th {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +28": {
+        "F": ['18th {Track 1}', 'Damen {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +29": {
+        "F": ['Damen {Track 1}', 'Western [dz7shp] {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +3": {
+        "F": ['Kostner {Track 2}', 'Pulaski {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +30": {
+        "F": ['Western [dz7shp] {Track 1}', 'California {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +31": {
+        "F": ['California {Track 1}', 'Kedzie [789nuy] {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +32": {
+        "F": ['Kedzie [789nuy] {Track 1}', 'Central Park [p3u4fq] {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +33": {
+        "F": ['Central Park [p3u4fq] {Track 1}', 'Pulaski {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +34": {
+        "F": ['Pulaski {Track 1}', 'Kostner {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +35": {
+        "F": ['Kostner {Track 1}', 'Cicero {Track 1}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +4": {
+        "F": ['Pulaski {Track 2}', 'Central Park [p3u4fq] {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +5": {
+        "F": ['Central Park [p3u4fq] {Track 2}', 'Kedzie [789nuy] {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +6": {
+        "F": ['Kedzie [789nuy] {Track 2}', 'California {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +7": {
+        "F": ['California {Track 2}', 'Western [dz7shp] {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +8": {
+        "F": ['Western [dz7shp] {Track 2}', 'Damen {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy +9": {
+        "F": ['Damen {Track 2}', '18th {Track 2}'],
+    },
+    "~ CTA / Pink Line / 54th/Cermak - Loop / Present": {
+        "F": ['54th/Cermak', 'Cicero {Track 2}', 'Kostner {Track 2}', 'Pulaski {Track 2}', 'Central Park [p3u4fq] {Track 2}', 'Kedzie [789nuy] {Track 2}', 'California {Track 2}', 'Western [dz7shp] {Track 2}', 'Damen {Track 2}', '18th {Track 2}', 'Polk {Track 2}', 'Madison [jgy5t6] {Track 2}', 'Ashland [5u3kwf] {Track 2}', 'Morgan {Track 2}', 'Clinton {Track 2}', 'Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}', 'Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}', 'Washington/Wells {Track 2}', 'Clinton {Track 1}', 'Morgan {Track 1}', 'Ashland [5u3kwf] {Track 1}', 'Polk {Track 1}', '18th {Track 1}', 'Damen {Track 1}', 'Western [dz7shp] {Track 1}', 'California {Track 1}', 'Kedzie [789nuy] {Track 1}', 'Central Park [p3u4fq] {Track 1}', 'Pulaski {Track 1}', 'Kostner {Track 1}', 'Cicero {Track 1}'],
+        "Skip": ['Madison [jgy5t6] {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy": {
+        "F": ['Linden {Track 1}', 'Central [zv8yw8] {Track 1}', 'Noyes {Track 1}', 'Foster {Track 1}', 'Evanston Davis St {Track 3}', 'Dempster {Track 1}', 'Evanston Main St {Track 3}', 'South Blvd {Track 1}', 'Howard {Track 1}', 'Morse {Track 1}', 'Loyola {Track 1}'],
+        "Skip": ['Loyola {Track 1}', 'Morse {Track 1}'],
+        "Swap": [('Howard {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +1'), ('Wilson {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +2'), ('Sheridan [kknb88] {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +3'), ('Addison [2z5zne] {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +4'), ('Belmont {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +5'), ('Wellington {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +6'), ('Diversey {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +7'), ('Fullerton {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +8'), ('Armitage {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +9'), ('Sedgwick {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +10'), ('Chicago {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +11'), ('Merchandise Mart {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +12'), ('Clark/Lake {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +13'), ('Washington/Wabash {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +14'), ('Adams/Wabash {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +15'), ('Harold Washington Library-State/Van Buren {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +16'), ('LaSalle/Van Buren {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +17'), ('Quincy {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +18'), ('Washington/Wells {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +19'), ('Merchandise Mart {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +20'), ('Chicago {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +21'), ('Sedgwick {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +22'), ('Armitage {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +23'), ('Fullerton {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +24'), ('Diversey {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +25'), ('Wellington {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +26'), ('Belmont {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +27'), ('Addison [2z5zne] {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +28'), ('Sheridan [kknb88] {Track 1}', '~ CTA / Purple Line / Linden - Loop / Fantasy +29'), ('Wilson {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +30'), ('Howard {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +31'), ('South Blvd {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +32'), ('Evanston Main St {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +33'), ('Dempster {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +34'), ('Evanston Davis St {Track 4}', '~ CTA / Purple Line / Linden - Loop / Fantasy +35'), ('Foster {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +36'), ('Noyes {Track 2}', '~ CTA / Purple Line / Linden - Loop / Fantasy +37')],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +1": {
+        "F": ['Howard {Track 1}', 'Wilson {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +10": {
+        "F": ['Sedgwick {Track 2}', 'Chicago {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +11": {
+        "F": ['Chicago {Track 1}', 'Merchandise Mart {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +12": {
+        "F": ['Merchandise Mart {Track 1}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +13": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +14": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +15": {
+        "F": ['Adams/Wabash {Track 1}', 'Harold Washington Library-State/Van Buren {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +16": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +17": {
+        "F": ['LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +18": {
+        "F": ['Quincy {Track 2}', 'Washington/Wells {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +19": {
+        "F": ['Washington/Wells {Track 2}', 'Merchandise Mart {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +2": {
+        "F": ['Wilson {Track 1}', 'Sheridan [kknb88] {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +20": {
+        "F": ['Merchandise Mart {Track 2}', 'Chicago {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +21": {
+        "F": ['Chicago {Track 2}', 'Sedgwick {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +22": {
+        "F": ['Sedgwick {Track 1}', 'Armitage {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +23": {
+        "F": ['Armitage {Track 2}', 'Fullerton {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +24": {
+        "F": ['Fullerton {Track 4}', 'Diversey {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +25": {
+        "F": ['Diversey {Track 2}', 'Wellington {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +26": {
+        "F": ['Wellington {Track 2}', 'Belmont {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +27": {
+        "F": ['Belmont {Track 4}', 'Addison [2z5zne] {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +28": {
+        "F": ['Addison [2z5zne] {Track 4}', 'Sheridan [kknb88] {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +29": {
+        "F": ['Sheridan [kknb88] {Track 1}', 'Wilson {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +3": {
+        "F": ['Sheridan [kknb88] {Track 4}', 'Addison [2z5zne] {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +30": {
+        "F": ['Wilson {Track 4}', 'Howard {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +31": {
+        "F": ['Howard {Track 2}', 'South Blvd {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +32": {
+        "F": ['South Blvd {Track 2}', 'Evanston Main St {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +33": {
+        "F": ['Evanston Main St {Track 4}', 'Dempster {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +34": {
+        "F": ['Dempster {Track 2}', 'Evanston Davis St {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +35": {
+        "F": ['Evanston Davis St {Track 4}', 'Foster {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +36": {
+        "F": ['Foster {Track 2}', 'Noyes {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +37": {
+        "F": ['Noyes {Track 2}', 'Central [zv8yw8] {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +4": {
+        "F": ['Addison [2z5zne] {Track 1}', 'Belmont {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +5": {
+        "F": ['Belmont {Track 1}', 'Wellington {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +6": {
+        "F": ['Wellington {Track 1}', 'Diversey {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +7": {
+        "F": ['Diversey {Track 1}', 'Fullerton {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +8": {
+        "F": ['Fullerton {Track 1}', 'Armitage {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Fantasy +9": {
+        "F": ['Armitage {Track 1}', 'Sedgwick {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present": {
+        "F": ['Linden {Track 1}', 'Central [zv8yw8] {Track 1}', 'Noyes {Track 1}', 'Foster {Track 1}', 'Evanston Davis St {Track 3}', 'Dempster {Track 1}', 'Evanston Main St {Track 3}', 'South Blvd {Track 1}', 'Howard {Track 1}', 'Morse {Track 1}', 'Loyola {Track 1}'],
+        "Skip": ['Loyola {Track 1}', 'Morse {Track 1}'],
+        "Swap": [('Howard {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +1'), ('Wilson {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +2'), ('Sheridan [kknb88] {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +3'), ('Addison [2z5zne] {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +4'), ('Belmont {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +5'), ('Wellington {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +6'), ('Diversey {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +7'), ('Fullerton {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +8'), ('Armitage {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +9'), ('Sedgwick {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +10'), ('Chicago {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +11'), ('Merchandise Mart {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +12'), ('Clark/Lake {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +13'), ('Washington/Wabash {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +14'), ('Adams/Wabash {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +15'), ('Harold Washington Library-State/Van Buren {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +16'), ('LaSalle/Van Buren {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +17'), ('Quincy {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +18'), ('Washington/Wells {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +19'), ('Merchandise Mart {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +20'), ('Chicago {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +21'), ('Sedgwick {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +22'), ('Armitage {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +23'), ('Fullerton {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +24'), ('Diversey {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +25'), ('Wellington {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +26'), ('Belmont {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +27'), ('Addison [2z5zne] {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +28'), ('Sheridan [kknb88] {Track 1}', '~ CTA / Purple Line / Linden - Loop / Present +29'), ('Wilson {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +30'), ('Howard {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +31'), ('South Blvd {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +32'), ('Evanston Main St {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +33'), ('Dempster {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +34'), ('Evanston Davis St {Track 4}', '~ CTA / Purple Line / Linden - Loop / Present +35'), ('Foster {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +36'), ('Noyes {Track 2}', '~ CTA / Purple Line / Linden - Loop / Present +37')],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +1": {
+        "F": ['Howard {Track 1}', 'Wilson {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +10": {
+        "F": ['Sedgwick {Track 2}', 'Chicago {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +11": {
+        "F": ['Chicago {Track 1}', 'Merchandise Mart {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +12": {
+        "F": ['Merchandise Mart {Track 1}', 'Clark/Lake {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +13": {
+        "F": ['Clark/Lake {Track 2}', 'Washington/Wabash {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +14": {
+        "F": ['Washington/Wabash {Track 1}', 'Adams/Wabash {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +15": {
+        "F": ['Adams/Wabash {Track 1}', 'Harold Washington Library-State/Van Buren {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +16": {
+        "F": ['Harold Washington Library-State/Van Buren {Track 1}', 'LaSalle/Van Buren {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +17": {
+        "F": ['LaSalle/Van Buren {Track 1}', 'Quincy {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +18": {
+        "F": ['Quincy {Track 2}', 'Washington/Wells {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +19": {
+        "F": ['Washington/Wells {Track 2}', 'Merchandise Mart {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +2": {
+        "F": ['Wilson {Track 1}', 'Sheridan [kknb88] {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +20": {
+        "F": ['Merchandise Mart {Track 2}', 'Chicago {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +21": {
+        "F": ['Chicago {Track 2}', 'Sedgwick {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +22": {
+        "F": ['Sedgwick {Track 1}', 'Armitage {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +23": {
+        "F": ['Armitage {Track 2}', 'Fullerton {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +24": {
+        "F": ['Fullerton {Track 4}', 'Diversey {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +25": {
+        "F": ['Diversey {Track 2}', 'Wellington {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +26": {
+        "F": ['Wellington {Track 2}', 'Belmont {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +27": {
+        "F": ['Belmont {Track 4}', 'Addison [2z5zne] {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +28": {
+        "F": ['Addison [2z5zne] {Track 4}', 'Sheridan [kknb88] {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +29": {
+        "F": ['Sheridan [kknb88] {Track 1}', 'Wilson {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +3": {
+        "F": ['Sheridan [kknb88] {Track 4}', 'Addison [2z5zne] {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +30": {
+        "F": ['Wilson {Track 4}', 'Howard {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +31": {
+        "F": ['Howard {Track 2}', 'South Blvd {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +32": {
+        "F": ['South Blvd {Track 2}', 'Evanston Main St {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +33": {
+        "F": ['Evanston Main St {Track 4}', 'Dempster {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +34": {
+        "F": ['Dempster {Track 2}', 'Evanston Davis St {Track 4}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +35": {
+        "F": ['Evanston Davis St {Track 4}', 'Foster {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +36": {
+        "F": ['Foster {Track 2}', 'Noyes {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +37": {
+        "F": ['Noyes {Track 2}', 'Central [zv8yw8] {Track 2}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +4": {
+        "F": ['Addison [2z5zne] {Track 1}', 'Belmont {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +5": {
+        "F": ['Belmont {Track 1}', 'Wellington {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +6": {
+        "F": ['Wellington {Track 1}', 'Diversey {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +7": {
+        "F": ['Diversey {Track 1}', 'Fullerton {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +8": {
+        "F": ['Fullerton {Track 1}', 'Armitage {Track 1}'],
+    },
+    "~ CTA / Purple Line / Linden - Loop / Present +9": {
+        "F": ['Armitage {Track 1}', 'Sedgwick {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy": {
+        "F": ['CTA / Red Line / Howard - 95th/Dan Ryan'],
+        "Swap": [('Howard {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +1'), ('Jarvis {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +2'), ('Morse {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +3'), ('Loyola {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +4'), ('Granville {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +5'), ('Thorndale {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +6'), ('Bryn Mawr [kc5yq8] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +7'), ('Berwyn {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +8'), ('Argyle {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +9'), ('Lawrence {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +10'), ('Wilson {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +11'), ('Sheridan [kknb88] {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +12'), ('Addison [2z5zne] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +13'), ('Belmont {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +14'), ('Fullerton {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +15'), ('North/Clybourn {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +16'), ('Clark/Division {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +17'), ('Chicago [yxgj2r] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +18'), ('Grand {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +19'), ('Lake {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +20'), ('Monroe [dc3u7j] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +21'), ('Jackson [6s7rw2] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +22'), ('Harrison {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +23'), ('Roosevelt {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +24'), ('Cermak-Chinatown {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +25'), ('Sox-35th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +26'), ('47th [m6rhkf] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +27'), ('Garfield [p3x42y] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +28'), ('63rd {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +29'), ('69th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +30'), ('79th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +31'), ('87th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +32'), ('95th/Dan Ryan {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +33'), ('87th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +34'), ('79th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +35'), ('69th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +36'), ('63rd {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +37'), ('Garfield [p3x42y] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +38'), ('47th [m6rhkf] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +39'), ('Sox-35th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +40'), ('Cermak-Chinatown {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +41'), ('Roosevelt {Track 4}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +42'), ('Harrison {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +43'), ('Jackson [6s7rw2] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +44'), ('Monroe [dc3u7j] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +45'), ('Lake {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +46'), ('Grand {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +47'), ('Chicago [yxgj2r] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +48'), ('Clark/Division {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +49'), ('North/Clybourn {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +50'), ('Fullerton {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +51'), ('Belmont {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +52'), ('Addison [2z5zne] {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +53'), ('Sheridan [kknb88] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +54'), ('Wilson {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +55'), ('Lawrence {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +56'), ('Argyle {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +57'), ('Berwyn {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +58'), ('Bryn Mawr [kc5yq8] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +59'), ('Thorndale {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +60'), ('Granville {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +61'), ('Loyola {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +62'), ('Morse {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +63')],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +1": {
+        "F": ['Howard {Track 3}', 'Jarvis {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +10": {
+        "F": ['Lawrence {Track 1}', 'Wilson {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +11": {
+        "F": ['Wilson {Track 2}', 'Sheridan [kknb88] {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +12": {
+        "F": ['Sheridan [kknb88] {Track 3}', 'Addison [2z5zne] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +13": {
+        "F": ['Addison [2z5zne] {Track 2}', 'Belmont {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +14": {
+        "F": ['Belmont {Track 2}', 'Fullerton {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +15": {
+        "F": ['Fullerton {Track 2}', 'North/Clybourn {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +16": {
+        "F": ['North/Clybourn {Track 1}', 'Clark/Division {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +17": {
+        "F": ['Clark/Division {Track 2}', 'Chicago [yxgj2r] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +18": {
+        "F": ['Chicago [yxgj2r] {Track 1}', 'Grand {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +19": {
+        "F": ['Grand {Track 1}', 'Lake {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +2": {
+        "F": ['Jarvis {Track 1}', 'Morse {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +20": {
+        "F": ['Lake {Track 1}', 'Monroe [dc3u7j] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +21": {
+        "F": ['Monroe [dc3u7j] {Track 1}', 'Jackson [6s7rw2] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +22": {
+        "F": ['Jackson [6s7rw2] {Track 1}', 'Harrison {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +23": {
+        "F": ['Harrison {Track 1}', 'Roosevelt {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +24": {
+        "F": ['Roosevelt {Track 3}', 'Cermak-Chinatown {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +25": {
+        "F": ['Cermak-Chinatown {Track 1}', 'Sox-35th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +26": {
+        "F": ['Sox-35th {Track 1}', '47th [m6rhkf] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +27": {
+        "F": ['47th [m6rhkf] {Track 1}', 'Garfield [p3x42y] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +28": {
+        "F": ['Garfield [p3x42y] {Track 1}', '63rd {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +29": {
+        "F": ['63rd {Track 1}', '69th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +3": {
+        "F": ['Morse {Track 1}', 'Loyola {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +30": {
+        "F": ['69th {Track 1}', '79th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +31": {
+        "F": ['79th {Track 1}', '87th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +32": {
+        "F": ['87th {Track 1}', '95th/Dan Ryan {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +33": {
+        "F": ['95th/Dan Ryan {Track 1}', '87th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +34": {
+        "F": ['87th {Track 2}', '79th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +35": {
+        "F": ['79th {Track 2}', '69th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +36": {
+        "F": ['69th {Track 2}', '63rd {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +37": {
+        "F": ['63rd {Track 2}', 'Garfield [p3x42y] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +38": {
+        "F": ['Garfield [p3x42y] {Track 2}', '47th [m6rhkf] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +39": {
+        "F": ['47th [m6rhkf] {Track 2}', 'Sox-35th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +4": {
+        "F": ['Loyola {Track 1}', 'Granville {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +40": {
+        "F": ['Sox-35th {Track 2}', 'Cermak-Chinatown {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +41": {
+        "F": ['Cermak-Chinatown {Track 2}', 'Roosevelt {Track 4}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +42": {
+        "F": ['Roosevelt {Track 4}', 'Harrison {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +43": {
+        "F": ['Harrison {Track 2}', 'Jackson [6s7rw2] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +44": {
+        "F": ['Jackson [6s7rw2] {Track 2}', 'Monroe [dc3u7j] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +45": {
+        "F": ['Monroe [dc3u7j] {Track 2}', 'Lake {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +46": {
+        "F": ['Lake {Track 2}', 'Grand {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +47": {
+        "F": ['Grand {Track 2}', 'Chicago [yxgj2r] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +48": {
+        "F": ['Chicago [yxgj2r] {Track 2}', 'Clark/Division {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +49": {
+        "F": ['Clark/Division {Track 1}', 'North/Clybourn {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +5": {
+        "F": ['Granville {Track 1}', 'Thorndale {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +50": {
+        "F": ['North/Clybourn {Track 2}', 'Fullerton {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +51": {
+        "F": ['Fullerton {Track 3}', 'Belmont {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +52": {
+        "F": ['Belmont {Track 3}', 'Addison [2z5zne] {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +53": {
+        "F": ['Addison [2z5zne] {Track 3}', 'Sheridan [kknb88] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +54": {
+        "F": ['Sheridan [kknb88] {Track 2}', 'Wilson {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +55": {
+        "F": ['Wilson {Track 3}', 'Lawrence {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +56": {
+        "F": ['Lawrence {Track 2}', 'Argyle {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +57": {
+        "F": ['Argyle {Track 2}', 'Berwyn {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +58": {
+        "F": ['Berwyn {Track 2}', 'Bryn Mawr [kc5yq8] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +59": {
+        "F": ['Bryn Mawr [kc5yq8] {Track 2}', 'Thorndale {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +6": {
+        "F": ['Thorndale {Track 1}', 'Bryn Mawr [kc5yq8] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +60": {
+        "F": ['Thorndale {Track 2}', 'Granville {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +61": {
+        "F": ['Granville {Track 2}', 'Loyola {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +62": {
+        "F": ['Loyola {Track 2}', 'Morse {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +63": {
+        "F": ['Morse {Track 2}', 'Jarvis {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +7": {
+        "F": ['Bryn Mawr [kc5yq8] {Track 1}', 'Berwyn {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +8": {
+        "F": ['Berwyn {Track 1}', 'Argyle {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy +9": {
+        "F": ['Argyle {Track 1}', 'Lawrence {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present": {
+        "F": ['CTA / Red Line / Howard - 95th/Dan Ryan'],
+        "Swap": [('Howard {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +1'), ('Jarvis {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +2'), ('Morse {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +3'), ('Loyola {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +4'), ('Granville {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +5'), ('Thorndale {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +6'), ('Bryn Mawr [kc5yq8] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +7'), ('Berwyn {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +8'), ('Argyle {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +9'), ('Lawrence {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +10'), ('Wilson {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +11'), ('Sheridan [kknb88] {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +12'), ('Addison [2z5zne] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +13'), ('Belmont {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +14'), ('Fullerton {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +15'), ('North/Clybourn {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +16'), ('Clark/Division {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +17'), ('Chicago [yxgj2r] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +18'), ('Grand {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +19'), ('Lake {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +20'), ('Monroe [dc3u7j] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +21'), ('Jackson [6s7rw2] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +22'), ('Harrison {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +23'), ('Roosevelt {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +24'), ('Cermak-Chinatown {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +25'), ('Sox-35th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +26'), ('47th [m6rhkf] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +27'), ('Garfield [p3x42y] {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +28'), ('63rd {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +29'), ('69th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +30'), ('79th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +31'), ('87th {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +32'), ('95th/Dan Ryan {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +33'), ('87th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +34'), ('79th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +35'), ('69th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +36'), ('63rd {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +37'), ('Garfield [p3x42y] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +38'), ('47th [m6rhkf] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +39'), ('Sox-35th {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +40'), ('Cermak-Chinatown {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +41'), ('Roosevelt {Track 4}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +42'), ('Harrison {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +43'), ('Jackson [6s7rw2] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +44'), ('Monroe [dc3u7j] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +45'), ('Lake {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +46'), ('Grand {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +47'), ('Chicago [yxgj2r] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +48'), ('Clark/Division {Track 1}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +49'), ('North/Clybourn {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +50'), ('Fullerton {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +51'), ('Belmont {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +52'), ('Addison [2z5zne] {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +53'), ('Sheridan [kknb88] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +54'), ('Wilson {Track 3}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +55'), ('Lawrence {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +56'), ('Argyle {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +57'), ('Berwyn {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +58'), ('Bryn Mawr [kc5yq8] {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +59'), ('Thorndale {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +60'), ('Granville {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +61'), ('Loyola {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +62'), ('Morse {Track 2}', '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +63')],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +1": {
+        "F": ['Howard {Track 3}', 'Jarvis {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +10": {
+        "F": ['Lawrence {Track 1}', 'Wilson {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +11": {
+        "F": ['Wilson {Track 2}', 'Sheridan [kknb88] {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +12": {
+        "F": ['Sheridan [kknb88] {Track 3}', 'Addison [2z5zne] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +13": {
+        "F": ['Addison [2z5zne] {Track 2}', 'Belmont {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +14": {
+        "F": ['Belmont {Track 2}', 'Fullerton {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +15": {
+        "F": ['Fullerton {Track 2}', 'North/Clybourn {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +16": {
+        "F": ['North/Clybourn {Track 1}', 'Clark/Division {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +17": {
+        "F": ['Clark/Division {Track 2}', 'Chicago [yxgj2r] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +18": {
+        "F": ['Chicago [yxgj2r] {Track 1}', 'Grand {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +19": {
+        "F": ['Grand {Track 1}', 'Lake {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +2": {
+        "F": ['Jarvis {Track 1}', 'Morse {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +20": {
+        "F": ['Lake {Track 1}', 'Monroe [dc3u7j] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +21": {
+        "F": ['Monroe [dc3u7j] {Track 1}', 'Jackson [6s7rw2] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +22": {
+        "F": ['Jackson [6s7rw2] {Track 1}', 'Harrison {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +23": {
+        "F": ['Harrison {Track 1}', 'Roosevelt {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +24": {
+        "F": ['Roosevelt {Track 3}', 'Cermak-Chinatown {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +25": {
+        "F": ['Cermak-Chinatown {Track 1}', 'Sox-35th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +26": {
+        "F": ['Sox-35th {Track 1}', '47th [m6rhkf] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +27": {
+        "F": ['47th [m6rhkf] {Track 1}', 'Garfield [p3x42y] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +28": {
+        "F": ['Garfield [p3x42y] {Track 1}', '63rd {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +29": {
+        "F": ['63rd {Track 1}', '69th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +3": {
+        "F": ['Morse {Track 1}', 'Loyola {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +30": {
+        "F": ['69th {Track 1}', '79th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +31": {
+        "F": ['79th {Track 1}', '87th {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +32": {
+        "F": ['87th {Track 1}', '95th/Dan Ryan {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +33": {
+        "F": ['95th/Dan Ryan {Track 1}', '87th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +34": {
+        "F": ['87th {Track 2}', '79th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +35": {
+        "F": ['79th {Track 2}', '69th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +36": {
+        "F": ['69th {Track 2}', '63rd {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +37": {
+        "F": ['63rd {Track 2}', 'Garfield [p3x42y] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +38": {
+        "F": ['Garfield [p3x42y] {Track 2}', '47th [m6rhkf] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +39": {
+        "F": ['47th [m6rhkf] {Track 2}', 'Sox-35th {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +4": {
+        "F": ['Loyola {Track 1}', 'Granville {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +40": {
+        "F": ['Sox-35th {Track 2}', 'Cermak-Chinatown {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +41": {
+        "F": ['Cermak-Chinatown {Track 2}', 'Roosevelt {Track 4}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +42": {
+        "F": ['Roosevelt {Track 4}', 'Harrison {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +43": {
+        "F": ['Harrison {Track 2}', 'Jackson [6s7rw2] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +44": {
+        "F": ['Jackson [6s7rw2] {Track 2}', 'Monroe [dc3u7j] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +45": {
+        "F": ['Monroe [dc3u7j] {Track 2}', 'Lake {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +46": {
+        "F": ['Lake {Track 2}', 'Grand {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +47": {
+        "F": ['Grand {Track 2}', 'Chicago [yxgj2r] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +48": {
+        "F": ['Chicago [yxgj2r] {Track 2}', 'Clark/Division {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +49": {
+        "F": ['Clark/Division {Track 1}', 'North/Clybourn {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +5": {
+        "F": ['Granville {Track 1}', 'Thorndale {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +50": {
+        "F": ['North/Clybourn {Track 2}', 'Fullerton {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +51": {
+        "F": ['Fullerton {Track 3}', 'Belmont {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +52": {
+        "F": ['Belmont {Track 3}', 'Addison [2z5zne] {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +53": {
+        "F": ['Addison [2z5zne] {Track 3}', 'Sheridan [kknb88] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +54": {
+        "F": ['Sheridan [kknb88] {Track 2}', 'Wilson {Track 3}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +55": {
+        "F": ['Wilson {Track 3}', 'Lawrence {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +56": {
+        "F": ['Lawrence {Track 2}', 'Argyle {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +57": {
+        "F": ['Argyle {Track 2}', 'Berwyn {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +58": {
+        "F": ['Berwyn {Track 2}', 'Bryn Mawr [kc5yq8] {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +59": {
+        "F": ['Bryn Mawr [kc5yq8] {Track 2}', 'Thorndale {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +6": {
+        "F": ['Thorndale {Track 1}', 'Bryn Mawr [kc5yq8] {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +60": {
+        "F": ['Thorndale {Track 2}', 'Granville {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +61": {
+        "F": ['Granville {Track 2}', 'Loyola {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +62": {
+        "F": ['Loyola {Track 2}', 'Morse {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +63": {
+        "F": ['Morse {Track 2}', 'Jarvis {Track 2}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +7": {
+        "F": ['Bryn Mawr [kc5yq8] {Track 1}', 'Berwyn {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +8": {
+        "F": ['Berwyn {Track 1}', 'Argyle {Track 1}'],
+    },
+    "~ CTA / Red Line / Howard - 95th/Dan Ryan / Present +9": {
+        "F": ['Argyle {Track 1}', 'Lawrence {Track 1}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy": {
+        "F": ['CTA / Yellow Line / Howard - Dempster-Skokie'],
+        "Swap": [('Howard {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +1'), ('Oakton-Skokie {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +2'), ('Dempster-Skokie {Track 2}', 'Dempster-Skokie {Track 1}'), ('Dempster-Skokie {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +3'), ('Howard {Track 2}', 'Howard {Track 1}')],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +1": {
+        "F": ['Howard {Track 2}', 'Oakton-Skokie {Track 2}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +2": {
+        "F": ['Oakton-Skokie {Track 2}', 'Dempster-Skokie {Track 2}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy +3": {
+        "F": ['Dempster-Skokie {Track 2}', 'Oakton-Skokie {Track 1}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Present": {
+        "F": ['CTA / Yellow Line / Howard - Dempster-Skokie'],
+        "Swap": [('Howard {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +1'), ('Oakton-Skokie {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +2'), ('Dempster-Skokie {Track 2}', 'Dempster-Skokie {Track 1}'), ('Dempster-Skokie {Track 2}', '~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +3'), ('Howard {Track 2}', 'Howard {Track 1}')],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +1": {
+        "F": ['Howard {Track 2}', 'Oakton-Skokie {Track 2}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +2": {
+        "F": ['Oakton-Skokie {Track 2}', 'Dempster-Skokie {Track 2}'],
+    },
+    "~ CTA / Yellow Line / Howard - Dempster-Skokie / Present +3": {
+        "F": ['Dempster-Skokie {Track 2}', 'Oakton-Skokie {Track 1}'],
     },
     "~ Metro Transit / Green Line / SouthWest Station - Union Depot / Fantasy": {
         "F": ['SouthWest Station {Track 2}', 'Town Center {Track 2}', 'Golden Triangle {Track 2}', 'City West {Track 2}', 'Opus {Track 2}', 'Shady Oak {Track 2}', 'Downtown Hopkins {Track 2}', 'Blake Rd {Track 2}', 'Louisiana Ave {Track 2}', 'Wooddale Ave {Track 2}', 'Beltline Blvd {Track 2}', 'West Lake St {Track 2}', 'West 21st St {Track 2}', 'Bryn Mawr {Track 2}', 'Bassett Creek Valley {Track 2}', 'Royalston Ave {Track 2}', 'Target Field {Track 2}', 'Warehouse District/Hennepin Ave {Track 2}', 'Nicollet Mall {Track 2}', 'Government Plaza {Track 2}', 'US Bank Stadium {Track 2}', 'West Bank {Track 2}', 'East Bank {Track 2}', 'Stadium Village {Track 2 [2]}', 'Prospect Park {Track 2 [2]}', 'Westgate {Track 2}', 'Raymond Ave {Track 2}', 'Fairview Ave {Track 2}', 'Snelling Ave {Track 2 [2]}', 'Hamline Ave {Track 2}', 'Lexington Pkwy {Track 2}', 'Victoria St {Track 2}', 'Dale St {Track 2}', 'Western Ave {Track 2}', 'Capitol/Rice St {Track 2}', 'Robert St {Track 2}', '10th St {Track 2}', 'Central Station {Track 2}', 'Union Depot {Track 2}', 'Central Station {Track 1}', '10th St {Track 1}', 'Robert St {Track 1}', 'Capitol/Rice St {Track 1}', 'Western Ave {Track 1}', 'Dale St {Track 1}', 'Victoria St {Track 1}', 'Lexington Pkwy {Track 1}', 'Hamline Ave {Track 1}'],
@@ -1634,6 +5383,536 @@ Segments = {
     "~ Metro Transit / Green Line / SouthWest Station - Union Depot / Fantasy +9": {
         "F": ['West Bank {Track 1}', 'US Bank Stadium {Track 1}'],
     },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy": {
+        "F": ['RTA / Blue Line / South Harbor - Van Aken'],
+        "Swap": [('South Harbor {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +1'), ('East 9th-North Coast {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +2'), ('West 3rd {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +3'), ('Flats East Bank {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +4'), ('Settlers Landing {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +5'), ('Tower City {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +6'), ('Tri-C-Campus District {Track 3}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +7'), ('East 55th {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +8'), ('East 79th [sdw37t] {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +9'), ('Buckeye-Woodhill {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +10'), ("East 116th-St. Luke's {Track 1}", '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +11'), ('Shaker Square {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +12'), ('Drexmore {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +13'), ('South Woodland {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +14'), ('Southington [kt3y2z] {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +15'), ('Onaway {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +16'), ('Ashby {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +17'), ('Lee-Van Aken {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +18'), ('Avalon {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +19'), ('Kenmore {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +20'), ('Lynnfield {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +21'), ('Farnsleigh {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +22'), ('Warrensville-Van Aken', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +23'), ('Farnsleigh {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +24'), ('Lynnfield {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +25'), ('Kenmore {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +26'), ('Avalon {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +27'), ('Lee-Van Aken {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +28'), ('Ashby {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +29'), ('Onaway {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +30'), ('Southington [kt3y2z] {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +31'), ('South Woodland {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +32'), ('Drexmore {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +33'), ('Shaker Square {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +34'), ("East 116th-St. Luke's {Track 2}", '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +35'), ('Buckeye-Woodhill {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +36'), ('East 79th [sdw37t] {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +37'), ('East 55th {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +38'), ('Tri-C-Campus District {Track 4}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +39'), ('Tower City {Track 4}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +40'), ('Settlers Landing {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +41'), ('Flats East Bank {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +42'), ('West 3rd {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +43')],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +1": {
+        "F": ['South Harbor {Track 1}', 'East 9th-North Coast {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +10": {
+        "F": ['Buckeye-Woodhill {Track 2}', "East 116th-St. Luke's {Track 1}"],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +11": {
+        "F": ["East 116th-St. Luke's {Track 1}", 'Shaker Square {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +12": {
+        "F": ['Shaker Square {Track 1}', 'Drexmore {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +13": {
+        "F": ['Drexmore {Track 1}', 'South Woodland {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +14": {
+        "F": ['South Woodland {Track 1}', 'Southington [kt3y2z] {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +15": {
+        "F": ['Southington [kt3y2z] {Track 1}', 'Onaway {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +16": {
+        "F": ['Onaway {Track 1}', 'Ashby {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +17": {
+        "F": ['Ashby {Track 1}', 'Lee-Van Aken {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +18": {
+        "F": ['Lee-Van Aken {Track 2}', 'Avalon {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +19": {
+        "F": ['Avalon {Track 2}', 'Kenmore {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +2": {
+        "F": ['East 9th-North Coast {Track 1}', 'West 3rd {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +20": {
+        "F": ['Kenmore {Track 2}', 'Lynnfield {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +21": {
+        "F": ['Lynnfield {Track 2}', 'Farnsleigh {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +22": {
+        "F": ['Farnsleigh {Track 2}', 'Warrensville-Van Aken'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +23": {
+        "F": ['Warrensville-Van Aken', 'Farnsleigh {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +24": {
+        "F": ['Farnsleigh {Track 1}', 'Lynnfield {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +25": {
+        "F": ['Lynnfield {Track 1}', 'Kenmore {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +26": {
+        "F": ['Kenmore {Track 1}', 'Avalon {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +27": {
+        "F": ['Avalon {Track 1}', 'Lee-Van Aken {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +28": {
+        "F": ['Lee-Van Aken {Track 1}', 'Ashby {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +29": {
+        "F": ['Ashby {Track 2}', 'Onaway {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +3": {
+        "F": ['West 3rd {Track 1}', 'Flats East Bank {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +30": {
+        "F": ['Onaway {Track 2}', 'Southington [kt3y2z] {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +31": {
+        "F": ['Southington [kt3y2z] {Track 2}', 'South Woodland {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +32": {
+        "F": ['South Woodland {Track 2}', 'Drexmore {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +33": {
+        "F": ['Drexmore {Track 2}', 'Shaker Square {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +34": {
+        "F": ['Shaker Square {Track 2}', "East 116th-St. Luke's {Track 2}"],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +35": {
+        "F": ["East 116th-St. Luke's {Track 2}", 'Buckeye-Woodhill {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +36": {
+        "F": ['Buckeye-Woodhill {Track 1}', 'East 79th [sdw37t] {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +37": {
+        "F": ['East 79th [sdw37t] {Track 1}', 'East 55th {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +38": {
+        "F": ['East 55th {Track 1}', 'Tri-C-Campus District {Track 4}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +39": {
+        "F": ['Tri-C-Campus District {Track 4}', 'Tower City {Track 4}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +4": {
+        "F": ['Flats East Bank {Track 1}', 'Settlers Landing {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +40": {
+        "F": ['Tower City {Track 4}', 'Settlers Landing {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +41": {
+        "F": ['Settlers Landing {Track 2}', 'Flats East Bank {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +42": {
+        "F": ['Flats East Bank {Track 2}', 'West 3rd {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +43": {
+        "F": ['West 3rd {Track 2}', 'East 9th-North Coast {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +5": {
+        "F": ['Settlers Landing {Track 1}', 'Tower City {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +6": {
+        "F": ['Tower City {Track 1}', 'Tri-C-Campus District {Track 3}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +7": {
+        "F": ['Tri-C-Campus District {Track 3}', 'East 55th {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +8": {
+        "F": ['East 55th {Track 2}', 'East 79th [sdw37t] {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Fantasy +9": {
+        "F": ['East 79th [sdw37t] {Track 2}', 'Buckeye-Woodhill {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present": {
+        "F": ['RTA / Blue Line / South Harbor - Van Aken'],
+        "Swap": [('South Harbor {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +1'), ('East 9th-North Coast {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +2'), ('West 3rd {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +3'), ('Flats East Bank {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +4'), ('Settlers Landing {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +5'), ('Tower City {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +6'), ('Tri-C-Campus District {Track 3}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +7'), ('East 55th {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +8'), ('East 79th [sdw37t] {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +9'), ('Buckeye-Woodhill {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +10'), ("East 116th-St. Luke's {Track 1}", '~ RTA / Blue Line / South Harbor - Van Aken / Present +11'), ('Shaker Square {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +12'), ('Drexmore {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +13'), ('South Woodland {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +14'), ('Southington [kt3y2z] {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +15'), ('Onaway {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +16'), ('Ashby {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +17'), ('Lee-Van Aken {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +18'), ('Avalon {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +19'), ('Kenmore {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +20'), ('Lynnfield {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +21'), ('Farnsleigh {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +22'), ('Warrensville-Van Aken', '~ RTA / Blue Line / South Harbor - Van Aken / Present +23'), ('Farnsleigh {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +24'), ('Lynnfield {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +25'), ('Kenmore {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +26'), ('Avalon {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +27'), ('Lee-Van Aken {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +28'), ('Ashby {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +29'), ('Onaway {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +30'), ('Southington [kt3y2z] {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +31'), ('South Woodland {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +32'), ('Drexmore {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +33'), ('Shaker Square {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +34'), ("East 116th-St. Luke's {Track 2}", '~ RTA / Blue Line / South Harbor - Van Aken / Present +35'), ('Buckeye-Woodhill {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +36'), ('East 79th [sdw37t] {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +37'), ('East 55th {Track 1}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +38'), ('Tri-C-Campus District {Track 4}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +39'), ('Tower City {Track 4}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +40'), ('Settlers Landing {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +41'), ('Flats East Bank {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +42'), ('West 3rd {Track 2}', '~ RTA / Blue Line / South Harbor - Van Aken / Present +43')],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +1": {
+        "F": ['South Harbor {Track 1}', 'East 9th-North Coast {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +10": {
+        "F": ['Buckeye-Woodhill {Track 2}', "East 116th-St. Luke's {Track 1}"],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +11": {
+        "F": ["East 116th-St. Luke's {Track 1}", 'Shaker Square {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +12": {
+        "F": ['Shaker Square {Track 1}', 'Drexmore {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +13": {
+        "F": ['Drexmore {Track 1}', 'South Woodland {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +14": {
+        "F": ['South Woodland {Track 1}', 'Southington [kt3y2z] {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +15": {
+        "F": ['Southington [kt3y2z] {Track 1}', 'Onaway {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +16": {
+        "F": ['Onaway {Track 1}', 'Ashby {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +17": {
+        "F": ['Ashby {Track 1}', 'Lee-Van Aken {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +18": {
+        "F": ['Lee-Van Aken {Track 2}', 'Avalon {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +19": {
+        "F": ['Avalon {Track 2}', 'Kenmore {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +2": {
+        "F": ['East 9th-North Coast {Track 1}', 'West 3rd {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +20": {
+        "F": ['Kenmore {Track 2}', 'Lynnfield {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +21": {
+        "F": ['Lynnfield {Track 2}', 'Farnsleigh {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +22": {
+        "F": ['Farnsleigh {Track 2}', 'Warrensville-Van Aken'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +23": {
+        "F": ['Warrensville-Van Aken', 'Farnsleigh {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +24": {
+        "F": ['Farnsleigh {Track 1}', 'Lynnfield {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +25": {
+        "F": ['Lynnfield {Track 1}', 'Kenmore {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +26": {
+        "F": ['Kenmore {Track 1}', 'Avalon {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +27": {
+        "F": ['Avalon {Track 1}', 'Lee-Van Aken {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +28": {
+        "F": ['Lee-Van Aken {Track 1}', 'Ashby {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +29": {
+        "F": ['Ashby {Track 2}', 'Onaway {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +3": {
+        "F": ['West 3rd {Track 1}', 'Flats East Bank {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +30": {
+        "F": ['Onaway {Track 2}', 'Southington [kt3y2z] {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +31": {
+        "F": ['Southington [kt3y2z] {Track 2}', 'South Woodland {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +32": {
+        "F": ['South Woodland {Track 2}', 'Drexmore {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +33": {
+        "F": ['Drexmore {Track 2}', 'Shaker Square {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +34": {
+        "F": ['Shaker Square {Track 2}', "East 116th-St. Luke's {Track 2}"],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +35": {
+        "F": ["East 116th-St. Luke's {Track 2}", 'Buckeye-Woodhill {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +36": {
+        "F": ['Buckeye-Woodhill {Track 1}', 'East 79th [sdw37t] {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +37": {
+        "F": ['East 79th [sdw37t] {Track 1}', 'East 55th {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +38": {
+        "F": ['East 55th {Track 1}', 'Tri-C-Campus District {Track 4}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +39": {
+        "F": ['Tri-C-Campus District {Track 4}', 'Tower City {Track 4}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +4": {
+        "F": ['Flats East Bank {Track 1}', 'Settlers Landing {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +40": {
+        "F": ['Tower City {Track 4}', 'Settlers Landing {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +41": {
+        "F": ['Settlers Landing {Track 2}', 'Flats East Bank {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +42": {
+        "F": ['Flats East Bank {Track 2}', 'West 3rd {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +43": {
+        "F": ['West 3rd {Track 2}', 'East 9th-North Coast {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +5": {
+        "F": ['Settlers Landing {Track 1}', 'Tower City {Track 1}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +6": {
+        "F": ['Tower City {Track 1}', 'Tri-C-Campus District {Track 3}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +7": {
+        "F": ['Tri-C-Campus District {Track 3}', 'East 55th {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +8": {
+        "F": ['East 55th {Track 2}', 'East 79th [sdw37t] {Track 2}'],
+    },
+    "~ RTA / Blue Line / South Harbor - Van Aken / Present +9": {
+        "F": ['East 79th [sdw37t] {Track 2}', 'Buckeye-Woodhill {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy": {
+        "F": ['RTA / Green Line / South Harbor - Green Road'],
+        "Swap": [('South Harbor {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +1'), ('East 9th-North Coast {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +2'), ('West 3rd {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +3'), ('Flats East Bank {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +4'), ('Settlers Landing {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +5'), ('Tower City {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +6'), ('Tri-C-Campus District {Track 3}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +7'), ('East 55th {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +8'), ('East 79th [sdw37t] {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +9'), ('Buckeye-Woodhill {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +10'), ("East 116th-St. Luke's {Track 1}", '~ RTA / Green Line / South Harbor - Green Road / Fantasy +11'), ('Shaker Square {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +12'), ('Coventry {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +13'), ('Southington {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +14'), ('South Park {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +15'), ('Lee-Shaker {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +16'), ('Attleboro {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +17'), ('Eaton {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +18'), ('Courtland {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +19'), ('Warrensville-Shaker {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +20'), ('Belvoir {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +21'), ('West Green {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +22'), ('Green Road {Track 2}', 'Green Road {Track 1}'), ('Green Road {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +23'), ('West Green {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +24'), ('Belvoir {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +25'), ('Warrensville-Shaker {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +26'), ('Courtland {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +27'), ('Eaton {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +28'), ('Attleboro {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +29'), ('South Park {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +30'), ('Southington {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +31'), ('Coventry {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +32'), ('Shaker Square {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +33'), ("East 116th-St. Luke's {Track 2}", '~ RTA / Green Line / South Harbor - Green Road / Fantasy +34'), ('Buckeye-Woodhill {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +35'), ('East 79th [sdw37t] {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +36'), ('East 55th {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +37'), ('Tri-C-Campus District {Track 4}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +38'), ('Tower City {Track 4}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +39'), ('Settlers Landing {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +40'), ('Flats East Bank {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +41'), ('West 3rd {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Fantasy +42')],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +1": {
+        "F": ['South Harbor {Track 1}', 'East 9th-North Coast {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +10": {
+        "F": ['Buckeye-Woodhill {Track 2}', "East 116th-St. Luke's {Track 1}"],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +11": {
+        "F": ["East 116th-St. Luke's {Track 1}", 'Shaker Square {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +12": {
+        "F": ['Shaker Square {Track 1}', 'Coventry {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +13": {
+        "F": ['Coventry {Track 1}', 'Southington {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +14": {
+        "F": ['Southington {Track 1}', 'South Park {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +15": {
+        "F": ['South Park {Track 1}', 'Lee-Shaker {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +16": {
+        "F": ['Lee-Shaker {Track 1}', 'Attleboro {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +17": {
+        "F": ['Attleboro {Track 1}', 'Eaton {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +18": {
+        "F": ['Eaton {Track 1}', 'Courtland {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +19": {
+        "F": ['Courtland {Track 1}', 'Warrensville-Shaker {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +2": {
+        "F": ['East 9th-North Coast {Track 1}', 'West 3rd {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +20": {
+        "F": ['Warrensville-Shaker {Track 2}', 'Belvoir {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +21": {
+        "F": ['Belvoir {Track 2}', 'West Green {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +22": {
+        "F": ['West Green {Track 2}', 'Green Road {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +23": {
+        "F": ['Green Road {Track 2}', 'West Green {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +24": {
+        "F": ['West Green {Track 1}', 'Belvoir {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +25": {
+        "F": ['Belvoir {Track 1}', 'Warrensville-Shaker {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +26": {
+        "F": ['Warrensville-Shaker {Track 1}', 'Courtland {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +27": {
+        "F": ['Courtland {Track 2}', 'Eaton {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +28": {
+        "F": ['Eaton {Track 2}', 'Attleboro {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +29": {
+        "F": ['Attleboro {Track 2}', 'South Park {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +3": {
+        "F": ['West 3rd {Track 1}', 'Flats East Bank {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +30": {
+        "F": ['South Park {Track 2}', 'Southington {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +31": {
+        "F": ['Southington {Track 2}', 'Coventry {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +32": {
+        "F": ['Coventry {Track 2}', 'Shaker Square {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +33": {
+        "F": ['Shaker Square {Track 2}', "East 116th-St. Luke's {Track 2}"],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +34": {
+        "F": ["East 116th-St. Luke's {Track 2}", 'Buckeye-Woodhill {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +35": {
+        "F": ['Buckeye-Woodhill {Track 1}', 'East 79th [sdw37t] {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +36": {
+        "F": ['East 79th [sdw37t] {Track 1}', 'East 55th {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +37": {
+        "F": ['East 55th {Track 1}', 'Tri-C-Campus District {Track 4}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +38": {
+        "F": ['Tri-C-Campus District {Track 4}', 'Tower City {Track 4}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +39": {
+        "F": ['Tower City {Track 4}', 'Settlers Landing {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +4": {
+        "F": ['Flats East Bank {Track 1}', 'Settlers Landing {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +40": {
+        "F": ['Settlers Landing {Track 2}', 'Flats East Bank {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +41": {
+        "F": ['Flats East Bank {Track 2}', 'West 3rd {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +42": {
+        "F": ['West 3rd {Track 2}', 'East 9th-North Coast {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +5": {
+        "F": ['Settlers Landing {Track 1}', 'Tower City {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +6": {
+        "F": ['Tower City {Track 1}', 'Tri-C-Campus District {Track 3}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +7": {
+        "F": ['Tri-C-Campus District {Track 3}', 'East 55th {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +8": {
+        "F": ['East 55th {Track 2}', 'East 79th [sdw37t] {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Fantasy +9": {
+        "F": ['East 79th [sdw37t] {Track 2}', 'Buckeye-Woodhill {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present": {
+        "F": ['RTA / Green Line / South Harbor - Green Road'],
+        "Swap": [('South Harbor {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +1'), ('East 9th-North Coast {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +2'), ('West 3rd {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +3'), ('Flats East Bank {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +4'), ('Settlers Landing {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +5'), ('Tower City {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +6'), ('Tri-C-Campus District {Track 3}', '~ RTA / Green Line / South Harbor - Green Road / Present +7'), ('East 55th {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +8'), ('East 79th [sdw37t] {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +9'), ('Buckeye-Woodhill {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +10'), ("East 116th-St. Luke's {Track 1}", '~ RTA / Green Line / South Harbor - Green Road / Present +11'), ('Shaker Square {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +12'), ('Coventry {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +13'), ('Southington {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +14'), ('South Park {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +15'), ('Lee-Shaker {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +16'), ('Attleboro {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +17'), ('Eaton {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +18'), ('Courtland {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +19'), ('Warrensville-Shaker {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +20'), ('Belvoir {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +21'), ('West Green {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +22'), ('Green Road {Track 2}', 'Green Road {Track 1}'), ('Green Road {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +23'), ('West Green {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +24'), ('Belvoir {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +25'), ('Warrensville-Shaker {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +26'), ('Courtland {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +27'), ('Eaton {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +28'), ('Attleboro {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +29'), ('South Park {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +30'), ('Southington {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +31'), ('Coventry {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +32'), ('Shaker Square {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +33'), ("East 116th-St. Luke's {Track 2}", '~ RTA / Green Line / South Harbor - Green Road / Present +34'), ('Buckeye-Woodhill {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +35'), ('East 79th [sdw37t] {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +36'), ('East 55th {Track 1}', '~ RTA / Green Line / South Harbor - Green Road / Present +37'), ('Tri-C-Campus District {Track 4}', '~ RTA / Green Line / South Harbor - Green Road / Present +38'), ('Tower City {Track 4}', '~ RTA / Green Line / South Harbor - Green Road / Present +39'), ('Settlers Landing {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +40'), ('Flats East Bank {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +41'), ('West 3rd {Track 2}', '~ RTA / Green Line / South Harbor - Green Road / Present +42')],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +1": {
+        "F": ['South Harbor {Track 1}', 'East 9th-North Coast {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +10": {
+        "F": ['Buckeye-Woodhill {Track 2}', "East 116th-St. Luke's {Track 1}"],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +11": {
+        "F": ["East 116th-St. Luke's {Track 1}", 'Shaker Square {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +12": {
+        "F": ['Shaker Square {Track 1}', 'Coventry {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +13": {
+        "F": ['Coventry {Track 1}', 'Southington {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +14": {
+        "F": ['Southington {Track 1}', 'South Park {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +15": {
+        "F": ['South Park {Track 1}', 'Lee-Shaker {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +16": {
+        "F": ['Lee-Shaker {Track 1}', 'Attleboro {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +17": {
+        "F": ['Attleboro {Track 1}', 'Eaton {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +18": {
+        "F": ['Eaton {Track 1}', 'Courtland {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +19": {
+        "F": ['Courtland {Track 1}', 'Warrensville-Shaker {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +2": {
+        "F": ['East 9th-North Coast {Track 1}', 'West 3rd {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +20": {
+        "F": ['Warrensville-Shaker {Track 2}', 'Belvoir {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +21": {
+        "F": ['Belvoir {Track 2}', 'West Green {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +22": {
+        "F": ['West Green {Track 2}', 'Green Road {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +23": {
+        "F": ['Green Road {Track 2}', 'West Green {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +24": {
+        "F": ['West Green {Track 1}', 'Belvoir {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +25": {
+        "F": ['Belvoir {Track 1}', 'Warrensville-Shaker {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +26": {
+        "F": ['Warrensville-Shaker {Track 1}', 'Courtland {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +27": {
+        "F": ['Courtland {Track 2}', 'Eaton {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +28": {
+        "F": ['Eaton {Track 2}', 'Attleboro {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +29": {
+        "F": ['Attleboro {Track 2}', 'South Park {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +3": {
+        "F": ['West 3rd {Track 1}', 'Flats East Bank {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +30": {
+        "F": ['South Park {Track 2}', 'Southington {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +31": {
+        "F": ['Southington {Track 2}', 'Coventry {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +32": {
+        "F": ['Coventry {Track 2}', 'Shaker Square {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +33": {
+        "F": ['Shaker Square {Track 2}', "East 116th-St. Luke's {Track 2}"],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +34": {
+        "F": ["East 116th-St. Luke's {Track 2}", 'Buckeye-Woodhill {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +35": {
+        "F": ['Buckeye-Woodhill {Track 1}', 'East 79th [sdw37t] {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +36": {
+        "F": ['East 79th [sdw37t] {Track 1}', 'East 55th {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +37": {
+        "F": ['East 55th {Track 1}', 'Tri-C-Campus District {Track 4}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +38": {
+        "F": ['Tri-C-Campus District {Track 4}', 'Tower City {Track 4}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +39": {
+        "F": ['Tower City {Track 4}', 'Settlers Landing {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +4": {
+        "F": ['Flats East Bank {Track 1}', 'Settlers Landing {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +40": {
+        "F": ['Settlers Landing {Track 2}', 'Flats East Bank {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +41": {
+        "F": ['Flats East Bank {Track 2}', 'West 3rd {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +42": {
+        "F": ['West 3rd {Track 2}', 'East 9th-North Coast {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +5": {
+        "F": ['Settlers Landing {Track 1}', 'Tower City {Track 1}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +6": {
+        "F": ['Tower City {Track 1}', 'Tri-C-Campus District {Track 3}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +7": {
+        "F": ['Tri-C-Campus District {Track 3}', 'East 55th {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +8": {
+        "F": ['East 55th {Track 2}', 'East 79th [sdw37t] {Track 2}'],
+    },
+    "~ RTA / Green Line / South Harbor - Green Road / Present +9": {
+        "F": ['East 79th [sdw37t] {Track 2}', 'Buckeye-Woodhill {Track 2}'],
+    },
+    "~ RTA / Red Line / Airport - Stokes-Windermere / Present": {
+        "F": ['RTA / Red Line / Airport - Stokes-Windermere'],
+        "Skip": ['Cleveland Airport {LRT 1}', 'Cleveland Airport {LRT 2}'],
+    },
     "~ RTD / A Line / Union Station - Airport / Fantasy": {
         "F": ['Denver Union Station {Track 1}', '38th & Blake {Track 1}', '40th & Colorado {Track 1}', 'Central Park {Track 1}', 'Peoria {Track 1}', '40th & Airport {Track 1}', '61st & Peña {Track 1}', 'Denver Airport {Track 1}', '61st & Peña {Track 2}', '40th & Airport {Track 2}', 'Peoria {Track 2}', 'Central Park {Track 2}', '40th & Colorado {Track 2}', '38th & Blake {Track 2}'],
     },
@@ -1641,7 +5920,7 @@ Segments = {
         "F": ['Denver Union Station {Track 1}', '38th & Blake {Track 1}', '40th & Colorado {Track 1}', 'Central Park {Track 1}', 'Peoria {Track 1}', '40th & Airport {Track 1}', '61st & Peña {Track 1}', 'Denver Airport {Track 1}', '61st & Peña {Track 2}', '40th & Airport {Track 2}', 'Peoria {Track 2}', 'Central Park {Track 2}', '40th & Colorado {Track 2}', '38th & Blake {Track 2}'],
     },
     "~ RTD / B Line / Sterling Ranch - Longmont / Fantasy": {
-        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [2] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Flatiron {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Flatiron {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Westminster', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [2] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}'],
+        "F": ['Sterling Ranch {Track 2}', 'Littleton-Mineral {Track 2}', 'Littleton-Downtown {Track 2}', 'Oxford-City of Sheridan {Track 2}', 'Englewood {Track 2}', 'Evans {Track 2}', 'I-25 & Broadway {Track 2 Heavy}', 'Alameda {Track 2 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Lincoln Park {Track 2}', 'Auraria West [a64js4] {Track 2}', 'Ball Arena/Elitch Gardens {Track 2}', 'Denver Union Station {Track 9}', '41st & Fox {Track 1}', 'Pecos Junction {Track 2}', 'Westminster', 'Downtown Westminster {Track 1}', 'Broomfield-116th {Track 1}', 'Flatiron {Track 1}', 'Louisville {Track 1}', 'Boulder {Track 1}', 'Longmont', 'Boulder {Track 2}', 'Louisville {Track 2}', 'Flatiron {Track 2}', 'Broomfield-116th {Track 2}', 'Downtown Westminster {Track 2}', 'Westminster', 'Pecos Junction {Track 1}', '41st & Fox {Track 2}', 'Denver Union Station {Track 10}', 'Ball Arena/Elitch Gardens {Track 1}', 'Auraria West [a64js4] {Track 1}', 'Lincoln Park {Track 1}', 'Alameda {Track 1 Heavy}', 'I-25 & Broadway {Track 1 Heavy}', 'Evans {Track 1}'],
         "Swap": [('Evans {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +1'), ('Englewood {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +2'), ('Oxford-City of Sheridan {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +3'), ('Littleton-Downtown {Track 1}', '~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +4')],
     },
     "~ RTD / B Line / Sterling Ranch - Longmont / Fantasy +1": {
@@ -1922,6 +6201,11 @@ Segments = {
 
 Lines = {
     "Amtrak": {
+        "Alexandrian": {
+            "Fantasy": {
+                "Minneapolis - Fargo": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Alexandrian / Minneapolis - Fargo'},
+            },
+        },
         "Borealis": {
             "Fantasy": {
                 "Chicago - Minneapolis": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Borealis / Chicago - Minneapolis / Fantasy'},
@@ -1931,9 +6215,24 @@ Lines = {
                 "Chicago - Minneapolis": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Borealis / Chicago - Minneapolis'},
             },
         },
+        "Buckeye": {
+            "Fantasy": {
+                "Chicago - Pittsburgh": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Buckeye / Chicago - Pittsburgh'},
+            },
+        },
+        "Carnation": {
+            "Fantasy": {
+                "Cincinnati - Cleveland": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Carnation / Cincinnati - Cleveland'},
+            },
+        },
         "Columbine": {
             "Fantasy": {
                 "Fort Collins - Pueblo": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Columbine / Fort Collins - Pueblo'},
+            },
+        },
+        "Erie": {
+            "Fantasy": {
+                "Chicago - Cleveland": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Erie / Chicago - Cleveland'},
             },
         },
         "Hiawatha": {
@@ -1945,14 +6244,134 @@ Lines = {
                 "Chicago - Milwaukee": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Hiawatha / Chicago - Milwaukee'},
             },
         },
+        "Hoosier": {
+            "Fantasy": {
+                "Chicago - Cincinnati": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Hoosier / Chicago - Cincinnati'},
+            },
+        },
+        "Illini/Saluki": {
+            "Fantasy": {
+                "Chicago - Carbondale": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Illini/Saluki / Chicago - Carbondale / Fantasy'},
+            },
+            "Present": {
+                "Chicago - Carbondale": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Illini/Saluki / Chicago - Carbondale / Present'},
+            },
+        },
+        "Lincoln Service": {
+            "Fantasy": {
+                "Chicago - St. Louis": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Lincoln Service / Chicago - St. Louis / Fantasy'},
+            },
+            "Present": {
+                "Chicago - St. Louis": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Lincoln Service / Chicago - St. Louis / Present'},
+            },
+        },
+        "Mercury": {
+            "Fantasy": {
+                "Cleveland - Detroit": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Mercury / Cleveland - Detroit'},
+            },
+        },
+        "Missouri River Runner": {
+            "Fantasy": {
+                "St. Louis - Kansas City": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Fantasy'},
+            },
+            "Present": {
+                "St. Louis - Kansas City": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Missouri River Runner / St. Louis - Kansas City / Present'},
+            },
+        },
         "Mountaineer": {
             "Fantasy": {
                 "Denver - Craig": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Mountaineer / Denver - Craig'},
             },
         },
+        "Northern Lights Express": {
+            "Fantasy": {
+                "Minneapolis - Duluth": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Northern Lights Express / Minneapolis - Duluth'},
+            },
+        },
+        "Winnipegger": {
+            "Fantasy": {
+                "Minneapolis - Winnipeg": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Winnipegger / Minneapolis - Winnipeg'},
+            },
+        },
         "Winter Park Express": {
             "Present": {
                 "Denver - Winter Park": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Winter Park Express / Denver - Winter Park'},
+            },
+        },
+        "Wolverine": {
+            "Fantasy": {
+                "Chicago - Windsor": {'Mode': 'Intercity Rail', 'Stations': '~ Amtrak / Wolverine / Chicago - Windsor / Fantasy'},
+            },
+            "Present": {
+                "Chicago - Pontiac": {'Mode': 'Intercity Rail', 'Stations': 'Amtrak / Wolverine / Chicago - Pontiac'},
+            },
+        },
+    },
+    "CTA": {
+        "Blue Line": {
+            "Fantasy": {
+                "O'Hare - Forest Park": {'Mode': 'Heavy Metro', 'Stations': "~ CTA / Blue Line / O'Hare - Forest Park / Fantasy", 'Alt': [["O'Hare {Track 1}", "O'Hare {Track 2}", "O'Hare {Track 3}"], ['Forest Park {Track 1}', 'Forest Park {Track 2}']]},
+            },
+            "Present": {
+                "O'Hare - Forest Park": {'Mode': 'Heavy Metro', 'Stations': "~ CTA / Blue Line / O'Hare - Forest Park / Present", 'Alt': [["O'Hare {Track 1}", "O'Hare {Track 2}", "O'Hare {Track 3}"], ['Forest Park {Track 1}', 'Forest Park {Track 2}']]},
+            },
+        },
+        "Brown Line": {
+            "Fantasy": {
+                "Kimball - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Brown Line / Kimball - Loop / Fantasy', 'Alt': [['Kimball {Track 1}', 'Kimball {Track 2}']]},
+            },
+            "Present": {
+                "Kimball - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Brown Line / Kimball - Loop / Present', 'Alt': [['Kimball {Track 1}', 'Kimball {Track 2}']]},
+            },
+        },
+        "Green Line": {
+            "Fantasy": {
+                "Harlem/Lake - Ashland/63rd": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Fantasy', 'Alt': [['Harlem/Lake {Track 1}', 'Harlem/Lake {Track 2}'], ['Ashland/63rd {Track 1}', 'Ashland/63rd {Track 2}']]},
+                "Harlem/Lake - Cottage Grove": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Fantasy', 'Alt': [['Harlem/Lake {Track 1}', 'Harlem/Lake {Track 2}'], ['Cottage Grove {Track 1}', 'Cottage Grove {Track 2}']]},
+            },
+            "Present": {
+                "Harlem/Lake - Ashland/63rd": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Green Line / Harlem/Lake - Ashland/63rd / Present', 'Alt': [['Harlem/Lake {Track 1}', 'Harlem/Lake {Track 2}'], ['Ashland/63rd {Track 1}', 'Ashland/63rd {Track 2}']]},
+                "Harlem/Lake - Cottage Grove": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Green Line / Harlem/Lake - Cottage Grove / Present', 'Alt': [['Harlem/Lake {Track 1}', 'Harlem/Lake {Track 2}'], ['Cottage Grove {Track 1}', 'Cottage Grove {Track 2}']]},
+            },
+        },
+        "Orange Line": {
+            "Fantasy": {
+                "Midway - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Orange Line / Midway - Loop / Fantasy', 'Alt': [['Midway {Track 1}', 'Midway {Track 2}', 'Midway {Track 3}']]},
+            },
+            "Present": {
+                "Midway - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Orange Line / Midway - Loop / Present', 'Alt': [['Midway {Track 1}', 'Midway {Track 2}', 'Midway {Track 3}']]},
+            },
+        },
+        "Pink Line": {
+            "Fantasy": {
+                "54th/Cermak - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Pink Line / 54th/Cermak - Loop / Fantasy'},
+            },
+            "Present": {
+                "54th/Cermak - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Pink Line / 54th/Cermak - Loop / Present'},
+            },
+        },
+        "Purple Line": {
+            "Fantasy": {
+                "Linden - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Purple Line / Linden - Loop / Fantasy'},
+            },
+            "Present": {
+                "Linden - Loop": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Purple Line / Linden - Loop / Present'},
+            },
+        },
+        "Red Line": {
+            "Fantasy": {
+                "Howard - 95th/Dan Ryan": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Red Line / Howard - 95th/Dan Ryan / Fantasy', 'Alt': [['Howard {Track 3}', 'Howard {Track 4}'], ['95th/Dan Ryan {Track 1}', '95th/Dan Ryan {Track 2}']]},
+            },
+            "Present": {
+                "Howard - 95th/Dan Ryan": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Red Line / Howard - 95th/Dan Ryan / Present', 'Alt': [['Howard {Track 3}', 'Howard {Track 4}'], ['95th/Dan Ryan {Track 1}', '95th/Dan Ryan {Track 2}']]},
+            },
+        },
+        "Yellow Line": {
+            "Fantasy": {
+                "Howard - Dempster-Skokie": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Yellow Line / Howard - Dempster-Skokie / Fantasy', 'Alt': [['Dempster-Skokie {Track 1}', 'Dempster-Skokie {Track 2}']]},
+            },
+            "Present": {
+                "Howard - Dempster-Skokie": {'Mode': 'Heavy Metro', 'Stations': '~ CTA / Yellow Line / Howard - Dempster-Skokie / Present', 'Alt': [['Dempster-Skokie {Track 1}', 'Dempster-Skokie {Track 2}']]},
             },
         },
     },
@@ -1966,13 +6385,23 @@ Lines = {
             },
         },
     },
+    "DTC": {
+        "Detroit Peoplemover": {
+            "Fantasy": {
+                "Downtown Loop": {'Mode': 'Peoplemover', 'Stations': 'DTC / Detroit Peoplemover / Downtown Loop'},
+            },
+            "Present": {
+                "Downtown Loop": {'Mode': 'Peoplemover', 'Stations': 'DTC / Detroit Peoplemover / Downtown Loop'},
+            },
+        },
+    },
     "Metro Transit": {
         "Blue Line": {
             "Fantasy": {
                 "Anoka Station - Apple Valley": {'Mode': 'Light Rail', 'Stations': 'Metro Transit / Blue Line / Anoka Station - Apple Valley'},
             },
             "Present": {
-                "Target Field - Mall of America": {'Mode': 'Light Rail', 'Stations': 'Metro Transit / Blue Line / Target Field - Mall of America', 'Alt': [['Target Field {Track 2}', 'Target Field {Track 1}'], ['Mall of America [2] {Track 2}', 'Mall of America [2] {Track 1}']]},
+                "Target Field - Mall of America": {'Mode': 'Light Rail', 'Stations': 'Metro Transit / Blue Line / Target Field - Mall of America', 'Alt': [['Target Field {Track 2}', 'Target Field {Track 1}'], ['Mall of America [yhfqaj] {Track 2}', 'Mall of America [yhfqaj] {Track 1}']]},
             },
         },
         "Green Line": {
@@ -1986,6 +6415,42 @@ Lines = {
         "Northstar": {
             "Fantasy": {
                 "Minneapolis - St. Cloud": {'Mode': 'Heavy Rail', 'Stations': 'Metro Transit / Northstar / Minneapolis - St. Cloud'},
+            },
+        },
+    },
+    "RTA": {
+        "Blue Line": {
+            "Fantasy": {
+                "South Harbor - Van Aken": {'Mode': 'Light Rail', 'Stations': '~ RTA / Blue Line / South Harbor - Van Aken / Fantasy', 'Alt': [['South Harbor {Track 1}', 'South Harbor {Track 2}']]},
+            },
+            "Present": {
+                "South Harbor - Van Aken": {'Mode': 'Light Rail', 'Stations': '~ RTA / Blue Line / South Harbor - Van Aken / Present', 'Alt': [['South Harbor {Track 1}', 'South Harbor {Track 2}']]},
+            },
+        },
+        "Green Line": {
+            "Fantasy": {
+                "South Harbor - Green Road": {'Mode': 'Light Rail', 'Stations': '~ RTA / Green Line / South Harbor - Green Road / Fantasy', 'Alt': [['South Harbor {Track 1}', 'South Harbor {Track 2}'], ['Green Road {Track 1}', 'Green Road {Track 2}']]},
+            },
+            "Present": {
+                "South Harbor - Green Road": {'Mode': 'Light Rail', 'Stations': '~ RTA / Green Line / South Harbor - Green Road / Present', 'Alt': [['South Harbor {Track 1}', 'South Harbor {Track 2}'], ['Green Road {Track 1}', 'Green Road {Track 2}']]},
+            },
+        },
+        "Red Line": {
+            "Fantasy": {
+                "Airport - Stokes-Windermere": {'Mode': 'Light Rail', 'Stations': 'RTA / Red Line / Airport - Stokes-Windermere', 'Alt': [['Airport {Track 1}', 'Airport {Track 2}']]},
+            },
+            "Present": {
+                "Airport - Stokes-Windermere": {'Mode': 'Light Rail', 'Stations': '~ RTA / Red Line / Airport - Stokes-Windermere / Present', 'Alt': [['Airport {Track 1}', 'Airport {Track 2}']]},
+            },
+        },
+    },
+    "RTASM": {
+        "QLINE": {
+            "Fantasy": {
+                "Downtown Detroit": {'Mode': 'Streetcar', 'Stations': 'RTASM / QLINE / Downtown Detroit'},
+            },
+            "Present": {
+                "Downtown Detroit": {'Mode': 'Streetcar', 'Stations': 'RTASM / QLINE / Downtown Detroit'},
             },
         },
     },
@@ -2079,12 +6544,14 @@ Lines = {
 
 Destinations = {
     'Airports': {
+        '(CLE) Cleveland Hopkins International Airport': {"Stations": ['Airport'], "FutureStations": ['Airport', 'Cleveland Airport']},
         '(DEN) Denver International Airport': {"Stations": ['Denver Airport'], "FutureStations": ['Denver Airport'], "Exists": ['Present', 'Fantasy']},
+        '(MDW) Chicago Midway International Airport': {"Stations": ['Midway'], "FutureStations": ['Midway']},
         '(MSP) Minneapolis-St. Paul International Airport': {"Stations": ['Terminal 1', 'Terminal 2'], "FutureStations": ['Terminal 1', 'Terminal 2']},
     },
     'Campuses': {
         'Augsburg University': {"Stations": ['Cedar-Riverside', 'Franklin Ave', 'West Bank'], "FutureStations": ['Cedar-Riverside', 'Franklin Ave', 'West Bank']},
-        'Metropolitan State University of Denver': {"Stations": ['Auraria West', 'Colfax at Auraria'], "FutureStations": ['Auraria West [3]', 'Colfax at Auraria']},
+        'Metropolitan State University of Denver': {"Stations": ['Auraria West', 'Colfax at Auraria'], "FutureStations": ['Auraria West [2x8ua3]', 'Colfax at Auraria']},
         'University of Denver': {"Stations": ['University of Denver'], "FutureStations": ['University of Denver']},
         'University of Minnesota Twin Cities': {"Stations": ['East Bank', 'West Bank'], "FutureStations": ['East Bank', 'West Bank']},
     },
@@ -2094,16 +6561,26 @@ Destinations = {
         'CHS Field': {"Stations": ['Union Depot'], "FutureStations": ['Union Depot']},
         'Coors Field': {"Stations": ['Denver Union Station'], "FutureStations": ['Denver Union Station']},
         'Empower Field at Mile High': {"Stations": ['Empower Field at Mile High']},
+        'First Financial Center': {"Stations": ['Fountain Square'], "FutureStations": ['Fountain Square']},
+        'Future Cleveland Football Stadium': {"FutureStations": ['Cleveland Airport']},
         'Future Denver Football Stadium': {"FutureStations": ['10th & Osage', 'Lincoln Park']},
         'Future Denver Soccer Stadium': {"FutureStations": ['I-25 & Broadway']},
         'Future Minneapolis Arena': {"FutureStations": ['Royalston Ave']},
         'Grand Casino Arena': {"Stations": ['Central Station'], "FutureStations": ['Central Station']},
+        'Great American Ball Park': {"Stations": ['The Banks'], "FutureStations": ['The Banks']},
+        'Greater Columbus Convention Center': {"FutureStations": ['Columbus Union Station']},
+        'Heritage Bank Center': {"Stations": ['The Banks'], "FutureStations": ['The Banks']},
         'Huntington Bank Stadium': {"Stations": ['Stadium Village'], "FutureStations": ['Stadium Village']},
         'Long Beach Convention and Entertainment Center': {"Stations": ['East Bank', 'Stadium Village'], "FutureStations": ['East Bank', 'Stadium Village']},
         'Minneapolis Convention Center': {"Stations": ['Government Plaza', 'Nicollet Mall'], "FutureStations": ['Government Plaza', 'Nicollet Mall']},
+        'Paycor Stadium': {"Stations": ['The Banks'], "FutureStations": ['The Banks']},
+        'Progressive Field': {"Stations": ['Tower City'], "FutureStations": ['Tower City']},
+        'Rocket Arena': {"Stations": ['Tower City'], "FutureStations": ['Tower City']},
+        'TQL Stadium': {"Stations": ['14th & Elm'], "FutureStations": ['14th & Elm']},
         'Target Center': {"Stations": ['Warehouse District/Hennepin Ave']},
         'Target Field': {"Stations": ['Target Field'], "FutureStations": ['Minneapolis Target Field', 'Target Field']},
         'US Bank Stadium': {"Stations": ['US Bank Stadium'], "FutureStations": ['US Bank Stadium']},
+        'United Center': {"FutureStations": ['Madison [jgy5t6]']},
         'Williams Arena': {"Stations": ['East Bank', 'Stadium Village'], "FutureStations": ['East Bank', 'Stadium Village']},
     },
 }

@@ -25,6 +25,105 @@
       ]
      }
     }
+   },
+   "Hoosier": {
+    "Chicago - Cincinnati": {
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station {Track 26}"
+       },
+       {
+        "stop": "Crawfordsville"
+       },
+       [
+        39.737224,
+        -86.295891
+       ],
+       {
+        "stop": "Indianapolis Union Station {Track 2}"
+       },
+       [
+        39.73894,
+        -86.295204
+       ]
+      ]
+     }
+    }
+   },
+   "Illini/Saluki": {
+    "Chicago - Carbondale": {
+     "Present": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station {Track 18}"
+       },
+       [
+        41.86069,
+        -87.642904
+       ],
+       {
+        "stop": "Homewood {Track 2}"
+       },
+       [
+        41.86078,
+        -87.642553
+       ]
+      ]
+     },
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station {Track 18}"
+       },
+       [
+        41.860796,
+        -87.64237
+       ],
+       {
+        "stop": "Homewood {Track 2}"
+       },
+       [
+        41.860772,
+        -87.641866
+       ]
+      ]
+     }
+    }
+   }
+  },
+  "CTA": {
+   "Blue Line": {
+    "O'Hare - Forest Park": {
+     "Present": {
+      "waypoints": [
+       {
+        "stop": "O'Hare {Track 1}"
+       },
+       {
+        "stop": "Rosemont {Track 1}"
+       },
+       [
+        41.984042,
+        -87.865471
+       ]
+      ]
+     },
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "O'Hare {Track 1}"
+       },
+       {
+        "stop": "Rosemont {Track 1}"
+       },
+       [
+        41.984042,
+        -87.865471
+       ]
+      ]
+     }
+    }
    }
   }
  }
