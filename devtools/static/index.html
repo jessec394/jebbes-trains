@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Track tracer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="/static/tracer.css">
+</head>
+<body data-tool="trace">
+<header id="topbar">
+  <div class="brand"><b>Track tracer</b></div>
+  <nav class="tabs" id="toolsw" aria-label="Tool">
+    <button data-t="trace" title="Trace a route through its stops and waypoints"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3.5" cy="12.5" r="2"/><circle cx="12.5" cy="3.5" r="2"/><path d="M5 11.5C9 10 7 6 11 4.5"/></svg>Trace</button>
+    <button data-t="draw" title="Draw, erase, reshape and lock track"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2M4.5 15.5l-3-3M8 12 4 8M11.5 8.5l-4-4M15 5l-3-3"/></svg>Draw</button>
+    <button data-t="stations" title="Stations and their platforms"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="2" width="10" height="9" rx="2"/><path d="M3 7h10M5.5 14l1.5-3M10.5 14 9 11"/></svg>Stations</button>
+    <button data-t="dests" title="Airports, venues and campuses: which stations serve them"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 15s5-4.6 5-8.5a5 5 0 0 0-10 0C3 10.4 8 15 8 15Z"/><circle cx="8" cy="6.5" r="1.8"/></svg>Destinations</button>
+  </nav>
+  <div class="seg mapsw" id="mapsw" title="Which map you are working on"><button data-m="present">Present</button><button data-m="future">Future</button></div>
+  <div id="searchwrap">
+    <input id="stsearch" placeholder="Find a station…" autocomplete="off" aria-label="Find a station">
+    <div id="stresults" hidden></div>
+  </div>
+  <div class="grow"></div>
+  <span id="graphinfo" class="chip"></span>
+  <div id="maintwrap">
+    <button id="maintbtn" class="icon" title="OSM update report" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2v3h-3"/></svg></button>
+    <div id="maint" class="pop" hidden>
+      <h3>OSM update report</h3>
+      <div id="report" class="muted">none</div>
+      <div class="btns"><button id="recompile" title="Re-route every saved trace on both maps">Re-route everything</button></div>
+    </div>
+  </div>
+  <button id="tglleft" class="icon" title="Show or hide the route list"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 2.5v11"/></svg></button>
+  <button id="tglright" class="icon" title="Show or hide the side panel"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M10 2.5v11"/></svg></button>
+</header>
+<aside id="left">
+  <div class="phead"><h2>Routes</h2><button id="newroute" class="primary sm" title="Create a route in the detailed map">+ Route</button></div>
+  <div id="filterrow"><input id="filter" placeholder="Filter routes   ( / )" autocomplete="off" aria-label="Filter routes"></div>
+  <div id="newform" hidden></div>
+  <div id="tree"></div>
+  <footer id="treelegend"><span><i class="dot ok"></i>Traced</span><span><i class="dot has"></i>Stops, not traced</span><span><i class="dot"></i>Empty</span><span class="mapb both">P·F</span> both maps</footer>
+</aside>
+<div id="map">
+  <div id="modebar" hidden>
+    <span class="seg"><button data-tool="draw" title="Draw track: click to place nodes (Ctrl: straight on, Shift: no snapping); drag any node to reshape">Draw</button><button data-tool="parallel" title="Parallel to existing track (P)">Parallel</button><button data-tool="adopt" title="Select track (click; Shift+click adds), then Erase (Delete), Reshape (R) or Restore. Custom track: click or Shift+drag a box round its nodes to drag, delete or simplify them">Select</button><button data-tool="direction" title="Click track to lock it one way (the whole stretch to the next junction); again to turn it round; again to open it">Direction</button><button data-tool="nogo" title="Click track to close it to every route (the whole stretch to the next junction); click again to open it">No-go</button></span>
+    <span id="dirhint" hidden></span>
+  </div>
+  <div id="bpbar" hidden><span id="bpcount"></span><button id="bpbuild" class="primary" title="Make all blueprints real (B)">Build</button><button id="bpclear" title="Discard all blueprints">Clear</button></div>
+  <div id="zoomhint">Zoom in to see track (zoom 9+)</div>
+  <div id="parhud" class="hudbar" hidden>
+    <div class="hg"><span>Distance</span><input id="pardist" type="number" min="2" max="60" step="0.5" value="4.5"> m</div>
+    <div class="hg"><span>Side</span><button id="parflip" title="Flip to the other side (F)">&#8644; Left</button></div>
+    <div class="hg"><span>Tracks</span><span class="seg" id="partracks"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4">4</button></span></div>
+    <div class="hg"><button id="paradd" class="primary" disabled>Add parallel</button></div>
+    <div class="hg hint" id="parhint">Click a track to select it</div>
+  </div>
+  <div id="hud" class="hudbar" hidden>
+    <div class="hg"><span>Tracks</span><span class="seg" id="hudtracks"><button data-n="1" title="Single track (key 1)">1</button><button data-n="2" title="Double track (key 2)">2</button><button data-n="3" title="3 tracks (key 3)">3</button><button data-n="4" title="4 tracks (key 4)">4</button></span></div>
+    <div class="hg multi"><button id="hudside" title="Put the extra tracks on the other side of the line you draw (F)">&#8644;</button><input id="hudspace" type="number" min="2" max="60" step="0.5" value="4.5" title="Distance between tracks, metres ([ and ])" aria-label="Track spacing in metres"> m</div>
+    <div class="hg" id="hudread"></div>
+    <div class="hg" id="hudsel" hidden></div>
+  </div>
+</div>
+<aside id="right">
+  <section id="routebox" class="trace-only">
+    <div class="rhead">
+      <div class="rtitles"><div id="routeop" class="eyebrow"></div><h3 id="routetitle">No route selected</h3><div id="routemeta"></div></div>
+      <div class="menuwrap" id="rmenuwrap" hidden>
+        <button class="icon" data-menu title="More for this route" aria-haspopup="true"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="8" r=".6"/><circle cx="8" cy="8" r=".6"/><circle cx="13" cy="8" r=".6"/></svg></button>
+        <div class="menu pop" hidden>
+          <button id="rmrefresh" title="Re-route it from its stops and save it">↻ Refresh this route</button>
+          <button id="rmnewpat">＋ New pattern on this line</button>
+          <button id="rmcopy" hidden>⇩ Copy stops from the other map</button>
+          <hr>
+          <button id="renroute" hidden title="Rename this service pattern (on both maps)">✎ Rename pattern…</button>
+          <button id="delroute" class="del" hidden title="Delete this route, its stops and its waypoints">🗑 Delete route…</button>
+        </div>
+      </div>
+      <button id="deselect" class="icon" hidden title="Close this route (Esc) so map clicks do not edit it"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"/></svg></button>
+    </div>
+    <p class="empty">Pick a route from the list, or start one with <b>+ Route</b>.</p>
+    <div id="mapsRow" class="rtgrid" hidden>
+      <span class="lab">Runs on</span>
+      <div><span class="seg" id="rtmaps"><button data-v="present">Present</button><button data-v="both">Both</button><button data-v="future">Future</button></span><div id="mapsNote"></div></div>
+      <label class="lab" for="rtmode">Mode</label>
+      <div><select id="rtmode" title="What kind of service this is (its colour and line weight on the map)"></select><div id="modeScopes" hidden><span class="muted">for</span> <select id="rtmodefor" aria-label="Which versions the mode applies to"></select></div></div>
+    </div>
+    <div id="routeinfo"></div>
+    <div class="btns routebtns">
+      <button id="save" class="primary" title="Ctrl+S">Save</button>
+      <button id="undo" title="Undo the last change to the waypoints (Ctrl+Z)">Undo</button>
+      <button id="clear" class="quiet" title="Remove every waypoint">Clear</button>
+    </div>
+  </section>
+  <section id="stopbox" class="trace-only" hidden></section>
+  <section id="wpbox" class="trace-only">
+    <details id="wpfold">
+      <summary><h3>Waypoints <span id="wpcount" class="tag"></span></h3></summary>
+      <div id="wplist" class="muted">Select a route, then click the map.</div>
+    </details>
+  </section>
+  <section id="edpanel" hidden>
+    <div class="edhead"><input id="edname" placeholder="Custom track" autocomplete="off" aria-label="Track name"><button id="eddone" class="icon" title="Done (Esc)" aria-label="Done"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"/></svg></button></div>
+    <div id="edscope" class="muted"></div>
+    <div id="edtracksrow" class="edrow"><span class="lab">Tracks</span><span class="seg" id="edtracks"><button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button><button data-n="4">4</button></span>
+      <span class="multi"><button id="edside" title="Put the extra tracks on the other side">&#8644;</button><input id="edspace" type="number" min="2" max="60" step="0.5" value="4.5" title="Distance between tracks, metres" aria-label="Track spacing in metres"> m <button id="edsep" title="Untie the parallel tracks: each becomes its own single track with its own nodes (Ctrl+Z undoes)">Separate</button></span></div>
+    <div id="edsegrow" class="edrow"><span class="lab" id="edsegn"></span><span class="seg" id="edsegmode"><button data-s="0" title="Straight segments">Straight</button><button data-s="1" title="Curved segments">Curved</button></span></div>
+    <div id="edsimprow" class="edrow" title="Fewer nodes to the right (the curve stays within that many metres of its shape); all the way left for a node every 10 m. Works on the highlighted stretch, or the whole track"><span class="lab">Simplify</span><input id="edsimp" type="range" min="0" max="15" step="0.5" value="1.5"> <span id="edsimpv" class="muted"></span></div>
+    <div class="btns"><button id="eddelete" title="Delete the highlighted stretch (Delete key), or the whole track when nothing is highlighted">Delete track</button></div>
+    <div id="edstatus" class="muted"></div>
+  </section>
+  <section id="stpanel" hidden></section>
+  <section id="dstpanel" hidden></section>
+  <section id="viewbox" class="draw-only">
+    <h3>Show on the map</h3>
+    <div class="btns toggles">
+      <button id="showErased" title="Show erased track as dashed red">Erased track</button>
+      <button class="showDirs" title="Arrows along every one-way (locked) stretch of track">One-way arrows</button>
+    </div>
+  </section>
+  <section id="trackbox" class="draw-only">
+    <h3>Track changes</h3>
+    <p class="muted hint">Lines near track you changed can be re-routed in one go.</p>
+    <div id="editsbox" class="btns">
+      <button id="refreshAffected" class="primary" disabled title="No track changed since the last refresh.">Refresh affected lines</button>
+      <button id="undoEdit" title="Remove the most recent draw / erase edit">Undo last track edit</button>
+    </div>
+    <div id="changedlist" hidden></div>
+  </section>
+  <section id="keys" class="draw-only">
+    <details>
+      <summary><h3>Keys</h3></summary>
+      <dl class="keylist">
+        <dt>W A S D</dt><dd>Pan (Shift: faster)</dd><dt>Q / E</dt><dd>Zoom out / in</dd><dt>1 – 4</dt><dd>Number of tracks while drawing</dd>
+        <dt>Click</dt><dd>Add a node (the track is a spline through every node)</dd><dt>Drag node</dt><dd>Move it · right-click: delete it</dd><dt>Drag / Shift+click</dt><dd>Select track nodes in a box (Shift adds), then drag one, nudge with the arrows or press Delete</dd><dt>Drag ● midpoint</dt><dd>Add a node there</dd><dt>Backspace</dt><dd>Remove the last node</dd><dt>Enter / Esc</dt><dd>Finish the track</dd>
+        <dt>Ctrl</dt><dd>Straight segment while drawing</dd><dt>Shift</dt><dd>No snapping</dd><dt>B</dt><dd>Build blueprints</dd>
+        <dt>P / F</dt><dd>Parallel tool / flip the side extra tracks go</dd><dt>[ ]</dt><dd>Track spacing while drawing</dd><dt>Ctrl+Z</dt><dd>Undo</dd><dt>Esc</dt><dd>Stop / clear selection</dd>
+      </dl>
+    </details>
+  </section>
+</aside>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/static/tracer.js"></script>
+<script src="/static/combo.js"></script>
+<script src="/static/stations.js"></script>
+<script src="/static/stops.js"></script>
+<script src="/static/dests.js"></script>
+<script src="/static/directions.js"></script>
+<script src="/static/routes.js"></script>
+<script src="/static/opsel.js"></script>
+<script src="/static/layout.js"></script>
+</body>
+</html>

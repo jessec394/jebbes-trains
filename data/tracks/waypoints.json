@@ -1,0 +1,130 @@
+{
+ "routes": {
+  "Amtrak": {
+   "Columbine": {
+    "Fort Collins - Pueblo": {
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Fort Collins [a9khz3] {Track 2}"
+       },
+       {
+        "stop": "Fountain [xj796e]"
+       },
+       [
+        38.327652,
+        -104.654388
+       ],
+       {
+        "stop": "Pueblo [xcgwpg]"
+       },
+       [
+        38.333847,
+        -104.64735
+       ]
+      ]
+     }
+    }
+   },
+   "Hoosier": {
+    "Chicago - Cincinnati": {
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station [dfvd8t] {Track 26}"
+       },
+       {
+        "stop": "Crawfordsville [e6yvgk]"
+       },
+       [
+        39.737224,
+        -86.295891
+       ],
+       {
+        "stop": "Indianapolis Union Station [m2ah9m] {Track 2}"
+       },
+       [
+        39.73894,
+        -86.295204
+       ]
+      ]
+     }
+    }
+   },
+   "Illini/Saluki": {
+    "Chicago - Carbondale": {
+     "Present": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station [dfvd8t] {Track 18}"
+       },
+       [
+        41.86069,
+        -87.642904
+       ],
+       {
+        "stop": "Homewood [p6grvx] {Track 2}"
+       },
+       [
+        41.86078,
+        -87.642553
+       ]
+      ]
+     },
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "Chicago Union Station [dfvd8t] {Track 18}"
+       },
+       [
+        41.860796,
+        -87.64237
+       ],
+       {
+        "stop": "Homewood [p6grvx] {Track 2}"
+       },
+       [
+        41.860772,
+        -87.641866
+       ]
+      ]
+     }
+    }
+   }
+  },
+  "CTA": {
+   "Blue Line": {
+    "O'Hare - Forest Park": {
+     "Present": {
+      "waypoints": [
+       {
+        "stop": "O'Hare [vsmghv] {Track 1}"
+       },
+       {
+        "stop": "Rosemont [qdxvxk] {Track 1}"
+       },
+       [
+        41.984042,
+        -87.865471
+       ]
+      ]
+     },
+     "Fantasy": {
+      "waypoints": [
+       {
+        "stop": "O'Hare [vsmghv] {Track 1}"
+       },
+       {
+        "stop": "Rosemont [qdxvxk] {Track 1}"
+       },
+       [
+        41.984042,
+        -87.865471
+       ]
+      ]
+     }
+    }
+   }
+  }
+ }
+}
