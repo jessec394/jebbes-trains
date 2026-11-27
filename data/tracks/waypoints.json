@@ -6,17 +6,17 @@
      "Fantasy": {
       "waypoints": [
        {
-        "stop": "Fort Collins {Track 2}"
+        "stop": "Fort Collins [a9khz3] {Track 2}"
        },
        {
-        "stop": "Fountain"
+        "stop": "Fountain [xj796e]"
        },
        [
         38.327652,
         -104.654388
        ],
        {
-        "stop": "Pueblo"
+        "stop": "Pueblo [xcgwpg]"
        },
        [
         38.333847,
@@ -31,17 +31,17 @@
      "Fantasy": {
       "waypoints": [
        {
-        "stop": "Chicago Union Station {Track 26}"
+        "stop": "Chicago Union Station [dfvd8t] {Track 26}"
        },
        {
-        "stop": "Crawfordsville"
+        "stop": "Crawfordsville [e6yvgk]"
        },
        [
         39.737224,
         -86.295891
        ],
        {
-        "stop": "Indianapolis Union Station {Track 2}"
+        "stop": "Indianapolis Union Station [m2ah9m] {Track 2}"
        },
        [
         39.73894,
@@ -56,14 +56,14 @@
      "Present": {
       "waypoints": [
        {
-        "stop": "Chicago Union Station {Track 18}"
+        "stop": "Chicago Union Station [dfvd8t] {Track 18}"
        },
        [
         41.86069,
         -87.642904
        ],
        {
-        "stop": "Homewood {Track 2}"
+        "stop": "Homewood [p6grvx] {Track 2}"
        },
        [
         41.86078,
@@ -74,14 +74,14 @@
      "Fantasy": {
       "waypoints": [
        {
-        "stop": "Chicago Union Station {Track 18}"
+        "stop": "Chicago Union Station [dfvd8t] {Track 18}"
        },
        [
         41.860796,
         -87.64237
        ],
        {
-        "stop": "Homewood {Track 2}"
+        "stop": "Homewood [p6grvx] {Track 2}"
        },
        [
         41.860772,
@@ -98,10 +98,10 @@
      "Present": {
       "waypoints": [
        {
-        "stop": "O'Hare {Track 1}"
+        "stop": "O'Hare [vsmghv] {Track 1}"
        },
        {
-        "stop": "Rosemont {Track 1}"
+        "stop": "Rosemont [qdxvxk] {Track 1}"
        },
        [
         41.984042,
@@ -112,10 +112,10 @@
      "Fantasy": {
       "waypoints": [
        {
-        "stop": "O'Hare {Track 1}"
+        "stop": "O'Hare [vsmghv] {Track 1}"
        },
        {
-        "stop": "Rosemont {Track 1}"
+        "stop": "Rosemont [qdxvxk] {Track 1}"
        },
        [
         41.984042,
